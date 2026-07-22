@@ -260,6 +260,30 @@ main {
 .summary-card.fail .n    { color: var(--err); }
 .summary-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 
+/* ── Test menu ── */
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+.test-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 1.25rem 1rem; text-align: left;
+  cursor: pointer; font-family: var(--font-head); color: var(--text);
+  transition: all 0.15s; display: flex; flex-direction: column; gap: 6px;
+}
+.test-card:hover { border-color: var(--border2); background: var(--surface2); }
+.test-card-title { font-size: 1.1rem; font-weight: 700; }
+.test-card-sub { font-size: 0.72rem; color: var(--muted); font-family: var(--font-mono); }
+.test-card-badge {
+  margin-top: 4px; font-size: 0.68rem; font-family: var(--font-mono);
+  padding: 3px 10px; border-radius: 99px; align-self: flex-start;
+  background: var(--surface2); color: var(--muted); border: 1px solid var(--border2);
+}
+.test-card.ok .test-card-badge      { background: var(--accent-dim); color: var(--accent); border-color: rgba(168,255,120,0.25); }
+.test-card.partial .test-card-badge { background: var(--amber-dim);  color: var(--amber);  border-color: rgba(251,191,36,0.25); }
+.test-card.fail .test-card-badge    { background: var(--err-dim);    color: var(--err);    border-color: rgba(255,107,107,0.2); }
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   header, .progress-wrap, .nav-wrap, main { padding-left: 1rem; padding-right: 1rem; }
@@ -278,6 +302,7 @@ main {
     <div class="logo-sub">Key word transformations</div>
   </div>
   <div class="header-stats">
+    <button class="btn btn-ghost" onclick="renderTestMenu()">☰ Tests</button>
     <div class="stat">
       <div class="stat-num gold">
         <span id="stat-score">0</span><span class="max" id="stat-maxscore">/20</span>
@@ -1282,6 +1307,355 @@ const ALL_QUESTIONS = [
     solution: "promised to pay"
   },
 
+  // ── Tanda 12 ──
+  {
+    tanda: 12,
+    original: "'You should stop your children watching so much television,' Mary's sister told her.",
+    keyword: "LET",
+    before: "Mary's sister advised her",
+    after: "so much television.",
+    solution: "not to let her children watch"
+  },
+  {
+    tanda: 12,
+    original: "The local council wants to impose a ban on driving at more than 30 kilometres per hour anywhere in this area.",
+    keyword: "ILLEGAL",
+    before: "The local council wants to",
+    after: "at more than 30 kilometres per hour anywhere in this area.",
+    solution: "make it illegal to drive"
+  },
+  {
+    tanda: 12,
+    original: "Tom missed his plane because he was late leaving for the airport.",
+    keyword: "TIME",
+    before: "If only",
+    after: "for the airport, he wouldn't have missed his plane.",
+    solution: "he had left on time"
+  },
+  {
+    tanda: 12,
+    original: "The guidelines for the appointment of new staff need to be thoroughly revised.",
+    keyword: "THOROUGH",
+    before: "There needs",
+    after: "the guidelines for the appointment of new staff.",
+    solution: "to be a thorough revision of"
+  },
+  {
+    tanda: 12,
+    original: "The employment rate rose gradually as the economy began to recover.",
+    keyword: "GRADUAL",
+    before: "There",
+    after: "the employment rate as the economy began to recover.",
+    solution: "was a gradual rise in"
+  },
+  {
+    tanda: 12,
+    original: "The change in the company's logo didn't make any difference to the majority of its customers.",
+    keyword: "CONSEQUENCE",
+    before: "The change in the company's logo",
+    after: "to the majority of its customers.",
+    solution: "was of no consequence"
+  },
+
+  // ── Tanda 13 ──
+  {
+    tanda: 13,
+    original: "Your books will be despatched on receipt of your order provided they are in stock.",
+    keyword: "SOON",
+    before: "We will despatch your books",
+    after: "the order provided they are in stock.",
+    solution: "as soon as we receive"
+  },
+  {
+    tanda: 13,
+    original: "Because the gym increased its fees last month, I am no longer a member.",
+    keyword: "UP",
+    before: "If the gym",
+    after: "its fees last month, I would still be a member.",
+    solution: "hadn't put up"
+  },
+  {
+    tanda: 13,
+    original: "The driver said that we were delayed because an earlier train had broken down.",
+    keyword: "CAUSED",
+    before: "According to the driver, our",
+    after: "breakdown of an earlier train.",
+    solution: "delay was caused by the"
+  },
+  {
+    tanda: 13,
+    original: "It was Sarah's ideas that enabled us to put on a successful fashion show.",
+    keyword: "FOR",
+    before: "If",
+    after: "ideas, we wouldn't have been able to put on a successful fashion show.",
+    solution: "it hadn't been for Sarah's"
+  },
+  {
+    tanda: 13,
+    original: "Leo was the only person in the street who didn't come to my farewell party.",
+    keyword: "EXCEPTION",
+    before: "Everyone in the street",
+    after: "to my farewell party.",
+    solution: "with the exception of Leo came"
+  },
+  {
+    tanda: 13,
+    original: "The concert should have started about three hours ago.",
+    keyword: "DUE",
+    before: "The concert",
+    after: "about three hours ago.",
+    solution: "was due to start"
+  },
+
+  // ── Tanda 14 ──
+  {
+    tanda: 14,
+    original: "Ben married his fiancée without his parents' knowledge.",
+    keyword: "UNAWARE",
+    before: "Ben's",
+    after: "his marriage to his fiancée.",
+    solution: "parents were unaware of"
+  },
+  {
+    tanda: 14,
+    original: "The help-desk service is not, as many people believe, restricted to customers who buy products from the company directly.",
+    keyword: "COMMONLY",
+    before: "The help-desk service is not,",
+    after: ", restricted to customers who buy products from the company directly.",
+    solution: "as is commonly believed"
+  },
+  {
+    tanda: 14,
+    original: "Jane didn't feel like going to her sister's party.",
+    keyword: "MOOD",
+    before: "Jane wasn't",
+    after: "to her sister's party.",
+    solution: "in the mood to go"
+  },
+  {
+    tanda: 14,
+    original: "My friends and I are looking for alternative accommodation because our apartment building is being pulled down.",
+    keyword: "ELSE",
+    before: "My friends and I are looking for",
+    after: "live because our apartment building is being pulled down.",
+    solution: "somewhere else to"
+  },
+  {
+    tanda: 14,
+    original: "Peter's colleagues didn't realise how significant the research he was doing for his PhD was.",
+    keyword: "FAILED",
+    before: "Peter's colleagues",
+    after: "of the research he was doing for his PhD.",
+    solution: "failed to realise the significance"
+  },
+  {
+    tanda: 14,
+    original: "'Did our sales figures get better last month, Martha?'",
+    keyword: "ANY",
+    before: "'Was",
+    after: "our sales figures last month, Martha?'",
+    solution: "there any improvement in"
+  },
+
+  // ── Tanda 15 ──
+  {
+    tanda: 15,
+    original: "Do you mind if John joins us for the meeting?",
+    keyword: "TO",
+    before: "Do you have",
+    after: "us for the meeting?",
+    solution: "any objection to John's joining"
+  },
+  {
+    tanda: 15,
+    original: "Dan abandoned his studies at university because he was ill.",
+    keyword: "RESULTED",
+    before: "Dan's",
+    after: "his studies at university.",
+    solution: "illness resulted in him abandoning"
+  },
+  {
+    tanda: 15,
+    original: "As soon as the tennis players went onto the court, it started raining.",
+    keyword: "HAD",
+    before: "No",
+    after: "onto the court than it started raining.",
+    solution: "sooner had the tennis players gone"
+  },
+  {
+    tanda: 15,
+    original: "'We'll have to postpone the meeting until next week, as a lot of people are on leave,' the manager said.",
+    keyword: "OFF",
+    before: "The manager said the meeting",
+    after: "until the following week, as a lot of people were on leave.",
+    solution: "would have to be put off"
+  },
+  {
+    tanda: 15,
+    original: "As visibility was getting worse and worse, Bob and Jane had to cut short their sailing trip.",
+    keyword: "BUT",
+    before: "As visibility was getting worse and worse, Bob and Jane had",
+    after: "cut short their sailing trip.",
+    solution: "no choice but to"
+  },
+  {
+    tanda: 15,
+    original: "Please tick this box if you don't want us to inform you about future events.",
+    keyword: "RATHER",
+    before: "Please tick this box if you",
+    after: "sent any information about future events.",
+    solution: "would rather not be"
+  },
+
+  // ── Tanda 16 ──
+  {
+    tanda: 16,
+    original: "The biographer decided to leave out all the less interesting details of the footballer's childhood.",
+    keyword: "ANY",
+    before: "The biographer decided not",
+    after: "the less interesting details of the footballer's childhood.",
+    solution: "to include any of"
+  },
+  {
+    tanda: 16,
+    original: "David apologised for being unable to come to the meeting next week.",
+    keyword: "COULD",
+    before: "David said he",
+    after: "come to the meeting next week.",
+    solution: "was sorry that he could not"
+  },
+  {
+    tanda: 16,
+    original: "Since starting her new job, Charlotte has completely forgotten about the plans she used to have.",
+    keyword: "SIGHT",
+    before: "Since starting her new job, Charlotte has completely",
+    after: "the plans she used to have.",
+    solution: "lost sight of"
+  },
+  {
+    tanda: 16,
+    original: "I can never remember dates for anything, even though I really try.",
+    keyword: "MATTER",
+    before: "I can never remember dates for anything",
+    after: "try.",
+    solution: "no matter how hard I"
+  },
+  {
+    tanda: 16,
+    original: "The impression his boss has of Jack is that he's an ambitious person.",
+    keyword: "ACROSS",
+    before: "Jack",
+    after: "an ambitious person.",
+    solution: "comes across to his boss as"
+  },
+  {
+    tanda: 16,
+    original: "Casper didn't mention the fact that we had met before.",
+    keyword: "REFERENCE",
+    before: "Casper",
+    after: "the fact that we had met before.",
+    solution: "made no reference to"
+  },
+
+  // ── Tanda 17 ──
+  {
+    tanda: 17,
+    original: "The constant public attention on famous people must have an effect on them.",
+    keyword: "EYE",
+    before: "Constantly",
+    after: "must have an effect on famous people.",
+    solution: "being in the public eye"
+  },
+  {
+    tanda: 17,
+    original: "This building would be ideal for our new office except that there are no parking facilities nearby.",
+    keyword: "FROM",
+    before: "This building would be ideal for our new office",
+    after: "of parking facilities nearby.",
+    solution: "aside from the lack"
+  },
+  {
+    tanda: 17,
+    original: "It's only because of the quality of the lead singer's voice that people listen to the album.",
+    keyword: "WORTH",
+    before: "It's the quality of the lead singer's voice that",
+    after: "to.",
+    solution: "makes the album worth listening"
+  },
+  {
+    tanda: 17,
+    original: "The hotel wasn't just far from the sea, it was expensive too.",
+    keyword: "ONLY",
+    before: "Not",
+    after: "way from the sea, it was expensive too.",
+    solution: "only was the hotel a long"
+  },
+  {
+    tanda: 17,
+    original: "Jenny felt she had stayed too long at the party.",
+    keyword: "HIGH",
+    before: "Jenny felt it",
+    after: "the party.",
+    solution: "was high time she left"
+  },
+  {
+    tanda: 17,
+    original: "Hannah's essay doesn't have a clear enough explanation of the main point to be awarded top marks.",
+    keyword: "CLEARLY",
+    before: "Hannah's essay doesn't",
+    after: "to be awarded top marks.",
+    solution: "explain the main point clearly enough"
+  },
+
+  // ── Tanda 18 ──
+  {
+    tanda: 18,
+    original: "The other students don't mind whether you give your presentation on Thursday or Friday.",
+    keyword: "DIFFERENCE",
+    before: "It",
+    after: "the other students whether you give your presentation on Thursday or Friday.",
+    solution: "makes no difference to"
+  },
+  {
+    tanda: 18,
+    original: "'What are you thinking of doing for the college's centenary celebration?' the tutor asked the students.",
+    keyword: "MIND",
+    before: "The tutor asked the students what",
+    after: "for the college's centenary celebration.",
+    solution: "they had in mind"
+  },
+  {
+    tanda: 18,
+    original: "Dr. Ramesh's colleagues regarded him so highly that they forgave his inability to remember people's names.",
+    keyword: "HELD",
+    before: "Dr. Ramesh",
+    after: "by his colleagues that they forgave his inability to remember people's names.",
+    solution: "was held in such high regard"
+  },
+  {
+    tanda: 18,
+    original: "As learning new languages had never been a problem for her, Katy didn't expect to have any difficulties when she went to live abroad.",
+    keyword: "COME",
+    before: "Learning new languages had",
+    after: "her so Katy didn't expect to have any difficulties when she went to live abroad.",
+    solution: "always come easily to"
+  },
+  {
+    tanda: 18,
+    original: "I think we owe this passenger an apology, as she was apparently given incorrect train times by our call centre staff.",
+    keyword: "MISINFORMED",
+    before: "I think we owe this passenger an apology, as she seems",
+    after: "train times by our call centre staff.",
+    solution: "to have been misinformed about"
+  },
+  {
+    tanda: 18,
+    original: "If her party wins the election, which is unlikely, she'll become President.",
+    keyword: "EVENT",
+    before: "In the",
+    after: "the election, she'll become President.",
+    solution: "unlikely event of her party winning"
+  },
 
 ];
 
@@ -1289,10 +1663,24 @@ const ALL_QUESTIONS = [
 //  LÓGICA PRINCIPAL — c1-transformaciones
 // ─────────────────────────────────────────────
 
-const SESSION_SIZE = 10; // preguntas por sesión
+const BLOCK_SIZE = 20; // preguntas por test
+
+// ── Tests fijos: se divide todo el banco en bloques de BLOCK_SIZE, en orden ──
+function buildTests() {
+  const tests = [];
+  for (let i = 0; i < ALL_QUESTIONS.length; i += BLOCK_SIZE) {
+    tests.push(ALL_QUESTIONS.slice(i, i + BLOCK_SIZE).map((_, j) => i + j));
+  }
+  return tests;
+}
+const TESTS = buildTests();
 
 // ── Estado global ──
-let session     = [];   // índices de preguntas de esta sesión
+let testStatus  = TESTS.map(() => 'pending'); // 'pending' | 'inprogress' | 'done'
+let testResults = TESTS.map(() => null);      // { score, max, full, part, zero }
+let currentTest = null;                       // índice del test activo en TESTS
+
+let session     = [];   // índices (en ALL_QUESTIONS) de las preguntas del test activo
 let current     = 0;    // índice dentro de session[]
 let scores      = [];   // 0 | 1 | 2 | null por pregunta de la sesión
 let revealed    = [];   // bool: ¿se usó "ver solución"?
@@ -1328,16 +1716,62 @@ function shuffle(arr) {
   return a;
 }
 
-// ── Iniciar nueva sesión ──
-function startSession() {
-  const indices = ALL_QUESTIONS.map((_, i) => i);
-  const shuffled = shuffle(indices);
-  session  = shuffled.slice(0, Math.min(SESSION_SIZE, ALL_QUESTIONS.length));
+// ── Iniciar un test concreto (preguntas en orden, no aleatorias) ──
+function startTest(testIdx) {
+  currentTest = testIdx;
+  session  = TESTS[testIdx].slice();
   current  = 0;
   scores   = new Array(session.length).fill(null);
   revealed = new Array(session.length).fill(false);
+  testStatus[testIdx] = 'inprogress';
+
+  document.getElementById('summary').style.display = 'none';
+  document.getElementById('question-area').style.display = 'block';
+
   updateHeader();
   render();
+}
+
+// ── Pantalla de selección de test ──
+function renderTestMenu() {
+  currentTest = null;
+
+  document.getElementById('nav').innerHTML = '';
+  document.getElementById('progress').style.width = '0%';
+  document.getElementById('stat-score').textContent = TESTS.filter((_, i) => testStatus[i] === 'done').length;
+  document.getElementById('stat-maxscore').textContent = `/${TESTS.length}`;
+  document.getElementById('stat-done').textContent = TESTS.filter((_, i) => testStatus[i] === 'done').length;
+  document.getElementById('stat-total').textContent = TESTS.length;
+
+  const qa    = document.getElementById('question-area');
+  const sumEl = document.getElementById('summary');
+  sumEl.style.display = 'none';
+  qa.style.display = 'block';
+
+  const cards = TESTS.map((idxArr, i) => {
+    const res = testResults[i];
+    const status = testStatus[i];
+    let badgeCls = '';
+    let badge = 'Sin empezar';
+    if (status === 'inprogress') { badge = 'En curso'; badgeCls = 'partial'; }
+    if (status === 'done' && res) {
+      const pct = Math.round(res.score / res.max * 100);
+      badge = `${res.score}/${res.max} · ${pct}%`;
+      badgeCls = pct >= 65 ? 'ok' : (pct > 0 ? 'partial' : 'fail');
+    }
+    return `
+      <button class="test-card ${badgeCls}" onclick="startTest(${i})">
+        <div class="test-card-title">Test ${i + 1}</div>
+        <div class="test-card-sub">${idxArr.length} oraciones</div>
+        <div class="test-card-badge">${badge}</div>
+      </button>
+    `;
+  }).join('');
+
+  qa.innerHTML = `
+    <div class="tanda-tag"><span></span>Elige un test para practicar (${ALL_QUESTIONS.length} oraciones en total)<span></span></div>
+    <div class="test-grid">${cards}</div>
+  `;
 }
 
 // ── Helpers ──
@@ -1350,6 +1784,7 @@ function countWords(s) { return s.trim().split(/\s+/).filter(Boolean).length; }
 
 // ── Actualizar stats del header ──
 function updateHeader() {
+  if (currentTest === null) return; // en la pantalla de menú, renderTestMenu() gestiona el header
   const done = scores.filter(v => v !== null).length;
   document.getElementById('stat-score').textContent   = totalScore();
   document.getElementById('stat-maxscore').textContent = `/${maxScore()}`;
@@ -1489,7 +1924,7 @@ function render() {
   qa.innerHTML = `
     <div class="tanda-tag">
       <span></span>
-      Sesión · Pregunta ${current + 1} de ${session.length}
+      Test ${currentTest + 1} · Pregunta ${current + 1} de ${session.length}
       &nbsp;·&nbsp; Tanda ${q.tanda}
       <span></span>
     </div>
@@ -1532,6 +1967,7 @@ function render() {
       ${!done ? `<button class="btn btn-primary" id="action-check" onclick="checkAnswer()">Comprobar</button>` : ''}
       ${!done ? `<button class="btn btn-ghost"   id="action-reveal" onclick="revealAnswer()">Ver solución</button>` : ''}
       ${current > 0 ? `<button class="btn" onclick="go(${current - 1})">← Anterior</button>` : ''}
+      <button class="btn btn-ghost" onclick="renderTestMenu()">☰ Lista de tests</button>
     </div>
   `;
 
@@ -1559,14 +1995,20 @@ function showSummary() {
   const part  = scores.filter(v => v === 1).length;
   const zero  = scores.filter(v => v === 0).length;
 
+  testResults[currentTest] = { score: total, max, full, part, zero };
+  testStatus[currentTest]  = 'done';
+
   let msg;
   if (pct >= 85) msg = '¡Nivel C1 conseguido! 🎯';
   else if (pct >= 65) msg = '¡Buen trabajo, sigue así! 💪';
   else msg = '¡Sigue practicando, tú puedes! 📚';
 
+  const isLastTest = currentTest >= TESTS.length - 1;
+
   const sumEl = document.getElementById('summary');
   sumEl.style.display = 'block';
   sumEl.innerHTML = `
+    <div class="tanda-tag"><span></span>Test ${currentTest + 1} completado<span></span></div>
     <div class="summary-score">${total}<span class="summary-max">/${max}</span></div>
     <div class="summary-pct">${pct}% de acierto</div>
     <div class="summary-msg">${msg}</div>
@@ -1585,30 +2027,33 @@ function showSummary() {
       </div>
     </div>
     <div class="summary-actions">
-      <button class="btn btn-primary" onclick="startSession()">Nueva sesión (10 aleatorias)</button>
-      <button class="btn" onclick="reviewFailed()">Repasar falladas / parciales</button>
+      <button class="btn btn-primary" onclick="startTest(${currentTest})">Repetir este test</button>
+      ${zero + part > 0 ? `<button class="btn" onclick="reviewFailed()">Repasar falladas / parciales</button>` : ''}
+      ${!isLastTest ? `<button class="btn btn-primary" onclick="startTest(${currentTest + 1})">Siguiente test →</button>` : ''}
+      <button class="btn btn-ghost" onclick="renderTestMenu()">☰ Lista de tests</button>
     </div>
   `;
 }
 
-// ── Repasar falladas y parciales ──
+// ── Repasar falladas y parciales (del test actual) ──
 function reviewFailed() {
   // Construir lista de índices originales que fallaron o fueron parciales
   const failedOriginal = session.filter((_, i) => scores[i] !== 2);
-  if (failedOriginal.length === 0) { startSession(); return; }
+  if (failedOriginal.length === 0) { startTest(currentTest); return; }
 
-  session  = shuffle(failedOriginal).slice(0, Math.min(SESSION_SIZE, failedOriginal.length));
+  session  = shuffle(failedOriginal);
   current  = 0;
   scores   = new Array(session.length).fill(null);
   revealed = new Array(session.length).fill(false);
 
+  document.getElementById('question-area').style.display = 'block';
   document.getElementById('summary').style.display = 'none';
   updateHeader();
   render();
 }
 
 // ── Arrancar ──
-window.addEventListener('DOMContentLoaded', startSession);
+window.addEventListener('DOMContentLoaded', renderTestMenu);
 </script>
 
 </body>
