@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preposiciones C1</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Premium Light Mode */
+  --bg-gradient: linear-gradient(135deg, #f6f8fd 0%, #f1f6f9 100%);
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-solid: #ffffff;
+  --surface-hover: rgba(255, 255, 255, 0.9);
+  --border: rgba(255, 255, 255, 0.5);
+  --border-solid: rgba(0, 0, 0, 0.08);
+  --border2: rgba(0, 0, 0, 0.15); /* For compatibility with JS inline styles if any */
+
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --text-lighter: #94a3b8;
+  --text2: #64748b; /* JS compat */
+  --text3: #94a3b8; /* JS compat */
+
+  --accent: #6366f1; /* Indigo */
+  --accent-hover: #4f46e5;
+  --accent-light: rgba(99, 102, 241, 0.1);
+  --accent-text: #4338ca;
+  --accent-t: #4338ca; /* JS compat */
+  --accent-l: rgba(99, 102, 241, 0.1); /* JS compat */
+
+  --success-bg: rgba(34, 197, 94, 0.1);
+  --success-text: #15803d;
+  --success-border: rgba(34, 197, 94, 0.3);
+  --green-b: rgba(34, 197, 94, 0.1); /* JS compat */
+  --green-t: #15803d; /* JS compat */
+
+  --danger-bg: rgba(239, 68, 68, 0.1);
+  --danger-text: #b91c1c;
+  --danger-border: rgba(239, 68, 68, 0.3);
+  --red-b: rgba(239, 68, 68, 0.1); /* JS compat */
+  --red-t: #b91c1c; /* JS compat */
+
+  --warning-bg: rgba(245, 158, 11, 0.1);
+  --warning-text: #b45309;
+  --amber-b: rgba(245, 158, 11, 0.1); /* JS compat */
+  --amber-t: #b45309; /* JS compat */
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --r: 8px; /* JS compat */
+  --rlg: 16px; /* JS compat */
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    /* Premium Dark Mode */
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    --surface: rgba(30, 41, 59, 0.6);
+    --surface-solid: #1e293b;
+    --surface-hover: rgba(30, 41, 59, 0.9);
+    --border: rgba(255, 255, 255, 0.05);
+    --border-solid: rgba(255, 255, 255, 0.1);
+    --border2: rgba(255, 255, 255, 0.15); /* JS compat */
+
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-lighter: #64748b;
+    --text2: #94a3b8; /* JS compat */
+    --text3: #64748b; /* JS compat */
+
+    --accent: #818cf8;
+    --accent-hover: #6366f1;
+    --accent-light: rgba(129, 140, 248, 0.15);
+    --accent-text: #c7d2fe;
+    --accent-t: #c7d2fe; /* JS compat */
+    --accent-l: rgba(129, 140, 248, 0.15); /* JS compat */
+
+    --success-bg: rgba(74, 222, 128, 0.15);
+    --success-text: #4ade80;
+    --success-border: rgba(74, 222, 128, 0.3);
+    --green-b: rgba(74, 222, 128, 0.15); /* JS compat */
+    --green-t: #4ade80; /* JS compat */
+
+    --danger-bg: rgba(248, 113, 113, 0.15);
+    --danger-text: #f87171;
+    --danger-border: rgba(248, 113, 113, 0.3);
+    --red-b: rgba(248, 113, 113, 0.15); /* JS compat */
+    --red-t: #f87171; /* JS compat */
+
+    --warning-bg: rgba(251, 191, 36, 0.15);
+    --warning-text: #fbbf24;
+    --amber-b: rgba(251, 191, 36, 0.15); /* JS compat */
+    --amber-t: #fbbf24; /* JS compat */
+
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
+  padding: 3rem 1.5rem 6rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 3rem;
+  text-align: center;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, var(--accent), #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p {
+  font-size: 16px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-glass);
+}
+
+/* TABS */
+.tabs {
+  display: inline-flex;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 100px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.tab {
+  padding: 10px 28px;
+  border-radius: 100px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+}
+
+.tab:hover {
+  color: var(--text);
+  background: rgba(100, 100, 100, 0.1);
+}
+
+.tab.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.section {
+  display: none;
+  animation: fadeIn 0.4s ease-out;
+}
+.section.active {
+  display: block;
+}
+
+/* TEST SELECTOR */
+.test-selector { margin-bottom: 2rem; }
+.test-selector h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.test-btns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.test-btn {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  background: var(--surface-solid);
+  border: 1px solid var(--border-solid);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.test-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, transparent, rgba(255,255,255,0.05));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.test-btn:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.test-btn:hover::before { opacity: 1; }
+
+.test-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.test-btn.done {
+  border-color: var(--success-text);
+  background: linear-gradient(145deg, var(--surface-solid), var(--success-bg));
+}
+.test-btn.done strong::after {
+  content: '✓';
+  margin-left: 8px;
+  color: var(--success-text);
+}
+
+.test-btn .test-range {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  display: block;
+}
+.test-btn.done .test-range { opacity: 0.8; }
+
+/* QUIZ */
+.quiz-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-title { font-size: 18px; font-weight: 800; color: var(--text); }
+.quiz-sub { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+
+.progress-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 2rem;
+  background: var(--surface-solid);
+  padding: 12px 20px;
+  border-radius: 100px;
+  border: 1px solid var(--border-solid);
+  box-shadow: var(--shadow-sm);
+}
+
+.progress-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+  min-width: 60px;
+}
+
+.progress-track {
+  flex: 1;
+  height: 8px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+}
+@media(prefers-color-scheme: dark) {
+  .progress-track { background: rgba(255,255,255,0.05); }
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #a855f7);
+  border-radius: 100px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-score {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 48px;
+  text-align: right;
+}
+
+.q-card {
+  background: var(--surface-solid);
+  border: 1px solid var(--border-solid);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  animation: slideUp 0.4s ease-out;
+}
+
+.q-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--accent-light);
+  border-radius: 100px;
+}
+
+.q-sentence {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.blank {
+  display: inline-block;
+  min-width: 80px;
+  padding: 0 8px;
+  border-bottom: 3px solid var(--accent);
+  color: var(--accent);
+  font-weight: 800;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 0 4px;
+}
+
+.q-note {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 16px;
+  font-style: italic;
+}
+
+.multi-note {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--warning-text);
+  background: var(--warning-bg);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.opts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 1.5rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.opt {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--border-solid);
+  background: var(--surface-solid);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text);
+  text-align: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+.opt:hover:not(:disabled) {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.opt:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.opt:disabled { cursor: default; }
+
+.opt.correct {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border-color: var(--success-border);
+  box-shadow: none;
+}
+
+.opt.wrong {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border-color: var(--danger-border);
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s;
+}
+.feedback.show { opacity: 1; transform: translateY(0); }
+
+.feedback.ok { color: var(--success-text); opacity: 1; transform: translateY(0); }
+.feedback.ko { color: var(--danger-text); opacity: 1; transform: translateY(0); }
+
+.expl {
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: var(--accent-light);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-text);
+  line-height: 1.6;
+  display: none;
+  animation: slideUp 0.3s ease-out;
+}
+.expl.show { display: block; }
+
+.next-row {
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* RESULT */
+.result-card {
+  background: var(--surface-solid);
+  border: 1px solid var(--border-solid);
+  border-radius: var(--radius-lg);
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  animation: zoomIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.result-emoji {
+  font-size: 72px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.result-score {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.result-msg {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.result-perfect {
+  font-size: 14px;
+  color: var(--success-text);
+  font-weight: 700;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--success-bg);
+  border-radius: 100px;
+}
+
+.result-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* BUTTONS */
+button {
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--border-solid);
+  background: var(--surface-solid);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+button:hover {
+  background: var(--surface-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+.btn-green {
+  background: #22c55e;
+  color: #fff;
+  border-color: transparent;
+}
+.btn-green:hover { background: #16a34a; }
+
+.btn-red {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border-color: transparent;
+}
+.btn-red:hover { background: rgba(239, 68, 68, 0.2); }
+
+
+/* FLASHCARDS */
+#scene {
+  perspective: 1200px;
+  height: 260px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#flipper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  text-align: center;
+  gap: 12px;
+}
+
+.card-front {
+  background: var(--surface-solid);
+  border: 1px solid var(--border-solid);
+}
+
+.flipped #flipper {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  background: linear-gradient(135deg, var(--accent), #a855f7);
+  border: none;
+  transform: rotateY(180deg);
+  color: #fff;
+}
+
+.fc-cat-badge {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.card-front .fc-cat-badge {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.card-back .fc-cat-badge {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+}
+
+.fc-word {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+
+.fc-prep {
+  font-size: 52px;
+  font-weight: 800;
+  font-family: Georgia, serif;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.fc-note {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.fc-eg {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* We provide custom CSS for filter-btn so app.js inline styles look ok, or override them */
+.filter-btn {
+  padding: 8px 18px !important;
+  border-radius: 100px !important;
+  border: 1px solid var(--border-solid) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+  background: var(--surface-solid) !important;
+  color: var(--text-muted) !important;
+}
+
+.filter-btn.active {
+  background: var(--accent) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes zoomIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Preposiciones dependientes C1</h1>
+    <p>6 tests · ~40 preguntas · mezcla aleatoria de categorías</p>
+  </header>
+
+  <div class="tabs glass">
+    <button class="tab active" onclick="showTab('tests',this)">Tests</button>
+    <button class="tab" onclick="showTab('flash',this)">Flashcards</button>
+  </div>
+
+  <!-- TESTS -->
+  <div id="sec-tests" class="section active">
+    <div class="test-selector">
+      <h2>Selecciona un test</h2>
+      <div class="test-btns" id="test-btns"></div>
+    </div>
+
+    <div id="quiz-area" style="display:none">
+      <div class="quiz-wrap">
+        <div class="quiz-header">
+          <div>
+            <div class="quiz-title" id="quiz-title"></div>
+            <div class="quiz-sub" id="quiz-sub"></div>
+          </div>
+          <button onclick="backToSelector()">← Volver</button>
+        </div>
+
+        <div class="progress-row">
+          <span class="progress-label" id="pr-label">0 / 0</span>
+          <div class="progress-track"><div class="progress-fill" id="pr-fill" style="width:0%"></div></div>
+          <span class="progress-score" id="pr-score">—</span>
+        </div>
+
+        <div id="quiz-root"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLASHCARDS -->
+  <div id="sec-flash" class="section">
+    <div style="max-width:560px;margin:0 auto;">
+      <div class="filter-row" id="fc-filters"></div>
+      <p style="font-size:13px;color:var(--text-muted);text-align:center;margin-bottom:16px;font-weight:500;">Haz clic en la tarjeta para revelar la preposición</p>
+
+      <div id="scene" onclick="flipCard()">
+        <div id="flipper">
+          <div class="card-face card-front">
+            <div class="fc-cat-badge" id="fc-cat"></div>
+            <div class="fc-word" id="fc-word"></div>
+            <div class="fc-note" id="fc-note"></div>
+          </div>
+          <div class="card-face card-back">
+            <div class="fc-cat-badge" id="fc-bcat"></div>
+            <div class="fc-prep" id="fc-prep"></div>
+            <div class="fc-eg" id="fc-eg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:0 10px;">
+        <div style="display:flex;gap:12px;">
+          <button onclick="fcPrev()">← Anterior</button>
+          <button onclick="fcNext()" class="btn-primary">Siguiente →</button>
+        </div>
+        <span style="font-size:14px;font-weight:700;color:var(--text-muted);" id="fc-prog">1 / 1</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Data and app logic embedded directly so this file works standalone (no server needed)
+const ALL_PREPS = ['of','about','with','at','to','by','for','in','from','on','over','against','out of','under','beyond','without','after'];
+const CAT_LABELS = { adj:'adj + prep', noun:'noun + prep', expr:'expresión fija', verb:'verb + prep' };
+
+const CARDS = [
+  // ── ADJ + OF ────────────────────────────────────────────────────────────────
+  {w:'afraid',p:'of',c:'adj',s:'She is afraid ___ heights.'},
+  {w:'ashamed',p:'of',c:'adj',s:'He felt ashamed ___ his behaviour.'},
+  {w:'aware',p:'of',c:'adj',s:'Are you aware ___ the risks?'},
+  {w:'capable',p:'of',c:'adj',s:'She is capable ___ much better work.'},
+  {w:'conscious',p:'of',c:'adj',s:'He was conscious ___ his own mistakes.'},
+  {w:'fond',p:'of',c:'adj',s:'I am very fond ___ jazz.'},
+  {w:'full',p:'of',c:'adj',s:'The room was full ___ people.'},
+  {w:'indicative',p:'of',c:'adj',s:'This is indicative ___ a wider problem.'},
+  {w:'irrespective',p:'of',c:'adj',s:'Irrespective ___ cost, it must be done.'},
+  {w:'jealous',p:'of',c:'adj',s:'He was jealous ___ her success.'},
+  // ── ADJ + ABOUT ─────────────────────────────────────────────────────────────
+  {w:'annoyed',p:'about',c:'adj',n:'sobre algo',s:'She was annoyed ___ the delay.',expl:'annoyed ABOUT algo · annoyed WITH una persona'},
+  {w:'anxious',p:'about',c:'adj',s:'I am anxious ___ the exam.'},
+  {w:'certain',p:'about',c:'adj',s:'Are you certain ___ that?'},
+  {w:'excited',p:'about',c:'adj',s:'She is excited ___ the trip.'},
+  {w:'pleased',p:'about',c:'adj',s:'We are pleased ___ the result.',expl:'pleased ABOUT algo · pleased WITH algo/alguien'},
+  {w:'right',p:'about',c:'adj',s:'You were right ___ him.'},
+  {w:'serious',p:'about',c:'adj',s:'Is he serious ___ leaving?'},
+  {w:'sorry',p:'about',c:'adj',n:'lamentar algo',s:'I am sorry ___ the mistake.',expl:'sorry ABOUT algo (lamentarlo) · sorry FOR alguien (compasión)'},
+  {w:'upset',p:'about',c:'adj',s:'She was upset ___ the news.'},
+  {w:'wrong',p:'about',c:'adj',s:'I was completely wrong ___ her.'},
+  // ── ADJ + WITH ──────────────────────────────────────────────────────────────
+  {w:'angry',p:'with',c:'adj',n:'con persona',s:'She was angry ___ her brother.',expl:'angry WITH persona · angry AT cosa o situación'},
+  {w:'bored',p:'with',c:'adj',s:'I am bored ___ this routine.'},
+  {w:'happy',p:'with',c:'adj',s:'Are you happy ___ the result?'},
+  {w:'incompatible',p:'with',c:'adj',s:'This is incompatible ___ our values.'},
+  {w:'obsessed',p:'with',c:'adj',s:'He is obsessed ___ the details.'},
+  {w:'pleased',p:'with',c:'adj',n:'con algo/alguien',s:'She was pleased ___ her progress.',expl:'pleased WITH algo/alguien · pleased ABOUT algo'},
+  {w:'preoccupied',p:'with',c:'adj',s:'He seemed preoccupied ___ work.'},
+  {w:'commensurate',p:'with',c:'adj',s:'The salary is commensurate ___ experience.'},
+  // ── ADJ + AT ────────────────────────────────────────────────────────────────
+  {w:'angry',p:'at',c:'adj',n:'ante algo/situación',s:'She was angry ___ the situation.',expl:'angry AT cosa o situación · angry WITH persona'},
+  {w:'surprised',p:'at',c:'adj',n:'reacción ante algo',s:'I was surprised ___ his reaction.',expl:'surprised AT (tu reacción ante algo) · surprised BY (algo te sorprende)'},
+  {w:'good',p:'at',c:'adj',s:'She is very good ___ maths.'},
+  {w:'bad',p:'at',c:'adj',s:'I have always been bad ___ cooking.'},
+  {w:'annoyed',p:'at',c:'adj',n:'ante algo',s:'He was annoyed ___ the noise.',expl:'annoyed AT cosa · annoyed WITH persona'},
+  // ── ADJ + BY ────────────────────────────────────────────────────────────────
+  {w:'baffled',p:'by',c:'adj',s:'I was baffled ___ her response.'},
+  {w:'shocked',p:'by',c:'adj',s:'Everyone was shocked ___ the news.'},
+  {w:'surprised',p:'by',c:'adj',n:'causado por algo',s:'We were surprised ___ the outcome.',expl:'surprised BY (algo te sorprende) · surprised AT (tu reacción ante algo)'},
+  {w:'distressed',p:'by',c:'adj',s:'She was visibly distressed ___ the situation.'},
+  {w:'plagued',p:'by',c:'adj',s:'He was plagued ___ self-doubt.'},
+  {w:'detained',p:'by',c:'adj',s:'She was detained ___ the traffic.'},
+  // ── ADJ + TO ────────────────────────────────────────────────────────────────
+  {w:'addicted',p:'to',c:'adj',s:'He became addicted ___ coffee.'},
+  {w:'attentive',p:'to',c:'adj',s:'Be attentive ___ detail.'},
+  {w:'grateful',p:'to',c:'adj',s:'I am very grateful ___ you for this.'},
+  {w:'immune',p:'to',c:'adj',s:'She seemed immune ___ criticism.'},
+  {w:'impervious',p:'to',c:'adj',s:'He was impervious ___ their complaints.'},
+  {w:'indifferent',p:'to',c:'adj',s:'He was indifferent ___ their opinion.'},
+  {w:'kind',p:'to',c:'adj',s:'She has always been kind ___ strangers.'},
+  {w:'married',p:'to',c:'adj',s:'She has been married ___ him for years.'},
+  {w:'prone',p:'to',c:'adj',s:'He is prone ___ exaggeration.'},
+  {w:'liable',p:'to',c:'adj',n:'propenso a sufrir algo',s:'She is liable ___ make mistakes under pressure.',expl:'liable TO = propenso a sufrir algo · liable FOR = legalmente responsable'},
+  // ── ADJ + FOR ───────────────────────────────────────────────────────────────
+  {w:'eligible',p:'for',c:'adj',s:'Are you eligible ___ a grant?'},
+  {w:'famous',p:'for',c:'adj',s:'Paris is famous ___ its food.'},
+  {w:'ready',p:'for',c:'adj',s:'Are you ready ___ the test?'},
+  {w:'responsible',p:'for',c:'adj',s:'Who is responsible ___ this?'},
+  {w:'liable',p:'for',c:'adj',n:'legalmente responsable',s:'The company is liable ___ damages.',expl:'liable FOR = legalmente responsable · liable TO = propenso a sufrir algo'},
+  {w:'sorry',p:'for',c:'adj',n:'compasión por alguien',s:'I feel sorry ___ him.',expl:'sorry FOR alguien (compasión) · sorry ABOUT algo (lamentarlo)'},
+  {w:'early',p:'for',c:'adj',s:'She was early ___ the meeting.'},
+  {w:'late',p:'for',c:'adj',s:'He was late ___ work again.'},
+  // ── ADJ + IN ────────────────────────────────────────────────────────────────
+  {w:'interested',p:'in',c:'adj',s:'She is interested ___ art.'},
+  {w:'experienced',p:'in',c:'adj',s:'He is very experienced ___ project management.'},
+  {w:'deficient',p:'in',c:'adj',s:'The diet is deficient ___ vitamins.'},
+  {w:'implicated',p:'in',c:'adj',s:'He was implicated ___ the scandal.'},
+  // ── ADJ + FROM ──────────────────────────────────────────────────────────────
+  {w:'different',p:'from',c:'adj',s:'This version is very different ___ the original.'},
+  {w:'absent',p:'from',c:'adj',s:'She was absent ___ class yesterday.'},
+  {w:'safe',p:'from',c:'adj',s:'We are safe ___ danger here.'},
+  {w:'missing',p:'from',c:'adj',s:'A page is missing ___ the report.'},
+  {w:'derived',p:'from',c:'adj',s:'This word is derived ___ Latin.'},
+  // ── ADJ + ON ────────────────────────────────────────────────────────────────
+  {w:'keen',p:'on',c:'adj',s:'She is very keen ___ learning languages.'},
+
+  // ── NOUN + ON ───────────────────────────────────────────────────────────────
+  {w:'authority on',p:'on',c:'noun',n:'experto en',s:'She is an authority ___ medieval history.'},
+  {w:'ban on',p:'on',c:'noun',s:'There is a ban ___ smoking in public.'},
+  {w:'effect on',p:'on',c:'noun',s:'Stress has a negative effect ___ health.'},
+  {w:'influence on',p:'on',c:'noun',s:'Music has a big influence ___ mood.'},
+  {w:'tax on',p:'on',c:'noun',s:'There is a heavy tax ___ luxury goods.'},
+  {w:'comment on',p:'on',c:'noun',s:'Do you have any comment ___ this report?'},
+  {w:'restriction on',p:'on',c:'noun',s:'There are tight restrictions ___ imports.'},
+  // ── NOUN + TO ───────────────────────────────────────────────────────────────
+  {w:'access to',p:'to',c:'noun',s:'Do you have access ___ the files?'},
+  {w:'alternative to',p:'to',c:'noun',s:'Is there an alternative ___ surgery?'},
+  {w:'exception to',p:'to',c:'noun',s:'This is an exception ___ the rule.'},
+  {w:'solution to',p:'to',c:'noun',s:'We need a solution ___ this problem.'},
+  {w:'threat to',p:'to',c:'noun',s:'It poses a threat ___ public health.'},
+  {w:'attitude to',p:'to',c:'noun',s:'Her attitude ___ work has completely changed.'},
+  {w:'witness to',p:'to',c:'noun',s:'He was a witness ___ the accident.'},
+  // ── NOUN + OVER ─────────────────────────────────────────────────────────────
+  {w:'control over',p:'over',c:'noun',s:'He has no control ___ his emotions.'},
+  {w:'authority over',p:'over',c:'noun',s:'She has full authority ___ the whole team.'},
+  // ── NOUN + WITH ─────────────────────────────────────────────────────────────
+  {w:'contrast with',p:'with',c:'noun',s:'This is in stark contrast ___ the past.'},
+  {w:'relationship with',p:'with',c:'noun',s:'She has a good relationship ___ her boss.'},
+  {w:'quarrel with',p:'with',c:'noun',s:'He had a quarrel ___ his neighbour.'},
+  {w:'encounter with',p:'with',c:'noun',s:'It was an unexpected encounter ___ fame.'},
+  {w:'link with',p:'with',c:'noun',s:'There is a clear link ___ the two events.'},
+  // ── NOUN + FOR ──────────────────────────────────────────────────────────────
+  {w:'admiration for',p:'for',c:'noun',s:'I have great admiration ___ her work.'},
+  {w:'craving for',p:'for',c:'noun',s:'She had a craving ___ chocolate.'},
+  {w:'cure for',p:'for',c:'noun',s:'There is no cure ___ the common cold.'},
+  {w:'desire for',p:'for',c:'noun',s:'His desire ___ success was obvious.'},
+  {w:'sympathy for',p:'for',c:'noun',s:'I have a lot of sympathy ___ her situation.'},
+  {w:'recipe for',p:'for',c:'noun',s:'It is a recipe ___ disaster.'},
+  {w:'respect for',p:'for',c:'noun',s:'Show some respect ___ others.'},
+  {w:'responsibility for',p:'for',c:'noun',s:'He took responsibility ___ the mistake.'},
+  {w:'room for',p:'for',c:'noun',s:'There is no room ___ error.'},
+  {w:'disregard for',p:'for',c:'noun',s:'She showed complete disregard ___ the rules.'},
+
+  // ── EXPR + IN ───────────────────────────────────────────────────────────────
+  {w:'in advance',p:'in',c:'expr',s:'Please book your tickets ___ advance.'},
+  {w:'in earnest',p:'in',c:'expr',s:'Work began ___ earnest in January.'},
+  {w:'in jeopardy',p:'in',c:'expr',s:'The whole project is ___ jeopardy.'},
+  {w:'in high spirits',p:'in',c:'expr',s:'She arrived ___ high spirits.'},
+  {w:'in demand',p:'in',c:'expr',s:'Nurses are very much ___ demand right now.'},
+  {w:'in decline',p:'in',c:'expr',s:'The industry has been ___ decline for years.'},
+  {w:'in practice',p:'in',c:'expr',s:'___ practice, this approach rarely works.'},
+  {w:'in theory',p:'in',c:'expr',s:'___ theory it sounds fine, but…'},
+  {w:'in time',p:'in',c:'expr',s:'We arrived just ___ time for the show.'},
+  {w:'in turn',p:'in',c:'expr',s:'Each student spoke ___ turn.'},
+  {w:'in charge of',p:'in',c:'expr',s:'Who is ___ charge of this project?'},
+  {w:'in short',p:'in',c:'expr',s:'___ short, the plan failed.'},
+  {w:'in all likelihood',p:'in',c:'expr',s:'___ all likelihood, they will accept.'},
+  {w:'in favour of',p:'in',c:'expr',s:'Are you ___ favour of the proposal?'},
+  {w:'in trouble',p:'in',c:'expr',s:'He knew he was ___ trouble.'},
+  {w:'in harmony',p:'in',c:'expr',s:'They worked ___ harmony together.'},
+  // ── EXPR + ON ───────────────────────────────────────────────────────────────
+  {w:'on purpose',p:'on',c:'expr',s:'She did it ___ purpose.'},
+  {w:'on average',p:'on',c:'expr',s:'___ average, they work 50 hours a week.'},
+  {w:'on behalf of',p:'on',c:'expr',s:'I am speaking ___ behalf of the whole team.'},
+  {w:'on loan',p:'on',c:'expr',s:'The painting is ___ loan from the Prado.'},
+  {w:'on the verge of',p:'on',c:'expr',s:'She was ___ the verge of tears.'},
+  {w:'on the contrary',p:'on',c:'expr',s:'___ the contrary, I really enjoyed it.'},
+  {w:'on offer',p:'on',c:'expr',s:'There are some great deals ___ offer this week.'},
+  {w:'on good terms',p:'on',c:'expr',s:'They are still ___ good terms after the split.'},
+  {w:'on the market',p:'on',c:'expr',s:'The house has been ___ the market for months.'},
+  // ── EXPR + OUT OF ───────────────────────────────────────────────────────────
+  {w:'out of breath',p:'out of',c:'expr',s:'She arrived completely ___ breath.'},
+  {w:'out of stock',p:'out of',c:'expr',s:'Sorry, that item is currently ___ stock.'},
+  {w:'out of work',p:'out of',c:'expr',s:'He has been ___ work for six months.'},
+  {w:'out of reach',p:'out of',c:'expr',s:'Keep medicines ___ reach of children.'},
+  {w:'out of the ordinary',p:'out of',c:'expr',s:'Nothing ___ the ordinary happened that day.'},
+  {w:'out of pocket',p:'out of',c:'expr',s:'I ended up ___ pocket after the trip.'},
+  {w:'out of control',p:'out of',c:'expr',s:'The situation quickly got ___ control.'},
+  {w:'out of danger',p:'out of',c:'expr',s:'The patient is now ___ danger.'},
+  {w:'out of practice',p:'out of',c:'expr',s:'I am a bit ___ practice after the holidays.'},
+  // ── EXPR + UNDER ────────────────────────────────────────────────────────────
+  {w:'under pressure',p:'under',c:'expr',s:'She works very well ___ pressure.'},
+  {w:'under stress',p:'under',c:'expr',s:'He tends to eat more ___ stress.'},
+  {w:'under suspicion',p:'under',c:'expr',s:'He was ___ suspicion for weeks.'},
+  {w:'under repair',p:'under',c:'expr',s:'The bridge is currently ___ repair.'},
+  {w:'under the impression',p:'under',c:'expr',s:'I was ___ the impression that he had already left.'},
+  {w:'under an obligation',p:'under',c:'expr',s:'You are not ___ any obligation to stay.'},
+  {w:'under the influence',p:'under',c:'expr',s:'He was driving ___ the influence of alcohol.'},
+  {w:'under the circumstances',p:'under',c:'expr',s:'___ the circumstances, we had no choice.'},
+  // ── EXPR + BY ───────────────────────────────────────────────────────────────
+  {w:'by coincidence',p:'by',c:'expr',s:'We met entirely ___ coincidence.'},
+  {w:'by mistake',p:'by',c:'expr',s:'I sent the email to the wrong person ___ mistake.'},
+  {w:'by surprise',p:'by',c:'expr',s:'The announcement caught us ___ surprise.'},
+  {w:'by rights',p:'by',c:'expr',s:'___ rights, this property belongs to her.'},
+  // ── EXPR + FOR ──────────────────────────────────────────────────────────────
+  {w:'for the time being',p:'for',c:'expr',s:'We will stay here ___ the time being.'},
+  {w:'for life',p:'for',c:'expr',s:'He was sentenced ___ life.'},
+  {w:'for fear of',p:'for',c:'expr',s:'She said nothing, ___ fear of upsetting him.'},
+  {w:'for the foreseeable future',p:'for',c:'expr',s:'This policy will remain ___ the foreseeable future.'},
+  // ── EXPR + BEYOND ───────────────────────────────────────────────────────────
+  {w:'beyond belief',p:'beyond',c:'expr',s:'The scale of the disaster was ___ belief.'},
+  {w:'beyond a joke',p:'beyond',c:'expr',s:'This delay is getting ___ a joke.'},
+  {w:'beyond doubt',p:'beyond',c:'expr',s:'He is ___ doubt the best candidate.'},
+  // ── EXPR + AT ───────────────────────────────────────────────────────────────
+  {w:'at fault',p:'at',c:'expr',s:'Who exactly was ___ fault?'},
+  {w:'at first sight',p:'at',c:'expr',s:'It was love ___ first sight.'},
+  {w:'at large',p:'at',c:'expr',s:'The suspect is still ___ large.'},
+  {w:'at any rate',p:'at',c:'expr',s:'___ any rate, we must keep trying.'},
+  // ── EXPR + WITH ─────────────────────────────────────────────────────────────
+  {w:'with regard to',p:'with',c:'expr',s:'___ regard to your application, we are pleased to inform you…'},
+  {w:'with a view to',p:'with',c:'expr',s:'She studied hard ___ a view to passing the exam.'},
+  {w:'with the exception of',p:'with',c:'expr',s:'Everyone passed, ___ the exception of two students.'},
+  {w:'with intent to',p:'with',c:'expr',s:'He entered the building ___ intent to steal.'},
+  // ── EXPR + WITHOUT ──────────────────────────────────────────────────────────
+  {w:'without delay',p:'without',c:'expr',s:'Please respond ___ delay.'},
+  {w:'without exception',p:'without',c:'expr',s:'All students, ___ exception, must attend.'},
+  // ── EXPR + AFTER ────────────────────────────────────────────────────────────
+  {w:'after all',p:'after',c:'expr',s:'She decided to go ___ all.'},
+
+  // ── VERB + IN ───────────────────────────────────────────────────────────────
+  {w:'result',p:'in',c:'verb',n:'causar algo',s:'The accident resulted ___ serious injuries.',expl:'result IN = causar algo · result FROM = ser consecuencia de algo'},
+  {w:'specialise',p:'in',c:'verb',s:'She specialises ___ tax law.'},
+  {w:'succeed',p:'in',c:'verb',n:'lograr algo',s:'Did you succeed ___ passing the exam?',expl:'succeed IN = lograr algo · succeed TO = heredar un cargo'},
+  {w:'confide',p:'in',c:'verb',s:'She confided ___ her best friend.'},
+  {w:'engrossed',p:'in',c:'verb',s:'He was completely engrossed ___ the book.'},
+  {w:'involve',p:'in',c:'verb',s:'He was involved ___ the project from the start.'},
+  {w:'absorbed',p:'in',c:'verb',s:'She was absorbed ___ her work.'},
+  {w:'implicate',p:'in',c:'verb',s:'He was implicated ___ the fraud.'},
+  // ── VERB + FOR ──────────────────────────────────────────────────────────────
+  {w:'account',p:'for',c:'verb',s:'How do you account ___ this discrepancy?'},
+  {w:'allow',p:'for',c:'verb',s:'We need to allow ___ possible delays.'},
+  {w:'apologise',p:'for',c:'verb',s:'He apologised ___ being late.'},
+  {w:'blame',p:'for',c:'verb',s:"Don't blame me ___ that.",expl:'blame sb FOR sth (criticar a alguien) · blame sth ON sb (achacar algo a alguien)'},
+  {w:'care',p:'for',c:'verb',s:'She really cares ___ her patients.'},
+  {w:'pay',p:'for',c:'verb',s:'Who is going to pay ___ all this?'},
+  {w:'cater',p:'for',c:'verb',s:'The event caters ___ all ages.'},
+  {w:'earmark',p:'for',c:'verb',s:'The funds were earmarked ___ research.'},
+  // ── VERB + OF ───────────────────────────────────────────────────────────────
+  {w:'accuse',p:'of',c:'verb',s:'He was accused ___ theft.'},
+  {w:'convict',p:'of',c:'verb',s:'She was convicted ___ fraud.'},
+  {w:'remind',p:'of',c:'verb',s:'This reminds me ___ home.'},
+  {w:'suspect',p:'of',c:'verb',s:'They suspected him ___ lying.'},
+  // ── VERB + WITH ─────────────────────────────────────────────────────────────
+  {w:'comply',p:'with',c:'verb',s:'You must comply ___ the regulations.'},
+  {w:'deal',p:'with',c:'verb',s:'How do you deal ___ stress?'},
+  {w:'collide',p:'with',c:'verb',s:'The car collided ___ a wall.'},
+  {w:'coincide',p:'with',c:'verb',s:'The dates coincide ___ ours.'},
+  {w:'provide',p:'with',c:'verb',s:'We will provide you ___ all the details.'},
+  {w:'tamper',p:'with',c:'verb',s:'Someone had tampered ___ the evidence.'},
+  {w:'trust',p:'with',c:'verb',s:'Can I trust you ___ a secret?'},
+  {w:'plead',p:'with',c:'verb',s:'She pleaded ___ him not to go.'},
+  {w:'associate',p:'with',c:'verb',s:'I do not want to be associated ___ that group.'},
+  {w:'acquaint',p:'with',c:'verb',s:'Please acquaint yourself ___ the rules.'},
+  {w:'confuse',p:'with',c:'verb',s:'People often confuse him ___ his brother.'},
+  {w:'face',p:'with',c:'verb',s:'We were faced ___ a difficult choice.'},
+  // ── VERB + FROM ─────────────────────────────────────────────────────────────
+  {w:'benefit',p:'from',c:'verb',s:'You would benefit ___ more exercise.'},
+  {w:'differ',p:'from',c:'verb',s:'This version differs ___ the original.'},
+  {w:'refrain',p:'from',c:'verb',s:'Please refrain ___ smoking.'},
+  {w:'resign',p:'from',c:'verb',s:'She resigned ___ her post last week.'},
+  {w:'result',p:'from',c:'verb',n:'ser consecuencia de',s:'The fire resulted ___ a gas leak.',expl:'result FROM = ser consecuencia de · result IN = causar algo'},
+  {w:'stem',p:'from',c:'verb',s:'Most problems stem ___ poor communication.'},
+  {w:'suffer',p:'from',c:'verb',s:'He suffers ___ migraines.'},
+  {w:'deter',p:'from',c:'verb',s:'Nothing would deter her ___ trying.'},
+  {w:'distinguish',p:'from',c:'verb',s:'Can you distinguish one ___ the other?'},
+  {w:'exempt',p:'from',c:'verb',s:'Children under five are exempt ___ the fee.'},
+  {w:'expel',p:'from',c:'verb',s:'He was expelled ___ school.'},
+  {w:'distract',p:'from',c:'verb',s:'Stop distracting me ___ my work.'},
+  {w:'bar',p:'from',c:'verb',s:'He was barred ___ entering the country.'},
+  {w:'derive',p:'from',c:'verb',s:'She derives great pleasure ___ painting.'},
+  // ── VERB + ON ───────────────────────────────────────────────────────────────
+  {w:'depend',p:'on',c:'verb',s:'It depends ___ the weather.'},
+  {w:'insist',p:'on',c:'verb',s:'She insisted ___ paying the bill.'},
+  {w:'elaborate',p:'on',c:'verb',s:'Could you elaborate ___ that point?',expl:'elaborate ON = desarrollar un punto (siempre ON, nunca ABOUT ni AT)'},
+  {w:'base',p:'on',c:'verb',s:'The film is based ___ a true story.'},
+  {w:'concentrate',p:'on',c:'verb',s:'Try to concentrate ___ the task in hand.'},
+  {w:'decide',p:'on',c:'verb',n:'elegir algo concreto',s:'Have you decided ___ a date yet?',expl:'decide ON = elegir algo concreto · decide ABOUT = deliberar en general'},
+  {w:'impose',p:'on',c:'verb',s:"I don't want to impose ___ you."},
+  {w:'pride',p:'on',c:'verb',s:'She prides herself ___ her punctuality.'},
+  {w:'blame',p:'on',c:'verb',n:'achacar algo a alguien',s:'He blamed the failure ___ bad luck.',expl:'blame sth ON sb (achacar algo a alguien) · blame sb FOR sth (criticar a alguien)'},
+  {w:'centre',p:'on',c:'verb',s:'The debate centres ___ education funding.'},
+  // ── VERB + TO ───────────────────────────────────────────────────────────────
+  {w:'appeal',p:'to',c:'verb',s:'The idea really appeals ___ me.'},
+  {w:'apply',p:'to',c:'verb',s:'This rule applies ___ everyone without exception.'},
+  {w:'commit',p:'to',c:'verb',s:'Are you fully committed ___ this plan?'},
+  {w:'confess',p:'to',c:'verb',s:'He finally confessed ___ the crime.'},
+  {w:'devote',p:'to',c:'verb',s:'She devoted her life ___ medicine.'},
+  {w:'react',p:'to',c:'verb',s:'How did he react ___ the news?'},
+  {w:'refer',p:'to',c:'verb',s:'The footnote refers ___ page 12.'},
+  {w:'resort',p:'to',c:'verb',s:"Don't resort ___ threats."},
+  {w:'attribute',p:'to',c:'verb',s:'The painting is attributed ___ Vermeer.'},
+  {w:'attend',p:'to',c:'verb',s:'Please attend ___ this matter urgently.'},
+  {w:'see',p:'to',c:'verb',n:'encargarse de',s:"I'll see ___ it right away."},
+  {w:'be used to',p:'to',c:'verb',n:'+ gerundio',s:'I am used ___ working late.'},
+  {w:'subject',p:'to',c:'verb',s:'Prices are subject ___ change without notice.'},
+  {w:'succeed',p:'to',c:'verb',n:'heredar un cargo',s:'She succeeded ___ the throne at the age of 25.',expl:'succeed TO = heredar un cargo · succeed IN = lograr algo'},
+  // ── VERB + ABOUT ────────────────────────────────────────────────────────────
+  {w:'argue',p:'about',c:'verb',s:'They always argue ___ money.',expl:'argue ABOUT = discutir sobre algo · argue WITH = discutir con alguien'},
+  {w:'boast',p:'about',c:'verb',s:'He loves boasting ___ his new car.'},
+  {w:'protest',p:'about',c:'verb',n:'quejarse de algo',s:'Students protested ___ the tuition fee cuts.',expl:'protest ABOUT = quejarse de algo · protest AGAINST = manifestarse en contra'},
+  {w:'be concerned',p:'about',c:'verb',s:'I am concerned ___ the level of pollution.'},
+  {w:'decide',p:'about',c:'verb',n:'deliberar en general',s:'We still need to decide ___ the budget.',expl:'decide ABOUT = deliberar en general · decide ON = elegir algo concreto'},
+  // ── VERB + AT ───────────────────────────────────────────────────────────────
+  {w:'glance',p:'at',c:'verb',s:'She glanced ___ her watch nervously.'},
+  {w:'hint',p:'at',c:'verb',s:'He hinted ___ a possible promotion.'},
+  {w:'marvel',p:'at',c:'verb',s:'We marvelled ___ the view from the top.'},
+  {w:'guess',p:'at',c:'verb',s:'I can only guess ___ her reasons.'},
+  // ── VERB + AGAINST ──────────────────────────────────────────────────────────
+  {w:'protest',p:'against',c:'verb',n:'manifestarse en contra',s:'Thousands marched ___ the new law.',expl:'protest AGAINST = manifestarse en contra · protest ABOUT = quejarse de algo'},
+  {w:'insure',p:'against',c:'verb',s:'You should insure your home ___ flood damage.'},
+];
+
+// ── DUAL-PREP DETECTION ────────────────────────────────────────────────────
+// Finds words (adj/verb) that appear with more than one preposition
+const _prepMap = {};
+CARDS.forEach(c => {
+  if (c.c === 'adj' || c.c === 'verb') {
+    if (!_prepMap[c.w]) _prepMap[c.w] = new Set();
+    _prepMap[c.w].add(c.p);
+  }
+});
+const multiPrepWords = new Set(Object.keys(_prepMap).filter(k => _prepMap[k].size > 1));
+
+// ── RANDOM TEST GENERATION ─────────────────────────────────────────────────
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+}
+
+function describeCards(cards) {
+  const ct = {};
+  cards.forEach(c => { ct[c.c] = (ct[c.c] || 0) + 1; });
+  return ['adj','noun','expr','verb'].filter(k => ct[k]).map(k => `${ct[k]} ${k}`).join(' · ');
+}
+
+const TESTS_KEY = 'prep-c1-tests-v1';
+
+function buildAndSaveTests() {
+  const allIdx = CARDS.map((_, i) => i);
+  shuffle(allIdx);
+  const n = allIdx.length;
+  const base = Math.floor(n / 6);
+  const extra = n % 6;
+  const groups = [];
+  let pos = 0;
+  for (let i = 0; i < 6; i++) {
+    const sz = base + (i < extra ? 1 : 0);
+    groups.push(allIdx.slice(pos, pos + sz));
+    pos += sz;
+  }
+  localStorage.setItem(TESTS_KEY, JSON.stringify(groups));
+  return groups;
+}
+
+function loadTests() {
+  let groups = null;
+  try {
+    const stored = localStorage.getItem(TESTS_KEY);
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      // Validate: 6 groups, all indices valid, total = CARDS.length
+      if (Array.isArray(parsed) && parsed.length === 6 &&
+          parsed.flat().length === CARDS.length &&
+          parsed.flat().every(i => i >= 0 && i < CARDS.length)) {
+        groups = parsed;
+      }
+    }
+  } catch(e) {}
+  if (!groups) groups = buildAndSaveTests();
+  return groups.map((idxArr, i) => {
+    const cards = idxArr.map(j => CARDS[j]);
+    return { id: i + 1, label: `Test ${i + 1}`, desc: describeCards(cards), cards };
+  });
+}
+
+let TESTS = loadTests();
+
+// ── STATE ──────────────────────────────────────────────────────────────────
+const passed = {};
+let currentTest = null;
+let qDeck = [], qi = 0, score = 0, answered_count = 0, wrongCards = [];
+
+// ── TEST SELECTOR ──────────────────────────────────────────────────────────
+function buildSelector() {
+  const el = document.getElementById('test-btns');
+  el.innerHTML = '';
+  TESTS.forEach(t => {
+    const b = document.createElement('button');
+    b.className = 'test-btn' + (passed[t.id] ? ' done' : '');
+    b.innerHTML = `<strong>${t.label}</strong><span class="test-range">${t.desc} · ${t.cards.length} preguntas</span>`;
+    b.onclick = () => startTest(t.id);
+    el.appendChild(b);
+  });
+}
+
+function startTest(id) {
+  currentTest = TESTS.find(t => t.id === id);
+  qDeck = [...currentTest.cards];
+  shuffle(qDeck);
+  qi = 0; score = 0; answered_count = 0; wrongCards = [];
+  document.getElementById('quiz-title').textContent = currentTest.label;
+  document.getElementById('quiz-sub').textContent = currentTest.cards.length + ' preguntas · responde todas para ver el resultado';
+  document.getElementById('quiz-area').style.display = 'block';
+  document.querySelector('.test-selector').style.display = 'none';
+  updateProgress();
+  renderQ();
+}
+
+function startWrongCards() {
+  qDeck = [...wrongCards];
+  shuffle(qDeck);
+  qi = 0; score = 0; answered_count = 0; wrongCards = [];
+  document.getElementById('quiz-title').textContent = currentTest.label + ' — Fallos';
+  document.getElementById('quiz-sub').textContent = qDeck.length + ' preguntas falladas · vuelve a responderlas';
+  updateProgress();
+  renderQ();
+}
+
+function backToSelector() {
+  document.getElementById('quiz-area').style.display = 'none';
+  document.querySelector('.test-selector').style.display = 'block';
+  buildSelector();
+}
+
+// ── QUIZ ───────────────────────────────────────────────────────────────────
+function renderQ() {
+  const c = qDeck[qi];
+  const correct = c.p;
+  const wrong = ALL_PREPS.filter(p => p !== correct);
+  shuffle(wrong);
+  const opts = [correct, wrong[0], wrong[1], wrong[2]];
+  shuffle(opts);
+
+  const sentHtml = c.s
+    ? c.s.replace('___', '<span class="blank" id="blank">___</span>')
+    : `${c.w} <span class="blank" id="blank">___</span> …`;
+
+  const multiNote = multiPrepWords.has(c.w)
+    ? `<div class="multi-note">⚠️ Esta palabra acepta más de una preposición según el contexto</div>`
+    : '';
+
+  const explHtml = c.expl
+    ? `<div class="expl" id="expl">💡 ${c.expl}</div>`
+    : `<div id="expl"></div>`;
+
+  document.getElementById('quiz-root').innerHTML = `
+    <div class="q-card">
+      <div class="q-label">${CAT_LABELS[c.c]} · Pregunta ${qi + 1} de ${qDeck.length}</div>
+      <div class="q-sentence">${sentHtml}</div>
+      ${c.n ? `<div class="q-note">${c.n}</div>` : ''}
+      ${multiNote}
+    </div>
+    <div class="opts">
+      ${opts.map(o => `<button class="opt" onclick="answer(this,'${o}','${correct}')">${o}</button>`).join('')}
+    </div>
+    <div class="feedback" id="fb"></div>
+    ${explHtml}
+    <div class="next-row">
+      <button class="btn-primary" onclick="nextQ()">Siguiente →</button>
+    </div>
+  `;
+}
+
+function answer(btn, chosen, correct) {
+  if (document.querySelector('.opt:disabled')) return;
+  answered_count++;
+  document.getElementById('blank').textContent = chosen;
+  document.querySelectorAll('.opt').forEach(b => b.disabled = true);
+  const fb = document.getElementById('fb');
+  if (chosen === correct) {
+    btn.classList.add('correct'); score++;
+    fb.textContent = '✓ Correcto'; fb.className = 'feedback ok';
+  } else {
+    btn.classList.add('wrong');
+    fb.textContent = `✗ Era: ${correct}`; fb.className = 'feedback ko';
+    document.querySelectorAll('.opt').forEach(b => { if (b.textContent === correct) b.classList.add('correct'); });
+    wrongCards.push(qDeck[qi]);
+  }
+  // Always show expl after answering (dual-prep info or contextual note)
+  const expl = document.getElementById('expl');
+  if (expl && expl.textContent.trim()) expl.classList.add('show');
+  updateProgress();
+}
+
+function nextQ() {
+  qi++;
+  if (qi >= qDeck.length) { showResult(); return; }
+  renderQ();
+}
+
+function showResult() {
+  const total = qDeck.length;
+  const pct = Math.round(score / total * 100);
+  const perfect = score === total;
+  if (perfect) passed[currentTest.id] = true;
+  const emoji = perfect ? '🏆' : pct >= 70 ? '📈' : '📚';
+  const msg = perfect ? '¡Test superado! Puedes pasar al siguiente.' : pct >= 70 ? 'Casi — repite para conseguir el 100%.' : 'Repasa los patrones e inténtalo de nuevo.';
+
+  document.getElementById('quiz-root').innerHTML = `
+    <div class="result-card">
+      <div class="result-emoji">${emoji}</div>
+      <div class="result-score">${score} / ${total}</div>
+      <div class="result-msg">${msg}</div>
+      ${perfect ? `<div class="result-perfect">✓ Test ${currentTest.id} completado al 100%</div>` : ''}
+      <div class="result-btns">
+        <button class="btn-primary" onclick="startTest(${currentTest.id})">Repetir test</button>
+        ${wrongCards.length > 0 ? `<button class="btn-red" onclick="startWrongCards()">Repetir fallos (${wrongCards.length})</button>` : ''}
+        <button onclick="backToSelector()">Ver todos los tests</button>
+        ${perfect && currentTest.id < 6 ? `<button class="btn-green" onclick="startTest(${currentTest.id + 1})">Test ${currentTest.id + 1} →</button>` : ''}
+      </div>
+    </div>
+  `;
+  // Show final score in progress bar
+  document.getElementById('pr-label').textContent = `${score} / ${total}`;
+  document.getElementById('pr-fill').style.width = '100%';
+  document.getElementById('pr-score').textContent = pct + '%';
+}
+
+function updateProgress() {
+  const total = qDeck.length;
+  const progress = total ? Math.round(answered_count / total * 100) : 0;
+  const accuracy = answered_count ? Math.round(score / answered_count * 100) : null;
+  document.getElementById('pr-label').textContent = `${answered_count} / ${total}`;
+  document.getElementById('pr-fill').style.width = progress + '%';
+  document.getElementById('pr-score').textContent = accuracy !== null ? accuracy + '%' : '—';
+}
+
+// ── FLASHCARDS ─────────────────────────────────────────────────────────────
+let activeCats = new Set(['adj', 'noun', 'expr', 'verb']);
+let deck = [], fi = 0;
+
+function buildDeck() {
+  deck = CARDS.filter(c => activeCats.has(c.c));
+  shuffle(deck); fi = 0;
+}
+
+function showCard() {
+  if (!deck.length) return;
+  const c = deck[fi];
+  document.getElementById('fc-cat').textContent = CAT_LABELS[c.c];
+  document.getElementById('fc-word').textContent = c.w;
+  document.getElementById('fc-note').textContent = c.n ? `(${c.n})` : '';
+  document.getElementById('fc-bcat').textContent = CAT_LABELS[c.c];
+  document.getElementById('fc-prep').textContent = c.p;
+  document.getElementById('fc-eg').textContent = c.s ? c.s.replace('___', `[${c.p}]`) : `${c.w} ${c.p} …`;
+  document.getElementById('fc-prog').textContent = `${fi + 1} / ${deck.length}`;
+  document.getElementById('scene').classList.remove('flipped');
+  document.getElementById('flipper').style.transform = '';
+}
+
+function flipCard() {
+  const s = document.getElementById('scene');
+  const f = document.getElementById('flipper');
+  if (s.classList.contains('flipped')) {
+    s.classList.remove('flipped'); f.style.transform = '';
+  } else {
+    s.classList.add('flipped'); f.style.transform = 'rotateY(180deg)';
+  }
+}
+
+function fcNext() { fi = (fi + 1) % deck.length; showCard(); }
+function fcPrev() { fi = (fi - 1 + deck.length) % deck.length; showCard(); }
+
+function buildFilters() {
+  const el = document.getElementById('fc-filters');
+  Object.entries(CAT_LABELS).forEach(([k, v]) => {
+    const b = document.createElement('button');
+    b.className = 'filter-btn active';
+    b.textContent = v;
+    b.onclick = () => {
+      if (activeCats.has(k)) {
+        if (activeCats.size > 1) {
+          activeCats.delete(k);
+          b.classList.remove('active');
+        }
+      } else {
+        activeCats.add(k);
+        b.classList.add('active');
+      }
+      buildDeck(); showCard();
+    };
+    el.appendChild(b);
+  });
+}
+
+function showTab(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('sec-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ── INIT ───────────────────────────────────────────────────────────────────
+buildSelector();
+buildFilters();
+buildDeck();
+showCard();
+</script>
+</body>
+</html>

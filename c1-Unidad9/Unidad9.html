@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 Advanced - Unit 9: Future Tenses & Future Modals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .active-tab {
+            border-color: #0284c7; /* sky-600 */
+            color: #0284c7;
+        }
+
+        .inactive-tab {
+            border-color: transparent;
+            color: #6b7280; /* gray-500 */
+        }
+
+        .inactive-tab:hover {
+            border-color: #e5e7eb; /* gray-200 */
+            color: #374151; /* gray-700 */
+        }
+
+        .tab-content {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .input-kt {
+            border: none;
+            border-bottom: 2px solid #d1d5db; /* gray-300 */
+            background-color: transparent;
+            padding: 0.25rem 0.5rem;
+            font-weight: 600;
+            color: #1f2937; /* gray-800 */
+            text-align: center;
+            transition: all 0.2s;
+            outline: none;
+            min-width: 180px;
+        }
+
+        .input-kt:focus {
+            border-bottom-color: #0284c7; /* sky-600 */
+        }
+
+        .input-kt.correct {
+            border-bottom-color: #22c55e; /* green-500 */
+            color: #15803d; /* green-700 */
+            background-color: #f0fdf4; /* green-50 */
+        }
+
+        .input-kt.incorrect {
+            border-bottom-color: #ef4444; /* red-500 */
+            color: #b91c1c; /* red-700 */
+            background-color: #fef2f2; /* red-50 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 9</span></h1>
+            <p class="text-gray-500 mt-1">Future Tenses & Future Modals</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory & Modals
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
+                <button onclick="switchTab('practice')" id="tab-practice" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Future Tenses & Future Modals</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Master these C1 templates to boost your Speaking exam score.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tab -->
+        <section id="content-practice" class="tab-content hidden">
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-sky-50 border-b border-sky-100 p-6">
+                    <h2 class="text-xl font-bold text-gray-900">Keyword Transformation (Part 4)</h2>
+                    <p class="text-sm text-gray-600 mt-2">Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.</p>
+                </div>
+
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-sm font-medium text-gray-500">Question <span id="current-q-num">1</span> of <span id="total-q-num">20</span></span>
+                        <div class="flex space-x-2">
+                            <span id="score-display" class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded shadow-sm">Score: 0/20</span>
+                        </div>
+                    </div>
+
+                    <div id="question-container" class="min-h-[200px]">
+                        <!-- Loaded dynamically -->
+                    </div>
+
+                    <div class="mt-8 flex justify-between items-center border-t pt-6">
+                        <button onclick="prevQuestion()" id="btn-prev" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Previous</button>
+                        <button onclick="checkAnswer()" id="btn-check" class="px-6 py-2 bg-sky-600 text-white rounded-md text-sm font-medium hover:bg-sky-700 transition-colors shadow-sm">Check Answer</button>
+                        <button onclick="nextQuestion()" id="btn-next" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Data embedded directly so this file works standalone (no server needed)
+        const theoryData = {
+  "future_tenses_plan": [
+    {
+      "structure": "Be going to (Future prediction based on evidence)",
+      "example": "Look at those dark clouds; it is going to rain."
+    },
+    {
+      "structure": "Be going to (Future plan)",
+      "example": "I am going to study a Master's degree next year."
+    },
+    {
+      "structure": "Present Continuous (Future plan with someone else / appointment)",
+      "example": "I'm seeing the dentist tomorrow at 5 PM."
+    },
+    {
+      "structure": "to be + to + inf (Formal arrangement)",
+      "example": "The Prime Minister is to visit Spain next month."
+    },
+    {
+      "structure": "Present Simple (Event fixed in a timetable - films, transports, concerts, exams)",
+      "example": "The train to London leaves at 8:00 AM."
+    },
+    {
+      "structure": "to be + due to + inf (Expected event)",
+      "example": "The exam is due to start in ten minutes."
+    }
+  ],
+  "future_tenses_noplan": [
+    {
+      "structure": "Future Simple (Make a future offer - Shall we/I)",
+      "example": "Shall I open the window for you?"
+    },
+    {
+      "structure": "Future Simple (Universal facts / future factual statements)",
+      "example": "The sun will rise at 6:30 AM tomorrow."
+    },
+    {
+      "structure": "Future Simple (Make a future prediction without evidence)",
+      "example": "I think robots will do all the housework in 2050."
+    },
+    {
+      "structure": "Future Simple (Future intention with think/expect/hope/believe/suppose)",
+      "example": "I hope she will pass the driving test."
+    },
+    {
+      "structure": "Future Simple (Spontaneous decision made at the moment of speaking)",
+      "example": "We are out of milk? I will go to the supermarket right now."
+    }
+  ],
+  "modal_verbs_future": [
+    {
+      "structure": "Possibility (may / might / could + base form)",
+      "example": "It might rain later, so take an umbrella."
+    },
+    {
+      "structure": "Probability 1 (may / might / could + well + base form)",
+      "example": "She may well get the promotion; she has worked very hard."
+    },
+    {
+      "structure": "Probability 2 (to be likely to + inf)",
+      "example": "They are likely to win the match tomorrow."
+    },
+    {
+      "structure": "Probability 3 (There is a little / slight / strong / some likelihood + of + -ing)",
+      "example": "There is a strong likelihood of him passing the exam."
+    },
+    {
+      "structure": "Probability 4 (There is a likelihood + that clause)",
+      "example": "There is a strong likelihood that he will pass the exam."
+    },
+    {
+      "structure": "Certainty (to be + bound to + inf)",
+      "example": "He is bound to complain about the food; he never likes anything."
+    }
+  ],
+  "cambridge_speaking_strategies": [
+    {
+      "part": "Part 4 (Predicting society's future)",
+      "structure": "There is a strong likelihood that [subject] will increasingly [verb base] in the coming years.",
+      "example": "There is a strong likelihood that people will increasingly work from home in the coming years.",
+      "translation": "Hay una gran probabilidad de que [sujeto] cada vez [verbo] más en los próximos años."
+    },
+    {
+      "part": "Part 3 (Discussing inevitable consequences)",
+      "structure": "If we choose this option, we are bound to face [problem/situation].",
+      "example": "If we choose this option, we are bound to face financial difficulties.",
+      "translation": "Si elegimos esta opción, es casi seguro que nos enfrentemos a [problema/situación]."
+    },
+    {
+      "part": "Part 2 (Speculating about what will happen next in the picture)",
+      "structure": "Judging by [evidence], it seems highly likely to me that [subject] is going to [verb].",
+      "example": "Judging by his expression, it seems highly likely to me that he is going to complain to the manager.",
+      "translation": "A juzgar por [evidencia], me parece muy probable que [sujeto] vaya a [verbo]."
+    },
+    {
+      "part": "Buying time / Organizing thoughts (Part 3 & 4)",
+      "structure": "I'm going to have to say that [opinion], mainly because...",
+      "example": "I'm going to have to say that the first picture is more relevant, mainly because...",
+      "translation": "Voy a tener que decir que [opinión], principalmente porque..."
+    }
+  ]
+};
+
+        const exercisesData = [
+  {
+    "lead_in_sentence": "They will probably win the game tomorrow.",
+    "keyword": "LIKELY",
+    "second_sentence_start": "They",
+    "second_sentence_end": "the game tomorrow.",
+    "correct_answer": "are likely to win"
+  },
+  {
+    "lead_in_sentence": "It is almost certain that he will complain about the noise.",
+    "keyword": "BOUND",
+    "second_sentence_start": "He",
+    "second_sentence_end": "about the noise.",
+    "correct_answer": "is bound to complain"
+  },
+  {
+    "lead_in_sentence": "The train is expected to arrive at 8:30.",
+    "keyword": "DUE",
+    "second_sentence_start": "The train",
+    "second_sentence_end": "at 8:30.",
+    "correct_answer": "is due to arrive"
+  },
+  {
+    "lead_in_sentence": "There is a strong possibility that she will pass the exam.",
+    "keyword": "LIKELIHOOD",
+    "second_sentence_start": "There is a",
+    "second_sentence_end": "pass the exam.",
+    "correct_answer": "strong likelihood that she will"
+  },
+  {
+    "lead_in_sentence": "I'm sure it will rain later, so take an umbrella.",
+    "keyword": "WELL",
+    "second_sentence_start": "It",
+    "second_sentence_end": "later, so take an umbrella.",
+    "correct_answer": "may well rain"
+  },
+  {
+    "lead_in_sentence": "I predict that technology will increasingly control our lives.",
+    "keyword": "LIKELIHOOD",
+    "second_sentence_start": "There is a",
+    "second_sentence_end": "increasingly control our lives.",
+    "correct_answer": "strong likelihood that technology will"
+  },
+  {
+    "lead_in_sentence": "The concert is scheduled to start in five minutes.",
+    "keyword": "DUE",
+    "second_sentence_start": "The concert",
+    "second_sentence_end": "in five minutes.",
+    "correct_answer": "is due to start"
+  },
+  {
+    "lead_in_sentence": "She will probably get the job because she is very qualified.",
+    "keyword": "WELL",
+    "second_sentence_start": "She",
+    "second_sentence_end": "the job because she is very qualified.",
+    "correct_answer": "may well get"
+  },
+  {
+    "lead_in_sentence": "I am almost sure they'll face financial difficulties if they do that.",
+    "keyword": "BOUND",
+    "second_sentence_start": "They",
+    "second_sentence_end": "financial difficulties if they do that.",
+    "correct_answer": "are bound to face"
+  },
+  {
+    "lead_in_sentence": "What are your plans for next weekend?",
+    "keyword": "GOING",
+    "second_sentence_start": "What",
+    "second_sentence_end": "do next weekend?",
+    "correct_answer": "are you going to"
+  },
+  {
+    "lead_in_sentence": "My dentist appointment is tomorrow at 5 PM.",
+    "keyword": "SEEING",
+    "second_sentence_start": "I",
+    "second_sentence_end": "tomorrow at 5 PM.",
+    "correct_answer": "am seeing the dentist"
+  },
+  {
+    "lead_in_sentence": "The President's formal visit to France is next week.",
+    "keyword": "IS",
+    "second_sentence_start": "The President",
+    "second_sentence_end": "France next week.",
+    "correct_answer": "is to visit"
+  },
+  {
+    "lead_in_sentence": "I am absolutely sure he will fail the driving test.",
+    "keyword": "BOUND",
+    "second_sentence_start": "He",
+    "second_sentence_end": "the driving test.",
+    "correct_answer": "is bound to fail"
+  },
+  {
+    "lead_in_sentence": "There is a small chance of him winning the competition.",
+    "keyword": "LIKELIHOOD",
+    "second_sentence_start": "There is a slight",
+    "second_sentence_end": "the competition.",
+    "correct_answer": "likelihood of him winning"
+  },
+  {
+    "lead_in_sentence": "It is expected that the new law will be passed tomorrow.",
+    "keyword": "DUE",
+    "second_sentence_start": "The new law",
+    "second_sentence_end": "tomorrow.",
+    "correct_answer": "is due to be passed"
+  },
+  {
+    "lead_in_sentence": "Do you want me to open the window for you?",
+    "keyword": "SHALL",
+    "second_sentence_start": "",
+    "second_sentence_end": "the window for you?",
+    "correct_answer": "Shall I open"
+  },
+  {
+    "lead_in_sentence": "I think robots will do all the housework in the future.",
+    "keyword": "EXPECT",
+    "second_sentence_start": "I",
+    "second_sentence_end": "all the housework in the future.",
+    "correct_answer": "expect robots will do"
+  },
+  {
+    "lead_in_sentence": "Look at those dark clouds; rain is imminent.",
+    "keyword": "GOING",
+    "second_sentence_start": "Look at those dark clouds; it",
+    "second_sentence_end": "rain.",
+    "correct_answer": "is going to"
+  },
+  {
+    "lead_in_sentence": "We will probably see a rise in temperatures next month.",
+    "keyword": "LIKELY",
+    "second_sentence_start": "Temperatures",
+    "second_sentence_end": "rise next month.",
+    "correct_answer": "are likely to"
+  },
+  {
+    "lead_in_sentence": "It is highly probable that he will arrive late.",
+    "keyword": "WELL",
+    "second_sentence_start": "He",
+    "second_sentence_end": "late.",
+    "correct_answer": "may well arrive"
+  }
+];
+
+        // State
+        let currentQuestionIndex = 0;
+        let userAnswers = {};
+        let score = 0;
+
+        // DOM Elements
+        const contentTheory = document.getElementById('content-theory');
+        const contentSpeaking = document.getElementById('content-speaking');
+        const contentPractice = document.getElementById('content-practice');
+
+        const theoryContainer = document.getElementById('theory-container');
+        const speakingContainer = document.getElementById('speaking-container');
+        const questionContainer = document.getElementById('question-container');
+
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        const btnCheck = document.getElementById('btn-check');
+
+        window.switchTab = function(tabId) {
+            // Hide all contents
+            ['theory', 'speaking', 'practice'].forEach(id => {
+                document.getElementById(`content-${id}`).classList.remove('block');
+                document.getElementById(`content-${id}`).classList.add('hidden');
+
+                const btn = document.getElementById(`tab-${id}`);
+                btn.classList.remove('active-tab');
+                btn.classList.add('inactive-tab');
+            });
+
+            // Show active content
+            document.getElementById(`content-${tabId}`).classList.remove('hidden');
+            document.getElementById(`content-${tabId}`).classList.add('block');
+
+            const activeBtn = document.getElementById(`tab-${tabId}`);
+            activeBtn.classList.remove('inactive-tab');
+            activeBtn.classList.add('active-tab');
+        };
+
+        function renderTheory() {
+            if (!theoryData) return;
+
+            const sections = [
+                { title: 'A) FUTURE TENSES (PLAN)', data: theoryData.future_tenses_plan, classes: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900' } },
+                { title: 'B) FUTURE TENSES (Ø PLAN / NO PLAN)', data: theoryData.future_tenses_noplan, classes: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900' } },
+                { title: 'C) MODAL VERBS FOR THE FUTURE', data: theoryData.modal_verbs_future, classes: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900' } }
+            ];
+
+            let html = '';
+
+            sections.forEach(section => {
+                html += `
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="bg-gray-50 border-b border-gray-100 px-6 py-4">
+                            <h3 class="text-lg font-bold text-gray-800">${section.title}</h3>
+                        </div>
+                        <div class="divide-y divide-gray-100">
+                `;
+
+                section.data.forEach(item => {
+                    html += `
+                        <div class="p-6 hover:bg-gray-50 transition-colors">
+                            <h4 class="font-semibold ${section.classes.text} mb-2">${item.structure}</h4>
+                            <div class="${section.classes.bg} ${section.classes.icon} p-3 rounded-lg border ${section.classes.border} flex items-start">
+                                <svg class="w-5 h-5 mr-2 mt-0.5 opacity-70 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span class="italic">"${item.example}"</span>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                html += `
+                        </div>
+                    </div>
+                `;
+            });
+
+            theoryContainer.innerHTML = html;
+        }
+
+        function renderSpeaking() {
+            if (!theoryData || !theoryData.cambridge_speaking_strategies) return;
+
+            let html = '';
+
+            const colors = [
+                { name: 'sky', bg: 'bg-sky-50', text: 'text-sky-600', border: 'border-sky-100', textLight: 'text-sky-500' },
+                { name: 'indigo', bg: 'bg-indigo-50', text: 'text-indigo-600', border: 'border-indigo-100', textLight: 'text-indigo-500' },
+                { name: 'purple', bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', textLight: 'text-purple-500' },
+                { name: 'rose', bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', textLight: 'text-rose-500' }
+            ];
+
+            theoryData.cambridge_speaking_strategies.forEach((item, index) => {
+                const c = colors[index % colors.length];
+
+                const structureHtml = item.structure.replace(/\[(.*?)\]/g, `<span class="${c.textLight} ${c.bg} px-1 rounded border border-white">[$1]</span>`);
+
+                html += `
+                    <div class="bg-white rounded-xl shadow-sm border ${c.border} overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                        <div class="${c.bg} px-5 py-3 border-b ${c.border} flex justify-between items-center">
+                            <span class="text-xs font-bold uppercase tracking-wider ${c.text}">Strategy ${index + 1}</span>
+                            <span class="bg-white ${c.text} text-xs px-2 py-1 rounded shadow-sm font-semibold">${item.part.split(' (')[0]}</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm font-medium text-gray-500 mb-4">${item.part}</p>
+                            <div class="mb-5">
+                                <div class="text-gray-800 font-semibold text-lg leading-snug">
+                                    ${structureHtml}
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-4">
+                                <p class="text-gray-700 italic">"${item.example}"</p>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                ${item.translation}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            speakingContainer.innerHTML = html;
+        }
+
+        function renderPractice() {
+            if (!exercisesData.length) return;
+
+            document.getElementById('total-q-num').textContent = exercisesData.length;
+            showQuestion(currentQuestionIndex);
+        }
+
+        function showQuestion(index) {
+            const q = exercisesData[index];
+            document.getElementById('current-q-num').textContent = index + 1;
+
+            // Update button states
+            btnPrev.disabled = index === 0;
+            btnNext.disabled = index === exercisesData.length - 1;
+
+            const isAnswered = userAnswers[index] !== undefined;
+            const isCorrect = isAnswered && userAnswers[index].isCorrect;
+            const userAnswerText = isAnswered ? userAnswers[index].text : '';
+
+            if (isAnswered) {
+                btnCheck.disabled = true;
+                btnCheck.textContent = 'Checked';
+                btnCheck.classList.add('opacity-50');
+            } else {
+                btnCheck.disabled = false;
+                btnCheck.textContent = 'Check Answer';
+                btnCheck.classList.remove('opacity-50');
+            }
+
+            let html = `
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <p class="text-lg text-gray-800">${q.lead_in_sentence}</p>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <span class="inline-block bg-gray-800 text-white font-bold py-1 px-4 rounded shadow-sm tracking-widest text-lg">${q.keyword}</span>
+                    </div>
+
+                    <div class="text-lg text-gray-800 leading-loose flex flex-wrap items-center gap-2">
+                        <span>${q.second_sentence_start}</span>
+                        <input type="text" id="answer-input" class="input-kt ${isAnswered ? (isCorrect ? 'correct' : 'incorrect') : ''}"
+                            autocomplete="off" spellcheck="false"
+                            value="${userAnswerText}"
+                            ${isAnswered ? 'readonly' : ''}
+                            placeholder="(3-6 words)"
+                        >
+                        <span>${q.second_sentence_end}</span>
+                    </div>
+
+                    ${isAnswered ? `
+                        <div class="mt-4 p-4 rounded-lg ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+                            <p class="text-sm ${isCorrect ? 'text-green-800' : 'text-red-800'} font-medium flex items-center">
+                                ${isCorrect ?
+                                    '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Correct!' :
+                                    '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> Incorrect.'}
+                            </p>
+                            ${!isCorrect ? `
+                                <p class="mt-2 text-sm text-gray-700">Correct answer: <span class="font-bold text-green-700">${q.correct_answer}</span></p>
+                            ` : ''}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+
+            questionContainer.innerHTML = html;
+
+            if (!isAnswered) {
+                const input = document.getElementById('answer-input');
+                input.focus();
+                input.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') window.checkAnswer();
+                });
+            }
+        }
+
+        window.prevQuestion = function() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                showQuestion(currentQuestionIndex);
+            }
+        };
+
+        window.nextQuestion = function() {
+            if (currentQuestionIndex < exercisesData.length - 1) {
+                currentQuestionIndex++;
+                showQuestion(currentQuestionIndex);
+            }
+        };
+
+        window.checkAnswer = function() {
+            if (userAnswers[currentQuestionIndex]) return; // Already checked
+
+            const q = exercisesData[currentQuestionIndex];
+            const inputEl = document.getElementById('answer-input');
+            let userAnswer = inputEl.value.trim();
+
+            if (!userAnswer) {
+                inputEl.focus();
+                inputEl.style.transform = 'translateX(5px)';
+                setTimeout(() => inputEl.style.transform = 'translateX(0)', 100);
+                return;
+            }
+
+            // Normalize string (remove extra spaces, ignore case)
+            const normalizedUser = userAnswer.replace(/\s+/g, ' ').toLowerCase();
+            const normalizedCorrect = q.correct_answer.replace(/\s+/g, ' ').toLowerCase();
+
+            const isCorrect = normalizedUser === normalizedCorrect;
+
+            userAnswers[currentQuestionIndex] = {
+                text: userAnswer,
+                isCorrect: isCorrect
+            };
+
+            if (isCorrect) {
+                score++;
+                document.getElementById('score-display').textContent = `Score: ${score}/${exercisesData.length}`;
+            }
+
+            showQuestion(currentQuestionIndex);
+        };
+
+        // Start (data embedded, no fetch needed)
+        renderTheory();
+        renderSpeaking();
+        renderPractice();
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "tenses_and_changes": {
+    "title": "A) TENSES & CHANGES (Teoría Básica)",
+    "sections": [
+      {
+        "subtitle": "Tense changes",
+        "items": [
+          "Present Simple -> Past Simple",
+          "Present Continuous -> Past Continuous",
+          "Present Perfect -> Past Perfect",
+          "Present Perfect Continuous -> Past Perfect Continuous",
+          "Past Simple -> Past Perfect Simple / Past Simple",
+          "Past Continuous -> Past Perfect Continuous",
+          "Past Perfect -> Past Perfect (No cambia)",
+          "Past Perfect Continuous -> Past Perfect Continuous (No cambia)",
+          "1st Conditional -> 2nd Conditional",
+          "2nd & 3rd Conditional -> No cambian"
+        ],
+        "example": "Alvaro said: 'I have been working hard' -> Alvaro said (that) he had been working hard."
+      },
+      {
+        "subtitle": "Modals",
+        "items": [
+          "will -> would",
+          "can -> could",
+          "may -> might",
+          "must -> must / had to (obligación)",
+          "shall -> should (para sugerencias) / would (para futuro)",
+          "No cambian: should, ought to, could, might, would, had better"
+        ],
+        "example": "She said: 'I can swim' -> She said she could swim."
+      },
+      {
+        "subtitle": "Time/Place Expressions",
+        "items": [
+          "today -> that day",
+          "now -> then / immediately",
+          "tomorrow -> the next day / the following day",
+          "yesterday -> the day before / the previous day",
+          "next week -> the following week",
+          "last year -> the year before / the previous year",
+          "this -> that",
+          "these -> those",
+          "here -> there"
+        ],
+        "example": "He said: 'I will do it tomorrow here' -> He said he would do it the following day there."
+      },
+      {
+        "subtitle": "Questions & Commands",
+        "items": [
+          "Wh- questions mantienen la partícula (What/When/Where).",
+          "Yes/No questions usan 'if/whether'.",
+          "El orden de las palabras pasa a ser Afirmativo (Sujeto + Verbo), sin auxiliares (do/does/did).",
+          "Commands: verbo introductorio (tell, order) + object + to-infinitive / not to-infinitive."
+        ],
+        "example": "He asked: 'Did you see him?' -> He asked me if I had seen him."
+      }
+    ]
+  },
+  "reporting_verbs": {
+    "title": "B) REPORTING VERBS (C1 Level)",
+    "sections": [
+      {
+        "subtitle": "Verbs + -ing / having + Participle",
+        "verbs": ["suggest (doing)", "admit to (doing/having done)", "deny", "regret", "recommend"],
+        "example": "He denied stealing the money."
+      },
+      {
+        "subtitle": "Verbs + Preposition + -ing",
+        "verbs": ["apologize for (having done)", "object to (going)", "insist on", "boast about", "confess to"],
+        "example": "She apologized for arriving late."
+      },
+      {
+        "subtitle": "Verbs + Object + Preposition + -ing",
+        "verbs": ["accuse someone of (having done)", "prevent someone from (going)", "blame someone for", "congratulate someone on", "suspect someone of", "discourage someone from"],
+        "example": "They accused him of lying."
+      },
+      {
+        "subtitle": "Verbs + Object + To-Inf",
+        "verbs": ["warn someone (not) to do", "threaten to do", "urge", "persuade", "encourage", "remind", "advise"],
+        "example": "The teacher urged the students to study harder."
+      }
+    ]
+  },
+  "speaking_strategies": {
+    "title": "C) CAMBRIDGE SPEAKING STRATEGIES (Plantillas comodín)",
+    "templates": [
+      {
+        "part": "Part 4 (General opinions)",
+        "structure": "It is widely believed that [clause], but I would argue that...",
+        "example": "It is widely believed that technology isolates us, but I would argue that it connects us more.",
+        "translation": "Se cree ampliamente que [cláusula], pero yo argumentaría que..."
+      },
+      {
+        "part": "Part 3 (Referencing your partner)",
+        "structure": "As my partner rightly pointed out, we shouldn't forget that...",
+        "example": "As my partner rightly pointed out, we shouldn't forget that pollution is a major issue.",
+        "translation": "Como bien señaló mi compañero/a, no debemos olvidar que..."
+      },
+      {
+        "part": "Part 4 (Reporting experts/news)",
+        "structure": "Experts have repeatedly warned us not to [verb]...",
+        "example": "Experts have repeatedly warned us not to rely solely on fossil fuels.",
+        "translation": "Los expertos nos han advertido repetidamente que no [verbo]..."
+      },
+      {
+        "part": "Part 2 (Speculating about the photos)",
+        "structure": "The person in the first picture seems to be suggesting that...",
+        "example": "The person in the first picture seems to be suggesting that teamwork is essential.",
+        "translation": "La persona de la primera foto parece estar sugiriendo que..."
+      }
+    ]
+  }
+}

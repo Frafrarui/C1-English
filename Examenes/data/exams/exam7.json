@@ -1,0 +1,552 @@
+{
+  "id": "exam7",
+  "title": "Test 3 (Cambridge C1 Advanced)",
+  "description": "Test 3 completo: Use of English, Reading y Listening.",
+  "examType": "cae",
+  "scoring": {
+    "useOfEnglish": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 2 },
+      "nominalMax": 28,
+      "passPercentage": 57
+    },
+    "reading": {
+      "partPoints": { "5": 2, "6": 2, "7": 2, "8": 1 },
+      "nominalMax": 50,
+      "passPercentage": 64
+    },
+    "listening": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 1, "5": 1 },
+      "nominalMax": 30,
+      "passPercentage": 60
+    }
+  },
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+          "text": "The Japanese Bobtail\n\nCats have been (0) part of the lives of human beings for thousands of years. One interesting breed which fascinates scientists is the Japanese Bobtail – a domestic cat with an unusual 'bobbed' tail more (1)___ resembling the tail of a rabbit than that of other cats. The breed has been known in Japan for centuries, and it features (2)___ in folklore. In many traditions, cats are frequently (3)___ of fear and mistrust but in Japanese stories the Bobtail tends to be (4)___ as a force for (5)___ . The image of a Bobtail seated with one paw raised is considered a lucky charm.\n\nBut how did the Bobtail (6)___ its short tail? One legend tells of a sleeping cat whose long tail (7)___ fire. In a panic, it tore through the town, spreading flames everywhere. As a result, the then emperor declared that all cats should have their tails cut short as a (8)___ measure. Science, however, has a less 'romantic' explanation based on genetics.",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "nearly" },
+                { "label": "B", "text": "similarly" },
+                { "label": "C", "text": "accurately" },
+                { "label": "D", "text": "closely" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "prominently" },
+                { "label": "B", "text": "obviously" },
+                { "label": "C", "text": "appreciably" },
+                { "label": "D", "text": "significantly" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "products" },
+                { "label": "B", "text": "articles" },
+                { "label": "C", "text": "objects" },
+                { "label": "D", "text": "elements" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "assumed" },
+                { "label": "B", "text": "portrayed" },
+                { "label": "C", "text": "exposed" },
+                { "label": "D", "text": "disclosed" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_5",
+              "number": 5,
+              "options": [
+                { "label": "A", "text": "right" },
+                { "label": "B", "text": "virtue" },
+                { "label": "C", "text": "good" },
+                { "label": "D", "text": "truth" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_6",
+              "number": 6,
+              "options": [
+                { "label": "A", "text": "come by" },
+                { "label": "B", "text": "get at" },
+                { "label": "C", "text": "hit on" },
+                { "label": "D", "text": "go for" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_7",
+              "number": 7,
+              "options": [
+                { "label": "A", "text": "took" },
+                { "label": "B", "text": "caught" },
+                { "label": "C", "text": "set" },
+                { "label": "D", "text": "seized" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_8",
+              "number": 8,
+              "options": [
+                { "label": "A", "text": "defensive" },
+                { "label": "B", "text": "restrictive" },
+                { "label": "C", "text": "preventative" },
+                { "label": "D", "text": "corrective" }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+          "text": "Work experience abroad\n\nEvery year thousands (0) of young people in various countries do short periods of work in other countries (9)___ the time they leave school and start university. Typically these involve helping in schools or hospitals, or on conservation projects. The experience the young people gain will be of great benefit in their lives. (10)___ a personal point of view, it gives them a sense of independence and confidence. It may also help them with their long-term career.\n\nThere are many organisations that run work experience programmes. (11)___ such company is Global Volunteers, (12)___ spokesperson Mary Cooper comments: '(13)___ than being an extended holiday, our placements involve learning to (14)___ responsibility for themselves. Young people should push themselves out of their comfort zones and do (15)___ productive. Doing a placement will add value to a CV, helping young people to (16)___ out from the crowd in the job market. Some employers look favourably on students who have the initiative and drive to complete one.'",
+          "questions": [
+            { "id": "ue2_9", "number": 9, "answer": "between" },
+            { "id": "ue2_10", "number": 10, "answer": "from" },
+            { "id": "ue2_11", "number": 11, "answer": "one" },
+            { "id": "ue2_12", "number": 12, "answer": "whose" },
+            { "id": "ue2_13", "number": 13, "answer": "rather" },
+            { "id": "ue2_14", "number": 14, "answer": "take" },
+            { "id": "ue2_15", "number": 15, "answer": "something" },
+            { "id": "ue2_16", "number": 16, "answer": "stand" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "word-formation",
+          "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+          "text": "The significance of hairstyles\n\nHair is the most easily (0) adaptable part of the human body and also one of the most (17)___ . The first barbers appeared in ancient Greece, when short hair became a sign of social status. Similarly, South American Inca chiefs had their hair short; in contrast, the hair of their citizens got (18)___ longer the further down the social chain they were. Barbers prospered in the days of the Roman Empire, until they were expelled from Rome, when it was discovered how much they earned.\n\nWomen have always reflected fashion through their hairstyles, sometimes quite (19)___ . In 15th-century Europe, women would pluck the hair from the front of their heads in (20)___ of beauty. Three centuries later, the fashion was for huge hairstyles that made it (21)___ for the hairdresser to climb a small ladder. The maintenance needed to (22)___ these styles looked good was enormous. Today, in our more liberal world, very little is socially (23)___ with regard to hairstyles and technology has been enormously (24)___ in reducing the time we spend on our hair.",
+          "questions": [
+            { "id": "ue3_17", "number": 17, "prompt": "DISTINCT", "answer": "distinctive" },
+            { "id": "ue3_18", "number": 18, "prompt": "PROGRESS", "answer": "progressively" },
+            { "id": "ue3_19", "number": 19, "prompt": "DRAMA", "answer": "dramatically" },
+            { "id": "ue3_20", "number": 20, "prompt": "PURSUE", "answer": "pursuit" },
+            { "id": "ue3_21", "number": 21, "prompt": "NEED", "answer": "necessary" },
+            { "id": "ue3_22", "number": 22, "prompt": "SURE", "answer": "ensure" },
+            { "id": "ue3_23", "number": 23, "prompt": "ACCEPT", "answer": "unacceptable" },
+            { "id": "ue3_24", "number": 24, "prompt": "BENEFIT", "answer": "beneficial" }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "key-word-transformation",
+          "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+          "questions": [
+            {
+              "id": "ue4_25",
+              "number": 25,
+              "sentence1": "The constant public attention on famous people must have an effect on them.",
+              "keyword": "EYE",
+              "sentence2": "Constantly ___ must have an effect on famous people.",
+              "answer": "being in the public eye",
+              "acceptedAnswers": ["living in the public eye"]
+            },
+            {
+              "id": "ue4_26",
+              "number": 26,
+              "sentence1": "This building would be ideal for our new office except that there are no parking facilities nearby.",
+              "keyword": "FROM",
+              "sentence2": "This building would be ideal for our new office ___ of parking facilities nearby.",
+              "answer": "aside from the lack",
+              "acceptedAnswers": ["apart from the lack", "aside from the absence", "apart from the absence"]
+            },
+            {
+              "id": "ue4_27",
+              "number": 27,
+              "sentence1": "It's only because of the quality of the lead singer's voice that people listen to the album.",
+              "keyword": "WORTH",
+              "sentence2": "It's the quality of the lead singer's voice that ___ to.",
+              "answer": "makes the album worth listening"
+            },
+            {
+              "id": "ue4_28",
+              "number": 28,
+              "sentence1": "The hotel wasn't just far from the sea, it was expensive too.",
+              "keyword": "ONLY",
+              "sentence2": "Not ___ way from the sea, it was expensive too.",
+              "answer": "only was the hotel a long",
+              "acceptedAnswers": ["only was the hotel some way"]
+            },
+            {
+              "id": "ue4_29",
+              "number": 29,
+              "sentence1": "Jenny felt she had stayed too long at the party.",
+              "keyword": "HIGH",
+              "sentence2": "Jenny felt it ___ the party.",
+              "answer": "was high time she left",
+              "acceptedAnswers": ["was high time that she left"]
+            },
+            {
+              "id": "ue4_30",
+              "number": 30,
+              "sentence1": "Hannah's essay doesn't have a clear enough explanation of the main point to be awarded top marks.",
+              "keyword": "CLEARLY",
+              "sentence2": "Hannah's essay doesn't ___ to be awarded top marks.",
+              "answer": "explain the main point clearly enough"
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 5,
+          "type": "multiple-choice",
+          "instructions": "You are going to read a newspaper article about research into a chemical. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "text": "Oxytocin\n\nOliver Burkeman asks the US academic Paul Zak about his research into a chemical called oxytocin, which has an important role in our lives.\n\nPaul Zak is renowned among his colleagues for two things he does disconcertingly soon after meeting people. The first is hugging: seeing me approach, he springs to his feet, and enfolds me in his arms. The second is talking them into having needles stuck into their arms to draw blood. I escape our encounter unpunctured, but plenty don't – willingly, of course. Zak's work has involved extracting blood from, amongst others, a couple on their wedding day, people who have been dancing, and a group in Papua New Guinea preparing to perform traditional rituals.\n\nHaving dipped into his book, The Moral Molecule, I know that what drives Zak's hunger for blood is his interest in oxytocin. Long known as a female reproductive hormone, oxytocin emerges from Zak's research as something much more. Being treated decently, he says, causes people's oxytocin levels to rise, prompting them to behave more decently, while experimental subjects given an artificial oxytocin boost behave more generously and trustingly. Describing the chemical as the 'moral molecule that keeps society together', Zak offers nothing less than a vast explanation of whole swathes of philosophical questions. The subtitle of the book, the new science of what makes us good or evil, gives a sense of this.\n\nThe aforementioned wedding took place at a house in England, where Zak set up the equipment needed to collect blood. He took samples, before and after the ceremony, from the bride and groom, and various guests, then transferred his spoils to his laboratory. There, he discovered the results he'd been expecting: the ceremony caused oxytocin to spike. And it did so 'in direct proportion to the likely intensity of emotional engagement in the event'.\n\nThe bride recorded the highest increase, followed by close family members, then less closely involved friends. Mapping the wedding's oxytocin levels gave rise, in Zak's words, to an amazing human 'solar system' with the bride as the sun, the hormone finely calibrated to the emotional warmth each guest felt.\n\nZak's interest in oxytocin was fuelled by experiments involving the Trust Game. Participant A is invited to lend some money to a stranger, Participant B. They're told that any money A sends will triple in value, whereupon B can return some as a thank-you. According to traditional models, the game should break down before it begins. B, acting selfishly, has no reason to give any money back – and, knowing this, A shouldn't send any in the first place. However, as in previous research with this tried and tested set up, the vast majority of A-people send money, while an even larger percentage of B-people return some. Zak's analysis of the oxytocin in participants' bloodstreams reveals that by sending money to B, person A is giving a sign of trust – and for person B, being on the receiving end causes oxytocin levels to increase, motivating more generous behaviour in return.\n\nThe possible implications are intriguing. Evolution has given us oxytocin, a biological mechanism that lets us be instinctively trusting and kind – or 'moral'. Mixing science and morality prompts suspicion, however. Just because something is 'natural' doesn't mean it's 'right', and efforts to derive moral codes from science rarely end well. Moreover, it's unclear what Zak means when he says oxytocin, or the lack of it, 'makes' us good or evil. Still, none of this undermines the pragmatic aspect of Zak's work. If oxytocin is the mechanism through which moral action takes place, then by manipulating oxytocin, we might boost levels of trust, generosity, and ultimately happiness.\n\nOn the other hand, what's to stop car dealers, say, pumping oxytocin into showrooms? Zak waves the matter away: it's incredibly hard to get enough oxytocin into the bloodstream. Sure, oxytocin can be stimulated in subtle ways to serve other people's agendas, 'but they're already doing that. Why do you think they have babies in adverts? To make you feel good, by provoking the release of oxytocin.' Meanwhile, he says, we should all do at least eight hugs a day, massage and even watch soppy movies – he's done the tests. Interaction on social media seems to lead to oxytocin spikes, undermining the argument that it's killing real human interaction; hormonally, it appears, the body processes it as real interaction.",
+          "questions": [
+            {
+              "id": "r5_31",
+              "number": 31,
+              "prompt": "What does the writer suggest about Paul Zak in the first paragraph?",
+              "options": [
+                { "label": "A", "text": "He provokes mixed feelings in people." },
+                { "label": "B", "text": "He understands that aggression can sometimes be useful." },
+                { "label": "C", "text": "He can adapt himself to a variety of situations." },
+                { "label": "D", "text": "He is capable of being very persuasive." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_32",
+              "number": 32,
+              "prompt": "What does 'spoils' refer to in line 16?",
+              "options": [
+                { "label": "A", "text": "equipment" },
+                { "label": "B", "text": "samples" },
+                { "label": "C", "text": "guests" },
+                { "label": "D", "text": "results" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_33",
+              "number": 33,
+              "prompt": "What is the writer's purpose in the fourth paragraph?",
+              "options": [
+                { "label": "A", "text": "to make a counter-argument" },
+                { "label": "B", "text": "to introduce a new concept" },
+                { "label": "C", "text": "to summarise an idea" },
+                { "label": "D", "text": "to expand on a point" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_34",
+              "number": 34,
+              "prompt": "What does the writer say about Zak's Trust Game experiments?",
+              "options": [
+                { "label": "A", "text": "They demonstrate the importance of money in human relations." },
+                { "label": "B", "text": "Their artificiality means that what they tell us is of limited value." },
+                { "label": "C", "text": "The results challenge conventional notions of human behaviour." },
+                { "label": "D", "text": "They were constructed in a way that was clever and innovative." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_35",
+              "number": 35,
+              "prompt": "What does the writer suggest in the sixth paragraph?",
+              "options": [
+                { "label": "A", "text": "The potential exploitation of oxytocin should be given serious consideration." },
+                { "label": "B", "text": "Zak's experimental methods are the object of some mistrust." },
+                { "label": "C", "text": "Further work is needed to define exactly what oxytocin is." },
+                { "label": "D", "text": "Science cannot be free of ethical considerations." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "r5_36",
+              "number": 36,
+              "prompt": "How does Zak regard the idea of deliberately manipulating oxytocin?",
+              "options": [
+                { "label": "A", "text": "He doubts whether it's ever going to be feasible." },
+                { "label": "B", "text": "He worries about possible commercial misuse." },
+                { "label": "C", "text": "He advocates wider use of readily available means." },
+                { "label": "D", "text": "He feels it's outside his area of expertise." }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 6,
+          "type": "cross-text-multiple-matching",
+          "instructions": "You are going to read four extracts from online articles about childhood. For questions 37-40, choose from the extracts A-D. The extracts may be chosen more than once.",
+          "text": "The Changing Face of Childhood in the USA\n\nA Mary Granger\nParents often complain that childhood today seems different to what it was when they were young – when a free day meant they ran care-free out the door after breakfast and played until twilight. But they are somewhat hypocritical, because many of today's better-off children seem to have less time for such unstructured play as they face an unfortunate mass of parent-organised 'things-to-keep-kids-busy' that might include karate lessons, tutoring or ballet. Parents are increasingly unwilling to let their offspring play outside. As a result children are more protected than ever before. A generation ago children went cycling on their own, went on public transport alone, took responsibility for themselves. Some experts suggest that the whole nature of parenting was different; that it was much less hands-on and more trusting of the child.\n\nB Max Poenbaum\nThe interaction between the child and the natural environment provides an authentic learning experience based on sensory absorption and investigation, but it disappears with the passing of childhood. Then adult cognitive reasoning gradually takes over as the world is seen in a more objective or scientific way. At the transition between childhood and adulthood, young people can feel in danger of having nothing stable to hold on to, caught between the trapeze of childhood that has been let go of and the trapeze of growing up not yet within his or her grasp. Now parents must become a safety net at a time when the young person feels naturally anxious and insecure. But these days, parents are struggling against the slow creep of an increasingly commercial and sexualised culture and behaviour. That very culture, which is so rightly blamed for preventing younger children from being children also undermines the parenting of teenagers.\n\nC John P. Ondorenko\nIt is clear that young children have a special affinity for the great outdoors that is connected to their development and their ways of knowing and learning. This is a unique and unrepeatable ability that starts to fade during the teenage years. Even so, today's teenagers are under pressure to grow up before they are ready. Celebrity culture, adult-style clothes and music videos are all guilty of encouraging them to act older than they are. As a result they are adrift in a sea of disaffection. In particular they care less about school performance and social obedience than ever before. On the flip side, they are much more tolerant and aware of ethical issues and also more caring regarding the future of the planet. A common adolescent complaint is of ever-increasing boredom, and yet children today have no reason to be bored, partly as the number of formal, extra-curricular activities available to them is unprecedented.\n\nD Steven Zafaria\nOnce the pre-teen years are gone, parents have a more aloof adolescent who is more reluctant to be touched, who would rather spend time with friends, who feels too old to play with parents, who is embarrassed by their public company, who is more private and less forthcoming, and who seems to court their disapproval through deliberate resistance and opposition. The pattern is a standard one and always has been, as any psychologist will tell you. Teenagers may think they are fully independent, fiercely so in fact, but parents must be there for them, taking a back seat, intervening less than before, but ready to listen and guide when called upon. But parenting is becoming increasingly complex. The increasingly commercialised and sexualised world we live in means that children are missing out on a proper childhood. The solution is clearly not to keep children wholly innocent until they are adults, but we have surely reached the point where some regulatory protection is required.",
+          "questions": [
+            { "id": "r6_37", "number": 37, "prompt": "has a similar view to Poenbaum on how long people's instinctive relationship with nature lasts?", "answer": "C" },
+            { "id": "r6_38", "number": 38, "prompt": "expresses a similar opinion to Zafaria on what the role of a parent should be regarding teenage children?", "answer": "D" },
+            { "id": "r6_39", "number": 39, "prompt": "has a different view from the others on whether children are growing up too fast?", "answer": "A" },
+            { "id": "r6_40", "number": 40, "prompt": "expresses a different opinion from Ondorenko on the value of planned activities for children?", "answer": "A" }
+          ]
+        },
+        {
+          "partNumber": 7,
+          "type": "gapped-text",
+          "instructions": "You are going to read an extract from a newspaper article about travelling in Poland. Six paragraphs have been removed from the extract. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.",
+          "text": "Before Google ... the alternative travel guide to Poland\n\nVicky Baker takes social networking back to its roots by resurrecting a travel project in Poland from the early 1990s.\n\n'I am going to take you to my friend's studio. It's quite unusual,' says Jarek, my unofficial guide to Kraków, in one of the biggest understatements of the trip. He leads me to an old cottage. It looks abandoned, but then we are greeted by a man who, with his grey beard and sheepskin waistcoat, looks like an ageing pop star. Outside there's a two-metre-high carved totem pole and the remains of a bonfire are still burning.\n\n[41]\n\nAs a couch surfer I am used to finding golden opportunities through strangers, but the unusual thing about this connection is that it came about after I tried to reconstruct a tourism project that was, in many ways, the precursor to modern social networking. Back in the 1980s, US-born Jim Haynes, a renowned supporter of alternative arts, had an idea. Convinced that the best travel experiences come from the people you meet, he set himself a goal: he would match inquisitive travellers with gracious hosts by creating an alternative guidebook, in a country he loved. Poland: People to People finally hit the bookshelves in 1991.\n\n[42]\n\nEventually enough people came forward with their contact details and a willingness to participate in the scheme. Jim assembled all the names in what read like a personal address book. The cover price of £6 bought you the contact details of 1,000 strangers.\n\n[43]\n\nIntrigued by the idea of taking modern networking back to its roots, I wondered whether, many years later, Jim's hosts would still be willing to greet an unknown visitor from overseas. But first I would have to track them down.\n\n[44]\n\nAt first I planned to communicate only by post and sent several letters before realising I lacked the patience. Feeling a little guilty, I opted for the 21st-century solution: searching for the names on the Internet. Many were dead ends; others simply never responded. But gradually people did come forward and I received various slightly stunned replies. Before long I had meetings arranged in Kraków and Gdansk.\n\n[45]\n\nI skip the organised tours, though, and head off to meet Wladek, a 50-year-old academic. We meet in a 19th-century café, where an ultra-polite waitress sets down a massive plate of Polish dumplings before us. It is too much for any tourist to eat.\n\n[46]\n\nI'm charmed by Kraków and reluctant to leave Wladek, who proves to be excellent company, and the café, but I already have my next meeting arranged a 10-hour train ride away. Gdansk, with its immaculately renovated buildings and little boutiques, is clearly a world away from the city it was in the 1990s. I have arranged to meet kite-surfing enthusiast Mariusz at a restaurant there. Poland: People to People lives on, it seems. I know Jim will be delighted.",
+          "paragraphOptions": [
+            { "label": "A", "text": "Peer to peer websites are common now, but turning the idea into a book back then was a challenge. Jim sent out hundreds of letters through his already extensive network of friends and placed small ads in various Polish publications." },
+            { "label": "B", "text": "My new acquaintance has hazy memories of the people he met through the book, but says he enjoys the company of visitors, as they are curious and interested in others. He shows me old photos and speaks of how life has changed here." },
+            { "label": "C", "text": "What follows is one of those surreal travel experiences, where one new friend introduces you to another and another. Before long we've set off on a tour of Kraków's artistic community." },
+            { "label": "D", "text": "That was easier said than done. Details were sparse; just contact details and a very short profile. 'I live in Kraków and I am a man of Kraków,' read one rather unhelpful entry." },
+            { "label": "E", "text": "Jim gave me an out-of-print edition at one of the open-house dinners he runs every Sunday at his Paris home. It was like opening a little time capsule and from that moment I knew what I had to do." },
+            { "label": "F", "text": "The next morning is the occasion of my impromptu adventure with Jarek, an artist I found after contacting various local galleries. He invites me for dinner and even finds the original typewritten letter Jim sent in 1989 to introduce the project." },
+            { "label": "G", "text": "It is my first time in Poland, and the former is undeniably impressive. The picture-perfect main square is lined with Renaissance buildings, lively street cafés and golf carts waiting to take tourists around town." }
+          ],
+          "questions": [
+            { "id": "r7_41", "number": 41, "answer": "C" },
+            { "id": "r7_42", "number": 42, "answer": "A" },
+            { "id": "r7_43", "number": 43, "answer": "E" },
+            { "id": "r7_44", "number": 44, "answer": "D" },
+            { "id": "r7_45", "number": 45, "answer": "G" },
+            { "id": "r7_46", "number": 46, "answer": "B" }
+          ]
+        },
+        {
+          "partNumber": 8,
+          "type": "multiple-matching",
+          "instructions": "You are going to read four book reviews. For questions 47-56, choose from the sections (A-D). The sections may be chosen more than once.",
+          "text": "NATURE BOOKS\n\nA WHY ELEPHANTS HAVE BIG EARS by Chris Lavers\nChris Lavers has set out to produce a book that sits neatly between serious scholarship (he is a senior lecturer in animal ecology) and the need to satisfy the inquisitive pesterings of children. Why are ants so small? Why can a bat fly and a shrew not? And of course, why do elephants have big ears? The answer is no shocker - creatures have interacted with their habitats to evolve into the extraordinary forms they possess today. But once this principle is established, the book loses some of its charm. The book's most successful sections are where we travel through the Jurassic and Cretaceous periods of prehistory to look at how nature made its primal decisions: which species would fly and which would swim, which creatures would be warm or cold-blooded? Lavers argues that it is here we find the true answers to our questions today and the principles to safely predict our future.\n\nB ORIGINS: The Evolution of Continents, Oceans and Life by Ron Redfern\nShortlisted for the BP Natural World Book Prize, Origins comprises panoramas and a wide-ranging, accessible scientific insight to make this work a fresh interpretation of the Earth's fascinating evolution. The landscape photographs were shot specifically for the book, albeit by the author himself, after consultation with leading scientists to find the location of the best-known examples of various forms and processes. The writer manages to reduce the most complex theories to digestible nuggets of information. The text is an entertaining narrative that successfully weaves recent and ancient history with science. Origins is a heavyweight work in more ways than one: as a test for the legs of any coffee table and as a definitive guide to our planet's evolution. It is ideal for regular dipping into as much as for in-depth reference.\n\nC EARTH ODYSSEY by Mark Hertsgaard\nWorried about the effects of our expanding population on the world's resources, Mark Hertsgaard took a world tour to see for himself how bad things really were. Earth Odyssey is the culmination of seven years' work, during which time he visited 19 countries. To read it is to shadow him on his tour and to observe the condition of the planet through the eyes of the people he met along the way: their living conditions, their personal struggles and triumphs. He does not try to offer his own opinions; rather he lets us make our own minds up. Hertsgaard cleverly interweaves his observations with carefully gathered evidence as he seeks to answer questions about our environment. He takes us through the industrial and agricultural revolutions, then back to the origins of the human species, to see if the past can provide any answers. Although the answers we want to hear sit uneasily with the facts, Hertsgaard presents an elegant portrait of the human species, full of character, dignity, perseverance and strength. He leaves you with a strong conviction that it is ultimately a race worth saving.\n\nD THE VIKING ATLAS OF EVOLUTION by Roger Osbourne\nWhy are there no penguins in the Arctic, or polar bears in Antarctica? How is it that camels and llamas are so closely related, yet they live so far apart? The answers come down to the fact that evolution takes place according to geographical location as well as time. Using photographs, superb illustrations and more than 100 maps showing distributions of organisms, migrations, territories and biogeographic regions, the atlas graphically highlights the impact geography has had on the development of life on Earth. It charts the origins, evolution and spread of plants, reptiles, birds and mammals worldwide. It also investigates the way people have altered the world they live in, from the introduction of exotic species into fragile ecosystems to the destruction of habitats and the domestication of wild species. The accompanying text is highly informative. The atlas does not review the evolution of every 'important' life form on the planet. Rather, it chooses several case studies to highlight the evolutionary process in differing geographical settings.",
+          "questions": [
+            { "id": "r8_47", "number": 47, "prompt": "It presents complicated material in manageable chunks of data.", "answer": "B" },
+            { "id": "r8_48", "number": 48, "prompt": "The book failed to sustain the reviewer's interest throughout.", "answer": "A" },
+            { "id": "r8_49", "number": 49, "prompt": "Readers are left to draw their own conclusions about some of the book's material.", "answer": "C" },
+            { "id": "r8_50", "number": 50, "prompt": "Its author sought expert advice on certain aspects of the book.", "answer": "B" },
+            { "id": "r8_51", "number": 51, "prompt": "The book is both instructive and visually appealing.", "answer": "D" },
+            { "id": "r8_52", "number": 52, "prompt": "It looks both backwards and forwards in time.", "answer": "A" },
+            { "id": "r8_53", "number": 53, "prompt": "Its author effectively brings together different fields of study.", "answer": "B" },
+            { "id": "r8_54", "number": 54, "prompt": "It offers a selective, rather than comprehensive, coverage of its topic.", "answer": "D" },
+            { "id": "r8_55", "number": 55, "prompt": "It is possible to feel a sense of involvement with the subject matter.", "answer": "C" },
+            { "id": "r8_56", "number": 56, "prompt": "The text is a skilful mixture of data and personal comment.", "answer": "B" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "You will hear three different extracts. For questions 1-6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "Extract One - You hear two people discussing climate change. How did the man feel after watching a TV debate on the subject?",
+              "options": [
+                { "label": "A", "text": "alarmed by the strength of feeling among the speakers" },
+                { "label": "B", "text": "dismayed by some of the speakers' level of knowledge" },
+                { "label": "C", "text": "surprised by the number of speakers taking part" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Extract One - The woman thinks that articles about climate change should",
+              "options": [
+                { "label": "A", "text": "be written by scientists." },
+                { "label": "B", "text": "include some humour." },
+                { "label": "C", "text": "be authenticated by specialists." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "Extract Two - You hear two pilots taking part in a discussion programme about an aerobatics team in which they fly. How does the man feel about the new training season?",
+              "options": [
+                { "label": "A", "text": "concerned about his ability to learn new skills" },
+                { "label": "B", "text": "satisfied that his efforts have been worthwhile" },
+                { "label": "C", "text": "worried about the number of hours he has to put in" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "Extract Two - What does the woman think about the forthcoming world championships?",
+              "options": [
+                { "label": "A", "text": "She has confidence in the ability of certain team members." },
+                { "label": "B", "text": "She's convinced that the team will do better than last year." },
+                { "label": "C", "text": "She suspects that pilots have been given unrealistic targets." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_5",
+              "number": 5,
+              "prompt": "Extract Three - You hear two friends talking about online book reviews. The woman reveals her belief that",
+              "options": [
+                { "label": "A", "text": "websites should monitor contributions." },
+                { "label": "B", "text": "reading such reviews is a waste of time." },
+                { "label": "C", "text": "those who write reviews are unscrupulous." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_6",
+              "number": 6,
+              "prompt": "Extract Three - How does the man think he benefits from writing online reviews?",
+              "options": [
+                { "label": "A", "text": "It allows him to share his opinions." },
+                { "label": "B", "text": "It gives him practice in writing skills." },
+                { "label": "C", "text": "It makes him read the books more closely." }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "sentence-completion",
+          "instructions": "You will hear a student, called Greg Pritchard, talking about his gap year trip to Africa. For questions 7-14, complete the sentences with a word or short phrase.",
+          "questions": [
+            { "id": "l2_7", "number": 7, "prompt": "Greg says that the Kruger National Park is home to the largest population of ___ in South Africa.", "answer": "wild dogs" },
+            { "id": "l2_8", "number": 8, "prompt": "Greg was surprised that so many people chose to study ___ during the first week of the trip.", "answer": "astronomy" },
+            { "id": "l2_9", "number": 9, "prompt": "On Greg's research project, he was responsible for recording the ___ of the crocodiles sighted.", "answer": "location" },
+            { "id": "l2_10", "number": 10, "prompt": "Greg learned that ___ will be fitted to some large crocodiles in future.", "answer": "radio transmitters", "acceptedAnswers": ["transmitters"] },
+            { "id": "l2_11", "number": 11, "prompt": "Greg was pleased that he managed to find some ___ to eat when he went on a wilderness trail.", "answer": "edible plants", "acceptedAnswers": ["plants"] },
+            { "id": "l2_12", "number": 12, "prompt": "Greg describes himself as becoming more ___ during the third week of his trip.", "answer": "considerate" },
+            { "id": "l2_13", "number": 13, "prompt": "During the fourth week of his trip, Greg taught ___ in a village school.", "answer": "football" },
+            { "id": "l2_14", "number": 14, "prompt": "Greg thinks that sharing ___ with local villagers taught him most about their culture.", "answer": "meals", "acceptedAnswers": ["mealtime", "mealtimes", "meal"] }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "multiple-choice",
+          "instructions": "You will hear part of an interview with two board game enthusiasts called Sarah Walters and Ed Zander about the renewed popularity of traditional board games. For questions 15-20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+          "questions": [
+            {
+              "id": "l3_15",
+              "number": 15,
+              "prompt": "Sarah thinks board games are becoming more popular partly",
+              "options": [
+                { "label": "A", "text": "as a consequence of their basic simplicity." },
+                { "label": "B", "text": "as a reaction to the dominance of technology." },
+                { "label": "C", "text": "because they mirror already popular gaming activities." },
+                { "label": "D", "text": "because people are constantly searching for new hobbies." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_16",
+              "number": 16,
+              "prompt": "Ed thinks game playing will grow in this century",
+              "options": [
+                { "label": "A", "text": "as a result of people having more leisure time." },
+                { "label": "B", "text": "as a way of enhancing personal relationships." },
+                { "label": "C", "text": "as a means of coping with increasingly stressful lives." },
+                { "label": "D", "text": "as a reflection of fundamental changes taking place in society." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_17",
+              "number": 17,
+              "prompt": "In Sarah's opinion, what is the main attraction of board games?",
+              "options": [
+                { "label": "A", "text": "the challenges they pose to players" },
+                { "label": "B", "text": "the memories they evoke of the past" },
+                { "label": "C", "text": "the environment in which they take place" },
+                { "label": "D", "text": "the competitive element in the way they are played" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_18",
+              "number": 18,
+              "prompt": "When asked if board-gaming is a world-wide phenomenon, Ed",
+              "options": [
+                { "label": "A", "text": "explains a trend which is likely to change." },
+                { "label": "B", "text": "highlights the importance of advertising and marketing." },
+                { "label": "C", "text": "mentions the huge variety of games available globally." },
+                { "label": "D", "text": "emphasises the differences that exist between parts of the world." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_19",
+              "number": 19,
+              "prompt": "Sarah sees the Game of the Year award as",
+              "options": [
+                { "label": "A", "text": "a useful marketing tool." },
+                { "label": "B", "text": "crucial as a way of promoting variety." },
+                { "label": "C", "text": "important in keeping consumers informed." },
+                { "label": "D", "text": "a positive development for younger players." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_20",
+              "number": 20,
+              "prompt": "When talking about their own collections of board games, Ed and Sarah agree that",
+              "options": [
+                { "label": "A", "text": "some are likely to prove an investment." },
+                { "label": "B", "text": "many are beautifully manufactured." },
+                { "label": "C", "text": "collectors sometimes regret their purchases." },
+                { "label": "D", "text": "throwing games away isn't advisable." }
+              ],
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "multiple-matching",
+          "instructions": "You will hear five short extracts in which people are talking about having more than one job at a time.\n\nTASK ONE: For questions 21-25, choose from the list (A-H) why each speaker took on more than one job.\n\nA to avoid potential monotony\nB to widen useful contacts\nC to pay for accommodation\nD to enhance promotion prospects\nE to leave a dull workplace\nF to find a sense of satisfaction\nG to seek a different direction\nH to achieve a long-held ambition",
+          "questions": [
+            { "id": "l4_21", "number": 21, "prompt": "Speaker 1", "answer": "B" },
+            { "id": "l4_22", "number": 22, "prompt": "Speaker 2", "answer": "F" },
+            { "id": "l4_23", "number": 23, "prompt": "Speaker 3", "answer": "H" },
+            { "id": "l4_24", "number": 24, "prompt": "Speaker 4", "answer": "A" },
+            { "id": "l4_25", "number": 25, "prompt": "Speaker 5", "answer": "G" }
+          ]
+        },
+        {
+          "partNumber": 5,
+          "type": "multiple-matching",
+          "instructions": "TASK TWO: For questions 26-30, choose from the list (A-H) the unexpected result of having more than one job that each speaker refers to.\n\nA becoming well-known locally\nB working with a famous name\nC receiving a special assignment\nD starting a personal relationship\nE creating a new fashion\nF getting professional recognition\nG achieving true celebrity status\nH running a successful business",
+          "questions": [
+            { "id": "l4_26", "number": 26, "prompt": "Speaker 1", "answer": "D" },
+            { "id": "l4_27", "number": 27, "prompt": "Speaker 2", "answer": "H" },
+            { "id": "l4_28", "number": 28, "prompt": "Speaker 3", "answer": "B" },
+            { "id": "l4_29", "number": 29, "prompt": "Speaker 4", "answer": "C" },
+            { "id": "l4_30", "number": 30, "prompt": "Speaker 5", "answer": "F" }
+          ]
+        }
+      ]
+    }
+  }
+}

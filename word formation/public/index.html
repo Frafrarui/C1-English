@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C1 Word Formation - Tests</title>
+  <meta name="description" content="Study and practice English C1 Word Formation with fill-in-the-blank exercises.">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Word Formation</h1>
+      <p id="header-subtitle">Select a test to begin</p>
+    </header>
+
+    <main id="app-main">
+      <div id="loading" class="state-message">Loading vocabulary...</div>
+      <div id="error" class="state-message hidden"></div>
+      
+      <!-- MENU VIEW -->
+      <div id="menu-view" class="hidden">
+        <div class="test-grid" id="test-grid">
+          <!-- Test buttons will be generated here -->
+        </div>
+      </div>
+
+      <!-- EXERCISE VIEW -->
+      <div id="exercise-view" class="hidden">
+        <div class="test-header">
+          <button id="btn-back-menu" class="btn text-btn">&larr; Back to Menu</button>
+          <div class="progress">
+            <p>Word <span id="current-index">0</span> of <span id="total-words">0</span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="part-of-speech" id="part-of-speech"></span>
+            <h2 id="base-word">Base Word</h2>
+          </div>
+          
+          <div class="hint-section">
+            <p><strong>Translation:</strong> <span id="translation"></span></p>
+          </div>
+
+          <div class="exercise-section">
+            <p class="example-text" id="example-container"></p>
+          </div>
+          
+          <div id="feedback-message" class="feedback hidden"></div>
+        </div>
+
+        <div class="controls">
+          <button id="btn-prev" class="btn secondary">Prev Word</button>
+          <button id="btn-check" class="btn primary">Check Answer</button>
+          <button id="btn-show" class="btn warning">Show Answer</button>
+          <button id="btn-next" class="btn secondary">Next Word</button>
+        </div>
+      </div>
+
+      <!-- RESULTS VIEW -->
+      <div id="results-view" class="hidden">
+        <div class="results-card">
+          <h2>Test Completed!</h2>
+          <div class="score-display">
+            <span id="final-score">0</span>
+            <span class="score-divider">/</span>
+            <span id="final-total">0</span>
+          </div>
+          <p class="score-message" id="score-message">Great job!</p>
+          
+          <div class="results-controls">
+            <button id="btn-retry-mistakes" class="btn warning hidden" style="margin-right: 1rem;">Retry Mistakes</button>
+            <button id="btn-results-menu" class="btn primary">Back to Menu</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

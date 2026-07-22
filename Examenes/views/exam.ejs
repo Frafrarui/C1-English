@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= exam.title %> — Práctica C1</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <a href="/" class="back-link">&larr; Volver al menú</a>
+    <h1><%= exam.title %></h1>
+  </header>
+
+  <nav class="tabs">
+    <% Object.keys(exam.sections).forEach((key, i) => { %>
+      <button type="button" class="tab-btn <%= i === 0 ? 'active' : '' %>" data-target="section-<%= key %>">
+        <%= exam.sections[key].title %>
+      </button>
+    <% }) %>
+  </nav>
+
+  <form id="exam-form">
+    <main class="container">
+      <% Object.keys(exam.sections).forEach((key, i) => {
+        const section = exam.sections[key];
+      %>
+        <section id="section-<%= key %>" class="exam-section <%= i === 0 ? '' : 'hidden' %>">
+          <div class="section-heading">
+            <div>
+              <h2><%= section.title %></h2>
+              <% if (section.note) { %>
+                <p class="section-note"><%= section.note %></p>
+              <% } %>
+            </div>
+            <button type="button" class="clear-highlights-btn" data-target="section-<%= key %>">Borrar marcas</button>
+          </div>
+          <p class="highlight-hint">Selecciona texto para subrayarlo o resaltarlo. Haz clic sobre una marca para quitarla.</p>
+
+          <% section.parts.forEach(part => { %>
+            <div class="exam-part">
+              <h3>Parte <%= part.partNumber %></h3>
+              <p class="instructions"><%= part.instructions %></p>
+
+              <% if (part.renderedText) { %>
+                <div class="reading-text highlight-zone"><%- part.renderedText %></div>
+              <% } else if (part.text) { %>
+                <div class="reading-text highlight-zone"><%- part.text.replace(/\n/g, '<br>') %></div>
+              <% } %>
+
+              <% if (part.gapBank) { %>
+                <div class="paragraph-bank">
+                  <p class="bank-hint">Haz clic en un hueco del texto y luego en el párrafo que crees que encaja. Si te equivocas, haz clic sobre el hueco relleno para vaciarlo.</p>
+                  <div class="paragraph-options">
+                    <% part.gapBank.forEach(opt => { %>
+                      <button type="button" class="paragraph-option" data-letter="<%= opt.label %>" data-text="<%= opt.text %>">
+                        <strong><%= opt.label %></strong> <%= opt.text %>
+                      </button>
+                    <% }) %>
+                  </div>
+                </div>
+              <% } %>
+
+              <% if (!part.inlineQuestions) { %>
+                <div class="questions">
+                  <% part.questions.forEach(question => { %>
+                    <%- include('partials/question', { question }) %>
+                  <% }) %>
+                </div>
+              <% } %>
+            </div>
+          <% }) %>
+        </section>
+      <% }) %>
+    </main>
+
+    <div class="submit-bar container">
+      <button type="submit" id="submit-btn">Finalizar y corregir</button>
+    </div>
+  </form>
+
+  <div id="results" class="container hidden"></div>
+
+  <script src="/js/exam.js" data-exam-id="<%= exam.id %>"></script>
+  <script src="/js/highlight.js"></script>
+  <script src="/js/gapped-text.js"></script>
+</body>
+</html>

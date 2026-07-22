@@ -1,0 +1,182 @@
+{
+  "id": "exam1",
+  "title": "Examen 1",
+  "description": "Examen de ejemplo (placeholder) — sustituye este contenido por un examen real.",
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "Lee el texto y elige la opción (A, B, C o D) que mejor complete cada hueco.",
+          "text": "Many people believe that learning a new language later in life is (1)___ than doing so as a child. However, recent studies (2)___ that adults can actually learn faster in some respects, (3)___ they have more developed learning strategies. The key factor seems to be motivation rather than age, (4)___ regular practice remains essential.",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "more difficult" },
+                { "label": "B", "text": "most difficult" },
+                { "label": "C", "text": "as difficult" },
+                { "label": "D", "text": "so difficult" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "suggest" },
+                { "label": "B", "text": "suggests" },
+                { "label": "C", "text": "suggesting" },
+                { "label": "D", "text": "suggested" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "despite" },
+                { "label": "B", "text": "although" },
+                { "label": "C", "text": "because" },
+                { "label": "D", "text": "unless" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "but" },
+                { "label": "B", "text": "so" },
+                { "label": "C", "text": "if" },
+                { "label": "D", "text": "or" }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "Lee el texto y escribe la palabra que mejor complete cada hueco (una sola palabra por hueco).",
+          "text": "It is often said (5)___ practice makes perfect, and when it comes to language learning, this could not be more true. Consistent exposure to the language, (6)___ through reading, listening or speaking, helps learners internalise new structures. (7)___ of the most effective techniques is spaced repetition, (8)___ involves reviewing material at increasing intervals.",
+          "questions": [
+            { "id": "ue2_5", "number": 5, "answer": "that" },
+            { "id": "ue2_6", "number": 6, "answer": "whether", "acceptedAnswers": ["either"] },
+            { "id": "ue2_7", "number": 7, "answer": "One" },
+            { "id": "ue2_8", "number": 8, "answer": "which" }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "Lee el texto y elige la opción correcta (A, B, C o D) para cada pregunta.",
+          "text": "The Hidden Cost of Convenience\n\nOver the past two decades, on-demand delivery services have transformed the way people shop, eat and manage their daily lives. What was once considered a luxury — having groceries, meals or even medication delivered within the hour — has become an expectation for a growing segment of the population. Yet behind this apparent convenience lies a complex web of economic and social trade-offs that are only now beginning to receive serious attention.\n\nProponents argue that such services free up valuable time, particularly for those juggling demanding careers and family responsibilities. Critics, however, point to the precarious working conditions faced by many delivery workers, who often lack the job security and benefits afforded to traditional employees. Moreover, the environmental impact of increased packaging and vehicle emissions remains a contentious issue that companies have been slow to address.",
+          "questions": [
+            {
+              "id": "r1_1",
+              "number": 1,
+              "prompt": "According to the text, on-demand delivery services...",
+              "options": [
+                { "label": "A", "text": "have always been considered essential." },
+                { "label": "B", "text": "were previously seen as a luxury." },
+                { "label": "C", "text": "are declining in popularity." },
+                { "label": "D", "text": "are only used by busy professionals." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r1_2",
+              "number": 2,
+              "prompt": "Critics of delivery services are primarily concerned with...",
+              "options": [
+                { "label": "A", "text": "the cost to consumers." },
+                { "label": "B", "text": "the quality of the products delivered." },
+                { "label": "C", "text": "the working conditions of delivery staff." },
+                { "label": "D", "text": "the speed of delivery." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r1_3",
+              "number": 3,
+              "prompt": "The word \"contentious\" in the text is closest in meaning to...",
+              "options": [
+                { "label": "A", "text": "unimportant" },
+                { "label": "B", "text": "debatable" },
+                { "label": "C", "text": "resolved" },
+                { "label": "D", "text": "financial" }
+              ],
+              "answer": "B"
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "Escucha el audio (Parte 1) y elige la opción correcta (A, B o C) para cada pregunta.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "What does the woman say about her new job?",
+              "options": [
+                { "label": "A", "text": "It's more stressful than she expected." },
+                { "label": "B", "text": "She regrets taking it." },
+                { "label": "C", "text": "It offers better pay than her last one." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Why is the man calling the customer service line?",
+              "options": [
+                { "label": "A", "text": "To make a complaint." },
+                { "label": "B", "text": "To request a refund." },
+                { "label": "C", "text": "To ask for information." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "What does the speaker suggest about remote work?",
+              "options": [
+                { "label": "A", "text": "It suits everyone equally." },
+                { "label": "B", "text": "It requires strong self-discipline." },
+                { "label": "C", "text": "It is less productive than office work." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "What is the main topic of the conversation?",
+              "options": [
+                { "label": "A", "text": "Planning a business trip." },
+                { "label": "B", "text": "Choosing a university course." },
+                { "label": "C", "text": "Organising a conference." }
+              ],
+              "answer": "A"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

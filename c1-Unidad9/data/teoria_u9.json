@@ -1,0 +1,102 @@
+{
+  "future_tenses_plan": [
+    {
+      "structure": "Be going to (Future prediction based on evidence)",
+      "example": "Look at those dark clouds; it is going to rain."
+    },
+    {
+      "structure": "Be going to (Future plan)",
+      "example": "I am going to study a Master's degree next year."
+    },
+    {
+      "structure": "Present Continuous (Future plan with someone else / appointment)",
+      "example": "I'm seeing the dentist tomorrow at 5 PM."
+    },
+    {
+      "structure": "to be + to + inf (Formal arrangement)",
+      "example": "The Prime Minister is to visit Spain next month."
+    },
+    {
+      "structure": "Present Simple (Event fixed in a timetable - films, transports, concerts, exams)",
+      "example": "The train to London leaves at 8:00 AM."
+    },
+    {
+      "structure": "to be + due to + inf (Expected event)",
+      "example": "The exam is due to start in ten minutes."
+    }
+  ],
+  "future_tenses_noplan": [
+    {
+      "structure": "Future Simple (Make a future offer - Shall we/I)",
+      "example": "Shall I open the window for you?"
+    },
+    {
+      "structure": "Future Simple (Universal facts / future factual statements)",
+      "example": "The sun will rise at 6:30 AM tomorrow."
+    },
+    {
+      "structure": "Future Simple (Make a future prediction without evidence)",
+      "example": "I think robots will do all the housework in 2050."
+    },
+    {
+      "structure": "Future Simple (Future intention with think/expect/hope/believe/suppose)",
+      "example": "I hope she will pass the driving test."
+    },
+    {
+      "structure": "Future Simple (Spontaneous decision made at the moment of speaking)",
+      "example": "We are out of milk? I will go to the supermarket right now."
+    }
+  ],
+  "modal_verbs_future": [
+    {
+      "structure": "Possibility (may / might / could + base form)",
+      "example": "It might rain later, so take an umbrella."
+    },
+    {
+      "structure": "Probability 1 (may / might / could + well + base form)",
+      "example": "She may well get the promotion; she has worked very hard."
+    },
+    {
+      "structure": "Probability 2 (to be likely to + inf)",
+      "example": "They are likely to win the match tomorrow."
+    },
+    {
+      "structure": "Probability 3 (There is a little / slight / strong / some likelihood + of + -ing)",
+      "example": "There is a strong likelihood of him passing the exam."
+    },
+    {
+      "structure": "Probability 4 (There is a likelihood + that clause)",
+      "example": "There is a strong likelihood that he will pass the exam."
+    },
+    {
+      "structure": "Certainty (to be + bound to + inf)",
+      "example": "He is bound to complain about the food; he never likes anything."
+    }
+  ],
+  "cambridge_speaking_strategies": [
+    {
+      "part": "Part 4 (Predicting society's future)",
+      "structure": "There is a strong likelihood that [subject] will increasingly [verb base] in the coming years.",
+      "example": "There is a strong likelihood that people will increasingly work from home in the coming years.",
+      "translation": "Hay una gran probabilidad de que [sujeto] cada vez [verbo] más en los próximos años."
+    },
+    {
+      "part": "Part 3 (Discussing inevitable consequences)",
+      "structure": "If we choose this option, we are bound to face [problem/situation].",
+      "example": "If we choose this option, we are bound to face financial difficulties.",
+      "translation": "Si elegimos esta opción, es casi seguro que nos enfrentemos a [problema/situación]."
+    },
+    {
+      "part": "Part 2 (Speculating about what will happen next in the picture)",
+      "structure": "Judging by [evidence], it seems highly likely to me that [subject] is going to [verb].",
+      "example": "Judging by his expression, it seems highly likely to me that he is going to complain to the manager.",
+      "translation": "A juzgar por [evidencia], me parece muy probable que [sujeto] vaya a [verbo]."
+    },
+    {
+      "part": "Buying time / Organizing thoughts (Part 3 & 4)",
+      "structure": "I'm going to have to say that [opinion], mainly because...",
+      "example": "I'm going to have to say that the first picture is more relevant, mainly because...",
+      "translation": "Voy a tener que decir que [opinión], principalmente porque..."
+    }
+  ]
+}

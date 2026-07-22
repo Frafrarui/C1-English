@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 Unit 6: Cohesion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        background: '#f8fafc',
+                        surface: '#ffffff',
+                        textMain: '#0f172a',
+                        textMuted: '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-textMain font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-surface shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <h1 class="text-xl font-bold text-primary tracking-tight">C1 Unit 6: Cohesion</h1>
+            <nav class="flex space-x-1 sm:space-x-4">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Theory</button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Speaking Booster</button>
+                <button onclick="switchTab('practice')" id="tab-practice" class="tab-btn px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Practice Test</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        
+        <!-- Theory Section -->
+        <section id="section-theory" class="tab-content block animate-fade-in">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-bold text-textMain mb-2">Grammar Reference</h2>
+                <p class="text-textMuted">Master Reference, Substitution, and Ellipsis for C1/C2 exams.</p>
+            </div>
+            
+            <div id="theory-container" class="space-y-6">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+
+        <!-- Speaking Section -->
+        <section id="section-speaking" class="tab-content hidden animate-fade-in">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-bold text-textMain mb-2">Cambridge Speaking Booster</h2>
+                <p class="text-textMuted">Real exam examples using cohesion strategies.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="speaking-container">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section id="section-practice" class="tab-content hidden animate-fade-in">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-bold text-textMain mb-2">Practice Test</h2>
+                <p class="text-textMuted">Test your knowledge with randomized questions.</p>
+            </div>
+
+            <div class="bg-surface rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 max-w-3xl mx-auto">
+                <div id="test-intro" class="text-center">
+                    <p class="mb-6 text-lg">You will face a selection of questions. Select the correct word or phrase to complete each sentence.</p>
+                    <button onclick="startTest()" class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all duration-300 transform hover:-translate-y-0.5">Start Test</button>
+                    
+                    <div id="stats-container" class="mt-8 pt-6 border-t border-slate-100 hidden">
+                        <h3 class="text-sm font-semibold text-textMuted uppercase tracking-wider mb-2">Previous Results</h3>
+                        <p id="last-score" class="text-lg font-medium text-textMain"></p>
+                        <p id="last-date" class="text-sm text-textMuted"></p>
+                    </div>
+                </div>
+
+                <div id="test-area" class="hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-sm font-medium text-textMuted" id="question-counter">Question 1 / 30</span>
+                        <div class="w-1/2 bg-slate-100 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full transition-all duration-300" id="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium text-textMain leading-relaxed" id="question-text"></h3>
+                    </div>
+
+                    <div id="options-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Options generated by JS -->
+                    </div>
+
+                    <div id="feedback-container" class="mt-6 hidden rounded-lg p-4">
+                        <p id="feedback-message" class="font-medium"></p>
+                        <p id="feedback-explanation" class="text-sm mt-2 text-slate-700"></p>
+                        <button onclick="nextQuestion()" id="next-btn" class="mt-4 bg-slate-900 hover:bg-slate-800 text-white font-medium py-2 px-6 rounded-lg transition-colors w-full sm:w-auto">Next Question</button>
+                    </div>
+                </div>
+
+                <div id="test-results" class="hidden text-center">
+                    <h3 class="text-3xl font-bold mb-2" id="final-score-title">Test Complete!</h3>
+                    <p class="text-xl text-textMuted mb-6" id="final-score-text"></p>
+                    <button onclick="resetTest()" class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all duration-300">Try Again</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-surface border-t border-slate-200 mt-auto py-6">
+        <div class="max-w-5xl mx-auto px-4 text-center text-sm text-textMuted">
+            &copy; <span id="year"></span> C1 English Academy. Built with Node.js & Tailwind.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

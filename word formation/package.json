@@ -1,0 +1,21 @@
+{
+  "name": "word-formation-c1",
+  "version": "1.0.0",
+  "description": "Word Formation study app for C1 English",
+  "main": "server.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "english",
+    "c1",
+    "flashcards"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

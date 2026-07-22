@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>C1 Collocations Mastery | Make, Get & Do</title>
+    <meta name="description" content="Practica las colocaciones en inglés de nivel C1 con los verbos Make, Get y Do mediante cuestionarios interactivos, tarjetas de memoria y un diccionario completo." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body class="dark-theme">
+    <!-- Decorative background elements for glassmorphism -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    
+    <div class="app-container">
+      <!-- Header / Navigation -->
+      <header class="app-header">
+        <div class="logo-area">
+          <span class="logo-badge">C1</span>
+          <div>
+            <h1>Collocations Mastery</h1>
+            <p class="subtitle">Práctica de <span>make</span>, <span>get</span> y <span>do</span></p>
+          </div>
+        </div>
+        
+        <nav class="nav-menu">
+          <button id="nav-quiz" class="nav-btn active" data-view="quiz">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+            Quiz
+          </button>
+          <button id="nav-flashcards" class="nav-btn" data-view="flashcards">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            Tarjetas
+          </button>
+          <button id="nav-library" class="nav-btn" data-view="library">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            Biblioteca
+          </button>
+        </nav>
+        
+        <div class="actions-area">
+          <button id="theme-toggle" class="icon-btn" title="Cambiar Tema">
+            <!-- Sun Icon (shown in dark theme) -->
+            <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+            <!-- Moon Icon (shown in light theme) -->
+            <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content Container -->
+      <main id="main-content">
+        
+        <!-- QUIZ VIEW -->
+        <section id="view-quiz" class="app-view active">
+          
+          <!-- Quiz Menu Container -->
+          <div id="quiz-menu-container" class="quiz-menu-container glass">
+            <h2>Elige un Test</h2>
+            <p>Practica bloques específicos de colocaciones.</p>
+            <div class="test-buttons">
+              <button class="primary-btn test-btn" data-test="1">Test 1 (Palabras 1-10)</button>
+              <button class="primary-btn test-btn" data-test="2">Test 2 (Palabras 11-20)</button>
+              <button class="primary-btn test-btn" data-test="3">Test 3 (Palabras 21-30)</button>
+              <button class="primary-btn test-btn" data-test="4">Test 4 (Palabras 31-40)</button>
+              <button class="primary-btn test-btn" data-test="5">Test 5 (Palabras 41-50)</button>
+            </div>
+          </div>
+
+          <div id="quiz-play-container" class="quiz-layout hidden">
+            <div class="quiz-card glass">
+              <!-- Progress Indicator -->
+              <div class="progress-bar-container">
+                <div class="progress-info">
+                  <span>Pregunta <span id="quiz-current-num">1</span> de <span id="quiz-total-num">10</span></span>
+                  <span id="quiz-score-indicator">Aciertos: 0/0</span>
+                </div>
+                <div class="progress-track">
+                  <div id="quiz-progress-fill" class="progress-fill" style="width: 10%;"></div>
+                </div>
+              </div>
+              
+              <!-- Question Area -->
+              <div class="question-container">
+                <div class="question-badge">Completa la colocación</div>
+                <h2 class="question-text">
+                  <span class="phrase-prefix">...</span>
+                  <span class="phrase-blank" id="quiz-phrase-blank">_____</span>
+                  <span class="phrase-target" id="quiz-phrase-target">a decision</span>
+                </h2>
+                <p class="question-translation" id="quiz-translation">Significado: tomar una decisión</p>
+                <div id="quiz-multi-indicator" class="multi-indicator hidden"></div>
+              </div>
+              
+              <!-- Interactive Choices -->
+              <div class="choices-container">
+                <button class="choice-btn" data-verb="make">
+                  <span class="verb-name">make</span>
+                </button>
+                <button class="choice-btn" data-verb="get">
+                  <span class="verb-name">get</span>
+                </button>
+                <button class="choice-btn" data-verb="do">
+                  <span class="verb-name">do</span>
+                </button>
+                <button class="choice-btn" data-verb="give">
+                  <span class="verb-name">give</span>
+                </button>
+              </div>
+              
+              <!-- Feedback & Actions -->
+              <div class="quiz-actions">
+                <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+                <button id="quiz-submit-btn" class="primary-btn">Comprobar</button>
+                <button id="quiz-next-btn" class="primary-btn hidden">Siguiente</button>
+              </div>
+            </div>
+            
+            <!-- Sidebar Stats -->
+            <div class="stats-sidebar glass">
+              <h3>Tu Rendimiento</h3>
+              <div class="stat-grid">
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-streak">0</span>
+                  <span class="stat-label">Racha Actual</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-max-streak">0</span>
+                  <span class="stat-label">Racha Máxima</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-accuracy">0%</span>
+                  <span class="stat-label">Precisión</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-completed">0</span>
+                  <span class="stat-label">Completadas</span>
+                </div>
+              </div>
+              
+              <div class="recent-history">
+                <h4>Últimas Respuestas</h4>
+                <div id="history-dots" class="history-dots">
+                  <!-- JS will fill with green/red dots -->
+                  <span class="empty-history-text">Comienza a responder para ver tu historial</span>
+                </div>
+              </div>
+              
+              <button id="stats-reset-btn" class="danger-btn-text">Reiniciar estadísticas</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- FLASHCARDS VIEW -->
+        <section id="view-flashcards" class="app-view">
+          <div class="flashcards-layout">
+            <div class="flashcard-deck">
+              <div id="flashcard" class="flashcard-container">
+                <div class="card-inner">
+                  <!-- Front Side -->
+                  <div class="card-face card-front glass">
+                    <span class="card-badge">¿Qué verbo acompaña a esta frase?</span>
+                    <h2 id="card-phrase" class="card-phrase-text">a course</h2>
+                    <p class="card-instruction">Haz clic o presiona Espacio para voltear</p>
+                  </div>
+                  <!-- Back Side -->
+                  <div class="card-face card-back glass">
+                    <span class="card-badge back-badge">Respuesta correcta</span>
+                    <div id="card-verbs-container" class="card-verbs">
+                      <span class="verb-tag make">make</span>
+                    </div>
+                    <h3 id="card-back-phrase" class="card-phrase-text-back">a course</h3>
+                    <p id="card-translation" class="card-translation-text">Significado: hacer/cursar un curso</p>
+                    <p class="card-instruction">Haz clic para voltear de nuevo</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Card Controls -->
+              <div class="card-controls">
+                <button id="card-prev-btn" class="secondary-btn icon-btn-round" title="Anterior (Flecha Izquierda)">
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <span id="card-counter" class="card-counter">1 de 28</span>
+                <button id="card-next-btn-deck" class="secondary-btn icon-btn-round" title="Siguiente (Flecha Derecha)">
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+              </div>
+              <div class="keyboard-tips">
+                <span>Tip: Usa <kbd>Espacio</kbd> para voltear y <kbd>←</kbd> <kbd>→</kbd> para navegar.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- LIBRARY VIEW -->
+        <section id="view-library" class="app-view">
+          <div class="library-container glass">
+            <div class="library-header">
+              <h2>Biblioteca de Colocaciones</h2>
+              <p>Busca y filtra el listado completo de expresiones C1</p>
+              
+              <div class="filter-bar">
+                <div class="search-box">
+                  <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                  <input type="text" id="library-search" placeholder="Buscar frase o traducción..." />
+                </div>
+                
+                <div class="filter-chips">
+                  <button class="chip active" data-filter="all">Todos</button>
+                  <button class="chip" data-filter="make">make</button>
+                  <button class="chip" data-filter="get">get</button>
+                  <button class="chip" data-filter="do">do</button>
+                  <button class="chip" data-filter="give">give</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="library-list-wrapper">
+              <table class="library-table">
+                <thead>
+                  <tr>
+                    <th>Colocación Completa</th>
+                    <th>Verbo(s)</th>
+                    <th>Traducción</th>
+                  </tr>
+                </thead>
+                <tbody id="library-table-body">
+                  <!-- JS will dynamically populate rows -->
+                </tbody>
+              </table>
+              <div id="library-empty" class="library-empty hidden">
+                <p>No se encontraron colocaciones que coincidan con los filtros.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </main>
+
+      <footer class="app-footer">
+        <p>C1 English Collocations App. Desarrollado con esmero.</p>
+      </footer>
+    </div>
+    
+    <!-- Congratulations Overlay / Modal -->
+    <div id="modal-completion" class="modal-overlay hidden">
+      <div class="modal-content glass animate-scale">
+        <div class="modal-icon">🏆</div>
+        <h2>¡Sesión Completada!</h2>
+        <p>Has terminado la ronda de preguntas. Aquí tienes tus resultados:</p>
+        
+        <div class="modal-stats">
+          <div class="modal-stat-box">
+            <span class="modal-stat-val" id="modal-correct-ratio">8/10</span>
+            <span class="modal-stat-lbl">Aciertos</span>
+          </div>
+          <div class="modal-stat-box">
+            <span class="modal-stat-val" id="modal-accuracy">80%</span>
+            <span class="modal-stat-lbl">Precisión</span>
+          </div>
+        </div>
+        
+        <div class="modal-actions">
+          <button id="modal-retry-mistakes-btn" class="secondary-btn-text hidden" style="margin-bottom: 12px; width: 100%;">Corregir Fallos</button>
+          <button id="modal-restart-btn" class="primary-btn">Volver al Menú</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

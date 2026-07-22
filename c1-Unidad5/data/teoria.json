@@ -1,0 +1,23 @@
+{
+  "gerund": {
+    "title": "Gerund (-ing)",
+    "rules": [
+      { "type": "Subject", "description": "El gerundio siempre es singular.", "example": "Studying English is very useful." },
+      { "type": "Object (Verbs)", "description": "Realiza la acción de ciertos verbos.", "verbs": ["suggest", "recommend", "consider", "avoid", "deny", "risk", "enjoy", "fancy", "admit", "adore", "advise", "appreciate", "delay", "detest", "dislike", "imagine", "involve", "keep", "mind", "miss", "postpone", "practise", "prevent", "propose", "put off", "resent", "resist"] },
+      { "type": "Complement", "description": "Se usa después del verbo 'to be' para identificar o definir al sujeto.", "example": "My hobby is reading." },
+      { "type": "Preposition + V-ing", "description": "Incluye verbos seguidos de la preposición 'to' y estructuras Adjet/Sust/Verbo + Preposición.", "verbs": ["to adapt/adjust to", "admit to", "confess to", "get round to", "get used to", "look forward to", "object to"] },
+      { "type": "Phrasal Verbs & Linkers", "description": "Tras phrasal verbs y conectores específicos.", "verbs": ["give up", "In spite of", "Despite", "Instead of", "as a result of", "because of", "by way of", "due to", "owing to", "In addition to", "besides", "as well as"] },
+      { "type": "Fixed Expressions", "expressions": ["can't stand", "to be/get used to", "can't/couldn't help", "It's not worth", "There is no use", "feel like"] }
+    ]
+  },
+  "infinitive": {
+    "title": "To-Infinitive",
+    "rules": [
+      { "type": "To show a purpose", "example": "I went to England to improve." },
+      { "type": "Some Nouns + To-inf", "nouns": ["ability", "attempt", "capacity", "chance", "decision", "determination", "desire", "effort", "failure", "intention", "need", "opportunity", "permission", "plan", "proposal", "refusal", "right", "tendency", "way", "willingness"] },
+      { "type": "Some Verbs + To-inf", "verbs": ["hope", "refuse", "appear", "expect", "agree", "arrange", "ask", "attempt", "choose", "decide", "demand", "deserve", "help", "hesitate", "learn", "manage", "offer", "prepare", "pretend", "seem", "threaten"] },
+      { "type": "Verb + someone + To-inf", "verbs": ["allow", "encourage", "persuade", "advise", "ask", "challenge", "remind", "tell", "warn", "enable", "expect", "force", "intend", "invite", "order", "recommend", "teach", "urge"] },
+      { "type": "Modal Verbs & Special Structures", "structures": ["have to", "need to", "ought to", "be + to inf", "be made + to inf", "be about + to inf", "be due to + to inf"] }
+    ]
+  }
+}

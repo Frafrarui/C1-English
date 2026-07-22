@@ -1,0 +1,30 @@
+<% const withGap = (s) => (s || '').replace('___', '<span class="gap">_____</span>'); %>
+<div class="question" data-question-id="<%= question.id %>">
+  <% if (question.sentence1 && question.keyword) { %>
+    <div class="kwt-block highlight-zone">
+      <p class="kwt-sentence1"><strong class="kwt-number"><%= question.number %>.</strong> <%= question.sentence1 %></p>
+      <p class="kwt-keyword-row"><span class="keyword-badge"><%= question.keyword %></span></p>
+      <p class="kwt-sentence2"><%- withGap(question.sentence2) %></p>
+    </div>
+  <% } else { %>
+    <p class="question-prompt highlight-zone">
+      <strong><%= question.number %>.</strong>
+      <% if (question.prompt) { %><%= question.prompt %><% } %>
+    </p>
+  <% } %>
+
+  <% if (question.options && question.options.length) { %>
+    <div class="options">
+      <% question.options.forEach(opt => { %>
+        <label class="option">
+          <input type="radio" name="<%= question.id %>" value="<%= opt.label %>">
+          <span class="highlight-zone"><strong><%= opt.label %>)</strong> <%= opt.text %></span>
+        </label>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <input type="text" class="text-answer" name="<%= question.id %>" autocomplete="off" placeholder="Escribe tu respuesta">
+  <% } %>
+
+  <p class="feedback"></p>
+</div>

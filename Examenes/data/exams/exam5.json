@@ -1,0 +1,554 @@
+{
+  "id": "exam5",
+  "title": "Test 4 (Cambridge C1 Advanced)",
+  "description": "Test 4 completo: Use of English, Reading y Listening.",
+  "examType": "cae",
+  "scoring": {
+    "useOfEnglish": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 2 },
+      "nominalMax": 28,
+      "passPercentage": 57
+    },
+    "reading": {
+      "partPoints": { "5": 2, "6": 2, "7": 2, "8": 1 },
+      "nominalMax": 50,
+      "passPercentage": 64
+    },
+    "listening": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 1, "5": 1 },
+      "nominalMax": 30,
+      "passPercentage": 60
+    }
+  },
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+          "text": "Dressing for success\n\nWhether you like it or not, when you go for a job interview your personal appearance will be judged as an (0) expression of who you are. Just from looking at you, the interviewer will start (1)___ an opinion about your capabilities, your attitude to work and how well you might (2)___ their organisation. The right image is one that helps the interviewer (3)___ you as one of their team and (4)___ them that you could represent their company. So, find out about the company dress code prior to the interview, or see how people are dressed on their corporate website.\n\nHowever, even if you (5)___ the image right, it may not (6)___ be remarked on. The interviewer will just sense that you 'look right', and feel (7)___ to being convinced that you are the right person for the job. But if you get it wrong, it can be very difficult to (8)___ the negative impression you may already have made.",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "shaping" },
+                { "label": "B", "text": "making" },
+                { "label": "C", "text": "creating" },
+                { "label": "D", "text": "forming" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "put up with" },
+                { "label": "B", "text": "settle down to" },
+                { "label": "C", "text": "fit in with" },
+                { "label": "D", "text": "live up to" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "visualise" },
+                { "label": "B", "text": "reflect" },
+                { "label": "C", "text": "observe" },
+                { "label": "D", "text": "foresee" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "reassures" },
+                { "label": "B", "text": "clarifies" },
+                { "label": "C", "text": "encourages" },
+                { "label": "D", "text": "supports" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_5",
+              "number": 5,
+              "options": [
+                { "label": "A", "text": "put" },
+                { "label": "B", "text": "get" },
+                { "label": "C", "text": "hit" },
+                { "label": "D", "text": "set" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_6",
+              "number": 6,
+              "options": [
+                { "label": "A", "text": "significantly" },
+                { "label": "B", "text": "necessarily" },
+                { "label": "C", "text": "appropriately" },
+                { "label": "D", "text": "strictly" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_7",
+              "number": 7,
+              "options": [
+                { "label": "A", "text": "open" },
+                { "label": "B", "text": "free" },
+                { "label": "C", "text": "alert" },
+                { "label": "D", "text": "aware" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_8",
+              "number": 8,
+              "options": [
+                { "label": "A", "text": "overtake" },
+                { "label": "B", "text": "overthrow" },
+                { "label": "C", "text": "overdo" },
+                { "label": "D", "text": "overcome" }
+              ],
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+          "text": "How technology is helping people to talk\n\nThe term 'eye-gaze technology' may (0) not mean much to most people, but it can be life-changing for anyone suffering from a severe speech problem. (9)___ been invited to try one such hi-tech communication aid, I find (10)___ sitting staring at a computer screen. As a journalist, this is nothing new for me (11)___ for the fact that this screen features a red dot which tracks the movement of my eyes.\n\nI start by looking at a letter from an on-screen keyboard. However, I could, (12)___ I wanted to, select alternative screens (13)___ up of vocabulary and expressions, which, for experienced users, would (14)___ doubt speed things up. The letter or word I've selected pops up at the top of the screen, and slowly I build up my message. More speed would be good as this isn't a fast way to communicate, (15)___ with the aid of predictive text. After (16)___ seems like a long time, my phrase 'this is an amazing machine' is complete. I stare at the phrase and it comes back to me in a synthesised voice.",
+          "questions": [
+            { "id": "ue2_9", "number": 9, "answer": "having" },
+            { "id": "ue2_10", "number": 10, "answer": "myself" },
+            { "id": "ue2_11", "number": 11, "answer": "except", "acceptedAnswers": ["but"] },
+            { "id": "ue2_12", "number": 12, "answer": "if", "acceptedAnswers": ["when", "whenever"] },
+            { "id": "ue2_13", "number": 13, "answer": "made" },
+            { "id": "ue2_14", "number": 14, "answer": "no", "acceptedAnswers": ["without"] },
+            { "id": "ue2_15", "number": 15, "answer": "even" },
+            { "id": "ue2_16", "number": 16, "answer": "what" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "word-formation",
+          "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+          "text": "Two sleeps per night\n\nSometimes we wake up in the middle of the night and try (0) desperately hard to get back to sleep, but instead we spend a really (17)___ night tossing and turning until morning. This situation could be (18)___ of a stressful week, but it could also be because of a sleep pattern we have inherited. Research shows that our ancestors, rather than enjoying an (19)___ period of sleep at night, had two sleeps broken up by some time awake.\n\nThe eight-hours-a-night pattern that has become almost (20)___ to modern humans has only been (21)___ in industrialised countries since the 19th century. Then (22)___ electricity was introduced, which resulted in a division between night and day that became (23)___ blurred. What had until then been daytime activities could now be enjoyed after darkness, and as a result, we went to bed later. We were therefore more tired, and this (24)___ us to sleep through the night. However, scientists believe that, unconsciously, some people may still follow the old patterns and have a lengthy period of wakefulness during the night.",
+          "questions": [
+            { "id": "ue3_17", "number": 17, "prompt": "COMFORT", "answer": "uncomfortable" },
+            { "id": "ue3_18", "number": 18, "prompt": "SYMPTOM", "answer": "symptomatic" },
+            { "id": "ue3_19", "number": 19, "prompt": "INTERRUPT", "answer": "uninterrupted" },
+            { "id": "ue3_20", "number": 20, "prompt": "ESSENCE", "answer": "essential" },
+            { "id": "ue3_21", "number": 21, "prompt": "CUSTOM", "answer": "customary" },
+            { "id": "ue3_22", "number": 22, "prompt": "AFFORD", "answer": "affordable" },
+            { "id": "ue3_23", "number": 23, "prompt": "PROGRESS", "answer": "progressively" },
+            { "id": "ue3_24", "number": 24, "prompt": "ABLE", "answer": "enabled" }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "key-word-transformation",
+          "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+          "questions": [
+            {
+              "id": "ue4_25",
+              "number": 25,
+              "sentence1": "Do you mind if John joins us for the meeting?",
+              "keyword": "TO",
+              "sentence2": "Do you have ___ us for the meeting?",
+              "answer": "any objection to john's joining",
+              "acceptedAnswers": ["any objections to john's joining", "an objection to john's joining", "any objection to john joining", "any objections to john joining", "an objection to john joining"]
+            },
+            {
+              "id": "ue4_26",
+              "number": 26,
+              "sentence1": "Dan abandoned his studies at university because he was ill.",
+              "keyword": "RESULTED",
+              "sentence2": "Dan's ___ his studies at university.",
+              "answer": "illness resulted in him abandoning",
+              "acceptedAnswers": ["illness resulted in his abandoning", "sickness resulted in him abandoning", "sickness resulted in his abandoning", "illness resulted in the abandonment of", "sickness resulted in the abandonment of"]
+            },
+            {
+              "id": "ue4_27",
+              "number": 27,
+              "sentence1": "As soon as the tennis players went onto the court, it started raining.",
+              "keyword": "HAD",
+              "sentence2": "No ___ onto the court than it started raining.",
+              "answer": "sooner had the tennis players gone",
+              "acceptedAnswers": ["sooner had the tennis players got", "sooner had the tennis players come"]
+            },
+            {
+              "id": "ue4_28",
+              "number": 28,
+              "sentence1": "'We'll have to postpone the meeting until next week, as a lot of people are on leave,' the manager said.",
+              "keyword": "OFF",
+              "sentence2": "The manager said the meeting ___ until the following week, as a lot of people were on leave.",
+              "answer": "would have to be put off",
+              "acceptedAnswers": ["would need to be put off", "would have to be called off", "would need to be called off", "had to be put off", "had to be called off"]
+            },
+            {
+              "id": "ue4_29",
+              "number": 29,
+              "sentence1": "As visibility was getting worse and worse, Bob and Jane had to cut short their sailing trip.",
+              "keyword": "BUT",
+              "sentence2": "As visibility was getting worse and worse, Bob and Jane had ___ cut short their sailing trip.",
+              "answer": "no choice but to",
+              "acceptedAnswers": ["no other choice but to", "no alternative but to", "no other alternative but to", "no option but to", "no other option but to"]
+            },
+            {
+              "id": "ue4_30",
+              "number": 30,
+              "sentence1": "Please tick this box if you don't want us to inform you about future events.",
+              "keyword": "RATHER",
+              "sentence2": "Please tick this box if you ___ sent any information about future events.",
+              "answer": "would rather not be",
+              "acceptedAnswers": ["'d rather not be"]
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 5,
+          "type": "multiple-choice",
+          "instructions": "You are going to read an article about travel. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "text": "Seeing the World\n\nThe taxi is late, and I get nervous. Once at the airport I'm thrown into the harsh lights of Terminal B, running with my suitcase so I can wait in a long security line. My belt buckle sets off the metal detector, and my aftershave is confiscated. By now you can probably guess the punchline of this very banal story: my flight has been cancelled due to bad weather. I will be stuck here for the next 218 minutes, my only consolation a plastic cup of coffee and the predictably tasteless sandwich. Then I will miss my connecting flight and wait, in a different city, with the same menu, for another plane. It's not the flying I mind - I will always be awed by the physics that gets a fat metal bird into the sky. The rest of the journey, however, will inevitably feel like a depressing lesson in the ills of modernity, from the pre-dawn X-ray screening to the sad airport malls peddling rubbishy souvenirs.\n\nSo why do we travel? Sometimes it's because we have to, but most travel isn't non-negotiable. (In recent years only 30% of trips over 100 kilometres were made for business.) Instead we travel because we want to, because the annoyances are outweighed by the thrill of being someplace new. Because we need a vacation. Because work is stressful. Because home is boring. Because New York is New York. Travel, in other words, is a basic human desire. We're a migratory species. But here's my question: is this collective urge to travel still a worthwhile compulsion? Or is it like the taste for fatty foods: one of those instincts we should have lost a long time ago?\n\nThe good news is that pleasure is not the only advantage of travel. In fact, several new science papers suggest that travel is essential for effective thinking. Of course it's not enough simply to jump on a plane: if we want to experience the psychological benefits of travel, then we have to rethink why we do it. An Englishman, for example, might take a short break in Paris so as not to think about those troubles he's leaving behind. But here's the twist: that tourist is actually most likely to solve his stubbornest problems while sitting in a stylish Parisian café. Our thoughts are constrained by the familiar, and with a near-infinite number of things to think about, our brain spends most of its time choosing what not to notice. As a result, imagination is traded for efficiency. Putting some space between you and home, however, makes it easier to see something new in the old; the mundane is grasped from a slightly more abstract perspective. So while contemplating some delicious French pastry, we should be mulling over those domestic riddles we just can't solve.\n\nAnd that isn't the only psychological perk of travel. Recently researchers at business schools in France and the USA have reported that students who had lived abroad were 20% more likely to solve a classic experiment, known as the Candle Task, than students who had never lived outside their birth country. In this task, subjects are given a candle, a cardboard box containing drawing pins, and some matches. They are told to attach the candle to a piece of corkboard on a wall so that it can burn properly and no wax drips on to the floor. Nearly 90% of people either try to pin the candle directly to the board, or melt it with the matches so that it sticks to the board. Neither strategy works. Only a slim minority of subjects come up with the solution, which involves attaching the candle to the cardboard box with wax and then pinning the box to the board. According to the researchers, the experience of another culture gives us the open-mindedness to realise that a single thing can have multiple meanings. Consider the act of leaving food on the plate: in some Oriental countries this is seen as a compliment, a signal that the host has provided enough to eat. But in many Western countries the same act is a subtle insult, an indication that the food wasn't good enough to finish. Such cultural contrasts mean that seasoned travellers are alive to ambiguity, and more willing to accept that there are different (and equally valid) ways of interpreting the world.",
+          "questions": [
+            {
+              "id": "r5_31",
+              "number": 31,
+              "prompt": "What is the writer's attitude towards flying in the first paragraph?",
+              "options": [
+                { "label": "A", "text": "He is frustrated by the inefficiencies of air travel." },
+                { "label": "B", "text": "He is surprised by the poor standard of airport facilities." },
+                { "label": "C", "text": "He is anxious for the flight to be over as soon as possible." },
+                { "label": "D", "text": "He is resigned to the tediousness of the airport experience." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_32",
+              "number": 32,
+              "prompt": "The writer mentions business trips to make the point that",
+              "options": [
+                { "label": "A", "text": "relatively few people travel out of necessity." },
+                { "label": "B", "text": "relatively few journeys are taken for pleasure." },
+                { "label": "C", "text": "the majority of people travel without a valid reason to do so." },
+                { "label": "D", "text": "the majority of journeys are made for the same few reasons." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "r5_33",
+              "number": 33,
+              "prompt": "What does the writer recommend in the third paragraph?",
+              "options": [
+                { "label": "A", "text": "having a holiday so as to take a rest from everyday worries" },
+                { "label": "B", "text": "going as far away as possible rather than spending holidays at home" },
+                { "label": "C", "text": "taking full advantage of the cultural experiences that travel can offer" },
+                { "label": "D", "text": "travelling in order to gain original insights into familiar situations" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_34",
+              "number": 34,
+              "prompt": "According to the writer, recent 'Candle Task' results suggest a link between living abroad and",
+              "options": [
+                { "label": "A", "text": "practical skills." },
+                { "label": "B", "text": "mental flexibility." },
+                { "label": "C", "text": "determination to solve problems." },
+                { "label": "D", "text": "confidence in one's own resourcefulness." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_35",
+              "number": 35,
+              "prompt": "The writer mentions leaving food on one's plate in order to highlight",
+              "options": [
+                { "label": "A", "text": "the difficulties travellers face when interpreting cultural conventions." },
+                { "label": "B", "text": "the importance of behaving naturally in different contexts." },
+                { "label": "C", "text": "the wide variation in levels of politeness across the world." },
+                { "label": "D", "text": "the effect of exposure to foreign influences." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_36",
+              "number": 36,
+              "prompt": "What would be a suitable subtitle for this article?",
+              "options": [
+                { "label": "A", "text": "How to understand the mentality of different cultures" },
+                { "label": "B", "text": "How to overcome the more inconvenient aspects of travel" },
+                { "label": "C", "text": "How distance and difference can boost our creative thinking" },
+                { "label": "D", "text": "How other places can change the way we perceive ourselves" }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 6,
+          "type": "cross-text-multiple-matching",
+          "instructions": "You are going to read four reviews of a book entitled Why Translation Matters. For questions 37-40, choose from the reviews A-D. The reviews may be chosen more than once.",
+          "text": "Why Translation Matters\n\nFour reviewers give their opinions on translator Edith Grossman's book about her profession.\n\nA In Why Translation Matters, Grossman discusses a number of complex issues. Is a translation merely a reflection in a clouded looking glass that will never mirror the true original? Is a translator merely a sophisticated tool, a human machine soon to be replaced by a computer program? She answers these and many other questions with a lyrical eloquence that is graceful and inspiring. In the process, we are also shown detailed examples of her solutions to knotty problems; here we see her joy in discovery and doing, the best reasons for pursuing a true vocation. Such inner drive is indispensable, because as she rightly says, 'Translation is a strange craft, generally appreciated by writers, undervalued by publishers, trivialised by the academic world, and practically ignored by reviewers.' And yet, where literature exists, translation exists and it is a good thing that these issues should be explored.\n\nB Books by translators are few and far between. This short book was originally given as a series of three university lectures, and the ploys of a lecturer let down the writer: rhetorical questions, academic jargon. Grossman's best thinking about translation, and her best defence of translation, will be reflected in her translations themselves. It is on the rare occasions that she focuses on overcoming the challenges that her craft throws up that the book becomes more pleasurable to read. She vents her frustration on the reader, and some of this is certainly justified: translators ask for very little – simply to be read, included in the cultural debate, understood – yet almost invariably fail to be given the credit they are due. Translation, for all that it seems a technical matter, is actually anything but. It's a mode of reading so sympathetic and creative that the outcome is wholly original.\n\nC There is a theory that all language is a form of translation, that we speak in order to translate the unknown into the known, the non-verbal into the verbal. Edith Grossman draws upon this theory in her book, rightly suggesting, I believe, that the translation of a literary work from one language into another involves much the same creative process as that which provoked the originating author, and the end product therefore stands alone. After a rich career, she is eminently well-qualified to speak on behalf of literary translators everywhere. Nevertheless, the role of the translator is undoubtedly one of the most unappreciated and unacknowledged in the world of literature. Grossman's beautifully crafted book draws attention to this and may help to address the problem. It is accessible to the layperson and should be required reading on all university literature courses.\n\nD Why Translation Matters by Edith Grossman is based on three lectures she gave at a university in the US. As an expert in her field, she has won several awards and would seem to have every reason to feel secure, if not serene. It seems inappropriate, therefore, that she should devote entire pages to criticising publishers and reviewers, in particular, for failing to give translators the respect they deserve. However small-minded these comments may look on the page, they do form a significant part of Grossman's overall argument, which is that literature and translation are 'absolutely inseparable' and thus the translator is engaged in the very same activity as her author, and is, indeed, a writer herself. The translator's version of the text, she maintains, is to be considered an original, too. Grossman's approach is non-theoretical, as she ranges discursively over the usual concerns raised by (chiefly literary) translation in this ultimately charming little book.",
+          "questions": [
+            { "id": "r6_37", "number": 37, "prompt": "expresses a different opinion from reviewer A regarding how well the book is written?", "answer": "B" },
+            { "id": "r6_38", "number": 38, "prompt": "shares reviewer B's view on whether a translation can be considered to be a new work in its own right?", "answer": "C" },
+            { "id": "r6_39", "number": 39, "prompt": "has a different view from the others on Grossman's complaints about attitudes to translators?", "answer": "D" },
+            { "id": "r6_40", "number": 40, "prompt": "shares reviewer A's view of the way Grossman describes how she deals with difficulties when translating books?", "answer": "B" }
+          ]
+        },
+        {
+          "partNumber": 7,
+          "type": "gapped-text",
+          "instructions": "You are going to read part of a review of a book about grass. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.",
+          "text": "The Story of Grass\n\nJohn Carey reviews The Forgiveness of Nature; The Story of Grass by Graham Harvey\n\nThere is no doubting the radical importance of Graham Harvey's message. His case is that grass is unique among the world's plants not just in its arctic-to-equator adaptability and species diversity, but in the power of its elaborate root system to enrich soil with useful carbon compounds. The method of land management that turns this to advantage is mixed crop and cattle farming using crop rotation.\n\n[41]\n\nThis traditional, nature-based farming practice received a boost in the 17th century, when it was discovered that fertility was enormously increased if the pasture incorporated clover flowers, since clover has the ability to convert nitrogen from the atmosphere into soluble soil nitrates. In the century and a half to 1850, grain yields and animal products doubled because of the clover revolution, and British farming was able to feed an extra seven million people as the industrial revolution spurred population growth.\n\n[42]\n\nWhen these incentives were introduced in the last quarter of the 20th century, farmers scrambled to get rid of their cattle, plough up their pastures, and turn their farms into various kinds of cereal monoculture, with fields full of single crops. These need heavy applications of chemicals to maintain yields. The high levels of artificial nitrogen that result make the crops susceptible to disease, particularly mildew, which have to be countered with yet more chemicals in the form of fungicides.\n\n[43]\n\nIntensive agriculture has had a similar effect on hay meadows. These used to flourish in Britain, and their mix of grasses supported the evolution of a rich diversity of animals and birds. Covering grassland with artificial fertiliser reverses this process. It allows one or two fast-growing varieties to eliminate the others, together with the wildlife they supported, producing monotonous acres of rye-grass.\n\n[44]\n\nIn Harvey's view, British agriculture seems little more than an elaborate means of transferring money from the taxpayer to the pockets of the agrochemical industry, and laying waste the countryside in the process. The more intensive the farm, the more its owner can claim public subsidy. The European Union's common agricultural policy does not escape his attention. It has, in his opinion, outlawed the traditional mixed farm, since it requires farmers to choose between intensive crop or intensive cattle production.\n\n[45]\n\nHarvey runs the story of British agriculture alongside the story of the American prairies – flat grasslands without trees. Again the hero is grass, and the villains are well-meaning farmers with no understanding of ecology. The earliest American settlers, in the 17th century, saw no use for the prairies and labelled them desert. In fact, although arid, they were a rich and delicate ecosystem, supporting vast herds of bison which, at their peak, equalled in weight the entire current human population of north America. In three generations, all this was wiped out. The bison were slaughtered, and the prairies ploughed up for wheat and maize.\n\n[46]\n\nNow the prairies have to be dosed with artificial fertiliser and pesticides, and the government spends millions of dollars on irrigation. It is a depressing picture which mirrors the story across the Atlantic.",
+          "paragraphOptions": [
+            { "label": "A", "text": "But it's not just institutions that incur Harvey's anger, the phasing out of grass has also compounded the greenhouse effect. Grasslands take carbon from the atmosphere and lock it safely in the soil. They are far more effective at doing this than tropical rain forests, and Harvey contends that a return to grass-based husbandry would crucially alleviate global warming." },
+            { "label": "B", "text": "Its presence is a result of the clearing of forest land to make way for crops and pasture. While many deplore this development it is the end result of the need to supply cheap food." },
+            { "label": "C", "text": "With this system, cattle graze on fields consisting just of grass, known as pastures. After four years these are ploughed up and planted with food crops. At the same time, other fields on the same farm will now have been exhausted by food production, so they are returned to pasture again." },
+            { "label": "D", "text": "The result is depressingly predictable – all these substances damage the soil and destroy its wildlife, from micro-organisms up to earthworms, insects and small mammals. The landscape falls silent." },
+            { "label": "E", "text": "Farming of this kind is now virtually obsolete in the country, largely because farm subsidies encourage farmers to abandon crop rotation based on grass and to rely on chemical fertilisers instead." },
+            { "label": "F", "text": "At first, yields of these crops were huge, drawing on organic matter in the topsoil accumulated over centuries. But in the next 30 years, they fell by three-quarters. Then came the 'high' winds of the 1930s, when the degraded soil literally blew away." },
+            { "label": "G", "text": "This particular species spread with frightening speed in the 20th century. By 1984, the total area of species-rich grassland remaining in the country was just 3% of what it had been in 1930, and the destruction is continuing to the present day." }
+          ],
+          "questions": [
+            { "id": "r7_41", "number": 41, "answer": "C" },
+            { "id": "r7_42", "number": 42, "answer": "E" },
+            { "id": "r7_43", "number": 43, "answer": "D" },
+            { "id": "r7_44", "number": 44, "answer": "G" },
+            { "id": "r7_45", "number": 45, "answer": "A" },
+            { "id": "r7_46", "number": 46, "answer": "F" }
+          ]
+        },
+        {
+          "partNumber": 8,
+          "type": "multiple-matching",
+          "instructions": "You are going to read an article in which five people talk about careers in archaeology. For questions 47-56, choose from the books (A-E).",
+          "text": "Careers in Archaeology\n\nA Jack Stone from The Archaeological Association\nThe visibility of archaeology on TV and in the press has increased enormously in recent years. Whether this makes it an attractive career, given an economic climate in which young people understandably favour jobs with good salaries – not common in archaeology – is debatable, but generally, it's had a positive impact. Many archaeologists are hired by small companies to work on excavations; these jobs are often interesting but don't tend to last more than a few months at a time. Then, there are those who work for government organisations, caring for the historical environment. These jobs are more stable, but there are fewer of them. Some people stay on at university doing research and teaching, and others do museum work. In my experience, most people go into archaeology with their feet firmly on the ground.\n\nB Dr Paul Simpson, university lecturer\nIt's probably what they see on film and TV, but many people assume that archaeology equals digging big holes. While this is obviously an aspect of what we do nowadays, the bulk of what we do is lab-based. Few university programmes cover the ground archaeology does. Spanning sciences and humanities, it requires all sorts of skills, and in my department at least, we teach everything from human evolution to the industrial revolution. The number of people wanting to study archaeology is regrettably small – tiny relative to history, for example. Potential salaries partly explain this, but it's also down to misguided school teachers saying, 'Why not choose a safe subject like business?' Perhaps they forget it's perfectly feasible to study archaeology and then succeed in an unrelated career. Having said that, half the final-year students in my department stay in archaeology, and tend to be obsessive about it. There's something about telling stories based on evidence you've discovered – and knowing that if you hadn't discovered it, no-one would have – that cannot be experienced in any other field.\n\nC Victoria Walker, postgraduate student\nI'm researching links between Roman civilisation and Ireland 2,000 years ago, which I realise non-archaeologists might think somewhat obscure. I have a fantastic bunch of academics and students backing me up and there's a tremendous sense of being in it together. It's a challenging discipline, and one that because of the fieldwork particularly suits a hands-on person like me. Archaeology's wonderful even if you end up doing a completely different kind of job. With hindsight, I now see that the undergraduate course is as much about learning how to do things that can be used in other areas of life, like how to gather and interpret evidence, as it is about archaeology itself.\n\nD Mark Anderson, field archaeologist\nMy company excavates sites before big construction projects like roads and shopping centres get started on. Some remains date back many thousands of years, others a couple of centuries; they might be castles, temples, small houses or even just ancient farmland. Over the years, however, I've worked extensively on wetland sites like marshes and river estuaries. This means I have unusual expertise and am in demand for digs in such locations. Much of our work is practical, but we also use imagination to figure out what the tiny fragments we dig up might mean. This, I feel, is something historians, with their access to masses of evidence, tend to miss out on. People say archaeology is a luxury – today's world has far greater problems to solve than investigating how ancient people lived. It's hard to argue with this, but our troubled globe is run by people seeking quick, short-term solutions, and a deeper, longer-term understanding of humanity's history, derived from archaeology, would surely enhance their thinking.\n\nE Tina Cray, museum manager\nEven at university I was always more interested in the theoretical side of things than digging, but on graduating I assumed, like many others in my position, that excavation is what archaeology's all about. It took me a while to realise there were other paths to explore. I'm now part of a team that runs museums and heritage sites, and we provide a valuable, if underestimated, service to the community. There's the key role museums play in ensuring that knowledge of the past doesn't remain the preserve of a privileged minority. My team has also overseen an impressive rise in the number of tourists visiting museums and monuments, and this has stimulated local businesses and created jobs.",
+          "questions": [
+            { "id": "r8_47", "number": 47, "prompt": "suggests that archaeology has a unique appeal?", "answer": "B" },
+            { "id": "r8_48", "number": 48, "prompt": "describes how mutually supportive archaeologists tend to be?", "answer": "C" },
+            { "id": "r8_49", "number": 49, "prompt": "criticises people who advise against studying archaeology?", "answer": "B" },
+            { "id": "r8_50", "number": 50, "prompt": "points out the economic contribution that archaeology can make?", "answer": "E" },
+            { "id": "r8_51", "number": 51, "prompt": "welcomes the media profile that archaeology now has?", "answer": "A" },
+            { "id": "r8_52", "number": 52, "prompt": "points out that jobs in archaeology can often be short-term?", "answer": "A" },
+            { "id": "r8_53", "number": 53, "prompt": "emphasises the commitment some archaeology students feel towards their subject?", "answer": "B" },
+            { "id": "r8_54", "number": 54, "prompt": "mentions the value of an archaeological perspective on wider issues?", "answer": "D" },
+            { "id": "r8_55", "number": 55, "prompt": "believes archaeologists often overlook job opportunities that exist for them?", "answer": "E" },
+            { "id": "r8_56", "number": 56, "prompt": "mentions the appeal of studying a subject with a practical side to it?", "answer": "C" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "You will hear three different extracts. For questions 1-6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "Extract One - You hear two friends talking about a geology lecture they have been to. How did the man feel about the lecture?",
+              "options": [
+                { "label": "A", "text": "surprised by its message" },
+                { "label": "B", "text": "impressed by the speaker's delivery" },
+                { "label": "C", "text": "interested in the visuals" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Extract One - They both think that discussions about the new geological name 'anthropocene' could",
+              "options": [
+                { "label": "A", "text": "prove too controversial to be useful." },
+                { "label": "B", "text": "put an end to a scientific disagreement." },
+                { "label": "C", "text": "have some influence on people's behaviour." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "Extract Two - You hear a man talking to a librarian about e-books. The librarian says her library is considering",
+              "options": [
+                { "label": "A", "text": "whether to provide devices for reading e-books." },
+                { "label": "B", "text": "how to stop people from keeping e-books for too long." },
+                { "label": "C", "text": "which books should be offered in electronic form." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "Extract Two - The librarian is confident libraries will survive because",
+              "options": [
+                { "label": "A", "text": "e-books are very popular with the public." },
+                { "label": "B", "text": "publishers and authors are prepared to co-operate." },
+                { "label": "C", "text": "previous technological advances haven't caused problems." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_5",
+              "number": 5,
+              "prompt": "Extract Three - You hear a student, Joel, talking to his neighbour about his studies. Why does the woman mention gardening?",
+              "options": [
+                { "label": "A", "text": "to show Joel how science can be applied to everyday life" },
+                { "label": "B", "text": "to encourage Joel to take an interest in the natural world" },
+                { "label": "C", "text": "to advise Joel on how to keep plants healthy" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_6",
+              "number": 6,
+              "prompt": "Extract Three - How does Joel feel about his future career prospects?",
+              "options": [
+                { "label": "A", "text": "Studying science won't lead him to a well-paid job." },
+                { "label": "B", "text": "He lacks the motivation to really succeed in science." },
+                { "label": "C", "text": "It is important for him to explore a wide range of options." }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "sentence-completion",
+          "instructions": "You will hear an astronaut called Charles Renard talking about a simulated space mission to Mars he took part in. For questions 7-14, complete the sentences with a word or short phrase.",
+          "questions": [
+            { "id": "l2_7", "number": 7, "prompt": "Charles first learnt about the simulated space mission from a ___ he saw.", "answer": "website", "acceptedAnswers": ["ad", "advertisement"] },
+            { "id": "l2_8", "number": 8, "prompt": "Charles was most concerned about the lack of ___ inside the simulated space capsule.", "answer": "the sun", "acceptedAnswers": ["sun"] },
+            { "id": "l2_9", "number": 9, "prompt": "The layout of the spaceship included a dining area that was ___ in shape.", "answer": "oval" },
+            { "id": "l2_10", "number": 10, "prompt": "The astronauts were tested on what they could remember and their ___ as well as undergoing physical experiments.", "answer": "mental reactions" },
+            { "id": "l2_11", "number": 11, "prompt": "Charles stresses the need to relax and practising the ___ was his favourite way of doing so.", "answer": "guitar" },
+            { "id": "l2_12", "number": 12, "prompt": "Charles explains how the crew once had to get by without water or ___ for a day.", "answer": "communication links" },
+            { "id": "l2_13", "number": 13, "prompt": "On arrival at their destination, the astronauts simulated an accidental ___ to test out emergency procedures.", "answer": "fall" },
+            { "id": "l2_14", "number": 14, "prompt": "Charles mentions some difficulties such as a minor ___ that occurred while the astronauts were eating on the return journey.", "answer": "argument" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "multiple-choice",
+          "instructions": "You will hear part of an interview with two wildlife photographers called Alan Stoker and Daniela Bertram who are talking about their work. For questions 15-20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+          "questions": [
+            {
+              "id": "l3_15",
+              "number": 15,
+              "prompt": "Alan believes the principal concern of wildlife photographers should be",
+              "options": [
+                { "label": "A", "text": "to secure the most impressive shots." },
+                { "label": "B", "text": "to avoid harming animals' natural habitats." },
+                { "label": "C", "text": "to develop an understanding of their subjects." },
+                { "label": "D", "text": "to keep up with the latest technical developments." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_16",
+              "number": 16,
+              "prompt": "How did Alan feel about his assignment to photograph the birds called 'grebes'?",
+              "options": [
+                { "label": "A", "text": "undeterred by the uncomfortable conditions" },
+                { "label": "B", "text": "surprised by how well his work has since been received" },
+                { "label": "C", "text": "upset that a rival photographer managed to get better shots" },
+                { "label": "D", "text": "concerned that the welfare of the wildlife had been compromised" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_17",
+              "number": 17,
+              "prompt": "Alan admits that the conservation trust he has set up",
+              "options": [
+                { "label": "A", "text": "helps to promote his business interests." },
+                { "label": "B", "text": "involves less work than collecting donations." },
+                { "label": "C", "text": "hasn't generated the anticipated level of income." },
+                { "label": "D", "text": "has changed his attitude towards his own contributions." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_18",
+              "number": 18,
+              "prompt": "When Daniela won a major prize for her work, she was most pleased by",
+              "options": [
+                { "label": "A", "text": "the recognition she received from other photographers." },
+                { "label": "B", "text": "the publicity given to an environmental disaster." },
+                { "label": "C", "text": "the place where the picture was exhibited." },
+                { "label": "D", "text": "the financial reward that accompanied it." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_19",
+              "number": 19,
+              "prompt": "Daniela says she wants her photographs to",
+              "options": [
+                { "label": "A", "text": "generate an emotional response." },
+                { "label": "B", "text": "reach as wide a public as possible." },
+                { "label": "C", "text": "bring about a change in people's behaviour." },
+                { "label": "D", "text": "show that beauty occurs in the most unlikely places." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_20",
+              "number": 20,
+              "prompt": "Alan and Daniela agree that aspiring wildlife photographers should",
+              "options": [
+                { "label": "A", "text": "consult with leading authorities." },
+                { "label": "B", "text": "choose a narrow field to specialise in." },
+                { "label": "C", "text": "be highly critical of their own work." },
+                { "label": "D", "text": "aim to gain a wide range of experience." }
+              ],
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "multiple-matching",
+          "instructions": "You will hear five short extracts in which professional writers are talking about their work. While you listen, you must complete both tasks.\n\nTASK ONE: For questions 21-25, choose from the list (A-H) what made each speaker choose writing as a career.\n\nA a love of words\nB a desire for control\nC advice from a family member\nD an inspirational teacher\nE a wish to recreate the past\nF a time of personal difficulty\nG a desire to escape a dull routine\nH an interest in others",
+          "questions": [
+            { "id": "l4_21", "number": 21, "prompt": "Speaker 1", "answer": "F" },
+            { "id": "l4_22", "number": 22, "prompt": "Speaker 2", "answer": "G" },
+            { "id": "l4_23", "number": 23, "prompt": "Speaker 3", "answer": "D" },
+            { "id": "l4_24", "number": 24, "prompt": "Speaker 4", "answer": "B" },
+            { "id": "l4_25", "number": 25, "prompt": "Speaker 5", "answer": "H" }
+          ]
+        },
+        {
+          "partNumber": 5,
+          "type": "multiple-matching",
+          "instructions": "TASK TWO: For questions 26-30, choose from the list (A-H) what advice each speaker would give to new writers.\n\nA Ignore setbacks.\nB Plan a work before starting.\nC Read as widely as possible.\nD Research the market.\nE Pay attention to criticism.\nF Write in a style that pleases you.\nG Maintain a healthy lifestyle.\nH Revise your work carefully.",
+          "questions": [
+            { "id": "l4_26", "number": 26, "prompt": "Speaker 1", "answer": "E" },
+            { "id": "l4_27", "number": 27, "prompt": "Speaker 2", "answer": "C" },
+            { "id": "l4_28", "number": 28, "prompt": "Speaker 3", "answer": "G" },
+            { "id": "l4_29", "number": 29, "prompt": "Speaker 4", "answer": "H" },
+            { "id": "l4_30", "number": 30, "prompt": "Speaker 5", "answer": "B" }
+          ]
+        }
+      ]
+    }
+  }
+}

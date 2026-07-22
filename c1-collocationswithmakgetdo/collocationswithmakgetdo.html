@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>C1 Collocations Mastery | Make, Get & Do</title>
+    <meta name="description" content="Practica las colocaciones en inglés de nivel C1 con los verbos Make, Get y Do mediante cuestionarios interactivos, tarjetas de memoria y un diccionario completo." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script type="module">
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))c(n);new MutationObserver(n=>{for(const o of n)if(o.type==="childList")for(const d of o.addedNodes)d.tagName==="LINK"&&d.rel==="modulepreload"&&c(d)}).observe(document,{childList:!0,subtree:!0});function a(n){const o={};return n.integrity&&(o.integrity=n.integrity),n.referrerPolicy&&(o.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?o.credentials="include":n.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function c(n){if(n.ep)return;n.ep=!0;const o=a(n);fetch(n.href,o)}})();const u=[{phrase:"a comment",verbs:["make"],translation:"hacer un comentario"},{phrase:"a course",verbs:["do"],translation:"hacer/cursar un curso"},{phrase:"a decision",verbs:["make"],translation:"tomar una decisión"},{phrase:"a job",verbs:["get","do"],translation:"conseguir un trabajo / realizar una tarea"},{phrase:"a mistake",verbs:["make"],translation:"cometer un error"},{phrase:"a point",verbs:["make","get"],translation:"expresar una idea / entender un punto"},{phrase:"a proposal",verbs:["make"],translation:"hacer una propuesta"},{phrase:"a qualification",verbs:["get"],translation:"obtener una cualificación o título"},{phrase:"a suggestion",verbs:["make"],translation:"hacer una sugerencia"},{phrase:"an activity",verbs:["do"],translation:"hacer una actividad"},{phrase:"an apology",verbs:["make"],translation:"pedir disculpas"},{phrase:"an effort",verbs:["make"],translation:"hacer un esfuerzo"},{phrase:"an improvement",verbs:["make"],translation:"hacer una mejora"},{phrase:"business",verbs:["do"],translation:"hacer negocios"},{phrase:"changes",verbs:["make"],translation:"hacer cambios"},{phrase:"complaints",verbs:["make","get"],translation:"poner quejas / recibir quejas"},{phrase:"exercise",verbs:["do"],translation:"hacer ejercicio"},{phrase:"friends",verbs:["make"],translation:"hacer amigos"},{phrase:"further information",verbs:["get"],translation:"obtener más información"},{phrase:"harm",verbs:["do"],translation:"hacer daño"},{phrase:"household chores",verbs:["do"],translation:"hacer las tareas del hogar"},{phrase:"one's best",verbs:["do"],translation:"hacer lo posible / dar lo mejor"},{phrase:"one's money back",verbs:["get"],translation:"recuperar el dinero"},{phrase:"some shopping",verbs:["do"],translation:"hacer algunas compras"},{phrase:"sport",verbs:["do"],translation:"hacer deporte"},{phrase:"the cooking",verbs:["do"],translation:"cocinar"},{phrase:"the right choice",verbs:["make"],translation:"hacer la elección correcta"},{phrase:"use of something",verbs:["make"],translation:"hacer uso de algo"},{phrase:"a favor",verbs:["do"],translation:"hacer un favor"},{phrase:"a noise",verbs:["make"],translation:"hacer ruido"},{phrase:"a promise",verbs:["make"],translation:"hacer una promesa"},{phrase:"a ride",verbs:["give","get"],translation:"llevar a alguien en coche / que te lleven"},{phrase:"a speech",verbs:["give","make"],translation:"dar un discurso"},{phrase:"advice",verbs:["give","get"],translation:"dar o recibir un consejo"},{phrase:"an excuse",verbs:["make"],translation:"poner una excusa"},{phrase:"an interview",verbs:["do","give"],translation:"hacer o conceder una entrevista"},{phrase:"angry",verbs:["get"],translation:"enfadarse"},{phrase:"birth",verbs:["give"],translation:"dar a luz"},{phrase:"damage",verbs:["do"],translation:"causar daños"},{phrase:"lost",verbs:["get"],translation:"perderse"},{phrase:"married",verbs:["get"],translation:"casarse"},{phrase:"permission",verbs:["give","get"],translation:"dar u obtener permiso"},{phrase:"priority",verbs:["give"],translation:"dar prioridad"},{phrase:"progress",verbs:["make"],translation:"avanzar / progresar"},{phrase:"ready",verbs:["get"],translation:"prepararse"},{phrase:"research",verbs:["do"],translation:"investigar"},{phrase:"someone a hand",verbs:["give"],translation:"echar una mano a alguien"},{phrase:"sure",verbs:["make"],translation:"asegurarse"},{phrase:"the laundry",verbs:["do"],translation:"hacer la colada"},{phrase:"your homework",verbs:["do"],translation:"hacer los deberes"}],e={activeView:"quiz",theme:"dark-theme",quiz:{questions:[],currentIndex:0,score:0,selectedVerbs:new Set,isAnswered:!1,roundLength:10,mistakes:[],mode:"menu"},flashcards:{currentIndex:0,isFlipped:!1},library:{searchQuery:"",activeFilter:"all"},stats:{streak:0,maxStreak:0,correctCount:0,totalCount:0,history:[]}},t={views:{quiz:document.getElementById("view-quiz"),flashcards:document.getElementById("view-flashcards"),library:document.getElementById("view-library")},nav:{quiz:document.getElementById("nav-quiz"),flashcards:document.getElementById("nav-flashcards"),library:document.getElementById("nav-library")},themeToggle:document.getElementById("theme-toggle"),quiz:{menuContainer:document.getElementById("quiz-menu-container"),playContainer:document.getElementById("quiz-play-container"),testBtns:document.querySelectorAll(".test-btn"),multiIndicator:document.getElementById("quiz-multi-indicator"),currentNum:document.getElementById("quiz-current-num"),totalNum:document.getElementById("quiz-total-num"),scoreIndicator:document.getElementById("quiz-score-indicator"),progressFill:document.getElementById("quiz-progress-fill"),phraseBlank:document.getElementById("quiz-phrase-blank"),phraseTarget:document.getElementById("quiz-phrase-target"),translation:document.getElementById("quiz-translation"),choiceBtns:document.querySelectorAll(".choice-btn"),feedback:document.getElementById("quiz-feedback"),submitBtn:document.getElementById("quiz-submit-btn"),nextBtn:document.getElementById("quiz-next-btn"),statsStreak:document.getElementById("stats-streak"),statsMaxStreak:document.getElementById("stats-max-streak"),statsAccuracy:document.getElementById("stats-accuracy"),statsCompleted:document.getElementById("stats-completed"),historyDots:document.getElementById("history-dots"),resetBtn:document.getElementById("stats-reset-btn")},flashcards:{card:document.getElementById("flashcard"),phrase:document.getElementById("card-phrase"),backPhrase:document.getElementById("card-back-phrase"),verbsContainer:document.getElementById("card-verbs-container"),translation:document.getElementById("card-translation"),counter:document.getElementById("card-counter"),prevBtn:document.getElementById("card-prev-btn"),nextBtn:document.getElementById("card-next-btn-deck")},library:{search:document.getElementById("library-search"),filterChips:document.querySelectorAll(".filter-chips .chip"),tableBody:document.getElementById("library-table-body"),emptyState:document.getElementById("library-empty")},modal:{overlay:document.getElementById("modal-completion"),correctRatio:document.getElementById("modal-correct-ratio"),accuracy:document.getElementById("modal-accuracy"),restartBtn:document.getElementById("modal-restart-btn"),retryBtn:document.getElementById("modal-retry-mistakes-btn")}};function B(){C(),L(),x(),S(),M(),V(),j(),E(),b()}function C(){const r=localStorage.getItem("theme");r?e.theme=r:window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches&&(e.theme="light-theme"),document.body.className=e.theme;const s=localStorage.getItem("collocations_stats");if(s)try{const a=JSON.parse(s);a&&typeof a=="object"&&(e.stats={streak:typeof a.streak=="number"?a.streak:0,maxStreak:typeof a.maxStreak=="number"?a.maxStreak:0,correctCount:typeof a.correctCount=="number"?a.correctCount:0,totalCount:typeof a.totalCount=="number"?a.totalCount:0,history:Array.isArray(a.history)?a.history:[]})}catch(a){console.error("Error parsing stats, resetting to defaults:",a)}z()}function q(){localStorage.setItem("collocations_stats",JSON.stringify(e.stats)),z()}function z(){t.quiz.statsStreak&&(t.quiz.statsStreak.textContent=e.stats.streak),t.quiz.statsMaxStreak&&(t.quiz.statsMaxStreak.textContent=e.stats.maxStreak);const r=e.stats.totalCount>0?Math.round(e.stats.correctCount/e.stats.totalCount*100):0;t.quiz.statsAccuracy&&(t.quiz.statsAccuracy.textContent=`${r}%`),t.quiz.statsCompleted&&(t.quiz.statsCompleted.textContent=e.stats.totalCount),t.quiz.historyDots&&(t.quiz.historyDots.innerHTML="",e.stats.history.length===0?t.quiz.historyDots.innerHTML='<span class="empty-history-text">Responde preguntas para ver tu historial</span>':e.stats.history.slice(-15).forEach(a=>{const c=document.createElement("span");c.className=`history-dot ${a?"correct":"incorrect"}`,c.title=a?"Acierto":"Fallo",t.quiz.historyDots.appendChild(c)}))}function L(){Object.keys(t.nav).forEach(r=>{t.nav[r].addEventListener("click",()=>{I(r)})})}function I(r){e.activeView=r,Object.keys(t.nav).forEach(s=>{t.nav[s].classList.toggle("active",s===r)}),Object.keys(t.views).forEach(s=>{t.views[s].classList.toggle("active",s===r)}),r!=="flashcards"&&(e.flashcards.isFlipped=!1,t.flashcards.card.classList.remove("flipped"))}function x(){t.themeToggle.addEventListener("click",()=>{e.theme==="dark-theme"?e.theme="light-theme":e.theme="dark-theme",document.body.className=e.theme,localStorage.setItem("theme",e.theme)})}function S(){t.quiz.choiceBtns.forEach(r=>{r.addEventListener("click",()=>{if(e.quiz.isAnswered)return;const s=r.getAttribute("data-verb");e.quiz.selectedVerbs.has(s)?(e.quiz.selectedVerbs.delete(s),r.classList.remove("selected")):(e.quiz.selectedVerbs.add(s),r.classList.add("selected")),A()})}),t.quiz.submitBtn.addEventListener("click",()=>{if(e.quiz.selectedVerbs.size===0){$("Selecciona al menos un verbo antes de comprobar.","error");return}N()}),t.quiz.nextBtn.addEventListener("click",()=>{T()}),t.quiz.resetBtn.addEventListener("click",()=>{confirm("¿Seguro que quieres borrar todas tus estadísticas? Esto reiniciará la racha y precisión.")&&(e.stats={streak:0,maxStreak:0,correctCount:0,totalCount:0,history:[]},q())}),t.modal.restartBtn.addEventListener("click",()=>{t.modal.overlay.classList.add("hidden"),t.quiz.menuContainer.classList.remove("hidden"),t.quiz.playContainer.classList.add("hidden"),e.quiz.mode="menu"}),t.modal.retryBtn.addEventListener("click",()=>{t.modal.overlay.classList.add("hidden"),w()}),t.quiz.testBtns.forEach(r=>{r.addEventListener("click",()=>{const s=r.getAttribute("data-test");s==="1"?h(0,10):s==="2"?h(10,20):s==="3"?h(20,30):s==="4"?h(30,40):s==="5"&&h(40,50)})})}function h(r,s){e.quiz.questions=u.slice(r,s),e.quiz.roundLength=e.quiz.questions.length,e.quiz.currentIndex=0,e.quiz.score=0,e.quiz.mistakes=[],e.quiz.mode="playing",t.quiz.menuContainer.classList.add("hidden"),t.quiz.playContainer.classList.remove("hidden"),y()}function w(){e.quiz.questions=[...e.quiz.mistakes],e.quiz.roundLength=e.quiz.questions.length,e.quiz.currentIndex=0,e.quiz.score=0,e.quiz.mistakes=[],e.quiz.mode="playing",y()}function y(){e.quiz.isAnswered=!1,e.quiz.selectedVerbs.clear();const r=e.quiz.questions[e.quiz.currentIndex];t.quiz.currentNum.textContent=e.quiz.currentIndex+1,t.quiz.totalNum.textContent=e.quiz.roundLength,t.quiz.scoreIndicator.textContent=`Aciertos: ${e.quiz.score}/${e.quiz.currentIndex}`;const s=e.quiz.currentIndex/e.quiz.roundLength*100;t.quiz.progressFill.style.width=`${s}%`,t.quiz.phraseTarget.textContent=r.phrase,t.quiz.translation.textContent=`Significado: ${r.translation}`,t.quiz.phraseBlank.textContent="_____",t.quiz.phraseBlank.className="phrase-blank",r.verbs.length>1?(t.quiz.multiIndicator.textContent=`(Selecciona ${r.verbs.length} opciones)`,t.quiz.multiIndicator.classList.remove("hidden")):t.quiz.multiIndicator.classList.add("hidden"),t.quiz.choiceBtns.forEach(a=>{a.classList.remove("selected","correct","incorrect"),a.style.borderColor="",a.style.color="",a.style.backgroundColor="",a.disabled=!1}),t.quiz.feedback.classList.add("hidden"),t.quiz.submitBtn.classList.remove("hidden"),t.quiz.nextBtn.classList.add("hidden")}function A(){e.quiz.selectedVerbs.size===0?t.quiz.phraseBlank.textContent="_____":t.quiz.phraseBlank.textContent=Array.from(e.quiz.selectedVerbs).join(" / ")}function $(r,s){t.quiz.feedback.textContent=r,t.quiz.feedback.className=`quiz-feedback ${s}`,t.quiz.feedback.classList.remove("hidden"),e.quiz.isAnswered||setTimeout(()=>{e.quiz.isAnswered||t.quiz.feedback.classList.add("hidden")},3e3)}function N(){e.quiz.isAnswered=!0;const r=e.quiz.questions[e.quiz.currentIndex],s=r.verbs,a=Array.from(e.quiz.selectedVerbs),c=s.every(i=>e.quiz.selectedVerbs.has(i)),n=a.every(i=>s.includes(i)),o=c&&n,d=!o&&n&&a.length>0;if(o||e.quiz.mistakes.push(r),t.quiz.choiceBtns.forEach(i=>{i.disabled=!0;const l=i.getAttribute("data-verb"),f=e.quiz.selectedVerbs.has(l),m=s.includes(l);m?(i.style.borderColor="var(--color-success)",i.style.color="var(--color-success)",f&&(i.style.backgroundColor="var(--color-success-bg)")):f&&!m&&(i.style.borderColor="var(--color-error)",i.style.color="var(--color-error)",i.style.backgroundColor="var(--color-error-bg)")}),t.quiz.phraseBlank.textContent=s.join(" / "),o){e.quiz.score++,t.quiz.phraseBlank.className="phrase-blank correct",e.stats.streak++,e.stats.streak>e.stats.maxStreak&&(e.stats.maxStreak=e.stats.streak),e.stats.correctCount++,e.stats.history.push(!0);let i="<strong>¡Excelente!</strong> El verbo es correcto.";s.length>1&&(i=`<strong>¡Perfecto!</strong> Has seleccionado las ${s.length} opciones correctas: <strong>${s.join(" y ")}</strong>.`),v(i,"success")}else{t.quiz.phraseBlank.className="phrase-blank incorrect";const i=document.querySelector(".quiz-card");i.classList.add("shake"),setTimeout(()=>i.classList.remove("shake"),400),e.stats.streak=0,e.stats.history.push(!1);let l="";d?l=`<strong>¡Casi!</strong> Esta colocación admite ${s.length} verbos correctos: <strong>${s.join(" y ")}</strong>. Debes seleccionar ambos.`:(l=`<strong>Incorrecto.</strong> El verbo correcto es ${s.map(m=>`<strong>${m}</strong>`).join(s.length>2?", ":" o ")}.`,s.length>1&&(l=`<strong>Incorrecto.</strong> Esta colocación admite ${s.length} verbos correctos: <strong>${s.join(" y ")}</strong>.`)),v(l,"error")}e.stats.totalCount++,q(),t.quiz.scoreIndicator.textContent=`Aciertos: ${e.quiz.score}/${e.quiz.currentIndex+1}`,t.quiz.submitBtn.classList.add("hidden"),t.quiz.nextBtn.classList.remove("hidden")}function v(r,s){t.quiz.feedback.innerHTML=r,t.quiz.feedback.className=`quiz-feedback ${s}`,t.quiz.feedback.classList.remove("hidden")}function T(){e.quiz.currentIndex++,e.quiz.currentIndex>=e.quiz.roundLength?F():y()}function F(){t.quiz.progressFill.style.width="100%";const r=Math.round(e.quiz.score/e.quiz.roundLength*100);t.modal.correctRatio.textContent=`${e.quiz.score} / ${e.quiz.roundLength}`,t.modal.accuracy.textContent=`${r}%`,e.quiz.mistakes.length>0?t.modal.retryBtn.classList.remove("hidden"):t.modal.retryBtn.classList.add("hidden"),t.modal.overlay.classList.remove("hidden")}function M(){t.flashcards.card.addEventListener("click",()=>{k()}),t.flashcards.prevBtn.addEventListener("click",r=>{r.stopPropagation(),p(-1)}),t.flashcards.nextBtn.addEventListener("click",r=>{r.stopPropagation(),p(1)})}function k(){e.flashcards.isFlipped=!e.flashcards.isFlipped,t.flashcards.card.classList.toggle("flipped",e.flashcards.isFlipped)}function p(r){e.flashcards.isFlipped=!1,t.flashcards.card.classList.remove("flipped");let s=e.flashcards.currentIndex+r;s<0?s=u.length-1:s>=u.length&&(s=0),e.flashcards.currentIndex=s,setTimeout(()=>{E()},150)}function E(){const r=u[e.flashcards.currentIndex];t.flashcards.phrase.textContent=r.phrase,t.flashcards.backPhrase.textContent=r.phrase,t.flashcards.translation.textContent=`Significado: ${r.translation}`,t.flashcards.verbsContainer.innerHTML="",r.verbs.forEach(s=>{const a=document.createElement("span");a.className=`verb-tag ${s}`,a.textContent=s,t.flashcards.verbsContainer.appendChild(a)}),t.flashcards.counter.textContent=`${e.flashcards.currentIndex+1} de ${u.length}`}function V(){t.library.search.addEventListener("input",r=>{e.library.searchQuery=r.target.value.toLowerCase().trim(),b()}),t.library.filterChips.forEach(r=>{r.addEventListener("click",()=>{t.library.filterChips.forEach(s=>s.classList.remove("active")),r.classList.add("active"),e.library.activeFilter=r.getAttribute("data-filter"),b()})})}function b(){t.library.tableBody.innerHTML="";const r=u.filter(s=>{const a=s.phrase.toLowerCase().includes(e.library.searchQuery),c=s.translation.toLowerCase().includes(e.library.searchQuery),n=a||c,o=e.library.activeFilter==="all"||s.verbs.includes(e.library.activeFilter);return n&&o});r.length===0?t.library.emptyState.classList.remove("hidden"):(t.library.emptyState.classList.add("hidden"),r.forEach(s=>{const a=document.createElement("tr"),c=document.createElement("td");c.className="phrase-cell";const n=s.verbs.join(" / ");c.innerHTML=`<span style="color: var(--color-primary); font-weight: 700;">${n}</span> ${s.phrase}`,a.appendChild(c);const o=document.createElement("td");o.className="verbs-cell",s.verbs.forEach(i=>{const l=document.createElement("span");l.className=`verb-mini-badge ${i}`,l.textContent=i,o.appendChild(l)}),a.appendChild(o);const d=document.createElement("td");d.className="translation-cell",d.textContent=s.translation,a.appendChild(d),t.library.tableBody.appendChild(a)}))}function j(){document.addEventListener("keydown",r=>{e.activeView==="flashcards"&&(r.code==="Space"?(r.preventDefault(),k()):r.code==="ArrowLeft"?p(-1):r.code==="ArrowRight"&&p(1)),e.activeView==="quiz"&&!t.modal.overlay.classList.contains("hidden")?(r.code==="Enter"||r.code==="NumpadEnter")&&(r.preventDefault(),t.modal.restartBtn.click()):e.activeView==="quiz"&&(e.quiz.isAnswered?(r.code==="Enter"||r.code==="NumpadEnter"||r.code==="ArrowRight"||r.code==="Space")&&(r.preventDefault(),t.quiz.nextBtn.click()):r.key==="1"?g("make"):r.key==="2"?g("get"):r.key==="3"?g("do"):(r.code==="Enter"||r.code==="NumpadEnter")&&(r.preventDefault(),t.quiz.submitBtn.click()))})}function g(r){const s=Array.from(t.quiz.choiceBtns).find(a=>a.getAttribute("data-verb")===r);s&&s.click()}window.addEventListener("DOMContentLoaded",B);
+
+</script>
+    <style>
+:root{--font-main: "Inter", system-ui, -apple-system, sans-serif;--font-display: "Outfit", var(--font-main);--radius-lg: 24px;--radius-md: 16px;--radius-sm: 8px;--transition-fast: .2s ease;--transition-normal: .3s cubic-bezier(.4, 0, .2, 1);--transition-slow: .6s cubic-bezier(.4, 0, .2, 1);--bg-app: #090d16;--bg-gradient: radial-gradient(circle at 50% 50%, #0f172a 0%, #070a12 100%);--glow-1: rgba(99, 102, 241, .15);--glow-2: rgba(236, 72, 153, .12);--glass-bg: rgba(17, 24, 39, .6);--glass-border: rgba(255, 255, 255, .06);--glass-border-hover: rgba(255, 255, 255, .12);--glass-shadow: rgba(0, 0, 0, .3);--text-main: #f8fafc;--text-muted: #94a3b8;--text-inverse: #0f172a;--color-primary: #6366f1;--color-primary-hover: #4f46e5;--color-primary-glow: rgba(99, 102, 241, .4);--color-make: #38bdf8;--color-make-bg: rgba(56, 189, 248, .15);--color-make-border: rgba(56, 189, 248, .3);--color-get: #f59e0b;--color-get-bg: rgba(245, 158, 11, .15);--color-get-border: rgba(245, 158, 11, .3);--color-do: #10b981;--color-do-bg: rgba(16, 185, 129, .15);--color-do-border: rgba(16, 185, 129, .3);--color-give: #8b5cf6;--color-give-bg: rgba(139, 92, 246, .15);--color-give-border: rgba(139, 92, 246, .3);--color-success: #10b981;--color-success-bg: rgba(16, 185, 129, .1);--color-error: #ef4444;--color-error-bg: rgba(239, 68, 68, .1);--shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, .1);--shadow-md: 0 10px 15px -3px rgba(0, 0, 0, .2);--shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, .3)}body.light-theme{--bg-app: #f1f5f9;--bg-gradient: radial-gradient(circle at 50% 50%, #ffffff 0%, #e2e8f0 100%);--glow-1: rgba(99, 102, 241, .08);--glow-2: rgba(236, 72, 153, .06);--glass-bg: rgba(255, 255, 255, .7);--glass-border: rgba(0, 0, 0, .08);--glass-border-hover: rgba(0, 0, 0, .15);--glass-shadow: rgba(15, 23, 42, .08);--text-main: #0f172a;--text-muted: #64748b;--text-inverse: #ffffff;--color-primary: #4f46e5;--color-primary-hover: #4338ca;--color-primary-glow: rgba(79, 70, 229, .2);--color-make: #0284c7;--color-make-bg: rgba(2, 132, 199, .1);--color-make-border: rgba(2, 132, 199, .25);--color-get: #d97706;--color-get-bg: rgba(217, 119, 6, .1);--color-get-border: rgba(217, 119, 6, .25);--color-do: #059669;--color-do-bg: rgba(5, 150, 105, .1);--color-do-border: rgba(5, 150, 105, .25);--color-give: #6d28d9;--color-give-bg: rgba(109, 40, 217, .1);--color-give-border: rgba(109, 40, 217, .25);--glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, .05)}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}body{font-family:var(--font-main);background:var(--bg-gradient);background-attachment:fixed;color:var(--text-main);min-height:100vh;position:relative;overflow-x:hidden;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;transition:background var(--transition-slow)}.bg-glow{position:fixed;border-radius:50%;filter:blur(140px);z-index:-1;pointer-events:none;transition:background var(--transition-slow)}.bg-glow-1{top:-10%;left:20%;width:45vw;height:45vw;background:var(--glow-1)}.bg-glow-2{bottom:10%;right:15%;width:40vw;height:40vw;background:var(--glow-2)}.app-container{width:100%;max-width:1100px;min-height:100vh;padding:24px 16px;display:flex;flex-direction:column;gap:24px}.glass{background:var(--glass-bg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--glass-border);border-radius:var(--radius-lg);box-shadow:var(--glass-shadow);transition:border var(--transition-normal),box-shadow var(--transition-normal),background var(--transition-normal)}.glass:hover{border-color:var(--glass-border-hover)}.app-header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);box-shadow:var(--glass-shadow);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);flex-wrap:wrap;gap:16px}.logo-area{display:flex;align-items:center;gap:12px}.logo-badge{background:linear-gradient(135deg,var(--color-primary),#a855f7);color:#fff;font-family:var(--font-display);font-weight:800;font-size:1.1rem;padding:8px 12px;border-radius:10px;box-shadow:0 4px 12px #6366f14d}.logo-area h1{font-family:var(--font-display);font-size:1.35rem;font-weight:700;letter-spacing:-.02em;line-height:1.1}.subtitle{font-size:.82rem;color:var(--text-muted);font-weight:400}.subtitle span{font-weight:600;font-style:italic}.nav-menu{display:flex;gap:8px;background:#00000014;padding:4px;border-radius:50px;border:1px solid rgba(255,255,255,.03)}body.light-theme .nav-menu{background:#0000000a}.nav-btn{display:flex;align-items:center;gap:6px;background:transparent;border:none;padding:8px 18px;border-radius:50px;color:var(--text-muted);font-size:.9rem;font-weight:500;cursor:pointer;transition:all var(--transition-fast)}.nav-btn:hover{color:var(--text-main)}.nav-btn.active{background:var(--text-main);color:var(--text-inverse);box-shadow:var(--shadow-sm);font-weight:600}.nav-btn .icon{width:16px;height:16px}.actions-area{display:flex;align-items:center;gap:12px}.icon-btn{background:transparent;border:1px solid var(--glass-border);color:var(--text-main);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all var(--transition-fast)}.icon-btn:hover{background:#ffffff14;border-color:var(--glass-border-hover)}body.light-theme .icon-btn:hover{background:#0000000d}.icon-btn svg{width:18px;height:18px}body.dark-theme .icon-moon{display:none}body.dark-theme .icon-sun,body.light-theme .icon-moon{display:block}body.light-theme .icon-sun{display:none}.app-view{display:none;animation:fadeIn var(--transition-normal)}.app-view.active{display:block}@keyframes fadeIn{0%{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.quiz-layout{display:grid;grid-template-columns:1fr 320px;gap:24px}@media(max-width:850px){.quiz-layout{grid-template-columns:1fr}}.quiz-card{padding:32px;display:flex;flex-direction:column;gap:32px;position:relative;overflow:hidden}.progress-bar-container{display:flex;flex-direction:column;gap:8px}.progress-info{display:flex;justify-content:space-between;font-size:.85rem;color:var(--text-muted);font-weight:500}.progress-track{width:100%;height:8px;background:#ffffff0d;border-radius:20px;overflow:hidden}body.light-theme .progress-track{background:#0000000d}.progress-fill{height:100%;background:linear-gradient(90deg,var(--color-primary),#a855f7);border-radius:20px;transition:width var(--transition-normal);box-shadow:0 0 10px #6366f14d}.question-container{text-align:center;padding:24px 0;display:flex;flex-direction:column;align-items:center;gap:16px}.question-badge{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--color-primary);background:#6366f11a;padding:6px 12px;border-radius:50px;border:1px solid rgba(99,102,241,.15)}.question-text{font-family:var(--font-display);font-size:2.2rem;font-weight:700;line-height:1.2;color:var(--text-main);display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px}.phrase-blank{color:var(--color-primary);border-bottom:3px dashed var(--color-primary);padding:0 8px;min-width:100px;display:inline-block;text-align:center;animation:pulseBlank 2s infinite ease-in-out;transition:all var(--transition-normal)}.phrase-blank.correct{border-bottom-style:solid;color:var(--color-success);border-color:var(--color-success);animation:none}.phrase-blank.incorrect{border-bottom-style:solid;color:var(--color-error);border-color:var(--color-error);animation:none}@keyframes pulseBlank{0%,to{opacity:.5}50%{opacity:1}}.question-translation{font-size:1rem;color:var(--text-muted);font-style:italic}.choices-container{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(max-width:500px){.choices-container{grid-template-columns:1fr}}.choice-btn{background:#ffffff05;border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:18px 24px;font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--text-main);cursor:pointer;transition:all var(--transition-fast);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm)}body.light-theme .choice-btn{background:#00000003}.choice-btn:hover{transform:translateY(-2px);background:#ffffff0d}body.light-theme .choice-btn:hover{background:#00000008}.choice-btn[data-verb=make].selected{background:var(--color-make-bg);border-color:var(--color-make);color:var(--color-make);box-shadow:0 0 15px #38bdf833}.choice-btn[data-verb=get].selected{background:var(--color-get-bg);border-color:var(--color-get);color:var(--color-get);box-shadow:0 0 15px #f59e0b33}.choice-btn[data-verb=do].selected{background:var(--color-do-bg);border-color:var(--color-do);color:var(--color-do);box-shadow:0 0 15px #10b98133}.choice-btn[data-verb=give].selected{background:var(--color-give-bg);border-color:var(--color-give);color:var(--color-give);box-shadow:0 0 15px #8b5cf633}.quiz-actions{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:10px}.primary-btn{background:linear-gradient(135deg,var(--color-primary),#8b5cf6);color:#fff;border:none;padding:14px 40px;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;box-shadow:0 4px 15px var(--color-primary-glow);transition:all var(--transition-fast)}.primary-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px #6366f180}.primary-btn:active{transform:translateY(0)}.secondary-btn-text{background:#ffffff0d;border:1px solid var(--glass-border-hover);color:var(--text-main);padding:14px 40px;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:all var(--transition-fast)}body.light-theme .secondary-btn-text{background:#00000008;border-color:#0000001a;color:var(--text-main)}.secondary-btn-text:hover{background:#ffffff1a;transform:translateY(-2px)}body.light-theme .secondary-btn-text:hover{background:#0000000f}.quiz-feedback{width:100%;padding:16px;border-radius:var(--radius-md);text-align:center;font-weight:500;animation:slideIn .3s var(--transition-normal);font-size:.95rem;line-height:1.5}@keyframes slideIn{0%{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}.quiz-feedback.success{background:var(--color-success-bg);color:var(--color-success);border:1px solid rgba(16,185,129,.25)}.quiz-feedback.error{background:var(--color-error-bg);color:var(--color-error);border:1px solid rgba(239,68,68,.25)}.quiz-feedback strong{text-transform:uppercase;font-weight:700;margin-right:6px}.stats-sidebar{padding:24px;display:flex;flex-direction:column;gap:20px}.stats-sidebar h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700}.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat-box{background:#ffffff05;border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:12px;text-align:center;display:flex;flex-direction:column}body.light-theme .stat-box{background:#00000005}.stat-value{font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--color-primary)}.stat-label{font-size:.75rem;color:var(--text-muted);margin-top:4px}.recent-history{display:flex;flex-direction:column;gap:10px}.recent-history h4{font-size:.85rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em}.history-dots{display:flex;flex-wrap:wrap;gap:6px;min-height:24px;align-items:center}.empty-history-text{font-size:.8rem;color:var(--text-muted);font-style:italic}.history-dot{width:12px;height:12px;border-radius:50%;animation:scaleUp .2s cubic-bezier(.175,.885,.32,1.275)}@keyframes scaleUp{0%{transform:scale(0)}to{transform:scale(1)}}.history-dot.correct{background:var(--color-success);box-shadow:0 0 6px #10b98166}.history-dot.incorrect{background:var(--color-error);box-shadow:0 0 6px #ef444466}.danger-btn-text{background:transparent;border:none;color:var(--text-muted);font-size:.8rem;cursor:pointer;text-decoration:underline;align-self:center;transition:color var(--transition-fast);margin-top:10px}.danger-btn-text:hover{color:var(--color-error)}.shake{animation:shake .4s ease-in-out}@keyframes shake{0%,to{transform:translate(0)}20%,60%{transform:translate(-6px)}40%,80%{transform:translate(6px)}}.flashcards-layout{display:flex;justify-content:center;padding:10px 0 30px}.flashcard-deck{width:100%;max-width:580px;display:flex;flex-direction:column;align-items:center;gap:24px}.flashcard-container{width:100%;height:340px;perspective:1200px;cursor:pointer}.card-inner{position:relative;width:100%;height:100%;text-align:center;transition:transform var(--transition-slow);transform-style:preserve-3d}.flashcard-container.flipped .card-inner{transform:rotateY(180deg)}.card-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px;gap:20px}.card-back{transform:rotateY(180deg)}.card-badge{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);border:1px solid var(--glass-border);padding:5px 12px;border-radius:50px;background:#ffffff05}body.light-theme .card-badge{background:#00000005}.card-badge.back-badge{color:var(--color-success);border-color:#10b98140;background:var(--color-success-bg)}.card-phrase-text{font-family:var(--font-display);font-size:2.4rem;font-weight:700;color:var(--text-main);letter-spacing:-.01em}.card-phrase-text-back{font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--text-main)}.card-verbs{display:flex;gap:10px;justify-content:center}.verb-tag{font-family:var(--font-display);font-size:1.6rem;font-weight:800;text-transform:uppercase;padding:4px 18px;border-radius:var(--radius-sm);letter-spacing:.02em}.verb-tag.make{color:var(--color-make);border:1px solid var(--color-make-border);background:var(--color-make-bg)}.verb-tag.get{color:var(--color-get);border:1px solid var(--color-get-border);background:var(--color-get-bg)}.verb-tag.do{color:var(--color-do);border:1px solid var(--color-do-border);background:var(--color-do-bg)}.verb-tag.give{color:var(--color-give);border:1px solid var(--color-give-border);background:var(--color-give-bg)}.card-translation-text{font-size:1.1rem;color:var(--text-muted);font-style:italic}.card-instruction{font-size:.8rem;color:var(--text-muted);margin-top:10px;opacity:.6}.card-controls{display:flex;align-items:center;gap:24px}.secondary-btn{background:#ffffff08;border:1px solid var(--glass-border);color:var(--text-main);cursor:pointer;transition:all var(--transition-fast)}body.light-theme .secondary-btn{background:#00000005}.secondary-btn:hover{background:#ffffff14;border-color:var(--glass-border-hover)}body.light-theme .secondary-btn:hover{background:#0000000a}.icon-btn-round{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center}.icon-btn-round svg{width:20px;height:20px}.card-counter{font-family:var(--font-display);font-size:.95rem;font-weight:500;color:var(--text-muted)}.keyboard-tips{font-size:.75rem;color:var(--text-muted);opacity:.7}.keyboard-tips kbd{background:#ffffff1a;border:1px solid rgba(255,255,255,.15);border-radius:4px;padding:2px 6px;font-family:var(--font-main);font-weight:500}body.light-theme .keyboard-tips kbd{background:#0000000d;border:1px solid rgba(0,0,0,.1)}.library-container{padding:32px;display:flex;flex-direction:column;gap:24px}.library-header h2{font-family:var(--font-display);font-weight:700;font-size:1.6rem;margin-bottom:4px}.library-header p{color:var(--text-muted);font-size:.9rem;margin-bottom:24px}.filter-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.search-box{display:flex;align-items:center;gap:10px;background:#00000026;border:1px solid var(--glass-border);padding:10px 16px;border-radius:50px;flex:1;min-width:260px;max-width:400px}body.light-theme .search-box{background:#ffffff80}.search-icon{width:18px;height:18px;color:var(--text-muted)}.search-box input{background:transparent;border:none;color:var(--text-main);outline:none;font-size:.9rem;width:100%}.search-box input::placeholder{color:var(--text-muted);opacity:.7}.filter-chips{display:flex;gap:8px}.chip{background:transparent;border:1px solid var(--glass-border);color:var(--text-muted);padding:8px 18px;border-radius:50px;font-size:.85rem;font-weight:500;cursor:pointer;transition:all var(--transition-fast)}.chip:hover{border-color:var(--glass-border-hover);color:var(--text-main)}.chip.active{background:var(--color-primary);color:#fff;border-color:var(--color-primary);box-shadow:0 4px 10px var(--color-primary-glow)}.library-list-wrapper{overflow-x:auto;border-radius:var(--radius-md);border:1px solid var(--glass-border)}.library-table{width:100%;border-collapse:collapse;text-align:left;font-size:.95rem}.library-table th{background:#0003;color:var(--text-muted);font-family:var(--font-display);font-weight:600;padding:14px 20px;font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--glass-border)}body.light-theme .library-table th{background:#00000008}.library-table td{padding:16px 20px;border-bottom:1px solid var(--glass-border);vertical-align:middle}.library-table tr:last-child td{border-bottom:none}.library-table tbody tr{transition:background var(--transition-fast)}.library-table tbody tr:hover{background:#ffffff04}body.light-theme .library-table tbody tr:hover{background:#00000003}.phrase-cell{font-weight:500}.verbs-cell{display:flex;gap:6px}.verb-mini-badge{font-family:var(--font-display);font-size:.75rem;font-weight:700;text-transform:uppercase;padding:2px 8px;border-radius:4px}.verb-mini-badge.make{color:var(--color-make);background:var(--color-make-bg);border:1px solid var(--color-make-border)}.verb-mini-badge.get{color:var(--color-get);background:var(--color-get-bg);border:1px solid var(--color-get-border)}.verb-mini-badge.do{color:var(--color-do);background:var(--color-do-bg);border:1px solid var(--color-do-border)}.translation-cell{color:var(--text-muted)}.library-empty{padding:40px;text-align:center;color:var(--text-muted);font-style:italic}.modal-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background:#000000b3;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:999;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity var(--transition-normal)}.modal-overlay.hidden{display:none;opacity:0;pointer-events:none}.modal-content{width:100%;max-width:440px;padding:40px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px;box-shadow:0 24px 48px #0006}.modal-icon{font-size:3.5rem;animation:float 3s ease-in-out infinite}@keyframes float{0%,to{transform:translateY(0)}50%{transform:translateY(-10px)}}.modal-content h2{font-family:var(--font-display);font-size:1.8rem;font-weight:800}.modal-content p{color:var(--text-muted);font-size:.95rem;line-height:1.5}.modal-stats{display:flex;gap:16px;width:100%;margin:10px 0}.modal-stat-box{flex:1;background:#ffffff08;border:1px solid var(--glass-border);border-radius:var(--radius-md);padding:16px;display:flex;flex-direction:column;gap:4px}body.light-theme .modal-stat-box{background:#00000005}.modal-stat-val{font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--color-primary)}.modal-stat-lbl{font-size:.8rem;color:var(--text-muted)}.modal-actions{width:100%;margin-top:10px}.modal-actions button{width:100%}.animate-scale{animation:scaleIn .3s cubic-bezier(.34,1.56,.64,1)}@keyframes scaleIn{0%{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}.app-footer{text-align:center;padding:20px 0;font-size:.8rem;color:var(--text-muted);opacity:.6;margin-top:auto}.quiz-menu-container{padding:40px;text-align:center;max-width:600px;margin:0 auto}.quiz-menu-container h2{font-family:var(--font-display);font-size:2rem;margin-bottom:10px}.quiz-menu-container p{color:var(--text-muted);margin-bottom:30px}.test-buttons{display:flex;flex-direction:column;gap:16px}.test-btn{padding:16px;font-size:1.1rem}.multi-indicator{font-size:.85rem;font-weight:600;color:var(--color-primary);background:var(--color-primary-glow);padding:6px 12px;border-radius:50px;margin-top:10px;display:inline-block}.hidden{display:none!important}
+
+</style>
+  </head>
+  <body class="dark-theme">
+    <!-- Decorative background elements for glassmorphism -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    
+    <div class="app-container">
+      <!-- Header / Navigation -->
+      <header class="app-header">
+        <div class="logo-area">
+          <span class="logo-badge">C1</span>
+          <div>
+            <h1>Collocations Mastery</h1>
+            <p class="subtitle">Práctica de <span>make</span>, <span>get</span> y <span>do</span></p>
+          </div>
+        </div>
+        
+        <nav class="nav-menu">
+          <button id="nav-quiz" class="nav-btn active" data-view="quiz">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+            Quiz
+          </button>
+          <button id="nav-flashcards" class="nav-btn" data-view="flashcards">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            Tarjetas
+          </button>
+          <button id="nav-library" class="nav-btn" data-view="library">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            Biblioteca
+          </button>
+        </nav>
+        
+        <div class="actions-area">
+          <button id="theme-toggle" class="icon-btn" title="Cambiar Tema">
+            <!-- Sun Icon (shown in dark theme) -->
+            <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+            <!-- Moon Icon (shown in light theme) -->
+            <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content Container -->
+      <main id="main-content">
+        
+        <!-- QUIZ VIEW -->
+        <section id="view-quiz" class="app-view active">
+          
+          <!-- Quiz Menu Container -->
+          <div id="quiz-menu-container" class="quiz-menu-container glass">
+            <h2>Elige un Test</h2>
+            <p>Practica bloques específicos de colocaciones.</p>
+            <div class="test-buttons">
+              <button class="primary-btn test-btn" data-test="1">Test 1 (Palabras 1-10)</button>
+              <button class="primary-btn test-btn" data-test="2">Test 2 (Palabras 11-20)</button>
+              <button class="primary-btn test-btn" data-test="3">Test 3 (Palabras 21-30)</button>
+              <button class="primary-btn test-btn" data-test="4">Test 4 (Palabras 31-40)</button>
+              <button class="primary-btn test-btn" data-test="5">Test 5 (Palabras 41-50)</button>
+            </div>
+          </div>
+
+          <div id="quiz-play-container" class="quiz-layout hidden">
+            <div class="quiz-card glass">
+              <!-- Progress Indicator -->
+              <div class="progress-bar-container">
+                <div class="progress-info">
+                  <span>Pregunta <span id="quiz-current-num">1</span> de <span id="quiz-total-num">10</span></span>
+                  <span id="quiz-score-indicator">Aciertos: 0/0</span>
+                </div>
+                <div class="progress-track">
+                  <div id="quiz-progress-fill" class="progress-fill" style="width: 10%;"></div>
+                </div>
+              </div>
+              
+              <!-- Question Area -->
+              <div class="question-container">
+                <div class="question-badge">Completa la colocación</div>
+                <h2 class="question-text">
+                  <span class="phrase-prefix">...</span>
+                  <span class="phrase-blank" id="quiz-phrase-blank">_____</span>
+                  <span class="phrase-target" id="quiz-phrase-target">a decision</span>
+                </h2>
+                <p class="question-translation" id="quiz-translation">Significado: tomar una decisión</p>
+                <div id="quiz-multi-indicator" class="multi-indicator hidden"></div>
+              </div>
+              
+              <!-- Interactive Choices -->
+              <div class="choices-container">
+                <button class="choice-btn" data-verb="make">
+                  <span class="verb-name">make</span>
+                </button>
+                <button class="choice-btn" data-verb="get">
+                  <span class="verb-name">get</span>
+                </button>
+                <button class="choice-btn" data-verb="do">
+                  <span class="verb-name">do</span>
+                </button>
+                <button class="choice-btn" data-verb="give">
+                  <span class="verb-name">give</span>
+                </button>
+              </div>
+              
+              <!-- Feedback & Actions -->
+              <div class="quiz-actions">
+                <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+                <button id="quiz-submit-btn" class="primary-btn">Comprobar</button>
+                <button id="quiz-next-btn" class="primary-btn hidden">Siguiente</button>
+              </div>
+            </div>
+            
+            <!-- Sidebar Stats -->
+            <div class="stats-sidebar glass">
+              <h3>Tu Rendimiento</h3>
+              <div class="stat-grid">
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-streak">0</span>
+                  <span class="stat-label">Racha Actual</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-max-streak">0</span>
+                  <span class="stat-label">Racha Máxima</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-accuracy">0%</span>
+                  <span class="stat-label">Precisión</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-value" id="stats-completed">0</span>
+                  <span class="stat-label">Completadas</span>
+                </div>
+              </div>
+              
+              <div class="recent-history">
+                <h4>Últimas Respuestas</h4>
+                <div id="history-dots" class="history-dots">
+                  <!-- JS will fill with green/red dots -->
+                  <span class="empty-history-text">Comienza a responder para ver tu historial</span>
+                </div>
+              </div>
+              
+              <button id="stats-reset-btn" class="danger-btn-text">Reiniciar estadísticas</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- FLASHCARDS VIEW -->
+        <section id="view-flashcards" class="app-view">
+          <div class="flashcards-layout">
+            <div class="flashcard-deck">
+              <div id="flashcard" class="flashcard-container">
+                <div class="card-inner">
+                  <!-- Front Side -->
+                  <div class="card-face card-front glass">
+                    <span class="card-badge">¿Qué verbo acompaña a esta frase?</span>
+                    <h2 id="card-phrase" class="card-phrase-text">a course</h2>
+                    <p class="card-instruction">Haz clic o presiona Espacio para voltear</p>
+                  </div>
+                  <!-- Back Side -->
+                  <div class="card-face card-back glass">
+                    <span class="card-badge back-badge">Respuesta correcta</span>
+                    <div id="card-verbs-container" class="card-verbs">
+                      <span class="verb-tag make">make</span>
+                    </div>
+                    <h3 id="card-back-phrase" class="card-phrase-text-back">a course</h3>
+                    <p id="card-translation" class="card-translation-text">Significado: hacer/cursar un curso</p>
+                    <p class="card-instruction">Haz clic para voltear de nuevo</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Card Controls -->
+              <div class="card-controls">
+                <button id="card-prev-btn" class="secondary-btn icon-btn-round" title="Anterior (Flecha Izquierda)">
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <span id="card-counter" class="card-counter">1 de 28</span>
+                <button id="card-next-btn-deck" class="secondary-btn icon-btn-round" title="Siguiente (Flecha Derecha)">
+                  <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+              </div>
+              <div class="keyboard-tips">
+                <span>Tip: Usa <kbd>Espacio</kbd> para voltear y <kbd>←</kbd> <kbd>→</kbd> para navegar.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- LIBRARY VIEW -->
+        <section id="view-library" class="app-view">
+          <div class="library-container glass">
+            <div class="library-header">
+              <h2>Biblioteca de Colocaciones</h2>
+              <p>Busca y filtra el listado completo de expresiones C1</p>
+              
+              <div class="filter-bar">
+                <div class="search-box">
+                  <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                  <input type="text" id="library-search" placeholder="Buscar frase o traducción..." />
+                </div>
+                
+                <div class="filter-chips">
+                  <button class="chip active" data-filter="all">Todos</button>
+                  <button class="chip" data-filter="make">make</button>
+                  <button class="chip" data-filter="get">get</button>
+                  <button class="chip" data-filter="do">do</button>
+                  <button class="chip" data-filter="give">give</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="library-list-wrapper">
+              <table class="library-table">
+                <thead>
+                  <tr>
+                    <th>Colocación Completa</th>
+                    <th>Verbo(s)</th>
+                    <th>Traducción</th>
+                  </tr>
+                </thead>
+                <tbody id="library-table-body">
+                  <!-- JS will dynamically populate rows -->
+                </tbody>
+              </table>
+              <div id="library-empty" class="library-empty hidden">
+                <p>No se encontraron colocaciones que coincidan con los filtros.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </main>
+
+      <footer class="app-footer">
+        <p>C1 English Collocations App. Desarrollado con esmero.</p>
+      </footer>
+    </div>
+    
+    <!-- Congratulations Overlay / Modal -->
+    <div id="modal-completion" class="modal-overlay hidden">
+      <div class="modal-content glass animate-scale">
+        <div class="modal-icon">🏆</div>
+        <h2>¡Sesión Completada!</h2>
+        <p>Has terminado la ronda de preguntas. Aquí tienes tus resultados:</p>
+        
+        <div class="modal-stats">
+          <div class="modal-stat-box">
+            <span class="modal-stat-val" id="modal-correct-ratio">8/10</span>
+            <span class="modal-stat-lbl">Aciertos</span>
+          </div>
+          <div class="modal-stat-box">
+            <span class="modal-stat-val" id="modal-accuracy">80%</span>
+            <span class="modal-stat-lbl">Precisión</span>
+          </div>
+        </div>
+        
+        <div class="modal-actions">
+          <button id="modal-retry-mistakes-btn" class="secondary-btn-text hidden" style="margin-bottom: 12px; width: 100%;">Corregir Fallos</button>
+          <button id="modal-restart-btn" class="primary-btn">Volver al Menú</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

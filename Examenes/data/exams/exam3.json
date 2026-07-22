@@ -1,0 +1,581 @@
+{
+  "id": "exam3",
+  "title": "Test 6 (Cambridge C1 Advanced)",
+  "description": "Test 6 completo: Use of English, Reading y Listening.",
+  "examType": "cae",
+  "scoring": {
+    "useOfEnglish": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 2 },
+      "nominalMax": 28,
+      "passPercentage": 57
+    },
+    "reading": {
+      "partPoints": { "5": 2, "6": 2, "7": 2, "8": 1 },
+      "nominalMax": 50,
+      "passPercentage": 64
+    },
+    "listening": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 1, "5": 1 },
+      "nominalMax": 30,
+      "passPercentage": 60
+    }
+  },
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+          "text": "Solar Power for Indian Villages\n\nGulab Devi looks like a (0) typical rural woman from Rajasthan in north-west India. She can neither read nor write, but is (1)___ a successful pioneer in the Barefoot Solar Engineering Project, a scheme (2)___ to bring solar power to hundreds of villages across India. The availability of solar power (3)___ women from the arduous task of searching for wood for fuel and also reduces their (4)___ to unhealthy wood smoke.\n\nGulab is her family's sole breadwinner. Her job as a solar engineer (5)___ making electronic circuits and chargers for solar lighting panels, and she and her family are able to live comfortably on her salary.\n\nMost of the engineers in the scheme are women, and are trained at the Barefoot College (6)___ by social worker Bunker Roy. His (7)___ is to address problems by building on skills that people already have, and then place the solutions to their problems in their own hands. Early (8)___ are that the project is having a powerful impact on the lives of women like Gulab.",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "furthermore" },
+                { "label": "B", "text": "besides" },
+                { "label": "C", "text": "nevertheless" },
+                { "label": "D", "text": "alternatively" }
+              ],
+              "answer": "C",
+              "explanation": "'Nevertheless' introduce un contraste con la idea anterior (no saber leer ni escribir) — a pesar de eso, es una pionera de éxito. 'Furthermore'/'besides' añaden información en la misma línea, no contrastan, y 'alternatively' presenta una opción distinta, no una concesión."
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "decided" },
+                { "label": "B", "text": "inspired" },
+                { "label": "C", "text": "proposed" },
+                { "label": "D", "text": "designed" }
+              ],
+              "answer": "D",
+              "explanation": "'A scheme designed to do something' (un programa diseñado para hacer algo) es la colocación habitual con este propósito explícito. 'Decided' no se usa así con 'scheme', e 'inspired'/'proposed' no encajan con la estructura 'scheme ___ to bring...'."
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "eases" },
+                { "label": "B", "text": "frees" },
+                { "label": "C", "text": "lightens" },
+                { "label": "D", "text": "lifts" }
+              ],
+              "answer": "B",
+              "explanation": "'Frees women from a task' = libera a las mujeres de una tarea, colocación con 'from'. 'Eases'/'lightens' no se combinan con 'from' de la misma manera (se diría 'eases the task'), y 'lifts' no encaja semánticamente aquí."
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "appearance" },
+                { "label": "B", "text": "liability" },
+                { "label": "C", "text": "exposure" },
+                { "label": "D", "text": "situation" }
+              ],
+              "answer": "C",
+              "explanation": "'Reduces their exposure to smoke' = reduce su exposición al humo, colocación estándar con 'to'. 'Appearance'/'liability'/'situation' no tienen sentido combinados con 'to unhealthy wood smoke'."
+            },
+            {
+              "id": "ue1_5",
+              "number": 5,
+              "options": [
+                { "label": "A", "text": "demands" },
+                { "label": "B", "text": "implies" },
+                { "label": "C", "text": "concerns" },
+                { "label": "D", "text": "involves" }
+              ],
+              "answer": "D",
+              "explanation": "'The job involves doing something' = el trabajo consiste en/implica hacer algo. 'Demands'/'concerns' no se usan de forma natural con gerundio aquí, e 'implies' sugiere algo no explícito, cuando el texto describe la tarea literalmente."
+            },
+            {
+              "id": "ue1_6",
+              "number": 6,
+              "options": [
+                { "label": "A", "text": "set down" },
+                { "label": "B", "text": "set in" },
+                { "label": "C", "text": "set up" },
+                { "label": "D", "text": "set aside" }
+              ],
+              "answer": "C",
+              "explanation": "'Set up' es el phrasal verb correcto para 'fundar/establecer' (a college set up by someone). 'Set down' = anotar por escrito, 'set in' = comenzar (p.ej. el mal tiempo), y 'set aside' = apartar/reservar."
+            },
+            {
+              "id": "ue1_7",
+              "number": 7,
+              "options": [
+                { "label": "A", "text": "pursuit" },
+                { "label": "B", "text": "aim" },
+                { "label": "C", "text": "determination" },
+                { "label": "D", "text": "tendency" }
+              ],
+              "answer": "B",
+              "explanation": "'His aim is to do something' = su objetivo es hacer algo, colocación estándar. 'Pursuit' es la actividad de perseguir algo (no funciona como sujeto de 'is to address'), y 'determination'/'tendency' no encajan con esta estructura."
+            },
+            {
+              "id": "ue1_8",
+              "number": 8,
+              "options": [
+                { "label": "A", "text": "signals" },
+                { "label": "B", "text": "hints" },
+                { "label": "C", "text": "suggestions" },
+                { "label": "D", "text": "indications" }
+              ],
+              "answer": "D",
+              "explanation": "'Early indications are that...' (los primeros indicios son que...) es la colocación fija. 'Signals'/'hints'/'suggestions' no se combinan de forma natural con 'are that' en este sentido."
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+          "text": "Are You Happy Where You Work?\n\nFinding a job you love is the first step to being happy at work, but (0) having the right workplace environment is equally important. Creativity, hard work and bright ideas come (9)___ positive, happy working environments in (10)___ people are allowed the freedom to think, develop and express themselves. It's important for everyone to have (11)___ own clearly-defined work space, even if the workplace adopts an 'open plan' style, as so many offices now (12)___. Relaxation areas where people meet to chat and discuss ideas during office hours are regarded (13)___ particularly beneficial.\n\nAdding plants to the working environment can also (14)___ offices to life, since they increase oxygen levels, purify the air and can create a calming and more productive environment. Finally, the lighting (15)___ be right, because it can have a huge effect on people's moods. If offices are too harshly lit, (16)___ can result in anger and headaches and lead to a lack of concentration.",
+          "questions": [
+            { "id": "ue2_9", "number": 9, "answer": "from", "acceptedAnswers": ["with"], "explanation": "'Ideas come from environments' = las ideas surgen de los entornos. 'Come from' es la colocación natural para indicar el origen de algo." },
+            { "id": "ue2_10", "number": 10, "answer": "which", "explanation": "Pronombre relativo tras preposición: 'environments in which people are allowed...' = entornos en los que se permite a la gente..." },
+            { "id": "ue2_11", "number": 11, "answer": "their", "explanation": "Adjetivo posesivo plural que concuerda con 'everyone'/'people' en sentido genérico: 'to have their own work space'." },
+            { "id": "ue2_12", "number": 12, "answer": "do", "explanation": "Verbo auxiliar que sustituye a la acción mencionada antes ('adopts an open plan style'): 'as so many offices now do' = como hacen ahora muchas oficinas." },
+            { "id": "ue2_13", "number": 13, "answer": "as", "explanation": "Colocación fija: 'regarded as beneficial' = considerado como beneficioso." },
+            { "id": "ue2_14", "number": 14, "answer": "bring", "explanation": "Expresión fija: 'bring something to life' = dar vida a algo." },
+            { "id": "ue2_15", "number": 15, "answer": "must", "acceptedAnswers": ["should"], "explanation": "Verbo modal de obligación/necesidad: 'the lighting must/should be right' = la iluminación debe ser adecuada." },
+            { "id": "ue2_16", "number": 16, "answer": "this", "acceptedAnswers": ["it"], "explanation": "Pronombre que retoma la idea anterior (oficinas con luz demasiado dura): 'this/it can result in anger and headaches'." }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "word-formation",
+          "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+          "text": "Camels in the Arctic?\n\nCamels are well known for their (0) ability to survive the heat of the desert; however, scientists have unearthed the fossilised remains of a giant camel that (17)___ the forests of the High Arctic more than three million years ago. The ancient beast was almost three metres in (18)___, about a third bigger than its modern (19)___, the Arabian camel. Remains of the animal were found on Ellesmere Island, the most northerly and (20)___ island of the Canadian Arctic archipelago.\n\n(21)___ from previous expeditions have shown that the camel's ancestors (22)___ in North America 45 million years ago, but this is the first evidence of camels so far north. According to Mike Buckley, a researcher who studied the latest remains, this ancestor of modern camels may already have developed some of the (23)___ that helped it survive in harsh climates - the hump for fat (24)___, for instance, the large flat feet ideal for either snow or sand, and the big eyes that perhaps helped when long, dark winters made visibility poor.",
+          "questions": [
+            { "id": "ue3_17", "number": 17, "prompt": "HABIT", "answer": "inhabited" },
+            { "id": "ue3_18", "number": 18, "prompt": "HIGH", "answer": "height" },
+            { "id": "ue3_19", "number": 19, "prompt": "DESCEND", "answer": "descendant" },
+            { "id": "ue3_20", "number": 20, "prompt": "MOUNTAIN", "answer": "mountainous" },
+            { "id": "ue3_21", "number": 21, "prompt": "FIND", "answer": "findings" },
+            { "id": "ue3_22", "number": 22, "prompt": "ORIGIN", "answer": "originated" },
+            { "id": "ue3_23", "number": 23, "prompt": "ADAPT", "answer": "adaptations" },
+            { "id": "ue3_24", "number": 24, "prompt": "STORE", "answer": "storage" }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "key-word-transformation",
+          "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+          "questions": [
+            {
+              "id": "ue4_25",
+              "number": 25,
+              "sentence1": "Your books will be despatched on receipt of your order provided they are in stock.",
+              "keyword": "SOON",
+              "sentence2": "We will despatch your books ___ the order provided they are in stock.",
+              "answer": "as soon as we receive",
+              "acceptedAnswers": ["as soon as we have received"]
+            },
+            {
+              "id": "ue4_26",
+              "number": 26,
+              "sentence1": "Because the gym increased its fees last month, I am no longer a member.",
+              "keyword": "UP",
+              "sentence2": "If the gym ___ its fees last month, I would still be a member.",
+              "answer": "hadn't put up",
+              "acceptedAnswers": ["had not put up"]
+            },
+            {
+              "id": "ue4_27",
+              "number": 27,
+              "sentence1": "The driver said that we were delayed because an earlier train had broken down.",
+              "keyword": "CAUSED",
+              "sentence2": "According to the driver, our ___ breakdown of an earlier train.",
+              "answer": "delay was caused by the",
+              "acceptedAnswers": ["delay had been caused by the"]
+            },
+            {
+              "id": "ue4_28",
+              "number": 28,
+              "sentence1": "It was Sarah's ideas that enabled us to put on a successful fashion show.",
+              "keyword": "FOR",
+              "sentence2": "If ___ ideas, we wouldn't have been able to put on a successful fashion show.",
+              "answer": "it hadn't been for sarah's",
+              "acceptedAnswers": ["it had not been for sarah's", "it wasn't for sarah's", "it was not for sarah's", "were it not for sarah's"]
+            },
+            {
+              "id": "ue4_29",
+              "number": 29,
+              "sentence1": "Leo was the only person in the street who didn't come to my farewell party.",
+              "keyword": "EXCEPTION",
+              "sentence2": "Everyone in the street ___ to my farewell party.",
+              "answer": "with the exception of leo came"
+            },
+            {
+              "id": "ue4_30",
+              "number": 30,
+              "sentence1": "The concert should have started about three hours ago.",
+              "keyword": "DUE",
+              "sentence2": "The concert ___ about three hours ago.",
+              "answer": "was due to start",
+              "acceptedAnswers": ["was due to begin"]
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 5,
+          "type": "multiple-choice",
+          "instructions": "You are going to read an article about the future of newspapers. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "text": "The Future of Newspapers\n\nAnybody who says they can reliably forecast the future of newspapers is either a liar or a fool. Look at the raw figures, and newspapers seem doomed. Since 2000, the circulation of most UK national dailies has fallen by between a third and a half. The authoritative Pew Research Centre in the USA reports that newspapers are now the main source of news for only 26 percent of US citizens as against 45 percent in 2001. There is no shortage of prophets who confidently predict that the last printed newspaper will be safely buried within 15 years at most.\n\nYet one of the few reliable facts of history is that old media have a habit of surviving. An over-exuberant New York journalist announced in 1835 that books and theatre 'have had their day' and the daily newspaper would become 'the greatest organ of social life'. Theatre duly withstood not only the newspaper, but also cinema and then television. Radio has flourished in the TV age; cinema, in turn, has held its own against videos and DVDs. Even vinyl records have made a comeback, with online sales up 745 percent since 2008.\n\nNewspapers themselves were once new media, although it took several centuries before they became the dominant medium for news. This was not solely because producing up-to-date news for a large readership over a wide area became practicable and economic only in the mid-19th century, with the steam press, the railway and the telegraph. Equally important was the emergence of the idea that everything around us is in constant movement and we need to be updated on its condition at regular intervals - a concept quite alien in medieval times and probably also to most people in the early modern era. Now, we expect change. To our medieval ancestors, however, the only realities were the passing of the seasons, punctuated by catastrophes such as famine, flood or disease that they had no reliable means of anticipating. Life, as the writer Alain de Botton puts it, was 'ineluctably cyclical' and 'the most important truths were recurring'.\n\nJournalism as a full-time trade from which you could hope to make a living hardly existed before the 19th century. Even then, there was no obvious reason why most people needed news on a regular basis, whether daily or weekly. In some respects, regularity of newspaper publication and rigidity of format was, and remains, a burden. Online news readers can dip in and out according to how they perceive the urgency of events. Increasingly sophisticated search engines and algorithms allow us to personalise the news to our own priorities and interests. When important stories break, internet news providers can post minute-by-minute updates. Error, misconception and foolish speculation can be corrected or modified almost instantly. There are no space restrictions to prevent narrative or analysis, and documents or events cited in news stories can often be accessed in full. All this is a world away from the straitjacket of newspaper publication. Yet few if any providers seem alive to the new medium's capacity for spreading understanding and enlightenment.\n\nInstead, the anxiety is always to be first with the news, to maximise reader comments, to create heat, sound and fury and thus add to the sense of confusion. In the medieval world, what news there was was usually exchanged amid the babble of the marketplace or the tavern, where truth competed with rumour, mishearing and misunderstanding. In some respects, it is to that world that we seem to be returning.\n\nNewspapers have never been very good - or not as good as they ought to be - at telling us how the world works. Perhaps they now face extinction. Or perhaps, as the internet merely adds to what de Botton describes as our sense that we live in 'an unimprovable and fundamentally chaotic universe', they will discover that they and they alone can guide us to wisdom and understanding.",
+          "questions": [
+            {
+              "id": "r5_31",
+              "number": 31,
+              "prompt": "In the first paragraph, the writer is presenting",
+              "options": [
+                { "label": "A", "text": "his interpretation of a current trend." },
+                { "label": "B", "text": "evidence that supports a widespread view." },
+                { "label": "C", "text": "his prediction on the future of print journalism." },
+                { "label": "D", "text": "reasons for the decline in newspaper readership." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_32",
+              "number": 32,
+              "prompt": "What point is the writer making in the second paragraph?",
+              "options": [
+                { "label": "A", "text": "Existing media are not necessarily replaced by new ones." },
+                { "label": "B", "text": "The best media technologies tend to be the most long-lasting." },
+                { "label": "C", "text": "Public enthusiasm for new types of media is often unpredictable." },
+                { "label": "D", "text": "It is inevitable that most media technologies will have a limited life." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "r5_33",
+              "number": 33,
+              "prompt": "Which phrase in the second paragraph has the same meaning as 'held its own against' in line 10?",
+              "options": [
+                { "label": "A", "text": "'had their day'" },
+                { "label": "B", "text": "'withstood'" },
+                { "label": "C", "text": "'flourished'" },
+                { "label": "D", "text": "'made a comeback'" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_34",
+              "number": 34,
+              "prompt": "In the third paragraph, the writer stresses the significance of",
+              "options": [
+                { "label": "A", "text": "a shift in people's attitudes towards the outside world." },
+                { "label": "B", "text": "certain key 19th-century advances in mechanisation." },
+                { "label": "C", "text": "the challenges of news distribution in the pre-industrial era." },
+                { "label": "D", "text": "the competition between newspapers and more established media." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "r5_35",
+              "number": 35,
+              "prompt": "What does the writer suggest is the main advantage of online news sites?",
+              "options": [
+                { "label": "A", "text": "the flexibility of the medium" },
+                { "label": "B", "text": "the accuracy of the reporting" },
+                { "label": "C", "text": "the ease of access for their users" },
+                { "label": "D", "text": "the breadth of their potential readership" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "r5_36",
+              "number": 36,
+              "prompt": "What does the writer suggest about newspapers in the final paragraph?",
+              "options": [
+                { "label": "A", "text": "They still have an important role to play." },
+                { "label": "B", "text": "They can no longer compete with the internet." },
+                { "label": "C", "text": "They will have to change to keep up with the digital age." },
+                { "label": "D", "text": "They will retain a level of popularity among certain types of readers." }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 6,
+          "type": "cross-text-multiple-matching",
+          "instructions": "You are going to read extracts from four articles in which museum directors give their views on museums. For questions 37-40, choose from the extracts A-D. The museum directors may be chosen more than once. Write only the letter (A, B, C or D) as your answer.",
+          "text": "Museums\n\nA. Statistics show that museums are going from strength to strength in terms of visitor numbers, which is an encouraging sign in our computer-obsessed society. Online access increasingly rules how we approach information today, and museums have to engage with this to stay relevant. That said, a picture on a screen cannot replace material engagement with an object. Unfortunately, many people still have rather outdated ideas of what museums are like, including believing that they are high-brow institutions aimed at some international elite, which is clearly no longer the case, particularly with the smaller ones. With effort, a museum can be the heart of a community, preserving the stories which are important to those who live nearby, and I know of many such museums all over the country which are thriving.\n\nB. It is interesting that people who do not think twice about visiting a museum when on holiday very rarely set foot in one the rest of the time, but this is nothing to do with a failure to accommodate a wide range of people - museums definitely do that nowadays. I think it is more that, when we are entrenched in our daily routine, museums are not high on our list of priorities. Breaking out of that routine gives you the opportunity to do different things, among them things like visiting museums. Part of the appeal of museums, of course, is the chance to view objects from around the world and get a taste of another culture. Although there are rigorous export controls stopping objects of national significance being sold abroad, thanks to the internet museums can co-operate to arrange reciprocal loans for special exhibitions.\n\nC. Museums are clearly keen to capitalise on the possibilities offered by the internet, and it is a valuable tool for extending access. Exhibitions can remain on view on our website indefinitely after a physical show has been dismantled, and people have the opportunity to examine fascinating artefacts and works of art from all corners of the globe in much greater detail than they can in the gallery. The only downside of the increasing expectation of online access that I can see, is that provincial museums lose out to the large nationals, as their more limited resources mean they cannot hope to compete. I am convinced that this is what is behind their falling visitor numbers. Having said that, on a national level, more people feel that museums are relevant to everyone, rather than just a select few, and this has clearly made a difference.\n\nD. I would love to think that people come through the door of institutions such as mine because they want to open their minds to new things, but, while that may be true of a few, I know that the majority are visitors to the city who are including one or two museums in their itinerary in order to add variety. Having said that, I really hope that they leave with a wish to come back, or to try other museums. I also think there is still a long way to go in terms of winning over visitors from less privileged backgrounds. In this age of fast-changing, user-friendly digital technology, many people feel intimidated by the rather dry, academic way in which many still display their exhibits. We are now working a great deal more with overseas museums, and, in addition to allowing us to constantly change the items we have on display, we have found that this encourages museums, and even governments, to engage in dialogue.",
+          "questions": [
+            {
+              "id": "r6_37",
+              "number": 37,
+              "prompt": "Which museum director has a different opinion from C on the value of using digital media to present exhibits?",
+              "answer": "A"
+            },
+            {
+              "id": "r6_38",
+              "number": 38,
+              "prompt": "Which museum director shares B's view on the further benefit of museums exhibiting objects from other countries?",
+              "answer": "D"
+            },
+            {
+              "id": "r6_39",
+              "number": 39,
+              "prompt": "Which museum director has a different opinion from A about the success of local museums?",
+              "answer": "C"
+            },
+            {
+              "id": "r6_40",
+              "number": 40,
+              "prompt": "Which museum director has a different opinion from the others about how well museums cater for all levels of society?",
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 7,
+          "type": "gapped-text",
+          "instructions": "You are going to read a magazine article about ways of reusing escaped heat. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use. Write only the letter (A-G) as your answer.",
+          "text": "City of Heat\n\nEscaped heat costs us money and affects our climate. Chelsea Wald reports on a grand plan to capture it and put it to good use.\n\nDeep in the tunnels of London's underground railway, as in many around the world, it's so hot it can feel very uncomfortable. And yet in the basement of a building only a few metres away from the station a boiler is firing to heat water for someone's shower.\n\n[41]\n\nRecapturing it wouldn't just benefit our wallets. It would reverse some of the damaging effects on the climate. The good news is that several cities have found a way to hunt down their surplus heat in some unexpected places. These cities are building systems that deliver heat in much the same way that suppliers handle electricity and water. Could they point the way to the next energy revolution?\n\n[42]\n\nIt was also estimated that given the right technologies, we could reclaim nearly half of that energy, although that's easier said than done. 'We often talk about the quantity of waste heat,' says David MacKay, chief scientific adviser to the UK Department of Energy and Climate Change, 'but not the quality. Most of what we think of as waste heat isn't actually all that hot; about sixty percent is below 230°C. While that may sound pretty hot, it is too cold to turn a turbine to generate electricity.\n\n[43]\n\nThere, buildings tap into the system to warm their water supplies or air for central heating. Many countries are encouraging such cogeneration, as it is called. A US initiative, for example, might save the country $10 billion per year. And cogeneration allows power plants to bump up their efficiencies from thirty percent to almost ninety percent.\n\n[44]\n\nAs it happens, there is an existing technology that can siphon energy from such temperatures, although applying it on a large scale to capture waste heat is as yet unachievable. Ground source heat pumps have been helping homeowners save on heating bills since the 1940s, when US inventor Robert Webber realised he could invert the refrigeration process to extract heat from the ground.\n\n[45]\n\nThe mechanism for this is simple. A network of pipes makes a circuit between the inside of the dwelling and a coil buried underground. These pipes contain a mix of water and fluid refrigerant. As the fluid mixture travels through the pipes buried underground, it absorbs the heat from the 10°C soil.\n\n[46]\n\nThis system is powerful enough to efficiently provide heat even in places as cold as Norway and Alaska. It is also cheap. Scientists around the world are now working on the idea that the way ahead is to develop city-wide grids using source-heat pumps to recycle waste on a grander scale, from sources such as subways and sewers.",
+          "paragraphOptions": [
+            { "label": "A", "text": "But that's not all it can do. Reverse the process and it can cool a home in summer. If the ground is cold enough, it simply absorbs the heat from inside the building instead of from the ground." },
+            { "label": "B", "text": "It's an attractive proposition. A report in 2008 found that the energy lost as heat each year by US industry equalled the annual energy use of five million citizens. Power generation is a major culprit; the heat lost from that sector alone dwarfs the total energy use of Japan. The situation in other industrialised countries is similar." },
+            { "label": "C", "text": "Yet even this is just a drop in the ocean compared with the heat lost from our homes, offices, road vehicles and trains. However, waste heat from these myriad sources is much harder to harness than the waste heat from single, concentrated sources like power plants. What's more, it's barely warm enough to merit its name. Reclaiming that would be an altogether more difficult proposition." },
+            { "label": "D", "text": "A more successful way of using the heat is to move the heat directly to where it is needed. A number of power plants now do exactly that. They capture some or all of their waste heat and send it - as steam or hot water - through a network of pipes to nearby cities." },
+            { "label": "E", "text": "The system takes advantage of the fact that in temperate regions - regardless of surface temperature - a few metres underground, the soil always remains lukewarm and stable. These pumps can tap into that consistent temperature to heat a house in the winter." },
+            { "label": "F", "text": "While this is not what you might consider hot, it nonetheless causes the liquid to evaporate into a gas. When this gas circulates back into the building, it is fed through a compressor, which vastly intensifies the heat. That heat can then be used by a heat exchanger to warm up hot water or air ducts." },
+            { "label": "G", "text": "Rather than stewing in that excess heat, what if we could make it work for us? Throughout our energy system - from electricity generation in power plants to powering a car - more than fifty percent of the energy we use leaks into the surroundings." }
+          ],
+          "questions": [
+            { "id": "r7_41", "number": 41, "answer": "G" },
+            { "id": "r7_42", "number": 42, "answer": "B" },
+            { "id": "r7_43", "number": 43, "answer": "D" },
+            { "id": "r7_44", "number": 44, "answer": "C" },
+            { "id": "r7_45", "number": 45, "answer": "E" },
+            { "id": "r7_46", "number": 46, "answer": "F" }
+          ]
+        },
+        {
+          "partNumber": 8,
+          "type": "multiple-matching",
+          "instructions": "You are going to read an article about the value of boredom. For questions 47-56, choose from the sections (A-D). The sections may be chosen more than once. Write only the letter (A, B, C or D) as your answer.",
+          "text": "Time Out\n\nIt seems that embracing boredom and allowing ourselves to drift away could be good for us\n\nA. Consider any public place where people used to enjoy a spot of silent contemplation - from train carriages and beauty spots to our local streets - and these days you'll see people plugged into their seductive electronic sources of constant stimulation. All this information overload seems like a terribly modern-day problem. But one unique thinker actually stumbled on a neat solution several decades ago: radical boredom. In 1942, a German writer called Siegfried Karcauer wrote despairingly of the massive over-stimulation of the modern city where people listening to the radio were in a state of 'permanent receptivity, constantly pregnant with London, the Eiffel Tower, Berlin.' His answer was to suggest a period of total withdrawal from stimulation - to cut ourselves off and experience 'extraordinary, radical boredom'. 'On a sunny afternoon when everyone is outside, one would do best to hang about the train station,' he wrote. 'Or better yet, stay at home, draw the curtains and surrender oneself to one's boredom on the sofa.'\n\nB. Karcauer believed that actively pursuing boredom in this way was a valuable means of unlocking playful wild ideas far away from plain reality and, better still, achieve 'a kind of bliss that is almost unearthly'. It's a beautiful theory and one that would definitely hold an allure for many people. Plus modern research suggests that it might actually have a sound psychological basis. To test the potential positives of boredom, psychologist Dr Sandi Mann asked a group of 40 people to complete a task designed to showcase their creativity. But before they got started on it, a subgroup was asked to perform a suitably dull task - copying numbers from the telephone directory for 15 minutes. The data pointed to the group that had previously endured boredom displaying more creative flair during the task than the control group. According to psychologists this is normal, because when people become bored and start to daydream, their minds come up with different processes and they work out more creative solutions to problems.\n\nC. This would suggest perhaps, that by over-stimulating our minds, we're not just making ourselves more stressed, we're also missing out on a chance to unhook our thoughts from the daily grind and think more creatively. Having said that, psychologists also point out that despite its bad reputation, boredom has a definite evolutionary purpose. Mann says 'Without it, we'd be like toddlers in a perpetual state of amazement. Just imagine it: \"Wow - look at that fantastic cereal at the bottom of my bowl!\" It may be very stimulating, but we'd never get anything done.' That puts me in mind of adults who are addicted to social media and smart phones - attention-seeking, scurrying around the internet screaming 'Look at this! Look at them! Look at me!' while the real world beyond the electronic devices continues on untroubled and unexamined. Meanwhile, as Mann points out, we're incorrectly teaching our actual toddlers that boredom and lack of stimulation is something to be feared rather than embraced.\n\nD. So how do you learn to tactically embrace periods of radical boredom? The first step is realising that this is different from simply taking time to ponder what you've done since getting up that morning. 'Using boredom positively is about creating new opportunities when your mind isn't occupied and you can't focus on anything else,' says Mann. This could be as simple as staring out the window or watching the rain come down. Or heading off for a solitary walk with no fixed destination in mind, or your smart phone in your pocket. Anything that gives your mind the rare chance to drift off its moorings. 'I can really recommend it,' says Mann. 'It's a great experience - like taking a holiday from your brain.' I'm definitely sold. I'm trying to keep my phone turned off during the weekends and allow myself the odd, dreamy wallow on the sofa during the week, time permitting. And the best thing: it works. After taking a break and allowing my mind to roam, it returns refreshed and revitalized, with a fresh take on the challenges that I face during the day. When my daughter gets to an age when she's ready to whine 'I'm bored', I'll know exactly what to say!",
+          "questions": [
+            { "id": "r8_47", "number": 47, "prompt": "points out a drawback in failing to allow time for mundane reflection", "answer": "C" },
+            { "id": "r8_48", "number": 48, "prompt": "comments on a personal experience of using a particular psychological technique", "answer": "D" },
+            { "id": "r8_49", "number": 49, "prompt": "comments on the broad appeal that a particular notion might potentially have", "answer": "B" },
+            { "id": "r8_50", "number": 50, "prompt": "suggests that boredom as a way of dealing with a problem is not a new idea", "answer": "A" },
+            { "id": "r8_51", "number": 51, "prompt": "distinguishes between mere reflection and conscious avoidance of mental stimulation", "answer": "D" },
+            { "id": "r8_52", "number": 52, "prompt": "refers to the communication of an erroneous message", "answer": "C" },
+            { "id": "r8_53", "number": 53, "prompt": "refers to an activity indicative of modern life taking place in various locations", "answer": "A" },
+            { "id": "r8_54", "number": 54, "prompt": "outlines a positive consequence of distancing oneself from technology", "answer": "D" },
+            { "id": "r8_55", "number": 55, "prompt": "explains that a particular finding supported existing knowledge", "answer": "B" },
+            { "id": "r8_56", "number": 56, "prompt": "remarks on the significance of monotony in the development of the human species", "answer": "C" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "You will hear three different extracts. For questions 1-6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "Extract One - You hear a sportsman and a businesswoman discussing the issue of being competitive. How does the man feel about the book he's read on competitiveness?",
+              "options": [
+                { "label": "A", "text": "surprised that it contradicts a well-established theory" },
+                { "label": "B", "text": "confused by the wide range of evidence it quotes" },
+                { "label": "C", "text": "unsure about certain aspects of its argument" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Extract One - The woman feels that in the business world, prioritising competitiveness leads to",
+              "options": [
+                { "label": "A", "text": "a demotivating effect on the workforce." },
+                { "label": "B", "text": "a constant drive towards greater productivity." },
+                { "label": "C", "text": "an obsession with short-term goals." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "Extract Two - You hear two friends discussing some research into the impact of colour on memory. They both say that",
+              "options": [
+                { "label": "A", "text": "restaurants use clever tactics to attract new customers." },
+                { "label": "B", "text": "the research methods used seem valid." },
+                { "label": "C", "text": "the same colours can affect people in different ways." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "Extract Two - The woman feels that the teenager's findings",
+              "options": [
+                { "label": "A", "text": "could prove significant in the long-term." },
+                { "label": "B", "text": "need the backing of the scientific establishment." },
+                { "label": "C", "text": "confirm initial evidence about the way memory is viewed." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_5",
+              "number": 5,
+              "prompt": "Extract Three - You hear two people discussing a television programme about music and the effect it has on the brain. How does the woman feel about the programme?",
+              "options": [
+                { "label": "A", "text": "surprised by its conclusion" },
+                { "label": "B", "text": "confused by the approach it took" },
+                { "label": "C", "text": "disappointed by the lack of explanation" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_6",
+              "number": 6,
+              "prompt": "Extract Three - What do they agree about music?",
+              "options": [
+                { "label": "A", "text": "It has unexpected benefits." },
+                { "label": "B", "text": "Its effects on intelligence are obvious." },
+                { "label": "C", "text": "It's important to study its psychological impact." }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "sentence-completion",
+          "instructions": "You will hear a radio report by the journalist Susie Stubbs, who has been to the tropical island of Réunion to find out about the flavouring called vanilla. For questions 7-14, complete the sentences with a word or short phrase.",
+          "questions": [
+            { "id": "l2_7", "number": 7, "prompt": "Susie says that, despite its cost, vanilla is the world's most ___ spice.", "answer": "popular" },
+            { "id": "l2_8", "number": 8, "prompt": "The vanilla plant is originally from Mexico, where it depends on a local ___ for its existence.", "answer": "insect" },
+            { "id": "l2_9", "number": 9, "prompt": "Susie says the term ___ is used to talk about vanilla plants on the island.", "answer": "green gold" },
+            { "id": "l2_10", "number": 10, "prompt": "Recently the vanilla harvest has been affected by ___ and this impacts on the price.", "answer": "storms", "acceptedAnswers": ["the storms"] },
+            { "id": "l2_11", "number": 11, "prompt": "These days the vanilla plants are covered by ___ for protection.", "answer": "nets", "acceptedAnswers": ["netting"] },
+            { "id": "l2_12", "number": 12, "prompt": "Sometimes there are ___ in the vanilla seed pods to show which farm they come from.", "answer": "holes", "acceptedAnswers": ["small holes"] },
+            { "id": "l2_13", "number": 13, "prompt": "The vanilla pods are sun-dried and then ___ briefly before being packed in boxes.", "answer": "boiled" },
+            { "id": "l2_14", "number": 14, "prompt": "The boxes used to store the pods are wrapped in ___ to keep the heat in.", "answer": "blankets" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "multiple-choice",
+          "instructions": "You will hear a radio interview in which two young journalists - called Angus Brown and Yolanda Zouche - are talking about their work. For questions 15-20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+          "questions": [
+            {
+              "id": "l3_15",
+              "number": 15,
+              "prompt": "In Yolanda's opinion, what is the most challenging aspect of her job?",
+              "options": [
+                { "label": "A", "text": "finding suitable images to accompany articles" },
+                { "label": "B", "text": "trying to locate interviewees" },
+                { "label": "C", "text": "expressing herself coherently within a tight word limit" },
+                { "label": "D", "text": "working to demanding time constraints" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_16",
+              "number": 16,
+              "prompt": "What is it about their work that Angus and Yolanda both enjoy?",
+              "options": [
+                { "label": "A", "text": "the variety of the projects they get involved in" },
+                { "label": "B", "text": "the challenge of reporting news effectively" },
+                { "label": "C", "text": "the opportunity to meet interesting people" },
+                { "label": "D", "text": "the appeal of searching out information" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_17",
+              "number": 17,
+              "prompt": "In Angus's opinion, the advantage of online newspapers over print versions is that they",
+              "options": [
+                { "label": "A", "text": "are able to cover a greater range of topics." },
+                { "label": "B", "text": "can keep up with events as they develop." },
+                { "label": "C", "text": "allow interaction by readers." },
+                { "label": "D", "text": "reach a far wider public." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_18",
+              "number": 18,
+              "prompt": "What made getting a job in journalism so hard for Angus?",
+              "options": [
+                { "label": "A", "text": "the extent of competition for posts" },
+                { "label": "B", "text": "a low level of encouragement from others" },
+                { "label": "C", "text": "a lack of previous professional experience" },
+                { "label": "D", "text": "the difficulty of establishing useful contacts" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_19",
+              "number": 19,
+              "prompt": "Yolanda believes that the essential requirement for a journalist entering the profession is",
+              "options": [
+                { "label": "A", "text": "an ability to write persuasively." },
+                { "label": "B", "text": "a clear and logical mind." },
+                { "label": "C", "text": "a resourceful and confident character." },
+                { "label": "D", "text": "a mastery of interviewing techniques." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_20",
+              "number": 20,
+              "prompt": "Angus's recommendation for aspiring journalists is to",
+              "options": [
+                { "label": "A", "text": "cultivate an interest in a specific field." },
+                { "label": "B", "text": "seize every opportunity to express themselves in writing." },
+                { "label": "C", "text": "concentrate on developing a distinct style." },
+                { "label": "D", "text": "become a keen observer of life around them." }
+              ],
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "multiple-matching",
+          "instructions": "You will hear five short extracts in which people are talking about strategies they've adopted for handling work-related problems. TASK ONE: For questions 21-25, choose from the list (A-H) why each speaker decided to adopt their particular strategy. Write only the letter (A-H) as your answer.\n\nA to strengthen a relationship\nB to reassure an employer\nC to help deal with extensive responsibilities\nD to meet the demands of colleagues\nE to cope with unpredictability\nF to avoid unfair criticism\nG to fulfil public expectations\nH to get some personal space",
+          "questions": [
+            { "id": "l4_21", "number": 21, "prompt": "Speaker 1", "answer": "H" },
+            { "id": "l4_22", "number": 22, "prompt": "Speaker 2", "answer": "A" },
+            { "id": "l4_23", "number": 23, "prompt": "Speaker 3", "answer": "F" },
+            { "id": "l4_24", "number": 24, "prompt": "Speaker 4", "answer": "E" },
+            { "id": "l4_25", "number": 25, "prompt": "Speaker 5", "answer": "C" }
+          ]
+        },
+        {
+          "partNumber": 5,
+          "type": "multiple-matching",
+          "instructions": "TASK TWO: For questions 26-30, choose from the list (A-H) how each speaker felt after implementing the strategy. Write only the letter (A-H) as your answer.\n\nA angry at the incompetence of colleagues\nB delighted by an unexpected benefit\nC upset by an unsympathetic response\nD amused by a coincidence\nE optimistic at the prospect of future success\nF disappointed because of a misunderstanding\nG puzzled by people's reactions\nH envious of the ability of others",
+          "questions": [
+            { "id": "l4_26", "number": 26, "prompt": "Speaker 1", "answer": "D" },
+            { "id": "l4_27", "number": 27, "prompt": "Speaker 2", "answer": "B" },
+            { "id": "l4_28", "number": 28, "prompt": "Speaker 3", "answer": "G" },
+            { "id": "l4_29", "number": 29, "prompt": "Speaker 4", "answer": "A" },
+            { "id": "l4_30", "number": 30, "prompt": "Speaker 5", "answer": "H" }
+          ]
+        }
+      ]
+    }
+  }
+}

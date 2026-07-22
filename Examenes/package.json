@@ -1,0 +1,15 @@
+{
+  "name": "c1-exam-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicación local para practicar exámenes de inglés C1 (estilo Cambridge Advanced)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

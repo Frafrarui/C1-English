@@ -1,0 +1,2914 @@
+[
+  {
+    "baseWord": "Able",
+    "derivedWord": "Ability",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Habilidad",
+    "example": "The new software improves our ability to process data."
+  },
+  {
+    "baseWord": "Able",
+    "derivedWord": "Inability",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Inhabilidad / Incapacidad",
+    "example": "His inability to meet deadlines is a problem."
+  },
+  {
+    "baseWord": "Able",
+    "derivedWord": "Enable",
+    "partOfSpeech": "Verbo",
+    "translation": "Activar / Habilitar",
+    "example": "This feature will enable you to save progress automatically."
+  },
+  {
+    "baseWord": "Able",
+    "derivedWord": "Unable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Incapaz",
+    "example": "I am unable to attend the meeting tomorrow."
+  },
+  {
+    "baseWord": "Accident",
+    "derivedWord": "Accidentally",
+    "partOfSpeech": "Adverbio",
+    "translation": "Accidentalmente",
+    "example": "I accidentally deleted the configuration file."
+  },
+  {
+    "baseWord": "Achieve",
+    "derivedWord": "Achievement",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Logro",
+    "example": "Completing the project on time was a huge achievement."
+  },
+  {
+    "baseWord": "Active",
+    "derivedWord": "Activity",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Actividad",
+    "example": "We need to monitor the network for any suspicious activity."
+  },
+  {
+    "baseWord": "Add",
+    "derivedWord": "Addition",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Adición",
+    "example": "This new tool is a great addition to our workflow."
+  },
+  {
+    "baseWord": "Addition",
+    "derivedWord": "Additional",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Adicional",
+    "example": "We require additional information to proceed."
+  },
+  {
+    "baseWord": "Agree",
+    "derivedWord": "Agreement",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Acuerdo",
+    "example": "They finally reached an agreement."
+  },
+  {
+    "baseWord": "Agriculture",
+    "derivedWord": "Agricultural",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Agrícola",
+    "example": "The country relies heavily on its agricultural exports."
+  },
+  {
+    "baseWord": "Amaze",
+    "derivedWord": "Amazing",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Increíble",
+    "example": "The view from the top of the mountain is amazing."
+  },
+  {
+    "baseWord": "Amaze",
+    "derivedWord": "Amazement",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Asombro",
+    "example": "She looked at the magician in absolute amazement."
+  },
+  {
+    "baseWord": "America",
+    "derivedWord": "American",
+    "partOfSpeech": "Adjetivo/Sust.",
+    "translation": "Americano",
+    "example": "He loves classic American cars."
+  },
+  {
+    "baseWord": "Analyse",
+    "derivedWord": "Analysis",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Análisis",
+    "example": "The data requires further analysis."
+  },
+  {
+    "baseWord": "Angry",
+    "derivedWord": "Anger",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Ira",
+    "example": "He couldn't control his anger."
+  },
+  {
+    "baseWord": "Annual",
+    "derivedWord": "Annually",
+    "partOfSpeech": "Adverbio",
+    "translation": "Anualmente",
+    "example": "The festival is held annually in July."
+  },
+  {
+    "baseWord": "Anxiety",
+    "derivedWord": "Anxious",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Ansioso",
+    "example": "I am feeling a bit anxious about the exam."
+  },
+  {
+    "baseWord": "Appear",
+    "derivedWord": "Appearance",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Apariencia",
+    "example": "You shouldn't judge someone by their appearance."
+  },
+  {
+    "baseWord": "Arrive",
+    "derivedWord": "Arrival",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Llegada",
+    "example": "We waited for the arrival of the train."
+  },
+  {
+    "baseWord": "Assist",
+    "derivedWord": "Assistance",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Asistencia",
+    "example": "Do you need any assistance with your luggage?"
+  },
+  {
+    "baseWord": "Attract",
+    "derivedWord": "Attraction",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Atracción",
+    "example": "The museum is the main tourist attraction."
+  },
+  {
+    "baseWord": "Attract",
+    "derivedWord": "Attractive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Atractivo",
+    "example": "It's a very attractive offer."
+  },
+  {
+    "baseWord": "Believe",
+    "derivedWord": "Unbelievable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Increíble",
+    "example": "The plot of the movie was completely unbelievable."
+  },
+  {
+    "baseWord": "Bitter",
+    "derivedWord": "Bitterly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Amargamente",
+    "example": "It was bitterly cold outside."
+  },
+  {
+    "baseWord": "Bore",
+    "derivedWord": "Boring / Bored",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Aburrido",
+    "example": "I felt completely bored during the lecture."
+  },
+  {
+    "baseWord": "Bore",
+    "derivedWord": "Boredom",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Aburrimiento",
+    "example": "The children complained of boredom on the rainy day."
+  },
+  {
+    "baseWord": "Breath",
+    "derivedWord": "Breathless",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Jadeante",
+    "example": "The run left me completely breathless."
+  },
+  {
+    "baseWord": "Cancel",
+    "derivedWord": "Cancellation",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Cancelación",
+    "example": "We apologize for the late cancellation of the flight."
+  },
+  {
+    "baseWord": "Care",
+    "derivedWord": "Careless",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Descuidado",
+    "example": "It was a careless mistake."
+  },
+  {
+    "baseWord": "Challenge",
+    "derivedWord": "Challenging",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desafiante",
+    "example": "Learning a new language can be challenging."
+  },
+  {
+    "baseWord": "Character",
+    "derivedWord": "Characteristic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Característico",
+    "example": "These stripes are characteristic of this type of tiger."
+  },
+  {
+    "baseWord": "Cheer",
+    "derivedWord": "Cheerfully",
+    "partOfSpeech": "Adverbio",
+    "translation": "Alegremente",
+    "example": "She greeted everyone cheerfully."
+  },
+  {
+    "baseWord": "Choose",
+    "derivedWord": "Choice",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Elección",
+    "example": "You have to make a difficult choice."
+  },
+  {
+    "baseWord": "Clear",
+    "derivedWord": "Unclear",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Confuso",
+    "example": "The instructions were completely unclear."
+  },
+  {
+    "baseWord": "Coast",
+    "derivedWord": "Coastal",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Costero",
+    "example": "They live in a small coastal town."
+  },
+  {
+    "baseWord": "Comfort",
+    "derivedWord": "Comfortable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Cómodo",
+    "example": "This sofa is very comfortable."
+  },
+  {
+    "baseWord": "Comfort",
+    "derivedWord": "Uncomfortable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Incómodo",
+    "example": "I felt uncomfortable in that chair."
+  },
+  {
+    "baseWord": "Comfort",
+    "derivedWord": "Comfortably",
+    "partOfSpeech": "Adverbio",
+    "translation": "Cómodamente",
+    "example": "We won the match comfortably."
+  },
+  {
+    "baseWord": "Communicate",
+    "derivedWord": "Communication",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Comunicación",
+    "example": "Good communication is key in a relationship."
+  },
+  {
+    "baseWord": "Compete",
+    "derivedWord": "Competitive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Competitivo",
+    "example": "The housing market is very competitive right now."
+  },
+  {
+    "baseWord": "Compete",
+    "derivedWord": "Competitor",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Competidor",
+    "example": "Our main competitor launched a new product."
+  },
+  {
+    "baseWord": "Concentrate",
+    "derivedWord": "Concentration",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Concentración",
+    "example": "This puzzle requires a lot of concentration."
+  },
+  {
+    "baseWord": "Conclude",
+    "derivedWord": "Conclusion",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Conclusión",
+    "example": "What conclusion did you reach?"
+  },
+  {
+    "baseWord": "Connect",
+    "derivedWord": "Connection",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Conexión",
+    "example": "The internet connection is very slow today."
+  },
+  {
+    "baseWord": "Conscious",
+    "derivedWord": "Consciously",
+    "partOfSpeech": "Adverbio",
+    "translation": "Conscientemente",
+    "example": "I consciously decided to eat healthier."
+  },
+  {
+    "baseWord": "Conscious",
+    "derivedWord": "Unconsciously",
+    "partOfSpeech": "Adverbio",
+    "translation": "Inconscientemente",
+    "example": "He unconsciously tapped his foot to the music."
+  },
+  {
+    "baseWord": "Consequence",
+    "derivedWord": "Consequently",
+    "partOfSpeech": "Adverbio",
+    "translation": "Consecuentemente",
+    "example": "It rained heavily; consequently, the match was canceled."
+  },
+  {
+    "baseWord": "Consider",
+    "derivedWord": "Considerably",
+    "partOfSpeech": "Adverbio",
+    "translation": "Considerablemente",
+    "example": "The temperature dropped considerably at night."
+  },
+  {
+    "baseWord": "Convince",
+    "derivedWord": "Unconvinced",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desconfiado",
+    "example": "The jury remained unconvinced by his alibi."
+  },
+  {
+    "baseWord": "Crowd",
+    "derivedWord": "Crowded",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Abarrotado",
+    "example": "The streets were completely crowded."
+  },
+  {
+    "baseWord": "Crowd",
+    "derivedWord": "Overcrowded",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Abarrotado",
+    "example": "The prison is severely overcrowded."
+  },
+  {
+    "baseWord": "Cycle",
+    "derivedWord": "Cyclist",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Ciclista",
+    "example": "The cyclist won the race easily."
+  },
+  {
+    "baseWord": "Danger",
+    "derivedWord": "Dangerous",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Peligroso",
+    "example": "It is dangerous to drive so fast."
+  },
+  {
+    "baseWord": "Decide",
+    "derivedWord": "Decision",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Decisión",
+    "example": "It was a tough decision to make."
+  },
+  {
+    "baseWord": "Delight",
+    "derivedWord": "Delightful",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Encantador",
+    "example": "We had a delightful evening at their house."
+  },
+  {
+    "baseWord": "Descend",
+    "derivedWord": "Descent",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Empeoramiento",
+    "example": "The plane began its final descent."
+  },
+  {
+    "baseWord": "Describe",
+    "derivedWord": "Description",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Descripción",
+    "example": "She gave the police a detailed description of the thief."
+  },
+  {
+    "baseWord": "Different",
+    "derivedWord": "Difference",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Diferencia",
+    "example": "There is a big difference between the two models."
+  },
+  {
+    "baseWord": "Direct",
+    "derivedWord": "Director",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Director",
+    "example": "The film's director won an award."
+  },
+  {
+    "baseWord": "Doubt",
+    "derivedWord": "Doubtful",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Dudoso",
+    "example": "I am doubtful about the success of this plan."
+  },
+  {
+    "baseWord": "Earn",
+    "derivedWord": "Earning",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Poder adquisitivo",
+    "example": "His daily earning is quite high."
+  },
+  {
+    "baseWord": "Easy",
+    "derivedWord": "Ease",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Facilidad",
+    "example": "He passed the exam with ease."
+  },
+  {
+    "baseWord": "Easy",
+    "derivedWord": "Easily",
+    "partOfSpeech": "Adverbio",
+    "translation": "Facilmente",
+    "example": "She easily solved the math problem."
+  },
+  {
+    "baseWord": "Economy",
+    "derivedWord": "Economic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Económico",
+    "example": "The country is facing an economic crisis."
+  },
+  {
+    "baseWord": "Efficiency",
+    "derivedWord": "Efficient",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Eficiente",
+    "example": "We need a more efficient heating system."
+  },
+  {
+    "baseWord": "Employ",
+    "derivedWord": "Employer",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Empleador",
+    "example": "Her employer gave her a bonus."
+  },
+  {
+    "baseWord": "Employ",
+    "derivedWord": "Employee",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Empleado",
+    "example": "Every employee must attend the meeting."
+  },
+  {
+    "baseWord": "Employ",
+    "derivedWord": "Employment",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Empleo",
+    "example": "He is looking for full-time employment."
+  },
+  {
+    "baseWord": "Employ",
+    "derivedWord": "Unemployment",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Desempleo",
+    "example": "The unemployment rate has decreased this year."
+  },
+  {
+    "baseWord": "Energy",
+    "derivedWord": "Energetic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Energético",
+    "example": "He is a very energetic person."
+  },
+  {
+    "baseWord": "Enjoy",
+    "derivedWord": "Enjoyable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Agradable",
+    "example": "It was a very enjoyable experience."
+  },
+  {
+    "baseWord": "Enthusiasm",
+    "derivedWord": "Enthusiastic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Entusiasta",
+    "example": "The crowd was incredibly enthusiastic."
+  },
+  {
+    "baseWord": "Entire",
+    "derivedWord": "Entirety",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Totalidad",
+    "example": "We watched the movie in its entirety."
+  },
+  {
+    "baseWord": "Equal",
+    "derivedWord": "Equally",
+    "partOfSpeech": "Adverbio",
+    "translation": "Igualmente",
+    "example": "The money was divided equally among the brothers."
+  },
+  {
+    "baseWord": "Equip",
+    "derivedWord": "Equipment",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Equipamiento",
+    "example": "You need special equipment for scuba diving."
+  },
+  {
+    "baseWord": "Evenly",
+    "derivedWord": "Unevenly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Desigualmente",
+    "example": "The paint was applied unevenly."
+  },
+  {
+    "baseWord": "Exhaust",
+    "derivedWord": "Exhausting",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Agotador",
+    "example": "The hike up the mountain was exhausting."
+  },
+  {
+    "baseWord": "Exist",
+    "derivedWord": "Existence",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Existencia",
+    "example": "Do you believe in the existence of ghosts?"
+  },
+  {
+    "baseWord": "Expand",
+    "derivedWord": "Expansion",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Expansión",
+    "example": "The company is planning a massive expansion."
+  },
+  {
+    "baseWord": "Explore",
+    "derivedWord": "Exploration",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Exploración",
+    "example": "Space exploration requires a lot of funding."
+  },
+  {
+    "baseWord": "Extent",
+    "derivedWord": "Extensive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Amplio",
+    "example": "He has extensive knowledge of history."
+  },
+  {
+    "baseWord": "Extreme",
+    "derivedWord": "Extremely",
+    "partOfSpeech": "Adverbio",
+    "translation": "Extremadamente",
+    "example": "It is extremely hot today."
+  },
+  {
+    "baseWord": "Fashion",
+    "derivedWord": "Fashionable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Novedoso",
+    "example": "It is very fashionable to wear oversized clothes now."
+  },
+  {
+    "baseWord": "Fit",
+    "derivedWord": "Fitness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Forma física",
+    "example": "Her level of fitness is impressive."
+  },
+  {
+    "baseWord": "Fly",
+    "derivedWord": "Flight",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Vuelo",
+    "example": "My flight was delayed by three hours."
+  },
+  {
+    "baseWord": "Food",
+    "derivedWord": "Feeding",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Alimentación",
+    "example": "The feeding of animals in the zoo is prohibited."
+  },
+  {
+    "baseWord": "Fortunate",
+    "derivedWord": "Unfortunately",
+    "partOfSpeech": "Adverbio",
+    "translation": "Desafortunadamente",
+    "example": "Unfortunately, I can't attend the party."
+  },
+  {
+    "baseWord": "Fortunate",
+    "derivedWord": "Fortunately",
+    "partOfSpeech": "Adverbio",
+    "translation": "Afortunadamente",
+    "example": "Fortunately, no one was hurt in the accident."
+  },
+  {
+    "baseWord": "Freeze",
+    "derivedWord": "Freezing",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Congelado",
+    "example": "It's absolutely freezing outside!"
+  },
+  {
+    "baseWord": "Freeze",
+    "derivedWord": "Frozen",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Congelado",
+    "example": "I bought some frozen vegetables."
+  },
+  {
+    "baseWord": "Frequent",
+    "derivedWord": "Frequently",
+    "partOfSpeech": "Adverbio",
+    "translation": "Frecuentemente",
+    "example": "I frequently visit my grandparents."
+  },
+  {
+    "baseWord": "Friend",
+    "derivedWord": "Friendliness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Amistad",
+    "example": "I appreciated the friendliness of the staff."
+  },
+  {
+    "baseWord": "Friend",
+    "derivedWord": "Friendship",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Amistad",
+    "example": "Their friendship has lasted for years."
+  },
+  {
+    "baseWord": "Friend",
+    "derivedWord": "Friendly",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Amistoso",
+    "example": "He is a very warm and friendly person."
+  },
+  {
+    "baseWord": "Grow",
+    "derivedWord": "Growth",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Crecimiento",
+    "example": "The plant showed rapid growth."
+  },
+  {
+    "baseWord": "Harm",
+    "derivedWord": "Harmful",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Dañino",
+    "example": "Smoking is highly harmful to your health."
+  },
+  {
+    "baseWord": "Health",
+    "derivedWord": "Healthy",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Saludable",
+    "example": "You need to maintain a healthy diet."
+  },
+  {
+    "baseWord": "Health",
+    "derivedWord": "Unhealthy",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Insaludable",
+    "example": "Eating too much fast food is unhealthy."
+  },
+  {
+    "baseWord": "High",
+    "derivedWord": "Height",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Altura",
+    "example": "He is afraid of heights."
+  },
+  {
+    "baseWord": "Highlight",
+    "derivedWord": "Highly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Altamente",
+    "example": "The radioactive material is highly dangerous."
+  },
+  {
+    "baseWord": "History",
+    "derivedWord": "Historian",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Historiador",
+    "example": "The historian published a book about the war."
+  },
+  {
+    "baseWord": "Home",
+    "derivedWord": "Homeless",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Vagabundo",
+    "example": "The shelter provides beds for homeless people."
+  },
+  {
+    "baseWord": "Hope",
+    "derivedWord": "Hopeful",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Prometedor",
+    "example": "I am hopeful that we will find a solution."
+  },
+  {
+    "baseWord": "Hot",
+    "derivedWord": "Heat",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Calor",
+    "example": "I can't stand the extreme summer heat."
+  },
+  {
+    "baseWord": "Identity",
+    "derivedWord": "Identified",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Identificado",
+    "example": "The suspect has been identified by the police."
+  },
+  {
+    "baseWord": "Ill",
+    "derivedWord": "Illness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Enfermedad",
+    "example": "She missed work due to a severe illness."
+  },
+  {
+    "baseWord": "Important",
+    "derivedWord": "Importance",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Importancia",
+    "example": "He emphasized the importance of reading."
+  },
+  {
+    "baseWord": "Impress",
+    "derivedWord": "Impressive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Impresionante",
+    "example": "Her presentation skills were truly impressive."
+  },
+  {
+    "baseWord": "Improve",
+    "derivedWord": "Improvement",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Mejora",
+    "example": "There has been a significant improvement in his grades."
+  },
+  {
+    "baseWord": "Increase",
+    "derivedWord": "Increasingly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Cada vez más",
+    "example": "It is becoming increasingly difficult to find a house."
+  },
+  {
+    "baseWord": "Incredible",
+    "derivedWord": "Incredibly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Increíblemente",
+    "example": "The exam was incredibly difficult."
+  },
+  {
+    "baseWord": "Industry",
+    "derivedWord": "Industrial",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Industrial",
+    "example": "The city has a large industrial sector."
+  },
+  {
+    "baseWord": "Inhabit",
+    "derivedWord": "Inhabitant",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Habitante",
+    "example": "The island has only a few thousand inhabitants."
+  },
+  {
+    "baseWord": "Know",
+    "derivedWord": "Knowledge",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Conocimiento",
+    "example": "His knowledge of geography is vast."
+  },
+  {
+    "baseWord": "Know",
+    "derivedWord": "Unknown",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desconocido",
+    "example": "The exact location remains unknown."
+  },
+  {
+    "baseWord": "Labour",
+    "derivedWord": "Labourer",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Peón",
+    "example": "He works as a farm labourer."
+  },
+  {
+    "baseWord": "Like",
+    "derivedWord": "Unlike",
+    "partOfSpeech": "Preposición",
+    "translation": "A diferencia de",
+    "example": "Unlike his brother, he loves sports."
+  },
+  {
+    "baseWord": "Likely",
+    "derivedWord": "Unlikely",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Improbable",
+    "example": "It is highly unlikely that it will snow today."
+  },
+  {
+    "baseWord": "Limit",
+    "derivedWord": "Limiting",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Limitante",
+    "example": "A lack of budget can be a limiting factor."
+  },
+  {
+    "baseWord": "Live",
+    "derivedWord": "Living",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Viviente",
+    "example": "Every living creature needs water."
+  },
+  {
+    "baseWord": "Locate",
+    "derivedWord": "Location",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Localización",
+    "example": "This is the perfect location for our new store."
+  },
+  {
+    "baseWord": "Lonely",
+    "derivedWord": "Loneliness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Soledad",
+    "example": "He suffered from deep loneliness after moving."
+  },
+  {
+    "baseWord": "Lose",
+    "derivedWord": "Loss",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Pérdida",
+    "example": "The company reported a massive financial loss."
+  },
+  {
+    "baseWord": "Mad",
+    "derivedWord": "Madness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Locura",
+    "example": "Driving in this storm is absolute madness."
+  },
+  {
+    "baseWord": "Marry",
+    "derivedWord": "Marriage",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Matrimonio",
+    "example": "Their marriage has been very happy."
+  },
+  {
+    "baseWord": "Marvel",
+    "derivedWord": "Marvelous",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Maravilloso",
+    "example": "We had a marvelous time at the beach."
+  },
+  {
+    "baseWord": "Meet",
+    "derivedWord": "Meeting",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Reunión",
+    "example": "The meeting is scheduled for 9 AM."
+  },
+  {
+    "baseWord": "Member",
+    "derivedWord": "Membership",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Membresía",
+    "example": "You need to renew your gym membership."
+  },
+  {
+    "baseWord": "Minimum",
+    "derivedWord": "Minimise",
+    "partOfSpeech": "Verbo",
+    "translation": "Minimizar",
+    "example": "We need to minimise the risks involved."
+  },
+  {
+    "baseWord": "Mystery",
+    "derivedWord": "Mysterious",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Misterioso",
+    "example": "A mysterious package arrived in the mail."
+  },
+  {
+    "baseWord": "Motion",
+    "derivedWord": "Motionless",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Quieto",
+    "example": "The cat stood perfectly motionless."
+  },
+  {
+    "baseWord": "Nerve",
+    "derivedWord": "Nervous",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Nervioso",
+    "example": "I always get nervous before public speaking."
+  },
+  {
+    "baseWord": "Noise",
+    "derivedWord": "Noisy",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Ruidoso",
+    "example": "The neighbours are playing very noisy music."
+  },
+  {
+    "baseWord": "Object",
+    "derivedWord": "Objective",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Objetivo",
+    "example": "Our main objective is to increase sales."
+  },
+  {
+    "baseWord": "Occupy",
+    "derivedWord": "Occupation",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Ocupación",
+    "example": "Please state your name and occupation."
+  },
+  {
+    "baseWord": "Ordinary",
+    "derivedWord": "Extraordinary",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Extraordinario",
+    "example": "She possesses an extraordinary talent for music."
+  },
+  {
+    "baseWord": "Original",
+    "derivedWord": "Originality",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Originalidad",
+    "example": "The judges praised the originality of his design."
+  },
+  {
+    "baseWord": "Original",
+    "derivedWord": "Originally",
+    "partOfSpeech": "Adverbio",
+    "translation": "Originalmente",
+    "example": "The book was originally written in French."
+  },
+  {
+    "baseWord": "Particular",
+    "derivedWord": "Particularly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Particularmente",
+    "example": "I am not particularly interested in sports."
+  },
+  {
+    "baseWord": "Peace",
+    "derivedWord": "Peaceful",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Pacífico",
+    "example": "The park is a very quiet and peaceful place."
+  },
+  {
+    "baseWord": "Perform",
+    "derivedWord": "Performer",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Artista",
+    "example": "The street performer gathered a large crowd."
+  },
+  {
+    "baseWord": "Perform",
+    "derivedWord": "Performance",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Actuación",
+    "example": "The band's live performance was incredible."
+  },
+  {
+    "baseWord": "Person",
+    "derivedWord": "Personality",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Personalidad",
+    "example": "She has a very outgoing and fun personality."
+  },
+  {
+    "baseWord": "Pleasant",
+    "derivedWord": "Unpleasant",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desagradable",
+    "example": "There was an unpleasant smell in the room."
+  },
+  {
+    "baseWord": "Please",
+    "derivedWord": "Pleasure",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Placer",
+    "example": "It was a pleasure to meet you."
+  },
+  {
+    "baseWord": "Poison",
+    "derivedWord": "Poisonous",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Venenoso",
+    "example": "Be careful, that snake is highly poisonous."
+  },
+  {
+    "baseWord": "Popular",
+    "derivedWord": "Popularity",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Popular",
+    "example": "The game's popularity grew rapidly over the summer."
+  },
+  {
+    "baseWord": "Possible",
+    "derivedWord": "Impossible",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Imposible",
+    "example": "It is impossible to read his handwriting."
+  },
+  {
+    "baseWord": "Possible",
+    "derivedWord": "Possibility",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Posibilidad",
+    "example": "Is there any possibility of changing the date?"
+  },
+  {
+    "baseWord": "Power",
+    "derivedWord": "Powerful",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Poderoso",
+    "example": "The president gave a very powerful speech."
+  },
+  {
+    "baseWord": "Practise",
+    "derivedWord": "Practical",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Práctico",
+    "example": "This gadget is extremely practical for traveling."
+  },
+  {
+    "baseWord": "Press",
+    "derivedWord": "Pressure",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Presión",
+    "example": "The water pressure in this building is very low."
+  },
+  {
+    "baseWord": "Proof",
+    "derivedWord": "Prove",
+    "partOfSpeech": "Verbo",
+    "translation": "Probar",
+    "example": "Can you prove that you were there?"
+  },
+  {
+    "baseWord": "Proof",
+    "derivedWord": "Disprove",
+    "partOfSpeech": "Verbo",
+    "translation": "Desmentir",
+    "example": "The scientist tried to disprove the old theory."
+  },
+  {
+    "baseWord": "Punctual",
+    "derivedWord": "Punctuality",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Puntualidad",
+    "example": "German culture places a high value on punctuality."
+  },
+  {
+    "baseWord": "Punctual",
+    "derivedWord": "Punctually",
+    "partOfSpeech": "Adverbio",
+    "translation": "Puntualmente",
+    "example": "The train departed exactly punctually."
+  },
+  {
+    "baseWord": "Rain",
+    "derivedWord": "Rainfall",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Cascada",
+    "example": "The region receives heavy rainfall in winter."
+  },
+  {
+    "baseWord": "Reason",
+    "derivedWord": "Reasonable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Razonable",
+    "example": "I think the price is very reasonable."
+  },
+  {
+    "baseWord": "Recognise",
+    "derivedWord": "Recognition",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Reconocimiento",
+    "example": "He received a medal in recognition of his bravery."
+  },
+  {
+    "baseWord": "Recommend",
+    "derivedWord": "Recommendation",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Recomendación",
+    "example": "Based on your recommendation, I bought the book."
+  },
+  {
+    "baseWord": "Refer",
+    "derivedWord": "Reference",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Referencia",
+    "example": "Save this document for future reference."
+  },
+  {
+    "baseWord": "Regular",
+    "derivedWord": "Regularly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Regularmente",
+    "example": "You should exercise regularly."
+  },
+  {
+    "baseWord": "Relative",
+    "derivedWord": "Relatively",
+    "partOfSpeech": "Adverbio",
+    "translation": "Relativamente",
+    "example": "The test was relatively easy compared to the last one."
+  },
+  {
+    "baseWord": "Relief",
+    "derivedWord": "Relieve",
+    "partOfSpeech": "Verbo",
+    "translation": "Aliviar",
+    "example": "This medication will help to relieve the pain."
+  },
+  {
+    "baseWord": "Rely",
+    "derivedWord": "Reliable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Fiable",
+    "example": "My old car is not very reliable anymore."
+  },
+  {
+    "baseWord": "Remark",
+    "derivedWord": "Remarkable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Impresionante",
+    "example": "She showed a remarkable talent for painting."
+  },
+  {
+    "baseWord": "Remind",
+    "derivedWord": "Reminder",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Recordatorio",
+    "example": "Set a reminder on your phone for the meeting."
+  },
+  {
+    "baseWord": "Repeat",
+    "derivedWord": "Repeatedly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Repetidamente",
+    "example": "The alarm went off repeatedly during the night."
+  },
+  {
+    "baseWord": "Respond",
+    "derivedWord": "Response",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Respuesta",
+    "example": "I am still waiting for a response to my email."
+  },
+  {
+    "baseWord": "Rough",
+    "derivedWord": "Roughly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Aproximadamente",
+    "example": "There were roughly200 people at the concert."
+  },
+  {
+    "baseWord": "Safe",
+    "derivedWord": "Safety",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Seguridad",
+    "example": "Please fasten your seatbelt for your own safety."
+  },
+  {
+    "baseWord": "Science",
+    "derivedWord": "Scientific",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Científico (método)",
+    "example": "There is no scientific evidence to support this."
+  },
+  {
+    "baseWord": "Science",
+    "derivedWord": "Scientist",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Científico (persona)",
+    "example": "The scientist won a Nobel Prize for his discovery."
+  },
+  {
+    "baseWord": "Sense",
+    "derivedWord": "Sensitive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Sensible",
+    "example": "My teeth are very sensitive to cold food."
+  },
+  {
+    "baseWord": "Sleep",
+    "derivedWord": "Asleep",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Dormido",
+    "example": "He fell asleep instantly on the couch."
+  },
+  {
+    "baseWord": "Solve",
+    "derivedWord": "Solution",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Solución",
+    "example": "We need to find a solution to this problem."
+  },
+  {
+    "baseWord": "Storm",
+    "derivedWord": "Stormy",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Tempestuoso",
+    "example": "The sky looked dark and stormy."
+  },
+  {
+    "baseWord": "Succeed",
+    "derivedWord": "Success",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Éxito",
+    "example": "The project was a huge success."
+  },
+  {
+    "baseWord": "Suffer",
+    "derivedWord": "Suffering",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Dolorido",
+    "example": "The war brought terrible suffering to the people."
+  },
+  {
+    "baseWord": "Suitable",
+    "derivedWord": "Unsuitable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inadecuado",
+    "example": "These shoes are totally unsuitable for hiking."
+  },
+  {
+    "baseWord": "Surprise",
+    "derivedWord": "Surprising",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Sorprendentemente",
+    "example": "It is surprising how fast children grow."
+  },
+  {
+    "baseWord": "Surround",
+    "derivedWord": "Surrounding",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Envolvente",
+    "example": "We explored the village and its surrounding area."
+  },
+  {
+    "baseWord": "Temporary",
+    "derivedWord": "Temporarily",
+    "partOfSpeech": "Adverbio",
+    "translation": "Temporalmente",
+    "example": "The road is temporarily closed for repairs."
+  },
+  {
+    "baseWord": "Tour",
+    "derivedWord": "Tourist",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Turista",
+    "example": "Millions of tourists visit the city every year."
+  },
+  {
+    "baseWord": "Tour",
+    "derivedWord": "Tourism",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Turismo",
+    "example": "Tourism is the main industry on the island."
+  },
+  {
+    "baseWord": "Tradition",
+    "derivedWord": "Traditional",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Tradicional",
+    "example": "They wear traditional costumes during the festival."
+  },
+  {
+    "baseWord": "Tropic",
+    "derivedWord": "Tropical",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Tropical",
+    "example": "We spent our holidays on a beautiful tropical beach."
+  },
+  {
+    "baseWord": "True",
+    "derivedWord": "Truly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Verdaderamente",
+    "example": "I am truly sorry for the misunderstanding."
+  },
+  {
+    "baseWord": "Usual",
+    "derivedWord": "Unusual",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inusual",
+    "example": "It is very unusual to see snow here in April."
+  },
+  {
+    "baseWord": "Vary",
+    "derivedWord": "Variety",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Variedad",
+    "example": "The supermarket offers a wide variety of fresh fruits."
+  },
+  {
+    "baseWord": "Visit",
+    "derivedWord": "Visitor",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Visitante",
+    "example": "All visitors must sign in at the reception desk."
+  },
+  {
+    "baseWord": "Warm",
+    "derivedWord": "Warmth",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Calor",
+    "example": "I could feel the pleasant warmth of the fireplace."
+  },
+  {
+    "baseWord": "Wealth",
+    "derivedWord": "Wealthy",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Rico",
+    "example": "He was born into a very wealthy family."
+  },
+  {
+    "baseWord": "Weigh",
+    "derivedWord": "Weight",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Peso",
+    "example": "I am trying to lose a bit of weight."
+  },
+  {
+    "baseWord": "Wind",
+    "derivedWord": "Windy",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Ventoso",
+    "example": "It was a cold and very windy day."
+  },
+  {
+    "baseWord": "Accept",
+    "derivedWord": "Acceptable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Aceptable",
+    "example": "This level of noise is not acceptable."
+  },
+  {
+    "baseWord": "Accept",
+    "derivedWord": "Unacceptable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inaceptable",
+    "example": "His rude behavior was completely unacceptable."
+  },
+  {
+    "baseWord": "Access",
+    "derivedWord": "Accessible",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Accesible",
+    "example": "The building is fully accessible for wheelchairs."
+  },
+  {
+    "baseWord": "Accident",
+    "derivedWord": "Accidental",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Fortuito",
+    "example": "The deletion of the database was accidental."
+  },
+  {
+    "baseWord": "Accord",
+    "derivedWord": "According",
+    "partOfSpeech": "Preposición",
+    "translation": "De acuerdo",
+    "example": "According to the weather forecast, it will rain."
+  },
+  {
+    "baseWord": "Action",
+    "derivedWord": "Transaction",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Transacción",
+    "example": "The bank transaction was completed successfully."
+  },
+  {
+    "baseWord": "Adapt",
+    "derivedWord": "Adaptable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Flexible",
+    "example": "She is highly adaptable to new environments."
+  },
+  {
+    "baseWord": "Addict",
+    "derivedWord": "Addiction",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Adicción",
+    "example": "Smartphone addiction is a growing problem."
+  },
+  {
+    "baseWord": "Administrate",
+    "derivedWord": "Administrative",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Administrativo",
+    "example": "He works in an administrative role."
+  },
+  {
+    "baseWord": "Admire",
+    "derivedWord": "Admiration",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Admiración",
+    "example": "I have great admiration for her work."
+  },
+  {
+    "baseWord": "Advance",
+    "derivedWord": "Advances",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Avances",
+    "example": "Medical advances have increased life expectancy."
+  },
+  {
+    "baseWord": "Advance",
+    "derivedWord": "Advancements",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Avances",
+    "example": "Technological advancements are changing our lives."
+  },
+  {
+    "baseWord": "Affection",
+    "derivedWord": "Affectionately",
+    "partOfSpeech": "Adverbio",
+    "translation": "Afectivamente",
+    "example": "She spoke affectionately about her grandmother."
+  },
+  {
+    "baseWord": "Afford",
+    "derivedWord": "Affordable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Asequible",
+    "example": "We need more affordable housing in the city."
+  },
+  {
+    "baseWord": "Agent",
+    "derivedWord": "Agency",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Agencia",
+    "example": "I booked the trip through a travel agency."
+  },
+  {
+    "baseWord": "Alter",
+    "derivedWord": "Alternative",
+    "partOfSpeech": "Adjetivo / Sust.",
+    "translation": "Alternativo",
+    "example": "We need to find an alternative solution."
+  },
+  {
+    "baseWord": "Alternate",
+    "derivedWord": "Alternatively",
+    "partOfSpeech": "Adverbio",
+    "translation": "Alternativamente",
+    "example": "You can go by bus; alternatively, you can take a taxi."
+  },
+  {
+    "baseWord": "Announce",
+    "derivedWord": "Unannounced",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inesperado",
+    "example": "He made an unannounced visit to the office."
+  },
+  {
+    "baseWord": "Annoy",
+    "derivedWord": "Annoyance",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Molestia",
+    "example": "He sighed in annoyance when the train was delayed."
+  },
+  {
+    "baseWord": "Anticipate",
+    "derivedWord": "Anticipation",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Anticipación",
+    "example": "The crowd waited in eager anticipation."
+  },
+  {
+    "baseWord": "Appeal",
+    "derivedWord": "Appealing",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Atractivo",
+    "example": "The idea of working from home is very appealing."
+  },
+  {
+    "baseWord": "Appeal",
+    "derivedWord": "Unappealing",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Poco atractivo",
+    "example": "The cold soup looked very unappealing."
+  },
+  {
+    "baseWord": "Appear",
+    "derivedWord": "Apparently",
+    "partOfSpeech": "Adverbio",
+    "translation": "Aparentemente",
+    "example": "Apparently, the meeting has been cancelled."
+  },
+  {
+    "baseWord": "Apply",
+    "derivedWord": "Applicable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Aplicable",
+    "example": "This rule is not applicable to international students."
+  },
+  {
+    "baseWord": "Appropriate",
+    "derivedWord": "Inappropriately",
+    "partOfSpeech": "Adverbio",
+    "translation": "Inapropiadamente",
+    "example": "He behaved very inappropriately at the formal dinner."
+  },
+  {
+    "baseWord": "Approve",
+    "derivedWord": "Approval",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Aprobación",
+    "example": "The project needs the manager's approval."
+  },
+  {
+    "baseWord": "Aspire",
+    "derivedWord": "Aspiration",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Aspiración",
+    "example": "His main aspiration is to become a writer."
+  },
+  {
+    "baseWord": "Assume",
+    "derivedWord": "Assumption",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Suposición",
+    "example": "Your argument is based on a false assumption."
+  },
+  {
+    "baseWord": "Astonish",
+    "derivedWord": "Astonishing",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Increíble",
+    "example": "It's astonishing how fast she learns."
+  },
+  {
+    "baseWord": "Astonish",
+    "derivedWord": "Astonished",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Estupefacto",
+    "example": "I was astonished by the size of the monument."
+  },
+  {
+    "baseWord": "Astonish",
+    "derivedWord": "Astonishingly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Extraordinariamente",
+    "example": "The puzzle was astonishingly difficult."
+  },
+  {
+    "baseWord": "Atmosphere",
+    "derivedWord": "Atmospheric",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Evocador, atmosférico",
+    "example": "The lighting created an atmospheric setting."
+  },
+  {
+    "baseWord": "Attach",
+    "derivedWord": "Attachment",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Anexo",
+    "example": "Please find the document in the email attachment."
+  },
+  {
+    "baseWord": "Audio",
+    "derivedWord": "Audible",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Audible",
+    "example": "His voice was barely audible over the loud music."
+  },
+  {
+    "baseWord": "Aware",
+    "derivedWord": "Awareness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Conciencia",
+    "example": "We need to raise awareness about climate change."
+  },
+  {
+    "baseWord": "Awe",
+    "derivedWord": "Awesome",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Sublime",
+    "example": "The view of the canyon was truly awesome."
+  },
+  {
+    "baseWord": "Balance",
+    "derivedWord": "Unbalanced",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desequilibrado",
+    "example": "An unbalanced diet can lead to health issues."
+  },
+  {
+    "baseWord": "Bear",
+    "derivedWord": "Bearing",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Modales",
+    "example": "He had a proud, military bearing."
+  },
+  {
+    "baseWord": "Begin",
+    "derivedWord": "Beginner",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Principiante",
+    "example": "This course is designed for a complete beginner."
+  },
+  {
+    "baseWord": "Believe",
+    "derivedWord": "Unbelievably",
+    "partOfSpeech": "Adverbio",
+    "translation": "Increíblemente",
+    "example": "The car was unbelievably fast."
+  },
+  {
+    "baseWord": "Believe",
+    "derivedWord": "Unbelievable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Increíble",
+    "example": "It is unbelievable that we won the lottery."
+  },
+  {
+    "baseWord": "Benefit",
+    "derivedWord": "Beneficial",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Beneficioso",
+    "example": "Exercise is highly beneficial for your heart."
+  },
+  {
+    "baseWord": "Break",
+    "derivedWord": "Breakthrough",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Descubrimiento",
+    "example": "The scientists made a major breakthrough in cancer research."
+  },
+  {
+    "baseWord": "Broad",
+    "derivedWord": "Breadth",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Anchura",
+    "example": "The breadth of his knowledge is impressive."
+  },
+  {
+    "baseWord": "Capture",
+    "derivedWord": "Captivity",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Cautividad",
+    "example": "The tiger was bred in captivity."
+  },
+  {
+    "baseWord": "Category",
+    "derivedWord": "Categorization",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Categorización",
+    "example": "The strict categorization of these species is difficult."
+  },
+  {
+    "baseWord": "Caution",
+    "derivedWord": "Cautiously",
+    "partOfSpeech": "Adverbio",
+    "translation": "Precavidamente",
+    "example": "He drove cautiously on the icy road."
+  },
+  {
+    "baseWord": "Caution",
+    "derivedWord": "Precaution",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Precaución",
+    "example": "You should take an umbrella as a precaution."
+  },
+  {
+    "baseWord": "Celebrate",
+    "derivedWord": "Celebrity",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Celebridad",
+    "example": "The restaurant is popular with a famous celebrity."
+  },
+  {
+    "baseWord": "Censor",
+    "derivedWord": "Censorship",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Censura",
+    "example": "The government imposed strict press censorship."
+  },
+  {
+    "baseWord": "Centre",
+    "derivedWord": "Central",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Central",
+    "example": "The park is in a very central location."
+  },
+  {
+    "baseWord": "Choose",
+    "derivedWord": "Chosen",
+    "partOfSpeech": "Adjetivo / Verbo",
+    "translation": "Elegido",
+    "example": "You were chosen for this specific task."
+  },
+  {
+    "baseWord": "Cinema",
+    "derivedWord": "Cinematic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Cinematográfico",
+    "example": "The film is a true cinematic masterpiece."
+  },
+  {
+    "baseWord": "Civilise",
+    "derivedWord": "Civilisation",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Civilización",
+    "example": "The ancient Egyptian civilisation was fascinating."
+  },
+  {
+    "baseWord": "Clear",
+    "derivedWord": "Clarify",
+    "partOfSpeech": "Verbo",
+    "translation": "Clarificar",
+    "example": "Could you please clarify what you mean?"
+  },
+  {
+    "baseWord": "Click",
+    "derivedWord": "Clicking",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Chasquido",
+    "example": "I heard a loud clicking noise from the engine."
+  },
+  {
+    "baseWord": "Close",
+    "derivedWord": "Disclose",
+    "partOfSpeech": "Verbo",
+    "translation": "Divulgar",
+    "example": "The company refused to disclose financial details."
+  },
+  {
+    "baseWord": "Collect",
+    "derivedWord": "Collection",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Colección",
+    "example": "She has an amazing stamp collection."
+  },
+  {
+    "baseWord": "Come",
+    "derivedWord": "Overcome",
+    "partOfSpeech": "Verbo",
+    "translation": "Derrotar",
+    "example": "We must overcome these challenges together."
+  },
+  {
+    "baseWord": "Comfort",
+    "derivedWord": "Discomfort",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Malestar",
+    "example": "If you feel any discomfort, please tell the doctor."
+  },
+  {
+    "baseWord": "Commerce",
+    "derivedWord": "Commercial",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Comercial",
+    "example": "This area is the main commercial district."
+  },
+  {
+    "baseWord": "Communicate",
+    "derivedWord": "Communicator",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Comunicador",
+    "example": "He is an excellent public communicator."
+  },
+  {
+    "baseWord": "Company",
+    "derivedWord": "Accompanied",
+    "partOfSpeech": "Adjetivo / Verbo",
+    "translation": "Acompañado",
+    "example": "Children must be accompanied by an adult."
+  },
+  {
+    "baseWord": "Compare",
+    "derivedWord": "Comparably",
+    "partOfSpeech": "Adverbio",
+    "translation": "Comparablemente",
+    "example": "The two computers perform comparably well."
+  },
+  {
+    "baseWord": "Compare",
+    "derivedWord": "Comparison",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Comparación",
+    "example": "By comparison, the new model is much faster."
+  },
+  {
+    "baseWord": "Complacent",
+    "derivedWord": "Complacency",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Complaciencia",
+    "example": "There is no room for complacency in this market."
+  },
+  {
+    "baseWord": "Complete",
+    "derivedWord": "Completion",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Terminación",
+    "example": "The completion of the bridge will take two years."
+  },
+  {
+    "baseWord": "Complicate",
+    "derivedWord": "Complication",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Complicación",
+    "example": "The bad weather added another complication to our trip."
+  },
+  {
+    "baseWord": "Conceive",
+    "derivedWord": "Conceivable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Concebible",
+    "example": "We tried every conceivable method to fix it."
+  },
+  {
+    "baseWord": "Concept",
+    "derivedWord": "Misconception",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Confusión",
+    "example": "It is a common misconception that bats are blind."
+  },
+  {
+    "baseWord": "Conclude",
+    "derivedWord": "Conclusive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Concluyente",
+    "example": "The police found conclusive evidence."
+  },
+  {
+    "baseWord": "Conclude",
+    "derivedWord": "Inconclusive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inconcluyente",
+    "example": "The results of the test were inconclusive."
+  },
+  {
+    "baseWord": "Congratulate",
+    "derivedWord": "Congratulations",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Felicidades",
+    "example": "Congratulations on passing your driving test!"
+  },
+  {
+    "baseWord": "Conquer",
+    "derivedWord": "Conquest",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Conquista",
+    "example": "The Roman conquest changed the history of Europe."
+  },
+  {
+    "baseWord": "Construct",
+    "derivedWord": "Constructive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Constructivo",
+    "example": "Try to give constructive criticism."
+  },
+  {
+    "baseWord": "Contain",
+    "derivedWord": "Content",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Contenido",
+    "example": "The exact content of the letter is unknown."
+  },
+  {
+    "baseWord": "Contribute",
+    "derivedWord": "Contribution",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Contribución",
+    "example": "She made a significant contribution to the project."
+  },
+  {
+    "baseWord": "Controversy",
+    "derivedWord": "Controversial",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Controvertido",
+    "example": "Abortion is a highly controversial topic."
+  },
+  {
+    "baseWord": "Convenient",
+    "derivedWord": "Inconvenience",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Inconveniencia",
+    "example": "We apologize for any inconvenience caused."
+  },
+  {
+    "baseWord": "Convenient",
+    "derivedWord": "Inconvenient",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inconveniente",
+    "example": "Calling at midnight is very inconvenient."
+  },
+  {
+    "baseWord": "Counter",
+    "derivedWord": "Counterparts",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Homólogo",
+    "example": "The minister met with his European counterparts."
+  },
+  {
+    "baseWord": "Create",
+    "derivedWord": "Creator",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Creador",
+    "example": "He is the original creator of the comic book."
+  },
+  {
+    "baseWord": "Credit",
+    "derivedWord": "Discredit",
+    "partOfSpeech": "Verbo",
+    "translation": "Desacreditar",
+    "example": "They tried to discredit his scientific theories."
+  },
+  {
+    "baseWord": "Critic",
+    "derivedWord": "Critical",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Crítico",
+    "example": "It is absolutely critical that you arrive on time."
+  },
+  {
+    "baseWord": "Criticise",
+    "derivedWord": "Criticism",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Crítica",
+    "example": "The new policy received harsh criticism."
+  },
+  {
+    "baseWord": "Cry",
+    "derivedWord": "Outcry",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Protesta",
+    "example": "There was a massive public outcry over the decision."
+  },
+  {
+    "baseWord": "Custom",
+    "derivedWord": "Customary",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Habitual",
+    "example": "It is customary to leave a tip in this country."
+  },
+  {
+    "baseWord": "Danger",
+    "derivedWord": "Endanger",
+    "partOfSpeech": "Verbo",
+    "translation": "Arriesgar",
+    "example": "Pollution could endanger the local wildlife."
+  },
+  {
+    "baseWord": "Date",
+    "derivedWord": "Updated",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Actualizado",
+    "example": "Please make sure your software is updated."
+  },
+  {
+    "baseWord": "Date",
+    "derivedWord": "Outdated",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desactualizado",
+    "example": "This computer model is completely outdated."
+  },
+  {
+    "baseWord": "Day",
+    "derivedWord": "Daily",
+    "partOfSpeech": "Adjetivo / Adv.",
+    "translation": "Diario",
+    "example": "He reads the daily newspaper every morning."
+  },
+  {
+    "baseWord": "Dead",
+    "derivedWord": "Deadline",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Fecha límite",
+    "example": "The deadline for submitting the essay is Friday."
+  },
+  {
+    "baseWord": "Debate",
+    "derivedWord": "Debatable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Debatible",
+    "example": "Whether this is the best approach is highly debatable."
+  },
+  {
+    "baseWord": "Decide",
+    "derivedWord": "Indecision",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Indecisión",
+    "example": "Her constant indecision is very frustrating."
+  },
+  {
+    "baseWord": "Dedicate",
+    "derivedWord": "Dedication",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Dedicación",
+    "example": "The project requires a lot of time and dedication."
+  },
+  {
+    "baseWord": "Dedicate",
+    "derivedWord": "Dedicated",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Dedicado",
+    "example": "She is a very dedicated teacher."
+  },
+  {
+    "baseWord": "Deduce",
+    "derivedWord": "Deduction",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Deducción",
+    "example": "Brilliant deduction, Sherlock!"
+  },
+  {
+    "baseWord": "Demand",
+    "derivedWord": "Demanding",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Demandante",
+    "example": "Nursing is a physically demanding job."
+  },
+  {
+    "baseWord": "Deserve",
+    "derivedWord": "Deserving",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Meritorio",
+    "example": "He is a highly deserving winner of the award."
+  },
+  {
+    "baseWord": "Desire",
+    "derivedWord": "Desirable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Deseable",
+    "example": "Experience in marketing is highly desirable."
+  },
+  {
+    "baseWord": "Despair",
+    "derivedWord": "Desperately",
+    "partOfSpeech": "Adverbio",
+    "translation": "Desesperadamente",
+    "example": "We desperately need more funding."
+  },
+  {
+    "baseWord": "Desperate",
+    "derivedWord": "Desperation",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Desesperación",
+    "example": "In an act of pure desperation, he jumped."
+  },
+  {
+    "baseWord": "Develop",
+    "derivedWord": "Developer",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Desarrollador",
+    "example": "He works as a software developer."
+  },
+  {
+    "baseWord": "Dine",
+    "derivedWord": "Diner",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Comensal",
+    "example": "The restaurant was full of hungry diners."
+  },
+  {
+    "baseWord": "Discover",
+    "derivedWord": "Discovery",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Descubrimiento",
+    "example": "The discovery of penicillin saved millions of lives."
+  },
+  {
+    "baseWord": "Dismiss",
+    "derivedWord": "Dismissive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Despectivo",
+    "example": "He waved his hand in a dismissive gesture."
+  },
+  {
+    "baseWord": "Dismiss",
+    "derivedWord": "Dismissal",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Despido",
+    "example": "Unfair dismissal is illegal in this country."
+  },
+  {
+    "baseWord": "Dispute",
+    "derivedWord": "Indisputable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Indiscutible",
+    "example": "The evidence against him is indisputable."
+  },
+  {
+    "baseWord": "Distinct",
+    "derivedWord": "Distinctive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Característico",
+    "example": "The bird has a very distinctive call."
+  },
+  {
+    "baseWord": "Doubt",
+    "derivedWord": "Doubtless",
+    "partOfSpeech": "Adverbio",
+    "translation": "Sin dudas",
+    "example": "He will doubtless succeed in his new role."
+  },
+  {
+    "baseWord": "Drama",
+    "derivedWord": "Dramatically",
+    "partOfSpeech": "Adverbio",
+    "translation": "Dramáticamente",
+    "example": "Sales have increased dramatically this year."
+  },
+  {
+    "baseWord": "Draw",
+    "derivedWord": "Withdraw",
+    "partOfSpeech": "Verbo",
+    "translation": "Retirar",
+    "example": "I need to withdraw some money from the ATM."
+  },
+  {
+    "baseWord": "Earth",
+    "derivedWord": "Earthly",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Terrenal, mundano",
+    "example": "We must leave behind all earthly possessions."
+  },
+  {
+    "baseWord": "Education",
+    "derivedWord": "Educational",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Educacional",
+    "example": "The museum offers many educational programs."
+  },
+  {
+    "baseWord": "Effect",
+    "derivedWord": "Effective",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Efectivo",
+    "example": "This medicine is highly effective against headaches."
+  },
+  {
+    "baseWord": "Effect",
+    "derivedWord": "Ineffective",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inefectivo",
+    "example": "The old security measures were totally ineffective."
+  },
+  {
+    "baseWord": "Effect",
+    "derivedWord": "Effectively",
+    "partOfSpeech": "Adverbio",
+    "translation": "Eficazmente",
+    "example": "She managed the team very effectively."
+  },
+  {
+    "baseWord": "Eloquence",
+    "derivedWord": "Eloquently",
+    "partOfSpeech": "Adverbio",
+    "translation": "Elocuentemente",
+    "example": "He spoke eloquently about his passion for art."
+  },
+  {
+    "baseWord": "Emit",
+    "derivedWord": "Emission",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Emisión",
+    "example": "The factory must reduce its carbon emission."
+  },
+  {
+    "baseWord": "Emotion",
+    "derivedWord": "Emotional",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Emocional",
+    "example": "The movie's ending was highly emotional."
+  },
+  {
+    "baseWord": "Endure",
+    "derivedWord": "Endurance",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Resistencia",
+    "example": "Marathon running requires incredible physical endurance."
+  },
+  {
+    "baseWord": "Enthuse",
+    "derivedWord": "Enthusiast",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Entusiasta",
+    "example": "He is a massive classic car enthusiast."
+  },
+  {
+    "baseWord": "Enthuse",
+    "derivedWord": "Enthusiasm",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Entusiasmo",
+    "example": "She showed great enthusiasm for the new project."
+  },
+  {
+    "baseWord": "Erupt",
+    "derivedWord": "Eruption",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Erupción",
+    "example": "The volcanic eruption destroyed the village."
+  },
+  {
+    "baseWord": "Escape",
+    "derivedWord": "Inescapable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inevitable",
+    "example": "Death and taxes are inescapable facts of life."
+  },
+  {
+    "baseWord": "Essence",
+    "derivedWord": "Essential",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Esencial",
+    "example": "Water is absolutely essential for survival."
+  },
+  {
+    "baseWord": "Establish",
+    "derivedWord": "Establishment",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Establecimiento",
+    "example": "The hotel is a luxury establishment."
+  },
+  {
+    "baseWord": "Ethic",
+    "derivedWord": "Unethical",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inmoral",
+    "example": "Testing cosmetics on animals is considered unethical."
+  },
+  {
+    "baseWord": "Even",
+    "derivedWord": "Evenly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Uniformemente",
+    "example": "Spread the butter evenly on the bread."
+  },
+  {
+    "baseWord": "Even",
+    "derivedWord": "Unevenly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Desigualmente",
+    "example": "The road was patched very unevenly."
+  },
+  {
+    "baseWord": "Even",
+    "derivedWord": "Uneven",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desnivelado/Desigual",
+    "example": "The floor is slightly uneven in this old house."
+  },
+  {
+    "baseWord": "Except",
+    "derivedWord": "Exceptional",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Excepcional",
+    "example": "She showed exceptional talent from a young age."
+  },
+  {
+    "baseWord": "Expect",
+    "derivedWord": "Unexpected",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inesperado",
+    "example": "Her resignation was completely unexpected."
+  },
+  {
+    "baseWord": "Expect",
+    "derivedWord": "Expectation",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Expectación",
+    "example": "We waited with great expectation."
+  },
+  {
+    "baseWord": "Expect",
+    "derivedWord": "Unexpectedly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Inesperadamente",
+    "example": "He arrived unexpectedly during dinner."
+  },
+  {
+    "baseWord": "Expert",
+    "derivedWord": "Expertise",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Experiencia, pericia",
+    "example": "We need your technical expertise to solve this."
+  },
+  {
+    "baseWord": "Explode",
+    "derivedWord": "Explosive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Explosivo",
+    "example": "The package contained a highly explosive substance."
+  },
+  {
+    "baseWord": "Extend",
+    "derivedWord": "Extensive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Extensivo",
+    "example": "He suffered extensive injuries in the crash."
+  },
+  {
+    "baseWord": "Fabricate",
+    "derivedWord": "Fabrication",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Invento",
+    "example": "The entire story was a pure fabrication."
+  },
+  {
+    "baseWord": "Fail",
+    "derivedWord": "Failure",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Fracaso",
+    "example": "The experiment ended in complete failure."
+  },
+  {
+    "baseWord": "Fair",
+    "derivedWord": "Fairness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Justicia",
+    "example": "The judge is known for his strict fairness."
+  },
+  {
+    "baseWord": "Fascinate",
+    "derivedWord": "Fascinating",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Fascinante",
+    "example": "That is a truly fascinating documentary."
+  },
+  {
+    "baseWord": "Fascinate",
+    "derivedWord": "Fascination",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Fascinación",
+    "example": "I have a deep fascination with ancient Rome."
+  },
+  {
+    "baseWord": "Fatal",
+    "derivedWord": "Fatality",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Fatalidad",
+    "example": "Thankfully, there were no fatalities in the accident."
+  },
+  {
+    "baseWord": "Favour",
+    "derivedWord": "Favourable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Favorable",
+    "example": "We are waiting for a favourable response."
+  },
+  {
+    "baseWord": "Feed",
+    "derivedWord": "Feedback",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Retroalimentación",
+    "example": "Customer feedback is crucial for our growth."
+  },
+  {
+    "baseWord": "Fiction",
+    "derivedWord": "Fictional",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Ficticio",
+    "example": "Sherlock Holmes is a famous fictional character."
+  },
+  {
+    "baseWord": "Final",
+    "derivedWord": "Finalist",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Finalista",
+    "example": "She is a finalist in the singing competition."
+  },
+  {
+    "baseWord": "Forget",
+    "derivedWord": "Forgettable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Olvidable",
+    "example": "It was a mediocre, completely forgettable movie."
+  },
+  {
+    "baseWord": "Forget",
+    "derivedWord": "Unforgettable",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inolvidable",
+    "example": "Our trip to Paris was an unforgettable experience."
+  },
+  {
+    "baseWord": "Fortune",
+    "derivedWord": "Misfortune",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Infortunio",
+    "example": "It was his great misfortune to lose his wallet."
+  },
+  {
+    "baseWord": "Found",
+    "derivedWord": "Founder",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Fundador",
+    "example": "He is the original founder of the tech startup."
+  },
+  {
+    "baseWord": "Fresh",
+    "derivedWord": "Refresh",
+    "partOfSpeech": "Verbo",
+    "translation": "Refrescar",
+    "example": "Press F5 to refresh the webpage."
+  },
+  {
+    "baseWord": "Generous",
+    "derivedWord": "Generosity",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Generosidad",
+    "example": "I am overwhelmed by your incredible generosity."
+  },
+  {
+    "baseWord": "Go",
+    "derivedWord": "Undergone",
+    "partOfSpeech": "Verbo (Participio)",
+    "translation": "Experimentado",
+    "example": "The city has undergone massive changes."
+  },
+  {
+    "baseWord": "Go",
+    "derivedWord": "Undergo",
+    "partOfSpeech": "Verbo",
+    "translation": "Experimentar",
+    "example": "Patients must undergo a series of medical tests."
+  },
+  {
+    "baseWord": "Grand",
+    "derivedWord": "Grandeur",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Grandeza",
+    "example": "The sheer grandeur of the mountains is breathtaking."
+  },
+  {
+    "baseWord": "Guide",
+    "derivedWord": "Guidance",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Guía",
+    "example": "I need your guidance to make this decision."
+  },
+  {
+    "baseWord": "Happy",
+    "derivedWord": "Happiness",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Felicidad",
+    "example": "Money cannot buy true happiness."
+  },
+  {
+    "baseWord": "Hard",
+    "derivedWord": "Hardship",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Adversidad",
+    "example": "They endured great financial hardship during the war."
+  },
+  {
+    "baseWord": "Hazard",
+    "derivedWord": "Hazardous",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Peligroso",
+    "example": "You must dispose of hazardous waste safely."
+  },
+  {
+    "baseWord": "History",
+    "derivedWord": "Historic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Histórico",
+    "example": "Today is a truly historic day for our nation."
+  },
+  {
+    "baseWord": "Honest",
+    "derivedWord": "Honesty",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Honestidad",
+    "example": "Honesty is the best policy."
+  },
+  {
+    "baseWord": "Identify",
+    "derivedWord": "Identification",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Identificación",
+    "example": "Please show your ID card for identification."
+  },
+  {
+    "baseWord": "Impress",
+    "derivedWord": "Impression",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Impresión",
+    "example": "You only get one chance to make a first impression."
+  },
+  {
+    "baseWord": "Include",
+    "derivedWord": "Including",
+    "partOfSpeech": "Preposición",
+    "translation": "Inclusive, incluso",
+    "example": "Everyone is coming, including your brother."
+  },
+  {
+    "baseWord": "Indicate",
+    "derivedWord": "Indication",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Indicación",
+    "example": "Dark clouds are an indication of incoming rain."
+  },
+  {
+    "baseWord": "Indignation",
+    "derivedWord": "Indignantly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Indignantemente",
+    "example": "\"I did not steal it!\" he replied indignantly."
+  },
+  {
+    "baseWord": "Inevitable",
+    "derivedWord": "Inevitably",
+    "partOfSpeech": "Adverbio",
+    "translation": "Inevitablemente",
+    "example": "Inevitably, the rules will have to change."
+  },
+  {
+    "baseWord": "Influence",
+    "derivedWord": "Influential",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Influyente",
+    "example": "She is one of the most influential scientists alive."
+  },
+  {
+    "baseWord": "Ingenious",
+    "derivedWord": "Ingenuity",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Ingenuidad",
+    "example": "Overcoming the problem required great ingenuity."
+  },
+  {
+    "baseWord": "Initial",
+    "derivedWord": "Initially",
+    "partOfSpeech": "Adverbio",
+    "translation": "Inicialmente",
+    "example": "Initially, I didn't like the idea, but it grew on me."
+  },
+  {
+    "baseWord": "Innovate",
+    "derivedWord": "Innovative",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Innovador",
+    "example": "Apple is known for its innovative designs."
+  },
+  {
+    "baseWord": "Inspire",
+    "derivedWord": "Inspiration",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Inspiración",
+    "example": "Nature was the main inspiration for his paintings."
+  },
+  {
+    "baseWord": "Intense",
+    "derivedWord": "Intensely",
+    "partOfSpeech": "Adverbio",
+    "translation": "Intensamente",
+    "example": "She looked at him intensely."
+  },
+  {
+    "baseWord": "Interact",
+    "derivedWord": "Interactive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Interactivo",
+    "example": "The museum has many interactive exhibits."
+  },
+  {
+    "baseWord": "Interest",
+    "derivedWord": "Interesting",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Interesante",
+    "example": "That is a very interesting theory."
+  },
+  {
+    "baseWord": "Interest",
+    "derivedWord": "Uninteresting",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Aburrido",
+    "example": "The lecture was dry and completely uninteresting."
+  },
+  {
+    "baseWord": "Interrupt",
+    "derivedWord": "Uninterrupted",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Ininterrumpido",
+    "example": "I need eight hours of uninterrupted sleep."
+  },
+  {
+    "baseWord": "Intrigue",
+    "derivedWord": "Intriguing",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Intrigante",
+    "example": "The plot of the novel is highly intriguing."
+  },
+  {
+    "baseWord": "Invent",
+    "derivedWord": "Inventor",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Inventor",
+    "example": "Thomas Edison was a famous inventor."
+  },
+  {
+    "baseWord": "Journal",
+    "derivedWord": "Journalism",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Periodismo",
+    "example": "She studied journalism at university."
+  },
+  {
+    "baseWord": "Journal",
+    "derivedWord": "Journalist",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Periodista",
+    "example": "The journalist asked the politician a tough question."
+  },
+  {
+    "baseWord": "Judge",
+    "derivedWord": "Judgemental",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Judicial",
+    "example": "Try not to be so judgemental about others."
+  },
+  {
+    "baseWord": "Judge",
+    "derivedWord": "Misjudgement",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Juicio erróneo",
+    "example": "Trusting him was a huge misjudgement."
+  },
+  {
+    "baseWord": "King",
+    "derivedWord": "Kingdom",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Reino",
+    "example": "The lion is the ruler of the animal kingdom."
+  },
+  {
+    "baseWord": "Lead",
+    "derivedWord": "Misleading",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Engañoso",
+    "example": "The advertisement was highly misleading."
+  },
+  {
+    "baseWord": "Leak",
+    "derivedWord": "Leakage",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Fuga",
+    "example": "The plumber fixed the water leakage."
+  },
+  {
+    "baseWord": "Legal",
+    "derivedWord": "Illegal",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Ilegal",
+    "example": "It is illegal to park in front of a fire hydrant."
+  },
+  {
+    "baseWord": "Let",
+    "derivedWord": "Outlet",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Enchufe / Tienda de descuento",
+    "example": "I need a wall outlet to charge my laptop."
+  },
+  {
+    "baseWord": "Life",
+    "derivedWord": "Lifelong",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Para toda la vida",
+    "example": "It was his lifelong dream to become a pilot."
+  },
+  {
+    "baseWord": "Light",
+    "derivedWord": "Enlighten",
+    "partOfSpeech": "Verbo",
+    "translation": "Iluminar",
+    "example": "Please enlighten me on this complex subject."
+  },
+  {
+    "baseWord": "Live",
+    "derivedWord": "Livelihood",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Sustento",
+    "example": "Fishing is their primary source of livelihood."
+  },
+  {
+    "baseWord": "Long",
+    "derivedWord": "Length",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Longitud",
+    "example": "The total length of the bridge is 2 kilometers."
+  },
+  {
+    "baseWord": "Magic",
+    "derivedWord": "Magically",
+    "partOfSpeech": "Adverbio",
+    "translation": "Mágicamente",
+    "example": "The rabbit magically appeared from the hat."
+  },
+  {
+    "baseWord": "Majesty",
+    "derivedWord": "Majestic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Majestuoso",
+    "example": "The eagle looked truly majestic in flight."
+  },
+  {
+    "baseWord": "Mass",
+    "derivedWord": "Massive",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Gigante",
+    "example": "The building suffered massive structural damage."
+  },
+  {
+    "baseWord": "Match",
+    "derivedWord": "Mismatches",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Discordancias",
+    "example": "There were several mismatches in the financial report."
+  },
+  {
+    "baseWord": "Measure",
+    "derivedWord": "Measurement",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Medida",
+    "example": "Accurate measurement is crucial in chemistry."
+  },
+  {
+    "baseWord": "Medicine",
+    "derivedWord": "Medical",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Médico",
+    "example": "If you are ill, seek medical attention."
+  },
+  {
+    "baseWord": "Mind",
+    "derivedWord": "Mindless",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Despistado",
+    "example": "The job involves a lot of mindless repetition."
+  },
+  {
+    "baseWord": "Minor",
+    "derivedWord": "Minority",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Minoría",
+    "example": "Only a small minority voted against the proposal."
+  },
+  {
+    "baseWord": "Modify",
+    "derivedWord": "Modified",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Modificado",
+    "example": "We are using a slightly modified version of the code."
+  },
+  {
+    "baseWord": "Modify",
+    "derivedWord": "Unmodified",
+    "partOfSpeech": "Adjetivo",
+    "translation": "No modificado",
+    "example": "The file must remain completely unmodified."
+  },
+  {
+    "baseWord": "Mortal",
+    "derivedWord": "Immortalised",
+    "partOfSpeech": "Verbo (Participio)",
+    "translation": "Inmortalizado",
+    "example": "His heroic acts were immortalised in the statue."
+  },
+  {
+    "baseWord": "Mortal",
+    "derivedWord": "Immortal",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Inmortal",
+    "example": "Vampires are mythological creatures that are immortal."
+  },
+  {
+    "baseWord": "Motivate",
+    "derivedWord": "Motivated",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Motivado",
+    "example": "A highly motivated team will always perform better."
+  },
+  {
+    "baseWord": "Motivate",
+    "derivedWord": "Demotivated",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Desmotivado",
+    "example": "After failing the exam, he felt very demotivated."
+  },
+  {
+    "baseWord": "Mountain",
+    "derivedWord": "Mountaineer",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Montañero",
+    "example": "The experienced mountaineer climbed Everest twice."
+  },
+  {
+    "baseWord": "Move",
+    "derivedWord": "Remove",
+    "partOfSpeech": "Verbo",
+    "translation": "Remover",
+    "example": "Please remove your shoes before entering."
+  },
+  {
+    "baseWord": "Music",
+    "derivedWord": "Musicality",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Musicalidad",
+    "example": "The dancer displayed an impressive sense of musicality."
+  },
+  {
+    "baseWord": "Mystery",
+    "derivedWord": "Mysterious",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Misterioso",
+    "example": "A mysterious stranger arrived in the village."
+  },
+  {
+    "baseWord": "Name",
+    "derivedWord": "Nickname",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Apodo",
+    "example": "His friends gave him the nickname\"Speedy\"."
+  },
+  {
+    "baseWord": "Narrow",
+    "derivedWord": "Narrowly",
+    "partOfSpeech": "Adverbio",
+    "translation": "Estrictamente",
+    "example": "She narrowly missed hitting the car in front of her."
+  },
+  {
+    "baseWord": "Need",
+    "derivedWord": "Necessary",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Necesario",
+    "example": "It is necessary to drink plenty of water during a workout."
+  },
+  {
+    "baseWord": "Negative",
+    "derivedWord": "Negativity",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Negatividad",
+    "example": "Try to remove the toxic negativity from your life."
+  },
+  {
+    "baseWord": "Net",
+    "derivedWord": "Network",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Red",
+    "example": "The university has a fast Wi-Fi network."
+  },
+  {
+    "baseWord": "Night",
+    "derivedWord": "Overnight",
+    "partOfSpeech": "Adverbio / Adj.",
+    "translation": "Por la noche",
+    "example": "We stayed at a hotel overnight."
+  },
+  {
+    "baseWord": "Nominate",
+    "derivedWord": "Nomination",
+    "partOfSpeech": "Sustantivo",
+    "translation": "Nominación",
+    "example": "The actor received an Oscar nomination."
+  },
+  {
+    "baseWord": "Nostalgia",
+    "derivedWord": "Nostalgic",
+    "partOfSpeech": "Adjetivo",
+    "translation": "Nostálgico",
+    "example": "Listening to old songs makes me feel nostalgic."
+  }
+]

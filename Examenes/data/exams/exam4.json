@@ -1,0 +1,553 @@
+{
+  "id": "exam4",
+  "title": "Test 5 (Cambridge C1 Advanced)",
+  "description": "Test 5 completo: Use of English, Reading y Listening.",
+  "examType": "cae",
+  "scoring": {
+    "useOfEnglish": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 2 },
+      "nominalMax": 28,
+      "passPercentage": 57
+    },
+    "reading": {
+      "partPoints": { "5": 2, "6": 2, "7": 2, "8": 1 },
+      "nominalMax": 50,
+      "passPercentage": 64
+    },
+    "listening": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 1, "5": 1 },
+      "nominalMax": 30,
+      "passPercentage": 60
+    }
+  },
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+          "text": "The Golden Gate Bridge\n\nThe Golden Gate Bridge in San Francisco (0) achieved worldwide fame almost immediately after its completion in 1937, not just because it was a technical masterpiece but also (1)___ of its elegant design. The eye-catching orange-red colour of the bridge also (2)___ its popularity.\n\nConstruction of the road bridge started in 1933. At the time, many people doubted whether it was technically possible to span the 1,600-metre-wide strait. But despite this, the project (3)___ . There is also a sidewalk for pedestrians on the bridge but it's quite a (4)___ to walk across it. For a start, it is three kilometres long and 67 metres above sea level. In extreme weather conditions, the bridge can (5)___ almost eight metres, which can make the crossing rather unpleasant.\n\nThe Golden Gate Bridge is at its most (6)___ in the morning when it is often shrouded by mist. At night, it's also spectacular because the lighting makes it seem as if the towers are (7)___ into the darkness. The bridge has long since (8)___ its record of being the longest bridge but it is still one of the world's most famous landmarks.",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "in the event" },
+                { "label": "B", "text": "on behalf" },
+                { "label": "C", "text": "as a result" },
+                { "label": "D", "text": "with the aid" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "boosted" },
+                { "label": "B", "text": "intensified" },
+                { "label": "C", "text": "developed" },
+                { "label": "D", "text": "amplified" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "went ahead" },
+                { "label": "B", "text": "moved off" },
+                { "label": "C", "text": "started out" },
+                { "label": "D", "text": "sprang up" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "hazard" },
+                { "label": "B", "text": "challenge" },
+                { "label": "C", "text": "trial" },
+                { "label": "D", "text": "difficulty" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_5",
+              "number": 5,
+              "options": [
+                { "label": "A", "text": "shake" },
+                { "label": "B", "text": "bounce" },
+                { "label": "C", "text": "sway" },
+                { "label": "D", "text": "wobble" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_6",
+              "number": 6,
+              "options": [
+                { "label": "A", "text": "desirable" },
+                { "label": "B", "text": "enchanting" },
+                { "label": "C", "text": "glowing" },
+                { "label": "D", "text": "pleasurable" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_7",
+              "number": 7,
+              "options": [
+                { "label": "A", "text": "dispersing" },
+                { "label": "B", "text": "separating" },
+                { "label": "C", "text": "spreading" },
+                { "label": "D", "text": "disappearing" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "ue1_8",
+              "number": 8,
+              "options": [
+                { "label": "A", "text": "thrown" },
+                { "label": "B", "text": "lost" },
+                { "label": "C", "text": "missed" },
+                { "label": "D", "text": "resigned" }
+              ],
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+          "text": "Doodling Is Good\n\nThe next time you are caught doodling, that is making unconscious or unfocused drawings (0) when you should be listening, declare that you are simply trying to boost your concentration. Recent research suggests that, (9)___ than something to be frowned on, doodling should be actively encouraged because it improves our ability to pay attention. A study which compared (10)___ well people remembered details of a dull speech found that people who doodled throughout retained much more information than those trying to concentrate on listening.\n\nDoodling, however, is not the same as daydreaming. It is quite common (11)___ people to start daydreaming when they are stuck in a boring lecture (12)___ listening to a tedious discussion, and then to pay little attention to what is (13)___ on around them. But the research suggests that doodling should no (14)___ be considered an unnecessary distraction. Not (15)___ is doodling sufficient to stop daydreaming without affecting our task performance, it may actually help keep us (16)___ track with a boring task.",
+          "questions": [
+            { "id": "ue2_9", "number": 9, "answer": "rather" },
+            { "id": "ue2_10", "number": 10, "answer": "how" },
+            { "id": "ue2_11", "number": 11, "answer": "for" },
+            { "id": "ue2_12", "number": 12, "answer": "or" },
+            { "id": "ue2_13", "number": 13, "answer": "going" },
+            { "id": "ue2_14", "number": 14, "answer": "longer" },
+            { "id": "ue2_15", "number": 15, "answer": "only" },
+            { "id": "ue2_16", "number": 16, "answer": "on" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "word-formation",
+          "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+          "text": "Super Rice\n\nRice crops fail in drought conditions or where the soil is too (0) salty. So work is underway to 'climate-proof' rice so it can grow in even the most (17)___ of conditions.\n\nDrought affects 23 million hectares of rice annually, and salt is equally (18)___ ; it reduces yields by 40% and consequently (19)___ the pressures on food supplies. Further reductions in yields are likely due to climate (20)___ .\n\nScientists are attempting to produce a super rice by mixing genes from drought-tolerant plants with those from another that exploits nitrogen (21)___ , thus enabling it to grow without fertiliser. Comparing the new rice's (22)___ with that of ordinary rice, the super rice produced 17% more than the ordinary variety in individual trials and 42% more when subjected to a combination of stresses.\n\nIn addition, researchers are working on improving other crops. For example, one team has developed a potato that is (23)___ to certain diseases. It is hoped that developments such as this will (24)___ the impact of climate change in developing countries.",
+          "questions": [
+            { "id": "ue3_17", "number": 17, "prompt": "FAVOUR", "answer": "unfavourable", "acceptedAnswers": ["unfavorable"] },
+            { "id": "ue3_18", "number": 18, "prompt": "PROBLEM", "answer": "problematic" },
+            { "id": "ue3_19", "number": 19, "prompt": "INTENSE", "answer": "intensifies" },
+            { "id": "ue3_20", "number": 20, "prompt": "STABLE", "answer": "instability" },
+            { "id": "ue3_21", "number": 21, "prompt": "EFFECT", "answer": "effectively" },
+            { "id": "ue3_22", "number": 22, "prompt": "PERFORM", "answer": "performance" },
+            { "id": "ue3_23", "number": 23, "prompt": "RESIST", "answer": "resistant" },
+            { "id": "ue3_24", "number": 24, "prompt": "LESS", "answer": "lessen" }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "key-word-transformation",
+          "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+          "questions": [
+            {
+              "id": "ue4_25",
+              "number": 25,
+              "sentence1": "Ben married his fiancée without his parents' knowledge.",
+              "keyword": "UNAWARE",
+              "sentence2": "Ben's ___ his marriage to his fiancée.",
+              "answer": "parents were unaware of",
+              "acceptedAnswers": ["parents are unaware of"]
+            },
+            {
+              "id": "ue4_26",
+              "number": 26,
+              "sentence1": "The help-desk service is not, as many people believe, restricted to customers who buy products from the company directly.",
+              "keyword": "COMMONLY",
+              "sentence2": "The help-desk service is not, ___ , restricted to customers who buy products from the company directly.",
+              "answer": "as is commonly believed",
+              "acceptedAnswers": ["as it is commonly believed", "as it's commonly believed", "as is commonly thought", "as it is commonly thought", "as it's commonly thought"]
+            },
+            {
+              "id": "ue4_27",
+              "number": 27,
+              "sentence1": "Jane didn't feel like going to her sister's party.",
+              "keyword": "MOOD",
+              "sentence2": "Jane wasn't ___ to her sister's party.",
+              "answer": "in the mood to go",
+              "acceptedAnswers": ["in the mood for going"]
+            },
+            {
+              "id": "ue4_28",
+              "number": 28,
+              "sentence1": "My friends and I are looking for alternative accommodation because our apartment building is being pulled down.",
+              "keyword": "ELSE",
+              "sentence2": "My friends and I are looking for ___ live because our apartment building is being pulled down.",
+              "answer": "somewhere else to"
+            },
+            {
+              "id": "ue4_29",
+              "number": 29,
+              "sentence1": "Peter's colleagues didn't realise how significant the research he was doing for his PhD was.",
+              "keyword": "FAILED",
+              "sentence2": "Peter's colleagues ___ of the research he was doing for his PhD.",
+              "answer": "failed to realise the significance",
+              "acceptedAnswers": ["failed to appreciate the significance", "failed to understand the significance", "failed to realise the importance", "failed to appreciate the importance", "failed to understand the importance"]
+            },
+            {
+              "id": "ue4_30",
+              "number": 30,
+              "sentence1": "'Did our sales figures get better last month, Martha?'",
+              "keyword": "ANY",
+              "sentence2": "'Was ___ our sales figures last month, Martha?'",
+              "answer": "there any improvement in",
+              "acceptedAnswers": ["there any increase in", "there any increase to"]
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 5,
+          "type": "multiple-choice",
+          "instructions": "You are going to read an article in which a young journalist talks about using social media to find a job. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "text": "Using Social Networking Sites to Find a Job\n\nHaving secured her own first job recently, Patty Meissner looks at young people's use of social networking when looking for work.\n\nIn many countries, a growing number of people in their twenties are turning to social media in the hope of finding work. Services like the social networking site Twitter and the professional networking site LinkedIn offer the chance for more direct contact with would-be employers than has previously been the case. But with greater access comes a greater chance to make mistakes.\n\nTake the case of a young jobseeker in the US who contacted a senior marketing executive via LinkedIn. The marketing executive in question had an impressive list of influential people in her contact list; people whom the young jobseeker felt could help him land a job. The marketing executive, however, had other ideas. Indignant at the suggestion that she would willingly share a list of contacts painstakingly built up over many years with a complete stranger who'd done nothing to deserve such an opportunity, she not only rejected his contact request, but sent a vicious and heavily sarcastic rejection note that has since gone viral. Those who saw the note online were appalled, and the sender probably now regrets the tone of her note, if not the message it conveyed. But if the incident makes young people think more carefully about how they use social media in a professional capacity, she may have actually ended up doing them a favour. She has drawn attention to an unfortunate truth. Social media is a potentially dangerous tool for job hunters who don't know how to use it. And a worrying number are getting it wrong.\n\nThere's a horrible irony here, because in many countries social networking sites like Facebook and Twitter have been the bread and butter of twenty-somethings' social lives for years. When my generation were teenagers, social media was our escape from the prying eyes of parents and teachers. It was a cyber extension of the playground pecking order – a place to impress, to embellish and experiment. It was a world based largely on fantasy. You could find yourself in a three-hour conversation with someone online and then completely ignore them at school. With careful picture/song selection for your Facebook page, you could become a completely different and much more intriguing person overnight. And if you couldn't be bothered with conversation, 'poking' people on Facebook was a legitimate alternative.\n\nHowever, when it comes to using social media for professional networking, our very knowledge and experience of sites like Facebook may actually be a hindrance. Using social media in a professional capacity is a completely different ball game, but for some twenty-somethings, the division is not clear cut. We first earned our online presence by being bold and over-confident, which could explain why some of us still come across like this. Just because a lot of people 'liked' your posts on Facebook, it doesn't mean you'll be able to use LinkedIn to show potential employers that you're someone worth employing. We need to realise that what we learned about social networking as teenagers no longer applies, and we must live up to employers' standards if we want to get on in the world of work.\n\nOne of the most common complaints from employers regarding young jobseekers on professional networking sites is that they're over-familiar in their form of address, and appear arrogant. This serves to perpetuate older generations' perceptions of us as an 'entitled generation'. In fact, we're very far from this; in many countries we're increasingly desperate about finding employment, which is why many of us are turning to social media in the first place. This impression of arrogance hurts the employment prospects of young people who – despite their communication errors – actually possess the skills and drive to become a valuable part of the workforce.\n\nSo what's the right way to contact someone on a professional networking site? Firstly, explain clearly who you are, and let the person you're writing to know what's in it for them – maybe you could offer to do a piece of research for them, or assist in some other way. This approach gives you a much better chance of getting a useful reply. Refrain from sending impersonal, blanket emails, and keep the tone humble if you want to avoid leaving a sour taste in the recipient's mouth. Remember – social media can be a great way to make useful contacts, but it needs careful handling if you don't want the door slammed in your face.",
+          "questions": [
+            {
+              "id": "r5_31",
+              "number": 31,
+              "prompt": "How did the senior marketing executive feel about the jobseeker who contacted her?",
+              "options": [
+                { "label": "A", "text": "annoyed by the timing of his message" },
+                { "label": "B", "text": "regretful that she had to reject his request" },
+                { "label": "C", "text": "furious at his assumption of her cooperation" },
+                { "label": "D", "text": "surprised that he offered her nothing in return" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_32",
+              "number": 32,
+              "prompt": "What does the writer say about the senior marketing executive?",
+              "options": [
+                { "label": "A", "text": "Her note was an attempt to gain publicity." },
+                { "label": "B", "text": "Her attitude is not unusual on social networking sites." },
+                { "label": "C", "text": "She has unintentionally helped those looking for work." },
+                { "label": "D", "text": "Someone of her experience should treat jobseekers better." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_33",
+              "number": 33,
+              "prompt": "What point does the writer make about social networking sites as used by her own generation?",
+              "options": [
+                { "label": "A", "text": "They gave teenagers the impression that real conversation wasn't necessary." },
+                { "label": "B", "text": "Teenagers used them to avoid having to engage with people they didn't like." },
+                { "label": "C", "text": "They gave teenagers the chance to escape from their boring lives." },
+                { "label": "D", "text": "The personalities and relationships teenagers had on them didn't reflect reality." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_34",
+              "number": 34,
+              "prompt": "As regards professional networking, the writer believes that many people of her generation",
+              "options": [
+                { "label": "A", "text": "have exaggerated opinions of their own employability." },
+                { "label": "B", "text": "over-estimate the use of social media in the world of work." },
+                { "label": "C", "text": "fail to distinguish between social networking for pleasure and for work." },
+                { "label": "D", "text": "are unaware of the opportunities that professional networking sites can offer them." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_35",
+              "number": 35,
+              "prompt": "In the fifth paragraph, the writer says that young jobseekers feel",
+              "options": [
+                { "label": "A", "text": "certain that they are entitled to good jobs." },
+                { "label": "B", "text": "concerned that they may not be offered work." },
+                { "label": "C", "text": "certain that they have the ability to be useful as employees." },
+                { "label": "D", "text": "concerned that they are giving the wrong impression to employers." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_36",
+              "number": 36,
+              "prompt": "What does the writer advise jobseekers to do?",
+              "options": [
+                { "label": "A", "text": "tell prospective employers what they may gain in return" },
+                { "label": "B", "text": "research the recipient carefully before they make contact" },
+                { "label": "C", "text": "give careful consideration to the type of work they are seeking" },
+                { "label": "D", "text": "approach only people they have a real chance of hearing back from" }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 6,
+          "type": "cross-text-multiple-matching",
+          "instructions": "You are going to read four extracts from articles in which experts give their views on climate change. For questions 37-40, choose from the experts A-D. The experts may be chosen more than once.",
+          "text": "Can We Reduce Climate Change?\n\nFour experts give their views on whether it is possible to mitigate the effects of global climate change.\n\nA. The extreme weather conditions experienced in recent years are a clear indication that global warming is underway, and that future climate patterns will certainly follow the trajectory predicted unless measures are taken to lessen the impact of fossil fuel use. And yet the scenario is not as hopeless as many fear. Figures show that nations which are undergoing rapid economic growth are indeed causing a sizeable upsurge in global greenhouse gas (GHG) emissions at the present time. However, the GHG per person of these regions is currently still far below that of much of the world, and with their adoption of increasingly efficient technologies, it is unlikely that their GHG per person will ever equal that of Europe or North America. Indeed, my view is that the growing pace of scientific advancement will eventually find the means to mitigate and even reverse the consequences of climate change.\n\nB. There is no doubt that increasing industrialisation has had a measurable impact on GHG emissions, with consequences for climate and the environment. As for the future, however, even the most expert calculations are no more than speculation. What is more, even if the situation were to reach the catastrophic proportions that some foresee, this will not herald the end of life on earth as we know it. There have been many great climatic variations throughout history, and life forms have always adapted and survived. I see no reason why this period of change should be any different. And in the shorter term, it seems likely that GHG emissions will soon stabilise. The technologies to harness wind, wave and solar power have been in place for many years now, and as oil and gas become ever scarcer, markets will inevitably switch to more efficient and renewable resources.\n\nC. Despite recommendations from the Intergovernmental Panel on Climate Change, only a handful of countries have achieved any reduction in GHG emissions in recent years, while many developing countries have massively increased their fossil fuel use and hence their GHG emissions. It also seems probable that these levels will go on rising for decades, eclipsing any potential reductions elsewhere in the world. And while some sceptics question the accuracy of climate change forecasting, one cannot ignore the fact that most models produce strikingly similar results. This, to my mind, is evidence enough that something should be done. The potential consequences of failing to heed the warning signs is another question entirely. Even if it is too late to reverse the effects of global warming, I believe that the natural environment, and all its complex relationships, may eventually modify to cope with the changes. The earth is more resilient than we think.\n\nD. One only has to look at the world's GHG levels to realise that climate change is a real and urgent issue. Forecasts made in previous decades – anticipating hurricanes, floods and record temperatures – have proved correct, indicating that models of future trends are also likely to be accurate. Countries becoming newly industrialised are producing GHG emissions to such an extent as to erode all other countries' efforts to stabilise the world's temperature. This situation is likely to continue for some years yet. Thus, from melting polar caps to devastated rainforests and rising sea levels, our environment and the ecosystems they support are in grave danger. The key to averting potential catastrophe, I feel, lies in human ingenuity. For example, more efficient coal power stations already generate a third less emissions than conventional ones. Man has engineered this situation, and has the capacity – and incentive – to devise inventions to confront it.",
+          "questions": [
+            { "id": "r6_37", "number": 37, "prompt": "expresses a different opinion from C about the extent to which fossil fuels will continue to be used?", "answer": "B" },
+            { "id": "r6_38", "number": 38, "prompt": "has a different view from D on the contribution of developing countries to climate change?", "answer": "A" },
+            { "id": "r6_39", "number": 39, "prompt": "holds a different view from all the other experts on the reliability of climate change predictions?", "answer": "B" },
+            { "id": "r6_40", "number": 40, "prompt": "has the same view as B about whether ecosystems will adjust to the consequences of climate change?", "answer": "C" }
+          ]
+        },
+        {
+          "partNumber": 7,
+          "type": "gapped-text",
+          "instructions": "You are going to read a magazine article about rock climbing. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.",
+          "text": "Impossible Rock\n\nOn the northern coast of Oman, climbers test themselves against knife-edge cliffs\n\nWe're standing on a pebble beach in northern Oman with a group of local men who are fishing. Behind us rises a sheer 1,000-metre cliff that shimmers under a blistering midday sun. 'Do you mind if I look around?' Alex asks. 'You can do as you please,' says the elder. As Alex wanders off, we explain to the Althouri fishermen that we're professional rock climbers on an exploratory visit.\n\n[41]\n\nThere are six of us in our team, including Alex, one of the best young climbers in the world. Suddenly one of the men stops in his tracks, points up at the towering cliff, and starts shouting. A thousand feet above us Alex is climbing, antlike, up the rock wall. The Althouris are beside themselves with a mix of excitement and incredulity.\n\n[42]\n\nIn 28 years of climbing I've never seen rock formations as magical. In places the land rises straight from the ocean in knife-edged fins. Proximity to the sea makes these cliffs perfect for deepwater soloing, a specialized type of climbing in which you push up as far a wall as you can, then simply tumble into the water. It sounds harmless enough, but an out-of-control fall can result in serious injury or even death.\n\n[43]\n\nWasting no time, Alex laces up his climbing shoes, dives from the boat, and swims to a cliff where the ocean has carved out a cavern with a five-metre overhang. Within minutes he has reached the cavern's ceiling, where he finds a series of tiny hand holds along a protruding rib of dark grey limestone. It's exactly the kind of challenge he has been looking for, with every move more difficult than the one before.\n\n[44]\n\n'Come on!' I scream, urging him to finish his new route. Alex lunges over the lip, but his legs swing out, and he peels off the rock and leaps into the water. That night we anchor in the bay at the base of a 150-metre Gothic tower we dub the 'sandcastle.' Before joining Alex for the climb the next morning, I suggest we take along safety gear. The young climber scoffs, saying that it's nothing more than a hike. I think of myself as a young 44-year-old, but trying to keep up with him makes me realise how old I'm getting.\n\n[45]\n\nAnd now I'm slightly annoyed again about his disregard for whether I'm comfortable. The rock here is badly shattered, what climbers call choss. Clinging to the dead-vertical wall, I test the integrity of each hold by banging it with the heel of my hand. Sometimes the rock sounds hollow or even moves. Staring down between my legs, I see the boat bobbing in the bay far beneath us. By the time I plop down on the ledge beside him, my nerves are frazzled.\n\n[46]\n\nAs I turn to my youthful partner for his thoughts, I see he's already packed up. For him the moment of wonder has passed. 'Let's go,' Alex says impatiently. 'If we hurry, we can get in another climb before dark.'",
+          "paragraphOptions": [
+            { "label": "A", "text": "From there we sail toward the 'Lion's Mouth,' a narrow strait named for the fang-like red and orange limestone pillars that jut from an overhang at its entrance. Alex spends the day working on a 60-metre route up one of the pillars." },
+            { "label": "B", "text": "'What are they saying?' I ask our translator. 'It's hard to explain,' he replies. 'But essentially, they think Alex is a witch.' I can understand why. Even for me, Alex's skills are hard to grasp. But so is this landscape." },
+            { "label": "C", "text": "The claw-like fingers of the Musandam Peninsula below glow orange with the setting sun. Looking down at the tortuous shoreline, which fans out in every direction, we're gazing at a lifetime's worth of climbing." },
+            { "label": "D", "text": "One of the other places we thought would be perfect for visiting by boat is As Salamah, an island in the Strait of Hormuz. We arrive in early afternoon and discover a giant rock rising from the sea. Since there is nowhere to anchor, we drop the sails and use the engines to park the boat just offshore." },
+            { "label": "E", "text": "I'd already had a similar moment of awareness earlier in the trip when Alex had scampered up a 500-metre wall with our rope in his pack. 'Hold on a second!' I'd yelled. What if the rest of us needed it? 'Don't worry,' he'd replied. 'I'll stop when I think we need to start using the ropes.'" },
+            { "label": "F", "text": "The men puff on the pipes and nod. The mountainous peninsula on which they live is an intricate maze of bays and fjords. Few climbers have ever touched its sheer limestone cliffs. We had learned of the area's potential from some British climbers who visited ten years ago." },
+            { "label": "G", "text": "Some defy belief. Hanging upside down, holding on to bumps in the rock no bigger than matchboxes, Alex hooks the heels of his sticky-soled shoes over a small protrusion. Defying gravity, he lets go with one hand and snatches for the next hold. Then the rock becomes too slick for a heel hook so he dangles his legs and swings like a chimpanzee from one tiny ledge to the next." }
+          ],
+          "questions": [
+            { "id": "r7_41", "number": 41, "answer": "F" },
+            { "id": "r7_42", "number": 42, "answer": "B" },
+            { "id": "r7_43", "number": 43, "answer": "D" },
+            { "id": "r7_44", "number": 44, "answer": "G" },
+            { "id": "r7_45", "number": 45, "answer": "E" },
+            { "id": "r7_46", "number": 46, "answer": "C" }
+          ]
+        },
+        {
+          "partNumber": 8,
+          "type": "multiple-matching",
+          "instructions": "You are going to read an article about risk taking. For questions 47-56, choose from the sections (A-D). The sections may be chosen more than once.",
+          "text": "The Mystery of Risk\n\nJodie O'Rourke reviews current thinking about what lies behind risk taking\n\nA. Exploration of all sorts is rooted in the notion of taking risks. Risk underlies any journey into the unknown, whether it is a ship captain's voyage into uncharted seas, a scientist's research on dangerous diseases, or an entrepreneur's investment in a new venture. Some of the motivations for taking risks are obvious – financial reward, fame, political gain, saving lives. But as the danger increases, the number of people willing to go forward shrinks, until the only ones who remain are the extreme risk takers. This is the mystery of risk: what makes some humans willing to jeopardize their reputation, fortune, and life and to continue to do so, even in the face of dire consequences? Scientists have now begun to open up the neurological black box containing the mechanisms for risk taking and tease out the biological factors that may prompt someone to become an explorer. Their research has centred on neurotransmitters, the chemicals that control communication in the brain.\n\nB. One neurotransmitter that is crucial to the risk taking equation is dopamine, which helps control motor skills but also helps drive us to seek out and learn new things as well as process emotions such as anxiety and fear. Robust dopamine production holds one of the keys to understanding risk taking, says Larry Zweifel, a neurobiologist at the University of Washington. 'When you're talking about someone who takes risks to accomplish something, that's driven by motivation, and motivation is driven by the dopamine system. This is what compels humans to move forward.' Dopamine helps elicit a sense of satisfaction when we accomplish tasks: the riskier the task, the larger the hit of dopamine. Part of the reason we don't all climb mountains is that we don't all have the same amount of dopamine. Molecules on the surface of nerve cells called autoreceptors control how much dopamine we make and use, essentially controlling our appetite for risk.\n\nC. In a study conducted at Vanderbilt University, participants underwent scans allowing scientists to observe the autoreceptors in the part of the brain circuitry associated with reward, addiction, and movement. People who had fewer autoreceptors – that is, who had freer flowing dopamine – were more likely to engage in novelty-seeking behaviour, such as exploration. 'Think of dopamine like gasoline,' says neuropsychologist David Zald, the study's lead author. 'You combine that with a brain equipped with a lesser ability to put on the brakes than normal, and you get people who push limits.' This is where the discussion often mixes up risk takers with thrill seekers or adrenaline junkies. The hormone adrenaline is designed to help us escape from danger. It works like this: When the brain perceives a threat, it triggers the release of adrenaline into the bloodstream, which in turn stimulates the heart, lungs, muscles, and other parts of the body to help us flee or fight in a life-threatening situation. This release generates a feeling of exhilaration that continues after the threat has passed, as the adrenaline clears from the system. For some people, that adrenaline rush can become a reward the brain seeks. They are prompted to induce it by going to scary movies or engaging in extreme sports.\n\nD. Acclimating to risk is something we all do in our daily lives. A good example of this occurs when learning to drive a car. At first, a new driver may fear traveling on freeways, but over time that same driver with more experience will merge casually into speeding traffic with little consideration for the significant potential dangers. What is commonly referred to as the 'familiarity principle' can also be applied to help explain the lack of fear associated with high-risk situations. By practising an activity, humans can become used to the risk and manage the fear that arises in those situations. The notion that we are all descended from risk takers fascinates writer Paul Salopek. 'Early humans leaving the Great Rift Valley in Africa thousands of years ago were the first great explorers,' he reasons. 'At our innermost core we are all risk takers. And this shared willingness to explore our planet has bound our species from the very beginning.' It's a noble idea, albeit a dopamine-based one!",
+          "questions": [
+            { "id": "r8_47", "number": 47, "prompt": "the use of car imagery to help explain neural activity?", "answer": "C" },
+            { "id": "r8_48", "number": 48, "prompt": "mention of one person's interest in the history of risk taking?", "answer": "D" },
+            { "id": "r8_49", "number": 49, "prompt": "details of the process used to investigate the brain's mechanics?", "answer": "C" },
+            { "id": "r8_50", "number": 50, "prompt": "a chemical-based explanation as to why people have such varied attitudes towards risk taking?", "answer": "B" },
+            { "id": "r8_51", "number": 51, "prompt": "a well-known theory that explains why people take risks during everyday activities?", "answer": "D" },
+            { "id": "r8_52", "number": 52, "prompt": "specific examples of what a person could lose if risk taking goes wrong?", "answer": "A" },
+            { "id": "r8_53", "number": 53, "prompt": "mention of a common confusion about the chemical causes of risky behaviour?", "answer": "C" },
+            { "id": "r8_54", "number": 54, "prompt": "a judgement of another person's stated belief about risk taking?", "answer": "D" },
+            { "id": "r8_55", "number": 55, "prompt": "a reference to the fact that some people become addicted to the chemical reaction experienced in risk taking?", "answer": "C" },
+            { "id": "r8_56", "number": 56, "prompt": "a description of a biological process initiated by fear in humans?", "answer": "C" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "You will hear three different extracts. For questions 1-6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "Extract One - You hear a trainee teacher called Susanna talking to her tutor. What point does the tutor make about a teacher's attitude?",
+              "options": [
+                { "label": "A", "text": "A good teacher can put any subject across effectively." },
+                { "label": "B", "text": "Students will pick up on a teacher's commitment." },
+                { "label": "C", "text": "There's little point in a teacher trying to fake passion for a subject." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Extract One - What is Susanna doing?",
+              "options": [
+                { "label": "A", "text": "complaining about her students' lack of enthusiasm" },
+                { "label": "B", "text": "proposing ways of making her subject more appealing" },
+                { "label": "C", "text": "asking for ideas about exercises her students could do" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "Extract Two - You hear a student called Sam telling his friend Ella about a concert he's been to. Sam is trying to",
+              "options": [
+                { "label": "A", "text": "suggest how the visual impact could have been improved." },
+                { "label": "B", "text": "challenge Ella's preconceptions about the music." },
+                { "label": "C", "text": "persuade Ella to go to a similar one in the future." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "Extract Two - In Sam's opinion, what makes the performer stand out?",
+              "options": [
+                { "label": "A", "text": "the influence her academic background has on her music" },
+                { "label": "B", "text": "the instinctive way she responds to her audience" },
+                { "label": "C", "text": "the high level of stage presence she displays" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_5",
+              "number": 5,
+              "prompt": "Extract Three - You hear a woman telling her friend about new policies adopted by her company. Staff have been planting trees in order to",
+              "options": [
+                { "label": "A", "text": "promote a desirable image." },
+                { "label": "B", "text": "encourage a spirit of mutual co-operation." },
+                { "label": "C", "text": "compensate for environmental damage." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_6",
+              "number": 6,
+              "prompt": "Extract Three - The company was surprised that its remote working initiative resulted in",
+              "options": [
+                { "label": "A", "text": "more appreciative customers." },
+                { "label": "B", "text": "a better standard of new recruits." },
+                { "label": "C", "text": "a more motivated workforce." }
+              ],
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "sentence-completion",
+          "instructions": "You will hear a scientist called Jim Weller giving a talk about some robots he has created and how they function like insects called termites. For questions 7-14, complete the sentences with a word or short phrase.",
+          "questions": [
+            { "id": "l2_7", "number": 7, "prompt": "Jim says termites differ from bees in that a ___ is not responsible for organising their building work.", "answer": "queen" },
+            { "id": "l2_8", "number": 8, "prompt": "Jim uses the word ___ to refer to the group of robots he's created to function as independent units.", "answer": "colony" },
+            { "id": "l2_9", "number": 9, "prompt": "Jim observed termites depositing partially consumed ___ in shared habitats, which activated a response from other termites.", "answer": "wood" },
+            { "id": "l2_10", "number": 10, "prompt": "Jim states that the robots receive ___ to help them correct any errors they make.", "answer": "feedback", "acceptedAnswers": ["enough feedback"] },
+            { "id": "l2_11", "number": 11, "prompt": "Jim got a single robot to finish the construction of a ___ when publicly demonstrating how simple structure building is performed.", "answer": "staircase" },
+            { "id": "l2_12", "number": 12, "prompt": "Jim predicts that his robots will soon be able to move ___ into position to help people cope with the threat of floods.", "answer": "sandbags", "acceptedAnswers": ["sand bags", "bags of sand"] },
+            { "id": "l2_13", "number": 13, "prompt": "Jim compares both termites and his robots to brain cells, in that they all create a superior form of ___ .", "answer": "intelligence" },
+            { "id": "l2_14", "number": 14, "prompt": "A group of Turkish researchers has observed Jim's work in the hope of coming up with a ___ they can learn from.", "answer": "model", "acceptedAnswers": ["mathematical model"] }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "multiple-choice",
+          "instructions": "You will hear an interview in which a historian called Mark Connor and a writer called Judith Monroe are talking about the history of the underground railway in London. For questions 15-20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+          "questions": [
+            {
+              "id": "l3_15",
+              "number": 15,
+              "prompt": "Mark says that the problems which led to the creation of the railway",
+              "options": [
+                { "label": "A", "text": "resulted from poor urban planning." },
+                { "label": "B", "text": "were similar to those we have today." },
+                { "label": "C", "text": "typified the thinking of their age." },
+                { "label": "D", "text": "only had one possible solution." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_16",
+              "number": 16,
+              "prompt": "Judith believes that the engineering methods used to make the first tunnel",
+              "options": [
+                { "label": "A", "text": "worked surprisingly quickly." },
+                { "label": "B", "text": "were too basic to be efficient." },
+                { "label": "C", "text": "caused a minimum amount of disruption." },
+                { "label": "D", "text": "resulted in the loss of too many homes." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_17",
+              "number": 17,
+              "prompt": "How does Mark feel about the public reaction when the first underground line opened?",
+              "options": [
+                { "label": "A", "text": "disappointed by their reluctance to go underground" },
+                { "label": "B", "text": "struck by their willingness to tolerate lengthy journeys" },
+                { "label": "C", "text": "amused by their unfounded fears" },
+                { "label": "D", "text": "impressed by their general enthusiasm" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_18",
+              "number": 18,
+              "prompt": "Judith and Mark both say that, during the early years of its construction, the railway",
+              "options": [
+                { "label": "A", "text": "created many jobs for people." },
+                { "label": "B", "text": "had a big influence on urban development." },
+                { "label": "C", "text": "inspired imitators all over the world." },
+                { "label": "D", "text": "made national heroes of its developers." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_19",
+              "number": 19,
+              "prompt": "Judith compares certain underground stations to a classic film in that",
+              "options": [
+                { "label": "A", "text": "they are designed in the style of a particular era." },
+                { "label": "B", "text": "they give a feeling of being in a cinema." },
+                { "label": "C", "text": "they are a product of the same creative vision." },
+                { "label": "D", "text": "they give a similar sense of size and excitement." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_20",
+              "number": 20,
+              "prompt": "What does Mark think about the railway map?",
+              "options": [
+                { "label": "A", "text": "It has come to represent the city." },
+                { "label": "B", "text": "It can confuse people unfamiliar with its format." },
+                { "label": "C", "text": "It encourages people to use the underground." },
+                { "label": "D", "text": "It is well designed for something so inexpensive." }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "multiple-matching",
+          "instructions": "You will hear five short extracts in which people are talking about visits they have made to museums. While you listen, you must complete both tasks.\n\nTASK ONE: For questions 21-25, choose from the list (A-H) each speaker's reason for visiting the museum.\n\nA to record certain images\nB to view a particular exhibit\nC to listen to a lecture\nD to follow up on a recommendation\nE to check some data\nF to do some research\nG to see recent renovations\nH to seek expert opinion",
+          "questions": [
+            { "id": "l4_21", "number": 21, "prompt": "Speaker 1", "answer": "F" },
+            { "id": "l4_22", "number": 22, "prompt": "Speaker 2", "answer": "H" },
+            { "id": "l4_23", "number": 23, "prompt": "Speaker 3", "answer": "B" },
+            { "id": "l4_24", "number": 24, "prompt": "Speaker 4", "answer": "A" },
+            { "id": "l4_25", "number": 25, "prompt": "Speaker 5", "answer": "D" }
+          ]
+        },
+        {
+          "partNumber": 5,
+          "type": "multiple-matching",
+          "instructions": "TASK TWO: For questions 26-30, choose from the list (A-H) what impressed each speaker most about the museum.\n\nA the helpfulness of the staff\nB the relevance to local life\nC the effective audio-guide\nD the international appeal\nE the diversity of the items on show\nF the comprehensive information supplied\nG the opportunities for interaction\nH the authentic reconstructions",
+          "questions": [
+            { "id": "l4_26", "number": 26, "prompt": "Speaker 1", "answer": "B" },
+            { "id": "l4_27", "number": 27, "prompt": "Speaker 2", "answer": "C" },
+            { "id": "l4_28", "number": 28, "prompt": "Speaker 3", "answer": "F" },
+            { "id": "l4_29", "number": 29, "prompt": "Speaker 4", "answer": "H" },
+            { "id": "l4_30", "number": 30, "prompt": "Speaker 5", "answer": "D" }
+          ]
+        }
+      ]
+    }
+  }
+}

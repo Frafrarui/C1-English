@@ -1,0 +1,551 @@
+{
+  "id": "exam6",
+  "title": "Test 7 (Cambridge C1 Advanced)",
+  "description": "Test 7 completo: Use of English, Reading y Listening.",
+  "examType": "cae",
+  "scoring": {
+    "useOfEnglish": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 2 },
+      "nominalMax": 28,
+      "passPercentage": 57
+    },
+    "reading": {
+      "partPoints": { "5": 2, "6": 2, "7": 2, "8": 1 },
+      "nominalMax": 50,
+      "passPercentage": 64
+    },
+    "listening": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 1, "5": 1 },
+      "nominalMax": 30,
+      "passPercentage": 60
+    }
+  },
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+          "text": "Changing Typefaces\n\nIn what can only be described as an impressive (0) piece of research, a schoolboy in the USA has calculated that the state and federal governments could save getting on for $400m a year by changing the typeface they use for printed documents.\n\nShocked by the number of printed handouts he was receiving from his teachers, the 14-year-old boy decided to investigate the cost. He established that ink (1)___ up to 60% of the cost of a printed page and is, gram for gram, twice as expensive as some famous perfumes. He then started looking at the different typefaces and discovered that, by (2)___ to one called Garamond with its thin, elegant strokes, his school district could reduce its ink (3)___ by 24% annually. Working on that (4)___ , the federal savings would be enormous.\n\n(5)___ , earlier studies of the (6)___ of font choice have shown that it can affect more than just cost. The typeface that a document uses also (7)___ how much of the information is (8)___ and whether it is worth taking seriously.",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "represents" },
+                { "label": "B", "text": "measures" },
+                { "label": "C", "text": "equals" },
+                { "label": "D", "text": "indicates" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "varying" },
+                { "label": "B", "text": "modifying" },
+                { "label": "C", "text": "adapting" },
+                { "label": "D", "text": "switching" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "application" },
+                { "label": "B", "text": "intake" },
+                { "label": "C", "text": "capacity" },
+                { "label": "D", "text": "consumption" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "belief" },
+                { "label": "B", "text": "basis" },
+                { "label": "C", "text": "impression" },
+                { "label": "D", "text": "thought" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_5",
+              "number": 5,
+              "options": [
+                { "label": "A", "text": "Fundamentally" },
+                { "label": "B", "text": "Seemingly" },
+                { "label": "C", "text": "Interestingly" },
+                { "label": "D", "text": "Unusually" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_6",
+              "number": 6,
+              "options": [
+                { "label": "A", "text": "issue" },
+                { "label": "B", "text": "concern" },
+                { "label": "C", "text": "aspect" },
+                { "label": "D", "text": "discussion" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_7",
+              "number": 7,
+              "options": [
+                { "label": "A", "text": "guides" },
+                { "label": "B", "text": "rules" },
+                { "label": "C", "text": "dominates" },
+                { "label": "D", "text": "influences" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "ue1_8",
+              "number": 8,
+              "options": [
+                { "label": "A", "text": "preserved" },
+                { "label": "B", "text": "retained" },
+                { "label": "C", "text": "accumulated" },
+                { "label": "D", "text": "gathered" }
+              ],
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+          "text": "My First Paddle-Boarding Lesson\n\nHere I am in a cold, windy city, (0) under a very grey sky. I ask myself (9)___ I'm standing on an oversized surfboard in the middle of a river with nothing to help me (10)___ a paddle. I'm about to have my first lesson in paddle-boarding, which is a bit (11)___ canoeing but with only one paddle and, being upright, you can enjoy the views on offer. The teacher reassures me it's easy, which (12)___ nothing to reduce the pressure. I desperately try to keep (13)___ balance and concentrate on not falling in. I wonder if I've left it too late to back out and head for solid ground, but before I can change my mind I'm (14)___ the move, but not going where I want to. I hear my teacher shouting 'Paddle paddle'; I try but, (15)___ my best efforts, I don't make much progress. 'You need to paddle on both sides,' he says, 'because (16)___ you'll go around in circles. Copy me.' And finally I'm moving in the same direction as everyone else and it feels amazing.",
+          "questions": [
+            { "id": "ue2_9", "number": 9, "answer": "why" },
+            { "id": "ue2_10", "number": 10, "answer": "but", "acceptedAnswers": ["except", "besides"] },
+            { "id": "ue2_11", "number": 11, "answer": "like" },
+            { "id": "ue2_12", "number": 12, "answer": "does" },
+            { "id": "ue2_13", "number": 13, "answer": "my" },
+            { "id": "ue2_14", "number": 14, "answer": "on" },
+            { "id": "ue2_15", "number": 15, "answer": "despite" },
+            { "id": "ue2_16", "number": 16, "answer": "otherwise" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "word-formation",
+          "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+          "text": "The Joy of Mathematics\n\nAre you good at maths? Many people would say 'no'. They have no confidence in their (0) dealings with numbers. Maths lessons at school are remembered as hours of (17)___ rather than enjoyment, and this memory is (18)___ what colours their attitude to maths in adulthood.\n\nBut in some ways, society is (19)___ of this attitude. We accept without question the need to be literate, so why isn't numeracy valued in the same way? For those who loathe maths, there seem to be (20)___ psychological barriers preventing them from appreciating the (21)___ of maths to our everyday lives.\n\nBut all is not lost. A professor of maths in the USA has set up a blog that aims to make maths (22)___ to those who missed out at school and to remove the many (23)___ that some people have about the subject. He wants to share some of his enthusiasm for maths, and by introducing people to the beauty of maths, (24)___ make it a more joyful experience.",
+          "questions": [
+            { "id": "ue3_17", "number": 17, "prompt": "ENDURE", "answer": "endurance" },
+            { "id": "ue3_18", "number": 18, "prompt": "DOUBT", "answer": "doubtless", "acceptedAnswers": ["undoubtedly"] },
+            { "id": "ue3_19", "number": 19, "prompt": "TOLERATE", "answer": "tolerant" },
+            { "id": "ue3_20", "number": 20, "prompt": "MASS", "answer": "massive" },
+            { "id": "ue3_21", "number": 21, "prompt": "USE", "answer": "usefulness" },
+            { "id": "ue3_22", "number": 22, "prompt": "ACCESS", "answer": "accessible" },
+            { "id": "ue3_23", "number": 23, "prompt": "ANXIOUS", "answer": "anxieties" },
+            { "id": "ue3_24", "number": 24, "prompt": "HOPE", "answer": "hopefully" }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "key-word-transformation",
+          "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+          "questions": [
+            {
+              "id": "ue4_25",
+              "number": 25,
+              "sentence1": "The biographer decided to leave out all the less interesting details of the footballer's childhood.",
+              "keyword": "ANY",
+              "sentence2": "The biographer decided not ___ the less interesting details of the footballer's childhood.",
+              "answer": "to include any of",
+              "acceptedAnswers": ["to mention any of", "to leave in any of", "to use any of"]
+            },
+            {
+              "id": "ue4_26",
+              "number": 26,
+              "sentence1": "David apologised for being unable to come to the meeting next week.",
+              "keyword": "COULD",
+              "sentence2": "David said he ___ come to the meeting next week.",
+              "answer": "was sorry that he could not",
+              "acceptedAnswers": ["was sorry he could not", "was sorry that he couldn't", "was sorry he couldn't"]
+            },
+            {
+              "id": "ue4_27",
+              "number": 27,
+              "sentence1": "Since starting her new job, Charlotte has completely forgotten about the plans she used to have.",
+              "keyword": "SIGHT",
+              "sentence2": "Since starting her new job, Charlotte has completely ___ the plans she used to have.",
+              "answer": "lost sight of"
+            },
+            {
+              "id": "ue4_28",
+              "number": 28,
+              "sentence1": "I can never remember dates for anything, even though I really try.",
+              "keyword": "MATTER",
+              "sentence2": "I can never remember dates for anything ___ try.",
+              "answer": "no matter how hard I"
+            },
+            {
+              "id": "ue4_29",
+              "number": 29,
+              "sentence1": "The impression his boss has of Jack is that he's an ambitious person.",
+              "keyword": "ACROSS",
+              "sentence2": "Jack ___ an ambitious person.",
+              "answer": "comes across to his boss as"
+            },
+            {
+              "id": "ue4_30",
+              "number": 30,
+              "sentence1": "Casper didn't mention the fact that we had met before.",
+              "keyword": "REFERENCE",
+              "sentence2": "Casper ___ the fact that we had met before.",
+              "answer": "made no reference to",
+              "acceptedAnswers": ["didn't make any reference to", "did not make any reference to", "didn't make a reference to", "did not make a reference to"]
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 5,
+          "type": "multiple-choice",
+          "instructions": "You are going to read an internet article about a work policy of unlimited leave time. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "text": "Unlimited Time Off Work\n\nBarnaby Spence considers a new idea from the world of big business\n\nThe founder of a multinational corporation recently announced that his company would no longer be keeping track of its employees' paid holiday time. The move was apparently inspired by an internet company which has instigated a similar policy. According to the founder of the multinational corporation, the idea came to him via a cheery email (reproduced in many newspapers) from his daughter. In it she sounds suspiciously like a copywriter from her father's media team. Setting aside the fact that the means by which the announcement was made seems like a hollow attempt at 'humanising' what may turn out to be a less than generous policy decision, let us ask: is the idea practical?\n\nThe internet company and the multinational corporation are fundamentally distinct – the former has 2,000 employees and provides a single service, while the latter has 50,000 employees with dozens of subsidiary companies providing services as diverse as financial services, transport, and healthcare. The approach of 'take as much time off as you want as long as you're sure it won't damage the business' seems better suited to a smaller company where employees have a better idea of each other's workloads and schedules, and so may be more comfortable in assessing whether their absence would harm the business – in any case a problematically abstract notion.\n\nThe founder of the multinational has stated that his employees may take as much leave as they want, as long as they 'feel a hundred percent comfortable that they and their team are up to date on every project and that their absence will not in any way damage the business – or, for that matter, their careers.' Is it possible to be that sure? No matter how many loose ends you manage to tie up in advance of a holiday, there is always a mountain of work to come back to. That is simply the nature of leave; you put your work on hold, but its accumulation is inevitable and beyond your control. Someone who follows these guidelines would likely not go at all, or, at the very least, would feel overly guilty about going. Increased levels of guilt lead to stress and this, together with workers not taking sufficient leave, would lead to a decrease in productivity in the long run.\n\nThe situation could be compounded by pressure from colleagues and office gossip concerning who was off when, and for how long. Such pressure already affects decisions such as when to start and end the working day. Particularly in the corporate sector, there is a culture of working late, and it is easy to see how this could translate into a 'no holiday' culture in a company with unlimited leave, where workers compete for promotion. Similarly, if the feelings of safety and entitlement that statutory leave provides are removed, people may feel unable to take the leave they require for fear of appearing lazy. Essentially, they would no longer have their legal entitlement to fall back on. Perhaps then, the policy would result in a sort of paralysis, where workers did not feel able to take their entitled leave, or, they might continue to use their statutory rights as a guideline, leaving the policy obsolete.\n\nModern technology, which allows us to receive work messages whenever and wherever we are, has blurred the distinction between work and leisure time. The internet company apparently began their unlimited leave policy when their employees asked how this new way of working could be reconciled with the company's old-fashioned time-off policy. That is to say, if their employer was no longer able to accurately track employees' total time on the job, why should it apply a different and outmoded standard to their time away from it? However, a potentially problematic corollary of having no set working hours is that all hours are feasibly working hours. Employees can never be sure whether or not their working hours are being monitored by their employer, causing them to internalise this scrutiny and become self-disciplining, with possibly destructive effects. Employment law exists for a reason. Workers are entitled to a minimum amount of statutory paid annual leave because periods of rest and leisure are critical to their mental and physical health. The increased morale, creativity and productivity which are cited as the desired results of the unlimited leave policy can all exist independently of worker well-being. I remain doubtful, therefore, as to whether being 'able to take as much holiday as they want' is either the true intention or the probable outcome of this policy.",
+          "questions": [
+            {
+              "id": "r5_31",
+              "number": 31,
+              "prompt": "What does the writer imply about the founder of the multinational corporation?",
+              "options": [
+                { "label": "A", "text": "He is unwise to employ his daughter in his company." },
+                { "label": "B", "text": "He is dishonestly copying an idea from another company." },
+                { "label": "C", "text": "He is using his daughter to make a planned change appear more acceptable." },
+                { "label": "D", "text": "He is merely trying to increase his personal popularity." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_32",
+              "number": 32,
+              "prompt": "Which phrase could correctly replace 'Setting aside' in line 5?",
+              "options": [
+                { "label": "A", "text": "As an example of" },
+                { "label": "B", "text": "Because we accept" },
+                { "label": "C", "text": "If we ignore for now" },
+                { "label": "D", "text": "Taking as a starting point" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_33",
+              "number": 33,
+              "prompt": "The writer compares the multinational corporation and the internet company in order to demonstrate that",
+              "options": [
+                { "label": "A", "text": "unlimited leave is more likely to work in a more diverse company." },
+                { "label": "B", "text": "employees in a smaller company have more loyalty to each other." },
+                { "label": "C", "text": "it is difficult for workers to assess what is best for their company." },
+                { "label": "D", "text": "what works in one company may be unsuitable for another." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_34",
+              "number": 34,
+              "prompt": "What does the writer state about the unlimited leave policy in the third paragraph?",
+              "options": [
+                { "label": "A", "text": "It increases the employees' workloads." },
+                { "label": "B", "text": "It sets unreasonable criteria to consider before leave can be taken." },
+                { "label": "C", "text": "It could harm the employees' careers in the long term." },
+                { "label": "D", "text": "It makes them feel under an obligation to take leave at inappropriate times." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_35",
+              "number": 35,
+              "prompt": "What generalisation does the writer make about office workers in the fourth paragraph?",
+              "options": [
+                { "label": "A", "text": "They can often be unaware of their legal rights." },
+                { "label": "B", "text": "They can have a strong influence on each other's behaviour." },
+                { "label": "C", "text": "They tend to be more productive when there is a promotion on offer." },
+                { "label": "D", "text": "They prefer to have fixed guidelines regarding terms and conditions." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_36",
+              "number": 36,
+              "prompt": "In the last paragraph, the writer questions whether",
+              "options": [
+                { "label": "A", "text": "it was really the staff at the internet company who had the idea for an unlimited leave policy." },
+                { "label": "B", "text": "employees can be trusted to keep track of their working hours." },
+                { "label": "C", "text": "abolishing a fixed work timetable actually gives workers more freedom." },
+                { "label": "D", "text": "it is time to update the employment laws relating to paid leave." }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 6,
+          "type": "cross-text-multiple-matching",
+          "instructions": "You are going to read four reviews of a book about memory called Pieces of Light. For questions 37-40, choose from the reviewers A-D. The reviewers may be chosen more than once.",
+          "text": "Reviews of Pieces of Light\n\nFour reviewers give their opinions on a book about memory by Charles Fernyhough\n\nA\nIn my view, the most important message of Pieces of Light is that the 'reconstructive nature of memory can make it unreliable'. It is wrong to see memories as fixed biochemical or electrical traces in the brain, like books in a giant library that you could access if only you knew how. People are becoming increasingly aware that memory is, in fact, unstable. The stories in Pieces of Light may persuade a few more – and anyone who reads them will enjoy Fernyhough's effortless prose. He returns repeatedly to his central message using a sophisticated and engaging blend of findings from science, ideas from literature and examples from personal narratives. Yet in disabusing us of our misconceptions, and despite this being the stated aim of the book, Fernyhough leaves us with little sense of a scientific explanation to put in their place.\n\nB\n'Remembering is a serious business,' Charles Fernyhough warns. It is this respect for his subject that makes Pieces of Light such an immense pleasure, as Fernyhough sees the emerging science of memory through the lens of his own recollections. In the hands of a lesser writer, such reliance on personal experience could rapidly descend into self-indulgence and cliché, but Fernyhough – a psychologist and published novelist – remains restrained and lyrical throughout. As Fernyhough examines the way the brain continually rewrites our past, it is almost impossible not to question the accuracy of our recollections. Even the events that we recall with the most vivid sensory detail are not to be trusted, he maintains. Although I remain to be persuaded, Fernyhough does serve up the latest findings in neuroscience and quotes academic studies without ever baffling the reader along the way.\n\nC\nFernyhough, who is a popular science writer as well as an academic psychologist, wrote this book because he is worried that too many people still think of memory in terms of a vast personal DVD library. He sets out to show the reader how he believes it to actually operate, and I for one was convinced. The author plays a key role in his own book, returning to places that were very familiar to him in childhood to see how much he can remember. However, he gets hopelessly lost. Though Fernyhough is a gifted writer who can turn any experience into lively prose, these autobiographical passages are the least successful of Pieces of Light because they are too disconnected from any scientific insights about memory. There are also frequent references to literature. Yet whereas others might find these a distraction from the main narrative, I personally found the balance between science and literature refreshing and well judged.\n\nD\nA major theme of Charles Fernyhough's book is that remembering is less a matter of encoding, storing and retrieving an accurate record of events, and more a matter of adjusting memories to current circumstances, which may then alter them for future recollection. He mixes the latest findings in neuroscience with in-depth case histories. Nor is Fernyhough uncomfortable using personal testimony to put warm flesh on hard science: sizeable sections of the book are taken up with him exploring his own past. These do not add greatly to the book, and it is hard for the reader not to wonder whether it is really worth the effort of ploughing on with him. This weariness is reflected in his writing style. Surprisingly, however, Fernyhough is a lucid, concise and knowledgeable guide to all the data that generally stay buried deep in specialist journals, and that is where the book really springs to life.",
+          "questions": [
+            { "id": "r6_37", "number": 37, "prompt": "expresses a similar opinion to B on how clearly the science is presented?", "answer": "D" },
+            { "id": "r6_38", "number": 38, "prompt": "has a different opinion to all the others on the quality of the writing?", "answer": "D" },
+            { "id": "r6_39", "number": 39, "prompt": "shares C's view of how well the writer brings together diverse academic disciplines?", "answer": "A" },
+            { "id": "r6_40", "number": 40, "prompt": "has a similar view to D on the effectiveness of the writer's emphasis on his personal memories?", "answer": "C" }
+          ]
+        },
+        {
+          "partNumber": 7,
+          "type": "gapped-text",
+          "instructions": "You are going to read a newspaper article about a project at a natural history museum. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.",
+          "text": "Taking Dinosaurs Apart\n\nPulling apart limbs, sawing through ribs and separating skull bones are activities usually associated with surgeons rather than museum staff. However, that is exactly what is going on at the Smithsonian's National Museum of Natural History in Washington DC, USA. Renovations to the museum's dinosaur hall, which started recently, have necessitated the dismantling and removal of its collection of dinosaur and extinct mammal skeletons, some of which weigh as much as five tons.\n\n[41]\n\nOne particular specimen which curator Matthew Carrano can't wait to get hold of is a meat-eating Jurassic dinosaur called Allosaurus, which has been on display for 30 years. 'Scientifically, this particular Allosaurus is well known,' he explains, because 'for a long time, it was one of the only Allosaurus specimens that represented a single individual animal.'\n\n[42]\n\nThe Smithsonian's five-meter-long Allosaurus, however, is definitely one, unique individual. So once the crystallized glue holding it together is removed, researchers and conservators can get a better sense of how the creature's joints actually fitted together in life.\n\n[43]\n\nAnother modification the museum plans to make to its Allosaurus is removing a couple of centimeters from its tail, which is not original fossil but casts of vertebrae. 'The tail on the Smithsonian's specimen is too long,' says Peter May, owner and president of the company in charge of dismantling, conserving, and remounting the 58 specimens in the museum's dinosaur hall. He explains that the skeleton on display has over 50 vertebrae, when it should have something closer to 45.\n\n[44]\n\nSlicing a thin cross-section out of a leg or rib bone can help with that. By placing a slice under a microscope, researchers will be able to count growth rings on the bone, the number of which would have increased throughout the creature's life, very much like the rings on a cross-section of a tree trunk.\n\n[45]\n\nOne example which Carrano wishes to investigate further is an apparent blow to the Allosaurus's left side. 'The shoulder blade looks like it has healed improperly,' he explains. If the damaged shoulder blade can be fitted together with the ribs which are held in storage, paleontologists might be able to determine the severity and cause of the damage.\n\nFinally, Carrano hopes to be able to compare the Allosaurus with another dinosaur in the collection called Labrosaurus. Labrosaurus is known only from a single bone - a lower jaw with a distortion which is believed to have been caused by disease or injury. 'The two front teeth are missing and there's an abscess there,' Carrano explains.\n\n[46]\n\nBut in order to confirm their suspicion, Carrano and his colleagues will have to wait a while. 'A lot of what we hope to learn won't be accessible to us until the exhibits have been taken down and we can have a good look at them,' he says. So he won't be able to get his hands on the Allosaurus quite yet.",
+          "paragraphOptions": [
+            { "label": "A", "text": "Dismantling the Allosaurus and removing the plaster and glue covering it can also reveal whether the animal suffered any injuries when alive." },
+            { "label": "B", "text": "The Smithsonian's team should be able to take it apart in large chunks in a single day, but even once they've dismantled it they'll still have hours of work ahead of them, breaking the skeleton down further into individual bones and cleaning them." },
+            { "label": "C", "text": "These endeavors will modernize a space which has never seen a major overhaul. It will also give researchers a chance to make detailed studies of the exhibits - some of which haven't been touched in decades." },
+            { "label": "D", "text": "There are also plans to slim it down a little. When the museum first displayed the Allosaurus, preparators decided to use plaster casts of the ribs instead of the actual specimens, which resulted in a heavier-looking skeleton. Curators hope that the final, remounted skeleton will more closely resemble the dinosaur's natural shape." },
+            { "label": "E", "text": "However, this dinosaur, previously classified as a separate species is now thought to be a type of Allosaurus. Both of the specimens come from the same quarry, and what's more the Allosaurus is missing the exact same bone, so it's entirely possible that it actually belongs to the Smithsonian Allosaurus." },
+            { "label": "F", "text": "In addition to correcting mistakes such as this, made when the specimens were first displayed, Carrano would also like to determine the age of the Allosaurus." },
+            { "label": "G", "text": "There are Allosaurus skeletons in museum collections across the world, but most consist of bones from a number of different examples of the species. This has made it difficult for scientists to work out how the entire skeleton fits together." }
+          ],
+          "questions": [
+            { "id": "r7_41", "number": 41, "answer": "C" },
+            { "id": "r7_42", "number": 42, "answer": "G" },
+            { "id": "r7_43", "number": 43, "answer": "D" },
+            { "id": "r7_44", "number": 44, "answer": "F" },
+            { "id": "r7_45", "number": 45, "answer": "A" },
+            { "id": "r7_46", "number": 46, "answer": "E" }
+          ]
+        },
+        {
+          "partNumber": 8,
+          "type": "multiple-matching",
+          "instructions": "You are going to read an article in which four academics give their views on fiction. For questions 47-56, choose from the academics (A-D). The academics may be chosen more than once.",
+          "text": "Why Do We Read Novels?\n\nWe asked a group of academics for their views on the appeal of fiction\n\nA Cathy Smith\nIs a work by a prize-winning novelist better than a trashy summer blockbuster? Undoubtedly, if you're looking for a literary masterpiece. But it's not 'better' if you're simply looking for escapism. 'Literary fiction', unlike 'genre fiction' such as mystery or romance, is not about escaping from reality. Instead it provides a means to better understand the world. What makes a work deserve the title of literary fiction can be pinned down, to a certain extent, by critical analysis of the writer's techniques. Yet a huge element of the appeal of literary fiction lies in something almost indefinable – the brilliant, original idea; the insight that, once written down, seems the only way to say something. Writers of fiction have to recruit or seduce us into their world – only then do we trust them to take us on a journey with them. The books we put down after only a few pages are those which have failed to make that connection with us.\n\nB Matteo Bianco\nA novel – whether for adults or children – takes you places, emotionally and imaginatively, which you would never otherwise have visited. However, I don't think you should put yourself under any more pressure to finish 'a classic' than a kids' comic. And if by 'classics' we mean Tolstoy, Proust, Hardy and so on, then my own reading is distinctly patchy. The author Martin Amis once said that the only way we have of evaluating the quality of a book is whether it retains a readership. I think that's fair enough, though it's imprecise. A work of fiction can always be fine-tuned in such a way that the final experience for the reader is enhanced, and this fact must say something about the theoretical (if not practical) possibility of stating that one book is better than another. And while I can't prove that a single copy of a classic work of fiction is a greater gift to the world than a million trashy romances, I'm going to go ahead and say it's so anyway.\n\nC Gita Sarka\nThe author Albert Camus says that the appeal of narrative art lies in its power to organise life in such a way that we can reflect on it from a distance and experience it anew. Distinct from television or film, literature allows us significant control over our experience of what's being presented to us. One book I would always tell anyone to read is The Life and Times of Michael K – a literary prize winner, but hated by some of my colleagues. It's a classic for me because of what it says about living in difficult times; to a lot of people it's just a bit boring and the main character doesn't speak enough. Categories such as 'literary masterpieces' and even 'literature' do not exist independently of their assessors – assessors who are bound in an era and see value in part through the eyes of that era. Personally, I find it impossible to make claims that one work is better than another. I can say why it might be worthwhile to study it, but that's all.\n\nD George C. Schwarz\nIf, at a certain time in their life a person is interested in just one particular genre or author, that's fine as long as they have the opportunity of reading a wide range of books throughout their lives. These opportunities can come through family members, teachers and friends who can create the reading landscape and encourage them to look wider and further. A famous writer once said that it's easy to recognise the people who don't read fiction, as their outlook on life is narrower and less imaginative, and they find it hard to put themselves in other people's shoes. It's a generalisation, but with elements of truth. The power of fiction begins with fairy tales, nursery rhymes and picture books, which give children ways of looking at the world outside their own experience. Literature teachers often recommend reading 'the classics'. But what classics, whose and which era? In a way it doesn't matter – the key point is that one can't escape from a need for shared references and reading experience.",
+          "questions": [
+            { "id": "r8_47", "number": 47, "prompt": "compares books to other story-telling art forms?", "answer": "C" },
+            { "id": "r8_48", "number": 48, "prompt": "admits to gaps in their literary knowledge?", "answer": "B" },
+            { "id": "r8_49", "number": 49, "prompt": "suggests a possible consequence of not reading novels?", "answer": "D" },
+            { "id": "r8_50", "number": 50, "prompt": "points out that opinion about a book depends on the period in which it is being judged?", "answer": "C" },
+            { "id": "r8_51", "number": 51, "prompt": "explains why readers sometimes choose to read books which are not considered classic works of literature?", "answer": "A" },
+            { "id": "r8_52", "number": 52, "prompt": "believes that it is possible to improve any novel?", "answer": "B" },
+            { "id": "r8_53", "number": 53, "prompt": "gives reassurance about people whose choice of reading is limited?", "answer": "D" },
+            { "id": "r8_54", "number": 54, "prompt": "says that no-one should feel obliged to read a particular type of book?", "answer": "C" },
+            { "id": "r8_55", "number": 55, "prompt": "gives another writer's opinion on why people enjoy reading literature?", "answer": "C" },
+            { "id": "r8_56", "number": 56, "prompt": "defends their right to judge particular types of novels?", "answer": "B" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "You will hear three different extracts. For questions 1-6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "Extract One - You hear two friends talking about online privacy. Why does the man mention his uncle?",
+              "options": [
+                { "label": "A", "text": "to criticise his attitude to technology" },
+                { "label": "B", "text": "to challenge a recommendation made by the woman" },
+                { "label": "C", "text": "to illustrate the power of the media" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Extract One - They agree that modern technology",
+              "options": [
+                { "label": "A", "text": "makes little difference to the accessibility of personal information." },
+                { "label": "B", "text": "is less invasive than some people suggest." },
+                { "label": "C", "text": "will continue to reduce people's privacy." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "Extract Two - You hear two trainee chefs discussing the issue of food waste. What does the woman think about her boss's ideas?",
+              "options": [
+                { "label": "A", "text": "She's surprised at his forward-looking attitude." },
+                { "label": "B", "text": "She's dismissive of his attention to detail." },
+                { "label": "C", "text": "She's concerned about his generosity towards customers." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "Extract Two - In reacting to the woman's comments, the man reveals that he is",
+              "options": [
+                { "label": "A", "text": "determined to change practices at his own workplace." },
+                { "label": "B", "text": "unsure about the facts she is presenting to him." },
+                { "label": "C", "text": "doubtful whether his chef would accept new ideas." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_5",
+              "number": 5,
+              "prompt": "Extract Three - You hear two students talking about an experiment into the way people perceive time. The woman thinks the experiment was important because",
+              "options": [
+                { "label": "A", "text": "it provided unexpected results." },
+                { "label": "B", "text": "it presented a great physical challenge." },
+                { "label": "C", "text": "it raised public awareness of the subject." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_6",
+              "number": 6,
+              "prompt": "Extract Three - She believes celebrating special events",
+              "options": [
+                { "label": "A", "text": "convinces people that time passes more quickly." },
+                { "label": "B", "text": "provides people with pleasant memories." },
+                { "label": "C", "text": "gives people a sense of structure when recalling the past." }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "sentence-completion",
+          "instructions": "You will hear a woman called Sarah Harvey talking about her work with an environmental organisation which helps to protect the seas from pollution. For questions 7-14, complete the sentences with a word or short phrase.",
+          "questions": [
+            { "id": "l2_7", "number": 7, "prompt": "The organisation Sarah works for is called ___ .", "answer": "Water Response" },
+            { "id": "l2_8", "number": 8, "prompt": "Sarah was surprised to learn that seabirds have been known to eat ___ on occasions.", "answer": "light bulbs" },
+            { "id": "l2_9", "number": 9, "prompt": "Sarah says that plastic can be compared to a ___ because of the way it absorbs dangerous substances.", "answer": "chemical sponge", "acceptedAnswers": ["sponge"] },
+            { "id": "l2_10", "number": 10, "prompt": "Sarah learned that the toxins in plastic harm the ___ system of many creatures.", "answer": "reproductive" },
+            { "id": "l2_11", "number": 11, "prompt": "Sarah explains how the breakdown of plastic items into small particles is caused by ___ and the effects of the sun.", "answer": "wave action", "acceptedAnswers": ["waves", "the action of the waves"] },
+            { "id": "l2_12", "number": 12, "prompt": "Sarah says that most plastic in the sea has its origin in ___ sources.", "answer": "land", "acceptedAnswers": ["the land"] },
+            { "id": "l2_13", "number": 13, "prompt": "Sarah gives the example of ___ as something to use instead of household detergents.", "answer": "lemon juice", "acceptedAnswers": ["lemons"] },
+            { "id": "l2_14", "number": 14, "prompt": "Sarah strongly advises car owners to prevent ___ from their vehicles.", "answer": "oil leaks", "acceptedAnswers": ["oil leaking"] }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "multiple-choice",
+          "instructions": "You will hear a radio interview in which two web designers called Rob Thorn and Sophie Unwin are discussing aspects of their work. For questions 15-20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+          "questions": [
+            {
+              "id": "l3_15",
+              "number": 15,
+              "prompt": "Sophie says that the work of web designers",
+              "options": [
+                { "label": "A", "text": "must reflect constant evolution in the field." },
+                { "label": "B", "text": "is subject to rigid time constraints." },
+                { "label": "C", "text": "should prioritise aesthetic considerations." },
+                { "label": "D", "text": "is limited by technical requirements." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_16",
+              "number": 16,
+              "prompt": "Sophie believes the success of a website depends on",
+              "options": [
+                { "label": "A", "text": "the originality of its appearance." },
+                { "label": "B", "text": "the balance of text and illustration." },
+                { "label": "C", "text": "the emphasis on pictorial accuracy." },
+                { "label": "D", "text": "the logical organisation of its content." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_17",
+              "number": 17,
+              "prompt": "Why did Rob first turn his attention to website design?",
+              "options": [
+                { "label": "A", "text": "It offered an exciting new challenge." },
+                { "label": "B", "text": "It was an outlet for his training in graphic art." },
+                { "label": "C", "text": "He discovered it was a good way to make money." },
+                { "label": "D", "text": "He found he had a particular talent for gaming." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_18",
+              "number": 18,
+              "prompt": "The change from being a freelancer to working for a company has led Sophie to feel",
+              "options": [
+                { "label": "A", "text": "relieved she carries less responsibility." },
+                { "label": "B", "text": "sorry she has work that is less predictable." },
+                { "label": "C", "text": "disappointed she has less contact with clients." },
+                { "label": "D", "text": "pleased she spends less time on administration." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_19",
+              "number": 19,
+              "prompt": "What is Rob's strategy when dealing with clients?",
+              "options": [
+                { "label": "A", "text": "to defend his own ideas vigorously" },
+                { "label": "B", "text": "to overstate the time a project will take" },
+                { "label": "C", "text": "to conduct meetings in a formal atmosphere" },
+                { "label": "D", "text": "to focus on discussing financial details" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_20",
+              "number": 20,
+              "prompt": "Both Rob and Sophie say they find inspiration by",
+              "options": [
+                { "label": "A", "text": "developing a heightened perception of everyday things." },
+                { "label": "B", "text": "appreciating new technological developments." },
+                { "label": "C", "text": "studying the work of other designers." },
+                { "label": "D", "text": "experimenting with other art forms." }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "multiple-matching",
+          "instructions": "You will hear five short extracts in which people are talking about spending time working on a magazine.\n\nTASK ONE: For questions 21-25, choose from the list (A-H) the benefit each speaker gained from the experience of working on a magazine.\n\nA increased confidence\nB improved IT skills\nC ideas for a future career\nD useful contacts\nE pride in an achievement\nF the ability to work with colleagues\nG broader knowledge of the industry\nH greater self-awareness",
+          "questions": [
+            { "id": "l4_21", "number": 21, "prompt": "Speaker 1", "answer": "G" },
+            { "id": "l4_22", "number": 22, "prompt": "Speaker 2", "answer": "H" },
+            { "id": "l4_23", "number": 23, "prompt": "Speaker 3", "answer": "D" },
+            { "id": "l4_24", "number": 24, "prompt": "Speaker 4", "answer": "F" },
+            { "id": "l4_25", "number": 25, "prompt": "Speaker 5", "answer": "E" }
+          ]
+        },
+        {
+          "partNumber": 5,
+          "type": "multiple-matching",
+          "instructions": "TASK TWO: For questions 26-30, choose from the list (A-H) the personal quality each speaker thinks is most important for magazine work.\n\nA the ability to get on with people\nB an attention to detail\nC the ability to concentrate\nD a single-minded determination\nE formal qualifications\nF good organisational skills\nG innovative thinking\nH willingness to work long hours",
+          "questions": [
+            { "id": "l4_26", "number": 26, "prompt": "Speaker 1", "answer": "H" },
+            { "id": "l4_27", "number": 27, "prompt": "Speaker 2", "answer": "D" },
+            { "id": "l4_28", "number": 28, "prompt": "Speaker 3", "answer": "C" },
+            { "id": "l4_29", "number": 29, "prompt": "Speaker 4", "answer": "B" },
+            { "id": "l4_30", "number": 30, "prompt": "Speaker 5", "answer": "G" }
+          ]
+        }
+      ]
+    }
+  }
+}

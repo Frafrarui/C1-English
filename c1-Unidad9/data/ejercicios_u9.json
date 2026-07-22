@@ -1,0 +1,142 @@
+[
+  {
+    "lead_in_sentence": "They will probably win the game tomorrow.",
+    "keyword": "LIKELY",
+    "second_sentence_start": "They",
+    "second_sentence_end": "the game tomorrow.",
+    "correct_answer": "are likely to win"
+  },
+  {
+    "lead_in_sentence": "It is almost certain that he will complain about the noise.",
+    "keyword": "BOUND",
+    "second_sentence_start": "He",
+    "second_sentence_end": "about the noise.",
+    "correct_answer": "is bound to complain"
+  },
+  {
+    "lead_in_sentence": "The train is expected to arrive at 8:30.",
+    "keyword": "DUE",
+    "second_sentence_start": "The train",
+    "second_sentence_end": "at 8:30.",
+    "correct_answer": "is due to arrive"
+  },
+  {
+    "lead_in_sentence": "There is a strong possibility that she will pass the exam.",
+    "keyword": "LIKELIHOOD",
+    "second_sentence_start": "There is a",
+    "second_sentence_end": "pass the exam.",
+    "correct_answer": "strong likelihood that she will"
+  },
+  {
+    "lead_in_sentence": "I'm sure it will rain later, so take an umbrella.",
+    "keyword": "WELL",
+    "second_sentence_start": "It",
+    "second_sentence_end": "later, so take an umbrella.",
+    "correct_answer": "may well rain"
+  },
+  {
+    "lead_in_sentence": "I predict that technology will increasingly control our lives.",
+    "keyword": "LIKELIHOOD",
+    "second_sentence_start": "There is a",
+    "second_sentence_end": "increasingly control our lives.",
+    "correct_answer": "strong likelihood that technology will"
+  },
+  {
+    "lead_in_sentence": "The concert is scheduled to start in five minutes.",
+    "keyword": "DUE",
+    "second_sentence_start": "The concert",
+    "second_sentence_end": "in five minutes.",
+    "correct_answer": "is due to start"
+  },
+  {
+    "lead_in_sentence": "She will probably get the job because she is very qualified.",
+    "keyword": "WELL",
+    "second_sentence_start": "She",
+    "second_sentence_end": "the job because she is very qualified.",
+    "correct_answer": "may well get"
+  },
+  {
+    "lead_in_sentence": "I am almost sure they'll face financial difficulties if they do that.",
+    "keyword": "BOUND",
+    "second_sentence_start": "They",
+    "second_sentence_end": "financial difficulties if they do that.",
+    "correct_answer": "are bound to face"
+  },
+  {
+    "lead_in_sentence": "What are your plans for next weekend?",
+    "keyword": "GOING",
+    "second_sentence_start": "What",
+    "second_sentence_end": "do next weekend?",
+    "correct_answer": "are you going to"
+  },
+  {
+    "lead_in_sentence": "My dentist appointment is tomorrow at 5 PM.",
+    "keyword": "SEEING",
+    "second_sentence_start": "I",
+    "second_sentence_end": "tomorrow at 5 PM.",
+    "correct_answer": "am seeing the dentist"
+  },
+  {
+    "lead_in_sentence": "The President's formal visit to France is next week.",
+    "keyword": "IS",
+    "second_sentence_start": "The President",
+    "second_sentence_end": "France next week.",
+    "correct_answer": "is to visit"
+  },
+  {
+    "lead_in_sentence": "I am absolutely sure he will fail the driving test.",
+    "keyword": "BOUND",
+    "second_sentence_start": "He",
+    "second_sentence_end": "the driving test.",
+    "correct_answer": "is bound to fail"
+  },
+  {
+    "lead_in_sentence": "There is a small chance of him winning the competition.",
+    "keyword": "LIKELIHOOD",
+    "second_sentence_start": "There is a slight",
+    "second_sentence_end": "the competition.",
+    "correct_answer": "likelihood of him winning"
+  },
+  {
+    "lead_in_sentence": "It is expected that the new law will be passed tomorrow.",
+    "keyword": "DUE",
+    "second_sentence_start": "The new law",
+    "second_sentence_end": "tomorrow.",
+    "correct_answer": "is due to be passed"
+  },
+  {
+    "lead_in_sentence": "Do you want me to open the window for you?",
+    "keyword": "SHALL",
+    "second_sentence_start": "",
+    "second_sentence_end": "the window for you?",
+    "correct_answer": "Shall I open"
+  },
+  {
+    "lead_in_sentence": "I think robots will do all the housework in the future.",
+    "keyword": "EXPECT",
+    "second_sentence_start": "I",
+    "second_sentence_end": "all the housework in the future.",
+    "correct_answer": "expect robots will do"
+  },
+  {
+    "lead_in_sentence": "Look at those dark clouds; rain is imminent.",
+    "keyword": "GOING",
+    "second_sentence_start": "Look at those dark clouds; it",
+    "second_sentence_end": "rain.",
+    "correct_answer": "is going to"
+  },
+  {
+    "lead_in_sentence": "We will probably see a rise in temperatures next month.",
+    "keyword": "LIKELY",
+    "second_sentence_start": "Temperatures",
+    "second_sentence_end": "rise next month.",
+    "correct_answer": "are likely to"
+  },
+  {
+    "lead_in_sentence": "It is highly probable that he will arrive late.",
+    "keyword": "WELL",
+    "second_sentence_start": "He",
+    "second_sentence_end": "late.",
+    "correct_answer": "may well arrive"
+  }
+]

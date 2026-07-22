@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica de Inglés C1</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Práctica de Exámenes de Inglés C1</h1>
+    <p class="subtitle">Estilo Cambridge Advanced (CAE)</p>
+  </header>
+
+  <main class="container">
+    <h2>Exámenes disponibles</h2>
+    <ul class="exam-list">
+      <% exams.forEach(exam => { %>
+        <li class="exam-card">
+          <a href="/exam/<%= exam.id %>">
+            <span class="exam-name"><%= exam.title %></span>
+            <% if (exam.description) { %>
+              <span class="exam-desc"><%= exam.description %></span>
+            <% } %>
+          </a>
+        </li>
+      <% }) %>
+      <% if (exams.length === 0) { %>
+        <li class="empty">No hay exámenes disponibles todavía. Añade uno en data/exams/.</li>
+      <% } %>
+    </ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "c1-unit9-app",
+  "version": "1.0.0",
+  "description": "Unit 9: Future Tenses & Future Modals",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

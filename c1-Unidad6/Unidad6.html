@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 Unit 6: Cohesion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        background: '#f8fafc',
+                        surface: '#ffffff',
+                        textMain: '#0f172a',
+                        textMuted: '#64748b'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Base Animations and Utilities */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        /* Tab Navigation */
+        .tab-btn {
+            color: #64748b;
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab-btn:hover {
+            color: #0f172a;
+            background-color: #f1f5f9;
+        }
+
+        .tab-btn.active {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+            background-color: #eff6ff;
+        }
+
+        /* Accordion Styles */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+        }
+
+        .accordion-btn[aria-expanded="true"] + .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-btn[aria-expanded="true"] .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Option Buttons in Test */
+        .option-btn {
+            border: 2px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: #cbd5e1;
+            background-color: #f8fafc;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .option-btn.selected {
+            border-color: #2563eb;
+            background-color: #eff6ff;
+        }
+
+        .option-btn.correct {
+            border-color: #10b981;
+            background-color: #ecfdf5;
+            color: #047857;
+        }
+
+        .option-btn.incorrect {
+            border-color: #ef4444;
+            background-color: #fef2f2;
+            color: #b91c1c;
+        }
+    </style>
+</head>
+<body class="bg-background text-textMain font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-surface shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <h1 class="text-xl font-bold text-primary tracking-tight">C1 Unit 6: Cohesion</h1>
+            <nav class="flex space-x-1 sm:space-x-4">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Theory</button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Speaking Booster</button>
+                <button onclick="switchTab('practice')" id="tab-practice" class="tab-btn px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Practice Test</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+
+        <!-- Theory Section -->
+        <section id="section-theory" class="tab-content block animate-fade-in">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-bold text-textMain mb-2">Grammar Reference</h2>
+                <p class="text-textMuted">Master Reference, Substitution, and Ellipsis for C1/C2 exams.</p>
+            </div>
+
+            <div id="theory-container" class="space-y-6">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+
+        <!-- Speaking Section -->
+        <section id="section-speaking" class="tab-content hidden animate-fade-in">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-bold text-textMain mb-2">Cambridge Speaking Booster</h2>
+                <p class="text-textMuted">Real exam examples using cohesion strategies.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="speaking-container">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section id="section-practice" class="tab-content hidden animate-fade-in">
+            <div class="mb-8 text-center">
+                <h2 class="text-3xl font-bold text-textMain mb-2">Practice Test</h2>
+                <p class="text-textMuted">Test your knowledge with randomized questions.</p>
+            </div>
+
+            <div class="bg-surface rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 max-w-3xl mx-auto">
+                <div id="test-intro" class="text-center">
+                    <p class="mb-6 text-lg">You will face a selection of questions. Select the correct word or phrase to complete each sentence.</p>
+                    <button onclick="startTest()" class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all duration-300 transform hover:-translate-y-0.5">Start Test</button>
+
+                    <div id="stats-container" class="mt-8 pt-6 border-t border-slate-100 hidden">
+                        <h3 class="text-sm font-semibold text-textMuted uppercase tracking-wider mb-2">Previous Results</h3>
+                        <p id="last-score" class="text-lg font-medium text-textMain"></p>
+                        <p id="last-date" class="text-sm text-textMuted"></p>
+                    </div>
+                </div>
+
+                <div id="test-area" class="hidden">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-sm font-medium text-textMuted" id="question-counter">Question 1 / 30</span>
+                        <div class="w-1/2 bg-slate-100 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full transition-all duration-300" id="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-medium text-textMain leading-relaxed" id="question-text"></h3>
+                    </div>
+
+                    <div id="options-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Options generated by JS -->
+                    </div>
+
+                    <div id="feedback-container" class="mt-6 hidden rounded-lg p-4">
+                        <p id="feedback-message" class="font-medium"></p>
+                        <p id="feedback-explanation" class="text-sm mt-2 text-slate-700"></p>
+                        <button onclick="nextQuestion()" id="next-btn" class="mt-4 bg-slate-900 hover:bg-slate-800 text-white font-medium py-2 px-6 rounded-lg transition-colors w-full sm:w-auto">Next Question</button>
+                    </div>
+                </div>
+
+                <div id="test-results" class="hidden text-center">
+                    <h3 class="text-3xl font-bold mb-2" id="final-score-title">Test Complete!</h3>
+                    <p class="text-xl text-textMuted mb-6" id="final-score-text"></p>
+                    <button onclick="resetTest()" class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all duration-300">Try Again</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-surface border-t border-slate-200 mt-auto py-6">
+        <div class="max-w-5xl mx-auto px-4 text-center text-sm text-textMuted">
+            &copy; <span id="year"></span> C1 English Academy. Built with Node.js & Tailwind.
+        </div>
+    </footer>
+
+    <script>
+        // Data embedded directly so this file works standalone (no server needed)
+        const theoryData = {
+  "reference": [
+    {
+      "title": "This / That / These / Those",
+      "rule": "Used to refer to situations or people mentioned before. This/These generally refer to things closer in time/space (Present), while That/Those refer to things further away (Past).",
+      "examples": [
+        "I studied biology. That allowed me to work in a lab.",
+        "I am taking an English course. This will give me more opportunities."
+      ]
+    }
+  ],
+  "substitution": [
+    {
+      "title": "Auxiliary Verbs (do/does/did)",
+      "rule": "Used to avoid repeating the main verb.",
+      "examples": [
+        "Peter didn't study, but I did."
+      ]
+    },
+    {
+      "title": "Do so",
+      "rule": "Used to replace a Verb + Object structure.",
+      "examples": [
+        "Peter didn't buy a new car, but I did so."
+      ]
+    },
+    {
+      "title": "So / Neither",
+      "rule": "Structures 'So + aux + subject' and 'Neither + aux + subject' used for agreements.",
+      "examples": [
+        "I like apples. So do I.",
+        "I don't like apples. Neither do I."
+      ]
+    },
+    {
+      "title": "So / Not (after certain verbs)",
+      "rule": "Used after verbs like think, suppose, expect, believe, hope, seem.",
+      "examples": [
+        "Is he coming? I hope so.",
+        "Will it rain? I expect not."
+      ]
+    },
+    {
+      "title": "If so / If not",
+      "rule": "Used to replace complete conditional clauses.",
+      "examples": [
+        "Are you free tonight? If so, let's grab dinner."
+      ]
+    },
+    {
+      "title": "One / Ones",
+      "rule": "Used to replace countable nouns.",
+      "examples": [
+        "I've lost my books. The ones on the table are mine."
+      ]
+    }
+  ],
+  "ellipsis": [
+    {
+      "title": "Connectors 'And/But'",
+      "rule": "We can omit the subject or adjective if it is the same.",
+      "examples": [
+        "He opened the door and (he) walked in."
+      ]
+    },
+    {
+      "title": "Relative Pronouns",
+      "rule": "We can omit 'which/that' when it is the direct object of the relative clause.",
+      "examples": [
+        "The car (that) I bought is very fast."
+      ]
+    },
+    {
+      "title": "Auxiliary Verbs",
+      "rule": "We can omit the main verb after the auxiliary.",
+      "examples": [
+        "Have you finished? Yes, I have (finished)."
+      ]
+    },
+    {
+      "title": "Infinitive 'to'",
+      "rule": "We can leave the 'to' alone when omitting the rest of the infinitive clause.",
+      "examples": [
+        "I didn't like chess, but I used to (like chess)."
+      ]
+    },
+    {
+      "title": "Wh- words",
+      "rule": "We can leave the wh-word alone.",
+      "examples": [
+        "He left early, but I don't know why (he left early)."
+      ]
+    }
+  ],
+  "speaking": [
+    {
+      "part": "Part 2 (Long Turn)",
+      "strategy": "Reference (Linking ideas)",
+      "structure": "Regarding [Topic A], [Comment]. THAT being said, THIS other picture...",
+      "example": "Regarding the first photo, they seem busy. THAT being said, THIS other picture shows a calmer environment."
+    },
+    {
+      "part": "Part 3 (Collaborative Task)",
+      "strategy": "Substitution (Agreeing / Disagreeing)",
+      "structure": "I think [Opinion]. Do you? -> Yes, I DO / So DO I / Neither DO I.",
+      "example": "I think we should prioritize the environment over profits. Do you? -> Yes, I DO. Actually, SO DO most young people nowadays."
+    },
+    {
+      "part": "Part 4 (Discussion)",
+      "strategy": "Substitution (Responding to complex questions)",
+      "structure": "Will [Event] happen? / Is [Idea] true? -> I certainly hope SO / I suppose NOT.",
+      "example": "Do you think artificial intelligence will replace teachers? I certainly hope NOT, but I suppose SO if we rely on it too much."
+    },
+    {
+      "part": "Natural Flow",
+      "strategy": "Ellipsis (Avoiding repetition with 'to')",
+      "structure": "I haven't/didn't [Action], but I would love TO / I used TO.",
+      "example": "I haven't tried any extreme sports yet, but I'd love TO if I ever get the chance."
+    }
+  ]
+};
+
+        const questionsData = [
+  {
+    "id": 1,
+    "text": "The company decided to invest in new technology. ___ proved to be a very wise decision.",
+    "options": ["This", "That", "These", "Those"],
+    "correctAnswer": "This",
+    "type": "Reference",
+    "explanation": "'This' refers back to the entire previous sentence (the decision to invest), bringing the idea into the present discussion."
+  },
+  {
+    "id": 2,
+    "text": "I really enjoyed the books you lent me, especially the ___ about ancient history.",
+    "options": ["one", "ones", "some", "those"],
+    "correctAnswer": "ones",
+    "type": "Substitution",
+    "explanation": "'ones' substitutes for the plural countable noun 'books'."
+  },
+  {
+    "id": 3,
+    "text": "Mary didn't finish the assignment on time, but I ___.",
+    "options": ["did so", "did", "was", "have"],
+    "correctAnswer": "did",
+    "type": "Substitution",
+    "explanation": "We use the auxiliary 'did' to avoid repeating the main verb 'finish'."
+  },
+  {
+    "id": 4,
+    "text": "He asked me if the train was delayed, and I told him I hoped ___.",
+    "options": ["not", "so", "it", "that"],
+    "correctAnswer": "not",
+    "type": "Substitution",
+    "explanation": "After 'hope', we use 'not' to substitute a negative clause (I hoped it was not delayed)."
+  },
+  {
+    "id": 5,
+    "text": "I would love to travel to Japan next year. I really hope ___.",
+    "options": ["it", "that", "so", "to"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "'so' substitutes the affirmative clause after 'hope'."
+  },
+  {
+    "id": 6,
+    "text": "Are you going to the concert tonight? If ___, we could share a taxi.",
+    "options": ["yes", "it", "so", "that"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "'If so' replaces the entire conditional clause 'If you are going to the concert tonight'."
+  },
+  {
+    "id": 7,
+    "text": "I have never been scuba diving before, but my brother ___.",
+    "options": ["has", "did", "does", "was"],
+    "correctAnswer": "has",
+    "type": "Ellipsis",
+    "explanation": "The auxiliary 'has' is used to avoid repeating 'been scuba diving'."
+  },
+  {
+    "id": 8,
+    "text": "She promised to help me with the project, but she didn't want ___.",
+    "options": ["to", "so", "it", "that"],
+    "correctAnswer": "to",
+    "type": "Ellipsis",
+    "explanation": "The infinitive 'to' is left alone, omitting the rest of the clause (to help me)."
+  },
+  {
+    "id": 9,
+    "text": "The manager resigned suddenly, and nobody understands ___.",
+    "options": ["that", "it", "why", "so"],
+    "correctAnswer": "why",
+    "type": "Ellipsis",
+    "explanation": "The wh-word 'why' is left alone to omit 'why he resigned'."
+  },
+  {
+    "id": 10,
+    "text": "Some people believe that the economy will recover soon. ___ experts, however, disagree.",
+    "options": ["Those", "These", "This", "That"],
+    "correctAnswer": "These",
+    "type": "Reference",
+    "explanation": "'These' refers to the experts related to the current topic of discussion."
+  },
+  {
+    "id": 11,
+    "text": "I ordered a coffee and ___ sat down at the table.",
+    "options": ["I", "he", "-", "it"],
+    "correctAnswer": "-",
+    "type": "Ellipsis",
+    "explanation": "We can omit the subject after 'and' if it is the same as the first clause."
+  },
+  {
+    "id": 12,
+    "text": "He refused to apologize, and ___ made the situation even worse.",
+    "options": ["this", "that", "it", "which"],
+    "correctAnswer": "that",
+    "type": "Reference",
+    "explanation": "'That' refers back to the entire previous action (refusing to apologize) as a completed past event."
+  },
+  {
+    "id": 13,
+    "text": "I don't think we should buy a new car. Neither ___ my wife.",
+    "options": ["do", "does", "think", "is"],
+    "correctAnswer": "does",
+    "type": "Substitution",
+    "explanation": "'Neither + aux + subject' is used to agree with a negative statement."
+  },
+  {
+    "id": 14,
+    "text": "We need to submit the report by Friday. If ___, we will lose the contract.",
+    "options": ["not", "so", "we don't", "no"],
+    "correctAnswer": "not",
+    "type": "Substitution",
+    "explanation": "'If not' replaces the negative conditional clause 'If we do not submit the report by Friday'."
+  },
+  {
+    "id": 15,
+    "text": "The students who passed the exam were the ___ who studied regularly.",
+    "options": ["ones", "one", "students", "those"],
+    "correctAnswer": "ones",
+    "type": "Substitution",
+    "explanation": "'ones' replaces the plural noun 'students'."
+  },
+  {
+    "id": 16,
+    "text": "I thought the meeting was going to be cancelled, but it ___.",
+    "options": ["wasn't", "didn't", "was", "not"],
+    "correctAnswer": "wasn't",
+    "type": "Ellipsis",
+    "explanation": "The auxiliary 'wasn't' avoids repeating 'cancelled'."
+  },
+  {
+    "id": 17,
+    "text": "Would you like to come to the cinema with us? I'd love ___.",
+    "options": ["it", "so", "to", "that"],
+    "correctAnswer": "to",
+    "type": "Ellipsis",
+    "explanation": "The infinitive particle 'to' is left alone, omitting 'come to the cinema'."
+  },
+  {
+    "id": 18,
+    "text": "I'm not sure if the store is open on Sundays, but I suppose ___.",
+    "options": ["it", "that", "so", "yes"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "After 'suppose', we use 'so' to substitute the affirmative clause."
+  },
+  {
+    "id": 19,
+    "text": "They promised to clean the house, and they ___.",
+    "options": ["did", "did so", "have", "were"],
+    "correctAnswer": "did so",
+    "type": "Substitution",
+    "explanation": "'did so' replaces the verb + object 'cleaned the house'."
+  },
+  {
+    "id": 20,
+    "text": "I used to play tennis a lot, but I haven't ___ for years.",
+    "options": ["done so", "done", "played", "did"],
+    "correctAnswer": "done so",
+    "type": "Substitution",
+    "explanation": "'done so' substitutes the verb and its object 'played tennis'."
+  },
+  {
+    "id": 21,
+    "text": "She was wearing a beautiful dress, the ___ I bought for her birthday.",
+    "options": ["one", "ones", "that", "which"],
+    "correctAnswer": "one",
+    "type": "Substitution",
+    "explanation": "'one' substitutes the singular countable noun 'dress'."
+  },
+  {
+    "id": 22,
+    "text": "Will the new policy affect our department? I expect ___.",
+    "options": ["so", "not", "it", "that"],
+    "correctAnswer": "not",
+    "type": "Substitution",
+    "explanation": "'not' is used after 'expect' to replace a negative clause."
+  },
+  {
+    "id": 23,
+    "text": "He bought a new laptop and ___ a printer.",
+    "options": ["bought", "-", "he", "also"],
+    "correctAnswer": "-",
+    "type": "Ellipsis",
+    "explanation": "We can omit the verb 'bought' because it is understood from the first clause."
+  },
+  {
+    "id": 24,
+    "text": "She has been working here for ten years. ___ is why she knows everything.",
+    "options": ["This", "That", "It", "Which"],
+    "correctAnswer": "That",
+    "type": "Reference",
+    "explanation": "'That' refers back to the fact mentioned in the previous sentence."
+  },
+  {
+    "id": 25,
+    "text": "I really enjoy reading science fiction novels. So ___ my best friend.",
+    "options": ["does", "do", "is", "has"],
+    "correctAnswer": "does",
+    "type": "Substitution",
+    "explanation": "'So + auxiliary + subject' for agreement. The auxiliary 'does' matches the present simple tense of 'enjoy'."
+  },
+  {
+    "id": 26,
+    "text": "The cake ___ I baked yesterday was delicious.",
+    "options": ["-", "what", "who", "whom"],
+    "correctAnswer": "-",
+    "type": "Ellipsis",
+    "explanation": "We can omit the relative pronoun 'that/which' when it acts as the object of the relative clause."
+  },
+  {
+    "id": 27,
+    "text": "I told him to finish the report, but he didn't want ___.",
+    "options": ["to", "so", "it", "that"],
+    "correctAnswer": "to",
+    "type": "Ellipsis",
+    "explanation": "We leave the 'to' to omit the rest of the infinitive clause."
+  },
+  {
+    "id": 28,
+    "text": "Someone left the door open, but I don't know ___.",
+    "options": ["who", "whom", "why", "when"],
+    "correctAnswer": "who",
+    "type": "Ellipsis",
+    "explanation": "The wh-word 'who' stands alone, omitting 'left the door open'."
+  },
+  {
+    "id": 29,
+    "text": "We need more volunteers for the event. Are you available? If ___, please sign up here.",
+    "options": ["so", "not", "yes", "you are"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "'If so' replaces 'If you are available'."
+  },
+  {
+    "id": 30,
+    "text": "My old phone was broken, so I had to buy a new ___.",
+    "options": ["one", "ones", "phone", "it"],
+    "correctAnswer": "one",
+    "type": "Substitution",
+    "explanation": "'one' substitutes the singular noun 'phone'."
+  }
+];
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // State
+        let currentQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        // Initialization
+        function init() {
+            renderTheory();
+            renderSpeaking();
+            loadStats();
+        }
+
+        // Tab Switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+            document.getElementById(`section-${tabId}`).classList.remove('hidden');
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+        }
+
+        // Render Theory with Accordions
+        function renderTheory() {
+            const container = document.getElementById('theory-container');
+            container.innerHTML = '';
+
+            const categories = [
+                { key: 'reference', title: '1. Reference' },
+                { key: 'substitution', title: '2. Substitution' },
+                { key: 'ellipsis', title: '3. Ellipsis' }
+            ];
+
+            categories.forEach(cat => {
+                const section = document.createElement('div');
+                section.className = 'bg-surface rounded-xl shadow-sm border border-slate-200 overflow-hidden';
+
+                const header = document.createElement('button');
+                header.className = 'accordion-btn w-full px-6 py-4 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors focus:outline-none';
+                header.setAttribute('aria-expanded', 'true');
+                header.innerHTML = `
+                    <h3 class="text-lg font-semibold text-textMain">${cat.title}</h3>
+                    <svg class="accordion-icon w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                `;
+
+                header.onclick = () => {
+                    const expanded = header.getAttribute('aria-expanded') === 'true' || false;
+                    header.setAttribute('aria-expanded', !expanded);
+                };
+
+                const content = document.createElement('div');
+                content.className = 'accordion-content px-6 py-4 space-y-6';
+
+                theoryData[cat.key].forEach(item => {
+                    const ruleBlock = document.createElement('div');
+                    ruleBlock.innerHTML = `
+                        <h4 class="text-md font-bold text-primary mb-2">${item.title}</h4>
+                        <p class="text-sm text-textMuted mb-3">${item.rule}</p>
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-md space-y-2">
+                            ${item.examples.map(ex => `<p class="text-sm text-slate-700 italic">"${ex}"</p>`).join('')}
+                        </div>
+                    `;
+                    content.appendChild(ruleBlock);
+                });
+
+                section.appendChild(header);
+                section.appendChild(content);
+                container.appendChild(section);
+            });
+        }
+
+        // Render Speaking Booster
+        function renderSpeaking() {
+            const container = document.getElementById('speaking-container');
+            container.innerHTML = '';
+
+            theoryData.speaking.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'bg-surface rounded-xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition-shadow';
+                card.innerHTML = `
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 border-b border-slate-100 pb-3">
+                        <div class="flex items-center">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2.5 py-1 rounded uppercase tracking-wider">${item.part}</span>
+                        </div>
+                        <span class="text-sm text-primary font-semibold mt-2 sm:mt-0">${item.strategy}</span>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1">Structure</h4>
+                        <p class="text-base font-semibold text-slate-700 bg-slate-50 p-3 rounded border border-slate-100">${item.structure}</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1">Example in Use</h4>
+                        <p class="text-base text-slate-600 italic pl-3 border-l-4 border-indigo-300">"${item.example}"</p>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Fisher-Yates Shuffle
+        function shuffle(array) {
+            let currentIndex = array.length, randomIndex;
+            while (currentIndex !== 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+            }
+            return array;
+        }
+
+        // Test Logic
+        function loadStats() {
+            const lastScore = localStorage.getItem('u6_last_score');
+            const lastDate = localStorage.getItem('u6_last_date');
+
+            if (lastScore && lastDate) {
+                document.getElementById('stats-container').classList.remove('hidden');
+                document.getElementById('last-score').textContent = `Score: ${lastScore}%`;
+                document.getElementById('last-date').textContent = `Taken on: ${new Date(lastDate).toLocaleDateString()}`;
+            }
+        }
+
+        function startTest() {
+            currentQuestions = shuffle([...questionsData]).slice(0, 30);
+            currentQuestionIndex = 0;
+            score = 0;
+
+            document.getElementById('test-intro').classList.add('hidden');
+            document.getElementById('test-results').classList.add('hidden');
+            document.getElementById('test-area').classList.remove('hidden');
+
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const q = currentQuestions[currentQuestionIndex];
+            document.getElementById('question-counter').textContent = `Question ${currentQuestionIndex + 1} / ${currentQuestions.length}`;
+
+            const progress = ((currentQuestionIndex) / currentQuestions.length) * 100;
+            document.getElementById('progress-bar').style.width = `${progress}%`;
+
+            const textHtml = q.text.replace('___', '<span class="inline-block w-16 border-b-2 border-slate-400 mx-1"></span>');
+            document.getElementById('question-text').innerHTML = textHtml;
+
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+
+            const shuffledOptions = shuffle([...q.options]);
+
+            shuffledOptions.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn w-full text-left px-6 py-4 rounded-xl font-medium text-slate-700 focus:outline-none';
+                btn.textContent = opt;
+                btn.onclick = () => selectOption(opt, btn);
+                optionsContainer.appendChild(btn);
+            });
+
+            document.getElementById('feedback-container').classList.add('hidden');
+        }
+
+        function selectOption(selectedOpt, btnElement) {
+            const allBtns = document.querySelectorAll('.option-btn');
+            allBtns.forEach(b => b.disabled = true);
+
+            const q = currentQuestions[currentQuestionIndex];
+            const isCorrect = selectedOpt === q.correctAnswer;
+
+            if (isCorrect) {
+                score++;
+                btnElement.classList.add('correct');
+                document.getElementById('feedback-message').textContent = 'Correct!';
+                document.getElementById('feedback-message').className = 'font-bold text-emerald-600 text-lg';
+            } else {
+                btnElement.classList.add('incorrect');
+                allBtns.forEach(b => {
+                    if (b.textContent === q.correctAnswer) b.classList.add('correct');
+                });
+                document.getElementById('feedback-message').textContent = 'Incorrect';
+                document.getElementById('feedback-message').className = 'font-bold text-red-600 text-lg';
+            }
+
+            document.getElementById('feedback-explanation').innerHTML = `<span class="font-semibold text-slate-800">Rule (${q.type}):</span> ${q.explanation}`;
+            document.getElementById('feedback-container').classList.remove('hidden');
+
+            if (currentQuestionIndex === currentQuestions.length - 1) {
+                document.getElementById('next-btn').textContent = 'Finish Test';
+            } else {
+                document.getElementById('next-btn').textContent = 'Next Question';
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < currentQuestions.length) {
+                showQuestion();
+            } else {
+                finishTest();
+            }
+        }
+
+        function finishTest() {
+            document.getElementById('test-area').classList.add('hidden');
+            document.getElementById('test-results').classList.remove('hidden');
+
+            const percentage = Math.round((score / currentQuestions.length) * 100);
+            document.getElementById('final-score-text').textContent = `You scored ${score} out of ${currentQuestions.length} (${percentage}%)`;
+
+            let title = "Test Complete!";
+            if(percentage >= 80) title = "Excellent Work! 🏆";
+            else if(percentage >= 60) title = "Good Job! 👍";
+            else title = "Keep Practicing! 📚";
+
+            document.getElementById('final-score-title').textContent = title;
+
+            localStorage.setItem('u6_last_score', percentage);
+            localStorage.setItem('u6_last_date', new Date().toISOString());
+            loadStats();
+        }
+
+        function resetTest() {
+            document.getElementById('test-results').classList.add('hidden');
+            document.getElementById('test-intro').classList.remove('hidden');
+        }
+
+        // Start
+        init();
+    </script>
+</body>
+</html>

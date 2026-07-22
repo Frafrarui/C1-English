@@ -1,0 +1,581 @@
+{
+  "id": "exam2",
+  "title": "Test 1 (Cambridge C1 Advanced)",
+  "description": "Test 1 completo: Use of English, Reading y Listening.",
+  "examType": "cae",
+  "scoring": {
+    "useOfEnglish": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 2 },
+      "nominalMax": 28,
+      "passPercentage": 57
+    },
+    "reading": {
+      "partPoints": { "5": 2, "6": 2, "7": 2, "8": 1 },
+      "nominalMax": 50,
+      "passPercentage": 64
+    },
+    "listening": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 1, "5": 1 },
+      "nominalMax": 30,
+      "passPercentage": 60
+    }
+  },
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+          "text": "The camera never lies\n\nArthur Conan Doyle, creator of the Sherlock Holmes stories, (0) believed himself to be a rational man, a scientist even. But in 1920, when he saw photographs of fairies taken in a garden (1)___, he thought he was seeing scientific proof that these tiny creatures really existed. He published the photographs alongside an article he wrote, (2)___ fairies as supernatural wonders. It was not until 1939 that the two ladies who took the photos admitted these were (3)___. They simply cut out pictures of fairies from a book and (4)___ them among flowers. The results are (5)___ beautiful. But the simplicity of the trick (6)___ a basic principle of photography, that the camera cannot lie.\n\nBut it can, and always could. Today, we are used to computer software (7)___ us to rework our digital images and it is a (8)___ that photography ever had a true age of innocence. From the moment cameras began capturing reality, that reality was being altered.",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "venue" },
+                { "label": "B", "text": "setting" },
+                { "label": "C", "text": "background" },
+                { "label": "D", "text": "surrounding" }
+              ],
+              "answer": "B",
+              "explanation": "'Garden setting' es la colocación natural para describir el entorno de una fotografía. 'Venue' se usa para el lugar de un evento, 'background' sería solo el fondo de la imagen (no el entorno completo) y 'surrounding' no funciona como sustantivo contable aquí (se diría 'surroundings')."
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "calling" },
+                { "label": "B", "text": "naming" },
+                { "label": "C", "text": "attributing" },
+                { "label": "D", "text": "acknowledging" }
+              ],
+              "answer": "D",
+              "explanation": "'Acknowledging X as Y' (reconocer X como Y) encaja con la idea de aceptar a las hadas como maravillas sobrenaturales. 'Attributing' exige la estructura 'attribute X to Y' (no 'as'), y 'calling'/'naming X as Y' no son colocaciones naturales en este contexto."
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "false" },
+                { "label": "B", "text": "faulty" },
+                { "label": "C", "text": "fake" },
+                { "label": "D", "text": "fictional" }
+              ],
+              "answer": "C",
+              "explanation": "'Fake photographs' es la colocación habitual para fotos manipuladas. 'False' se usa más para afirmaciones o declaraciones, 'faulty' describe objetos defectuosos y 'fictional' se aplica a historias o personajes inventados, no a fotografías."
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "arranged" },
+                { "label": "B", "text": "spaced" },
+                { "label": "C", "text": "settled" },
+                { "label": "D", "text": "distributed" }
+              ],
+              "answer": "A",
+              "explanation": "'Arranged them among flowers' describe colocarlas con cuidado en un sitio. 'Spaced' implicaría distancia regular entre ellas, 'settled' no se usa con objetos así, y 'distributed' sugiere reparto en muchos lugares distintos, no una composición cuidada."
+            },
+            {
+              "id": "ue1_5",
+              "number": 5,
+              "options": [
+                { "label": "A", "text": "categorically" },
+                { "label": "B", "text": "unavoidably" },
+                { "label": "C", "text": "substantially" },
+                { "label": "D", "text": "undeniably" }
+              ],
+              "answer": "D",
+              "explanation": "'Undeniably beautiful' (innegablemente hermosas) es una colocación habitual con adjetivos. 'Categorically' se usa con verbos de afirmación/negación, 'unavoidably' implica algo inevitable y 'substantially' indica grado o cantidad; ninguno encaja bien con 'beautiful'."
+            },
+            {
+              "id": "ue1_6",
+              "number": 6,
+              "options": [
+                { "label": "A", "text": "weakens" },
+                { "label": "B", "text": "undermines" },
+                { "label": "C", "text": "demolishes" },
+                { "label": "D", "text": "dismantles" }
+              ],
+              "answer": "B",
+              "explanation": "'Undermine a principle' (socavar un principio) es la colocación estándar. 'Weakens' es posible pero menos preciso aquí, y 'demolishes'/'dismantles' son demasiado literales y fuertes para algo abstracto como un 'principio'."
+            },
+            {
+              "id": "ue1_7",
+              "number": 7,
+              "options": [
+                { "label": "A", "text": "letting" },
+                { "label": "B", "text": "supporting" },
+                { "label": "C", "text": "enabling" },
+                { "label": "D", "text": "empowering" }
+              ],
+              "answer": "C",
+              "explanation": "'Software enabling us to do something' (que nos permite hacer algo) es la colocación estándar. 'Letting' no se usa así con 'software' como sujeto en este registro formal, y 'supporting'/'empowering' no transmiten la idea directa de 'permitir hacer'."
+            },
+            {
+              "id": "ue1_8",
+              "number": 8,
+              "options": [
+                { "label": "A", "text": "fantasy" },
+                { "label": "B", "text": "legend" },
+                { "label": "C", "text": "dream" },
+                { "label": "D", "text": "myth" }
+              ],
+              "answer": "D",
+              "explanation": "'It is a myth that...' (es un mito que...) es la estructura fija. 'Fantasy'/'dream' no encajan con 'it is a ___ that...', y 'legend' se refiere a historias tradicionales, no a esta idea abstracta sobre la fotografía."
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+          "text": "Online passwords - what everyone should know\n\nWhen (0) it comes to online security, we all know what we ought to do: choose a different, random set of letters and numbers for every email account, shopping site or bank account. But hardly (9)___ does this, because memorising them all is impossible. So we use the same familiar words for every site, (10)___ a pet's name or, even worse, the word 'password', occasionally remembering to replace the letter O with a zero, or choosing to (11)___ use of a capital letter.\n\nEven if we opt (12)___ a random group of letters such as 'fpqzy', there is now software available which can make a thousand guesses per second, enabling a hacker to get to your password in just under four hours.\n\nInterestingly, (13)___ increasing your password to twenty random letters, you increase a hacker's guessing time to 6.5 thousand trillion centuries. The problem is that you would (14)___ no chance of ever remembering those 20 letters. The solution, apparently, is to come (15)___ with three or four short, unrelated words and work (16)___ a way to remember them. Easy!",
+          "questions": [
+            { "id": "ue2_9", "number": 9, "answer": "anyone", "acceptedAnswers": ["anybody"], "explanation": "'Hardly anyone does this' = casi nadie hace esto. Tras 'hardly' (que ya aporta sentido negativo) se necesita un pronombre indefinido afirmativo como 'anyone'/'anybody', no 'no one' (sería doble negación) ni un verbo." },
+            { "id": "ue2_10", "number": 10, "answer": "like", "explanation": "'Like a pet's name' introduce un ejemplo (como el nombre de una mascota). 'Such' necesitaría la pareja 'such as' (dos palabras), pero el ejercicio pide solo una palabra por hueco." },
+            { "id": "ue2_11", "number": 11, "answer": "make", "explanation": "Colocación fija: 'make use of something' = hacer uso de algo." },
+            { "id": "ue2_12", "number": 12, "answer": "for", "explanation": "Colocación fija: 'opt for something' = optar por algo. La preposición que acompaña a 'opt' siempre es 'for'." },
+            { "id": "ue2_13", "number": 13, "answer": "by", "explanation": "'By + gerundio' (by increasing) indica el medio o la manera de conseguir algo: 'increasing your password... you increase...'." },
+            { "id": "ue2_14", "number": 14, "answer": "have", "acceptedAnswers": ["stand"], "explanation": "'Have no chance of doing something' = no tener ninguna posibilidad de hacer algo. 'Stand no chance' es una alternativa idiomática equivalente." },
+            { "id": "ue2_15", "number": 15, "answer": "up", "explanation": "Phrasal verb fijo: 'come up with something' = idear o inventar algo." },
+            { "id": "ue2_16", "number": 16, "answer": "out", "acceptedAnswers": ["on"], "explanation": "Phrasal verb fijo: 'work out a way' = encontrar/idear una manera. 'Work on a way' también es aceptable con el sentido de trabajar en buscarla." }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "word-formation",
+          "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+          "text": "Too many climbers on Mount Everest\n\nMount Everest in Nepal is becoming (0) increasingly popular as a destination for adventure tourism. During the month of May, (17)___ weather presents a number of safe opportunities to make the climb. As a result, the sheer number of climbers has brought an (18)___ problem, potentially even more dangerous than low temperatures and changeable weather - overcrowded conditions. The fact that there are so many climbers, many of them complete (19)___, means that at times people are queuing for hours to reach the summit.\n\nThis hazard has led to calls for stricter assessments of new learner climbers, as in their (20)___ to reach the mountain's summit such inexperienced climbers are sometimes ignoring the advice of their Nepalese guides, which may (21)___ everyone's lives.\n\nPerhaps one (22)___ would be to make the charges for climbing the mountain so high that only a few people could afford the climb. Or (23)___, one could ban the use of artificial oxygen and local guides, leaving Everest to the very best (24)___. Extreme, maybe, but it may just prove necessary.",
+          "questions": [
+            { "id": "ue3_17", "number": 17, "prompt": "FAVOUR", "answer": "favourable", "acceptedAnswers": ["favorable"] },
+            { "id": "ue3_18", "number": 18, "prompt": "EXPECT", "answer": "unexpected" },
+            { "id": "ue3_19", "number": 19, "prompt": "BEGIN", "answer": "beginners" },
+            { "id": "ue3_20", "number": 20, "prompt": "DESPERATE", "answer": "desperation" },
+            { "id": "ue3_21", "number": 21, "prompt": "DANGER", "answer": "endanger" },
+            { "id": "ue3_22", "number": 22, "prompt": "SOLVE", "answer": "solution" },
+            { "id": "ue3_23", "number": 23, "prompt": "ALTERNATE", "answer": "alternatively" },
+            { "id": "ue3_24", "number": 24, "prompt": "MOUNTAIN", "answer": "mountaineers", "acceptedAnswers": ["mountaineer"] }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "key-word-transformation",
+          "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+          "questions": [
+            {
+              "id": "ue4_25",
+              "number": 25,
+              "sentence1": "'You should stop your children watching so much television,' Mary's sister told her.",
+              "keyword": "LET",
+              "sentence2": "Mary's sister advised her ___ so much television.",
+              "answer": "not to let her children watch",
+              "acceptedAnswers": ["not to let the children watch", "not to let her kids watch", "not to let the kids watch"]
+            },
+            {
+              "id": "ue4_26",
+              "number": 26,
+              "sentence1": "The local council wants to impose a ban on driving at more than 30 kilometres per hour anywhere in this area.",
+              "keyword": "ILLEGAL",
+              "sentence2": "The local council wants to ___ at more than 30 kilometres per hour anywhere in this area.",
+              "answer": "make it illegal to drive"
+            },
+            {
+              "id": "ue4_27",
+              "number": 27,
+              "sentence1": "Tom missed his plane because he was late leaving for the airport.",
+              "keyword": "TIME",
+              "sentence2": "If only ___ for the airport, he wouldn't have missed his plane.",
+              "answer": "he had left on time",
+              "acceptedAnswers": ["he had left in time", "tom had left on time", "tom had left in time", "he had been on time leaving", "he had been in time leaving"]
+            },
+            {
+              "id": "ue4_28",
+              "number": 28,
+              "sentence1": "The guidelines for the appointment of new staff need to be thoroughly revised.",
+              "keyword": "THOROUGH",
+              "sentence2": "There needs ___ the guidelines for the appointment of new staff.",
+              "answer": "to be a thorough revision of",
+              "acceptedAnswers": ["to be thorough revision of", "to be a thorough revising of", "to be thorough revising of", "to be a thorough revision to"]
+            },
+            {
+              "id": "ue4_29",
+              "number": 29,
+              "sentence1": "The employment rate rose gradually as the economy began to recover.",
+              "keyword": "GRADUAL",
+              "sentence2": "There ___ the employment rate as the economy began to recover.",
+              "answer": "was a gradual rise in",
+              "acceptedAnswers": ["was a gradual increase in", "was a gradual improvement in"]
+            },
+            {
+              "id": "ue4_30",
+              "number": 30,
+              "sentence1": "The change in the company's logo didn't make any difference to the majority of its customers.",
+              "keyword": "CONSEQUENCE",
+              "sentence2": "The change in the company's logo ___ to the majority of its customers.",
+              "answer": "was of no consequence",
+              "acceptedAnswers": ["was not of consequence", "was not of any consequence", "wasn't of consequence", "wasn't of any consequence"]
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 5,
+          "type": "multiple-choice",
+          "instructions": "You are going to read an article about a famous psychologist. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "text": "Jean Piaget\n\nJean Piaget, the pioneering Swiss philosopher and psychologist, became famous for his theories on child development. A child prodigy, he became interested in the scientific study of nature at an early age. He developed a special fascination for biology, having some of his work published before graduating from high school. When, aged 10, his observations led to questions that could be answered only by access to the university library, Piaget wrote and published some notes on the sighting of an albino sparrow in the hope that this would persuade the librarian to stop treating him like a child. It worked. Piaget was launched on a path that led to his doctorate in zoology and a lifelong conviction that the way to understand anything is to know how it evolves.\n\nPiaget went on to spend much of his professional life listening to and watching children, and poring over reports of researchers who were doing the same. He found, to put it succinctly, that children don't think like adults. After thousands of interactions with young people often barely old enough to talk, Piaget began to suspect that behind their cute and seemingly illogical utterances were thought processes that had their own kind of order and their own special logic. Albert Einstein, the renowned physicist, deemed this discovery 'so simple that only a genius could have thought of it'.\n\nPiaget's insight opened a new window into the inner workings of the mind. Several new fields of science, among them developmental psychology and cognitive theory, came into being as a result of his research. Although not an educational reformer, he championed a way of thinking about children that provided the foundation for today's education reform movements. One might say that Piaget was the first to take children's thinking seriously. Others who shared this respect for children may have fought harder for immediate change in schools, but Piaget's influence on education remains deeper and more pervasive.\n\nPiaget has been revered by generations of teachers inspired by the belief that children are not empty vessels to be filled with knowledge, as traditional academic thinking had it, but active builders of knowledge - little scientists who are constantly creating and testing their own theories of the world. And while he may not be as famous as Sigmund Freud, Piaget's contribution to psychology may be longer lasting. As computers and the Internet give children greater autonomy to explore ever larger digital worlds, the ideas he pioneered become ever more relevant.\n\nIn the 1940s, working in Alfred Binet's child-psychology lab in Paris, Piaget noticed that children of the same age, regardless of their background or gender, made comparable errors on true-false intelligence tests. Back in Switzerland, the young scientist began watching children play, scrupulously recording their words and actions as their minds raced to find reasons for why things are the way they are. Piaget recognised that a five-year-old's beliefs, while not correct by any adult criterion, are not 'incorrect' either. They are entirely sensible and coherent within the framework of the child's 'way of knowing'. In Piaget's view, classifying them as 'true' or 'false' misses the point and shows a lack of respect for the child. What Piaget was after was a theory that could find coherence and ingenuity in the child's justification, and evidence of a kind of explanatory principle that stands young children in very good stead when they don't know enough or don't have enough skill to handle the kind of explanation that grown-ups prefer.\n\nThe core of Piaget's work is his belief that looking carefully at how children acquire knowledge sheds light on how adults think and understand the world. Whether this has, in fact, led to deeper understanding remains, like everything about Piaget, contentious. In recent years, Piaget has been vigorously challenged by the current emphasis on viewing knowledge as an intrinsic property of the brain. Ingenious experiments have demonstrated that newborn infants already have some of the knowledge that Piaget believed children constructed. But for those of us who still see Piaget as the giant in the field of cognitive theory, the disparity between what the baby brings and what the adult has is so immense that the new discoveries do not significantly reduce the gap, only increase the mystery.",
+          "questions": [
+            {
+              "id": "r5_31",
+              "number": 31,
+              "prompt": "In the first paragraph, the writer suggests that as a child Piaget",
+              "options": [
+                { "label": "A", "text": "was particularly eager to teach others about animals." },
+                { "label": "B", "text": "was confident his research would help other children." },
+                { "label": "C", "text": "was already certain about the career he would follow." },
+                { "label": "D", "text": "was determined that nothing should hold back his progress." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_32",
+              "number": 32,
+              "prompt": "In quoting Einstein, the writer is",
+              "options": [
+                { "label": "A", "text": "questioning the simplicity of Piaget's ideas." },
+                { "label": "B", "text": "supporting the conclusion that Piaget reached." },
+                { "label": "C", "text": "suggesting that Piaget's research methods were unprecedented." },
+                { "label": "D", "text": "recommending a less complicated approach than Piaget's." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_33",
+              "number": 33,
+              "prompt": "In the third paragraph, the writer puts forward the view that",
+              "options": [
+                { "label": "A", "text": "Piaget's work with children was difficult to put to a practical use." },
+                { "label": "B", "text": "Piaget's theories about children were less revolutionary than he thought." },
+                { "label": "C", "text": "Piaget laid the basis for our current understanding of how children's minds work." },
+                { "label": "D", "text": "Piaget was actually committed to radical change in the education system." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_34",
+              "number": 34,
+              "prompt": "The phrase 'empty vessels' (paragraph 4) refers to",
+              "options": [
+                { "label": "A", "text": "why children should be encouraged to study more independently." },
+                { "label": "B", "text": "what traditional academic theory said about children and learning." },
+                { "label": "C", "text": "how teachers can increase children's motivation to learn." },
+                { "label": "D", "text": "the kind of knowledge that children need to acquire." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_35",
+              "number": 35,
+              "prompt": "The writer says Piaget was unwilling to categorise children's ideas as true or false because",
+              "options": [
+                { "label": "A", "text": "he realised that the reasoning behind a child's statement was more important." },
+                { "label": "B", "text": "he knew that this could have long-term effects on a child." },
+                { "label": "C", "text": "he felt that this did not reflect what happens in real life." },
+                { "label": "D", "text": "he felt that children are easily influenced by what adults have told them." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "r5_36",
+              "number": 36,
+              "prompt": "What does the writer conclude about newer theories that have appeared?",
+              "options": [
+                { "label": "A", "text": "They completely undermine Piaget's ideas." },
+                { "label": "B", "text": "They put greater emphasis on scientific evidence." },
+                { "label": "C", "text": "They are an interesting addition to the body of knowledge." },
+                { "label": "D", "text": "They are based on flawed research." }
+              ],
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 6,
+          "type": "cross-text-multiple-matching",
+          "instructions": "You are going to read four contributions to an online debate about advertising. For questions 37-40, choose from the contributions A-D. The contributions may be chosen more than once. Write only the letter (A, B, C or D) as your answer.",
+          "text": "The role of advertising in society today\n\nA. Almost all public spaces nowadays have advertisements in sight, and all forms of media, from newspapers to the cinema to the Internet, are filled with adverts. This all-pervasive presence reflects the value of advertising to us. Without it, businesses of all types and sizes would struggle to inform potential customers about the products or services they provide, and consumers would be unable to make informed assessments when looking for products to buy and services to use. Without advertising, the promotion of products and practices that contribute to our physical and psychological well-being - medicines to treat minor ailments, insurance schemes to protect us, clothes and cosmetics to make us look and feel better - would be infinitely more problematic than it is. And without advertisements and the aspirations represented in them, the world would be a far duller place.\n\nB. Advertising is everywhere, and it's often so subtle that we don't realise it's there at some level of our consciousness. The ultimate aim, of course, is to get us to buy things, regardless of whether it makes sense for us to do so. In fact, adverts mostly impair rational decision-making. A recent study in the UK found that 90% of customers failed to understand the truth about what was on offer in adverts for broadband internet services. This irrational dimension is evident in the success advertisers enjoy not only in getting us to buy products that, directly or indirectly, cause physical damage to us, but also in raising our expectations about what our lives should be like - expectations that inevitably imply something is wrong with us if we don't meet them. Having said this, advertising is fundamental to the workings of modern economies, so the chances are that it will only continue to grow in significance.\n\nC. There is a tendency to underestimate people's intelligence and to invest advertising with powers it doesn't have. Certain dubious techniques have been banned - like the use of subliminal images shown so quickly that viewers don't consciously realise they've seen them - but other forms of advertising are simply manifestations of creativity. Audiences understand this and are able to enjoy adverts without falling prey to some complex deception. They know that an advert tells them a product exists and suggests they might benefit from having it. They don't expect it to provide objective details, confirming why they should or should not go ahead with a purchase. They are also smart enough to know that what they see in advertisements is fiction and, therefore, not something they should feel bad about if they don't have it. The bottom line, however, is that advertising helps the wheels of the economy to turn, a crucial role which societies are likely to depend on for the foreseeable future.\n\nD. Advertising is a worldwide, multi-billion dollar industry and inevitably tends to favour large businesses, which can afford advertising costs, rather than smaller companies, which can't. In that way, it makes life ever more difficult for that sector of the economy - small and medium-sized businesses - which is the key to a nation's prosperity. Advertising also encourages certain patterns of consumption - fast food, cars, labour-saving devices and so on - which characterise a sedentary lifestyle and undermine physical well-being, while also generating a sense of inadequacy and unhappiness among people who feel inferior if they don't possess a product or conform to certain ideas of what is 'beautiful' or 'cool'. And far from providing consumers with clear, reliable information enabling them to make sensible decisions about what to spend their money on, advertisers use underhand methods to confuse and manipulate feelings and thoughts.",
+          "questions": [
+            {
+              "id": "r6_37",
+              "number": 37,
+              "prompt": "Which contributor expresses a different view from the others about the impact that advertising has on a country's economy?",
+              "answer": "D"
+            },
+            {
+              "id": "r6_38",
+              "number": 38,
+              "prompt": "Which contributor has a different opinion from the others on the extent to which advertising helps people to make choices?",
+              "answer": "A"
+            },
+            {
+              "id": "r6_39",
+              "number": 39,
+              "prompt": "Which contributor takes a similar view to contributor D about the influence advertising can have on people's self-esteem?",
+              "answer": "B"
+            },
+            {
+              "id": "r6_40",
+              "number": 40,
+              "prompt": "Which contributor expresses a different opinion from contributor B regarding public awareness of how advertising works?",
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "partNumber": 7,
+          "type": "gapped-text",
+          "instructions": "You are going to read a magazine article about whale sharks. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use. Write only the letter (A-G) as your answer.",
+          "text": "Secrets of the deep\n\nUntil recently, little was known about the movements of the whale shark. But a pioneering project is shedding new light on this ocean giant. Project scientist Jonathan Green reports.\n\nWhen an animal the size of a very large double-decker bus - the largest fish in the ocean - makes a sudden 90° turn, it has to be for a good reason. As the satellite tracks started to come in from whale sharks which we had tagged off the Galapagos Islands, they clearly showed that as the sharks were swimming away from the islands, they all reaching a certain point and then making a very abrupt change in direction.\n\n[41]\n\nThat, among other things, was what The Galapagos Whale Shark Project was attempting to find out. Established to study the population of sharks that visits the islands each year, the primary aim of the research was to find out more about whale shark movements on a local scale.\n\n[42]\n\nThis involved two main processes. To begin with, we had to be able to identify individual sharks. We used a modified version of photo software initially developed for the mapping of stars and deep-space objects. This worked because the characteristic white spots of the whale shark resemble the human fingerprint in that each pattern is individually unique. By running photographs of the sharks' sides through the software, we could characterise the patterns of spots, and figure out which shark was which.\n\n[43]\n\nWe also attached tags to track their movements. This was done by inserting a small dart through the thick skin into a fatty layer beneath using a pneumatic spear gun and then tethering the tags with a piece of steel cable. They were intended to be towed alongside or above the dorsal fin in order to break the surface and transmit data by satellite. But getting the tags to stay on was easier said than done. For reasons unknown, some came off in less than 24 hours.\n\n[44]\n\nThe sharks used common departure routes soon after we had tagged them. They headed due north, following a series of sea fissures until they reached the Galapagos Rift Valley system. This zone is where the divergence of two oceanic plates has created a rift system similar to that which runs through eastern Africa. Many reached the margin between the two plates and most then turned west.\n\n[45]\n\nConversely, one juvenile female's track was astounding, overlaying almost perfectly the rift system as it runs west. It's clear that she and the other whale sharks are using geological features as route indicators, just as motorists use, say, familiar buildings. But how the sharks perceive such features thousands of meters below on the ocean floor is as yet unresolved.\n\n[46]\n\nThe theory we are working on is that the Earth's magnetic field reverses its polarity intermittently over the course of time, thus supplying a source of directional information. Fault systems, rift valleys, ocean trenches and plate margins all emit a distinct magnetic signature that can be used by whale sharks and other species as a virtual map.",
+          "paragraphOptions": [
+            { "label": "A", "text": "There may be a number of explanations: the sharks might have rubbed up against rocks, or the tags may have been ripped off by associated species, such as silky sharks, that mistook them for prey. Having begun with a 1.8-metre tether, we shortened this to 1.3 metres, which seemed to be more effective." },
+            { "label": "B", "text": "After three months, all the sharks that had retained their tags proceeded to head south. They converged on three mountain chains that run westwards from the edge of Peru's continental shelf. There, one by one, they shed their tags and continued on to destinations unknown." },
+            { "label": "C", "text": "However, it wasn't until we overlaid them onto a map of the sea floor that we saw that these movements were apparently in response to geological features deep in the ocean that the sharks couldn't possibly see. It became clear that they must somehow be using faults, fissures and plate boundaries. But how?" },
+            { "label": "D", "text": "After all, the marine environment, in comparison to that on land, has few apparent points of reference. The waters are often murky and the maximum penetration of light only extends into the upper levels. So how do marine creatures navigate over long distances?" },
+            { "label": "E", "text": "We undertook one of the most ambitious whale shark programmes to date. The fieldwork was carried out in three 15-day sorties." },
+            { "label": "F", "text": "The frequency of transmissions from the tags depended on the behaviour of the individual sharks. Some spent a lot of time on or near the surface, and their tags reported on a regular basis. Others, such as the single male we tagged, spent a great deal of the time diving - for six weeks we didn't receive a single transmission." },
+            { "label": "G", "text": "If spotted at the same location at a later date, or a different location, the shark was 'recaptured' on a database, which stores photos of whale sharks from around the globe, thus providing details of their movements geographically and over time." }
+          ],
+          "questions": [
+            { "id": "r7_41", "number": 41, "answer": "C" },
+            { "id": "r7_42", "number": 42, "answer": "E" },
+            { "id": "r7_43", "number": 43, "answer": "G" },
+            { "id": "r7_44", "number": 44, "answer": "A" },
+            { "id": "r7_45", "number": 45, "answer": "F" },
+            { "id": "r7_46", "number": 46, "answer": "D" }
+          ]
+        },
+        {
+          "partNumber": 8,
+          "type": "multiple-matching",
+          "instructions": "You are going to read an article about employees who do some or all of their work from home. For questions 47-56, choose from the sections (A-D). The sections may be chosen more than once. Write only the letter (A, B, C or D) as your answer.",
+          "text": "The Rise of Home Working\n\nA. Whether you call it working from home, telecommuting or home-working, it's a growing market. Banks, call centres, councils, software companies, law firms, PR agencies: all are increasingly allowing their staff to do it at least part-time. British Telecom, the pioneer of home working in Britain, now has 65,000 flexible workers, of whom 10,000 do not come into the office at all. However, we're still a long way from the dreams of 25 years ago, which imagined offices emptying of everyone who didn't operate a machine or wield a mop. So how do you get on the home-working bandwagon? In some countries, if you have a child under 16, or 18 if they are disabled, in a sense you have a head start. Employers in Britain are legally obliged at least to consider your case if you ask to work flexibly, and that could include working at home for at least part of the week. They must also consider an application if you are caring for a friend or a family member. But even if none of those apply, you are still likely to have a strong case - if you can persuade your company to listen.\n\nB. Not only do home workers cut down the need for large offices, they are often vastly more productive. American studies show a 30-40% increase. Noel Hodson, a key proponent of home working, suggests that this is at least partly down to the removal of the daily commute: 'What we found was that most of the time saved went back into work. These workers valued their new lifestyle and to protect it they did more work.' Companies that offer flexible working also find it easier to attract staff, and to hang on to them. At British Telecom, at least 97% of women who take maternity leave come back to work afterwards, against a national average of about half that. The downtime, the recruitment, the instruction of each person at a very moderate estimate would be around £10,000. So, not only are they creating a more socially integrated company in line with government guidelines, they're saving £5m-£6m on skill losses.\n\nC. And there are bonuses for society too. Home working encourages a more diverse labour force, introducing to the world of work, sometimes for the first time, not just carers but disabled people or those who live in remote locations. Then there's the reduction in pollution and greenhouse gases. So if home working is so great, why aren't we all doing it? 'The issues are human, not technological,' says Peter Thomson of the Telework Association. 'For the past 200 years we have been in an environment where people get together in the same place to work and a manager stands there and watches what they do.' So the last barriers are attitudinal, but it's a myth that someone is in total charge of what people do just because they are all working in the same location. Most managers who are worried about this kind of thing are actually holed up in their offices and rarely interact with their people. Merely turning up is a really poor performance indicator.\n\nD. Mark Thomas runs a PR consultancy whose employees work at home. 'We've come up with measures of performance that are more to do with what they produce than with desk time. This is the way forward,' he says. Some managers are concerned that their home workers might go shopping during the 'working day'. This goes against the idea of flexible working since hours shouldn't matter so long as the required productivity is there. The concern still remains whether some employees will abuse this, but the same technology that makes it possible to escape the office makes it harder to get away from your boss, which is surely true even if you work in an office. It's well known that some managers insist on interrupting their underlings' evenings and weekends with 'urgent' enquiries that could easily wait. So, many of us are already on call 24/7. However, the great thing about technology is that it has an 'off button'. The best employers will not just expect you to use it, but worry if you don't.",
+          "questions": [
+            { "id": "r8_47", "number": 47, "prompt": "the mistaken view that physical proximity at work automatically ensures good supervision", "answer": "C" },
+            { "id": "r8_48", "number": 48, "prompt": "the fact that the proportion of home workers in the labour force has not matched expectations", "answer": "A" },
+            { "id": "r8_49", "number": 49, "prompt": "the risk of an employer making unreasonable demands on a home worker", "answer": "D" },
+            { "id": "r8_50", "number": 50, "prompt": "the fact that staff retention increases in firms that encourage home working", "answer": "B" },
+            { "id": "r8_51", "number": 51, "prompt": "the duty of firms not to dismiss requests to work at home out of hand", "answer": "A" },
+            { "id": "r8_52", "number": 52, "prompt": "one of the main obstacles to home working in employers' minds being the fear of loss of direct control", "answer": "C" },
+            { "id": "r8_53", "number": 53, "prompt": "personal circumstances increasing the likelihood of an individual being allowed to work at home", "answer": "A" },
+            { "id": "r8_54", "number": 54, "prompt": "the wider benefits that home working brings to the community", "answer": "C" },
+            { "id": "r8_55", "number": 55, "prompt": "the advisability of ensuring that home workers are not putting in excessive hours", "answer": "D" },
+            { "id": "r8_56", "number": 56, "prompt": "a reduction in expenditure on premises as a result of home working", "answer": "B" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "You will hear three different extracts. For questions 1-6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "Extract One - You hear two friends talking about a new office building. The woman says that in the building some people are having difficulty",
+              "options": [
+                { "label": "A", "text": "coping with the new technology." },
+                { "label": "B", "text": "adjusting to a new concept of work." },
+                { "label": "C", "text": "working without clear supervision." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Extract One - She thinks one effect of people moving around the building will be to",
+              "options": [
+                { "label": "A", "text": "promote physical as well as mental well-being." },
+                { "label": "B", "text": "create a more productive work force." },
+                { "label": "C", "text": "provide useful contact with other employees." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "Extract Two - You hear two friends discussing business travel. The woman believes that in future companies should",
+              "options": [
+                { "label": "A", "text": "fly only with airlines that have an eco-friendly policy." },
+                { "label": "B", "text": "concentrate on the use of video conferencing." },
+                { "label": "C", "text": "reduce overall levels of executive travel." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "Extract Two - The man thinks that the prime consideration for transport providers should be",
+              "options": [
+                { "label": "A", "text": "increasing revenue." },
+                { "label": "B", "text": "thinking long-term." },
+                { "label": "C", "text": "creating jobs." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_5",
+              "number": 5,
+              "prompt": "Extract Three - You hear two friends talking about some research. What is the man's attitude to the research?",
+              "options": [
+                { "label": "A", "text": "He is doubtful about the methods used." },
+                { "label": "B", "text": "He is surprised by its findings." },
+                { "label": "C", "text": "He is dismissive of the concept behind it." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_6",
+              "number": 6,
+              "prompt": "Extract Three - During the discussion, the woman reveals her",
+              "options": [
+                { "label": "A", "text": "sympathy towards the subjects of the experiments." },
+                { "label": "B", "text": "interest in complex human behaviour." },
+                { "label": "C", "text": "admiration for the originality of the research." }
+              ],
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "sentence-completion",
+          "instructions": "You will hear a man called Steven Kane giving a presentation about research into a cargo of children's bath-toys which were lost at sea. For questions 7-14, complete the sentences with a word or short phrase.",
+          "questions": [
+            { "id": "l2_7", "number": 7, "prompt": "Of the four kinds of bath-toy lost at sea, Steven thinks the ___ had the most surprising colour.", "answer": "blue turtle", "acceptedAnswers": ["turtle"] },
+            { "id": "l2_8", "number": 8, "prompt": "The subject Steven was teaching when he first read about the bath-toys was ___.", "answer": "media studies" },
+            { "id": "l2_9", "number": 9, "prompt": "In Alaska, Steven heard of a lost consignment of ___, some of which turned up alongside the bath-toys.", "answer": "sneakers" },
+            { "id": "l2_10", "number": 10, "prompt": "Steven discovered that the bath-toys are used by scientists known as ___ in their research.", "answer": "oceanographers" },
+            { "id": "l2_11", "number": 11, "prompt": "Steven says that the findings obtained by researchers were immediately useful to the ___ industry.", "answer": "shipping" },
+            { "id": "l2_12", "number": 12, "prompt": "Steven mentions the particular case of a ___ adversely affected by plastic pollutants in the sea.", "answer": "seabird" },
+            { "id": "l2_13", "number": 13, "prompt": "Steven regarded the factory that he traced in China as the bath-toys' ___.", "answer": "birthplace", "acceptedAnswers": ["place of birth"] },
+            { "id": "l2_14", "number": 14, "prompt": "Steven travelled on something called an ___ on his journey across the Arctic.", "answer": "icebreaker" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "multiple-choice",
+          "instructions": "You will hear part of an interview in which two scientists called Jessica Conway and Paul Flower are talking about exploration and discovery. For questions 15-20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+          "questions": [
+            {
+              "id": "l3_15",
+              "number": 15,
+              "prompt": "In response to the idea that everything has already been discovered Jessica emphasises",
+              "options": [
+                { "label": "A", "text": "the potential for further marine exploration." },
+                { "label": "B", "text": "the precision of modern satellite technology." },
+                { "label": "C", "text": "the inaccuracy of modern mapping techniques." },
+                { "label": "D", "text": "the number of recent discoveries." }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "l3_16",
+              "number": 16,
+              "prompt": "Regarding new species found around underwater craters, Jessica says that",
+              "options": [
+                { "label": "A", "text": "they are being discovered less often these days." },
+                { "label": "B", "text": "they are more abundant in certain locations." },
+                { "label": "C", "text": "it is difficult to estimate possible numbers." },
+                { "label": "D", "text": "there are problems classifying them." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_17",
+              "number": 17,
+              "prompt": "When asked about geographical discoveries in general, Paul and Jessica agree that scientists need to",
+              "options": [
+                { "label": "A", "text": "make regular reassessments of their work." },
+                { "label": "B", "text": "compare their respective results." },
+                { "label": "C", "text": "recognise their limitations." },
+                { "label": "D", "text": "promote their findings." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_18",
+              "number": 18,
+              "prompt": "What does Paul say about walking where no one has ever walked before?",
+              "options": [
+                { "label": "A", "text": "It recharges his tired mind." },
+                { "label": "B", "text": "It makes him feel he is unique." },
+                { "label": "C", "text": "It gives him a sense of belonging." },
+                { "label": "D", "text": "It helps him forget physical discomfort." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_19",
+              "number": 19,
+              "prompt": "When asked about others visiting remote areas, Paul",
+              "options": [
+                { "label": "A", "text": "supports the public's right to experience them." },
+                { "label": "B", "text": "expresses his concern at growing urbanisation." },
+                { "label": "C", "text": "suggests it would benefit local communities." },
+                { "label": "D", "text": "criticises the attitude of some tourists." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_20",
+              "number": 20,
+              "prompt": "In Paul's view, future generations will",
+              "options": [
+                { "label": "A", "text": "only need to go online to experience the thrill of adventure." },
+                { "label": "B", "text": "have to reduce travel for environmental reasons." },
+                { "label": "C", "text": "be less interested in the concept of exploration." },
+                { "label": "D", "text": "still be attracted to isolated places." }
+              ],
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "multiple-matching",
+          "instructions": "You will hear five short extracts in which people are talking about taking up a new sport. TASK ONE: For questions 21-25, choose from the list (A-H) why each speaker took up their particular sport. Write only the letter (A-H) as your answer.\n\nA to make new friends\nB as the result of recommendations\nC to get fit\nD for the travel opportunities\nE as a personal challenge\nF for the thrill of competing\nG to improve a skill\nH as a result of discovering a talent",
+          "questions": [
+            { "id": "l4_21", "number": 21, "prompt": "Speaker 1", "answer": "B" },
+            { "id": "l4_22", "number": 22, "prompt": "Speaker 2", "answer": "E" },
+            { "id": "l4_23", "number": 23, "prompt": "Speaker 3", "answer": "F" },
+            { "id": "l4_24", "number": 24, "prompt": "Speaker 4", "answer": "D" },
+            { "id": "l4_25", "number": 25, "prompt": "Speaker 5", "answer": "H" }
+          ]
+        },
+        {
+          "partNumber": 5,
+          "type": "multiple-matching",
+          "instructions": "TASK TWO: For questions 26-30, choose from the list (A-H) what advice each speaker gives about taking up a new sport. Write only the letter (A-H) as your answer.\n\nA Stick to your training routine.\nB Don't let it rule your life.\nC Believe in yourself.\nD Get reliable assistance.\nE Follow a strict diet.\nF Try to be a good role model.\nG Don't expect instant rewards.\nH Continue to push to new limits.",
+          "questions": [
+            { "id": "l4_26", "number": 26, "prompt": "Speaker 1", "answer": "H" },
+            { "id": "l4_27", "number": 27, "prompt": "Speaker 2", "answer": "D" },
+            { "id": "l4_28", "number": 28, "prompt": "Speaker 3", "answer": "F" },
+            { "id": "l4_29", "number": 29, "prompt": "Speaker 4", "answer": "C" },
+            { "id": "l4_30", "number": 30, "prompt": "Speaker 5", "answer": "B" }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "relative_clauses": {
+    "title": "Relative Clauses",
+    "description": "Relative clauses provide extra information about a noun in the main clause. They are introduced by relative pronouns.",
+    "pronouns": [
+      { "word": "which", "usage": "something" },
+      { "word": "that", "usage": "something / someone (only in defining clauses)" },
+      { "word": "who", "usage": "someone" },
+      { "word": "whom", "usage": "someone (formal, object of the verb)" },
+      { "word": "whose", "usage": "possessions" },
+      { "word": "when", "usage": "time" },
+      { "word": "where", "usage": "place" },
+      { "word": "why", "usage": "reason" }
+    ],
+    "prepositions_whom": {
+      "title": "Prepositions + whom",
+      "details": "When a preposition is needed before a relative pronoun referring to a person, 'whom' is used in formal English.",
+      "examples": [
+        "Peter on whom I rely a lot.",
+        "Peter with whom I spoke yesterday.",
+        "Peter to whom I sent the email."
+      ],
+      "key_difference": "Formal: 'Peter with whom I spoke yesterday' vs Informal: 'Peter who I spoke with yesterday'."
+    },
+    "defining": {
+      "title": "Defining Relative Clauses",
+      "details": "They add essential information to identify the noun. Without them, the sentence doesn't make full sense. No commas are used. The relative pronoun can be omitted if it acts as the Direct Object. 'That' can replace who/which.",
+      "examples": [
+        "The film (that/which) I saw yesterday was great."
+      ]
+    },
+    "non_defining": {
+      "title": "Non-defining Relative Clauses",
+      "details": "They add extra, non-essential information. The sentence still makes sense without it. Commas must be used. 'That' CANNOT be used, and the relative pronoun cannot be omitted.",
+      "examples": [
+        "Avatar, which is my favourite film, was great."
+      ]
+    }
+  },
+  "participle_clauses": {
+    "title": "Participle Clauses",
+    "description": "Participle clauses are a way of making sentences more concise. They can be used to emphasize a piece of information or show sequence.",
+    "forms": [
+      { "form": "V-ing", "name": "Present Participle" },
+      { "form": "V-ed / 3rd column", "name": "Past Participle" },
+      { "form": "Having + V-ed", "name": "Perfect Participle" }
+    ],
+    "usages": [
+      {
+        "title": "Usage 1: Instead of Relative Clauses",
+        "details": "The relative pronoun and the verb 'to be' are removed.",
+        "examples": [
+          "Original: The man who is working as a teacher...",
+          "Participle: The man working as a teacher..."
+        ]
+      },
+      {
+        "title": "Usage 2: Instead of Conjunctions",
+        "details": "Participle clauses can replace conjunctions like because, so, as, while, and, when, once, after, if.",
+        "examples": [
+          {
+            "conjunction": "Because / So (Reason)",
+            "original": "Because I wanted to pass the test, I studied a lot.",
+            "participle": "Wanting to pass the test, I studied a lot."
+          },
+          {
+            "conjunction": "As / While (Simultaneous actions)",
+            "original": "While I was driving home, I saw an accident.",
+            "participle": "Driving home, I saw an accident."
+          },
+          {
+            "conjunction": "And (Sequential actions)",
+            "original": "I opened the door and saw the cat.",
+            "participle": "I opened the door, seeing the cat."
+          },
+          {
+            "conjunction": "When / Once / After (Sequence)",
+            "original": "After I had applied for the job, I waited for a call.",
+            "participle": "Having applied for the job, I waited for a call."
+          },
+          {
+            "conjunction": "If (Conditionals)",
+            "original": "If you study this in detail, you will find it interesting.",
+            "participle": "Studied in detail, you will find it interesting."
+          }
+        ]
+      },
+      {
+        "title": "Usage 3: After the object of certain verbs",
+        "details": "Used after verbs of perception (see, hear, watch, notice, find) followed by an object.",
+        "examples": [
+          "I found Peter cheating in the exam.",
+          "I heard someone knocking at the door."
+        ]
+      }
+    ]
+  },
+  "apposition": {
+    "title": "Apposition",
+    "description": "Apposition occurs when two noun phrases are placed side by side, with one identifying or renaming the other. It's like a reduced non-defining relative clause where the relative pronoun and the verb 'to be' are omitted.",
+    "examples": [
+      "Original: My friends, who are called Peter and Mike, live in London.",
+      "Apposition: My friends, Peter and Mike, live in London."
+    ]
+  },
+  "cambridge_strategies": {
+    "title": "Cambridge Speaking Strategy (Templates)",
+    "description": "Ready-to-use structures that will impress examiners in your C1/C2 speaking tests.",
+    "templates": [
+      {
+        "part": "Part 2 (Pictures)",
+        "structure": "In the 1st photograph it can be seen a [noun] [V-ing]... while in the 2nd photo it can be seen a [noun] who is [V-ing]...",
+        "example": "In the 1st photograph it can be seen a girl working as a waitress, while in the 2nd photo it can be seen a boy who is studying."
+      },
+      {
+        "part": "Part 3/4 (Giving reasons with Participles)",
+        "structure": "Wanting to [goal], people nowadays tend to [action].",
+        "example": "Wanting to save money, people nowadays tend to buy second-hand clothes."
+      },
+      {
+        "part": "Part 4 (Sequencing ideas / Past experience)",
+        "structure": "Having [past participle of action 1], it is much easier to [action 2].",
+        "example": "Having graduated from university, it is much easier to find a well-paid job."
+      },
+      {
+        "part": "Conditionals (Advanced structures)",
+        "structure": "[V-ed / 3rd form] in detail, [subject] can realize that...",
+        "example": "Studied in detail, we can realize that climate change is a pressing issue."
+      }
+    ]
+  }
+}

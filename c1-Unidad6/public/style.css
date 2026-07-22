@@ -1,0 +1,93 @@
+/* Base Animations and Utilities */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Tab Navigation */
+.tab-btn {
+    color: #64748b;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    color: #0f172a;
+    background-color: #f1f5f9;
+}
+
+.tab-btn.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+    background-color: #eff6ff;
+}
+
+/* Accordion Styles */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+}
+
+.accordion-btn[aria-expanded="true"] + .accordion-content {
+    max-height: 500px;
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion-btn[aria-expanded="true"] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Option Buttons in Test */
+.option-btn {
+    border: 2px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.option-btn:hover:not(:disabled) {
+    border-color: #cbd5e1;
+    background-color: #f8fafc;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.option-btn.selected {
+    border-color: #2563eb;
+    background-color: #eff6ff;
+}
+
+.option-btn.correct {
+    border-color: #10b981;
+    background-color: #ecfdf5;
+    color: #047857;
+}
+
+.option-btn.incorrect {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+    color: #b91c1c;
+}

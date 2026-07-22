@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C1 · Transformaciones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+/* ─────────────────────────────────────────────
+   C1 Transformaciones — estilos
+───────────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:          #0e0e11;
+  --surface:     #18181d;
+  --surface2:    #222228;
+  --border:      rgba(255,255,255,0.08);
+  --border2:     rgba(255,255,255,0.14);
+  --text:        #f0eff4;
+  --muted:       #7d7c8a;
+  --accent:      #a8ff78;
+  --accent-dim:  rgba(168,255,120,0.12);
+  --accent-dark: #5cb830;
+  --amber:       #fbbf24;
+  --amber-dim:   rgba(251,191,36,0.12);
+  --amber-dark:  #b45309;
+  --err:         #ff6b6b;
+  --err-dim:     rgba(255,107,107,0.1);
+  --reveal:      #818cf8;
+  --reveal-dim:  rgba(129,140,248,0.12);
+  --font-head:   'Syne', sans-serif;
+  --font-mono:   'DM Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-head);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(168,255,120,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 10% 90%, rgba(100,80,220,0.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Header ── */
+header {
+  position: relative;
+  z-index: 10;
+  padding: 1.75rem 2.5rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo { display: flex; align-items: baseline; gap: 10px; }
+.logo-c1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.04em; color: var(--accent); line-height: 1; }
+.logo-sub { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+
+.header-stats { display: flex; gap: 1.5rem; align-items: center; }
+
+.stat { text-align: center; }
+.stat-num { font-size: 1.4rem; font-weight: 700; line-height: 1; color: var(--text); }
+.stat-num .max { font-size: 0.85rem; font-weight: 400; color: var(--muted); }
+.stat-num.gold { color: var(--amber); }
+.stat-label { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+
+/* ── Progress ── */
+.progress-wrap { position: relative; z-index: 10; padding: 0 2.5rem; margin-top: 1rem; }
+.progress-track { height: 3px; background: var(--surface2); border-radius: 99px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width 0.5s cubic-bezier(.4,0,.2,1); width: 0%; }
+
+/* ── Nav dots ── */
+.nav-wrap {
+  position: relative;
+  z-index: 10;
+  padding: 1rem 2.5rem;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+.ndot {
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 1px solid var(--border2);
+  background: var(--surface); color: var(--muted);
+  font-size: 11px; font-family: var(--font-mono);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.ndot:hover          { border-color: var(--accent); color: var(--accent); }
+.ndot.active         { background: var(--accent); color: #0e0e11; border-color: var(--accent); font-weight: 700; }
+.ndot.ok             { background: var(--accent-dim); color: var(--accent); border-color: var(--accent-dark); }
+.ndot.partial        { background: var(--amber-dim);  color: var(--amber);  border-color: var(--amber-dark); }
+.ndot.fail           { background: var(--err-dim);    color: var(--err);    border-color: rgba(255,107,107,0.3); }
+
+/* ── Main ── */
+main {
+  position: relative; z-index: 10; flex: 1;
+  padding: 2rem 2.5rem; max-width: 860px; width: 100%; margin: 0 auto;
+}
+
+/* ── Tanda tag ── */
+.tanda-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 1.25rem; font-family: var(--font-mono);
+}
+.tanda-tag span { display: inline-block; width: 16px; height: 1px; background: var(--border2); }
+
+/* ── Question card ── */
+.q-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;
+  animation: slideIn 0.25s ease;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.q-original-label {
+  font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--muted); font-family: var(--font-mono); margin-bottom: 0.5rem;
+}
+.q-original {
+  font-size: 1.05rem; line-height: 1.6; color: var(--text);
+  margin-bottom: 1.5rem; padding-left: 1rem; border-left: 2px solid var(--border2);
+}
+
+.keyword-row { display: flex; align-items: center; gap: 8px; margin-bottom: 0.75rem; }
+.kw-label { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); font-family: var(--font-mono); }
+.keyword {
+  font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em;
+  padding: 4px 12px; background: var(--accent-dim); color: var(--accent);
+  border: 1px solid rgba(168,255,120,0.25); border-radius: 99px;
+}
+.kw-hint { font-size: 0.68rem; color: var(--muted); font-family: var(--font-mono); }
+
+/* ── Scoring hint ── */
+.scoring-hint {
+  display: flex; gap: 8px; margin-bottom: 1.25rem; flex-wrap: wrap;
+}
+.sh-item {
+  font-size: 0.62rem; font-family: var(--font-mono); letter-spacing: 0.06em;
+  padding: 3px 10px; border-radius: 99px; border: 1px solid;
+}
+.sh-2 { background: var(--accent-dim); color: var(--accent); border-color: rgba(168,255,120,0.25); }
+.sh-1 { background: var(--amber-dim);  color: var(--amber);  border-color: rgba(251,191,36,0.25); }
+.sh-0 { background: var(--err-dim);    color: var(--err);    border-color: rgba(255,107,107,0.2); }
+
+/* ── Sentence area ── */
+.sentence-area {
+  background: var(--surface2); border: 1px solid var(--border); border-radius: 10px;
+  padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 10px;
+  flex-wrap: wrap; font-size: 1rem; line-height: 1.7; margin-bottom: 1rem;
+  transition: border-color 0.25s;
+}
+.sentence-area.correct-state  { border-color: var(--accent-dark); }
+.sentence-area.partial-state  { border-color: var(--amber-dark); }
+.sentence-area.wrong-state    { border-color: rgba(255,107,107,0.5); }
+.sentence-area.revealed-state { border-color: rgba(129,140,248,0.5); }
+
+.s-part { color: var(--text); }
+
+.answer-input {
+  flex: 1; min-width: 180px;
+  background: transparent; border: none; border-bottom: 1.5px solid var(--border2);
+  color: var(--text); font-family: var(--font-mono); font-size: 0.95rem;
+  padding: 4px 2px; outline: none; transition: border-color 0.2s, color 0.2s;
+  caret-color: var(--accent);
+}
+.answer-input::placeholder { color: var(--muted); font-style: italic; }
+.answer-input:focus    { border-color: var(--accent); }
+.answer-input.correct  { border-color: var(--accent);  color: var(--accent); }
+.answer-input.partial  { border-color: var(--amber);   color: var(--amber); }
+.answer-input.wrong    { border-color: var(--err);     color: var(--err); }
+.answer-input.revealed { border-color: var(--reveal);  color: var(--reveal); }
+.answer-input:read-only { cursor: default; }
+
+/* ── Feedback ── */
+.feedback {
+  font-size: 0.85rem; padding: 10px 14px; border-radius: 8px;
+  font-family: var(--font-mono); display: none; margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.feedback.show    { display: block; }
+.feedback.correct  { background: var(--accent-dim);   color: var(--accent); border: 1px solid rgba(168,255,120,0.2); }
+.feedback.partial  { background: var(--amber-dim);    color: var(--amber);  border: 1px solid rgba(251,191,36,0.2); }
+.feedback.wrong    { background: var(--err-dim);      color: var(--err);    border: 1px solid rgba(255,107,107,0.2); }
+.feedback.revealed { background: var(--reveal-dim);   color: var(--reveal); border: 1px solid rgba(129,140,248,0.2); }
+
+.fb-pts { font-weight: 700; margin-right: 6px; }
+.fb-pts-partial { color: var(--amber); }
+.fb-pts-zero    { color: var(--err); }
+
+/* ── Explanation block ── */
+.explanation {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+.exp-label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+/* ── Actions ── */
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.btn {
+  font-family: var(--font-head); font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 10px 20px; border-radius: 8px;
+  border: 1px solid var(--border2); background: var(--surface2);
+  color: var(--text); cursor: pointer; transition: all 0.15s;
+}
+.btn:hover { background: var(--surface); border-color: rgba(255,255,255,0.22); }
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--accent); color: #0e0e11; border-color: var(--accent); }
+.btn-primary:hover { background: #c2ff98; border-color: #c2ff98; }
+.btn-ghost { background: transparent; border-color: transparent; color: var(--muted); }
+.btn-ghost:hover { color: var(--text); background: var(--surface2); border-color: var(--border2); }
+
+/* ── Summary ── */
+.summary { display: none; text-align: center; padding: 4rem 1rem; animation: slideIn 0.3s ease; }
+.summary-score { font-size: 5rem; font-weight: 800; letter-spacing: -0.04em; color: var(--accent); line-height: 1; margin-bottom: 0.25rem; }
+.summary-max   { font-size: 2.5rem; color: var(--muted); }
+.summary-pct   { font-size: 1rem; color: var(--muted); margin-bottom: 0.25rem; }
+.summary-msg   { font-size: 1.2rem; font-weight: 600; color: var(--text); margin-bottom: 2.5rem; }
+.summary-grid  { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.summary-card  { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.5rem; min-width: 110px; }
+.summary-card .n { font-size: 1.8rem; font-weight: 700; }
+.summary-card .l { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 2px; font-family: var(--font-mono); }
+.summary-card.ok .n      { color: var(--accent); }
+.summary-card.partial .n { color: var(--amber); }
+.summary-card.fail .n    { color: var(--err); }
+.summary-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  header, .progress-wrap, .nav-wrap, main { padding-left: 1rem; padding-right: 1rem; }
+  .q-card { padding: 1.25rem; }
+  .summary-score { font-size: 3.5rem; }
+  .scoring-hint { gap: 6px; }
+}
+  </style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <div class="logo">
+    <div class="logo-c1">C1</div>
+    <div class="logo-sub">Key word transformations</div>
+  </div>
+  <div class="header-stats">
+    <div class="stat">
+      <div class="stat-num gold">
+        <span id="stat-score">0</span><span class="max" id="stat-maxscore">/20</span>
+      </div>
+      <div class="stat-label">Puntos</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span id="stat-done">0</span>/<span id="stat-total">10</span></div>
+      <div class="stat-label">Hechas</div>
+    </div>
+  </div>
+</header>
+
+<!-- ── Progress bar ── -->
+<div class="progress-wrap">
+  <div class="progress-track">
+    <div class="progress-fill" id="progress"></div>
+  </div>
+</div>
+
+<!-- ── Nav dots ── -->
+<div class="nav-wrap" id="nav"></div>
+
+<!-- ── Main content ── -->
+<main>
+  <div id="question-area"></div>
+  <div class="summary" id="summary"></div>
+</main>
+
+<!-- ── Scripts ── -->
+<!-- Data embedded directly so this file works standalone (no server needed) -->
+<script>
+// ─────────────────────────────────────────────
+//  BANCO DE PREGUNTAS — añade aquí las nuevas
+//  Formato: { tanda, original, keyword, before, after, solution }
+// ─────────────────────────────────────────────
+const ALL_QUESTIONS = [
+
+  // ── Tanda 1 ──
+  {
+    tanda: 1,
+    original: "Local volunteers deliver the newsletter every week.",
+    keyword: "BASIS",
+    before: "The newsletter",
+    after: "by local volunteers.",
+    solution: "is delivered on a weekly basis"
+  },
+  {
+    tanda: 1,
+    original: "Jo suggested making the exam longer.",
+    keyword: "INCREASE",
+    before: "Jo said it would be a good idea",
+    after: "of the exam.",
+    solution: "to increase the length"
+  },
+  {
+    tanda: 1,
+    original: "Sue was visiting her great-aunt for the first time.",
+    keyword: "PAID",
+    before: "Sue",
+    after: "her great-aunt before.",
+    solution: "had never paid a visit to"
+  },
+  {
+    tanda: 1,
+    original: "It's fine to borrow money occasionally.",
+    keyword: "HARM",
+    before: "There's",
+    after: "a loan from time to time.",
+    solution: "no harm in getting"
+  },
+  {
+    tanda: 1,
+    original: "People have fewer children than they did in the past.",
+    keyword: "MANY",
+    before: "People",
+    after: "as they used to.",
+    solution: "don't have as many children"
+  },
+  {
+    tanda: 1,
+    original: "He can't be allowed to continue to behave so badly.",
+    keyword: "STOP",
+    before: "We have",
+    after: "to his bad behaviour.",
+    solution: "to put a stop"
+  },
+
+  // ── Tanda 2 ──
+  {
+    tanda: 2,
+    original: "Kate is both considerate and conscientious.",
+    keyword: "ONLY",
+    before: "Kate is",
+    after: "also conscientious.",
+    solution: "not only considerate but"
+  },
+  {
+    tanda: 2,
+    original: "Dan didn't go to the match with Paul because of their argument several days previously.",
+    keyword: "OUT",
+    before: "Dan didn't go to the match with Paul because they",
+    after: "few days previously.",
+    solution: "had fallen out a"
+  },
+  {
+    tanda: 2,
+    original: "My sister is far better organised than me.",
+    keyword: "NEARLY",
+    before: "I",
+    after: "as my sister.",
+    solution: "am not nearly as organised"
+  },
+  {
+    tanda: 2,
+    original: "Everyone considers me to be an expert on photography – but I'm not, really!",
+    keyword: "LOOKS",
+    before: "Everyone",
+    after: "an expert on photography – but I'm not, really!",
+    solution: "looks on me as"
+  },
+  {
+    tanda: 2,
+    original: "Being completely honest about your opinions isn't always advisable.",
+    keyword: "IDEA",
+    before: "It isn't",
+    after: "completely honest about your opinions.",
+    solution: "always a good idea to be"
+  },
+  {
+    tanda: 2,
+    original: "I often used to go walking through the forest with my parents when I was younger.",
+    keyword: "WOULD",
+    before: "My parents",
+    after: "take walks through the forest when I was younger.",
+    solution: "and I would often"
+  },
+
+  // ── Tanda 3 ──
+  {
+    tanda: 3,
+    original: "I received some very useful advice from Gustavo.",
+    keyword: "FOUND",
+    before: "I",
+    after: "me very useful.",
+    solution: "found Gustavo's advice"
+  },
+  {
+    tanda: 3,
+    original: "Jason moved to Berlin in 2020.",
+    keyword: "BEEN",
+    before: "Jason",
+    after: "since 2020.",
+    solution: "has been living in Berlin"
+  },
+  {
+    tanda: 3,
+    original: "The first time Carla went skiing was last Monday.",
+    keyword: "NEVER",
+    before: "Carla",
+    after: "last Monday.",
+    solution: "had never been skiing until"
+  },
+  {
+    tanda: 3,
+    original: "We were all favourably impressed with Paola's lecture.",
+    keyword: "FAVOURABLE",
+    before: "The lecture",
+    after: "on all of us.",
+    solution: "made a favourable impression"
+  },
+  {
+    tanda: 3,
+    original: "Students don't spend their free time in the same way as they did fifty years ago.",
+    keyword: "CHANGED",
+    before: "The way students spend their free time",
+    after: "fifty years.",
+    solution: "has changed a lot in the last"
+  },
+  {
+    tanda: 3,
+    original: "I couldn't find my receipt and they wouldn't give me a refund.",
+    keyword: "HAD",
+    before: "They wouldn't give me a refund because",
+    after: ".",
+    solution: "I had lost my receipt"
+  },
+  // ── Tanda 4 ──
+  {
+    tanda: 4,
+    original: "People think that the fire started in the basement.",
+    keyword: "THOUGHT",
+    before: "The fire",
+    after: "in the basement.",
+    solution: "is thought to have started"
+  },
+  {
+    tanda: 4,
+    original: "A professional decorator is painting our living room next week.",
+    keyword: "HAVING",
+    before: "We",
+    after: "by a professional decorator next week.",
+    solution: "are having our living room painted"
+  },
+  {
+    tanda: 4,
+    original: "Everyone expects that the inflation rate will drop next month.",
+    keyword: "EXPECTED",
+    before: "The inflation rate",
+    after: "next month.",
+    solution: "is expected to drop"
+  },
+  {
+    tanda: 4,
+    original: "They claim that he was driving at 150 km/h when the accident happened.",
+    keyword: "BEEN",
+    before: "He is claimed",
+    after: "at 150 km/h when the accident happened.",
+    solution: "to have been driving"
+  },
+  {
+    tanda: 4,
+    original: "Someone stole my bike from outside the library yesterday.",
+    keyword: "HAD",
+    before: "I",
+    after: "from outside the library yesterday.",
+    solution: "had my bike stolen"
+  },
+  // ── Tanda 5 ──
+  {
+    tanda: 5,
+    original: "There isn't a single biscuit left in the tin.",
+    keyword: "NO",
+    before: "There",
+    after: "left in the tin.",
+    solution: "are no biscuits"
+  },
+  {
+    tanda: 5,
+    original: "I asked all my colleagues, but zero people wanted to help.",
+    keyword: "NONE",
+    before: "I asked all my colleagues, but",
+    after: "to help.",
+    solution: "none of them wanted"
+  },
+  // ── Tanda 6 ──
+  {
+    tanda: 6,
+    original: "Madeleine felt sure that she would be offered the job.",
+    keyword: "BOUND",
+    before: "Madeleine felt she",
+    after: "offered the job.",
+    solution: "was bound to be"
+  },
+  {
+    tanda: 6,
+    original: "Boris is unlikely to win the prize.",
+    keyword: "LIKELIHOOD",
+    before: "There is little",
+    after: "the prize.",
+    solution: "likelihood of Boris winning"
+  },
+  {
+    tanda: 6,
+    original: "There's a good chance that Takesi has seen your message.",
+    keyword: "WELL",
+    before: "Takesi",
+    after: "your message.",
+    solution: "may well have seen"
+  },
+  {
+    tanda: 6,
+    original: "I'm sure you didn't remember to post the letter.",
+    keyword: "MUST",
+    before: "You",
+    after: "post the letter.",
+    solution: "must have forgotten to"
+  },
+  {
+    tanda: 6,
+    original: "If you arrive late, the teacher may well get angry with you.",
+    keyword: "LIKELY",
+    before: "The teacher",
+    after: "his temper with you if you arrive late.",
+    solution: "is likely to lose"
+  },
+  {
+    tanda: 6,
+    original: "Do you think you might be able to help me with the essay?",
+    keyword: "CHANCE",
+    before: "Is",
+    after: "me with the essay?",
+    solution: "there any chance of you helping"
+  },
+  // ── Tanda 7 ──
+  {
+    tanda: 7,
+    original: "I am absolutely sure that they didn't see us because it was pitch black.",
+    keyword: "HAVE",
+    before: "They",
+    after: "us because it was pitch black.",
+    solution: "can't have seen"
+  },
+  {
+    tanda: 7,
+    original: "There is a strong probability that the flight will be cancelled.",
+    keyword: "WELL",
+    before: "The flight",
+    after: "cancelled.",
+    solution: "may well be",
+    explanation: "El verbo 'cancel' termina en -ed (cancelled) no porque esté en pasado, sino porque es un participio pasado y la oración está en voz pasiva."
+  },
+  {
+    tanda: 7,
+    original: "It is certain that the new policy will cause controversy.",
+    keyword: "BOUND",
+    before: "The new policy",
+    after: "controversy.",
+    solution: "is bound to cause"
+  },
+  {
+    tanda: 7,
+    original: "There is very little chance that the team will qualify for the final.",
+    keyword: "LIKELIHOOD",
+    before: "There is",
+    after: "the team qualifying for the final.",
+    solution: "little likelihood of",
+    explanation: "Cuidado con añadir 'a' antes de 'little'. En inglés, 'little' significa 'casi ninguno' (sentido negativo), mientras que 'a little' significa 'algo' (sentido positivo). Como la frase original dice 'very little chance', hay que mantener ese sentido negativo sin el 'a'."
+  },
+  {
+    tanda: 7,
+    original: "Perhaps she was working in the garden when we arrived.",
+    keyword: "BEEN",
+    before: "She",
+    after: "in the garden when we arrived.",
+    solution: "might have been working"
+  },
+  // ── Tanda 8 ──
+  {
+    tanda: 8,
+    original: "Because I wanted to pass the test, I studied a lot.",
+    keyword: "WANTING",
+    before: "",
+    after: "the test, I studied a lot.",
+    solution: "Wanting to pass",
+    explanation: "We use V-ing (Present Participle) to replace 'because' when the subject is the same."
+  },
+  {
+    tanda: 8,
+    original: "The person with whom I spoke yesterday was very helpful.",
+    keyword: "WHO",
+    before: "The person",
+    after: "yesterday was very helpful.",
+    solution: "who I spoke with",
+    explanation: "In informal/standard English, we can use 'who' and put the preposition ('with/to') at the end of the relative clause."
+  },
+  {
+    tanda: 8,
+    original: "My brother lives in Paris and he is coming to visit.",
+    keyword: "WHO",
+    before: "My brother,",
+    after: ", is coming to visit.",
+    solution: "who lives in Paris",
+    explanation: "This is a non-defining relative clause, which adds extra information and needs commas."
+  },
+  {
+    tanda: 8,
+    original: "After he had finished the project, he took a long holiday.",
+    keyword: "HAVING",
+    before: "",
+    after: ", he took a long holiday.",
+    solution: "Having finished the project",
+    explanation: "'Having + V-ed' (Perfect Participle) emphasizes that the first action was completely finished before the second started."
+  },
+  {
+    tanda: 8,
+    original: "The building that was destroyed in the fire is being rebuilt.",
+    keyword: "DESTROYED",
+    before: "The building",
+    after: "is being rebuilt.",
+    solution: "destroyed in the fire",
+    explanation: "We drop 'that was' and keep the V-ed (Past Participle) 'destroyed' because it has a passive meaning."
+  },
+  {
+    tanda: 8,
+    original: "If it is used correctly, this software can save a lot of time.",
+    keyword: "USED",
+    before: "",
+    after: ", this software can save a lot of time.",
+    solution: "Used correctly",
+    explanation: "We use V-ed (Past Participle) to replace passive conditional clauses ('If it is used' -> 'Used')."
+  },
+  {
+    tanda: 8,
+    original: "While she was walking down the street, she found a wallet.",
+    keyword: "WALKING",
+    before: "",
+    after: ", she found a wallet.",
+    solution: "Walking down the street",
+    explanation: "V-ing (Present Participle) can replace 'while' + continuous tenses for simultaneous actions."
+  },
+  {
+    tanda: 8,
+    original: "I noticed that Peter was cheating in the exam.",
+    keyword: "CHEATING",
+    before: "I noticed",
+    after: "in the exam.",
+    solution: "Peter cheating",
+    explanation: "After verbs of perception (notice, see, hear), we use object + V-ing to describe an ongoing action."
+  },
+  {
+    tanda: 8,
+    original: "The hotel where we stayed was lovely.",
+    keyword: "WHICH",
+    before: "The hotel",
+    after: "was lovely.",
+    solution: "at which we stayed",
+    explanation: "We can replace 'where' with preposition + 'which' (at which, in which)."
+  },
+  {
+    tanda: 8,
+    original: "Because she didn't have enough money, she couldn't buy the tickets.",
+    keyword: "HAVING",
+    before: "",
+    after: ", she couldn't buy the tickets.",
+    solution: "Not having enough money",
+    explanation: "To make a participle clause negative, we put 'not' before the participle ('Not having')."
+  },
+  {
+    tanda: 8,
+    original: "My boss, who is a very strict woman, demanded the report by 5 PM.",
+    keyword: "STRICT",
+    before: "My boss,",
+    after: ", demanded the report by 5 PM.",
+    solution: "a very strict woman",
+    explanation: "This is an apposition. We can remove 'who is' to simply rename the noun phrase."
+  },
+  {
+    tanda: 8,
+    original: "Anyone who wants to participate must sign the form.",
+    keyword: "WANTING",
+    before: "Anyone",
+    after: "must sign the form.",
+    solution: "wanting to participate",
+    explanation: "We omit 'who' and change the active verb 'wants' to the V-ing form 'wanting'."
+  },
+  {
+    tanda: 8,
+    original: "I opened the letter and realized it was from the university.",
+    keyword: "OPENING",
+    before: "",
+    after: ", I realized it was from the university.",
+    solution: "Opening the letter",
+    explanation: "For two short actions happening one right after the other, we can use V-ing (Present Participle) for the first action."
+  },
+  {
+    tanda: 8,
+    original: "The car that I bought yesterday is very fast.",
+    keyword: "WHICH",
+    before: "The car",
+    after: "is very fast.",
+    solution: "which I bought yesterday",
+    explanation: "'Which' can be used instead of 'that' for things in defining relative clauses."
+  },
+  {
+    tanda: 8,
+    original: "The student whose bag was stolen reported it to the police.",
+    keyword: "HAD",
+    before: "The student",
+    after: "reported it to the police.",
+    solution: "who had their bag stolen",
+    explanation: "Instead of 'whose bag was stolen', we can use 'who had their bag stolen' (causative structure)."
+  },
+  {
+    tanda: 8,
+    original: "The committee to whom we presented our proposal approved it.",
+    keyword: "WHICH",
+    before: "The committee,",
+    after: ", approved it.",
+    solution: "to which we presented our proposal",
+    explanation: "When referring to a collective noun like 'committee' as a single entity, we can use 'to which' in formal contexts."
+  },
+  {
+    tanda: 8,
+    original: "Because I didn't know what to do, I called my mother.",
+    keyword: "NOT",
+    before: "",
+    after: "what to do, I called my mother.",
+    solution: "Not knowing",
+    explanation: "A negative participle clause starts with 'Not' + V-ing."
+  },
+  {
+    tanda: 8,
+    original: "Madrid, which is the capital of Spain, is very populous.",
+    keyword: "CAPITAL",
+    before: "Madrid,",
+    after: ", is very populous.",
+    solution: "the capital of Spain",
+    explanation: "Using apposition by removing 'which is' creates a more concise sentence."
+  },
+  {
+    tanda: 8,
+    original: "The athletes who failed the drug test were disqualified.",
+    keyword: "FAILING",
+    before: "The athletes",
+    after: "were disqualified.",
+    solution: "failing the drug test",
+    explanation: "We can replace the defining relative clause with a present participle phrase if the verb is active."
+  },
+  {
+    tanda: 8,
+    original: "Avatar was great and it is my favourite film.",
+    keyword: "WHICH",
+    before: "Avatar,",
+    after: ", was great.",
+    solution: "which is my favourite film",
+    explanation: "We use a non-defining relative clause (with commas) to add extra information about a specific noun."
+  },
+  // ── Tanda 9 ──
+  {
+    tanda: 9,
+    original: "They will probably win the game tomorrow.",
+    keyword: "LIKELY",
+    before: "They",
+    after: "the game tomorrow.",
+    solution: "are likely to win"
+  },
+  {
+    tanda: 9,
+    original: "It is almost certain that he will complain about the noise.",
+    keyword: "BOUND",
+    before: "He",
+    after: "about the noise.",
+    solution: "is bound to complain"
+  },
+  {
+    tanda: 9,
+    original: "The train is expected to arrive at 8:30.",
+    keyword: "DUE",
+    before: "The train",
+    after: "at 8:30.",
+    solution: "is due to arrive"
+  },
+  {
+    tanda: 9,
+    original: "There is a strong possibility that she will pass the exam.",
+    keyword: "LIKELIHOOD",
+    before: "There is a",
+    after: "pass the exam.",
+    solution: "strong likelihood that she will"
+  },
+  {
+    tanda: 9,
+    original: "I'm sure it will rain later, so take an umbrella.",
+    keyword: "WELL",
+    before: "It",
+    after: "later, so take an umbrella.",
+    solution: "may well rain"
+  },
+  {
+    tanda: 9,
+    original: "I predict that technology will increasingly control our lives.",
+    keyword: "LIKELIHOOD",
+    before: "There is a",
+    after: "increasingly control our lives.",
+    solution: "strong likelihood that technology will"
+  },
+  {
+    tanda: 9,
+    original: "The concert is scheduled to start in five minutes.",
+    keyword: "DUE",
+    before: "The concert",
+    after: "in five minutes.",
+    solution: "is due to start"
+  },
+  {
+    tanda: 9,
+    original: "She will probably get the job because she is very qualified.",
+    keyword: "WELL",
+    before: "She",
+    after: "the job because she is very qualified.",
+    solution: "may well get"
+  },
+  {
+    tanda: 9,
+    original: "I am almost sure they'll face financial difficulties if they do that.",
+    keyword: "BOUND",
+    before: "They",
+    after: "financial difficulties if they do that.",
+    solution: "are bound to face"
+  },
+  {
+    tanda: 9,
+    original: "What are your plans for next weekend?",
+    keyword: "GOING",
+    before: "What",
+    after: "do next weekend?",
+    solution: "are you going to"
+  },
+  {
+    tanda: 9,
+    original: "My dentist appointment is tomorrow at 5 PM.",
+    keyword: "SEEING",
+    before: "I",
+    after: "tomorrow at 5 PM.",
+    solution: "am seeing the dentist"
+  },
+  {
+    tanda: 9,
+    original: "The President's formal visit to France is next week.",
+    keyword: "IS",
+    before: "The President",
+    after: "France next week.",
+    solution: "is to visit"
+  },
+  {
+    tanda: 9,
+    original: "I am absolutely sure he will fail the driving test.",
+    keyword: "BOUND",
+    before: "He",
+    after: "the driving test.",
+    solution: "is bound to fail"
+  },
+  {
+    tanda: 9,
+    original: "There is a small chance of him winning the competition.",
+    keyword: "LIKELIHOOD",
+    before: "There is a slight",
+    after: "the competition.",
+    solution: "likelihood of him winning"
+  },
+  {
+    tanda: 9,
+    original: "It is expected that the new law will be passed tomorrow.",
+    keyword: "DUE",
+    before: "The new law",
+    after: "tomorrow.",
+    solution: "is due to be passed"
+  },
+  {
+    tanda: 9,
+    original: "Do you want me to open the window for you?",
+    keyword: "SHALL",
+    before: "",
+    after: "the window for you?",
+    solution: "Shall I open"
+  },
+  {
+    tanda: 9,
+    original: "I think robots will do all the housework in the future.",
+    keyword: "EXPECT",
+    before: "I",
+    after: "all the housework in the future.",
+    solution: "expect robots will do"
+  },
+  {
+    tanda: 9,
+    original: "Look at those dark clouds; rain is imminent.",
+    keyword: "GOING",
+    before: "Look at those dark clouds; it",
+    after: "rain.",
+    solution: "is going to"
+  },
+  {
+    tanda: 9,
+    original: "We will probably see a rise in temperatures next month.",
+    keyword: "LIKELY",
+    before: "Temperatures",
+    after: "rise next month.",
+    solution: "are likely to"
+  },
+  {
+    tanda: 9,
+    original: "It is highly probable that he will arrive late.",
+    keyword: "WELL",
+    before: "He",
+    after: "late.",
+    solution: "may well arrive"
+  },
+
+  // ── Tanda 10 — Reported Speech ──
+  {
+    tanda: 10,
+    original: "\"I will finish the report by tomorrow,\" he said.",
+    keyword: "WOULD",
+    before: "He said that",
+    after: "the report by the following day.",
+    solution: "he would finish"
+  },
+  {
+    tanda: 10,
+    original: "\"Are you going to the party tonight?\" she asked me.",
+    keyword: "IF",
+    before: "She asked me",
+    after: "to the party that night.",
+    solution: "if I was going"
+  },
+  {
+    tanda: 10,
+    original: "\"I have been working here for ten years,\" John told me.",
+    keyword: "HAD",
+    before: "John told me that",
+    after: "there for ten years.",
+    solution: "he had been working"
+  },
+  {
+    tanda: 10,
+    original: "\"Where did you put the keys?\" my mother asked.",
+    keyword: "WHERE",
+    before: "My mother asked me",
+    after: "the keys.",
+    solution: "where I had put"
+  },
+  {
+    tanda: 10,
+    original: "\"I can't swim very well,\" David said.",
+    keyword: "COULD",
+    before: "David said that",
+    after: "very well.",
+    solution: "he could not swim"
+  },
+  {
+    tanda: 10,
+    original: "\"You must leave immediately!\" the officer said to us.",
+    keyword: "HAD",
+    before: "The officer told us that",
+    after: "immediately.",
+    solution: "we had to leave"
+  },
+  {
+    tanda: 10,
+    original: "\"I bought this car yesterday,\" she said.",
+    keyword: "PREVIOUS",
+    before: "She said she had bought that car",
+    after: ".",
+    solution: "the previous day"
+  },
+  {
+    tanda: 10,
+    original: "\"What time does the train leave?\" the tourist asked.",
+    keyword: "LEFT",
+    before: "The tourist asked what time",
+    after: ".",
+    solution: "the train left"
+  },
+  {
+    tanda: 10,
+    original: "\"I may go to Paris next week,\" said Sarah.",
+    keyword: "MIGHT",
+    before: "Sarah said that",
+    after: "to Paris the following week.",
+    solution: "she might go"
+  },
+  {
+    tanda: 10,
+    original: "\"Don't touch that wire!\" the electrician told me.",
+    keyword: "NOT",
+    before: "The electrician warned",
+    after: "that wire.",
+    solution: "me not to touch"
+  },
+  {
+    tanda: 10,
+    original: "\"I was watching TV when the phone rang,\" he said.",
+    keyword: "BEEN",
+    before: "He said that",
+    after: "TV when the phone had rung.",
+    solution: "he had been watching"
+  },
+  {
+    tanda: 10,
+    original: "\"Will you help me with this box?\" she asked him.",
+    keyword: "WHETHER",
+    before: "She asked him",
+    after: "help her with that box.",
+    solution: "whether he would"
+  },
+  {
+    tanda: 10,
+    original: "\"I had never eaten sushi before,\" she told us.",
+    keyword: "NEVER",
+    before: "She told us that",
+    after: "sushi before.",
+    solution: "she had never eaten"
+  },
+  {
+    tanda: 10,
+    original: "\"Do you know the answer?\" the teacher asked the class.",
+    keyword: "KNEW",
+    before: "The teacher asked the class if",
+    after: "the answer.",
+    solution: "they knew"
+  },
+  {
+    tanda: 10,
+    original: "\"I will have finished by Friday,\" he promised.",
+    keyword: "WOULD",
+    before: "He promised that",
+    after: "finished by Friday.",
+    solution: "he would have"
+  },
+  {
+    tanda: 10,
+    original: "\"We are leaving now,\" they announced.",
+    keyword: "THEN",
+    before: "They announced that",
+    after: ".",
+    solution: "they were leaving then"
+  },
+  {
+    tanda: 10,
+    original: "\"How long have you lived here?\" he asked me.",
+    keyword: "HAD",
+    before: "He asked me how long",
+    after: "there.",
+    solution: "I had lived"
+  },
+  {
+    tanda: 10,
+    original: "\"You should see a doctor,\" my friend advised me.",
+    keyword: "SEE",
+    before: "My friend advised",
+    after: "a doctor.",
+    solution: "me to see"
+  },
+  {
+    tanda: 10,
+    original: "\"I couldn't find my wallet,\" he complained.",
+    keyword: "NOT",
+    before: "He complained that",
+    after: "find his wallet.",
+    solution: "he had not been able to"
+  },
+  {
+    tanda: 10,
+    original: "\"Did you see the news last night?\" she asked.",
+    keyword: "BEFORE",
+    before: "She asked if I had seen the news",
+    after: ".",
+    solution: "the night before"
+  },
+
+  // ── Tanda 11 — Reporting Verbs ──
+  {
+    tanda: 11,
+    original: "\"I'm sorry I broke the vase,\" he said.",
+    keyword: "APOLOGIZED",
+    before: "He",
+    after: "the vase.",
+    solution: "apologized for breaking"
+  },
+  {
+    tanda: 11,
+    original: "\"Yes, I stole the money,\" the thief said.",
+    keyword: "ADMITTED",
+    before: "The thief",
+    after: "the money.",
+    solution: "admitted to stealing"
+  },
+  {
+    tanda: 11,
+    original: "\"No, I didn't cheat on the exam,\" she said.",
+    keyword: "DENIED",
+    before: "She",
+    after: "on the exam.",
+    solution: "denied cheating"
+  },
+  {
+    tanda: 11,
+    original: "\"You really must let me pay for dinner,\" he said.",
+    keyword: "INSISTED",
+    before: "He",
+    after: "for dinner.",
+    solution: "insisted on paying"
+  },
+  {
+    tanda: 11,
+    original: "\"I will not wear that ridiculous hat!\" she said.",
+    keyword: "OBJECTED",
+    before: "She",
+    after: "that ridiculous hat.",
+    solution: "objected to wearing"
+  },
+  {
+    tanda: 11,
+    original: "\"You stole my laptop!\" he said to her.",
+    keyword: "ACCUSED",
+    before: "He",
+    after: "his laptop.",
+    solution: "accused her of stealing"
+  },
+  {
+    tanda: 11,
+    original: "\"Don't forget to lock the door,\" she told him.",
+    keyword: "REMINDED",
+    before: "She",
+    after: "the door.",
+    solution: "reminded him to lock"
+  },
+  {
+    tanda: 11,
+    original: "\"If you do that again, I'll call the police,\" the man said.",
+    keyword: "THREATENED",
+    before: "The man",
+    after: "the police if I did that again.",
+    solution: "threatened to call"
+  },
+  {
+    tanda: 11,
+    original: "\"Why don't we go to the cinema?\" suggested Peter.",
+    keyword: "GOING",
+    before: "Peter",
+    after: "to the cinema.",
+    solution: "suggested going"
+  },
+  {
+    tanda: 11,
+    original: "\"I wish I hadn't spoken to him,\" she said.",
+    keyword: "REGRETTED",
+    before: "She",
+    after: "to him.",
+    solution: "regretted speaking"
+  },
+  {
+    tanda: 11,
+    original: "\"It's your fault the project failed,\" the boss told me.",
+    keyword: "BLAMED",
+    before: "The boss",
+    after: "the project's failure.",
+    solution: "blamed me for"
+  },
+  {
+    tanda: 11,
+    original: "\"Well done for passing the exam!\" she told him.",
+    keyword: "CONGRATULATED",
+    before: "She",
+    after: "the exam.",
+    solution: "congratulated him on passing"
+  },
+  {
+    tanda: 11,
+    original: "\"I really think you should apply for the job,\" she told me.",
+    keyword: "URGED",
+    before: "She",
+    after: "for the job.",
+    solution: "urged me to apply"
+  },
+  {
+    tanda: 11,
+    original: "\"I am the best player in the team,\" he said.",
+    keyword: "BOASTED",
+    before: "He",
+    after: "the best player in the team.",
+    solution: "boasted about being"
+  },
+  {
+    tanda: 11,
+    original: "\"I think it was John who broke the window,\" said Mary.",
+    keyword: "SUSPECTED",
+    before: "Mary",
+    after: "the window.",
+    solution: "suspected John of breaking"
+  },
+  {
+    tanda: 11,
+    original: "\"Please, please don't tell my parents,\" he said.",
+    keyword: "BEGGED",
+    before: "He",
+    after: "tell his parents.",
+    solution: "begged me not to"
+  },
+  {
+    tanda: 11,
+    original: "\"I think you shouldn't buy that car,\" he told me.",
+    keyword: "ADVISED",
+    before: "He",
+    after: "that car.",
+    solution: "advised me against buying"
+  },
+  {
+    tanda: 11,
+    original: "\"The heavy rain stopped us from playing tennis,\" she said.",
+    keyword: "PREVENTED",
+    before: "She said the heavy rain",
+    after: "tennis.",
+    solution: "prevented us from playing"
+  },
+  {
+    tanda: 11,
+    original: "\"You really ought to try the new restaurant,\" she said.",
+    keyword: "RECOMMENDED",
+    before: "She",
+    after: "the new restaurant.",
+    solution: "recommended trying"
+  },
+  {
+    tanda: 11,
+    original: "\"I promise I will pay you back tomorrow,\" he said.",
+    keyword: "PROMISED",
+    before: "He",
+    after: "me back the following day.",
+    solution: "promised to pay"
+  },
+
+
+];
+
+// ─────────────────────────────────────────────
+//  LÓGICA PRINCIPAL — c1-transformaciones
+// ─────────────────────────────────────────────
+
+const SESSION_SIZE = 10; // preguntas por sesión
+
+// ── Estado global ──
+let session     = [];   // índices de preguntas de esta sesión
+let current     = 0;    // índice dentro de session[]
+let scores      = [];   // 0 | 1 | 2 | null por pregunta de la sesión
+let revealed    = [];   // bool: ¿se usó "ver solución"?
+
+// ── Puntuación parcial ──────────────────────────────────────────────
+// Compara palabra a palabra. Devuelve:
+//   2 → respuesta exacta
+//   1 → al menos la mitad de las palabras correctas (en posición)
+//   0 → menos de la mitad
+function scoreAnswer(userRaw, solutionRaw) {
+  const norm = s => s.trim().toLowerCase().replace(/\s+/g, ' ');
+  const uWords = norm(userRaw).split(' ');
+  const sWords = norm(solutionRaw).split(' ');
+
+  if (norm(userRaw) === norm(solutionRaw)) return 2;
+
+  const total = sWords.length;
+  let hits = 0;
+  for (let i = 0; i < Math.min(uWords.length, total); i++) {
+    if (uWords[i] === sWords[i]) hits++;
+  }
+
+  return hits >= Math.ceil(total / 2) ? 1 : 0;
+}
+
+// ── Fisher-Yates shuffle ──
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// ── Iniciar nueva sesión ──
+function startSession() {
+  const indices = ALL_QUESTIONS.map((_, i) => i);
+  const shuffled = shuffle(indices);
+  session  = shuffled.slice(0, Math.min(SESSION_SIZE, ALL_QUESTIONS.length));
+  current  = 0;
+  scores   = new Array(session.length).fill(null);
+  revealed = new Array(session.length).fill(false);
+  updateHeader();
+  render();
+}
+
+// ── Helpers ──
+function currentQ()  { return ALL_QUESTIONS[session[current]]; }
+function totalScore(){ return scores.reduce((s, v) => s + (v ?? 0), 0); }
+function maxScore()  { return session.length * 2; }
+function donePct()   { return Math.round(scores.filter(v => v !== null).length / session.length * 100); }
+
+function countWords(s) { return s.trim().split(/\s+/).filter(Boolean).length; }
+
+// ── Actualizar stats del header ──
+function updateHeader() {
+  const done = scores.filter(v => v !== null).length;
+  document.getElementById('stat-score').textContent   = totalScore();
+  document.getElementById('stat-maxscore').textContent = `/${maxScore()}`;
+  document.getElementById('stat-done').textContent    = done;
+  document.getElementById('stat-total').textContent   = session.length;
+  document.getElementById('progress').style.width     = donePct() + '%';
+  updateNav();
+}
+
+// ── Nav dots ──
+function updateNav() {
+  const nav = document.getElementById('nav');
+  nav.innerHTML = '';
+  session.forEach((_, i) => {
+    const sc = scores[i];
+    const d  = document.createElement('div');
+    let cls  = 'ndot';
+    if (i === current) cls += ' active';
+    else if (sc === 2)    cls += ' ok';
+    else if (sc === 1)    cls += ' partial';
+    else if (sc === 0)    cls += ' fail';
+    d.className   = cls;
+    d.textContent = i + 1;
+    d.title       = `Pregunta ${i + 1}`;
+    d.onclick     = () => { current = i; render(); };
+    nav.appendChild(d);
+  });
+}
+// ── Explicación opcional ──
+function explanationHtml(q) {
+  if (!q.explanation) return '';
+  return `<div class="explanation"><span class="exp-label">💡 Nota</span>${q.explanation}</div>`;
+}
+// ── Comprobar respuesta ──
+function checkAnswer() {
+  const inp = document.getElementById('user-input');
+  if (!inp) return;
+  const q   = currentQ();
+  const sc  = scoreAnswer(inp.value, q.solution);
+  scores[current] = sc;
+
+  inp.readOnly = true;
+  inp.className = 'answer-input ' + (sc === 2 ? 'correct' : sc === 1 ? 'partial' : 'wrong');
+
+  const sa = document.querySelector('.sentence-area');
+  if (sa) sa.className = 'sentence-area ' + (sc === 2 ? 'correct-state' : sc === 1 ? 'partial-state' : 'wrong-state');
+
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback show ' + (sc === 2 ? 'correct' : sc === 1 ? 'partial' : 'wrong');
+
+  if (sc === 2) {
+    fb.innerHTML = `<span class="fb-pts">+2 pts</span> ¡Correcto!${explanationHtml(q)}`;
+  } else if (sc === 1) {
+    fb.innerHTML = `<span class="fb-pts fb-pts-partial">+1 pt</span> Casi — respuesta completa: <strong>${q.solution}</strong>${explanationHtml(q)}`;
+  } else {
+    fb.innerHTML = `<span class="fb-pts fb-pts-zero">+0 pts</span> La respuesta correcta es: <strong>${q.solution}</strong>${explanationHtml(q)}`;
+  }
+
+  document.getElementById('action-check')?.remove();
+  document.getElementById('action-reveal')?.remove();
+  showNextOrFinish();
+  updateHeader();
+}
+
+// ── Ver solución ──
+function revealAnswer() {
+  const q  = currentQ();
+  revealed[current] = true;
+  if (scores[current] === null) scores[current] = 0;
+
+  const inp = document.getElementById('user-input');
+  if (inp) { inp.value = q.solution; inp.readOnly = true; inp.className = 'answer-input revealed'; }
+
+  const sa = document.querySelector('.sentence-area');
+  if (sa) sa.className = 'sentence-area revealed-state';
+
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback show revealed';
+  fb.innerHTML = `<span class="fb-pts fb-pts-zero">+0 pts</span> Solución: <strong>${q.solution}</strong>${explanationHtml(q)}`;
+
+  document.getElementById('action-check')?.remove();
+  document.getElementById('action-reveal')?.remove();
+  showNextOrFinish();
+  updateHeader();
+}
+
+// ── Mostrar botón siguiente o finalizar ──
+function showNextOrFinish() {
+  const actions = document.getElementById('actions');
+  if (!actions) return;
+
+  if (current < session.length - 1) {
+    const btn = document.createElement('button');
+    btn.className = 'btn btn-primary';
+    btn.id = 'action-next';
+    btn.textContent = 'Siguiente →';
+    btn.onclick = () => { current++; render(); };
+    actions.appendChild(btn);
+  } else {
+    const btn = document.createElement('button');
+    btn.className = 'btn btn-primary';
+    btn.id = 'action-finish';
+    btn.textContent = 'Ver resultados';
+    btn.onclick = showSummary;
+    actions.appendChild(btn);
+  }
+}
+
+// ── Render de la pregunta actual ──
+function render() {
+  const qa    = document.getElementById('question-area');
+  const sumEl = document.getElementById('summary');
+  qa.style.display  = 'block';
+  sumEl.style.display = 'none';
+
+  const q       = currentQ();
+  const sc      = scores[current];
+  const rev     = revealed[current];
+  const done    = sc !== null;
+  const wordCnt = countWords(q.solution);
+
+  let inputCls = '';
+  let saCls    = '';
+  let fbCls    = '';
+  let fbHtml   = '';
+  let inputVal = '';
+
+  if (done) {
+    inputVal = q.solution;
+    const exp = explanationHtml(q);
+    if (sc === 2)       { inputCls = 'correct';  saCls = 'correct-state';  fbCls = 'correct';  fbHtml = `<span class="fb-pts">+2 pts</span> ¡Correcto!${exp}`; }
+    else if (sc === 1)  { inputCls = 'partial';  saCls = 'partial-state';  fbCls = 'partial';  fbHtml = `<span class="fb-pts fb-pts-partial">+1 pt</span> Casi — respuesta completa: <strong>${q.solution}</strong>${exp}`; }
+    else if (rev)       { inputCls = 'revealed'; saCls = 'revealed-state'; fbCls = 'revealed'; fbHtml = `<span class="fb-pts fb-pts-zero">+0 pts</span> Solución: <strong>${q.solution}</strong>${exp}`; }
+    else                { inputCls = 'wrong';    saCls = 'wrong-state';    fbCls = 'wrong';    fbHtml = `<span class="fb-pts fb-pts-zero">+0 pts</span> La respuesta correcta es: <strong>${q.solution}</strong>${exp}`; }
+  }
+
+  qa.innerHTML = `
+    <div class="tanda-tag">
+      <span></span>
+      Sesión · Pregunta ${current + 1} de ${session.length}
+      &nbsp;·&nbsp; Tanda ${q.tanda}
+      <span></span>
+    </div>
+
+    <div class="q-card">
+      <div class="q-original-label">Oración original</div>
+      <div class="q-original">${q.original}</div>
+
+      <div class="keyword-row">
+        <div class="kw-label">Palabra clave</div>
+        <div class="keyword">${q.keyword}</div>
+        <div class="kw-hint">(solución: ${wordCnt} palabra${wordCnt !== 1 ? 's' : ''} · total 2–6)</div>
+      </div>
+
+      <div class="scoring-hint">
+        <span class="sh-item sh-2">2 pts → correcta</span>
+        <span class="sh-item sh-1">1 pt → mitad bien</span>
+        <span class="sh-item sh-0">0 pts → incorrecta</span>
+      </div>
+
+      <div class="sentence-area ${saCls}">
+        <span class="s-part">${q.before}</span>
+        <input
+          class="answer-input ${inputCls}"
+          id="user-input"
+          type="text"
+          value="${inputVal}"
+          placeholder="2–6 palabras…"
+          ${done ? 'readonly' : ''}
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <span class="s-part">${q.after}</span>
+      </div>
+
+      <div class="feedback ${done ? 'show ' + fbCls : ''}" id="feedback">${fbHtml}</div>
+    </div>
+
+    <div class="actions" id="actions">
+      ${!done ? `<button class="btn btn-primary" id="action-check" onclick="checkAnswer()">Comprobar</button>` : ''}
+      ${!done ? `<button class="btn btn-ghost"   id="action-reveal" onclick="revealAnswer()">Ver solución</button>` : ''}
+      ${current > 0 ? `<button class="btn" onclick="go(${current - 1})">← Anterior</button>` : ''}
+    </div>
+  `;
+
+  // Si ya estaba hecha, vuelve a añadir el botón siguiente
+  if (done) showNextOrFinish();
+
+  const inp = document.getElementById('user-input');
+  if (inp && !done) {
+    inp.focus();
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') checkAnswer(); });
+  }
+
+  updateHeader();
+}
+
+function go(idx) { current = idx; render(); }
+
+// ── Resumen final ──
+function showSummary() {
+  document.getElementById('question-area').style.display = 'none';
+  const total = totalScore();
+  const max   = maxScore();
+  const pct   = Math.round(total / max * 100);
+  const full  = scores.filter(v => v === 2).length;
+  const part  = scores.filter(v => v === 1).length;
+  const zero  = scores.filter(v => v === 0).length;
+
+  let msg;
+  if (pct >= 85) msg = '¡Nivel C1 conseguido! 🎯';
+  else if (pct >= 65) msg = '¡Buen trabajo, sigue así! 💪';
+  else msg = '¡Sigue practicando, tú puedes! 📚';
+
+  const sumEl = document.getElementById('summary');
+  sumEl.style.display = 'block';
+  sumEl.innerHTML = `
+    <div class="summary-score">${total}<span class="summary-max">/${max}</span></div>
+    <div class="summary-pct">${pct}% de acierto</div>
+    <div class="summary-msg">${msg}</div>
+    <div class="summary-grid">
+      <div class="summary-card ok">
+        <div class="n">${full}</div>
+        <div class="l">Completas (+2)</div>
+      </div>
+      <div class="summary-card partial">
+        <div class="n">${part}</div>
+        <div class="l">Parciales (+1)</div>
+      </div>
+      <div class="summary-card fail">
+        <div class="n">${zero}</div>
+        <div class="l">Falladas (+0)</div>
+      </div>
+    </div>
+    <div class="summary-actions">
+      <button class="btn btn-primary" onclick="startSession()">Nueva sesión (10 aleatorias)</button>
+      <button class="btn" onclick="reviewFailed()">Repasar falladas / parciales</button>
+    </div>
+  `;
+}
+
+// ── Repasar falladas y parciales ──
+function reviewFailed() {
+  // Construir lista de índices originales que fallaron o fueron parciales
+  const failedOriginal = session.filter((_, i) => scores[i] !== 2);
+  if (failedOriginal.length === 0) { startSession(); return; }
+
+  session  = shuffle(failedOriginal).slice(0, Math.min(SESSION_SIZE, failedOriginal.length));
+  current  = 0;
+  scores   = new Array(session.length).fill(null);
+  revealed = new Array(session.length).fill(false);
+
+  document.getElementById('summary').style.display = 'none';
+  updateHeader();
+  render();
+}
+
+// ── Arrancar ──
+window.addEventListener('DOMContentLoaded', startSession);
+</script>
+
+</body>
+</html>

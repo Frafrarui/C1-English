@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phrasal Verbs C1 · B2/C1 Tests</title>
+<meta name="description" content="Aprende y practica phrasal verbs de nivel B2 y C1 con tests y quiz interactivo.">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
+    --secondary-color: #a855f7;
+    --bg-card: rgba(30, 41, 59, 0.7);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --success: #10b981;
+    --danger: #ef4444;
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #020617, #0f172a, #1e1b4b);
+    color: var(--text-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 { font-family: 'Outfit', sans-serif; }
+
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+
+.global-header {
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.global-header h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin-bottom: .35rem;
+    background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.global-header p.subtitle {
+    color: var(--text-muted);
+    font-size: .95rem;
+    margin-bottom: 1.25rem;
+}
+
+.global-nav {
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid var(--glass-border);
+    padding: .6rem 1.4rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s ease;
+    font-family: 'Outfit', sans-serif;
+}
+
+.tab-btn:hover { color: var(--text-main); border-color: rgba(129,140,248,.5); }
+
+.tab-btn.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 4px 20px rgba(99,102,241,.4);
+}
+
+main { flex: 1; width: 100%; max-width: 1100px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+
+.view { display: none; animation: fadeIn .35s ease; }
+.view.active { display: block; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px);} to { opacity:1; transform: translateY(0);} }
+
+/* ---------- Controls (search / filter) ---------- */
+.controls {
+    display: flex;
+    gap: .75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.75rem;
+}
+
+.search-input, .level-select {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: .75rem 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color .2s ease;
+}
+
+.search-input { flex: 1; min-width: 200px; }
+.search-input:focus, .level-select:focus { border-color: var(--primary-color); }
+
+.results-count { color: var(--text-muted); font-size: .85rem; margin-bottom: 1rem; }
+
+/* ---------- Phrasal verb cards ---------- */
+.pv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.pv-card {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.25rem 1.4rem;
+    backdrop-filter: blur(10px);
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.pv-card:hover { transform: translateY(-3px); border-color: rgba(129,140,248,.4); }
+
+.pv-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: .5rem; margin-bottom: .35rem; }
+
+.pv-phrasal { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.15rem; color: #e0e7ff; }
+
+.pv-badge {
+    font-size: .68rem;
+    font-weight: 700;
+    padding: .2rem .55rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    letter-spacing: .03em;
+}
+
+.pv-badge.b2 { background: rgba(56,189,248,.15); color: #38bdf8; border: 1px solid rgba(56,189,248,.3); }
+.pv-badge.c1 { background: rgba(192,132,252,.15); color: #c084fc; border: 1px solid rgba(192,132,252,.3); }
+
+.pv-meaning { color: var(--secondary-color); font-weight: 600; font-size: .95rem; margin-bottom: .65rem; }
+
+.pv-example { font-size: .88rem; line-height: 1.45; color: var(--text-main); font-style: italic; margin-bottom: .3rem; }
+.pv-example-es { font-size: .82rem; line-height: 1.4; color: var(--text-muted); }
+
+.pv-test-tag { display: inline-block; margin-top: .7rem; font-size: .72rem; color: var(--text-muted); border-top: 1px dashed var(--glass-border); padding-top: .5rem; width: 100%; }
+
+.empty-state { text-align: center; color: var(--text-muted); padding: 3rem 1rem; font-size: 1.05rem; }
+
+/* ---------- Tests grid ---------- */
+.tests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.test-card {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all .22s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.test-card:hover { transform: translateY(-4px); border-color: rgba(129,140,248,.5); box-shadow: 0 10px 30px rgba(99,102,241,.25); }
+
+.test-card h3 { font-size: 1.4rem; margin-bottom: .3rem; }
+.test-card .test-range { color: var(--text-muted); font-size: .85rem; margin-bottom: 1rem; }
+
+.test-score {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: .82rem;
+    font-weight: 700;
+    color: var(--success);
+    background: rgba(16,185,129,.12);
+    border: 1px solid rgba(16,185,129,.3);
+    padding: .3rem .7rem;
+    border-radius: 999px;
+}
+
+.test-score.none { color: var(--text-muted); background: rgba(148,163,184,.1); border-color: var(--glass-border); }
+
+/* ---------- Test detail ---------- */
+.detail-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+.detail-header h2 { font-size: 1.7rem; }
+
+.btn {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 999px;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    font-size: .95rem;
+    transition: all .2s ease;
+}
+
+.btn-primary { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: #fff; box-shadow: 0 4px 16px rgba(99,102,241,.35); }
+.btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+.btn-ghost { background: rgba(255,255,255,.05); color: var(--text-main); border: 1px solid var(--glass-border); }
+.btn-ghost:hover { border-color: rgba(129,140,248,.5); }
+
+/* ---------- Quiz ---------- */
+.quiz-box {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.quiz-progress { color: var(--text-muted); font-size: .85rem; margin-bottom: .5rem; text-align: center; }
+
+.progress-bar { height: 6px; background: rgba(255,255,255,.08); border-radius: 999px; overflow: hidden; margin-bottom: 1.75rem; }
+.progress-fill { height: 100%; background: linear-gradient(to right, #38bdf8, #c084fc); transition: width .3s ease; }
+
+.quiz-question { text-align: center; margin-bottom: 2rem; }
+.quiz-question .q-label { color: var(--text-muted); font-size: .9rem; margin-bottom: .5rem; }
+.quiz-question .q-phrasal { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2rem; color: #e0e7ff; }
+
+.quiz-options { display: grid; gap: .85rem; }
+
+.quiz-option {
+    background: rgba(255,255,255,.04);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: .9rem 1.1rem;
+    border-radius: 14px;
+    text-align: left;
+    font-size: .98rem;
+    cursor: pointer;
+    transition: all .18s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.quiz-option:hover:not(:disabled) { border-color: rgba(129,140,248,.5); background: rgba(99,102,241,.08); }
+.quiz-option:disabled { cursor: default; }
+
+.quiz-option.correct { background: rgba(16,185,129,.15); border-color: var(--success); color: #6ee7b7; }
+.quiz-option.wrong { background: rgba(239,68,68,.15); border-color: var(--danger); color: #fca5a5; }
+
+.quiz-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1.75rem; }
+
+.quiz-feedback { min-height: 1.2rem; text-align: center; font-size: .9rem; margin-bottom: 1rem; font-weight: 600; }
+.quiz-feedback.ok { color: var(--success); }
+.quiz-feedback.bad { color: var(--danger); }
+
+.quiz-result { text-align: center; }
+.quiz-result .score-big { font-family: 'Outfit', sans-serif; font-size: 3.2rem; font-weight: 800; background: linear-gradient(to right, #38bdf8, #c084fc); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: .5rem; }
+.quiz-result p { color: var(--text-muted); margin-bottom: 1.75rem; }
+.quiz-result-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 640px) {
+    .quiz-box { padding: 1.4rem; }
+    .quiz-question .q-phrasal { font-size: 1.5rem; }
+    .detail-header { flex-direction: column; align-items: stretch; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+    <header class="global-header">
+        <h1>Phrasal Verbs · B2/C1</h1>
+        <p class="subtitle">57 phrasal verbs organizados en 6 tests, con buscador y quiz de práctica</p>
+        <nav class="global-nav">
+            <button class="tab-btn active" data-tab="all">Todos</button>
+            <button class="tab-btn" data-tab="tests">Tests</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TODOS -->
+        <section id="view-all" class="view active">
+            <div class="controls">
+                <input type="text" id="searchInput" class="search-input" placeholder="Busca por phrasal verb o significado...">
+                <select id="levelSelect" class="level-select">
+                    <option value="all">Todos los niveles</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                </select>
+            </div>
+            <p class="results-count" id="resultsCount"></p>
+            <div class="pv-grid" id="pvGrid"></div>
+        </section>
+
+        <!-- TESTS -->
+        <section id="view-tests" class="view">
+            <div class="tests-grid" id="testsGrid"></div>
+        </section>
+
+        <!-- TEST DETAIL -->
+        <section id="view-detail" class="view">
+            <div class="detail-header">
+                <div>
+                    <button class="btn btn-ghost" id="backToTests">&larr; Volver a tests</button>
+                </div>
+                <button class="btn btn-primary" id="startQuizBtn">Iniciar Quiz</button>
+            </div>
+            <h2 id="detailTitle" style="margin-bottom:1.25rem;"></h2>
+            <div class="pv-grid" id="detailGrid"></div>
+        </section>
+
+        <!-- QUIZ -->
+        <section id="view-quiz" class="view">
+            <div class="quiz-box" id="quizBox"></div>
+        </section>
+    </main>
+</div>
+
+<script>
+/* ===================== DATA ===================== */
+const PV_DATA = [
+  {phrasal:"Break down", meaning:"Romper, estropear", en:"This morning, I was in a rush because my car broke down and I was going to be late for school.", es:"Esta mañana tenía prisa porque mi coche se estropeó e iba a llegar tarde al colegio.", level:"B2"},
+  {phrasal:"Call off", meaning:"Cancelar", en:"We'll have no choice but to call off the meeting if you are unable to come.", es:"No tendremos más remedio que cancelar la reunión si no puedes venir.", level:"B2"},
+  {phrasal:"Carry out", meaning:"Llevar a cabo", en:"Researchers are carrying out a new cancer investigation.", es:"Los investigadores están llevando a cabo una nueva investigación sobre el cáncer.", level:"B2"},
+  {phrasal:"Come up with", meaning:"Elaborar, inventarse", en:"We didn't have a ball to play with so I came up with the idea of using a tin.", es:"No teníamos pelota para jugar, así que se me ocurrió la idea de usar una lata.", level:"B2"},
+  {phrasal:"Figure out", meaning:"Resolver", en:"I'm trying to figure out how to pass this level on the Xbox.", es:"Estoy intentando averiguar cómo pasar este nivel en la Xbox.", level:"B2"},
+  {phrasal:"Find out", meaning:"Averiguar", en:"You are not going to believe what I found out about Marco.", es:"No te vas a creer lo que averigüé sobre Marco.", level:"B2"},
+  {phrasal:"Give up", meaning:"Rendirse", en:"I have no idea how to do this. I give up.", es:"No tengo ni idea de cómo hacer esto. Me rindo.", level:"B2"},
+  {phrasal:"Look forward to + ing", meaning:"Estar deseando", en:"I'm looking forward to visiting my family in Ibiza.", es:"Tengo muchas ganas de visitar a mi familia en Ibiza.", level:"B2"},
+  {phrasal:"Look into", meaning:"Investigar", en:"The detective is going to look into the murder.", es:"El detective va a investigar el asesinato.", level:"B2"},
+  {phrasal:"Look up to", meaning:"Admirar", en:"I really look up to my brother. He is a brilliant hard worker.", es:"Admiro mucho a mi hermano. Es un trabajador brillante.", level:"B2"},
+  {phrasal:"Make up", meaning:"Inventar", en:"Could you please stop making up false stories about me?", es:"¿Podrías dejar de inventarte historias falsas sobre mí?", level:"B2"},
+  {phrasal:"Put off", meaning:"Cancelar, aplazar", en:"Why don't we put off the cricket match? I don't feel like playing tonight.", es:"¿Por qué no aplazamos el partido de críquet? No me apetece jugar esta noche.", level:"B2"},
+  {phrasal:"Put up with", meaning:"Tolerar, aguantar", en:"I'm not going to put up with your rudeness anymore. I quit!", es:"No voy a aguantar más tu mala educación. ¡Lo dejo!", level:"B2"},
+  {phrasal:"Run out of", meaning:"Quedarse sin", en:"We run out of milk. Let's buy a couple of bottles for tomorrow's breakfast.", es:"Nos hemos quedado sin leche. Compremos un par de botellas para el desayuno de mañana.", level:"B2"},
+  {phrasal:"Set up", meaning:"Fundar", en:"I will be setting up my business next year.", es:"Voy a fundar mi propio negocio el año que viene.", level:"B2"},
+  {phrasal:"Split up", meaning:"Romper (una relación)", en:"We are not a rock band anymore, we split up last year.", es:"Ya no somos un grupo de rock, nos separamos el año pasado.", level:"B2"},
+  {phrasal:"Turn out for/up for/up to/up at", meaning:"Acudir", en:"More than 1.000 people turned out for the concert last night.", es:"Más de 1.000 personas acudieron al concierto anoche.", level:"B2"},
+  {phrasal:"Break off", meaning:"Desprenderse", en:"Look at that mountain, it's breaking off!", es:"¡Mira esa montaña, se está desprendiendo!", level:"C1"},
+  {phrasal:"Bump into", meaning:"Chocar, encontrarse con", en:"If you happen to bump into Mark, tell him I won't be able to pick him up later.", es:"Si te encuentras con Mark, dile que no podré recogerlo luego.", level:"C1"},
+  {phrasal:"Call for", meaning:"Requerir", en:"Working as a police calls for a lot of courage.", es:"Trabajar como policía requiere mucho valor.", level:"C1"},
+  {phrasal:"Call on", meaning:"Apelar, recurrir", en:"The team had to call on their best player to win the match even though he was injured.", es:"El equipo tuvo que recurrir a su mejor jugador para ganar el partido, aunque estaba lesionado.", level:"C1"},
+  {phrasal:"Come about", meaning:"Suceder", en:"I've been waiting ages for this to come about.", es:"Llevo siglos esperando a que esto sucediera.", level:"C1"},
+  {phrasal:"Come across", meaning:"Encontrarse con", en:"I was supposed to go to the gym but I came across my friend George and we decided to go bowling instead.", es:"Se suponía que iba a ir al gimnasio, pero me encontré con mi amigo George y decidimos ir a jugar a los bolos.", level:"C1"},
+  {phrasal:"Come along", meaning:"Progresar", en:"I'm coming along really well with all the stuff I have to do today.", es:"Estoy progresando muy bien con todo lo que tengo que hacer hoy.", level:"C1"},
+  {phrasal:"Come forward", meaning:"Dar un paso al frente", en:"If anyone knows who broke the window, please come forward and tell the truth.", es:"Si alguien sabe quién rompió la ventana, que dé un paso al frente y diga la verdad.", level:"C1"},
+  {phrasal:"Cut down", meaning:"Reducir", en:"I really need to cut down the amount of pizza I'm eating lately.", es:"Realmente necesito reducir la cantidad de pizza que estoy comiendo últimamente.", level:"C1"},
+  {phrasal:"Date back", meaning:"Datar, remontarse", en:"Problems between us date back more than ten years ago.", es:"Los problemas entre nosotros se remontan a hace más de diez años.", level:"C1"},
+  {phrasal:"Develop into", meaning:"Convertirse en", en:"We should help children to develop themselves into good readers.", es:"Deberíamos ayudar a los niños a convertirse en buenos lectores.", level:"C1"},
+  {phrasal:"Draw up", meaning:"Redactar, planear", en:"I couldn't start working yet because my boss is still drawing up my contract.", es:"Todavía no podía empezar a trabajar porque mi jefe seguía redactando mi contrato.", level:"C1"},
+  {phrasal:"End up", meaning:"Terminar", en:"If we carry on walking this way, we may end up totally lost.", es:"Si seguimos caminando por aquí, puede que acabemos totalmente perdidos.", level:"C1"},
+  {phrasal:"Fed up with", meaning:"Estar harto de", en:"I'm fed up with your behaviour!", es:"¡Estoy harto de tu comportamiento!", level:"C1"},
+  {phrasal:"Feel up to + ing", meaning:"Sentirse con fuerzas, ánimos", en:"Do you feel up to climbing that massive tree over there?", es:"¿Te sientes con ánimos de subir a ese árbol tan enorme de ahí?", level:"C1"},
+  {phrasal:"Go ahead", meaning:"Seguir adelante, llevar a cabo", en:"The meeting will go ahead according with the plan.", es:"La reunión seguirá adelante según lo planeado.", level:"C1"},
+  {phrasal:"Go off", meaning:"Estropearse", en:"This beef has gone off.", es:"Esta carne de ternera se ha estropeado.", level:"C1"},
+  {phrasal:"Go out", meaning:"Salir de fiesta", en:"Why didn't you go out last night? It was the best party ever!", es:"¿Por qué no saliste de fiesta anoche? ¡Fue la mejor fiesta de la historia!", level:"C1"},
+  {phrasal:"Go over", meaning:"Analizar", en:"We should go over the differences in our company's employees.", es:"Deberíamos analizar las diferencias entre los empleados de nuestra empresa.", level:"C1"},
+  {phrasal:"Go through", meaning:"Sufrir", en:"All we went through together will make us stronger.", es:"Todo lo que sufrimos juntos nos hará más fuertes.", level:"C1"},
+  {phrasal:"Hold up", meaning:"Retrasar", en:"The train was held up 2 hours, it was a nightmare!", es:"El tren se retrasó 2 horas, ¡fue una pesadilla!", level:"C1"},
+  {phrasal:"Let down", meaning:"Decepcionar", en:"I promise I won't let you down.", es:"Prometo que no te decepcionaré.", level:"C1"},
+  {phrasal:"Look after", meaning:"Cuidar", en:"Tom won't be able to come to the party because he's got to look after his cousin.", es:"Tom no podrá venir a la fiesta porque tiene que cuidar a su primo.", level:"C1"},
+  {phrasal:"Name after", meaning:"Llamarse por (en honor a)", en:"Graham was named after his father.", es:"A Graham le pusieron el nombre de su padre.", level:"C1"},
+  {phrasal:"Peel off", meaning:"Pelar", en:"I got burned the other day and my skin is starting to peel off.", es:"Me quemé el otro día y mi piel está empezando a pelarse.", level:"C1"},
+  {phrasal:"Point out", meaning:"Puntualizar", en:"I would like to point out how beautiful you look today.", es:"Me gustaría puntualizar lo guapa que estás hoy.", level:"C1"},
+  {phrasal:"Pop up", meaning:"Aparecer de repente", en:"My father popped up at home after 3 months working in Paris.", es:"Mi padre apareció de repente en casa tras 3 meses trabajando en París.", level:"C1"},
+  {phrasal:"Pull down", meaning:"Derribar", en:"That building is being pulled down after 100 years.", es:"Ese edificio está siendo derribado después de 100 años.", level:"C1"},
+  {phrasal:"Put down", meaning:"Achacar", en:"The mark Beth got in her exam was put down to the fact that she didn't study enough time.", es:"La nota que sacó Beth en su examen se achacó al hecho de que no estudió suficiente tiempo.", level:"C1"},
+  {phrasal:"Pull through", meaning:"Recuperarse", en:"Everyone thought he wasn't going to make it but he is pulling through really fast.", es:"Todos pensaban que no lo iba a lograr, pero se está recuperando muy rápido.", level:"C1"},
+  {phrasal:"Put forward", meaning:"Proponer, ofrecerse", en:"Does anyone want to put himself forward to do this job?", es:"¿Alguien quiere ofrecerse para hacer este trabajo?", level:"C1"},
+  {phrasal:"Run into", meaning:"Encontrarse con", en:"I ran into my brother yesterday at the university.", es:"Ayer me encontré con mi hermano en la universidad.", level:"C1"},
+  {phrasal:"Stand out", meaning:"Sobresalir", en:"Learning languages will help you to stand out over the rest of the people.", es:"Aprender idiomas te ayudará a destacar sobre el resto de la gente.", level:"C1"},
+  {phrasal:"Settle down", meaning:"Establecerse, asentarse", en:"I wanted to get married but my girlfriend wasn't ready to settle down.", es:"Yo quería casarme, pero mi novia no estaba lista para sentar la cabeza.", level:"C1"},
+  {phrasal:"Sort out", meaning:"Ordenar", en:"Sorting out my suitcase after having been on holidays is really boring.", es:"Ordenar la maleta después de haber estado de vacaciones es muy aburrido.", level:"C1"},
+  {phrasal:"Take over", meaning:"Tomar el relevo", en:"The main shop in town has been taken over by a famous person.", es:"La tienda principal del pueblo ha sido tomada por una persona famosa.", level:"C1"},
+  {phrasal:"Take up", meaning:"Empezar a hacer algo (hobby)", en:"I'm taking up judo next week.", es:"La semana que viene voy a empezar a practicar judo.", level:"C1"},
+  {phrasal:"Turn down", meaning:"Rechazar", en:"We got turned down of the nightclub because of we are 17 years old.", es:"Nos rechazaron la entrada a la discoteca porque tenemos 17 años.", level:"C1"},
+  {phrasal:"Work out", meaning:"Resolver", en:"Could you help me to work out the solution of this problem?", es:"¿Podrías ayudarme a resolver la solución de este problema?", level:"C1"},
+  {phrasal:"Wear out", meaning:"Agotar, estar exhausto", en:"I can't walk anymore. I'm worn out!", es:"¡No puedo caminar más. Estoy agotado!", level:"C1"}
+];
+
+/* asigna id y numero de test (bloques de 10, ultimo con 7) */
+PV_DATA.forEach((item, i) => {
+    item.id = i;
+    item.test = Math.floor(i / 10) + 1;
+});
+const TOTAL_TESTS = Math.max(...PV_DATA.map(p => p.test));
+
+/* ===================== STATE ===================== */
+let state = {
+    tab: 'all',
+    currentTest: null,
+    quiz: { questions: [], index: 0, score: 0, answered: false }
+};
+
+/* ===================== HELPERS ===================== */
+function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function getScores() {
+    try { return JSON.parse(localStorage.getItem('pv_scores') || '{}'); }
+    catch(e) { return {}; }
+}
+
+function saveScore(testNum, score, total) {
+    const scores = getScores();
+    const prevPct = scores[testNum] ? scores[testNum].pct : -1;
+    const pct = Math.round((score/total)*100);
+    if (pct >= prevPct) scores[testNum] = { score, total, pct };
+    localStorage.setItem('pv_scores', JSON.stringify(scores));
+}
+
+/* ===================== RENDER: TODOS ===================== */
+function renderCard(item) {
+    return `<div class="pv-card">
+        <div class="pv-card-top">
+            <span class="pv-phrasal">${item.phrasal}</span>
+            <span class="pv-badge ${item.level.toLowerCase()}">${item.level}</span>
+        </div>
+        <div class="pv-meaning">${item.meaning}</div>
+        <div class="pv-example">"${item.en}"</div>
+        <div class="pv-example-es">${item.es}</div>
+        <div class="pv-test-tag">Test ${item.test}</div>
+    </div>`;
+}
+
+function renderAll() {
+    const query = document.getElementById('searchInput').value.trim().toLowerCase();
+    const level = document.getElementById('levelSelect').value;
+    const filtered = PV_DATA.filter(item => {
+        const matchesQuery = !query || item.phrasal.toLowerCase().includes(query) || item.meaning.toLowerCase().includes(query);
+        const matchesLevel = level === 'all' || item.level === level;
+        return matchesQuery && matchesLevel;
+    });
+    document.getElementById('resultsCount').textContent = `${filtered.length} de ${PV_DATA.length} phrasal verbs`;
+    const grid = document.getElementById('pvGrid');
+    grid.innerHTML = filtered.length
+        ? filtered.map(renderCard).join('')
+        : `<div class="empty-state" style="grid-column:1/-1">No se ha encontrado ningún phrasal verb.</div>`;
+}
+
+/* ===================== RENDER: TESTS ===================== */
+function renderTests() {
+    const scores = getScores();
+    const grid = document.getElementById('testsGrid');
+    let html = '';
+    for (let t = 1; t <= TOTAL_TESTS; t++) {
+        const items = PV_DATA.filter(p => p.test === t);
+        const sc = scores[t];
+        html += `<div class="test-card" data-test="${t}">
+            <h3>Test ${t}</h3>
+            <div class="test-range">${items.length} phrasal verbs</div>
+            <span class="test-score ${sc ? '' : 'none'}">${sc ? `Mejor puntuación: ${sc.score}/${sc.total}` : 'Sin practicar'}</span>
+        </div>`;
+    }
+    grid.innerHTML = html;
+    grid.querySelectorAll('.test-card').forEach(card => {
+        card.addEventListener('click', () => openTestDetail(parseInt(card.dataset.test, 10)));
+    });
+}
+
+/* ===================== RENDER: TEST DETAIL ===================== */
+function openTestDetail(testNum) {
+    state.currentTest = testNum;
+    const items = PV_DATA.filter(p => p.test === testNum);
+    document.getElementById('detailTitle').textContent = `Test ${testNum} — ${items.length} phrasal verbs`;
+    document.getElementById('detailGrid').innerHTML = items.map(renderCard).join('');
+    switchView('detail');
+}
+
+/* ===================== QUIZ ===================== */
+function startQuiz() {
+    const items = PV_DATA.filter(p => p.test === state.currentTest);
+    state.quiz = { questions: shuffle(items), index: 0, score: 0, answered: false };
+    switchView('quiz');
+    renderQuizQuestion();
+}
+
+function buildOptions(correctItem, pool) {
+    const others = pool.filter(p => p.phrasal !== correctItem.phrasal);
+    const distractors = shuffle(others).slice(0, 3).map(p => p.meaning);
+    return shuffle([correctItem.meaning, ...distractors]);
+}
+
+function renderQuizQuestion() {
+    const q = state.quiz;
+    const box = document.getElementById('quizBox');
+    if (q.index >= q.questions.length) {
+        renderQuizResult();
+        return;
+    }
+    const current = q.questions[q.index];
+    const pool = PV_DATA.filter(p => p.test === state.currentTest);
+    const options = buildOptions(current, pool);
+    const progressPct = Math.round((q.index / q.questions.length) * 100);
+
+    box.innerHTML = `
+        <p class="quiz-progress">Pregunta ${q.index + 1} de ${q.questions.length} · Test ${state.currentTest}</p>
+        <div class="progress-bar"><div class="progress-fill" style="width:${progressPct}%"></div></div>
+        <div class="quiz-question">
+            <div class="q-label">¿Qué significa...?</div>
+            <div class="q-phrasal">${current.phrasal}</div>
+        </div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+        <div class="quiz-options" id="quizOptions">
+            ${options.map(opt => `<button class="quiz-option" data-meaning="${opt.replace(/"/g,'&quot;')}">${opt}</button>`).join('')}
+        </div>
+        <div class="quiz-footer">
+            <span style="color:var(--text-muted); font-size:.85rem;">Aciertos: ${q.score}/${q.index}</span>
+            <button class="btn btn-ghost" id="quizNextBtn" style="display:none;">Siguiente &rarr;</button>
+        </div>
+    `;
+
+    const correctMeaning = current.meaning;
+    document.querySelectorAll('.quiz-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (state.quiz.answered) return;
+            state.quiz.answered = true;
+            const chosen = btn.dataset.meaning;
+            const feedback = document.getElementById('quizFeedback');
+            document.querySelectorAll('.quiz-option').forEach(b => {
+                b.disabled = true;
+                if (b.dataset.meaning === correctMeaning) b.classList.add('correct');
+            });
+            if (chosen === correctMeaning) {
+                state.quiz.score++;
+                feedback.textContent = '¡Correcto!';
+                feedback.className = 'quiz-feedback ok';
+            } else {
+                btn.classList.add('wrong');
+                feedback.textContent = `Incorrecto. "${current.phrasal}" significa "${correctMeaning}".`;
+                feedback.className = 'quiz-feedback bad';
+            }
+            document.getElementById('quizNextBtn').style.display = 'inline-block';
+        });
+    });
+
+    document.getElementById('quizNextBtn').addEventListener('click', () => {
+        state.quiz.index++;
+        state.quiz.answered = false;
+        renderQuizQuestion();
+    });
+}
+
+function renderQuizResult() {
+    const q = state.quiz;
+    saveScore(state.currentTest, q.score, q.questions.length);
+    const pct = Math.round((q.score / q.questions.length) * 100);
+    const box = document.getElementById('quizBox');
+    box.innerHTML = `
+        <div class="quiz-result">
+            <div class="score-big">${q.score}/${q.questions.length}</div>
+            <p>${pct}% de aciertos en el Test ${state.currentTest}</p>
+            <div class="quiz-result-actions">
+                <button class="btn btn-primary" id="retryQuizBtn">Repetir Quiz</button>
+                <button class="btn btn-ghost" id="backToDetailBtn">Volver al Test</button>
+            </div>
+        </div>
+    `;
+    document.getElementById('retryQuizBtn').addEventListener('click', startQuiz);
+    document.getElementById('backToDetailBtn').addEventListener('click', () => openTestDetail(state.currentTest));
+}
+
+/* ===================== NAV / VIEWS ===================== */
+function switchView(view) {
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.getElementById(`view-${view}`).classList.add('active');
+}
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const tab = btn.dataset.tab;
+        state.tab = tab;
+        switchView(tab);
+        if (tab === 'tests') renderTests();
+    });
+});
+
+document.getElementById('backToTests').addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('.tab-btn[data-tab="tests"]').classList.add('active');
+    renderTests();
+    switchView('tests');
+});
+
+document.getElementById('startQuizBtn').addEventListener('click', startQuiz);
+
+document.getElementById('searchInput').addEventListener('input', renderAll);
+document.getElementById('levelSelect').addEventListener('change', renderAll);
+
+/* ===================== INIT ===================== */
+renderAll();
+renderTests();
+</script>
+</body>
+</html>

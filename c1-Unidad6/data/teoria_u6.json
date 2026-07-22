@@ -1,0 +1,121 @@
+{
+  "reference": [
+    {
+      "title": "This / That / These / Those",
+      "rule": "Used to refer to situations or people mentioned before. This/These generally refer to things closer in time/space (Present), while That/Those refer to things further away (Past).",
+      "examples": [
+        "I studied biology. That allowed me to work in a lab.",
+        "I am taking an English course. This will give me more opportunities."
+      ]
+    }
+  ],
+  "substitution": [
+    {
+      "title": "Auxiliary Verbs (do/does/did)",
+      "rule": "Used to avoid repeating the main verb.",
+      "examples": [
+        "Peter didn't study, but I did."
+      ]
+    },
+    {
+      "title": "Do so",
+      "rule": "Used to replace a Verb + Object structure.",
+      "examples": [
+        "Peter didn't buy a new car, but I did so."
+      ]
+    },
+    {
+      "title": "So / Neither",
+      "rule": "Structures 'So + aux + subject' and 'Neither + aux + subject' used for agreements.",
+      "examples": [
+        "I like apples. So do I.",
+        "I don't like apples. Neither do I."
+      ]
+    },
+    {
+      "title": "So / Not (after certain verbs)",
+      "rule": "Used after verbs like think, suppose, expect, believe, hope, seem.",
+      "examples": [
+        "Is he coming? I hope so.",
+        "Will it rain? I expect not."
+      ]
+    },
+    {
+      "title": "If so / If not",
+      "rule": "Used to replace complete conditional clauses.",
+      "examples": [
+        "Are you free tonight? If so, let's grab dinner."
+      ]
+    },
+    {
+      "title": "One / Ones",
+      "rule": "Used to replace countable nouns.",
+      "examples": [
+        "I've lost my books. The ones on the table are mine."
+      ]
+    }
+  ],
+  "ellipsis": [
+    {
+      "title": "Connectors 'And/But'",
+      "rule": "We can omit the subject or adjective if it is the same.",
+      "examples": [
+        "He opened the door and (he) walked in."
+      ]
+    },
+    {
+      "title": "Relative Pronouns",
+      "rule": "We can omit 'which/that' when it is the direct object of the relative clause.",
+      "examples": [
+        "The car (that) I bought is very fast."
+      ]
+    },
+    {
+      "title": "Auxiliary Verbs",
+      "rule": "We can omit the main verb after the auxiliary.",
+      "examples": [
+        "Have you finished? Yes, I have (finished)."
+      ]
+    },
+    {
+      "title": "Infinitive 'to'",
+      "rule": "We can leave the 'to' alone when omitting the rest of the infinitive clause.",
+      "examples": [
+        "I didn't like chess, but I used to (like chess)."
+      ]
+    },
+    {
+      "title": "Wh- words",
+      "rule": "We can leave the wh-word alone.",
+      "examples": [
+        "He left early, but I don't know why (he left early)."
+      ]
+    }
+  ],
+  "speaking": [
+    {
+      "part": "Part 2 (Long Turn)",
+      "strategy": "Reference (Linking ideas)",
+      "structure": "Regarding [Topic A], [Comment]. THAT being said, THIS other picture...",
+      "example": "Regarding the first photo, they seem busy. THAT being said, THIS other picture shows a calmer environment."
+    },
+    {
+      "part": "Part 3 (Collaborative Task)",
+      "strategy": "Substitution (Agreeing / Disagreeing)",
+      "structure": "I think [Opinion]. Do you? -> Yes, I DO / So DO I / Neither DO I.",
+      "example": "I think we should prioritize the environment over profits. Do you? -> Yes, I DO. Actually, SO DO most young people nowadays."
+    },
+    {
+      "part": "Part 4 (Discussion)",
+      "strategy": "Substitution (Responding to complex questions)",
+      "structure": "Will [Event] happen? / Is [Idea] true? -> I certainly hope SO / I suppose NOT.",
+      "example": "Do you think artificial intelligence will replace teachers? I certainly hope NOT, but I suppose SO if we rely on it too much."
+    },
+    {
+      "part": "Natural Flow",
+      "strategy": "Ellipsis (Avoiding repetition with 'to')",
+      "structure": "I haven't/didn't [Action], but I would love TO / I used TO.",
+      "example": "I haven't tried any extreme sports yet, but I'd love TO if I ever get the chance."
+    }
+  ]
+}

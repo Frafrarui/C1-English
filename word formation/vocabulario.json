@@ -1,0 +1,2914 @@
+[
+  {
+    "palabra_base": "Able",
+    "palabra_derivada": "Ability",
+    "tipo": "Sustantivo",
+    "traduccion": "Habilidad",
+    "ejemplo": "The new software improves our ability to process data."
+  },
+  {
+    "palabra_base": "Able",
+    "palabra_derivada": "Inability",
+    "tipo": "Sustantivo",
+    "traduccion": "Inhabilidad / Incapacidad",
+    "ejemplo": "His inability to meet deadlines is a problem."
+  },
+  {
+    "palabra_base": "Able",
+    "palabra_derivada": "Enable",
+    "tipo": "Verbo",
+    "traduccion": "Activar / Habilitar",
+    "ejemplo": "This feature will enable you to save progress automatically."
+  },
+  {
+    "palabra_base": "Able",
+    "palabra_derivada": "Unable",
+    "tipo": "Adjetivo",
+    "traduccion": "Incapaz",
+    "ejemplo": "I am unable to attend the meeting tomorrow."
+  },
+  {
+    "palabra_base": "Accident",
+    "palabra_derivada": "Accidentally",
+    "tipo": "Adverbio",
+    "traduccion": "Accidentalmente",
+    "ejemplo": "I accidentally deleted the configuration file."
+  },
+  {
+    "palabra_base": "Achieve",
+    "palabra_derivada": "Achievement",
+    "tipo": "Sustantivo",
+    "traduccion": "Logro",
+    "ejemplo": "Completing the project on time was a huge achievement."
+  },
+  {
+    "palabra_base": "Active",
+    "palabra_derivada": "Activity",
+    "tipo": "Sustantivo",
+    "traduccion": "Actividad",
+    "ejemplo": "We need to monitor the network for any suspicious activity."
+  },
+  {
+    "palabra_base": "Add",
+    "palabra_derivada": "Addition",
+    "tipo": "Sustantivo",
+    "traduccion": "Adición",
+    "ejemplo": "This new tool is a great addition to our workflow."
+  },
+  {
+    "palabra_base": "Addition",
+    "palabra_derivada": "Additional",
+    "tipo": "Adjetivo",
+    "traduccion": "Adicional",
+    "ejemplo": "We require additional information to proceed."
+  },
+  {
+    "palabra_base": "Agree",
+    "palabra_derivada": "Agreement",
+    "tipo": "Sustantivo",
+    "traduccion": "Acuerdo",
+    "ejemplo": "They finally reached an agreement."
+  },
+  {
+    "palabra_base": "Agriculture",
+    "palabra_derivada": "Agricultural",
+    "tipo": "Adjetivo",
+    "traduccion": "Agrícola",
+    "ejemplo": "The country relies heavily on its agricultural exports."
+  },
+  {
+    "palabra_base": "Amaze",
+    "palabra_derivada": "Amazing",
+    "tipo": "Adjetivo",
+    "traduccion": "Increíble",
+    "ejemplo": "The view from the top of the mountain is amazing."
+  },
+  {
+    "palabra_base": "Amaze",
+    "palabra_derivada": "Amazement",
+    "tipo": "Sustantivo",
+    "traduccion": "Asombro",
+    "ejemplo": "She looked at the magician in absolute amazement."
+  },
+  {
+    "palabra_base": "America",
+    "palabra_derivada": "American",
+    "tipo": "Adjetivo/Sust.",
+    "traduccion": "Americano",
+    "ejemplo": "He loves classic American cars."
+  },
+  {
+    "palabra_base": "Analyse",
+    "palabra_derivada": "Analysis",
+    "tipo": "Sustantivo",
+    "traduccion": "Análisis",
+    "ejemplo": "The data requires further analysis."
+  },
+  {
+    "palabra_base": "Angry",
+    "palabra_derivada": "Anger",
+    "tipo": "Sustantivo",
+    "traduccion": "Ira",
+    "ejemplo": "He couldn't control his anger."
+  },
+  {
+    "palabra_base": "Annual",
+    "palabra_derivada": "Annually",
+    "tipo": "Adverbio",
+    "traduccion": "Anualmente",
+    "ejemplo": "The festival is held annually in July."
+  },
+  {
+    "palabra_base": "Anxiety",
+    "palabra_derivada": "Anxious",
+    "tipo": "Adjetivo",
+    "traduccion": "Ansioso",
+    "ejemplo": "I am feeling a bit anxious about the exam."
+  },
+  {
+    "palabra_base": "Appear",
+    "palabra_derivada": "Appearance",
+    "tipo": "Sustantivo",
+    "traduccion": "Apariencia",
+    "ejemplo": "You shouldn't judge someone by their appearance."
+  },
+  {
+    "palabra_base": "Arrive",
+    "palabra_derivada": "Arrival",
+    "tipo": "Sustantivo",
+    "traduccion": "Llegada",
+    "ejemplo": "We waited for the arrival of the train."
+  },
+  {
+    "palabra_base": "Assist",
+    "palabra_derivada": "Assistance",
+    "tipo": "Sustantivo",
+    "traduccion": "Asistencia",
+    "ejemplo": "Do you need any assistance with your luggage?"
+  },
+  {
+    "palabra_base": "Attract",
+    "palabra_derivada": "Attraction",
+    "tipo": "Sustantivo",
+    "traduccion": "Atracción",
+    "ejemplo": "The museum is the main tourist attraction."
+  },
+  {
+    "palabra_base": "Attract",
+    "palabra_derivada": "Attractive",
+    "tipo": "Adjetivo",
+    "traduccion": "Atractivo",
+    "ejemplo": "It's a very attractive offer."
+  },
+  {
+    "palabra_base": "Believe",
+    "palabra_derivada": "Unbelievable",
+    "tipo": "Adjetivo",
+    "traduccion": "Increíble",
+    "ejemplo": "The plot of the movie was completely unbelievable."
+  },
+  {
+    "palabra_base": "Bitter",
+    "palabra_derivada": "Bitterly",
+    "tipo": "Adverbio",
+    "traduccion": "Amargamente",
+    "ejemplo": "It was bitterly cold outside."
+  },
+  {
+    "palabra_base": "Bore",
+    "palabra_derivada": "Boring / Bored",
+    "tipo": "Adjetivo",
+    "traduccion": "Aburrido",
+    "ejemplo": "I felt completely bored during the lecture."
+  },
+  {
+    "palabra_base": "Bore",
+    "palabra_derivada": "Boredom",
+    "tipo": "Sustantivo",
+    "traduccion": "Aburrimiento",
+    "ejemplo": "The children complained of boredom on the rainy day."
+  },
+  {
+    "palabra_base": "Breath",
+    "palabra_derivada": "Breathless",
+    "tipo": "Adjetivo",
+    "traduccion": "Jadeante",
+    "ejemplo": "The run left me completely breathless."
+  },
+  {
+    "palabra_base": "Cancel",
+    "palabra_derivada": "Cancellation",
+    "tipo": "Sustantivo",
+    "traduccion": "Cancelación",
+    "ejemplo": "We apologize for the late cancellation of the flight."
+  },
+  {
+    "palabra_base": "Care",
+    "palabra_derivada": "Careless",
+    "tipo": "Adjetivo",
+    "traduccion": "Descuidado",
+    "ejemplo": "It was a careless mistake."
+  },
+  {
+    "palabra_base": "Challenge",
+    "palabra_derivada": "Challenging",
+    "tipo": "Adjetivo",
+    "traduccion": "Desafiante",
+    "ejemplo": "Learning a new language can be challenging."
+  },
+  {
+    "palabra_base": "Character",
+    "palabra_derivada": "Characteristic",
+    "tipo": "Adjetivo",
+    "traduccion": "Característico",
+    "ejemplo": "These stripes are characteristic of this type of tiger."
+  },
+  {
+    "palabra_base": "Cheer",
+    "palabra_derivada": "Cheerfully",
+    "tipo": "Adverbio",
+    "traduccion": "Alegremente",
+    "ejemplo": "She greeted everyone cheerfully."
+  },
+  {
+    "palabra_base": "Choose",
+    "palabra_derivada": "Choice",
+    "tipo": "Sustantivo",
+    "traduccion": "Elección",
+    "ejemplo": "You have to make a difficult choice."
+  },
+  {
+    "palabra_base": "Clear",
+    "palabra_derivada": "Unclear",
+    "tipo": "Adjetivo",
+    "traduccion": "Confuso",
+    "ejemplo": "The instructions were completely unclear."
+  },
+  {
+    "palabra_base": "Coast",
+    "palabra_derivada": "Coastal",
+    "tipo": "Adjetivo",
+    "traduccion": "Costero",
+    "ejemplo": "They live in a small coastal town."
+  },
+  {
+    "palabra_base": "Comfort",
+    "palabra_derivada": "Comfortable",
+    "tipo": "Adjetivo",
+    "traduccion": "Cómodo",
+    "ejemplo": "This sofa is very comfortable."
+  },
+  {
+    "palabra_base": "Comfort",
+    "palabra_derivada": "Uncomfortable",
+    "tipo": "Adjetivo",
+    "traduccion": "Incómodo",
+    "ejemplo": "I felt uncomfortable in that chair."
+  },
+  {
+    "palabra_base": "Comfort",
+    "palabra_derivada": "Comfortably",
+    "tipo": "Adverbio",
+    "traduccion": "Cómodamente",
+    "ejemplo": "We won the match comfortably."
+  },
+  {
+    "palabra_base": "Communicate",
+    "palabra_derivada": "Communication",
+    "tipo": "Sustantivo",
+    "traduccion": "Comunicación",
+    "ejemplo": "Good communication is key in a relationship."
+  },
+  {
+    "palabra_base": "Compete",
+    "palabra_derivada": "Competitive",
+    "tipo": "Adjetivo",
+    "traduccion": "Competitivo",
+    "ejemplo": "The housing market is very competitive right now."
+  },
+  {
+    "palabra_base": "Compete",
+    "palabra_derivada": "Competitor",
+    "tipo": "Sustantivo",
+    "traduccion": "Competidor",
+    "ejemplo": "Our main competitor launched a new product."
+  },
+  {
+    "palabra_base": "Concentrate",
+    "palabra_derivada": "Concentration",
+    "tipo": "Sustantivo",
+    "traduccion": "Concentración",
+    "ejemplo": "This puzzle requires a lot of concentration."
+  },
+  {
+    "palabra_base": "Conclude",
+    "palabra_derivada": "Conclusion",
+    "tipo": "Sustantivo",
+    "traduccion": "Conclusión",
+    "ejemplo": "What conclusion did you reach?"
+  },
+  {
+    "palabra_base": "Connect",
+    "palabra_derivada": "Connection",
+    "tipo": "Sustantivo",
+    "traduccion": "Conexión",
+    "ejemplo": "The internet connection is very slow today."
+  },
+  {
+    "palabra_base": "Conscious",
+    "palabra_derivada": "Consciously",
+    "tipo": "Adverbio",
+    "traduccion": "Conscientemente",
+    "ejemplo": "I consciously decided to eat healthier."
+  },
+  {
+    "palabra_base": "Conscious",
+    "palabra_derivada": "Unconsciously",
+    "tipo": "Adverbio",
+    "traduccion": "Inconscientemente",
+    "ejemplo": "He unconsciously tapped his foot to the music."
+  },
+  {
+    "palabra_base": "Consequence",
+    "palabra_derivada": "Consequently",
+    "tipo": "Adverbio",
+    "traduccion": "Consecuentemente",
+    "ejemplo": "It rained heavily; consequently, the match was canceled."
+  },
+  {
+    "palabra_base": "Consider",
+    "palabra_derivada": "Considerably",
+    "tipo": "Adverbio",
+    "traduccion": "Considerablemente",
+    "ejemplo": "The temperature dropped considerably at night."
+  },
+  {
+    "palabra_base": "Convince",
+    "palabra_derivada": "Unconvinced",
+    "tipo": "Adjetivo",
+    "traduccion": "Desconfiado",
+    "ejemplo": "The jury remained unconvinced by his alibi."
+  },
+  {
+    "palabra_base": "Crowd",
+    "palabra_derivada": "Crowded",
+    "tipo": "Adjetivo",
+    "traduccion": "Abarrotado",
+    "ejemplo": "The streets were completely crowded."
+  },
+  {
+    "palabra_base": "Crowd",
+    "palabra_derivada": "Overcrowded",
+    "tipo": "Adjetivo",
+    "traduccion": "Abarrotado",
+    "ejemplo": "The prison is severely overcrowded."
+  },
+  {
+    "palabra_base": "Cycle",
+    "palabra_derivada": "Cyclist",
+    "tipo": "Sustantivo",
+    "traduccion": "Ciclista",
+    "ejemplo": "The cyclist won the race easily."
+  },
+  {
+    "palabra_base": "Danger",
+    "palabra_derivada": "Dangerous",
+    "tipo": "Adjetivo",
+    "traduccion": "Peligroso",
+    "ejemplo": "It is dangerous to drive so fast."
+  },
+  {
+    "palabra_base": "Decide",
+    "palabra_derivada": "Decision",
+    "tipo": "Sustantivo",
+    "traduccion": "Decisión",
+    "ejemplo": "It was a tough decision to make."
+  },
+  {
+    "palabra_base": "Delight",
+    "palabra_derivada": "Delightful",
+    "tipo": "Adjetivo",
+    "traduccion": "Encantador",
+    "ejemplo": "We had a delightful evening at their house."
+  },
+  {
+    "palabra_base": "Descend",
+    "palabra_derivada": "Descent",
+    "tipo": "Sustantivo",
+    "traduccion": "Empeoramiento",
+    "ejemplo": "The plane began its final descent."
+  },
+  {
+    "palabra_base": "Describe",
+    "palabra_derivada": "Description",
+    "tipo": "Sustantivo",
+    "traduccion": "Descripción",
+    "ejemplo": "She gave the police a detailed description of the thief."
+  },
+  {
+    "palabra_base": "Different",
+    "palabra_derivada": "Difference",
+    "tipo": "Sustantivo",
+    "traduccion": "Diferencia",
+    "ejemplo": "There is a big difference between the two models."
+  },
+  {
+    "palabra_base": "Direct",
+    "palabra_derivada": "Director",
+    "tipo": "Sustantivo",
+    "traduccion": "Director",
+    "ejemplo": "The film's director won an award."
+  },
+  {
+    "palabra_base": "Doubt",
+    "palabra_derivada": "Doubtful",
+    "tipo": "Adjetivo",
+    "traduccion": "Dudoso",
+    "ejemplo": "I am doubtful about the success of this plan."
+  },
+  {
+    "palabra_base": "Earn",
+    "palabra_derivada": "Earning",
+    "tipo": "Sustantivo",
+    "traduccion": "Poder adquisitivo",
+    "ejemplo": "His daily earning is quite high."
+  },
+  {
+    "palabra_base": "Easy",
+    "palabra_derivada": "Ease",
+    "tipo": "Sustantivo",
+    "traduccion": "Facilidad",
+    "ejemplo": "He passed the exam with ease."
+  },
+  {
+    "palabra_base": "Easy",
+    "palabra_derivada": "Easily",
+    "tipo": "Adverbio",
+    "traduccion": "Facilmente",
+    "ejemplo": "She easily solved the math problem."
+  },
+  {
+    "palabra_base": "Economy",
+    "palabra_derivada": "Economic",
+    "tipo": "Adjetivo",
+    "traduccion": "Económico",
+    "ejemplo": "The country is facing an economic crisis."
+  },
+  {
+    "palabra_base": "Efficiency",
+    "palabra_derivada": "Efficient",
+    "tipo": "Adjetivo",
+    "traduccion": "Eficiente",
+    "ejemplo": "We need a more efficient heating system."
+  },
+  {
+    "palabra_base": "Employ",
+    "palabra_derivada": "Employer",
+    "tipo": "Sustantivo",
+    "traduccion": "Empleador",
+    "ejemplo": "Her employer gave her a bonus."
+  },
+  {
+    "palabra_base": "Employ",
+    "palabra_derivada": "Employee",
+    "tipo": "Sustantivo",
+    "traduccion": "Empleado",
+    "ejemplo": "Every employee must attend the meeting."
+  },
+  {
+    "palabra_base": "Employ",
+    "palabra_derivada": "Employment",
+    "tipo": "Sustantivo",
+    "traduccion": "Empleo",
+    "ejemplo": "He is looking for full-time employment."
+  },
+  {
+    "palabra_base": "Employ",
+    "palabra_derivada": "Unemployment",
+    "tipo": "Sustantivo",
+    "traduccion": "Desempleo",
+    "ejemplo": "The unemployment rate has decreased this year."
+  },
+  {
+    "palabra_base": "Energy",
+    "palabra_derivada": "Energetic",
+    "tipo": "Adjetivo",
+    "traduccion": "Energético",
+    "ejemplo": "He is a very energetic person."
+  },
+  {
+    "palabra_base": "Enjoy",
+    "palabra_derivada": "Enjoyable",
+    "tipo": "Adjetivo",
+    "traduccion": "Agradable",
+    "ejemplo": "It was a very enjoyable experience."
+  },
+  {
+    "palabra_base": "Enthusiasm",
+    "palabra_derivada": "Enthusiastic",
+    "tipo": "Adjetivo",
+    "traduccion": "Entusiasta",
+    "ejemplo": "The crowd was incredibly enthusiastic."
+  },
+  {
+    "palabra_base": "Entire",
+    "palabra_derivada": "Entirety",
+    "tipo": "Sustantivo",
+    "traduccion": "Totalidad",
+    "ejemplo": "We watched the movie in its entirety."
+  },
+  {
+    "palabra_base": "Equal",
+    "palabra_derivada": "Equally",
+    "tipo": "Adverbio",
+    "traduccion": "Igualmente",
+    "ejemplo": "The money was divided equally among the brothers."
+  },
+  {
+    "palabra_base": "Equip",
+    "palabra_derivada": "Equipment",
+    "tipo": "Sustantivo",
+    "traduccion": "Equipamiento",
+    "ejemplo": "You need special equipment for scuba diving."
+  },
+  {
+    "palabra_base": "Evenly",
+    "palabra_derivada": "Unevenly",
+    "tipo": "Adverbio",
+    "traduccion": "Desigualmente",
+    "ejemplo": "The paint was applied unevenly."
+  },
+  {
+    "palabra_base": "Exhaust",
+    "palabra_derivada": "Exhausting",
+    "tipo": "Adjetivo",
+    "traduccion": "Agotador",
+    "ejemplo": "The hike up the mountain was exhausting."
+  },
+  {
+    "palabra_base": "Exist",
+    "palabra_derivada": "Existence",
+    "tipo": "Sustantivo",
+    "traduccion": "Existencia",
+    "ejemplo": "Do you believe in the existence of ghosts?"
+  },
+  {
+    "palabra_base": "Expand",
+    "palabra_derivada": "Expansion",
+    "tipo": "Sustantivo",
+    "traduccion": "Expansión",
+    "ejemplo": "The company is planning a massive expansion."
+  },
+  {
+    "palabra_base": "Explore",
+    "palabra_derivada": "Exploration",
+    "tipo": "Sustantivo",
+    "traduccion": "Exploración",
+    "ejemplo": "Space exploration requires a lot of funding."
+  },
+  {
+    "palabra_base": "Extent",
+    "palabra_derivada": "Extensive",
+    "tipo": "Adjetivo",
+    "traduccion": "Amplio",
+    "ejemplo": "He has extensive knowledge of history."
+  },
+  {
+    "palabra_base": "Extreme",
+    "palabra_derivada": "Extremely",
+    "tipo": "Adverbio",
+    "traduccion": "Extremadamente",
+    "ejemplo": "It is extremely hot today."
+  },
+  {
+    "palabra_base": "Fashion",
+    "palabra_derivada": "Fashionable",
+    "tipo": "Adjetivo",
+    "traduccion": "Novedoso",
+    "ejemplo": "It is very fashionable to wear oversized clothes now."
+  },
+  {
+    "palabra_base": "Fit",
+    "palabra_derivada": "Fitness",
+    "tipo": "Sustantivo",
+    "traduccion": "Forma física",
+    "ejemplo": "Her level of fitness is impressive."
+  },
+  {
+    "palabra_base": "Fly",
+    "palabra_derivada": "Flight",
+    "tipo": "Sustantivo",
+    "traduccion": "Vuelo",
+    "ejemplo": "My flight was delayed by three hours."
+  },
+  {
+    "palabra_base": "Food",
+    "palabra_derivada": "Feeding",
+    "tipo": "Sustantivo",
+    "traduccion": "Alimentación",
+    "ejemplo": "The feeding of animals in the zoo is prohibited."
+  },
+  {
+    "palabra_base": "Fortunate",
+    "palabra_derivada": "Unfortunately",
+    "tipo": "Adverbio",
+    "traduccion": "Desafortunadamente",
+    "ejemplo": "Unfortunately, I can't attend the party."
+  },
+  {
+    "palabra_base": "Fortunate",
+    "palabra_derivada": "Fortunately",
+    "tipo": "Adverbio",
+    "traduccion": "Afortunadamente",
+    "ejemplo": "Fortunately, no one was hurt in the accident."
+  },
+  {
+    "palabra_base": "Freeze",
+    "palabra_derivada": "Freezing",
+    "tipo": "Adjetivo",
+    "traduccion": "Congelado",
+    "ejemplo": "It's absolutely freezing outside!"
+  },
+  {
+    "palabra_base": "Freeze",
+    "palabra_derivada": "Frozen",
+    "tipo": "Adjetivo",
+    "traduccion": "Congelado",
+    "ejemplo": "I bought some frozen vegetables."
+  },
+  {
+    "palabra_base": "Frequent",
+    "palabra_derivada": "Frequently",
+    "tipo": "Adverbio",
+    "traduccion": "Frecuentemente",
+    "ejemplo": "I frequently visit my grandparents."
+  },
+  {
+    "palabra_base": "Friend",
+    "palabra_derivada": "Friendliness",
+    "tipo": "Sustantivo",
+    "traduccion": "Amistad",
+    "ejemplo": "I appreciated the friendliness of the staff."
+  },
+  {
+    "palabra_base": "Friend",
+    "palabra_derivada": "Friendship",
+    "tipo": "Sustantivo",
+    "traduccion": "Amistad",
+    "ejemplo": "Their friendship has lasted for years."
+  },
+  {
+    "palabra_base": "Friend",
+    "palabra_derivada": "Friendly",
+    "tipo": "Adjetivo",
+    "traduccion": "Amistoso",
+    "ejemplo": "He is a very warm and friendly person."
+  },
+  {
+    "palabra_base": "Grow",
+    "palabra_derivada": "Growth",
+    "tipo": "Sustantivo",
+    "traduccion": "Crecimiento",
+    "ejemplo": "The plant showed rapid growth."
+  },
+  {
+    "palabra_base": "Harm",
+    "palabra_derivada": "Harmful",
+    "tipo": "Adjetivo",
+    "traduccion": "Dañino",
+    "ejemplo": "Smoking is highly harmful to your health."
+  },
+  {
+    "palabra_base": "Health",
+    "palabra_derivada": "Healthy",
+    "tipo": "Adjetivo",
+    "traduccion": "Saludable",
+    "ejemplo": "You need to maintain a healthy diet."
+  },
+  {
+    "palabra_base": "Health",
+    "palabra_derivada": "Unhealthy",
+    "tipo": "Adjetivo",
+    "traduccion": "Insaludable",
+    "ejemplo": "Eating too much fast food is unhealthy."
+  },
+  {
+    "palabra_base": "High",
+    "palabra_derivada": "Height",
+    "tipo": "Sustantivo",
+    "traduccion": "Altura",
+    "ejemplo": "He is afraid of heights."
+  },
+  {
+    "palabra_base": "Highlight",
+    "palabra_derivada": "Highly",
+    "tipo": "Adverbio",
+    "traduccion": "Altamente",
+    "ejemplo": "The radioactive material is highly dangerous."
+  },
+  {
+    "palabra_base": "History",
+    "palabra_derivada": "Historian",
+    "tipo": "Sustantivo",
+    "traduccion": "Historiador",
+    "ejemplo": "The historian published a book about the war."
+  },
+  {
+    "palabra_base": "Home",
+    "palabra_derivada": "Homeless",
+    "tipo": "Adjetivo",
+    "traduccion": "Vagabundo",
+    "ejemplo": "The shelter provides beds for homeless people."
+  },
+  {
+    "palabra_base": "Hope",
+    "palabra_derivada": "Hopeful",
+    "tipo": "Adjetivo",
+    "traduccion": "Prometedor",
+    "ejemplo": "I am hopeful that we will find a solution."
+  },
+  {
+    "palabra_base": "Hot",
+    "palabra_derivada": "Heat",
+    "tipo": "Sustantivo",
+    "traduccion": "Calor",
+    "ejemplo": "I can't stand the extreme summer heat."
+  },
+  {
+    "palabra_base": "Identity",
+    "palabra_derivada": "Identified",
+    "tipo": "Adjetivo",
+    "traduccion": "Identificado",
+    "ejemplo": "The suspect has been identified by the police."
+  },
+  {
+    "palabra_base": "Ill",
+    "palabra_derivada": "Illness",
+    "tipo": "Sustantivo",
+    "traduccion": "Enfermedad",
+    "ejemplo": "She missed work due to a severe illness."
+  },
+  {
+    "palabra_base": "Important",
+    "palabra_derivada": "Importance",
+    "tipo": "Sustantivo",
+    "traduccion": "Importancia",
+    "ejemplo": "He emphasized the importance of reading."
+  },
+  {
+    "palabra_base": "Impress",
+    "palabra_derivada": "Impressive",
+    "tipo": "Adjetivo",
+    "traduccion": "Impresionante",
+    "ejemplo": "Her presentation skills were truly impressive."
+  },
+  {
+    "palabra_base": "Improve",
+    "palabra_derivada": "Improvement",
+    "tipo": "Sustantivo",
+    "traduccion": "Mejora",
+    "ejemplo": "There has been a significant improvement in his grades."
+  },
+  {
+    "palabra_base": "Increase",
+    "palabra_derivada": "Increasingly",
+    "tipo": "Adverbio",
+    "traduccion": "Cada vez más",
+    "ejemplo": "It is becoming increasingly difficult to find a house."
+  },
+  {
+    "palabra_base": "Incredible",
+    "palabra_derivada": "Incredibly",
+    "tipo": "Adverbio",
+    "traduccion": "Increíblemente",
+    "ejemplo": "The exam was incredibly difficult."
+  },
+  {
+    "palabra_base": "Industry",
+    "palabra_derivada": "Industrial",
+    "tipo": "Adjetivo",
+    "traduccion": "Industrial",
+    "ejemplo": "The city has a large industrial sector."
+  },
+  {
+    "palabra_base": "Inhabit",
+    "palabra_derivada": "Inhabitant",
+    "tipo": "Sustantivo",
+    "traduccion": "Habitante",
+    "ejemplo": "The island has only a few thousand inhabitants."
+  },
+  {
+    "palabra_base": "Know",
+    "palabra_derivada": "Knowledge",
+    "tipo": "Sustantivo",
+    "traduccion": "Conocimiento",
+    "ejemplo": "His knowledge of geography is vast."
+  },
+  {
+    "palabra_base": "Know",
+    "palabra_derivada": "Unknown",
+    "tipo": "Adjetivo",
+    "traduccion": "Desconocido",
+    "ejemplo": "The exact location remains unknown."
+  },
+  {
+    "palabra_base": "Labour",
+    "palabra_derivada": "Labourer",
+    "tipo": "Sustantivo",
+    "traduccion": "Peón",
+    "ejemplo": "He works as a farm labourer."
+  },
+  {
+    "palabra_base": "Like",
+    "palabra_derivada": "Unlike",
+    "tipo": "Preposición",
+    "traduccion": "A diferencia de",
+    "ejemplo": "Unlike his brother, he loves sports."
+  },
+  {
+    "palabra_base": "Likely",
+    "palabra_derivada": "Unlikely",
+    "tipo": "Adjetivo",
+    "traduccion": "Improbable",
+    "ejemplo": "It is highly unlikely that it will snow today."
+  },
+  {
+    "palabra_base": "Limit",
+    "palabra_derivada": "Limiting",
+    "tipo": "Adjetivo",
+    "traduccion": "Limitante",
+    "ejemplo": "A lack of budget can be a limiting factor."
+  },
+  {
+    "palabra_base": "Live",
+    "palabra_derivada": "Living",
+    "tipo": "Adjetivo",
+    "traduccion": "Viviente",
+    "ejemplo": "Every living creature needs water."
+  },
+  {
+    "palabra_base": "Locate",
+    "palabra_derivada": "Location",
+    "tipo": "Sustantivo",
+    "traduccion": "Localización",
+    "ejemplo": "This is the perfect location for our new store."
+  },
+  {
+    "palabra_base": "Lonely",
+    "palabra_derivada": "Loneliness",
+    "tipo": "Sustantivo",
+    "traduccion": "Soledad",
+    "ejemplo": "He suffered from deep loneliness after moving."
+  },
+  {
+    "palabra_base": "Lose",
+    "palabra_derivada": "Loss",
+    "tipo": "Sustantivo",
+    "traduccion": "Pérdida",
+    "ejemplo": "The company reported a massive financial loss."
+  },
+  {
+    "palabra_base": "Mad",
+    "palabra_derivada": "Madness",
+    "tipo": "Sustantivo",
+    "traduccion": "Locura",
+    "ejemplo": "Driving in this storm is absolute madness."
+  },
+  {
+    "palabra_base": "Marry",
+    "palabra_derivada": "Marriage",
+    "tipo": "Sustantivo",
+    "traduccion": "Matrimonio",
+    "ejemplo": "Their marriage has been very happy."
+  },
+  {
+    "palabra_base": "Marvel",
+    "palabra_derivada": "Marvelous",
+    "tipo": "Adjetivo",
+    "traduccion": "Maravilloso",
+    "ejemplo": "We had a marvelous time at the beach."
+  },
+  {
+    "palabra_base": "Meet",
+    "palabra_derivada": "Meeting",
+    "tipo": "Sustantivo",
+    "traduccion": "Reunión",
+    "ejemplo": "The meeting is scheduled for 9 AM."
+  },
+  {
+    "palabra_base": "Member",
+    "palabra_derivada": "Membership",
+    "tipo": "Sustantivo",
+    "traduccion": "Membresía",
+    "ejemplo": "You need to renew your gym membership."
+  },
+  {
+    "palabra_base": "Minimum",
+    "palabra_derivada": "Minimise",
+    "tipo": "Verbo",
+    "traduccion": "Minimizar",
+    "ejemplo": "We need to minimise the risks involved."
+  },
+  {
+    "palabra_base": "Mystery",
+    "palabra_derivada": "Mysterious",
+    "tipo": "Adjetivo",
+    "traduccion": "Misterioso",
+    "ejemplo": "A mysterious package arrived in the mail."
+  },
+  {
+    "palabra_base": "Motion",
+    "palabra_derivada": "Motionless",
+    "tipo": "Adjetivo",
+    "traduccion": "Quieto",
+    "ejemplo": "The cat stood perfectly motionless."
+  },
+  {
+    "palabra_base": "Nerve",
+    "palabra_derivada": "Nervous",
+    "tipo": "Adjetivo",
+    "traduccion": "Nervioso",
+    "ejemplo": "I always get nervous before public speaking."
+  },
+  {
+    "palabra_base": "Noise",
+    "palabra_derivada": "Noisy",
+    "tipo": "Adjetivo",
+    "traduccion": "Ruidoso",
+    "ejemplo": "The neighbours are playing very noisy music."
+  },
+  {
+    "palabra_base": "Object",
+    "palabra_derivada": "Objective",
+    "tipo": "Sustantivo",
+    "traduccion": "Objetivo",
+    "ejemplo": "Our main objective is to increase sales."
+  },
+  {
+    "palabra_base": "Occupy",
+    "palabra_derivada": "Occupation",
+    "tipo": "Sustantivo",
+    "traduccion": "Ocupación",
+    "ejemplo": "Please state your name and occupation."
+  },
+  {
+    "palabra_base": "Ordinary",
+    "palabra_derivada": "Extraordinary",
+    "tipo": "Adjetivo",
+    "traduccion": "Extraordinario",
+    "ejemplo": "She possesses an extraordinary talent for music."
+  },
+  {
+    "palabra_base": "Original",
+    "palabra_derivada": "Originality",
+    "tipo": "Sustantivo",
+    "traduccion": "Originalidad",
+    "ejemplo": "The judges praised the originality of his design."
+  },
+  {
+    "palabra_base": "Original",
+    "palabra_derivada": "Originally",
+    "tipo": "Adverbio",
+    "traduccion": "Originalmente",
+    "ejemplo": "The book was originally written in French."
+  },
+  {
+    "palabra_base": "Particular",
+    "palabra_derivada": "Particularly",
+    "tipo": "Adverbio",
+    "traduccion": "Particularmente",
+    "ejemplo": "I am not particularly interested in sports."
+  },
+  {
+    "palabra_base": "Peace",
+    "palabra_derivada": "Peaceful",
+    "tipo": "Adjetivo",
+    "traduccion": "Pacífico",
+    "ejemplo": "The park is a very quiet and peaceful place."
+  },
+  {
+    "palabra_base": "Perform",
+    "palabra_derivada": "Performer",
+    "tipo": "Sustantivo",
+    "traduccion": "Artista",
+    "ejemplo": "The street performer gathered a large crowd."
+  },
+  {
+    "palabra_base": "Perform",
+    "palabra_derivada": "Performance",
+    "tipo": "Sustantivo",
+    "traduccion": "Actuación",
+    "ejemplo": "The band's live performance was incredible."
+  },
+  {
+    "palabra_base": "Person",
+    "palabra_derivada": "Personality",
+    "tipo": "Sustantivo",
+    "traduccion": "Personalidad",
+    "ejemplo": "She has a very outgoing and fun personality."
+  },
+  {
+    "palabra_base": "Pleasant",
+    "palabra_derivada": "Unpleasant",
+    "tipo": "Adjetivo",
+    "traduccion": "Desagradable",
+    "ejemplo": "There was an unpleasant smell in the room."
+  },
+  {
+    "palabra_base": "Please",
+    "palabra_derivada": "Pleasure",
+    "tipo": "Sustantivo",
+    "traduccion": "Placer",
+    "ejemplo": "It was a pleasure to meet you."
+  },
+  {
+    "palabra_base": "Poison",
+    "palabra_derivada": "Poisonous",
+    "tipo": "Adjetivo",
+    "traduccion": "Venenoso",
+    "ejemplo": "Be careful, that snake is highly poisonous."
+  },
+  {
+    "palabra_base": "Popular",
+    "palabra_derivada": "Popularity",
+    "tipo": "Sustantivo",
+    "traduccion": "Popular",
+    "ejemplo": "The game's popularity grew rapidly over the summer."
+  },
+  {
+    "palabra_base": "Possible",
+    "palabra_derivada": "Impossible",
+    "tipo": "Adjetivo",
+    "traduccion": "Imposible",
+    "ejemplo": "It is impossible to read his handwriting."
+  },
+  {
+    "palabra_base": "Possible",
+    "palabra_derivada": "Possibility",
+    "tipo": "Sustantivo",
+    "traduccion": "Posibilidad",
+    "ejemplo": "Is there any possibility of changing the date?"
+  },
+  {
+    "palabra_base": "Power",
+    "palabra_derivada": "Powerful",
+    "tipo": "Adjetivo",
+    "traduccion": "Poderoso",
+    "ejemplo": "The president gave a very powerful speech."
+  },
+  {
+    "palabra_base": "Practise",
+    "palabra_derivada": "Practical",
+    "tipo": "Adjetivo",
+    "traduccion": "Práctico",
+    "ejemplo": "This gadget is extremely practical for traveling."
+  },
+  {
+    "palabra_base": "Press",
+    "palabra_derivada": "Pressure",
+    "tipo": "Sustantivo",
+    "traduccion": "Presión",
+    "ejemplo": "The water pressure in this building is very low."
+  },
+  {
+    "palabra_base": "Proof",
+    "palabra_derivada": "Prove",
+    "tipo": "Verbo",
+    "traduccion": "Probar",
+    "ejemplo": "Can you prove that you were there?"
+  },
+  {
+    "palabra_base": "Proof",
+    "palabra_derivada": "Disprove",
+    "tipo": "Verbo",
+    "traduccion": "Desmentir",
+    "ejemplo": "The scientist tried to disprove the old theory."
+  },
+  {
+    "palabra_base": "Punctual",
+    "palabra_derivada": "Punctuality",
+    "tipo": "Sustantivo",
+    "traduccion": "Puntualidad",
+    "ejemplo": "German culture places a high value on punctuality."
+  },
+  {
+    "palabra_base": "Punctual",
+    "palabra_derivada": "Punctually",
+    "tipo": "Adverbio",
+    "traduccion": "Puntualmente",
+    "ejemplo": "The train departed exactly punctually."
+  },
+  {
+    "palabra_base": "Rain",
+    "palabra_derivada": "Rainfall",
+    "tipo": "Sustantivo",
+    "traduccion": "Cascada",
+    "ejemplo": "The region receives heavy rainfall in winter."
+  },
+  {
+    "palabra_base": "Reason",
+    "palabra_derivada": "Reasonable",
+    "tipo": "Adjetivo",
+    "traduccion": "Razonable",
+    "ejemplo": "I think the price is very reasonable."
+  },
+  {
+    "palabra_base": "Recognise",
+    "palabra_derivada": "Recognition",
+    "tipo": "Sustantivo",
+    "traduccion": "Reconocimiento",
+    "ejemplo": "He received a medal in recognition of his bravery."
+  },
+  {
+    "palabra_base": "Recommend",
+    "palabra_derivada": "Recommendation",
+    "tipo": "Sustantivo",
+    "traduccion": "Recomendación",
+    "ejemplo": "Based on your recommendation, I bought the book."
+  },
+  {
+    "palabra_base": "Refer",
+    "palabra_derivada": "Reference",
+    "tipo": "Sustantivo",
+    "traduccion": "Referencia",
+    "ejemplo": "Save this document for future reference."
+  },
+  {
+    "palabra_base": "Regular",
+    "palabra_derivada": "Regularly",
+    "tipo": "Adverbio",
+    "traduccion": "Regularmente",
+    "ejemplo": "You should exercise regularly."
+  },
+  {
+    "palabra_base": "Relative",
+    "palabra_derivada": "Relatively",
+    "tipo": "Adverbio",
+    "traduccion": "Relativamente",
+    "ejemplo": "The test was relatively easy compared to the last one."
+  },
+  {
+    "palabra_base": "Relief",
+    "palabra_derivada": "Relieve",
+    "tipo": "Verbo",
+    "traduccion": "Aliviar",
+    "ejemplo": "This medication will help to relieve the pain."
+  },
+  {
+    "palabra_base": "Rely",
+    "palabra_derivada": "Reliable",
+    "tipo": "Adjetivo",
+    "traduccion": "Fiable",
+    "ejemplo": "My old car is not very reliable anymore."
+  },
+  {
+    "palabra_base": "Remark",
+    "palabra_derivada": "Remarkable",
+    "tipo": "Adjetivo",
+    "traduccion": "Impresionante",
+    "ejemplo": "She showed a remarkable talent for painting."
+  },
+  {
+    "palabra_base": "Remind",
+    "palabra_derivada": "Reminder",
+    "tipo": "Sustantivo",
+    "traduccion": "Recordatorio",
+    "ejemplo": "Set a reminder on your phone for the meeting."
+  },
+  {
+    "palabra_base": "Repeat",
+    "palabra_derivada": "Repeatedly",
+    "tipo": "Adverbio",
+    "traduccion": "Repetidamente",
+    "ejemplo": "The alarm went off repeatedly during the night."
+  },
+  {
+    "palabra_base": "Respond",
+    "palabra_derivada": "Response",
+    "tipo": "Sustantivo",
+    "traduccion": "Respuesta",
+    "ejemplo": "I am still waiting for a response to my email."
+  },
+  {
+    "palabra_base": "Rough",
+    "palabra_derivada": "Roughly",
+    "tipo": "Adverbio",
+    "traduccion": "Aproximadamente",
+    "ejemplo": "There were roughly200 people at the concert."
+  },
+  {
+    "palabra_base": "Safe",
+    "palabra_derivada": "Safety",
+    "tipo": "Sustantivo",
+    "traduccion": "Seguridad",
+    "ejemplo": "Please fasten your seatbelt for your own safety."
+  },
+  {
+    "palabra_base": "Science",
+    "palabra_derivada": "Scientific",
+    "tipo": "Adjetivo",
+    "traduccion": "Científico (método)",
+    "ejemplo": "There is no scientific evidence to support this."
+  },
+  {
+    "palabra_base": "Science",
+    "palabra_derivada": "Scientist",
+    "tipo": "Sustantivo",
+    "traduccion": "Científico (persona)",
+    "ejemplo": "The scientist won a Nobel Prize for his discovery."
+  },
+  {
+    "palabra_base": "Sense",
+    "palabra_derivada": "Sensitive",
+    "tipo": "Adjetivo",
+    "traduccion": "Sensible",
+    "ejemplo": "My teeth are very sensitive to cold food."
+  },
+  {
+    "palabra_base": "Sleep",
+    "palabra_derivada": "Asleep",
+    "tipo": "Adjetivo",
+    "traduccion": "Dormido",
+    "ejemplo": "He fell asleep instantly on the couch."
+  },
+  {
+    "palabra_base": "Solve",
+    "palabra_derivada": "Solution",
+    "tipo": "Sustantivo",
+    "traduccion": "Solución",
+    "ejemplo": "We need to find a solution to this problem."
+  },
+  {
+    "palabra_base": "Storm",
+    "palabra_derivada": "Stormy",
+    "tipo": "Adjetivo",
+    "traduccion": "Tempestuoso",
+    "ejemplo": "The sky looked dark and stormy."
+  },
+  {
+    "palabra_base": "Succeed",
+    "palabra_derivada": "Success",
+    "tipo": "Sustantivo",
+    "traduccion": "Éxito",
+    "ejemplo": "The project was a huge success."
+  },
+  {
+    "palabra_base": "Suffer",
+    "palabra_derivada": "Suffering",
+    "tipo": "Sustantivo",
+    "traduccion": "Dolorido",
+    "ejemplo": "The war brought terrible suffering to the people."
+  },
+  {
+    "palabra_base": "Suitable",
+    "palabra_derivada": "Unsuitable",
+    "tipo": "Adjetivo",
+    "traduccion": "Inadecuado",
+    "ejemplo": "These shoes are totally unsuitable for hiking."
+  },
+  {
+    "palabra_base": "Surprise",
+    "palabra_derivada": "Surprising",
+    "tipo": "Adjetivo",
+    "traduccion": "Sorprendentemente",
+    "ejemplo": "It is surprising how fast children grow."
+  },
+  {
+    "palabra_base": "Surround",
+    "palabra_derivada": "Surrounding",
+    "tipo": "Adjetivo",
+    "traduccion": "Envolvente",
+    "ejemplo": "We explored the village and its surrounding area."
+  },
+  {
+    "palabra_base": "Temporary",
+    "palabra_derivada": "Temporarily",
+    "tipo": "Adverbio",
+    "traduccion": "Temporalmente",
+    "ejemplo": "The road is temporarily closed for repairs."
+  },
+  {
+    "palabra_base": "Tour",
+    "palabra_derivada": "Tourist",
+    "tipo": "Sustantivo",
+    "traduccion": "Turista",
+    "ejemplo": "Millions of tourists visit the city every year."
+  },
+  {
+    "palabra_base": "Tour",
+    "palabra_derivada": "Tourism",
+    "tipo": "Sustantivo",
+    "traduccion": "Turismo",
+    "ejemplo": "Tourism is the main industry on the island."
+  },
+  {
+    "palabra_base": "Tradition",
+    "palabra_derivada": "Traditional",
+    "tipo": "Adjetivo",
+    "traduccion": "Tradicional",
+    "ejemplo": "They wear traditional costumes during the festival."
+  },
+  {
+    "palabra_base": "Tropic",
+    "palabra_derivada": "Tropical",
+    "tipo": "Adjetivo",
+    "traduccion": "Tropical",
+    "ejemplo": "We spent our holidays on a beautiful tropical beach."
+  },
+  {
+    "palabra_base": "True",
+    "palabra_derivada": "Truly",
+    "tipo": "Adverbio",
+    "traduccion": "Verdaderamente",
+    "ejemplo": "I am truly sorry for the misunderstanding."
+  },
+  {
+    "palabra_base": "Usual",
+    "palabra_derivada": "Unusual",
+    "tipo": "Adjetivo",
+    "traduccion": "Inusual",
+    "ejemplo": "It is very unusual to see snow here in April."
+  },
+  {
+    "palabra_base": "Vary",
+    "palabra_derivada": "Variety",
+    "tipo": "Sustantivo",
+    "traduccion": "Variedad",
+    "ejemplo": "The supermarket offers a wide variety of fresh fruits."
+  },
+  {
+    "palabra_base": "Visit",
+    "palabra_derivada": "Visitor",
+    "tipo": "Sustantivo",
+    "traduccion": "Visitante",
+    "ejemplo": "All visitors must sign in at the reception desk."
+  },
+  {
+    "palabra_base": "Warm",
+    "palabra_derivada": "Warmth",
+    "tipo": "Sustantivo",
+    "traduccion": "Calor",
+    "ejemplo": "I could feel the pleasant warmth of the fireplace."
+  },
+  {
+    "palabra_base": "Wealth",
+    "palabra_derivada": "Wealthy",
+    "tipo": "Adjetivo",
+    "traduccion": "Rico",
+    "ejemplo": "He was born into a very wealthy family."
+  },
+  {
+    "palabra_base": "Weigh",
+    "palabra_derivada": "Weight",
+    "tipo": "Sustantivo",
+    "traduccion": "Peso",
+    "ejemplo": "I am trying to lose a bit of weight."
+  },
+  {
+    "palabra_base": "Wind",
+    "palabra_derivada": "Windy",
+    "tipo": "Adjetivo",
+    "traduccion": "Ventoso",
+    "ejemplo": "It was a cold and very windy day."
+  },
+  {
+    "palabra_base": "Accept",
+    "palabra_derivada": "Acceptable",
+    "tipo": "Adjetivo",
+    "traduccion": "Aceptable",
+    "ejemplo": "This level of noise is not acceptable."
+  },
+  {
+    "palabra_base": "Accept",
+    "palabra_derivada": "Unacceptable",
+    "tipo": "Adjetivo",
+    "traduccion": "Inaceptable",
+    "ejemplo": "His rude behavior was completely unacceptable."
+  },
+  {
+    "palabra_base": "Access",
+    "palabra_derivada": "Accessible",
+    "tipo": "Adjetivo",
+    "traduccion": "Accesible",
+    "ejemplo": "The building is fully accessible for wheelchairs."
+  },
+  {
+    "palabra_base": "Accident",
+    "palabra_derivada": "Accidental",
+    "tipo": "Adjetivo",
+    "traduccion": "Fortuito",
+    "ejemplo": "The deletion of the database was accidental."
+  },
+  {
+    "palabra_base": "Accord",
+    "palabra_derivada": "According",
+    "tipo": "Preposición",
+    "traduccion": "De acuerdo",
+    "ejemplo": "According to the weather forecast, it will rain."
+  },
+  {
+    "palabra_base": "Action",
+    "palabra_derivada": "Transaction",
+    "tipo": "Sustantivo",
+    "traduccion": "Transacción",
+    "ejemplo": "The bank transaction was completed successfully."
+  },
+  {
+    "palabra_base": "Adapt",
+    "palabra_derivada": "Adaptable",
+    "tipo": "Adjetivo",
+    "traduccion": "Flexible",
+    "ejemplo": "She is highly adaptable to new environments."
+  },
+  {
+    "palabra_base": "Addict",
+    "palabra_derivada": "Addiction",
+    "tipo": "Sustantivo",
+    "traduccion": "Adicción",
+    "ejemplo": "Smartphone addiction is a growing problem."
+  },
+  {
+    "palabra_base": "Administrate",
+    "palabra_derivada": "Administrative",
+    "tipo": "Adjetivo",
+    "traduccion": "Administrativo",
+    "ejemplo": "He works in an administrative role."
+  },
+  {
+    "palabra_base": "Admire",
+    "palabra_derivada": "Admiration",
+    "tipo": "Sustantivo",
+    "traduccion": "Admiración",
+    "ejemplo": "I have great admiration for her work."
+  },
+  {
+    "palabra_base": "Advance",
+    "palabra_derivada": "Advances",
+    "tipo": "Sustantivo",
+    "traduccion": "Avances",
+    "ejemplo": "Medical advances have increased life expectancy."
+  },
+  {
+    "palabra_base": "Advance",
+    "palabra_derivada": "Advancements",
+    "tipo": "Sustantivo",
+    "traduccion": "Avances",
+    "ejemplo": "Technological advancements are changing our lives."
+  },
+  {
+    "palabra_base": "Affection",
+    "palabra_derivada": "Affectionately",
+    "tipo": "Adverbio",
+    "traduccion": "Afectivamente",
+    "ejemplo": "She spoke affectionately about her grandmother."
+  },
+  {
+    "palabra_base": "Afford",
+    "palabra_derivada": "Affordable",
+    "tipo": "Adjetivo",
+    "traduccion": "Asequible",
+    "ejemplo": "We need more affordable housing in the city."
+  },
+  {
+    "palabra_base": "Agent",
+    "palabra_derivada": "Agency",
+    "tipo": "Sustantivo",
+    "traduccion": "Agencia",
+    "ejemplo": "I booked the trip through a travel agency."
+  },
+  {
+    "palabra_base": "Alter",
+    "palabra_derivada": "Alternative",
+    "tipo": "Adjetivo / Sust.",
+    "traduccion": "Alternativo",
+    "ejemplo": "We need to find an alternative solution."
+  },
+  {
+    "palabra_base": "Alternate",
+    "palabra_derivada": "Alternatively",
+    "tipo": "Adverbio",
+    "traduccion": "Alternativamente",
+    "ejemplo": "You can go by bus; alternatively, you can take a taxi."
+  },
+  {
+    "palabra_base": "Announce",
+    "palabra_derivada": "Unannounced",
+    "tipo": "Adjetivo",
+    "traduccion": "Inesperado",
+    "ejemplo": "He made an unannounced visit to the office."
+  },
+  {
+    "palabra_base": "Annoy",
+    "palabra_derivada": "Annoyance",
+    "tipo": "Sustantivo",
+    "traduccion": "Molestia",
+    "ejemplo": "He sighed in annoyance when the train was delayed."
+  },
+  {
+    "palabra_base": "Anticipate",
+    "palabra_derivada": "Anticipation",
+    "tipo": "Sustantivo",
+    "traduccion": "Anticipación",
+    "ejemplo": "The crowd waited in eager anticipation."
+  },
+  {
+    "palabra_base": "Appeal",
+    "palabra_derivada": "Appealing",
+    "tipo": "Adjetivo",
+    "traduccion": "Atractivo",
+    "ejemplo": "The idea of working from home is very appealing."
+  },
+  {
+    "palabra_base": "Appeal",
+    "palabra_derivada": "Unappealing",
+    "tipo": "Adjetivo",
+    "traduccion": "Poco atractivo",
+    "ejemplo": "The cold soup looked very unappealing."
+  },
+  {
+    "palabra_base": "Appear",
+    "palabra_derivada": "Apparently",
+    "tipo": "Adverbio",
+    "traduccion": "Aparentemente",
+    "ejemplo": "Apparently, the meeting has been cancelled."
+  },
+  {
+    "palabra_base": "Apply",
+    "palabra_derivada": "Applicable",
+    "tipo": "Adjetivo",
+    "traduccion": "Aplicable",
+    "ejemplo": "This rule is not applicable to international students."
+  },
+  {
+    "palabra_base": "Appropriate",
+    "palabra_derivada": "Inappropriately",
+    "tipo": "Adverbio",
+    "traduccion": "Inapropiadamente",
+    "ejemplo": "He behaved very inappropriately at the formal dinner."
+  },
+  {
+    "palabra_base": "Approve",
+    "palabra_derivada": "Approval",
+    "tipo": "Sustantivo",
+    "traduccion": "Aprobación",
+    "ejemplo": "The project needs the manager's approval."
+  },
+  {
+    "palabra_base": "Aspire",
+    "palabra_derivada": "Aspiration",
+    "tipo": "Sustantivo",
+    "traduccion": "Aspiración",
+    "ejemplo": "His main aspiration is to become a writer."
+  },
+  {
+    "palabra_base": "Assume",
+    "palabra_derivada": "Assumption",
+    "tipo": "Sustantivo",
+    "traduccion": "Suposición",
+    "ejemplo": "Your argument is based on a false assumption."
+  },
+  {
+    "palabra_base": "Astonish",
+    "palabra_derivada": "Astonishing",
+    "tipo": "Adjetivo",
+    "traduccion": "Increíble",
+    "ejemplo": "It's astonishing how fast she learns."
+  },
+  {
+    "palabra_base": "Astonish",
+    "palabra_derivada": "Astonished",
+    "tipo": "Adjetivo",
+    "traduccion": "Estupefacto",
+    "ejemplo": "I was astonished by the size of the monument."
+  },
+  {
+    "palabra_base": "Astonish",
+    "palabra_derivada": "Astonishingly",
+    "tipo": "Adverbio",
+    "traduccion": "Extraordinariamente",
+    "ejemplo": "The puzzle was astonishingly difficult."
+  },
+  {
+    "palabra_base": "Atmosphere",
+    "palabra_derivada": "Atmospheric",
+    "tipo": "Adjetivo",
+    "traduccion": "Evocador, atmosférico",
+    "ejemplo": "The lighting created an atmospheric setting."
+  },
+  {
+    "palabra_base": "Attach",
+    "palabra_derivada": "Attachment",
+    "tipo": "Sustantivo",
+    "traduccion": "Anexo",
+    "ejemplo": "Please find the document in the email attachment."
+  },
+  {
+    "palabra_base": "Audio",
+    "palabra_derivada": "Audible",
+    "tipo": "Adjetivo",
+    "traduccion": "Audible",
+    "ejemplo": "His voice was barely audible over the loud music."
+  },
+  {
+    "palabra_base": "Aware",
+    "palabra_derivada": "Awareness",
+    "tipo": "Sustantivo",
+    "traduccion": "Conciencia",
+    "ejemplo": "We need to raise awareness about climate change."
+  },
+  {
+    "palabra_base": "Awe",
+    "palabra_derivada": "Awesome",
+    "tipo": "Adjetivo",
+    "traduccion": "Sublime",
+    "ejemplo": "The view of the canyon was truly awesome."
+  },
+  {
+    "palabra_base": "Balance",
+    "palabra_derivada": "Unbalanced",
+    "tipo": "Adjetivo",
+    "traduccion": "Desequilibrado",
+    "ejemplo": "An unbalanced diet can lead to health issues."
+  },
+  {
+    "palabra_base": "Bear",
+    "palabra_derivada": "Bearing",
+    "tipo": "Sustantivo",
+    "traduccion": "Modales",
+    "ejemplo": "He had a proud, military bearing."
+  },
+  {
+    "palabra_base": "Begin",
+    "palabra_derivada": "Beginner",
+    "tipo": "Sustantivo",
+    "traduccion": "Principiante",
+    "ejemplo": "This course is designed for a complete beginner."
+  },
+  {
+    "palabra_base": "Believe",
+    "palabra_derivada": "Unbelievably",
+    "tipo": "Adverbio",
+    "traduccion": "Increíblemente",
+    "ejemplo": "The car was unbelievably fast."
+  },
+  {
+    "palabra_base": "Believe",
+    "palabra_derivada": "Unbelievable",
+    "tipo": "Adjetivo",
+    "traduccion": "Increíble",
+    "ejemplo": "It is unbelievable that we won the lottery."
+  },
+  {
+    "palabra_base": "Benefit",
+    "palabra_derivada": "Beneficial",
+    "tipo": "Adjetivo",
+    "traduccion": "Beneficioso",
+    "ejemplo": "Exercise is highly beneficial for your heart."
+  },
+  {
+    "palabra_base": "Break",
+    "palabra_derivada": "Breakthrough",
+    "tipo": "Sustantivo",
+    "traduccion": "Descubrimiento",
+    "ejemplo": "The scientists made a major breakthrough in cancer research."
+  },
+  {
+    "palabra_base": "Broad",
+    "palabra_derivada": "Breadth",
+    "tipo": "Sustantivo",
+    "traduccion": "Anchura",
+    "ejemplo": "The breadth of his knowledge is impressive."
+  },
+  {
+    "palabra_base": "Capture",
+    "palabra_derivada": "Captivity",
+    "tipo": "Sustantivo",
+    "traduccion": "Cautividad",
+    "ejemplo": "The tiger was bred in captivity."
+  },
+  {
+    "palabra_base": "Category",
+    "palabra_derivada": "Categorization",
+    "tipo": "Sustantivo",
+    "traduccion": "Categorización",
+    "ejemplo": "The strict categorization of these species is difficult."
+  },
+  {
+    "palabra_base": "Caution",
+    "palabra_derivada": "Cautiously",
+    "tipo": "Adverbio",
+    "traduccion": "Precavidamente",
+    "ejemplo": "He drove cautiously on the icy road."
+  },
+  {
+    "palabra_base": "Caution",
+    "palabra_derivada": "Precaution",
+    "tipo": "Sustantivo",
+    "traduccion": "Precaución",
+    "ejemplo": "You should take an umbrella as a precaution."
+  },
+  {
+    "palabra_base": "Celebrate",
+    "palabra_derivada": "Celebrity",
+    "tipo": "Sustantivo",
+    "traduccion": "Celebridad",
+    "ejemplo": "The restaurant is popular with a famous celebrity."
+  },
+  {
+    "palabra_base": "Censor",
+    "palabra_derivada": "Censorship",
+    "tipo": "Sustantivo",
+    "traduccion": "Censura",
+    "ejemplo": "The government imposed strict press censorship."
+  },
+  {
+    "palabra_base": "Centre",
+    "palabra_derivada": "Central",
+    "tipo": "Adjetivo",
+    "traduccion": "Central",
+    "ejemplo": "The park is in a very central location."
+  },
+  {
+    "palabra_base": "Choose",
+    "palabra_derivada": "Chosen",
+    "tipo": "Adjetivo / Verbo",
+    "traduccion": "Elegido",
+    "ejemplo": "You were chosen for this specific task."
+  },
+  {
+    "palabra_base": "Cinema",
+    "palabra_derivada": "Cinematic",
+    "tipo": "Adjetivo",
+    "traduccion": "Cinematográfico",
+    "ejemplo": "The film is a true cinematic masterpiece."
+  },
+  {
+    "palabra_base": "Civilise",
+    "palabra_derivada": "Civilisation",
+    "tipo": "Sustantivo",
+    "traduccion": "Civilización",
+    "ejemplo": "The ancient Egyptian civilisation was fascinating."
+  },
+  {
+    "palabra_base": "Clear",
+    "palabra_derivada": "Clarify",
+    "tipo": "Verbo",
+    "traduccion": "Clarificar",
+    "ejemplo": "Could you please clarify what you mean?"
+  },
+  {
+    "palabra_base": "Click",
+    "palabra_derivada": "Clicking",
+    "tipo": "Sustantivo",
+    "traduccion": "Chasquido",
+    "ejemplo": "I heard a loud clicking noise from the engine."
+  },
+  {
+    "palabra_base": "Close",
+    "palabra_derivada": "Disclose",
+    "tipo": "Verbo",
+    "traduccion": "Divulgar",
+    "ejemplo": "The company refused to disclose financial details."
+  },
+  {
+    "palabra_base": "Collect",
+    "palabra_derivada": "Collection",
+    "tipo": "Sustantivo",
+    "traduccion": "Colección",
+    "ejemplo": "She has an amazing stamp collection."
+  },
+  {
+    "palabra_base": "Come",
+    "palabra_derivada": "Overcome",
+    "tipo": "Verbo",
+    "traduccion": "Derrotar",
+    "ejemplo": "We must overcome these challenges together."
+  },
+  {
+    "palabra_base": "Comfort",
+    "palabra_derivada": "Discomfort",
+    "tipo": "Sustantivo",
+    "traduccion": "Malestar",
+    "ejemplo": "If you feel any discomfort, please tell the doctor."
+  },
+  {
+    "palabra_base": "Commerce",
+    "palabra_derivada": "Commercial",
+    "tipo": "Adjetivo",
+    "traduccion": "Comercial",
+    "ejemplo": "This area is the main commercial district."
+  },
+  {
+    "palabra_base": "Communicate",
+    "palabra_derivada": "Communicator",
+    "tipo": "Sustantivo",
+    "traduccion": "Comunicador",
+    "ejemplo": "He is an excellent public communicator."
+  },
+  {
+    "palabra_base": "Company",
+    "palabra_derivada": "Accompanied",
+    "tipo": "Adjetivo / Verbo",
+    "traduccion": "Acompañado",
+    "ejemplo": "Children must be accompanied by an adult."
+  },
+  {
+    "palabra_base": "Compare",
+    "palabra_derivada": "Comparably",
+    "tipo": "Adverbio",
+    "traduccion": "Comparablemente",
+    "ejemplo": "The two computers perform comparably well."
+  },
+  {
+    "palabra_base": "Compare",
+    "palabra_derivada": "Comparison",
+    "tipo": "Sustantivo",
+    "traduccion": "Comparación",
+    "ejemplo": "By comparison, the new model is much faster."
+  },
+  {
+    "palabra_base": "Complacent",
+    "palabra_derivada": "Complacency",
+    "tipo": "Sustantivo",
+    "traduccion": "Complaciencia",
+    "ejemplo": "There is no room for complacency in this market."
+  },
+  {
+    "palabra_base": "Complete",
+    "palabra_derivada": "Completion",
+    "tipo": "Sustantivo",
+    "traduccion": "Terminación",
+    "ejemplo": "The completion of the bridge will take two years."
+  },
+  {
+    "palabra_base": "Complicate",
+    "palabra_derivada": "Complication",
+    "tipo": "Sustantivo",
+    "traduccion": "Complicación",
+    "ejemplo": "The bad weather added another complication to our trip."
+  },
+  {
+    "palabra_base": "Conceive",
+    "palabra_derivada": "Conceivable",
+    "tipo": "Adjetivo",
+    "traduccion": "Concebible",
+    "ejemplo": "We tried every conceivable method to fix it."
+  },
+  {
+    "palabra_base": "Concept",
+    "palabra_derivada": "Misconception",
+    "tipo": "Sustantivo",
+    "traduccion": "Confusión",
+    "ejemplo": "It is a common misconception that bats are blind."
+  },
+  {
+    "palabra_base": "Conclude",
+    "palabra_derivada": "Conclusive",
+    "tipo": "Adjetivo",
+    "traduccion": "Concluyente",
+    "ejemplo": "The police found conclusive evidence."
+  },
+  {
+    "palabra_base": "Conclude",
+    "palabra_derivada": "Inconclusive",
+    "tipo": "Adjetivo",
+    "traduccion": "Inconcluyente",
+    "ejemplo": "The results of the test were inconclusive."
+  },
+  {
+    "palabra_base": "Congratulate",
+    "palabra_derivada": "Congratulations",
+    "tipo": "Sustantivo",
+    "traduccion": "Felicidades",
+    "ejemplo": "Congratulations on passing your driving test!"
+  },
+  {
+    "palabra_base": "Conquer",
+    "palabra_derivada": "Conquest",
+    "tipo": "Sustantivo",
+    "traduccion": "Conquista",
+    "ejemplo": "The Roman conquest changed the history of Europe."
+  },
+  {
+    "palabra_base": "Construct",
+    "palabra_derivada": "Constructive",
+    "tipo": "Adjetivo",
+    "traduccion": "Constructivo",
+    "ejemplo": "Try to give constructive criticism."
+  },
+  {
+    "palabra_base": "Contain",
+    "palabra_derivada": "Content",
+    "tipo": "Sustantivo",
+    "traduccion": "Contenido",
+    "ejemplo": "The exact content of the letter is unknown."
+  },
+  {
+    "palabra_base": "Contribute",
+    "palabra_derivada": "Contribution",
+    "tipo": "Sustantivo",
+    "traduccion": "Contribución",
+    "ejemplo": "She made a significant contribution to the project."
+  },
+  {
+    "palabra_base": "Controversy",
+    "palabra_derivada": "Controversial",
+    "tipo": "Adjetivo",
+    "traduccion": "Controvertido",
+    "ejemplo": "Abortion is a highly controversial topic."
+  },
+  {
+    "palabra_base": "Convenient",
+    "palabra_derivada": "Inconvenience",
+    "tipo": "Sustantivo",
+    "traduccion": "Inconveniencia",
+    "ejemplo": "We apologize for any inconvenience caused."
+  },
+  {
+    "palabra_base": "Convenient",
+    "palabra_derivada": "Inconvenient",
+    "tipo": "Adjetivo",
+    "traduccion": "Inconveniente",
+    "ejemplo": "Calling at midnight is very inconvenient."
+  },
+  {
+    "palabra_base": "Counter",
+    "palabra_derivada": "Counterparts",
+    "tipo": "Sustantivo",
+    "traduccion": "Homólogo",
+    "ejemplo": "The minister met with his European counterparts."
+  },
+  {
+    "palabra_base": "Create",
+    "palabra_derivada": "Creator",
+    "tipo": "Sustantivo",
+    "traduccion": "Creador",
+    "ejemplo": "He is the original creator of the comic book."
+  },
+  {
+    "palabra_base": "Credit",
+    "palabra_derivada": "Discredit",
+    "tipo": "Verbo",
+    "traduccion": "Desacreditar",
+    "ejemplo": "They tried to discredit his scientific theories."
+  },
+  {
+    "palabra_base": "Critic",
+    "palabra_derivada": "Critical",
+    "tipo": "Adjetivo",
+    "traduccion": "Crítico",
+    "ejemplo": "It is absolutely critical that you arrive on time."
+  },
+  {
+    "palabra_base": "Criticise",
+    "palabra_derivada": "Criticism",
+    "tipo": "Sustantivo",
+    "traduccion": "Crítica",
+    "ejemplo": "The new policy received harsh criticism."
+  },
+  {
+    "palabra_base": "Cry",
+    "palabra_derivada": "Outcry",
+    "tipo": "Sustantivo",
+    "traduccion": "Protesta",
+    "ejemplo": "There was a massive public outcry over the decision."
+  },
+  {
+    "palabra_base": "Custom",
+    "palabra_derivada": "Customary",
+    "tipo": "Adjetivo",
+    "traduccion": "Habitual",
+    "ejemplo": "It is customary to leave a tip in this country."
+  },
+  {
+    "palabra_base": "Danger",
+    "palabra_derivada": "Endanger",
+    "tipo": "Verbo",
+    "traduccion": "Arriesgar",
+    "ejemplo": "Pollution could endanger the local wildlife."
+  },
+  {
+    "palabra_base": "Date",
+    "palabra_derivada": "Updated",
+    "tipo": "Adjetivo",
+    "traduccion": "Actualizado",
+    "ejemplo": "Please make sure your software is updated."
+  },
+  {
+    "palabra_base": "Date",
+    "palabra_derivada": "Outdated",
+    "tipo": "Adjetivo",
+    "traduccion": "Desactualizado",
+    "ejemplo": "This computer model is completely outdated."
+  },
+  {
+    "palabra_base": "Day",
+    "palabra_derivada": "Daily",
+    "tipo": "Adjetivo / Adv.",
+    "traduccion": "Diario",
+    "ejemplo": "He reads the daily newspaper every morning."
+  },
+  {
+    "palabra_base": "Dead",
+    "palabra_derivada": "Deadline",
+    "tipo": "Sustantivo",
+    "traduccion": "Fecha límite",
+    "ejemplo": "The deadline for submitting the essay is Friday."
+  },
+  {
+    "palabra_base": "Debate",
+    "palabra_derivada": "Debatable",
+    "tipo": "Adjetivo",
+    "traduccion": "Debatible",
+    "ejemplo": "Whether this is the best approach is highly debatable."
+  },
+  {
+    "palabra_base": "Decide",
+    "palabra_derivada": "Indecision",
+    "tipo": "Sustantivo",
+    "traduccion": "Indecisión",
+    "ejemplo": "Her constant indecision is very frustrating."
+  },
+  {
+    "palabra_base": "Dedicate",
+    "palabra_derivada": "Dedication",
+    "tipo": "Sustantivo",
+    "traduccion": "Dedicación",
+    "ejemplo": "The project requires a lot of time and dedication."
+  },
+  {
+    "palabra_base": "Dedicate",
+    "palabra_derivada": "Dedicated",
+    "tipo": "Adjetivo",
+    "traduccion": "Dedicado",
+    "ejemplo": "She is a very dedicated teacher."
+  },
+  {
+    "palabra_base": "Deduce",
+    "palabra_derivada": "Deduction",
+    "tipo": "Sustantivo",
+    "traduccion": "Deducción",
+    "ejemplo": "Brilliant deduction, Sherlock!"
+  },
+  {
+    "palabra_base": "Demand",
+    "palabra_derivada": "Demanding",
+    "tipo": "Adjetivo",
+    "traduccion": "Demandante",
+    "ejemplo": "Nursing is a physically demanding job."
+  },
+  {
+    "palabra_base": "Deserve",
+    "palabra_derivada": "Deserving",
+    "tipo": "Adjetivo",
+    "traduccion": "Meritorio",
+    "ejemplo": "He is a highly deserving winner of the award."
+  },
+  {
+    "palabra_base": "Desire",
+    "palabra_derivada": "Desirable",
+    "tipo": "Adjetivo",
+    "traduccion": "Deseable",
+    "ejemplo": "Experience in marketing is highly desirable."
+  },
+  {
+    "palabra_base": "Despair",
+    "palabra_derivada": "Desperately",
+    "tipo": "Adverbio",
+    "traduccion": "Desesperadamente",
+    "ejemplo": "We desperately need more funding."
+  },
+  {
+    "palabra_base": "Desperate",
+    "palabra_derivada": "Desperation",
+    "tipo": "Sustantivo",
+    "traduccion": "Desesperación",
+    "ejemplo": "In an act of pure desperation, he jumped."
+  },
+  {
+    "palabra_base": "Develop",
+    "palabra_derivada": "Developer",
+    "tipo": "Sustantivo",
+    "traduccion": "Desarrollador",
+    "ejemplo": "He works as a software developer."
+  },
+  {
+    "palabra_base": "Dine",
+    "palabra_derivada": "Diner",
+    "tipo": "Sustantivo",
+    "traduccion": "Comensal",
+    "ejemplo": "The restaurant was full of hungry diners."
+  },
+  {
+    "palabra_base": "Discover",
+    "palabra_derivada": "Discovery",
+    "tipo": "Sustantivo",
+    "traduccion": "Descubrimiento",
+    "ejemplo": "The discovery of penicillin saved millions of lives."
+  },
+  {
+    "palabra_base": "Dismiss",
+    "palabra_derivada": "Dismissive",
+    "tipo": "Adjetivo",
+    "traduccion": "Despectivo",
+    "ejemplo": "He waved his hand in a dismissive gesture."
+  },
+  {
+    "palabra_base": "Dismiss",
+    "palabra_derivada": "Dismissal",
+    "tipo": "Sustantivo",
+    "traduccion": "Despido",
+    "ejemplo": "Unfair dismissal is illegal in this country."
+  },
+  {
+    "palabra_base": "Dispute",
+    "palabra_derivada": "Indisputable",
+    "tipo": "Adjetivo",
+    "traduccion": "Indiscutible",
+    "ejemplo": "The evidence against him is indisputable."
+  },
+  {
+    "palabra_base": "Distinct",
+    "palabra_derivada": "Distinctive",
+    "tipo": "Adjetivo",
+    "traduccion": "Característico",
+    "ejemplo": "The bird has a very distinctive call."
+  },
+  {
+    "palabra_base": "Doubt",
+    "palabra_derivada": "Doubtless",
+    "tipo": "Adverbio",
+    "traduccion": "Sin dudas",
+    "ejemplo": "He will doubtless succeed in his new role."
+  },
+  {
+    "palabra_base": "Drama",
+    "palabra_derivada": "Dramatically",
+    "tipo": "Adverbio",
+    "traduccion": "Dramáticamente",
+    "ejemplo": "Sales have increased dramatically this year."
+  },
+  {
+    "palabra_base": "Draw",
+    "palabra_derivada": "Withdraw",
+    "tipo": "Verbo",
+    "traduccion": "Retirar",
+    "ejemplo": "I need to withdraw some money from the ATM."
+  },
+  {
+    "palabra_base": "Earth",
+    "palabra_derivada": "Earthly",
+    "tipo": "Adjetivo",
+    "traduccion": "Terrenal, mundano",
+    "ejemplo": "We must leave behind all earthly possessions."
+  },
+  {
+    "palabra_base": "Education",
+    "palabra_derivada": "Educational",
+    "tipo": "Adjetivo",
+    "traduccion": "Educacional",
+    "ejemplo": "The museum offers many educational programs."
+  },
+  {
+    "palabra_base": "Effect",
+    "palabra_derivada": "Effective",
+    "tipo": "Adjetivo",
+    "traduccion": "Efectivo",
+    "ejemplo": "This medicine is highly effective against headaches."
+  },
+  {
+    "palabra_base": "Effect",
+    "palabra_derivada": "Ineffective",
+    "tipo": "Adjetivo",
+    "traduccion": "Inefectivo",
+    "ejemplo": "The old security measures were totally ineffective."
+  },
+  {
+    "palabra_base": "Effect",
+    "palabra_derivada": "Effectively",
+    "tipo": "Adverbio",
+    "traduccion": "Eficazmente",
+    "ejemplo": "She managed the team very effectively."
+  },
+  {
+    "palabra_base": "Eloquence",
+    "palabra_derivada": "Eloquently",
+    "tipo": "Adverbio",
+    "traduccion": "Elocuentemente",
+    "ejemplo": "He spoke eloquently about his passion for art."
+  },
+  {
+    "palabra_base": "Emit",
+    "palabra_derivada": "Emission",
+    "tipo": "Sustantivo",
+    "traduccion": "Emisión",
+    "ejemplo": "The factory must reduce its carbon emission."
+  },
+  {
+    "palabra_base": "Emotion",
+    "palabra_derivada": "Emotional",
+    "tipo": "Adjetivo",
+    "traduccion": "Emocional",
+    "ejemplo": "The movie's ending was highly emotional."
+  },
+  {
+    "palabra_base": "Endure",
+    "palabra_derivada": "Endurance",
+    "tipo": "Sustantivo",
+    "traduccion": "Resistencia",
+    "ejemplo": "Marathon running requires incredible physical endurance."
+  },
+  {
+    "palabra_base": "Enthuse",
+    "palabra_derivada": "Enthusiast",
+    "tipo": "Sustantivo",
+    "traduccion": "Entusiasta",
+    "ejemplo": "He is a massive classic car enthusiast."
+  },
+  {
+    "palabra_base": "Enthuse",
+    "palabra_derivada": "Enthusiasm",
+    "tipo": "Sustantivo",
+    "traduccion": "Entusiasmo",
+    "ejemplo": "She showed great enthusiasm for the new project."
+  },
+  {
+    "palabra_base": "Erupt",
+    "palabra_derivada": "Eruption",
+    "tipo": "Sustantivo",
+    "traduccion": "Erupción",
+    "ejemplo": "The volcanic eruption destroyed the village."
+  },
+  {
+    "palabra_base": "Escape",
+    "palabra_derivada": "Inescapable",
+    "tipo": "Adjetivo",
+    "traduccion": "Inevitable",
+    "ejemplo": "Death and taxes are inescapable facts of life."
+  },
+  {
+    "palabra_base": "Essence",
+    "palabra_derivada": "Essential",
+    "tipo": "Adjetivo",
+    "traduccion": "Esencial",
+    "ejemplo": "Water is absolutely essential for survival."
+  },
+  {
+    "palabra_base": "Establish",
+    "palabra_derivada": "Establishment",
+    "tipo": "Sustantivo",
+    "traduccion": "Establecimiento",
+    "ejemplo": "The hotel is a luxury establishment."
+  },
+  {
+    "palabra_base": "Ethic",
+    "palabra_derivada": "Unethical",
+    "tipo": "Adjetivo",
+    "traduccion": "Inmoral",
+    "ejemplo": "Testing cosmetics on animals is considered unethical."
+  },
+  {
+    "palabra_base": "Even",
+    "palabra_derivada": "Evenly",
+    "tipo": "Adverbio",
+    "traduccion": "Uniformemente",
+    "ejemplo": "Spread the butter evenly on the bread."
+  },
+  {
+    "palabra_base": "Even",
+    "palabra_derivada": "Unevenly",
+    "tipo": "Adverbio",
+    "traduccion": "Desigualmente",
+    "ejemplo": "The road was patched very unevenly."
+  },
+  {
+    "palabra_base": "Even",
+    "palabra_derivada": "Uneven",
+    "tipo": "Adjetivo",
+    "traduccion": "Desnivelado/Desigual",
+    "ejemplo": "The floor is slightly uneven in this old house."
+  },
+  {
+    "palabra_base": "Except",
+    "palabra_derivada": "Exceptional",
+    "tipo": "Adjetivo",
+    "traduccion": "Excepcional",
+    "ejemplo": "She showed exceptional talent from a young age."
+  },
+  {
+    "palabra_base": "Expect",
+    "palabra_derivada": "Unexpected",
+    "tipo": "Adjetivo",
+    "traduccion": "Inesperado",
+    "ejemplo": "Her resignation was completely unexpected."
+  },
+  {
+    "palabra_base": "Expect",
+    "palabra_derivada": "Expectation",
+    "tipo": "Sustantivo",
+    "traduccion": "Expectación",
+    "ejemplo": "We waited with great expectation."
+  },
+  {
+    "palabra_base": "Expect",
+    "palabra_derivada": "Unexpectedly",
+    "tipo": "Adverbio",
+    "traduccion": "Inesperadamente",
+    "ejemplo": "He arrived unexpectedly during dinner."
+  },
+  {
+    "palabra_base": "Expert",
+    "palabra_derivada": "Expertise",
+    "tipo": "Sustantivo",
+    "traduccion": "Experiencia, pericia",
+    "ejemplo": "We need your technical expertise to solve this."
+  },
+  {
+    "palabra_base": "Explode",
+    "palabra_derivada": "Explosive",
+    "tipo": "Adjetivo",
+    "traduccion": "Explosivo",
+    "ejemplo": "The package contained a highly explosive substance."
+  },
+  {
+    "palabra_base": "Extend",
+    "palabra_derivada": "Extensive",
+    "tipo": "Adjetivo",
+    "traduccion": "Extensivo",
+    "ejemplo": "He suffered extensive injuries in the crash."
+  },
+  {
+    "palabra_base": "Fabricate",
+    "palabra_derivada": "Fabrication",
+    "tipo": "Sustantivo",
+    "traduccion": "Invento",
+    "ejemplo": "The entire story was a pure fabrication."
+  },
+  {
+    "palabra_base": "Fail",
+    "palabra_derivada": "Failure",
+    "tipo": "Sustantivo",
+    "traduccion": "Fracaso",
+    "ejemplo": "The experiment ended in complete failure."
+  },
+  {
+    "palabra_base": "Fair",
+    "palabra_derivada": "Fairness",
+    "tipo": "Sustantivo",
+    "traduccion": "Justicia",
+    "ejemplo": "The judge is known for his strict fairness."
+  },
+  {
+    "palabra_base": "Fascinate",
+    "palabra_derivada": "Fascinating",
+    "tipo": "Adjetivo",
+    "traduccion": "Fascinante",
+    "ejemplo": "That is a truly fascinating documentary."
+  },
+  {
+    "palabra_base": "Fascinate",
+    "palabra_derivada": "Fascination",
+    "tipo": "Sustantivo",
+    "traduccion": "Fascinación",
+    "ejemplo": "I have a deep fascination with ancient Rome."
+  },
+  {
+    "palabra_base": "Fatal",
+    "palabra_derivada": "Fatality",
+    "tipo": "Sustantivo",
+    "traduccion": "Fatalidad",
+    "ejemplo": "Thankfully, there were no fatalities in the accident."
+  },
+  {
+    "palabra_base": "Favour",
+    "palabra_derivada": "Favourable",
+    "tipo": "Adjetivo",
+    "traduccion": "Favorable",
+    "ejemplo": "We are waiting for a favourable response."
+  },
+  {
+    "palabra_base": "Feed",
+    "palabra_derivada": "Feedback",
+    "tipo": "Sustantivo",
+    "traduccion": "Retroalimentación",
+    "ejemplo": "Customer feedback is crucial for our growth."
+  },
+  {
+    "palabra_base": "Fiction",
+    "palabra_derivada": "Fictional",
+    "tipo": "Adjetivo",
+    "traduccion": "Ficticio",
+    "ejemplo": "Sherlock Holmes is a famous fictional character."
+  },
+  {
+    "palabra_base": "Final",
+    "palabra_derivada": "Finalist",
+    "tipo": "Sustantivo",
+    "traduccion": "Finalista",
+    "ejemplo": "She is a finalist in the singing competition."
+  },
+  {
+    "palabra_base": "Forget",
+    "palabra_derivada": "Forgettable",
+    "tipo": "Adjetivo",
+    "traduccion": "Olvidable",
+    "ejemplo": "It was a mediocre, completely forgettable movie."
+  },
+  {
+    "palabra_base": "Forget",
+    "palabra_derivada": "Unforgettable",
+    "tipo": "Adjetivo",
+    "traduccion": "Inolvidable",
+    "ejemplo": "Our trip to Paris was an unforgettable experience."
+  },
+  {
+    "palabra_base": "Fortune",
+    "palabra_derivada": "Misfortune",
+    "tipo": "Sustantivo",
+    "traduccion": "Infortunio",
+    "ejemplo": "It was his great misfortune to lose his wallet."
+  },
+  {
+    "palabra_base": "Found",
+    "palabra_derivada": "Founder",
+    "tipo": "Sustantivo",
+    "traduccion": "Fundador",
+    "ejemplo": "He is the original founder of the tech startup."
+  },
+  {
+    "palabra_base": "Fresh",
+    "palabra_derivada": "Refresh",
+    "tipo": "Verbo",
+    "traduccion": "Refrescar",
+    "ejemplo": "Press F5 to refresh the webpage."
+  },
+  {
+    "palabra_base": "Generous",
+    "palabra_derivada": "Generosity",
+    "tipo": "Sustantivo",
+    "traduccion": "Generosidad",
+    "ejemplo": "I am overwhelmed by your incredible generosity."
+  },
+  {
+    "palabra_base": "Go",
+    "palabra_derivada": "Undergone",
+    "tipo": "Verbo (Participio)",
+    "traduccion": "Experimentado",
+    "ejemplo": "The city has undergone massive changes."
+  },
+  {
+    "palabra_base": "Go",
+    "palabra_derivada": "Undergo",
+    "tipo": "Verbo",
+    "traduccion": "Experimentar",
+    "ejemplo": "Patients must undergo a series of medical tests."
+  },
+  {
+    "palabra_base": "Grand",
+    "palabra_derivada": "Grandeur",
+    "tipo": "Sustantivo",
+    "traduccion": "Grandeza",
+    "ejemplo": "The sheer grandeur of the mountains is breathtaking."
+  },
+  {
+    "palabra_base": "Guide",
+    "palabra_derivada": "Guidance",
+    "tipo": "Sustantivo",
+    "traduccion": "Guía",
+    "ejemplo": "I need your guidance to make this decision."
+  },
+  {
+    "palabra_base": "Happy",
+    "palabra_derivada": "Happiness",
+    "tipo": "Sustantivo",
+    "traduccion": "Felicidad",
+    "ejemplo": "Money cannot buy true happiness."
+  },
+  {
+    "palabra_base": "Hard",
+    "palabra_derivada": "Hardship",
+    "tipo": "Sustantivo",
+    "traduccion": "Adversidad",
+    "ejemplo": "They endured great financial hardship during the war."
+  },
+  {
+    "palabra_base": "Hazard",
+    "palabra_derivada": "Hazardous",
+    "tipo": "Adjetivo",
+    "traduccion": "Peligroso",
+    "ejemplo": "You must dispose of hazardous waste safely."
+  },
+  {
+    "palabra_base": "History",
+    "palabra_derivada": "Historic",
+    "tipo": "Adjetivo",
+    "traduccion": "Histórico",
+    "ejemplo": "Today is a truly historic day for our nation."
+  },
+  {
+    "palabra_base": "Honest",
+    "palabra_derivada": "Honesty",
+    "tipo": "Sustantivo",
+    "traduccion": "Honestidad",
+    "ejemplo": "Honesty is the best policy."
+  },
+  {
+    "palabra_base": "Identify",
+    "palabra_derivada": "Identification",
+    "tipo": "Sustantivo",
+    "traduccion": "Identificación",
+    "ejemplo": "Please show your ID card for identification."
+  },
+  {
+    "palabra_base": "Impress",
+    "palabra_derivada": "Impression",
+    "tipo": "Sustantivo",
+    "traduccion": "Impresión",
+    "ejemplo": "You only get one chance to make a first impression."
+  },
+  {
+    "palabra_base": "Include",
+    "palabra_derivada": "Including",
+    "tipo": "Preposición",
+    "traduccion": "Inclusive, incluso",
+    "ejemplo": "Everyone is coming, including your brother."
+  },
+  {
+    "palabra_base": "Indicate",
+    "palabra_derivada": "Indication",
+    "tipo": "Sustantivo",
+    "traduccion": "Indicación",
+    "ejemplo": "Dark clouds are an indication of incoming rain."
+  },
+  {
+    "palabra_base": "Indignation",
+    "palabra_derivada": "Indignantly",
+    "tipo": "Adverbio",
+    "traduccion": "Indignantemente",
+    "ejemplo": "\"I did not steal it!\" he replied indignantly."
+  },
+  {
+    "palabra_base": "Inevitable",
+    "palabra_derivada": "Inevitably",
+    "tipo": "Adverbio",
+    "traduccion": "Inevitablemente",
+    "ejemplo": "Inevitably, the rules will have to change."
+  },
+  {
+    "palabra_base": "Influence",
+    "palabra_derivada": "Influential",
+    "tipo": "Adjetivo",
+    "traduccion": "Influyente",
+    "ejemplo": "She is one of the most influential scientists alive."
+  },
+  {
+    "palabra_base": "Ingenious",
+    "palabra_derivada": "Ingenuity",
+    "tipo": "Sustantivo",
+    "traduccion": "Ingenuidad",
+    "ejemplo": "Overcoming the problem required great ingenuity."
+  },
+  {
+    "palabra_base": "Initial",
+    "palabra_derivada": "Initially",
+    "tipo": "Adverbio",
+    "traduccion": "Inicialmente",
+    "ejemplo": "Initially, I didn't like the idea, but it grew on me."
+  },
+  {
+    "palabra_base": "Innovate",
+    "palabra_derivada": "Innovative",
+    "tipo": "Adjetivo",
+    "traduccion": "Innovador",
+    "ejemplo": "Apple is known for its innovative designs."
+  },
+  {
+    "palabra_base": "Inspire",
+    "palabra_derivada": "Inspiration",
+    "tipo": "Sustantivo",
+    "traduccion": "Inspiración",
+    "ejemplo": "Nature was the main inspiration for his paintings."
+  },
+  {
+    "palabra_base": "Intense",
+    "palabra_derivada": "Intensely",
+    "tipo": "Adverbio",
+    "traduccion": "Intensamente",
+    "ejemplo": "She looked at him intensely."
+  },
+  {
+    "palabra_base": "Interact",
+    "palabra_derivada": "Interactive",
+    "tipo": "Adjetivo",
+    "traduccion": "Interactivo",
+    "ejemplo": "The museum has many interactive exhibits."
+  },
+  {
+    "palabra_base": "Interest",
+    "palabra_derivada": "Interesting",
+    "tipo": "Adjetivo",
+    "traduccion": "Interesante",
+    "ejemplo": "That is a very interesting theory."
+  },
+  {
+    "palabra_base": "Interest",
+    "palabra_derivada": "Uninteresting",
+    "tipo": "Adjetivo",
+    "traduccion": "Aburrido",
+    "ejemplo": "The lecture was dry and completely uninteresting."
+  },
+  {
+    "palabra_base": "Interrupt",
+    "palabra_derivada": "Uninterrupted",
+    "tipo": "Adjetivo",
+    "traduccion": "Ininterrumpido",
+    "ejemplo": "I need eight hours of uninterrupted sleep."
+  },
+  {
+    "palabra_base": "Intrigue",
+    "palabra_derivada": "Intriguing",
+    "tipo": "Adjetivo",
+    "traduccion": "Intrigante",
+    "ejemplo": "The plot of the novel is highly intriguing."
+  },
+  {
+    "palabra_base": "Invent",
+    "palabra_derivada": "Inventor",
+    "tipo": "Sustantivo",
+    "traduccion": "Inventor",
+    "ejemplo": "Thomas Edison was a famous inventor."
+  },
+  {
+    "palabra_base": "Journal",
+    "palabra_derivada": "Journalism",
+    "tipo": "Sustantivo",
+    "traduccion": "Periodismo",
+    "ejemplo": "She studied journalism at university."
+  },
+  {
+    "palabra_base": "Journal",
+    "palabra_derivada": "Journalist",
+    "tipo": "Sustantivo",
+    "traduccion": "Periodista",
+    "ejemplo": "The journalist asked the politician a tough question."
+  },
+  {
+    "palabra_base": "Judge",
+    "palabra_derivada": "Judgemental",
+    "tipo": "Adjetivo",
+    "traduccion": "Judicial",
+    "ejemplo": "Try not to be so judgemental about others."
+  },
+  {
+    "palabra_base": "Judge",
+    "palabra_derivada": "Misjudgement",
+    "tipo": "Sustantivo",
+    "traduccion": "Juicio erróneo",
+    "ejemplo": "Trusting him was a huge misjudgement."
+  },
+  {
+    "palabra_base": "King",
+    "palabra_derivada": "Kingdom",
+    "tipo": "Sustantivo",
+    "traduccion": "Reino",
+    "ejemplo": "The lion is the ruler of the animal kingdom."
+  },
+  {
+    "palabra_base": "Lead",
+    "palabra_derivada": "Misleading",
+    "tipo": "Adjetivo",
+    "traduccion": "Engañoso",
+    "ejemplo": "The advertisement was highly misleading."
+  },
+  {
+    "palabra_base": "Leak",
+    "palabra_derivada": "Leakage",
+    "tipo": "Sustantivo",
+    "traduccion": "Fuga",
+    "ejemplo": "The plumber fixed the water leakage."
+  },
+  {
+    "palabra_base": "Legal",
+    "palabra_derivada": "Illegal",
+    "tipo": "Adjetivo",
+    "traduccion": "Ilegal",
+    "ejemplo": "It is illegal to park in front of a fire hydrant."
+  },
+  {
+    "palabra_base": "Let",
+    "palabra_derivada": "Outlet",
+    "tipo": "Sustantivo",
+    "traduccion": "Enchufe / Tienda de descuento",
+    "ejemplo": "I need a wall outlet to charge my laptop."
+  },
+  {
+    "palabra_base": "Life",
+    "palabra_derivada": "Lifelong",
+    "tipo": "Adjetivo",
+    "traduccion": "Para toda la vida",
+    "ejemplo": "It was his lifelong dream to become a pilot."
+  },
+  {
+    "palabra_base": "Light",
+    "palabra_derivada": "Enlighten",
+    "tipo": "Verbo",
+    "traduccion": "Iluminar",
+    "ejemplo": "Please enlighten me on this complex subject."
+  },
+  {
+    "palabra_base": "Live",
+    "palabra_derivada": "Livelihood",
+    "tipo": "Sustantivo",
+    "traduccion": "Sustento",
+    "ejemplo": "Fishing is their primary source of livelihood."
+  },
+  {
+    "palabra_base": "Long",
+    "palabra_derivada": "Length",
+    "tipo": "Sustantivo",
+    "traduccion": "Longitud",
+    "ejemplo": "The total length of the bridge is 2 kilometers."
+  },
+  {
+    "palabra_base": "Magic",
+    "palabra_derivada": "Magically",
+    "tipo": "Adverbio",
+    "traduccion": "Mágicamente",
+    "ejemplo": "The rabbit magically appeared from the hat."
+  },
+  {
+    "palabra_base": "Majesty",
+    "palabra_derivada": "Majestic",
+    "tipo": "Adjetivo",
+    "traduccion": "Majestuoso",
+    "ejemplo": "The eagle looked truly majestic in flight."
+  },
+  {
+    "palabra_base": "Mass",
+    "palabra_derivada": "Massive",
+    "tipo": "Adjetivo",
+    "traduccion": "Gigante",
+    "ejemplo": "The building suffered massive structural damage."
+  },
+  {
+    "palabra_base": "Match",
+    "palabra_derivada": "Mismatches",
+    "tipo": "Sustantivo",
+    "traduccion": "Discordancias",
+    "ejemplo": "There were several mismatches in the financial report."
+  },
+  {
+    "palabra_base": "Measure",
+    "palabra_derivada": "Measurement",
+    "tipo": "Sustantivo",
+    "traduccion": "Medida",
+    "ejemplo": "Accurate measurement is crucial in chemistry."
+  },
+  {
+    "palabra_base": "Medicine",
+    "palabra_derivada": "Medical",
+    "tipo": "Adjetivo",
+    "traduccion": "Médico",
+    "ejemplo": "If you are ill, seek medical attention."
+  },
+  {
+    "palabra_base": "Mind",
+    "palabra_derivada": "Mindless",
+    "tipo": "Adjetivo",
+    "traduccion": "Despistado",
+    "ejemplo": "The job involves a lot of mindless repetition."
+  },
+  {
+    "palabra_base": "Minor",
+    "palabra_derivada": "Minority",
+    "tipo": "Sustantivo",
+    "traduccion": "Minoría",
+    "ejemplo": "Only a small minority voted against the proposal."
+  },
+  {
+    "palabra_base": "Modify",
+    "palabra_derivada": "Modified",
+    "tipo": "Adjetivo",
+    "traduccion": "Modificado",
+    "ejemplo": "We are using a slightly modified version of the code."
+  },
+  {
+    "palabra_base": "Modify",
+    "palabra_derivada": "Unmodified",
+    "tipo": "Adjetivo",
+    "traduccion": "No modificado",
+    "ejemplo": "The file must remain completely unmodified."
+  },
+  {
+    "palabra_base": "Mortal",
+    "palabra_derivada": "Immortalised",
+    "tipo": "Verbo (Participio)",
+    "traduccion": "Inmortalizado",
+    "ejemplo": "His heroic acts were immortalised in the statue."
+  },
+  {
+    "palabra_base": "Mortal",
+    "palabra_derivada": "Immortal",
+    "tipo": "Adjetivo",
+    "traduccion": "Inmortal",
+    "ejemplo": "Vampires are mythological creatures that are immortal."
+  },
+  {
+    "palabra_base": "Motivate",
+    "palabra_derivada": "Motivated",
+    "tipo": "Adjetivo",
+    "traduccion": "Motivado",
+    "ejemplo": "A highly motivated team will always perform better."
+  },
+  {
+    "palabra_base": "Motivate",
+    "palabra_derivada": "Demotivated",
+    "tipo": "Adjetivo",
+    "traduccion": "Desmotivado",
+    "ejemplo": "After failing the exam, he felt very demotivated."
+  },
+  {
+    "palabra_base": "Mountain",
+    "palabra_derivada": "Mountaineer",
+    "tipo": "Sustantivo",
+    "traduccion": "Montañero",
+    "ejemplo": "The experienced mountaineer climbed Everest twice."
+  },
+  {
+    "palabra_base": "Move",
+    "palabra_derivada": "Remove",
+    "tipo": "Verbo",
+    "traduccion": "Remover",
+    "ejemplo": "Please remove your shoes before entering."
+  },
+  {
+    "palabra_base": "Music",
+    "palabra_derivada": "Musicality",
+    "tipo": "Sustantivo",
+    "traduccion": "Musicalidad",
+    "ejemplo": "The dancer displayed an impressive sense of musicality."
+  },
+  {
+    "palabra_base": "Mystery",
+    "palabra_derivada": "Mysterious",
+    "tipo": "Adjetivo",
+    "traduccion": "Misterioso",
+    "ejemplo": "A mysterious stranger arrived in the village."
+  },
+  {
+    "palabra_base": "Name",
+    "palabra_derivada": "Nickname",
+    "tipo": "Sustantivo",
+    "traduccion": "Apodo",
+    "ejemplo": "His friends gave him the nickname\"Speedy\"."
+  },
+  {
+    "palabra_base": "Narrow",
+    "palabra_derivada": "Narrowly",
+    "tipo": "Adverbio",
+    "traduccion": "Estrictamente",
+    "ejemplo": "She narrowly missed hitting the car in front of her."
+  },
+  {
+    "palabra_base": "Need",
+    "palabra_derivada": "Necessary",
+    "tipo": "Adjetivo",
+    "traduccion": "Necesario",
+    "ejemplo": "It is necessary to drink plenty of water during a workout."
+  },
+  {
+    "palabra_base": "Negative",
+    "palabra_derivada": "Negativity",
+    "tipo": "Sustantivo",
+    "traduccion": "Negatividad",
+    "ejemplo": "Try to remove the toxic negativity from your life."
+  },
+  {
+    "palabra_base": "Net",
+    "palabra_derivada": "Network",
+    "tipo": "Sustantivo",
+    "traduccion": "Red",
+    "ejemplo": "The university has a fast Wi-Fi network."
+  },
+  {
+    "palabra_base": "Night",
+    "palabra_derivada": "Overnight",
+    "tipo": "Adverbio / Adj.",
+    "traduccion": "Por la noche",
+    "ejemplo": "We stayed at a hotel overnight."
+  },
+  {
+    "palabra_base": "Nominate",
+    "palabra_derivada": "Nomination",
+    "tipo": "Sustantivo",
+    "traduccion": "Nominación",
+    "ejemplo": "The actor received an Oscar nomination."
+  },
+  {
+    "palabra_base": "Nostalgia",
+    "palabra_derivada": "Nostalgic",
+    "tipo": "Adjetivo",
+    "traduccion": "Nostálgico",
+    "ejemplo": "Listening to old songs makes me feel nostalgic."
+  }
+]

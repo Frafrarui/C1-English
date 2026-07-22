@@ -1,0 +1,554 @@
+{
+  "id": "exam8",
+  "title": "Test 2 (Cambridge C1 Advanced)",
+  "description": "Test 2 completo: Use of English, Reading y Listening.",
+  "examType": "cae",
+  "scoring": {
+    "useOfEnglish": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 2 },
+      "nominalMax": 28,
+      "passPercentage": 57
+    },
+    "reading": {
+      "partPoints": { "5": 2, "6": 2, "7": 2, "8": 1 },
+      "nominalMax": 50,
+      "passPercentage": 64
+    },
+    "listening": {
+      "partPoints": { "1": 1, "2": 1, "3": 1, "4": 1, "5": 1 },
+      "nominalMax": 30,
+      "passPercentage": 60
+    }
+  },
+  "sections": {
+    "useOfEnglish": {
+      "title": "Use of English",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice-cloze",
+          "instructions": "For questions 1-8, read the text below and decide which answer (A, B, C or D) best fits each gap.",
+          "text": "Promotion is good for your health\n\nA recent study suggests that being promoted isn't just good for your bank (0) balance, it's also good for your health. Researchers found that those who work in jobs with better promotion (1)___ are less likely to develop serious illnesses. Specifically, those working in departments with double the average promotion (2)___ had a twenty percent better chance of escaping serious illness.\n\nThe researchers (3)___ into account factors such as family background, pre-existing medical conditions and educational level. (4)___ , they could be confident that the lower occurrences of illness were not simply due to a healthier or more (5)___ upbringing.\n\nThe results seem to (6)___ earlier studies showing that people who win prestigious awards, such as an Oscar or Nobel Prize during their career, have a tendency to outlive those who are less fortunate. As the author of the report says, 'When our findings are put together with the large body of other (7)___ literature, there is little (8)___ that achieving a higher position at work is good for the health.'",
+          "questions": [
+            {
+              "id": "ue1_1",
+              "number": 1,
+              "options": [
+                { "label": "A", "text": "forecasts" },
+                { "label": "B", "text": "advances" },
+                { "label": "C", "text": "predictions" },
+                { "label": "D", "text": "prospects" }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "ue1_2",
+              "number": 2,
+              "options": [
+                { "label": "A", "text": "scale" },
+                { "label": "B", "text": "rate" },
+                { "label": "C", "text": "degree" },
+                { "label": "D", "text": "ratio" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "ue1_3",
+              "number": 3,
+              "options": [
+                { "label": "A", "text": "set" },
+                { "label": "B", "text": "took" },
+                { "label": "C", "text": "put" },
+                { "label": "D", "text": "made" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_4",
+              "number": 4,
+              "options": [
+                { "label": "A", "text": "Anyway" },
+                { "label": "B", "text": "Moreover" },
+                { "label": "C", "text": "Consequently" },
+                { "label": "D", "text": "Admittedly" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_5",
+              "number": 5,
+              "options": [
+                { "label": "A", "text": "privileged" },
+                { "label": "B", "text": "preferred" },
+                { "label": "C", "text": "entitled" },
+                { "label": "D", "text": "honoured" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_6",
+              "number": 6,
+              "options": [
+                { "label": "A", "text": "call for" },
+                { "label": "B", "text": "go over" },
+                { "label": "C", "text": "back up" },
+                { "label": "D", "text": "lead to" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "ue1_7",
+              "number": 7,
+              "options": [
+                { "label": "A", "text": "related" },
+                { "label": "B", "text": "combined" },
+                { "label": "C", "text": "referred" },
+                { "label": "D", "text": "incorporated" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "ue1_8",
+              "number": 8,
+              "options": [
+                { "label": "A", "text": "hesitation" },
+                { "label": "B", "text": "question" },
+                { "label": "C", "text": "reservation" },
+                { "label": "D", "text": "opposition" }
+              ],
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "open-cloze",
+          "instructions": "For questions 9-16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
+          "text": "Handwriting\n\nAbout six months ago, I realised I had (0) no idea what the handwriting of a good friend of mine looked like. We had always communicated by email and text but never by a handwritten letter. And it struck me that we are at a moment (9)___ handwriting seems to be about to vanish from our lives altogether. (10)___ some point in recent years, it stopped (11)___ a necessary and inevitable intermediary between people – a means by (12)___ individuals communicate with each other, putting a little bit of their personality (13)___ the form of the message as they press the ink-bearing point onto the paper. It has started to become just (14)___ among many options, often considered unattractive and elaborate.\n\nFor each of us, the act of putting marks on paper with ink goes back as (15)___ as we can remember. Our handwriting, like ourselves, seems always to have been there. But now, given that most of us communicate via email and text, have we lost (16)___ crucial to the human experience?",
+          "questions": [
+            { "id": "ue2_9", "number": 9, "answer": "when", "acceptedAnswers": ["where"] },
+            { "id": "ue2_10", "number": 10, "answer": "at" },
+            { "id": "ue2_11", "number": 11, "answer": "being" },
+            { "id": "ue2_12", "number": 12, "answer": "which" },
+            { "id": "ue2_13", "number": 13, "answer": "into", "acceptedAnswers": ["in"] },
+            { "id": "ue2_14", "number": 14, "answer": "one" },
+            { "id": "ue2_15", "number": 15, "answer": "far" },
+            { "id": "ue2_16", "number": 16, "answer": "something" }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "word-formation",
+          "instructions": "For questions 17-24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
+          "text": "Modernising a museum\n\nThe Ashmolean Museum in Oxford, England – the world's oldest university museum – has recently gone through a major (0) transformation. The architects wanted to create a new space that would make the museum one of the world's most important and (17)___ cultural showcases.\n\nThe collections in the museum are absolutely (18)___ and cover the cultures of east and west, charting the aspirations of mankind from the prehistoric era to the present day. The approach that was adopted was based on the idea that (19)___ that have shaped our modern societies did not develop in isolation but were part of a complex interrelated world. Every object has a (20)___ story to tell, and these are gradually uncovered through tracing the journey of ideas and influences across time and continents.\n\nPeople who knew the old museum say it has (21)___ an amazing makeover. The new layout (22)___ people to appreciate the objects fully; it is (23)___ to everyone, from school children to academic scholars, so (24)___ to all those involved in redesigning this wonderful treasure house.",
+          "questions": [
+            { "id": "ue3_17", "number": 17, "prompt": "INNOVATE", "answer": "innovative" },
+            { "id": "ue3_18", "number": 18, "prompt": "STAND", "answer": "outstanding" },
+            { "id": "ue3_19", "number": 19, "prompt": "CIVILISE", "answer": "civilisations", "acceptedAnswers": ["civilizations"] },
+            { "id": "ue3_20", "number": 20, "prompt": "SIGNIFY", "answer": "significant" },
+            { "id": "ue3_21", "number": 21, "prompt": "GO", "answer": "undergone" },
+            { "id": "ue3_22", "number": 22, "prompt": "ABLE", "answer": "enables" },
+            { "id": "ue3_23", "number": 23, "prompt": "ACCESS", "answer": "accessible" },
+            { "id": "ue3_24", "number": 24, "prompt": "CONGRATULATE", "answer": "congratulations" }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "key-word-transformation",
+          "instructions": "For questions 25-30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.",
+          "questions": [
+            {
+              "id": "ue4_25",
+              "number": 25,
+              "sentence1": "The other students don't mind whether you give your presentation on Thursday or Friday.",
+              "keyword": "DIFFERENCE",
+              "sentence2": "It ___ the other students whether you give your presentation on Thursday or Friday.",
+              "answer": "makes no difference to",
+              "acceptedAnswers": ["makes little difference to", "doesn't make any difference to", "doesn't make a difference to", "doesn't make much difference to", "does not make any difference to", "does not make a difference to", "does not make much difference to"]
+            },
+            {
+              "id": "ue4_26",
+              "number": 26,
+              "sentence1": "'What are you thinking of doing for the college's centenary celebration?' the tutor asked the students.",
+              "keyword": "MIND",
+              "sentence2": "The tutor asked the students what ___ for the college's centenary celebration.",
+              "answer": "they had in mind",
+              "acceptedAnswers": ["they had got in mind"]
+            },
+            {
+              "id": "ue4_27",
+              "number": 27,
+              "sentence1": "Dr. Ramesh's colleagues regarded him so highly that they forgave his inability to remember people's names.",
+              "keyword": "HELD",
+              "sentence2": "Dr. Ramesh ___ by his colleagues that they forgave his inability to remember people's names.",
+              "answer": "was held in such high regard",
+              "acceptedAnswers": ["was held in such high esteem"]
+            },
+            {
+              "id": "ue4_28",
+              "number": 28,
+              "sentence1": "As learning new languages had never been a problem for her, Katy didn't expect to have any difficulties when she went to live abroad.",
+              "keyword": "COME",
+              "sentence2": "Learning new languages had ___ her so Katy didn't expect to have any difficulties when she went to live abroad.",
+              "answer": "always come easily to",
+              "acceptedAnswers": ["always come naturally to"]
+            },
+            {
+              "id": "ue4_29",
+              "number": 29,
+              "sentence1": "I think we owe this passenger an apology, as she was apparently given incorrect train times by our call centre staff.",
+              "keyword": "MISINFORMED",
+              "sentence2": "I think we owe this passenger an apology, as she seems ___ train times by our call centre staff.",
+              "answer": "to have been misinformed about",
+              "acceptedAnswers": ["to have been misinformed over", "to have been misinformed regarding", "to have been misinformed concerning", "to have been misinformed on"]
+            },
+            {
+              "id": "ue4_30",
+              "number": 30,
+              "sentence1": "If her party wins the election, which is unlikely, she'll become President.",
+              "keyword": "EVENT",
+              "sentence2": "In the ___ the election, she'll become President.",
+              "answer": "unlikely event of her party winning",
+              "acceptedAnswers": ["unlikely event that her party wins"]
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "title": "Reading",
+      "parts": [
+        {
+          "partNumber": 5,
+          "type": "multiple-choice",
+          "instructions": "You are going to read an extract from a novel. For questions 31-36, choose the answer (A, B, C or D) which you think fits best according to the text.",
+          "text": "Howard's Career as a Palaeontologist\n\nHoward became a palaeontologist because of a rise in interest rates when he was six years old. His father, a cautious man with a large mortgage and thoughts focussed merely on how the economic situation would affect him, announced that the projected holiday to Spain was no longer feasible. A chalet was rented on the English coast instead and thus, on a dank August afternoon, Howard picked up a coiled fossil shell, called an ammonite, on the beach.\n\nHe knew for a long time that he wanted to become a palaeontologist, and towards the end of his time at university he became clear as to what sort of palaeontologist he wanted to be. He found the focus of his interest reaching further and further back in time. The more spectacular areas were not for him, he realised, turning his back on the Jurassic, on dinosaurs. He was drawn particularly to the beginnings, to that ultimate antiquity where everything is decided, from which, against all odds, we derive. So he studied delicate creatures revealed on the surface of grey rocks.\n\nWork on his doctoral thesis came to an end, and, he knew, possibly a bitter one. Would he get a job? Would he get a job in the sort of institution he sought? He was far from being without self-esteem and knew that his potential was good. But he knew that those who deserve do not always get, and that while the objectives of science may be pure and uncompromising, the process of appointment to an academic position is not. When the Assistant Lectureship at Tavistock College in London came up, he applied at once, though without high hopes.\n\nOn the morning of Howard's interview, the professor who would chair the panel had a row with his wife. As a consequence he left home in a state of irritation and inattention, drove his car violently into a gatepost and ended up in the Casualty Department of the local hospital. The interview took place without him and without the support he had intended to give to a candidate who had been a student of his.\n\nThe professor who replaced him on the panel was a hated colleague, whose main concern was to oppose the appointment of his enemy's protégé; he was able to engineer without much difficulty that Howard got the job. Howard, surprised at the evident favouritism from a man he did not know, was fervently grateful until, months later, a colleague kindly enlightened him as to the correct interpretation of events. Howard was only slightly chagrined. It would have been nice to think that he was the obvious candidate, or that he had captivated those present with his ability and personality. But by then the only thing that really mattered was that he had the job and that he could support himself by doing the sort of work he wanted to do.\n\nHe often found himself contrasting the orderly nature of his professional life – where the pursuit of scientific truth was concerned, it was possible to plan a course of action and carry it out – with the anarchy of private concerns. The world teems with people who can determine the quality of your existence, and on occasion some total stranger can reach in and manipulate the entire narrative, as Howard was to find when his briefcase, containing the notes for a lecture he was about to give, was stolen at an Underground station.\n\nFuming, Howard returned to the college. He made an explanatory phone call and postponed the lecture. He reported the theft to the appropriate authorities and then went for a restorative coffee. He joined a colleague who was entertaining a visiting curator from the Natural History Museum in Nairobi. And thus it was that Howard learnt of the recently acquired collection of fossils, as yet uncatalogued and unidentified, the study of which would provide him with his greatest challenge and ensure his professional future. But for the theft, but for that now benevolent stranger ... Within half an hour he had dismantled and reassembled his plans. He would not go to a conference in Stockholm. He would not spend a fortnight taking students on a field trip to Scotland. He would pull out every stop and somehow scramble together the funds for a visit to the museum in Nairobi.",
+          "questions": [
+            {
+              "id": "r5_31",
+              "number": 31,
+              "prompt": "What is suggested about Howard's father in the first paragraph?",
+              "options": [
+                { "label": "A", "text": "He'd foreseen a change in the economic climate." },
+                { "label": "B", "text": "He acted in character when cancelling the holiday." },
+                { "label": "C", "text": "He'd never been in favour of holidays abroad." },
+                { "label": "D", "text": "He tended to make decisions spontaneously." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_32",
+              "number": 32,
+              "prompt": "What area of palaeontology did Howard develop a special interest in at university?",
+              "options": [
+                { "label": "A", "text": "the earliest life forms" },
+                { "label": "B", "text": "the dating of pieces of evidence" },
+                { "label": "C", "text": "the scale of pre-historic creatures" },
+                { "label": "D", "text": "the fragile beauty of many fossils" }
+              ],
+              "answer": "A"
+            },
+            {
+              "id": "r5_33",
+              "number": 33,
+              "prompt": "What concerned Howard about the chances of getting a job?",
+              "options": [
+                { "label": "A", "text": "his lack of work experience" },
+                { "label": "B", "text": "his uncertainty of his own worth" },
+                { "label": "C", "text": "that jobs were not always awarded on merit" },
+                { "label": "D", "text": "that jobs in his field were always in short supply" }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "r5_34",
+              "number": 34,
+              "prompt": "The result of Howard's job interview depended on",
+              "options": [
+                { "label": "A", "text": "a change of heart by a member of the panel." },
+                { "label": "B", "text": "the relative strengths of the candidates." },
+                { "label": "C", "text": "the performance of a favoured candidate." },
+                { "label": "D", "text": "the conflict between two members of staff." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "r5_35",
+              "number": 35,
+              "prompt": "How did Howard feel when he learnt the truth about his appointment?",
+              "options": [
+                { "label": "A", "text": "pleased he would be so well paid" },
+                { "label": "B", "text": "unconcerned about why he got the job" },
+                { "label": "C", "text": "dismayed at not being the best candidate" },
+                { "label": "D", "text": "gratified to think he'd made a good impression" }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "r5_36",
+              "number": 36,
+              "prompt": "Over the text as a whole, the writer suggests that the course of Howard's career was determined to a large extent by",
+              "options": [
+                { "label": "A", "text": "a series of random coincidences." },
+                { "label": "B", "text": "an interest developed in childhood." },
+                { "label": "C", "text": "a belief in scientific certainties." },
+                { "label": "D", "text": "a mix of hard work and academic success." }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 6,
+          "type": "cross-text-multiple-matching",
+          "instructions": "You are going to read four extracts from online articles about sports psychology. For questions 37-40, choose from the extracts A-D. The extracts may be chosen more than once.",
+          "text": "Sports psychology: a valid discipline?\n\nA Dorothy Common\nIs the ever growing discipline of sports psychology contributing effectively to sporting performance or is it, as many people think, simply the art of 'stating the blindingly obvious'? I have certainly seen evidence that those in journalistic circles are yet to be fully convinced. And it is certainly true that sport psychologists should strive to increase the sophistication of their approaches to research, making use of more reliable scientific methods. Yet it's a shame that people should be so sceptical. Essentially, sports psychology asks this simple question: considering the undeniable role mental life plays in deciding the outcomes of our sporting efforts, why is mental training not incorporated to the equivalent degree into the athlete's typical training? If, say, a track sprinter is susceptible to letting their head get the better of them (temper issues, nerves, anxiety), then why should they spend their training just working on their strengths (the physical side)?\n\nB Jahangir Khan\nThere is a popular view, largely based on a well-known case with a prominent runner, that sports psychology is something for treating athletes with mental disorders. This has no basis in fact and stems from making assumptions based on a limited understanding of psychology and how it is used in applied settings. In my area of particular expertise, football, rugby and hockey, there exists a culture of what one psychologist calls 'folk psychology'. That is, there are usually individuals (typically an older dominant coach) who communicate non-scientific words of wisdom which, consciously or unconsciously, affect everyone, usually to detrimental effect in the long run. Think of a young player who is told to 'dig deep' and give it '110%' consistently. This gives a mental aspect to training that is non-scientific and misguided. But this is in stark contrast to the reality of modern day psychology research, which is based upon rigorous scientific methodologies.\n\nC Brian D. Rossweller\nResearch into sports psychology is increasingly evidence-based, using the gold standard methodology of 'randomized control group designs'. Nevertheless, using the term 'psychology' in relation to psychological efforts with athletes, especially those involved in team sports, can be both an asset and a hindrance to understanding the field. Psychology as a field has become much more acceptable in social life. It seems that every time a person flicks through the television channels they are likely to see a psychologist talking about something or other. Thus people tend to view psychologists, including those seen on sports programmes, as knowledgeable and as providing information useful to everyday life. However, the flip side is that most people know someone who sees a clinical psychologist or therapist for a mind-related problem. In our society there has been a stigma attached to such problems and so many people have attached negative connotations to seeing a psychologist and may misunderstand the nature of seeing a sports psychologist.\n\nD Xiu Li\nThere is still some distance between research and coaching practice. Sports psychology has been able to develop a relatively significant research base in the last fifteen years; aided by general experimental researchers often using athletes as an easily identifiable and obtainable population. Yet, as a practising sports psychologist I recently observed an athletics coach, whose reaction to a promising middle-distance runner losing a winning position on the last lap was to prioritise developing a sprint finish. What he didn't address was the fact that the runner failed to focus whenever he got overtaken. Then again, I also witnessed some baseball coaches doing some work - which I would have been proud of in my professional capacity - on assessing and profiling strengths and weaknesses, and also on performance anxiety. So things vary, and some trainers are clearly more knowledgeable than others. But it is not surprising that, as a result, public conceptions are confused on the issue.",
+          "questions": [
+            { "id": "r6_37", "number": 37, "prompt": "shares Khan's opinion on why public misconceptions about sports psychology have occurred?", "answer": "C" },
+            { "id": "r6_38", "number": 38, "prompt": "has a different view from Khan on whether some psychological training used in team sports is helpful to the players?", "answer": "D" },
+            { "id": "r6_39", "number": 39, "prompt": "has a different view from Rossweller on how the media regard sports psychologists?", "answer": "A" },
+            { "id": "r6_40", "number": 40, "prompt": "has a different opinion from the other three experts on the current state of research in sports psychology?", "answer": "A" }
+          ]
+        },
+        {
+          "partNumber": 7,
+          "type": "gapped-text",
+          "instructions": "You are going to read a newspaper article about a new trend in the travel and tourism industry. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.",
+          "text": "Stargazing in East Africa\n\nJonathan Ford went to Tanzania on an 'astro-safari', which combines animal-watching with looking at the stars.\n\nWe are gathered about a campfire on the dusty edge of the Serengeti National Park. After a long day scanning the savannah for creatures with jaws, claws, tusks, the flames are comforting. Normally on one of these trips, this is the moment at which the day starts to wind down; when tourists compare the animals they've had the chance of seeing and capturing on film.\n\n[41]\n\nAmateur astronomy is enjoying a surge of popularity and remote hotels around the world are installing telescopes and hiring expert star guides. Nevertheless, when I first heard about the idea of an 'astro-safari', I was sceptical. Wasn't the whole point of going to Africa to look around at hyenas and gazelles, say; rather than up at constellations that have scarcely changed since our ancestors first struggled to stand upright?\n\n[42]\n\nSo it was with certain qualms that I found myself in Tanzania, on one of the first such safaris in Africa. The plan was simple. We would spend four days travelling through the spectacular Ngorongoro crater and the highlands, before dropping down on to the plain, animal watching by day and stargazing by night. We would hit the Serengeti plains just as 1.5 million wildebeest were making their way across, accompanied by zebras and gazelles, one of east Africa's most thrilling sights.\n\n[43]\n\nWe were in luck: Nick Howes, a science writer for the European Space Agency learnt to love astronomy at an early age. A natural communicator, Howes promptly reassured us that degrees in astrophysics are all very well, but cutting-edge astronomy relies on the work of thousands of amateurs. They are just like us, but with better lenses and more patience.\n\n[44]\n\nThe vocabulary, however, was alluringly alien: not just nebulae and supernovae, but globular clusters and Magellanic Clouds. Howes continued the astral tour even in daylight hours. To do so, he had brought with him a solar scope that you screw into a telescope. This allows you to look directly into the sun, and, if you are lucky, see the huge 'coronal mass injections' that spurt from the surface of our very own star.\n\n[45]\n\nIn fact, 'seeing' here in the Serengeti – astronomer-speak for clarity – is among the best in the world. But it was the unexpected spectacles that caused the greatest delight: one evening, a great fireball streaked across the sky, seeming to plunge to earth some way to the south.\n\n[46]\n\nAppropriate perhaps, considering that this is the part of the world where mankind first lived and looked at the night sky. Within 24 hours of arriving, the raw tourist finds himself asking all the big questions – the origins of the universe, why life started here of all places ... and the relative scariness of hyenas and asteroids. It was completely different to sitting in front of a TV screen where everything seemed more certain.",
+          "paragraphOptions": [
+            { "label": "A", "text": "Stars, unlike elephants and giraffes, can surely be seen any winter evening from anyone's back garden. And it was doubtful that anything could be learnt from peering through a telescope that some professor couldn't get across on a TV programme." },
+            { "label": "B", "text": "We mobbed our guide with fretful questions. He shrugged and laughed. It could be a meteor. 'You have to get used to not knowing. That's the hardest part of the job,' he said. It was then I became aware of the point of being here." },
+            { "label": "C", "text": "What was less clear was how our night-time viewing would go. Our group featured no one who could confidently say what they were looking at in the sky, so much depended on the astronomer accompanying us." },
+            { "label": "D", "text": "Indeed, we learnt that Nik Szymanek, one of the world's finest astro-photographers, is a London Tube driver by day. Tom Boles, who has discovered more supernovas than anyone living, turns out to be a retired telecoms engineer." },
+            { "label": "E", "text": "But here the banter is not of giraffe and rhino but of astronomical terms like quarks and parsecs. A particular constellation of stars known as Leo will be turning up, cloud permitting, later that night. Who will be awake? 'We won't be able to see it till about 3.30 in the morning,' says our guide, cheerily unfazed by the idea of staying up till dawn." },
+            { "label": "F", "text": "My nonchalance didn't stand a chance against this passion and knowledge. I soon realised that the sky over my London home is a moth-eaten faded curtain compared with the lavishly studded dome that dominates the wilds of Africa. This is due, of course, to the total absence of light pollution." },
+            { "label": "G", "text": "I wasn't sure whether it had been the right decision, even though seeing the animals at close range was thrilling. But then I saw the Carina Nebula, nothing but the faintest of glows to the naked eye but a furnace of throbbing scientific possibility when seen through the telescope." }
+          ],
+          "questions": [
+            { "id": "r7_41", "number": 41, "answer": "E" },
+            { "id": "r7_42", "number": 42, "answer": "A" },
+            { "id": "r7_43", "number": 43, "answer": "C" },
+            { "id": "r7_44", "number": 44, "answer": "D" },
+            { "id": "r7_45", "number": 45, "answer": "F" },
+            { "id": "r7_46", "number": 46, "answer": "B" }
+          ]
+        },
+        {
+          "partNumber": 8,
+          "type": "multiple-matching",
+          "instructions": "You are going to read an article about scientific interpretations of modern art. For questions 47-56, choose from the sections (A-D). The sections may be chosen more than once.",
+          "text": "A scientific view of modern art\n\nKat Austen investigates scientific research on modern art and why we appreciate it\n\nA Standing in front of Jackson Pollock's Summertime: Number 9A one day I was struck by a strange feeling. What I once considered an ugly collection of random paint splatters now spoke to me as a joyous celebration of movement and energy. It was the first time a piece of abstract art had stirred my emotions. Like many, I used to dismiss these works as a waste of time and energy. How could anyone find meaning in what looked like a collection of colourful splodges thrown haphazardly at a canvas? Yet here I was, in London's Tate Modern gallery, moved by Pollock's work. So, why are we attracted to paintings and sculptures that seem to bear no relation to the physical world? Little did I know that researchers have already started to investigate this question. By studying the brain's responses to different paintings, they have been examining the way the mind perceives art, and how masterpieces hijack the brain's visual system.\n\nB Studies in the emerging field of neuroaesthetics have already offered insights into many masterpieces. The blurred imagery of paintings of the Impressionist era towards the end of the 19th century seems to stimulate a part of the brain which is geared towards detecting threats in our rather blurry peripheral vision. The same part of the brain also plays a crucial role in our feelings and emotions, which might explain why many people find these pieces so moving. Could the same approach tell us anything about modern art, the defining characteristic of which has been to remove almost everything that could be literally interpreted? Although such works often sell for vast sums of money, they have attracted many sceptics, who claim that modern artists lack the skills or competence of the masters before them. Instead they believe that many people claim to like these works simply because they are in fashion.\n\nC In an attempt to make sense of how we perceive art, scientists have designed experiments that play with volunteers' expectations of the pieces they are viewing. The volunteers viewed pairs of paintings – either creations by famous abstract artists or the doodles of infants, chimps and elephants. Then they had to judge which they liked best. A third of the paintings were given no captions, while the rest were labelled. The twist was that sometimes the labels were mixed up so that the volunteers might think they were viewing a chimp's messy brushstrokes, while they were actually seeing an abstract piece by a famous artist. Some sceptics might argue that it is impossible to tell the difference, but in each set of trials, the volunteers generally went for the work of the well-accepted human artists. Somehow it seems that the viewer can sense the artist's vision in these paintings, even if they can't explain why. Yet, the experiment did not explain how we detect the hand of the human artist, nor the reason why the paintings appeal to us. But how does the artist hold our attention with an image that bears no likeness to anything in the real world? Of course, each artist's unique style will speak to us in a different way, so there can be no single answer.\n\nD A few studies have tackled the issue of how people process images, a case in point being Robert Pepperell's attempt to understand the way we deal with works which do not offer even the merest glimpse of a recognisable object for the brain to latch on to. But they may instead catch our attention through particularly well-proportioned compositions that appeal to the brain's visual system. We may also be drawn in by pieces that hit a specific point in the brain's ability to process complex scenes, which, in turn, may be why certain artists use a particular level of detail to please the brain. According to one psychologist, if there is too little detail we find the work boring, but too much complexity results in a kind of perceptual overload.",
+          "questions": [
+            { "id": "r8_47", "number": 47, "prompt": "mention certain viewers being able to relate to what artists had in mind?", "answer": "C" },
+            { "id": "r8_48", "number": 48, "prompt": "refer to a doubt about the merit of a piece of artwork?", "answer": "A" },
+            { "id": "r8_49", "number": 49, "prompt": "highlight a need for artists to strike the right balance?", "answer": "D" },
+            { "id": "r8_50", "number": 50, "prompt": "indicate a possible reason for difficulty in reaching a consensus?", "answer": "C" },
+            { "id": "r8_51", "number": 51, "prompt": "state that people may have a shallow reason for liking a piece of art?", "answer": "B" },
+            { "id": "r8_52", "number": 52, "prompt": "suggest that some artists are aware of how they can satisfy the brain?", "answer": "D" },
+            { "id": "r8_53", "number": 53, "prompt": "refer to a shift in her own perception?", "answer": "A" },
+            { "id": "r8_54", "number": 54, "prompt": "point out shortcomings in a specific piece of research?", "answer": "C" },
+            { "id": "r8_55", "number": 55, "prompt": "mention the possibility of extending the scope of an existing research area?", "answer": "B" },
+            { "id": "r8_56", "number": 56, "prompt": "describe a procedure employed in the gathering of some scientific data?", "answer": "C" }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Listening",
+      "note": "Reproduce el audio correspondiente desde tu móvil. Aquí solo se muestran las preguntas y opciones.",
+      "parts": [
+        {
+          "partNumber": 1,
+          "type": "multiple-choice",
+          "instructions": "You will hear three different extracts. For questions 1-6, choose the answer (A, B or C) which fits best according to what you hear. There are two questions for each extract.",
+          "questions": [
+            {
+              "id": "l1_1",
+              "number": 1,
+              "prompt": "Extract One - You hear a man telling a friend about his holiday. The man thinks the essential component of a holiday is",
+              "options": [
+                { "label": "A", "text": "physical activity." },
+                { "label": "B", "text": "the opportunity to travel." },
+                { "label": "C", "text": "mental stimulation." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_2",
+              "number": 2,
+              "prompt": "Extract One - He feels that one benefit of doing archaeology on holiday is that it",
+              "options": [
+                { "label": "A", "text": "provides him with the excitement of discovery." },
+                { "label": "B", "text": "adds to the sum of his knowledge." },
+                { "label": "C", "text": "helps him to be more tolerant." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_3",
+              "number": 3,
+              "prompt": "Extract Two - You hear two colleagues talking about time management. They agree that being late",
+              "options": [
+                { "label": "A", "text": "is a growing trend." },
+                { "label": "B", "text": "is a difficult habit to break." },
+                { "label": "C", "text": "can be amusing when it affects others." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l1_4",
+              "number": 4,
+              "prompt": "Extract Two - In the woman's opinion, people who fail to arrive on time",
+              "options": [
+                { "label": "A", "text": "are often completely unaware of the problems they cause." },
+                { "label": "B", "text": "generally have a relaxed attitude to life." },
+                { "label": "C", "text": "are putting their career prospects at risk." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_5",
+              "number": 5,
+              "prompt": "Extract Three - You hear two friends talking about a historical novel they have read. The woman thinks the novelist manages to",
+              "options": [
+                { "label": "A", "text": "create a credible background." },
+                { "label": "B", "text": "exploit a strong story line." },
+                { "label": "C", "text": "depict well-drawn characters." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l1_6",
+              "number": 6,
+              "prompt": "Extract Three - The friends agree that this historical novel",
+              "options": [
+                { "label": "A", "text": "gives a successful insight into the past." },
+                { "label": "B", "text": "provides an escape from the present." },
+                { "label": "C", "text": "presents a highly subjective view of events." }
+              ],
+              "answer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "type": "sentence-completion",
+          "instructions": "You will hear a photographer and TV cameraman called Mike Darby talking about his life and work. For questions 7-14, complete the sentences with a word or short phrase.",
+          "questions": [
+            { "id": "l2_7", "number": 7, "prompt": "Mike says that among his older colleagues, ___ rather than photography, was a common degree subject.", "answer": "media studies" },
+            { "id": "l2_8", "number": 8, "prompt": "While working as a diver at a ___ in the Antarctic, Mike decided to become a photographer.", "answer": "research station" },
+            { "id": "l2_9", "number": 9, "prompt": "Mike feels that an aptitude for ___ is the key business skill in his work.", "answer": "marketing" },
+            { "id": "l2_10", "number": 10, "prompt": "Mike's most recent shoot involved taking pictures for a ___ .", "answer": "travel company" },
+            { "id": "l2_11", "number": 11, "prompt": "Mike is proudest of the book called ___ .", "answer": "Awesome Animals" },
+            { "id": "l2_12", "number": 12, "prompt": "In his most recent TV work as a wildlife cameraman Mike filmed different types of ___ in various locations.", "answer": "sharks", "acceptedAnswers": ["shark"] },
+            { "id": "l2_13", "number": 13, "prompt": "Mike uses the word ___ to emphasise how his work as a cameraman differs from his book projects.", "answer": "backstage", "acceptedAnswers": ["back-stage", "back stage"] },
+            { "id": "l2_14", "number": 14, "prompt": "Mike advises young photographers to invent ___ to go with their pictures when they try to sell them.", "answer": "slogans", "acceptedAnswers": ["a slogan"] }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "type": "multiple-choice",
+          "instructions": "You will hear part of an interview in which two experts called Kirsten Neet and Anton Best are discussing the idea of what's called 'information overload'. For questions 15-20, choose the answer (A, B, C or D) which fits best according to what you hear.",
+          "questions": [
+            {
+              "id": "l3_15",
+              "number": 15,
+              "prompt": "What aspect of modern life does Anton think Seneca anticipated?",
+              "options": [
+                { "label": "A", "text": "The fact that intellectuals sometimes reject new ideas." },
+                { "label": "B", "text": "The fact that an interest in owning books has decreased." },
+                { "label": "C", "text": "The way that people get distracted by passing trends." },
+                { "label": "D", "text": "The way that people have become obsessed with the notion of quality." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_16",
+              "number": 16,
+              "prompt": "In Kirsten's view, the volume of material available today",
+              "options": [
+                { "label": "A", "text": "makes us too reliant on technology." },
+                { "label": "B", "text": "is far less useful than we think it might be." },
+                { "label": "C", "text": "is not significantly greater than in the past." },
+                { "label": "D", "text": "presents a problem which has always existed." }
+              ],
+              "answer": "D"
+            },
+            {
+              "id": "l3_17",
+              "number": 17,
+              "prompt": "How does Anton respond to the suggestion of doing without much of today's information?",
+              "options": [
+                { "label": "A", "text": "He feels it might actually lead to meaningful progress." },
+                { "label": "B", "text": "He says it would be betraying the past." },
+                { "label": "C", "text": "He thinks the solution lies in technological systems." },
+                { "label": "D", "text": "He would prefer to see a reduction in the quantity produced." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_18",
+              "number": 18,
+              "prompt": "In discussing the problem of dealing with information overload today, the two experts agree that",
+              "options": [
+                { "label": "A", "text": "it is reaching a critical point." },
+                { "label": "B", "text": "the methods used are ineffective." },
+                { "label": "C", "text": "it makes people communicate less." },
+                { "label": "D", "text": "the concept of convenience has been lost." }
+              ],
+              "answer": "B"
+            },
+            {
+              "id": "l3_19",
+              "number": 19,
+              "prompt": "Kirsten sees the biggest work-related benefit arising from greater available information as",
+              "options": [
+                { "label": "A", "text": "the rapid advances in direct feedback." },
+                { "label": "B", "text": "the spread of personalised advertising." },
+                { "label": "C", "text": "more worker participation in product development." },
+                { "label": "D", "text": "a marked increase in customer satisfaction." }
+              ],
+              "answer": "C"
+            },
+            {
+              "id": "l3_20",
+              "number": 20,
+              "prompt": "What does Kirsten say dieting made her realise about information?",
+              "options": [
+                { "label": "A", "text": "restrict your own access to it" },
+                { "label": "B", "text": "only a small part of it is ever accurate" },
+                { "label": "C", "text": "only bother with it when you really have to" },
+                { "label": "D", "text": "be highly selective when faced with a lot of it" }
+              ],
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "type": "multiple-matching",
+          "instructions": "You will hear five short extracts in which people are talking about a course they did in business administration.\n\nTASK ONE: For questions 21-25, choose from the list (A-H) each speaker's main reason for doing the course.\n\nA to improve promotion prospects\nB to explore a new subject\nC to keep up with developments in a field\nD to enhance existing abilities\nE to impress a current employer\nF to find effective ways to support others\nG to discover how to succeed independently\nH to increase the possibilities of employment",
+          "questions": [
+            { "id": "l4_21", "number": 21, "prompt": "Speaker 1", "answer": "D" },
+            { "id": "l4_22", "number": 22, "prompt": "Speaker 2", "answer": "A" },
+            { "id": "l4_23", "number": 23, "prompt": "Speaker 3", "answer": "G" },
+            { "id": "l4_24", "number": 24, "prompt": "Speaker 4", "answer": "F" },
+            { "id": "l4_25", "number": 25, "prompt": "Speaker 5", "answer": "H" }
+          ]
+        },
+        {
+          "partNumber": 5,
+          "type": "multiple-matching",
+          "instructions": "TASK TWO: For questions 26-30, choose from the list (A-H) what each speaker gained as a result of doing the course.\n\nA the fulfilment of a long-term ambition\nB a high-powered job in another country\nC significant financial rewards\nD a prestigious managerial appointment\nE the chance to gain a foothold in business\nF the creation of a new company\nG a period of re-adjustment\nH the development of a specific product",
+          "questions": [
+            { "id": "l4_26", "number": 26, "prompt": "Speaker 1", "answer": "F" },
+            { "id": "l4_27", "number": 27, "prompt": "Speaker 2", "answer": "C" },
+            { "id": "l4_28", "number": 28, "prompt": "Speaker 3", "answer": "H" },
+            { "id": "l4_29", "number": 29, "prompt": "Speaker 4", "answer": "A" },
+            { "id": "l4_30", "number": 30, "prompt": "Speaker 5", "answer": "E" }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "text": "The company decided to invest in new technology. ___ proved to be a very wise decision.",
+    "options": ["This", "That", "These", "Those"],
+    "correctAnswer": "This",
+    "type": "Reference",
+    "explanation": "'This' refers back to the entire previous sentence (the decision to invest), bringing the idea into the present discussion."
+  },
+  {
+    "id": 2,
+    "text": "I really enjoyed the books you lent me, especially the ___ about ancient history.",
+    "options": ["one", "ones", "some", "those"],
+    "correctAnswer": "ones",
+    "type": "Substitution",
+    "explanation": "'ones' substitutes for the plural countable noun 'books'."
+  },
+  {
+    "id": 3,
+    "text": "Mary didn't finish the assignment on time, but I ___.",
+    "options": ["did so", "did", "was", "have"],
+    "correctAnswer": "did",
+    "type": "Substitution",
+    "explanation": "We use the auxiliary 'did' to avoid repeating the main verb 'finish'."
+  },
+  {
+    "id": 4,
+    "text": "He asked me if the train was delayed, and I told him I hoped ___.",
+    "options": ["not", "so", "it", "that"],
+    "correctAnswer": "not",
+    "type": "Substitution",
+    "explanation": "After 'hope', we use 'not' to substitute a negative clause (I hoped it was not delayed)."
+  },
+  {
+    "id": 5,
+    "text": "I would love to travel to Japan next year. I really hope ___.",
+    "options": ["it", "that", "so", "to"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "'so' substitutes the affirmative clause after 'hope'."
+  },
+  {
+    "id": 6,
+    "text": "Are you going to the concert tonight? If ___, we could share a taxi.",
+    "options": ["yes", "it", "so", "that"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "'If so' replaces the entire conditional clause 'If you are going to the concert tonight'."
+  },
+  {
+    "id": 7,
+    "text": "I have never been scuba diving before, but my brother ___.",
+    "options": ["has", "did", "does", "was"],
+    "correctAnswer": "has",
+    "type": "Ellipsis",
+    "explanation": "The auxiliary 'has' is used to avoid repeating 'been scuba diving'."
+  },
+  {
+    "id": 8,
+    "text": "She promised to help me with the project, but she didn't want ___.",
+    "options": ["to", "so", "it", "that"],
+    "correctAnswer": "to",
+    "type": "Ellipsis",
+    "explanation": "The infinitive 'to' is left alone, omitting the rest of the clause (to help me)."
+  },
+  {
+    "id": 9,
+    "text": "The manager resigned suddenly, and nobody understands ___.",
+    "options": ["that", "it", "why", "so"],
+    "correctAnswer": "why",
+    "type": "Ellipsis",
+    "explanation": "The wh-word 'why' is left alone to omit 'why he resigned'."
+  },
+  {
+    "id": 10,
+    "text": "Some people believe that the economy will recover soon. ___ experts, however, disagree.",
+    "options": ["Those", "These", "This", "That"],
+    "correctAnswer": "These",
+    "type": "Reference",
+    "explanation": "'These' refers to the experts related to the current topic of discussion."
+  },
+  {
+    "id": 11,
+    "text": "I ordered a coffee and ___ sat down at the table.",
+    "options": ["I", "he", "-", "it"],
+    "correctAnswer": "-",
+    "type": "Ellipsis",
+    "explanation": "We can omit the subject after 'and' if it is the same as the first clause."
+  },
+  {
+    "id": 12,
+    "text": "He refused to apologize, and ___ made the situation even worse.",
+    "options": ["this", "that", "it", "which"],
+    "correctAnswer": "that",
+    "type": "Reference",
+    "explanation": "'That' refers back to the entire previous action (refusing to apologize) as a completed past event."
+  },
+  {
+    "id": 13,
+    "text": "I don't think we should buy a new car. Neither ___ my wife.",
+    "options": ["do", "does", "think", "is"],
+    "correctAnswer": "does",
+    "type": "Substitution",
+    "explanation": "'Neither + aux + subject' is used to agree with a negative statement."
+  },
+  {
+    "id": 14,
+    "text": "We need to submit the report by Friday. If ___, we will lose the contract.",
+    "options": ["not", "so", "we don't", "no"],
+    "correctAnswer": "not",
+    "type": "Substitution",
+    "explanation": "'If not' replaces the negative conditional clause 'If we do not submit the report by Friday'."
+  },
+  {
+    "id": 15,
+    "text": "The students who passed the exam were the ___ who studied regularly.",
+    "options": ["ones", "one", "students", "those"],
+    "correctAnswer": "ones",
+    "type": "Substitution",
+    "explanation": "'ones' replaces the plural noun 'students'."
+  },
+  {
+    "id": 16,
+    "text": "I thought the meeting was going to be cancelled, but it ___.",
+    "options": ["wasn't", "didn't", "was", "not"],
+    "correctAnswer": "wasn't",
+    "type": "Ellipsis",
+    "explanation": "The auxiliary 'wasn't' avoids repeating 'cancelled'."
+  },
+  {
+    "id": 17,
+    "text": "Would you like to come to the cinema with us? I'd love ___.",
+    "options": ["it", "so", "to", "that"],
+    "correctAnswer": "to",
+    "type": "Ellipsis",
+    "explanation": "The infinitive particle 'to' is left alone, omitting 'come to the cinema'."
+  },
+  {
+    "id": 18,
+    "text": "I'm not sure if the store is open on Sundays, but I suppose ___.",
+    "options": ["it", "that", "so", "yes"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "After 'suppose', we use 'so' to substitute the affirmative clause."
+  },
+  {
+    "id": 19,
+    "text": "They promised to clean the house, and they ___.",
+    "options": ["did", "did so", "have", "were"],
+    "correctAnswer": "did so",
+    "type": "Substitution",
+    "explanation": "'did so' replaces the verb + object 'cleaned the house'."
+  },
+  {
+    "id": 20,
+    "text": "I used to play tennis a lot, but I haven't ___ for years.",
+    "options": ["done so", "done", "played", "did"],
+    "correctAnswer": "done so",
+    "type": "Substitution",
+    "explanation": "'done so' substitutes the verb and its object 'played tennis'."
+  },
+  {
+    "id": 21,
+    "text": "She was wearing a beautiful dress, the ___ I bought for her birthday.",
+    "options": ["one", "ones", "that", "which"],
+    "correctAnswer": "one",
+    "type": "Substitution",
+    "explanation": "'one' substitutes the singular countable noun 'dress'."
+  },
+  {
+    "id": 22,
+    "text": "Will the new policy affect our department? I expect ___.",
+    "options": ["so", "not", "it", "that"],
+    "correctAnswer": "not",
+    "type": "Substitution",
+    "explanation": "'not' is used after 'expect' to replace a negative clause."
+  },
+  {
+    "id": 23,
+    "text": "He bought a new laptop and ___ a printer.",
+    "options": ["bought", "-", "he", "also"],
+    "correctAnswer": "-",
+    "type": "Ellipsis",
+    "explanation": "We can omit the verb 'bought' because it is understood from the first clause."
+  },
+  {
+    "id": 24,
+    "text": "She has been working here for ten years. ___ is why she knows everything.",
+    "options": ["This", "That", "It", "Which"],
+    "correctAnswer": "That",
+    "type": "Reference",
+    "explanation": "'That' refers back to the fact mentioned in the previous sentence."
+  },
+  {
+    "id": 25,
+    "text": "I really enjoy reading science fiction novels. So ___ my best friend.",
+    "options": ["does", "do", "is", "has"],
+    "correctAnswer": "does",
+    "type": "Substitution",
+    "explanation": "'So + auxiliary + subject' for agreement. The auxiliary 'does' matches the present simple tense of 'enjoy'."
+  },
+  {
+    "id": 26,
+    "text": "The cake ___ I baked yesterday was delicious.",
+    "options": ["-", "what", "who", "whom"],
+    "correctAnswer": "-",
+    "type": "Ellipsis",
+    "explanation": "We can omit the relative pronoun 'that/which' when it acts as the object of the relative clause."
+  },
+  {
+    "id": 27,
+    "text": "I told him to finish the report, but he didn't want ___.",
+    "options": ["to", "so", "it", "that"],
+    "correctAnswer": "to",
+    "type": "Ellipsis",
+    "explanation": "We leave the 'to' to omit the rest of the infinitive clause."
+  },
+  {
+    "id": 28,
+    "text": "Someone left the door open, but I don't know ___.",
+    "options": ["who", "whom", "why", "when"],
+    "correctAnswer": "who",
+    "type": "Ellipsis",
+    "explanation": "The wh-word 'who' stands alone, omitting 'left the door open'."
+  },
+  {
+    "id": 29,
+    "text": "We need more volunteers for the event. Are you available? If ___, please sign up here.",
+    "options": ["so", "not", "yes", "you are"],
+    "correctAnswer": "so",
+    "type": "Substitution",
+    "explanation": "'If so' replaces 'If you are available'."
+  },
+  {
+    "id": 30,
+    "text": "My old phone was broken, so I had to buy a new ___.",
+    "options": ["one", "ones", "phone", "it"],
+    "correctAnswer": "one",
+    "type": "Substitution",
+    "explanation": "'one' substitutes the singular noun 'phone'."
+  }
+]
