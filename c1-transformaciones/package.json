@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Aplicación web para practicar transformaciones de oraciones del examen C1",
   "scripts": {
-    "dev": "http-server -p 8080 -o",
+    "dev": "http-server -p 8080 -o /transformaciones.html",
     "start": "http-server -p 8080"
   },
   "dependencies": {
