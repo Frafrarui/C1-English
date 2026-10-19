@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 Advanced - Unit 1: Like vs As, Preference & Past Tenses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 1</span></h1>
+            <p class="text-gray-500 mt-1">Like vs As · Showing Preference · Past Tenses</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory
+                </button>
+                <button onclick="switchTab('like_as')" id="tab-like_as" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Like vs As
+                </button>
+                <button onclick="switchTab('preference')" id="tab-preference" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Showing Preference
+                </button>
+                <button onclick="switchTab('past')" id="tab-past" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Past Tenses
+                </button>
+                <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Like vs As · Showing Preference · Past Tenses</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tabs (rendered by app.js) -->
+        <section id="content-like_as" class="tab-content hidden"></section>
+        <section id="content-preference" class="tab-content hidden"></section>
+        <section id="content-past" class="tab-content hidden"></section>
+        <section id="content-transformations" class="tab-content hidden"></section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Use the structures of this unit to sound more C1 in the Speaking exam.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

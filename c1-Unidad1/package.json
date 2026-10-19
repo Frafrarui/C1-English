@@ -1,0 +1,14 @@
+{
+  "name": "c1-unit1-app",
+  "version": "1.0.0",
+  "description": "Unit 1: Like vs As, Showing Preference & Past Tenses",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

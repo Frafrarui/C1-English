@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 Advanced - Unit 1: Like vs As, Preference & Past Tenses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+.active-tab {
+    border-color: #0284c7; /* sky-600 */
+    color: #0284c7;
+}
+
+.inactive-tab {
+    border-color: transparent;
+    color: #6b7280; /* gray-500 */
+}
+
+.inactive-tab:hover {
+    border-color: #e5e7eb; /* gray-200 */
+    color: #374151; /* gray-700 */
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.input-kt {
+    border: none;
+    border-bottom: 2px solid #d1d5db; /* gray-300 */
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+    text-align: center;
+    transition: all 0.2s;
+    outline: none;
+    min-width: 180px;
+    max-width: 100%;
+}
+
+.input-kt:focus {
+    border-bottom-color: #0284c7; /* sky-600 */
+}
+
+.input-kt.correct {
+    border-bottom-color: #22c55e; /* green-500 */
+    color: #15803d; /* green-700 */
+    background-color: #f0fdf4; /* green-50 */
+}
+
+.input-kt.incorrect {
+    border-bottom-color: #ef4444; /* red-500 */
+    color: #b91c1c; /* red-700 */
+    background-color: #fef2f2; /* red-50 */
+}
+
+.gap-blank {
+    display: inline-block;
+    min-width: 4rem;
+    border-bottom: 2px solid #9ca3af; /* gray-400 */
+    margin: 0 0.25rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.gap-blank.correct {
+    border-bottom-color: #22c55e;
+    color: #15803d;
+}
+
+.gap-blank.incorrect {
+    border-bottom-color: #ef4444;
+    color: #b91c1c;
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(3px); }
+}
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 1</span></h1>
+            <p class="text-gray-500 mt-1">Like vs As · Showing Preference · Past Tenses</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory
+                </button>
+                <button onclick="switchTab('like_as')" id="tab-like_as" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Like vs As
+                </button>
+                <button onclick="switchTab('preference')" id="tab-preference" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Showing Preference
+                </button>
+                <button onclick="switchTab('past')" id="tab-past" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Past Tenses
+                </button>
+                <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Like vs As · Showing Preference · Past Tenses</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tabs (rendered by app.js) -->
+        <section id="content-like_as" class="tab-content hidden"></section>
+        <section id="content-preference" class="tab-content hidden"></section>
+        <section id="content-past" class="tab-content hidden"></section>
+        <section id="content-transformations" class="tab-content hidden"></section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Use the structures of this unit to sound more C1 in the Speaking exam.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Data embedded directly so this file works standalone (no server needed)
+        window.UNIT_DATA = {
+  "teoria": {
+    "sections": [
+      {
+        "id": "like_as",
+        "title": "A) LIKE vs AS",
+        "color": "sky",
+        "blocks": [
+          {
+            "heading": "LIKE = \"similar to\" / \"for example\"",
+            "rule": "Like va seguido de un sustantivo o pronombre (noun phrase). Compara cosas que se parecen, pero que NO son lo mismo.",
+            "examples": [
+              "He swims like a fish.",
+              "She sings like an angel.",
+              "I love outdoor sports, like climbing and kayaking. (informal)"
+            ]
+          },
+          {
+            "heading": "AS = función o papel real (\"define\")",
+            "rule": "As indica lo que algo o alguien ES realmente: profesión, función, uso.",
+            "examples": [
+              "She works as a nurse.",
+              "As your lawyer, I advise you not to sign.",
+              "The building was used as a hospital during the war."
+            ],
+            "tip": "Like a lawyer = parece abogado (pero no lo es). As a lawyer = es abogado."
+          },
+          {
+            "heading": "AS = because / since",
+            "rule": "En lugar de \"because / since\" podemos usar as para dar una razón.",
+            "examples": [
+              "As it was raining, we stayed at home.",
+              "As I told you yesterday, the meeting has been cancelled."
+            ]
+          },
+          {
+            "heading": "Comparaciones de igualdad: as ... as / the same as",
+            "rule": "Para expresar igualdad usamos as + adj/adv + as, o the same (+ noun) + as. Nunca \"the same like\".",
+            "examples": [
+              "Peter is as old as me.",
+              "My phone is the same as yours.",
+              "This jacket is the same price as that one."
+            ]
+          },
+          {
+            "heading": "Define / regard / consider / know / describe + AS",
+            "rule": "Estos verbos van seguidos de as para indicar cómo se ve o se clasifica a alguien o algo.",
+            "examples": [
+              "Many people regard him as the best writer of his generation.",
+              "He was known as 'The Iron Man'.",
+              "The hotel was described as luxurious."
+            ],
+            "tip": "Consider puede ir sin as: \"They consider him (to be) a genius.\""
+          },
+          {
+            "heading": "SUCH AS = \"for example\"",
+            "rule": "Such as introduce ejemplos. Es la opción formal (like es más informal).",
+            "examples": [
+              "I enjoy water sports such as surfing and sailing."
+            ]
+          },
+          {
+            "heading": "Verbos semi-copulativos (= to be): LOOK",
+            "rule": "look + adjetivo · look like + noun phrase · look as if / as though + oración (= como si).",
+            "examples": [
+              "You look tired.",
+              "He looks like my English teacher.",
+              "He looks as if he has studied a lot."
+            ],
+            "tip": "Situación hipotética (no real) → pasado: \"He looks as if he were a millionaire.\" (were para todas las personas en registro formal)"
+          },
+          {
+            "heading": "Verbos semi-copulativos: SEEM (y sound / feel / smell / taste)",
+            "rule": "seem + to be + adjetivo (sentimientos / impresiones) · seem like + noun phrase. Sound, feel, smell y taste funcionan igual que look.",
+            "examples": [
+              "She seems to be upset today.",
+              "It seems like a good idea.",
+              "This soup tastes as if it's been in the fridge for a week.",
+              "It feels like silk."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "preference",
+        "title": "B) SHOWING PREFERENCE",
+        "color": "indigo",
+        "blocks": [
+          {
+            "heading": "PREFER + V-ing + TO + V-ing",
+            "rule": "Preferencia general. También prefer + noun + to + noun. ¡Nunca \"than\"!",
+            "examples": [
+              "I prefer working as a plumber to working as a teacher.",
+              "She prefers tea to coffee."
+            ]
+          },
+          {
+            "heading": "WOULD PREFER + to inf + RATHER THAN + inf (sin to)",
+            "rule": "Preferencia concreta, en una situación específica. También would prefer + objeto + to inf.",
+            "examples": [
+              "I would prefer to go to the park rather than go to the beach.",
+              "Would you prefer me to pick you up at the station?"
+            ]
+          },
+          {
+            "heading": "WOULD RATHER / WOULD SOONER + inf (sin to) + THAN + inf (sin to)",
+            "rule": "Preferencia presente o futura. Mismo sujeto. Negativa: would rather not + inf.",
+            "examples": [
+              "I would rather drive a car than drive a motorbike.",
+              "I'd sooner live in a city.",
+              "I'd rather not talk about it."
+            ]
+          },
+          {
+            "heading": "WOULD RATHER + inf + AND NOT + inf",
+            "rule": "Otra forma de contrastar dos opciones con would rather.",
+            "examples": [
+              "She would rather travel alone and not with a group."
+            ]
+          },
+          {
+            "heading": "WOULD + like / love / hate / prefer + TO inf",
+            "rule": "\"Me gustaría\": deseo sobre una situación presente o futura.",
+            "examples": [
+              "I would like to go to London."
+            ]
+          },
+          {
+            "heading": "PASADO 1: WOULD + like / love / hate / prefer + TO HAVE + participio",
+            "rule": "El deseo lo tienes AHORA, pero sobre algo que ya pasó. \"Viendo las cosas ahora, preferiría que mi pasado fuera distinto.\" = Me gustaría haber estudiado (ahora).",
+            "examples": [
+              "I would like to have studied Biology.",
+              "I would hate to have taken that exam without studying."
+            ]
+          },
+          {
+            "heading": "PASADO 2: WOULD HAVE + liked / loved / hated / preferred + TO inf",
+            "rule": "El deseo lo tenías EN EL PASADO: algo que querías hacer pero no pudiste o no lo hiciste. = Me habría / hubiera gustado hacerlo (ayer).",
+            "examples": [
+              "I would have liked to study Biology.",
+              "I would have liked to meet you before you moved."
+            ]
+          },
+          {
+            "heading": "WOULD RATHER / SOONER + HAVE + participio",
+            "rule": "Preferencia sobre el pasado, del mismo sujeto. Equivale a would like + to have + participio.",
+            "examples": [
+              "I would rather have lived in a city.",
+              "He'd sooner have kept the money than lent it."
+            ]
+          },
+          {
+            "heading": "WOULD RATHER / SOONER + sujeto + PAST SIMPLE",
+            "rule": "Queremos que OTRA persona haga (o no haga) algo en el presente o futuro. Negativa: would rather + sujeto + didn't.",
+            "examples": [
+              "I would rather you bought a new phone.",
+              "I'd rather you didn't smoke in the house."
+            ]
+          },
+          {
+            "heading": "WOULD RATHER / SOONER + sujeto + PAST PERFECT",
+            "rule": "Preferencia de que otra persona hubiera hecho algo distinto en el pasado (arrepentimiento / queja).",
+            "examples": [
+              "I would rather you had bought a new phone.",
+              "I'd rather you hadn't told anyone."
+            ]
+          },
+          {
+            "heading": "IT'S (HIGH / ABOUT) TIME + sujeto + PAST SIMPLE",
+            "rule": "Queremos que alguien haga algo \"ya, ahora mismo\" (suele tener tono de queja). Sin sujeto: It's time + to inf.",
+            "examples": [
+              "It's high time you went to sleep.",
+              "It's about time we left.",
+              "It's time to go to bed."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "past",
+        "title": "C) PAST TENSES (Narrative Tenses)",
+        "color": "purple",
+        "blocks": [
+          {
+            "heading": "PAST SIMPLE: sujeto + verbo en pasado",
+            "rule": "1. Acciones que empezaron y terminaron en el pasado (yesterday, last + tiempo, tiempo + ago). 2. Hechos del pasado. 3. Rutinas / hábitos del pasado, con adverbios de frecuencia (always, usually, often, rarely, seldom, never).",
+            "examples": [
+              "She visited Paris last year.",
+              "Dinosaurs lived millions of years ago.",
+              "I often played football every weekend."
+            ]
+          },
+          {
+            "heading": "USED TO + inf",
+            "rule": "Rutinas o hábitos del pasado que YA NO ocurren en el presente. Sirve para acciones Y para estados (tener, vivir, gustar, ser...). Negativa: didn't use to.",
+            "examples": [
+              "I used to play football every weekend.",
+              "We used to live in a small village.",
+              "I didn't use to like vegetables."
+            ],
+            "tip": "No confundir con be / get used to + V-ing = estar acostumbrado / acostumbrarse."
+          },
+          {
+            "heading": "WOULD + inf (hábitos pasados)",
+            "rule": "Rutinas del pasado que ya no ocurren, pero SOLO con acciones, nunca con estados. Con estados (like / love / hate / be / have / live...) solo podemos usar used to.",
+            "examples": [
+              "When I was a child, I would climb trees every afternoon.",
+              "✗ I would have long hair. → ✓ I used to have long hair."
+            ],
+            "tip": "Acciones del pasado que ya no haces → used to o would. Estados, gustos o lugares donde vivías / estabas → solo used to."
+          },
+          {
+            "heading": "PAST CONTINUOUS: sujeto + was / were + V-ing",
+            "rule": "1. Acción en progreso en un momento del pasado, con cierta duración. 2. Acción larga interrumpida por otra corta (larga → past continuous, corta → past simple). While + past continuous / when + past simple. 3. Describir el escenario (background) de una historia.",
+            "examples": [
+              "I was sleeping when you called me.",
+              "While she was cooking, the lights went out.",
+              "The sun was shining and the birds were singing."
+            ]
+          },
+          {
+            "heading": "PAST PERFECT: sujeto + had + participio",
+            "rule": "Algo que pasó ANTES de otra acción pasada. Past perfect + before / by the time + past simple.",
+            "examples": [
+              "Before the police arrived, the thieves had escaped.",
+              "The thieves had escaped by the time the police arrived."
+            ]
+          },
+          {
+            "heading": "PAST PERFECT CONTINUOUS: sujeto + had been + V-ing",
+            "rule": "Acción del pasado con duración que ocurrió antes de otra acción pasada. Lo importante es la duración, no el resultado.",
+            "examples": [
+              "They had been waiting for hours when the bus arrived.",
+              "He was tired because he had been working all day."
+            ]
+          },
+          {
+            "heading": "PRESENT PERFECT SIMPLE vs CONTINUOUS",
+            "rule": "Situaciones que empezaron en el pasado y siguen o tienen efecto en el presente. PPS (have / has + participio) → lo importante es que la acción YA HA TERMINADO (el resultado). PPC (have / has been + V-ing) → lo importante es la actividad; puede que no haya terminado.",
+            "examples": [
+              "I have painted the living room. (está terminado)",
+              "I have been painting the living room. (la actividad; no he terminado)"
+            ]
+          }
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "part": "Part 3 (Choosing between options)",
+        "structure": "If I had to choose, I'd rather [verb] than [verb], mainly because [reason].",
+        "example": "If I had to choose, I'd rather invest in public transport than build more roads, mainly because it's more sustainable.",
+        "translation": "Si tuviera que elegir, preferiría [verbo] antes que [verbo], principalmente porque [razón]."
+      },
+      {
+        "part": "Part 4 (Comparing past and present)",
+        "structure": "When I was younger, people used to [verb], whereas nowadays they tend to [verb].",
+        "example": "When I was younger, people used to write letters, whereas nowadays they tend to send instant messages.",
+        "translation": "Cuando era más joven, la gente solía [verbo], mientras que hoy en día tiende a [verbo]."
+      },
+      {
+        "part": "Part 2 (Speculating about the pictures)",
+        "structure": "She looks as if she [has just + participle], which might explain why [situation].",
+        "example": "She looks as if she has just received some bad news, which might explain why she seems so upset.",
+        "translation": "Parece como si acabara de [participio], lo que podría explicar por qué [situación]."
+      },
+      {
+        "part": "Part 4 (Giving a strong opinion)",
+        "structure": "It's high time [governments / society] [past simple] something about [issue].",
+        "example": "It's high time governments did something about the housing crisis.",
+        "translation": "Ya va siendo hora de que [gobiernos / la sociedad] hicieran algo sobre [problema]."
+      },
+      {
+        "part": "Part 1 (Talking about regrets)",
+        "structure": "Looking back, I would have liked to [verb], but [reason].",
+        "example": "Looking back, I would have liked to study abroad, but I couldn't afford it at the time.",
+        "translation": "Mirando atrás, me habría gustado [verbo], pero [razón]."
+      }
+    ]
+  },
+  "ejercicios": {
+    "like_as": [
+      {
+        "type": "mc",
+        "sentence": "She works ___ a nurse in a public hospital.",
+        "options": [
+          "as",
+          "like",
+          "such as"
+        ],
+        "answer": "as",
+        "explanation": "As indica su profesión real (lo que ES)."
+      },
+      {
+        "type": "mc",
+        "sentence": "He swims ___ a fish — he's incredibly fast.",
+        "options": [
+          "like",
+          "as",
+          "as if"
+        ],
+        "answer": "like",
+        "explanation": "Like + noun = similar a. No es un pez, se parece a uno."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ I told you yesterday, the meeting has been cancelled.",
+        "options": [
+          "As",
+          "Like",
+          "Such as"
+        ],
+        "answer": "As",
+        "explanation": "As + oración (como te dije). \"Like I told you\" es muy coloquial y se evita en el examen."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ it was raining, we decided to stay at home.",
+        "options": [
+          "As",
+          "Like",
+          "Such as"
+        ],
+        "answer": "As",
+        "explanation": "As = because / since: introduce la razón."
+      },
+      {
+        "type": "gap",
+        "sentence": "Many people regard him ___ the best writer of his generation.",
+        "answers": [
+          "as"
+        ],
+        "explanation": "Regard + objeto + as."
+      },
+      {
+        "type": "mc",
+        "sentence": "She is ___ tall ___ her older brother.",
+        "options": [
+          "as ... as",
+          "like ... as",
+          "so ... like",
+          "as ... like"
+        ],
+        "answer": "as ... as",
+        "explanation": "Comparación de igualdad: as + adjetivo + as."
+      },
+      {
+        "type": "mc",
+        "sentence": "My phone is the same ___ yours.",
+        "options": [
+          "as",
+          "like",
+          "than"
+        ],
+        "answer": "as",
+        "explanation": "Siempre \"the same as\", nunca \"the same like\" ni \"the same than\"."
+      },
+      {
+        "type": "mc",
+        "sentence": "He looks ___ he hasn't slept for days.",
+        "options": [
+          "as if",
+          "as",
+          "such as",
+          "so"
+        ],
+        "answer": "as if",
+        "explanation": "Look + as if / as though + oración = parece como si..."
+      },
+      {
+        "type": "mc",
+        "sentence": "You look ___ your mother when you smile.",
+        "options": [
+          "like",
+          "as",
+          "as if"
+        ],
+        "answer": "like",
+        "explanation": "Look like + noun phrase (your mother)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I love outdoor sports, ___ climbing and kayaking.",
+        "options": [
+          "such as",
+          "as",
+          "as if"
+        ],
+        "answer": "such as",
+        "explanation": "Such as = for example; introduce ejemplos."
+      },
+      {
+        "type": "gap",
+        "sentence": "The hotel was described ___ 'luxurious', but it was actually quite basic.",
+        "answers": [
+          "as"
+        ],
+        "explanation": "Describe + as (como define / regard / consider / know)."
+      },
+      {
+        "type": "mc",
+        "sentence": "He talks to me ___ I were a child.",
+        "options": [
+          "as though",
+          "like",
+          "as"
+        ],
+        "answer": "as though",
+        "explanation": "As though / as if + were: situación hipotética (no soy un niño)."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ your lawyer, I strongly advise you not to sign this contract.",
+        "options": [
+          "As",
+          "Like"
+        ],
+        "answer": "As",
+        "explanation": "Es realmente su abogado → as (función real)."
+      },
+      {
+        "type": "mc",
+        "sentence": "He argues ___ a lawyer, although he's actually a chef.",
+        "options": [
+          "like",
+          "as",
+          "such as"
+        ],
+        "answer": "like",
+        "explanation": "No es abogado, solo se parece a uno → like."
+      },
+      {
+        "type": "mc",
+        "sentence": "That film seems ___ a complete waste of time to me.",
+        "options": [
+          "like",
+          "as",
+          "to be like"
+        ],
+        "answer": "like",
+        "explanation": "Seem like + noun phrase."
+      },
+      {
+        "type": "mc",
+        "sentence": "She seems ___ rather upset today.",
+        "options": [
+          "to be",
+          "like",
+          "as"
+        ],
+        "answer": "to be",
+        "explanation": "Seem + to be + adjetivo (sentimientos / impresiones)."
+      },
+      {
+        "type": "gap",
+        "sentence": "This soup tastes ___ it has been in the fridge for a week. (2 words)",
+        "answers": [
+          "as if",
+          "as though"
+        ],
+        "explanation": "Taste (como look) + as if / as though + oración."
+      },
+      {
+        "type": "mc",
+        "sentence": "During the war, the building was used ___ a hospital.",
+        "options": [
+          "as",
+          "like"
+        ],
+        "answer": "as",
+        "explanation": "Función real del edificio → as."
+      },
+      {
+        "type": "mc",
+        "sentence": "He behaves as if he ___ the boss, but he's just an intern.",
+        "options": [
+          "were",
+          "is being",
+          "has been"
+        ],
+        "answer": "were",
+        "explanation": "As if + past simple (were) para algo irreal / hipotético."
+      },
+      {
+        "type": "gap",
+        "sentence": "He was known ___ 'The Iron Man' because of his discipline.",
+        "answers": [
+          "as"
+        ],
+        "explanation": "Be known as = ser conocido como."
+      }
+    ],
+    "preference": [
+      {
+        "type": "mc",
+        "sentence": "I prefer walking ___ taking the bus.",
+        "options": [
+          "to",
+          "than",
+          "rather than"
+        ],
+        "answer": "to",
+        "explanation": "Prefer + V-ing + to + V-ing. Nunca \"than\"."
+      },
+      {
+        "type": "gap",
+        "sentence": "I would prefer ___ (stay) at home tonight rather than go out.",
+        "answers": [
+          "to stay"
+        ],
+        "explanation": "Would prefer + to inf + rather than + inf sin to."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd rather ___ a film than go to the theatre.",
+        "options": [
+          "watch",
+          "to watch",
+          "watching"
+        ],
+        "answer": "watch",
+        "explanation": "Would rather + infinitivo sin to."
+      },
+      {
+        "type": "mc",
+        "sentence": "She'd rather travel alone ___ with a group.",
+        "options": [
+          "and not",
+          "to not",
+          "not to"
+        ],
+        "answer": "and not",
+        "explanation": "Would rather + inf + and not + ... para contrastar dos opciones."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd rather you ___ smoke in the house.",
+        "options": [
+          "didn't",
+          "don't",
+          "won't"
+        ],
+        "answer": "didn't",
+        "explanation": "Would rather + otro sujeto + past simple (presente / futuro)."
+      },
+      {
+        "type": "gap",
+        "sentence": "It's high time we ___ (leave); it's almost midnight.",
+        "answers": [
+          "left"
+        ],
+        "explanation": "It's high time + sujeto + past simple = ya va siendo hora de que..."
+      },
+      {
+        "type": "mc",
+        "sentence": "I would like ___ Biology at university, but I chose Law instead.",
+        "options": [
+          "to have studied",
+          "to study",
+          "studying"
+        ],
+        "answer": "to have studied",
+        "explanation": "Deseo ahora sobre algo pasado → would like + to have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "I would have liked ___ you before you moved to Canada.",
+        "options": [
+          "to meet",
+          "meeting",
+          "met"
+        ],
+        "answer": "to meet",
+        "explanation": "Deseo que tenías en el pasado → would have liked + to inf."
+      },
+      {
+        "type": "gap",
+        "sentence": "I'd rather you ___ (not tell) anyone about it yesterday — now everyone knows.",
+        "answers": [
+          "hadn't told",
+          "had not told"
+        ],
+        "explanation": "Would rather + sujeto + past perfect: queja sobre algo pasado."
+      },
+      {
+        "type": "mc",
+        "sentence": "Would you sooner ___ in the city or in the countryside?",
+        "options": [
+          "live",
+          "to live",
+          "living"
+        ],
+        "answer": "live",
+        "explanation": "Would sooner (= would rather) + infinitivo sin to."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd prefer ___ by train rather than fly.",
+        "options": [
+          "to go",
+          "going",
+          "go"
+        ],
+        "answer": "to go",
+        "explanation": "Would prefer + to inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "She prefers tea ___ coffee.",
+        "options": [
+          "to",
+          "than",
+          "from"
+        ],
+        "answer": "to",
+        "explanation": "Prefer + noun + to + noun."
+      },
+      {
+        "type": "gap",
+        "sentence": "I'd rather ___ (not / talk) about it, if you don't mind.",
+        "answers": [
+          "not talk"
+        ],
+        "explanation": "Negativa: would rather + not + inf sin to."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd rather we ___ the meeting until next week.",
+        "options": [
+          "postponed",
+          "postpone",
+          "will postpone"
+        ],
+        "answer": "postponed",
+        "explanation": "Would rather + sujeto (we) + past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "Come on, children, it's time ___ to bed!",
+        "options": [
+          "to go",
+          "going",
+          "go"
+        ],
+        "answer": "to go",
+        "explanation": "Sin sujeto: It's time + to inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "He'd rather ___ the money than lent it to his brother — he never got it back.",
+        "options": [
+          "have kept",
+          "kept",
+          "keep"
+        ],
+        "answer": "have kept",
+        "explanation": "Mismo sujeto, preferencia sobre el pasado → would rather + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "I would hate ___ that exam without studying — luckily I prepared well.",
+        "options": [
+          "to have taken",
+          "taking",
+          "to take"
+        ],
+        "answer": "to have taken",
+        "explanation": "Sentimiento ahora sobre algo pasado → would hate + to have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "Would you prefer me ___ you up at the station?",
+        "options": [
+          "to pick",
+          "picking",
+          "pick"
+        ],
+        "answer": "to pick",
+        "explanation": "Would prefer + objeto + to inf."
+      },
+      {
+        "type": "gap",
+        "sentence": "I'd sooner ___ (die) than apologise to him!",
+        "answers": [
+          "die"
+        ],
+        "explanation": "Would sooner + inf sin to + than + inf sin to."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd rather you ___ honest with me from the beginning.",
+        "options": [
+          "had been",
+          "were",
+          "have been"
+        ],
+        "answer": "had been",
+        "explanation": "Pasado (from the beginning) y otro sujeto → would rather + past perfect."
+      }
+    ],
+    "past": [
+      {
+        "type": "mc",
+        "sentence": "When I was a child, I ___ climb trees every afternoon.",
+        "options": [
+          "would",
+          "was used to",
+          "had"
+        ],
+        "answer": "would",
+        "explanation": "Hábito pasado con un verbo de acción → would (o used to)."
+      },
+      {
+        "type": "mc",
+        "sentence": "We ___ live in a small village before moving to Madrid.",
+        "options": [
+          "used to",
+          "would",
+          "were used to"
+        ],
+        "answer": "used to",
+        "explanation": "Live es un estado / lugar donde vivías → solo used to, no would."
+      },
+      {
+        "type": "mc",
+        "sentence": "I ___ have long hair when I was at university.",
+        "options": [
+          "used to",
+          "would",
+          "was using to"
+        ],
+        "answer": "used to",
+        "explanation": "Have (posesión) es un estado → solo used to."
+      },
+      {
+        "type": "gap",
+        "sentence": "I ___ (sleep) when you called me last night.",
+        "answers": [
+          "was sleeping"
+        ],
+        "explanation": "Acción larga interrumpida por otra corta → past continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "While she ___ dinner, the lights went out.",
+        "options": [
+          "was cooking",
+          "cooked",
+          "had cooked"
+        ],
+        "answer": "was cooking",
+        "explanation": "While + past continuous (acción larga); la corta en past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "By the time the police arrived, the thieves ___.",
+        "options": [
+          "had escaped",
+          "escaped",
+          "were escaping"
+        ],
+        "answer": "had escaped",
+        "explanation": "By the time + past simple → la acción anterior va en past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "They ___ (wait) for hours when the bus finally arrived.",
+        "answers": [
+          "had been waiting"
+        ],
+        "explanation": "Duración antes de otra acción pasada → past perfect continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "I ___ the living room — come and see how nice it looks now.",
+        "options": [
+          "have painted",
+          "have been painting",
+          "had been painting"
+        ],
+        "answer": "have painted",
+        "explanation": "Lo importante es el resultado terminado → present perfect simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'm exhausted. I ___ the living room all morning.",
+        "options": [
+          "have been painting",
+          "have painted",
+          "painted"
+        ],
+        "answer": "have been painting",
+        "explanation": "Lo importante es la actividad y su duración → present perfect continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "Dinosaurs ___ on Earth millions of years ago.",
+        "options": [
+          "lived",
+          "have lived",
+          "had been living"
+        ],
+        "answer": "lived",
+        "explanation": "Hecho del pasado con \"ago\" → past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "The sun ___ and the birds were singing as we set off.",
+        "options": [
+          "was shining",
+          "shone",
+          "had shone"
+        ],
+        "answer": "was shining",
+        "explanation": "Describir el escenario (background) de una historia → past continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "She ___ (visit) Paris last year.",
+        "answers": [
+          "visited"
+        ],
+        "explanation": "Acción terminada con \"last year\" → past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "I didn't ___ like vegetables, but now I love them.",
+        "options": [
+          "use to",
+          "used to",
+          "would"
+        ],
+        "answer": "use to",
+        "explanation": "Negativa: didn't + use to (sin -d)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Before he became famous, he ___ in several small bands.",
+        "options": [
+          "had played",
+          "has played",
+          "was playing"
+        ],
+        "answer": "had played",
+        "explanation": "Before + past simple; la acción anterior → past perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "How long ___ English before you moved to London?",
+        "options": [
+          "had you been studying",
+          "have you been studying",
+          "were you studying"
+        ],
+        "answer": "had you been studying",
+        "explanation": "Duración antes de otro momento pasado → past perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "When I got to the cinema, the film ___ (already / start).",
+        "answers": [
+          "had already started"
+        ],
+        "explanation": "La película empezó antes de que yo llegara → past perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "I ___ my keys, so I can't get into the house.",
+        "options": [
+          "have lost",
+          "had lost",
+          "was losing"
+        ],
+        "answer": "have lost",
+        "explanation": "Acción pasada con consecuencia en el presente → present perfect simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "When I was younger, I ___ love horror films, but now I can't stand them.",
+        "options": [
+          "used to",
+          "would",
+          "was used to"
+        ],
+        "answer": "used to",
+        "explanation": "Love es un estado / gusto → solo used to, nunca would."
+      },
+      {
+        "type": "mc",
+        "sentence": "He was exhausted because he ___ all day.",
+        "options": [
+          "had been working",
+          "has been working",
+          "was worked"
+        ],
+        "answer": "had been working",
+        "explanation": "Duración que explica una situación pasada → past perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "As a teenager, I ___ (often / play) football every weekend.",
+        "answers": [
+          "often played",
+          "used to play",
+          "would often play",
+          "often used to play",
+          "used to often play",
+          "would play"
+        ],
+        "explanation": "Rutina pasada → past simple + adverbio de frecuencia (o used to / would)."
+      }
+    ],
+    "transformations": [
+      {
+        "type": "kwt",
+        "lead_in": "My brother is a doctor and he works in a hospital in London.",
+        "keyword": "AS",
+        "before": "My brother",
+        "after": "in a hospital in London.",
+        "answers": [
+          "works as a doctor"
+        ],
+        "explanation": "As + profesión real."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "He gives the impression that he hasn't slept for days.",
+        "keyword": "IF",
+        "before": "He looks",
+        "after": "for days.",
+        "answers": [
+          "as if he hasn't slept",
+          "as if he has not slept"
+        ],
+        "explanation": "Look + as if + oración."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I'd prefer to stay at home rather than go to the party.",
+        "keyword": "RATHER",
+        "before": "I",
+        "after": "go to the party.",
+        "answers": [
+          "would rather stay at home than",
+          "'d rather stay at home than"
+        ],
+        "explanation": "Would prefer to... rather than = would rather + inf + than + inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I'd rather walk than take the bus.",
+        "keyword": "PREFER",
+        "before": "I",
+        "after": "the bus.",
+        "answers": [
+          "prefer walking to taking"
+        ],
+        "explanation": "Prefer + V-ing + to + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "You really should get a job now.",
+        "keyword": "HIGH",
+        "before": "It's",
+        "after": "a job.",
+        "answers": [
+          "high time you got",
+          "high time you found"
+        ],
+        "explanation": "It's high time + sujeto + past simple."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Please don't smoke in the car.",
+        "keyword": "RATHER",
+        "before": "I'd",
+        "after": "in the car.",
+        "answers": [
+          "rather you didn't smoke",
+          "rather you did not smoke"
+        ],
+        "explanation": "Would rather + otro sujeto + past simple (negativo: didn't)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It's a pity I didn't study medicine.",
+        "keyword": "LIKE",
+        "before": "I would",
+        "after": "medicine.",
+        "answers": [
+          "like to have studied"
+        ],
+        "explanation": "Deseo ahora sobre el pasado → would like + to have + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I wanted to go to the concert, but I couldn't.",
+        "keyword": "LIKED",
+        "before": "I would",
+        "after": "to the concert.",
+        "answers": [
+          "have liked to go",
+          "have liked to have gone"
+        ],
+        "explanation": "Deseo que tenías en el pasado → would have liked + to inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The thieves escaped before the police arrived.",
+        "keyword": "TIME",
+        "before": "The thieves had escaped",
+        "after": "arrived.",
+        "answers": [
+          "by the time the police"
+        ],
+        "explanation": "Past perfect + by the time + past simple."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "We started waiting for the bus two hours before it arrived.",
+        "keyword": "BEEN",
+        "before": "We",
+        "after": "two hours when the bus arrived.",
+        "answers": [
+          "had been waiting for"
+        ],
+        "explanation": "Duración antes de otra acción pasada → had been + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I don't play football every weekend any more.",
+        "keyword": "USED",
+        "before": "I",
+        "after": "every weekend.",
+        "answers": [
+          "used to play football"
+        ],
+        "explanation": "Hábito pasado que ya no ocurre → used to + inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "She was cooking when the lights went out.",
+        "keyword": "WHILE",
+        "before": "The lights went out",
+        "after": "cooking.",
+        "answers": [
+          "while she was"
+        ],
+        "explanation": "While + past continuous."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Most people consider him the best player in the world.",
+        "keyword": "REGARDED",
+        "before": "He",
+        "after": "the best player in the world.",
+        "answers": [
+          "is regarded as",
+          "is widely regarded as",
+          "is generally regarded as"
+        ],
+        "explanation": "Be regarded + as (pasiva de regard someone as)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The two jackets cost the same.",
+        "keyword": "AS",
+        "before": "This jacket is",
+        "after": "that one.",
+        "answers": [
+          "as expensive as",
+          "the same price as",
+          "as cheap as"
+        ],
+        "explanation": "Igualdad: as + adj + as / the same (price) as."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It's a shame you didn't tell me the truth.",
+        "keyword": "RATHER",
+        "before": "I'd",
+        "after": "me the truth.",
+        "answers": [
+          "rather you had told",
+          "rather you'd told"
+        ],
+        "explanation": "Queja sobre el pasado de otra persona → would rather + sujeto + past perfect."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I'd prefer you not to call me after 10 p.m.",
+        "keyword": "SOONER",
+        "before": "I'd",
+        "after": "me after 10 p.m.",
+        "answers": [
+          "sooner you didn't call",
+          "sooner you did not call",
+          "sooner you didn't phone",
+          "sooner you did not phone"
+        ],
+        "explanation": "Would sooner (= would rather) + sujeto + past simple."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "When I was a child, I spent every summer at my grandparents' farm.",
+        "keyword": "WOULD",
+        "before": "When I was a child, I",
+        "after": "at my grandparents' farm.",
+        "answers": [
+          "would spend every summer",
+          "would spend my summers",
+          "would always spend the summer"
+        ],
+        "explanation": "Hábito pasado con verbo de acción → would + inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I started painting the room this morning and I'm still doing it.",
+        "keyword": "BEEN",
+        "before": "I",
+        "after": "the room since this morning.",
+        "answers": [
+          "have been painting"
+        ],
+        "explanation": "Actividad que empezó en el pasado y continúa → present perfect continuous."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It seems that she is rather tired today.",
+        "keyword": "SEEMS",
+        "before": "She",
+        "after": "rather tired today.",
+        "answers": [
+          "seems to be"
+        ],
+        "explanation": "Seem + to be + adjetivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I regret camping instead of staying in a hotel.",
+        "keyword": "SOONER",
+        "before": "I would",
+        "after": "in a hotel than camped.",
+        "answers": [
+          "sooner have stayed"
+        ],
+        "explanation": "Mismo sujeto, preferencia sobre el pasado → would sooner + have + participio."
+      }
+    ]
+  }
+};
+    </script>
+    <script>
+// State
+let theoryData = null;
+let exercisesData = null;
+const quizzes = {};
+
+const TABS = ['theory', 'like_as', 'preference', 'past', 'transformations', 'speaking'];
+
+const QUIZ_INFO = {
+    like_as: {
+        title: 'Like vs As',
+        instructions: 'Choose the correct option or write the missing word(s).',
+        color: 'sky'
+    },
+    preference: {
+        title: 'Showing Preference (Present & Past)',
+        instructions: 'Choose the correct option or write the correct form of the verb in brackets.',
+        color: 'indigo'
+    },
+    past: {
+        title: 'Past Tenses',
+        instructions: 'Choose the correct tense or write the correct form of the verb in brackets.',
+        color: 'purple'
+    },
+    transformations: {
+        title: 'Keyword Transformation (Part 4)',
+        instructions: 'Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.',
+        color: 'sky'
+    }
+};
+
+const COLORS = {
+    sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900', btn: 'bg-sky-600 hover:bg-sky-700', ring: 'ring-sky-500' },
+    indigo: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900', btn: 'bg-indigo-600 hover:bg-indigo-700', ring: 'ring-indigo-500' },
+    purple: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900', btn: 'bg-purple-600 hover:bg-purple-700', ring: 'ring-purple-500' },
+    rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', icon: 'text-rose-900', btn: 'bg-rose-600 hover:bg-rose-700', ring: 'ring-rose-500' }
+};
+
+const ICON_CHECK = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+const ICON_CROSS = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+});
+
+window.switchTab = function(tabId) {
+    TABS.forEach(id => {
+        document.getElementById(`content-${id}`).classList.remove('block');
+        document.getElementById(`content-${id}`).classList.add('hidden');
+
+        const btn = document.getElementById(`tab-${id}`);
+        btn.classList.remove('active-tab');
+        btn.classList.add('inactive-tab');
+    });
+
+    document.getElementById(`content-${tabId}`).classList.remove('hidden');
+    document.getElementById(`content-${tabId}`).classList.add('block');
+
+    const activeBtn = document.getElementById(`tab-${tabId}`);
+    activeBtn.classList.remove('inactive-tab');
+    activeBtn.classList.add('active-tab');
+
+    if (quizzes[tabId]) focusInput(tabId);
+};
+
+async function loadData() {
+    try {
+        // Unidad1.html embeds the data so it works without a server
+        if (window.UNIT_DATA) {
+            theoryData = window.UNIT_DATA.teoria;
+            exercisesData = window.UNIT_DATA.ejercicios;
+        } else {
+            const [theoryRes, exercisesRes] = await Promise.all([
+                fetch('/api/teoria'),
+                fetch('/api/ejercicios')
+            ]);
+            theoryData = await theoryRes.json();
+            exercisesData = await exercisesRes.json();
+        }
+
+        renderTheory();
+        renderSpeaking();
+        Object.keys(QUIZ_INFO).forEach(key => initQuiz(key));
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        document.getElementById('theory-container').innerHTML = `<div class="text-red-500 p-4 bg-red-50 rounded-lg">Error loading content. Please make sure the server is running.</div>`;
+    }
+}
+
+// ---------- Helpers ----------
+
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function normalize(str) {
+    return str
+        .toLowerCase()
+        .replace(/[’‘`´]/g, "'")
+        .replace(/\bwon't\b/g, 'will not')
+        .replace(/\bcan't\b/g, 'cannot')
+        .replace(/n't\b/g, ' not')
+        .replace(/[.,!?;:"()]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function focusInput(key) {
+    const input = document.getElementById(`answer-${key}`);
+    if (input && !input.readOnly) input.focus();
+}
+
+// ---------- Theory ----------
+
+function renderTheory() {
+    let html = '';
+
+    theoryData.sections.forEach(section => {
+        const c = COLORS[section.color] || COLORS.sky;
+        html += `
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-gray-50 border-b border-gray-100 px-6 py-4 flex flex-wrap justify-between items-center gap-2">
+                    <h3 class="text-lg font-bold text-gray-800">${section.title}</h3>
+                    <button onclick="switchTab('${section.id}')" class="text-sm font-medium ${c.text} hover:underline">Practise this →</button>
+                </div>
+                <div class="divide-y divide-gray-100">
+        `;
+
+        section.blocks.forEach(block => {
+            html += `
+                <div class="p-6 hover:bg-gray-50 transition-colors">
+                    <h4 class="font-semibold ${c.text} mb-2">${block.heading}</h4>
+                    <p class="text-gray-600 mb-3">${block.rule}</p>
+                    <div class="${c.bg} ${c.icon} p-3 rounded-lg border ${c.border} flex items-start">
+                        <svg class="w-5 h-5 mr-2 mt-0.5 opacity-70 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div class="space-y-1">
+                            ${block.examples.map(ex => `<p class="italic">"${ex}"</p>`).join('')}
+                        </div>
+                    </div>
+                    ${block.tip ? `
+                        <p class="mt-3 text-sm text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2"><span class="font-semibold">Tip:</span> ${block.tip}</p>
+                    ` : ''}
+                </div>
+            `;
+        });
+
+        html += `
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('theory-container').innerHTML = html;
+}
+
+// ---------- Speaking ----------
+
+function renderSpeaking() {
+    const colors = [
+        { bg: 'bg-sky-50', text: 'text-sky-600', border: 'border-sky-100', textLight: 'text-sky-500' },
+        { bg: 'bg-indigo-50', text: 'text-indigo-600', border: 'border-indigo-100', textLight: 'text-indigo-500' },
+        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', textLight: 'text-purple-500' },
+        { bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', textLight: 'text-rose-500' }
+    ];
+
+    let html = '';
+
+    theoryData.speaking.forEach((item, index) => {
+        const c = colors[index % colors.length];
+        const structureHtml = item.structure.replace(/\[(.*?)\]/g, `<span class="${c.textLight} ${c.bg} px-1 rounded border border-white">[$1]</span>`);
+
+        html += `
+            <div class="bg-white rounded-xl shadow-sm border ${c.border} overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                <div class="${c.bg} px-5 py-3 border-b ${c.border} flex justify-between items-center">
+                    <span class="text-xs font-bold uppercase tracking-wider ${c.text}">Strategy ${index + 1}</span>
+                    <span class="bg-white ${c.text} text-xs px-2 py-1 rounded shadow-sm font-semibold">${item.part.split(' (')[0]}</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm font-medium text-gray-500 mb-4">${item.part}</p>
+                    <div class="mb-5">
+                        <div class="text-gray-800 font-semibold text-lg leading-snug">${structureHtml}</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-4">
+                        <p class="text-gray-700 italic">"${item.example}"</p>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                        ${item.translation}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('speaking-container').innerHTML = html;
+}
+
+// ---------- Quiz engine (shared by all practice tabs) ----------
+
+function initQuiz(key, onlyIndices) {
+    const all = exercisesData[key];
+    const indices = onlyIndices || all.map((_, i) => i);
+
+    quizzes[key] = {
+        questions: indices.map(i => {
+            const q = all[i];
+            // Shuffle multiple-choice options so the answer isn't always first
+            return q.type === 'mc' ? { ...q, options: shuffle(q.options), sourceIndex: i } : { ...q, sourceIndex: i };
+        }),
+        current: 0,
+        answers: {},
+        showSummary: false
+    };
+
+    renderQuizShell(key);
+    showQuestion(key);
+}
+
+function renderQuizShell(key) {
+    const info = QUIZ_INFO[key];
+    const c = COLORS[info.color];
+
+    document.getElementById(`content-${key}`).innerHTML = `
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="${c.bg} border-b ${c.border} p-6">
+                <h2 class="text-xl font-bold text-gray-900">${info.title}</h2>
+                <p class="text-sm text-gray-600 mt-2">${info.instructions}</p>
+            </div>
+
+            <div class="p-6">
+                <div class="flex flex-wrap justify-between items-center gap-2 mb-4">
+                    <span class="text-sm font-medium text-gray-500">Question <span id="qnum-${key}">1</span> of <span>${quizzes[key].questions.length}</span></span>
+                    <span id="score-${key}" class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded shadow-sm">Score: 0/${quizzes[key].questions.length}</span>
+                </div>
+
+                <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
+                    <div id="progress-${key}" class="h-1.5 rounded-full ${c.btn.split(' ')[0]} transition-all duration-300" style="width: 0%"></div>
+                </div>
+
+                <div id="dots-${key}" class="flex flex-wrap gap-1.5 mb-6"></div>
+
+                <div id="question-${key}" class="min-h-[200px]"></div>
+
+                <div id="controls-${key}" class="mt-8 flex justify-between items-center border-t pt-6">
+                    <button onclick="prevQuestion('${key}')" id="prev-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Previous</button>
+                    <button onclick="checkAnswer('${key}')" id="check-${key}" class="px-6 py-2 ${c.btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">Check Answer</button>
+                    <button onclick="nextQuestion('${key}')" id="next-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Next</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getScore(quiz) {
+    return Object.values(quiz.answers).filter(a => a.isCorrect).length;
+}
+
+function updateHeader(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const answered = Object.keys(quiz.answers).length;
+
+    document.getElementById(`qnum-${key}`).textContent = quiz.current + 1;
+    document.getElementById(`score-${key}`).textContent = `Score: ${getScore(quiz)}/${total}`;
+    document.getElementById(`progress-${key}`).style.width = `${(answered / total) * 100}%`;
+
+    const c = COLORS[QUIZ_INFO[key].color];
+    document.getElementById(`dots-${key}`).innerHTML = quiz.questions.map((_, i) => {
+        const a = quiz.answers[i];
+        let cls = 'bg-gray-100 text-gray-500 hover:bg-gray-200';
+        if (a) cls = a.isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700';
+        const active = i === quiz.current && !quiz.showSummary ? `ring-2 ${c.ring}` : '';
+        return `<button onclick="goToQuestion('${key}', ${i})" class="w-7 h-7 rounded text-xs font-semibold ${cls} ${active} transition-colors">${i + 1}</button>`;
+    }).join('');
+}
+
+function showQuestion(key) {
+    const quiz = quizzes[key];
+    if (quiz.showSummary) return showSummary(key);
+
+    const index = quiz.current;
+    const q = quiz.questions[index];
+    const answer = quiz.answers[index];
+    const isAnswered = answer !== undefined;
+    const container = document.getElementById(`question-${key}`);
+
+    document.getElementById(`controls-${key}`).classList.remove('hidden');
+    document.getElementById(`prev-${key}`).disabled = index === 0;
+    const allAnswered = Object.keys(quiz.answers).length === quiz.questions.length;
+    const btnNext = document.getElementById(`next-${key}`);
+    btnNext.disabled = index === quiz.questions.length - 1 && !allAnswered;
+    btnNext.textContent = allAnswered ? 'See results' : 'Next';
+
+    const btnCheck = document.getElementById(`check-${key}`);
+    btnCheck.disabled = isAnswered;
+    btnCheck.textContent = isAnswered ? 'Checked' : 'Check Answer';
+    // Multiple choice checks on click, so the button is only needed for typed answers
+    btnCheck.classList.toggle('invisible', q.type === 'mc');
+
+    let body = '';
+    if (q.type === 'mc') body = renderMC(key, q, answer);
+    else if (q.type === 'gap') body = renderGap(key, q, answer);
+    else body = renderKWT(key, q, answer);
+
+    container.innerHTML = `
+        <div class="space-y-6">
+            ${body}
+            ${isAnswered ? renderFeedback(q, answer) : ''}
+        </div>
+    `;
+
+    updateHeader(key);
+
+    if (!isAnswered && q.type !== 'mc') {
+        const input = document.getElementById(`answer-${key}`);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkAnswer(key);
+        });
+        if (!document.getElementById(`content-${key}`).classList.contains('hidden')) input.focus();
+    }
+}
+
+function sentenceWithBlank(sentence, filled, state) {
+    const blank = `<span class="gap-blank ${state || ''}">${filled ? escapeHtml(filled) : '&nbsp;'}</span>`;
+    return sentence.replace('___', blank);
+}
+
+function renderMC(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const filled = isAnswered ? (answer.isCorrect ? q.answer : answer.text) : '';
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    const options = q.options.map((opt, i) => {
+        let cls = 'border-gray-200 bg-white hover:border-gray-400 hover:bg-gray-50 text-gray-800';
+        if (isAnswered) {
+            if (opt === q.answer) cls = 'border-green-400 bg-green-50 text-green-800';
+            else if (opt === answer.text) cls = 'border-red-400 bg-red-50 text-red-800';
+            else cls = 'border-gray-100 bg-white text-gray-400';
+        }
+        return `<button onclick="selectOption('${key}', ${i})" ${isAnswered ? 'disabled' : ''} class="px-4 py-3 border-2 rounded-lg text-left font-medium transition-colors ${cls}">${escapeHtml(opt)}</button>`;
+    }).join('');
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${sentenceWithBlank(q.sentence, filled, state)}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">${options}</div>
+    `;
+}
+
+function renderGap(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+    const input = `<input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+        value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="your answer">`;
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${q.sentence.replace('___', input)}</p>
+        </div>
+    `;
+}
+
+function renderKWT(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${q.lead_in}</p>
+        </div>
+
+        <div class="flex justify-center">
+            <span class="inline-block bg-gray-800 text-white font-bold py-1 px-4 rounded shadow-sm tracking-widest text-lg">${q.keyword}</span>
+        </div>
+
+        <div class="text-lg text-gray-800 leading-loose flex flex-wrap items-center gap-2">
+            <span>${q.before}</span>
+            <input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="(3-6 words)">
+            <span>${q.after}</span>
+        </div>
+    `;
+}
+
+function renderFeedback(q, answer) {
+    const correctText = q.type === 'mc' ? q.answer : q.answers.join('  /  ');
+
+    return `
+        <div class="p-4 rounded-lg ${answer.isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+            <p class="text-sm ${answer.isCorrect ? 'text-green-800' : 'text-red-800'} font-medium flex items-center">
+                ${answer.isCorrect ? ICON_CHECK + ' Correct!' : ICON_CROSS + ' Incorrect.'}
+            </p>
+            ${!answer.isCorrect ? `
+                <p class="mt-2 text-sm text-gray-700">Correct answer: <span class="font-bold text-green-700">${escapeHtml(correctText)}</span></p>
+            ` : ''}
+            ${q.explanation ? `<p class="mt-2 text-sm text-gray-600">${q.explanation}</p>` : ''}
+        </div>
+    `;
+}
+
+function recordAnswer(key, text, isCorrect) {
+    const quiz = quizzes[key];
+    quiz.answers[quiz.current] = { text, isCorrect };
+    showQuestion(key);
+}
+
+window.selectOption = function(key, optionIndex) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return;
+    const q = quiz.questions[quiz.current];
+    const choice = q.options[optionIndex];
+    recordAnswer(key, choice, choice === q.answer);
+};
+
+window.checkAnswer = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return; // Already checked
+
+    const q = quiz.questions[quiz.current];
+    if (q.type === 'mc') return;
+
+    const inputEl = document.getElementById(`answer-${key}`);
+    const userAnswer = inputEl.value.trim();
+
+    if (!userAnswer) {
+        inputEl.classList.remove('shake');
+        void inputEl.offsetWidth;
+        inputEl.classList.add('shake');
+        inputEl.focus();
+        return;
+    }
+
+    const normalizedUser = normalize(userAnswer);
+    const isCorrect = q.answers.some(a => normalize(a) === normalizedUser);
+    recordAnswer(key, userAnswer, isCorrect);
+};
+
+window.prevQuestion = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.current > 0) {
+        quiz.current--;
+        showQuestion(key);
+    }
+};
+
+window.nextQuestion = function(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+
+    if (Object.keys(quiz.answers).length === total) {
+        quiz.showSummary = true;
+        showQuestion(key);
+        return;
+    }
+    if (quiz.current < total - 1) {
+        quiz.current++;
+        showQuestion(key);
+    }
+};
+
+window.goToQuestion = function(key, index) {
+    const quiz = quizzes[key];
+    quiz.showSummary = false;
+    quiz.current = index;
+    showQuestion(key);
+};
+
+function showSummary(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const score = getScore(quiz);
+    const pct = Math.round((score / total) * 100);
+    const mistakes = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect);
+
+    let message = 'Keep practising — review the theory and try again.';
+    if (pct >= 90) message = 'Excellent! You have mastered this topic.';
+    else if (pct >= 70) message = 'Very good! Just a few points to review.';
+    else if (pct >= 50) message = 'Not bad, but there is room for improvement.';
+
+    document.getElementById(`controls-${key}`).classList.add('hidden');
+    updateHeader(key);
+
+    document.getElementById(`question-${key}`).innerHTML = `
+        <div class="text-center py-6">
+            <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Final score</p>
+            <p class="text-5xl font-bold mt-2 ${pct >= 70 ? 'text-green-600' : pct >= 50 ? 'text-amber-500' : 'text-red-600'}">${score}/${total}</p>
+            <p class="text-gray-600 mt-3">${message}</p>
+        </div>
+
+        ${mistakes.length ? `
+            <div class="mt-4">
+                <h3 class="font-semibold text-gray-800 mb-3">Review your mistakes</h3>
+                <div class="space-y-3">
+                    ${mistakes.map(q => {
+                        const i = quiz.questions.indexOf(q);
+                        const prompt = q.type === 'kwt' ? `${q.lead_in} <span class="font-bold">(${q.keyword})</span>` : q.sentence.replace('___', '_____');
+                        const correct = q.type === 'mc' ? q.answer : q.answers[0];
+                        return `
+                            <button onclick="goToQuestion('${key}', ${i})" class="w-full text-left p-3 rounded-lg border border-red-100 bg-red-50 hover:bg-red-100 transition-colors">
+                                <p class="text-sm text-gray-800">${i + 1}. ${prompt}</p>
+                                <p class="text-sm mt-1"><span class="text-red-700 line-through">${escapeHtml(quiz.answers[i].text)}</span> → <span class="text-green-700 font-semibold">${escapeHtml(correct)}</span></p>
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        ` : ''}
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3 border-t pt-6">
+            ${mistakes.length ? `<button onclick="retryMistakes('${key}')" class="px-5 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">Retry mistakes (${mistakes.length})</button>` : ''}
+            <button onclick="restartQuiz('${key}')" class="px-5 py-2 ${COLORS[QUIZ_INFO[key].color].btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm">Restart (shuffled)</button>
+        </div>
+    `;
+}
+
+window.retryMistakes = function(key) {
+    const quiz = quizzes[key];
+    const wrong = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect).map(q => q.sourceIndex);
+    initQuiz(key, wrong);
+};
+
+window.restartQuiz = function(key) {
+    initQuiz(key, shuffle(exercisesData[key].map((_, i) => i)));
+};
+    </script>
+</body>
+</html>
