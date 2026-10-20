@@ -1,0 +1,14 @@
+{
+  "name": "c1-unit3-app",
+  "version": "1.0.0",
+  "description": "Unit 3: Negatives (No, None, Not), Passive Voice, Reporting Verbs & Have Something Done",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
