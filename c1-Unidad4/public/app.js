@@ -3,7 +3,7 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'speculation', 'modals', 'conditionals', 'wish', 'transformations', 'speaking'];
+const TABS = ['theory', 'speculation', 'modals', 'conditionals', 'wish', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     speculation: {
@@ -25,6 +25,11 @@ const QUIZ_INFO = {
         title: 'Alternatives to If & Wish / If only',
         instructions: 'Choose the correct option or write the missing word(s).',
         color: 'rose'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Units 4, 10 & 11): modals, conditionals and wish. Questions are shuffled every time you restart.',
+        color: 'purple'
     },
     transformations: {
         title: 'Keyword Transformation (Part 4)',

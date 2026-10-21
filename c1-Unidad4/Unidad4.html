@@ -128,6 +128,9 @@
                 <button onclick="switchTab('wish')" id="tab-wish" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
                     Alternatives to If & Wish
                 </button>
+                <button onclick="switchTab('book')" id="tab-book" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Complete Advanced
+                </button>
                 <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
                     Keyword Transformation C1
                 </button>
@@ -157,6 +160,7 @@
         <section id="content-modals" class="tab-content hidden"></section>
         <section id="content-conditionals" class="tab-content hidden"></section>
         <section id="content-wish" class="tab-content hidden"></section>
+        <section id="content-book" class="tab-content hidden"></section>
         <section id="content-transformations" class="tab-content hidden"></section>
 
         <!-- Speaking Templates Tab -->
@@ -202,6 +206,16 @@
             "tip": "She might not be at home (= quizá no esté). She can't be at home (= es imposible que esté)."
           },
           {
+            "heading": "CAN vs MAY / COULD para posibilidad",
+            "rule": "Can → posibilidad GENERAL (algo que suele ocurrir), no un caso concreto. Para una ocasión concreta o el futuro → may / might / could (nunca can). Pasado incierto → could have (nunca can have).",
+            "examples": [
+              "It can rain heavily in this region in autumn. (en general)",
+              "It might rain this evening. (esta tarde concreta)",
+              "I think it could rain later. (✗ can rain)",
+              "She could have gone to the supermarket. (✗ can have gone)"
+            ]
+          },
+          {
             "heading": "POSSIBILITY: ahora mismo y en el pasado",
             "rule": "At the moment: may / might / could + be + V-ing. Pasado: may / might / could + have + participio. Pasado continuo: may / might + have been + V-ing.",
             "examples": [
@@ -217,6 +231,17 @@
               "It may well rain tomorrow.",
               "They may well be waiting for us.",
               "He may well have won the competition."
+            ]
+          },
+          {
+            "heading": "Extra (Complete Advanced): could easily · conceivably · just might · every possibility",
+            "rule": "May / might / could + easily = posibilidad fuerte. May / might / could + possibly / conceivably, o just might = posibilidad REMOTA. There's (a / some / a slight / every / a good / strong / real) possibility / chance + that + oración o of + -ing. Is there any chance of + -ing? It's (just / quite / entirely) possible that...",
+            "examples": [
+              "I'd better write it down, otherwise I could easily forget.",
+              "My boss could conceivably change her mind.",
+              "I just might have time to finish the report.",
+              "There's every possibility that the business will succeed.",
+              "Is there any chance of seeing you this weekend?"
             ]
           },
           {
@@ -323,6 +348,14 @@
               "I have to finish this report — my boss wants it today.",
               "I had to work late yesterday.",
               "You will have to wait."
+            ]
+          },
+          {
+            "heading": "MUST vs HAVE TO: matiz del libro",
+            "rule": "I have to finish this report = otra persona lo exige. I must finish this report = YO siento que es esencial. Must también da consejo fuerte: You must see this film!",
+            "examples": [
+              "He has to go to the police station. (la policía se lo ha ordenado)",
+              "He must go to the police station. (yo creo que es esencial que vaya)"
             ]
           },
           {
@@ -478,6 +511,17 @@
             ]
           },
           {
+            "heading": "Otros usos de los condicionales (Complete Advanced)",
+            "rule": "Formas continuas también valen en las dos partes. If you would + inf → crítica o petición fuerte. I'd appreciate it / I'd be grateful if you would / could → petición formal. Otherwise + would / could → idea condicional sin if. Alternativas a if: as soon as, in case, in the event that, assuming (that), given that, supposing.",
+            "examples": [
+              "If I was driving, we'd be arriving by now.",
+              "If it hadn't been snowing, we wouldn't have got lost.",
+              "If you'd stop making so much noise, we'd all be able to enjoy the film.",
+              "I'd appreciate it if you could hand in the report by Thursday.",
+              "Supposing you lost your job, what would you do?"
+            ]
+          },
+          {
             "heading": "Tabla resumen de condicionales",
             "rule": "Mira el tiempo de cada parte.",
             "table": {
@@ -573,6 +617,15 @@
               "I wish I had more money.",
               "If only I lived near the beach.",
               "I wish I were taller."
+            ]
+          },
+          {
+            "heading": "WISH + past continuous · wish en pasado",
+            "rule": "Wish + past continuous → algo que está pasando / va a pasar y no te gusta. Si el verbo wish va en pasado (wished), el tiempo de detrás no cambia.",
+            "examples": [
+              "I wish I didn't have to go to school today.",
+              "Jan wishes the wedding was taking place in the spring.",
+              "Peter wished he hadn't arranged to go out that evening."
             ]
           },
           {
@@ -1758,6 +1811,491 @@
         ],
         "explanation": "Mixed conditional (3rd → 2nd): pasado que afecta al presente."
       }
+    ],
+    "book": [
+      {
+        "type": "mc",
+        "sentence": "With so few customers here, you ___ be making much money.",
+        "options": [
+          "can't",
+          "mustn't"
+        ],
+        "answer": "can't",
+        "explanation": "Certeza negativa → can't. Mustn't nunca expresa certeza."
+      },
+      {
+        "type": "mc",
+        "sentence": "The heavy rain this region experiences ___ regularly lead to the river bursting its banks.",
+        "options": [
+          "can",
+          "could"
+        ],
+        "answer": "can",
+        "explanation": "Posibilidad general (algo que suele pasar) → can."
+      },
+      {
+        "type": "mc",
+        "sentence": "She just ___ have time to get to the shops before they close.",
+        "options": [
+          "might",
+          "must"
+        ],
+        "answer": "might",
+        "explanation": "Just might = posibilidad remota."
+      },
+      {
+        "type": "mc",
+        "sentence": "Your qualifications are excellent, so you ___ have no difficulty on this course.",
+        "options": [
+          "should",
+          "could"
+        ],
+        "answer": "should",
+        "explanation": "Should = lo esperamos (expectativa)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I tried to call him but it went straight to voicemail. He ___ have been talking to someone else at that time.",
+        "options": [
+          "may",
+          "can't"
+        ],
+        "answer": "may",
+        "explanation": "Posibilidad en el pasado (en progreso) → may have been + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "No, sir. I've never been to Budapest. You ___ have made a mistake.",
+        "options": [
+          "must",
+          "could"
+        ],
+        "answer": "must",
+        "explanation": "Estoy seguro (tengo pruebas) → must have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "There's ___ possibility that this year will see economic conditions worsen.",
+        "options": [
+          "every",
+          "just"
+        ],
+        "answer": "every",
+        "explanation": "There's every possibility / chance that... = es muy posible."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd better make a note of that. Otherwise I ___ easily forget it.",
+        "options": [
+          "could",
+          "can"
+        ],
+        "answer": "could",
+        "explanation": "Could + easily = posibilidad fuerte en un caso concreto."
+      },
+      {
+        "type": "mc",
+        "sentence": "I need to look at your car a bit more, but it ___ be possible to repair it.",
+        "options": [
+          "might not",
+          "could not"
+        ],
+        "answer": "might not",
+        "explanation": "Posibilidad negativa → might not (could not = imposible)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Sorry, I can't come out tonight. My teacher said I ___ finish this essay.",
+        "options": [
+          "have to",
+          "must"
+        ],
+        "answer": "have to",
+        "explanation": "Obligación externa (lo manda otra persona) → have to."
+      },
+      {
+        "type": "mc",
+        "sentence": "I ___ catch a train home. My brother's picking me up.",
+        "options": [
+          "don't need to",
+          "can't"
+        ],
+        "answer": "don't need to",
+        "explanation": "Falta de necesidad → don't need to."
+      },
+      {
+        "type": "mc",
+        "sentence": "You ___ go to the lecture this afternoon. It's optional.",
+        "options": [
+          "don't have to",
+          "mustn't"
+        ],
+        "answer": "don't have to",
+        "explanation": "Opcional = falta de obligación → don't have to."
+      },
+      {
+        "type": "mc",
+        "sentence": "These tablets will make you feel better, but you ___ take more than two at a time.",
+        "options": [
+          "mustn't",
+          "don't have to"
+        ],
+        "answer": "mustn't",
+        "explanation": "Prohibición → mustn't."
+      },
+      {
+        "type": "mc",
+        "sentence": "The meeting will be quite informal, so you ___ wear a suit.",
+        "options": [
+          "needn't",
+          "mustn't"
+        ],
+        "answer": "needn't",
+        "explanation": "No es necesario → needn't."
+      },
+      {
+        "type": "mc",
+        "sentence": "I fell asleep with the radio on. When I woke up, I ___ hear it — the battery was flat.",
+        "options": [
+          "couldn't",
+          "managed to"
+        ],
+        "answer": "couldn't",
+        "explanation": "Imposibilidad en el pasado → couldn't."
+      },
+      {
+        "type": "mc",
+        "sentence": "I climbed into the back and ___ to open the boot from the inside.",
+        "options": [
+          "managed",
+          "could"
+        ],
+        "answer": "managed",
+        "explanation": "Logro concreto con esfuerzo → managed to."
+      },
+      {
+        "type": "mc",
+        "sentence": "The current is very strong today, so if you don't stay close to the coast, you ___ carried out to sea.",
+        "options": [
+          "could get",
+          "could have got"
+        ],
+        "answer": "could get",
+        "explanation": "1st conditional (situación real ahora) → could + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "If you ___ moaning for a while, we might start to enjoy the holiday.",
+        "options": [
+          "would stop",
+          "had stopped"
+        ],
+        "answer": "would stop",
+        "explanation": "If you would + inf = petición / crítica fuerte."
+      },
+      {
+        "type": "mc",
+        "sentence": "If you ___ a seat in the waiting room, the dentist will call you in a few minutes.",
+        "options": [
+          "can take",
+          "will take"
+        ],
+        "answer": "can take",
+        "explanation": "Petición educada: if you can + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "If we ___ the forest that day, Jake would never have met you.",
+        "options": [
+          "hadn't been visiting",
+          "weren't visiting"
+        ],
+        "answer": "hadn't been visiting",
+        "explanation": "3rd conditional con acción en progreso → had been + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "Even if I ___ some spare cash at the moment, I wouldn't book one of those package holidays.",
+        "options": [
+          "did have",
+          "do have"
+        ],
+        "answer": "did have",
+        "explanation": "2nd conditional (irreal ahora) → past simple (did have, enfático)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Provided you ___ in a committed way, you should reach the level of fitness you want.",
+        "options": [
+          "train",
+          "trained"
+        ],
+        "answer": "train",
+        "explanation": "Provided (that) + present simple para el futuro."
+      },
+      {
+        "type": "mc",
+        "sentence": "If you ___ during the lesson yesterday, you would know the answer now.",
+        "options": [
+          "had been concentrating",
+          "were concentrating"
+        ],
+        "answer": "had been concentrating",
+        "explanation": "Mixed: pasado (yesterday) que afecta al presente (now)."
+      },
+      {
+        "type": "gap",
+        "sentence": "Correct the mistake: If you ___ (take) these photos, I wouldn't have remembered our holiday. (negative)",
+        "answers": [
+          "hadn't taken",
+          "had not taken"
+        ],
+        "explanation": "3rd conditional → if + past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "Correct the mistake: If I ___ (feel) tired, I usually go to bed early.",
+        "answers": [
+          "feel"
+        ],
+        "explanation": "Zero conditional (hábito) → present + present."
+      },
+      {
+        "type": "gap",
+        "sentence": "If we don't reduce our dependence on fossil fuels, global warming ___ (become) a more serious problem.",
+        "answers": [
+          "will become"
+        ],
+        "explanation": "1st conditional → will + inf."
+      },
+      {
+        "type": "gap",
+        "sentence": "If the petrol engine hadn't been invented, there ___ (still / be) plenty of oil left now.",
+        "answers": [
+          "would still be"
+        ],
+        "explanation": "Mixed: pasado que afecta al presente → would + inf."
+      },
+      {
+        "type": "gap",
+        "sentence": "If you keep on working hard, I think you ___ (promote) next year.",
+        "answers": [
+          "will be promoted"
+        ],
+        "explanation": "1st conditional en pasiva."
+      },
+      {
+        "type": "gap",
+        "sentence": "If you hadn't insisted on leaving so early, we ___ (not walk) around the airport now with nothing to do.",
+        "answers": [
+          "wouldn't be walking",
+          "would not be walking"
+        ],
+        "explanation": "Mixed: would + be + -ing (ahora en progreso)."
+      },
+      {
+        "type": "gap",
+        "sentence": "She would be running the marathon next week if she ___ (keep) to her training plan over the last few months.",
+        "answers": [
+          "had kept"
+        ],
+        "explanation": "Mixed: if + past perfect, would + inf."
+      },
+      {
+        "type": "gap",
+        "sentence": "If the weather hadn't improved on the second day, last week's holiday ___ (ruin).",
+        "answers": [
+          "would have been ruined"
+        ],
+        "explanation": "3rd conditional en pasiva."
+      },
+      {
+        "type": "gap",
+        "sentence": "If you hadn't paid the man on the door, we ___ (not allow) to watch the rest of the film.",
+        "answers": [
+          "wouldn't have been allowed",
+          "would not have been allowed"
+        ],
+        "explanation": "3rd conditional en pasiva."
+      },
+      {
+        "type": "gap",
+        "sentence": "Katie wishes she ___ (work) harder when she was at school.",
+        "answers": [
+          "had worked"
+        ],
+        "explanation": "Arrepentimiento del pasado → wish + past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "I wish I ___ (find) the present I bought for my mum. It must be here somewhere.",
+        "answers": [
+          "could find"
+        ],
+        "explanation": "Frustración por algo difícil de cambiar → wish + could."
+      },
+      {
+        "type": "gap",
+        "sentence": "I wish my sister ___ (be) so untidy. Her bedroom is always a mess. (negative)",
+        "answers": [
+          "wasn't",
+          "weren't",
+          "was not",
+          "were not"
+        ],
+        "explanation": "Situación presente → wish + past simple."
+      },
+      {
+        "type": "gap",
+        "sentence": "If only you ___ (tell) me when you were going to arrive. I'd have come to meet you.",
+        "answers": [
+          "had told"
+        ],
+        "explanation": "Pasado → if only + past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "I wish you ___ (not keep) interrupting me.",
+        "answers": [
+          "wouldn't keep",
+          "would not keep"
+        ],
+        "explanation": "Molestia por lo que hace otro → wish + wouldn't."
+      },
+      {
+        "type": "gap",
+        "sentence": "If only I ___ (not turn down) that job offer. I'd be working in Milan now.",
+        "answers": [
+          "hadn't turned down",
+          "had not turned down"
+        ],
+        "explanation": "Arrepentimiento del pasado → if only + past perfect."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I can't see the business being a success.",
+        "keyword": "CHANCE",
+        "before": "There's",
+        "after": "business will fail.",
+        "answers": [
+          "every chance that the",
+          "every chance the",
+          "a strong chance that the",
+          "a good chance that the"
+        ],
+        "explanation": "There's every chance (that) + oración = es muy probable."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "David said he won't give me a promotion, but I think he might.",
+        "keyword": "CONCEIVABLY",
+        "before": "David could",
+        "after": "a promotion.",
+        "answers": [
+          "conceivably give me"
+        ],
+        "explanation": "Could + conceivably = posibilidad remota."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The car is going to break down on this journey. I'm certain of it.",
+        "keyword": "BOUND",
+        "before": "The car",
+        "after": "during this drive.",
+        "answers": [
+          "is bound to break down"
+        ],
+        "explanation": "Certeza en el futuro → be bound to + inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I can't believe that the building is still standing.",
+        "keyword": "FALLEN",
+        "before": "That building",
+        "after": "by now.",
+        "answers": [
+          "should have fallen down",
+          "ought to have fallen down",
+          "should have fallen"
+        ],
+        "explanation": "Should have + participio = lo esperable era que hubiera pasado."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Do you think it might rain later tonight?",
+        "keyword": "CHANCE",
+        "before": "Is there",
+        "after": "raining later tonight?",
+        "answers": [
+          "any chance of it",
+          "a chance of it"
+        ],
+        "explanation": "Is there any chance of + (sujeto) + -ing?"
+      },
+      {
+        "type": "kwt",
+        "lead_in": "We're going to win tonight. I'm certain of it.",
+        "keyword": "HIGHLY",
+        "before": "It's",
+        "after": "we will lose tonight's match.",
+        "answers": [
+          "highly unlikely that"
+        ],
+        "explanation": "It's highly unlikely that + oración."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Although I'd bought a ticket before getting on the bus, there was no requirement to do so.",
+        "keyword": "HAVE",
+        "before": "I",
+        "after": "a ticket before my bus journey.",
+        "answers": [
+          "needn't have bought",
+          "need not have bought"
+        ],
+        "explanation": "Lo hice pero no era necesario → needn't have + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The law states that drivers on this road are not allowed to exceed 100 mph.",
+        "keyword": "GO",
+        "before": "You",
+        "after": "100 mph while driving on this road.",
+        "answers": [
+          "mustn't go over",
+          "must not go over",
+          "mustn't go faster than",
+          "must not go faster than",
+          "mustn't go above",
+          "must not go above"
+        ],
+        "explanation": "Prohibición por ley → mustn't."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I believe that in the near future it will be possible for people to live on other planets.",
+        "keyword": "ABLE",
+        "before": "It is my belief that soon humanity",
+        "after": "live on other planets.",
+        "answers": [
+          "will be able to"
+        ],
+        "explanation": "Futuro de can → will be able to."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I heard a knock and thought it was Chris, but that isn't possible as he's in China.",
+        "keyword": "BEEN",
+        "before": "Despite what I first thought, the knock at the door",
+        "after": "Chris as he's in China.",
+        "answers": [
+          "can't have been",
+          "cannot have been",
+          "couldn't have been",
+          "could not have been"
+        ],
+        "explanation": "Imposibilidad en el pasado → can't / couldn't have + participio."
+      }
     ]
   }
 };
@@ -1768,7 +2306,7 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'speculation', 'modals', 'conditionals', 'wish', 'transformations', 'speaking'];
+const TABS = ['theory', 'speculation', 'modals', 'conditionals', 'wish', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     speculation: {
@@ -1790,6 +2328,11 @@ const QUIZ_INFO = {
         title: 'Alternatives to If & Wish / If only',
         instructions: 'Choose the correct option or write the missing word(s).',
         color: 'rose'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Units 4, 10 & 11): modals, conditionals and wish. Questions are shuffled every time you restart.',
+        color: 'purple'
     },
     transformations: {
         title: 'Keyword Transformation (Part 4)',
