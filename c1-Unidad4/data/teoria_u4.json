@@ -1,0 +1,282 @@
+{
+  "sections": [
+    {
+      "id": "speculation",
+      "title": "A) MODAL VERBS: POSSIBILITY · PROBABILITY · CERTAINTY",
+      "color": "sky",
+      "blocks": [
+        {
+          "heading": "La clave: la FORMA cambia según el MOMENTO del que hablas",
+          "rule": "Presente / futuro → modal + inf (sin to). Ahora mismo (en progreso) → modal + be + V-ing. Pasado → modal + have + participio. Pasado en progreso → modal + have been + V-ing.",
+          "examples": ["She may be tired.", "She may be having a shower.", "Peter may have bought a new car.", "Lois may have been having a shower when you arrived."]
+        },
+        {
+          "heading": "POSSIBILITY: may / might / could",
+          "rule": "Presente / futuro: may / might / could + inf. Negativa: may / might + not + inf (\"puede que no\"). ¡Ojo! could not / can't NO es posibilidad negativa: significa que es imposible.",
+          "examples": ["She may be tired.", "She may not be at the library.", "It could rain later."],
+          "tip": "She might not be at home (= quizá no esté). She can't be at home (= es imposible que esté)."
+        },
+        {
+          "heading": "POSSIBILITY: ahora mismo y en el pasado",
+          "rule": "At the moment: may / might / could + be + V-ing. Pasado: may / might / could + have + participio. Pasado continuo: may / might + have been + V-ing.",
+          "examples": ["She may be having a shower.", "Peter may have bought a new car.", "Lois may have been having a shower when you arrived."]
+        },
+        {
+          "heading": "PROBABILITY: may / might / could + WELL",
+          "rule": "Well hace que sea MUY probable. Futuro: may / might / could + well + inf (o + be + V-ing). Pasado: may / might / could + well + have + participio.",
+          "examples": ["It may well rain tomorrow.", "They may well be waiting for us.", "He may well have won the competition."]
+        },
+        {
+          "heading": "PROBABILITY: be likely / unlikely to + inf",
+          "rule": "Adjetivo + to inf. Funciona en cualquier tiempo cambiando el verbo be. También It is likely that + oración.",
+          "examples": ["It is likely to rain tomorrow.", "He was unlikely to win the lottery.", "It is likely that she will call."]
+        },
+        {
+          "heading": "PROBABILITY: There is a little / slight / some / strong likelihood ...",
+          "rule": "+ of + V-ing (o of + objeto + V-ing) · + that + oración.",
+          "examples": ["There is a strong likelihood of it raining tomorrow.", "There is a slight likelihood of him passing the exam.", "There is a strong likelihood that it will rain tomorrow."],
+          "tip": "Con of + V-ing pon el sujeto delante del verbo si no es obvio: of IT raining, of HIM passing (✗ of raining)."
+        },
+        {
+          "heading": "CERTAINTY: futuro → be BOUND to + inf",
+          "rule": "Para el futuro no hay verbo modal de certeza: usamos to be + bound + to inf (= es seguro que...).",
+          "examples": ["If you don't study, you are bound to fail the test."]
+        },
+        {
+          "heading": "CERTAINTY: presente y pasado → must / can't / couldn't",
+          "rule": "Presente: must + inf (+, estoy seguro de que sí) · can't / couldn't + inf (−, estoy seguro de que no). Pasado: must + have + participio · can't / couldn't + have + participio.",
+          "examples": ["You must be exhausted after the trip.", "That can't be John — he's in Australia.", "The lights are off; they must have gone to bed.", "He can't have stolen the money; he was with me."],
+          "tip": "El negativo de must (deducción) es can't, NUNCA mustn't. ✗ He mustn't have stolen it."
+        },
+        {
+          "heading": "SHOULD + inf: mucha probabilidad (expectativa)",
+          "rule": "Reduce la certeza: algo es muy probable o lo esperamos, pero no es seguro.",
+          "examples": ["Real Madrid should win the league.", "The parcel should arrive by Friday."]
+        },
+        {
+          "heading": "Tabla resumen: grado de certeza × momento",
+          "rule": "Lee la fila (cuánto de seguro estás) y la columna (cuándo).",
+          "table": {
+            "headers": ["Grado", "Presente / futuro", "Ahora (en progreso)", "Pasado"],
+            "rows": [
+              ["Posible", "may / might / could + inf", "may / might / could + be + -ing", "may / might / could + have + participio"],
+              ["Posible (−)", "may / might + not + inf", "may / might + not + be + -ing", "may / might + not + have + participio"],
+              ["Muy probable", "may / might / could + well + inf · should + inf · be likely to", "may / might / could + well + be + -ing", "may / might / could + well + have + participio"],
+              ["Seguro (+)", "must + inf · (futuro) be bound to + inf", "must + be + -ing", "must + have + participio"],
+              ["Seguro (−)", "can't / couldn't + inf", "can't / couldn't + be + -ing", "can't / couldn't + have + participio"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "modals",
+      "title": "B) MODAL VERBS: OBLIGATION · PROHIBITION · ABILITY · PERMISSION · ADVICE · NECESSITY",
+      "color": "indigo",
+      "blocks": [
+        {
+          "heading": "OBLIGATION: must / have to",
+          "rule": "Must → obligación fuerte: leyes, normas escritas (y la que se impone el propio hablante). Have to → obligación externa, alguien te lo ordena. Must no tiene pasado ni futuro: usamos had to / will have to.",
+          "examples": ["You must wear a seatbelt.", "I have to finish this report — my boss wants it today.", "I had to work late yesterday.", "You will have to wait."]
+        },
+        {
+          "heading": "Semi-modal: MAKE + alguien + inf (sin to)",
+          "rule": "Obligar a alguien. En pasiva el TO vuelve: be made + to inf.",
+          "examples": ["My parents made me do the dishes.", "I was made to wait outside."]
+        },
+        {
+          "heading": "PROHIBITION vs LACK OF OBLIGATION",
+          "rule": "Mustn't → prohibición (por ley / normas). En pasado / futuro: wasn't allowed to / won't be allowed to. Don't have to → falta de obligación: no es necesario, pero puedes.",
+          "examples": ["You mustn't smoke in hospitals.", "We weren't allowed to use our phones.", "You don't have to come if you don't want to."],
+          "tip": "Mustn't ≠ don't have to. You mustn't go = está prohibido. You don't have to go = no es obligatorio."
+        },
+        {
+          "heading": "ABILITY: can / could / be able to / be capable of",
+          "rule": "Can → habilidad general en presente. Could → habilidad general en el pasado. Be able to + inf / be capable of + V-ing → todos los tiempos, y para un logro concreto (esfuerzo para conseguir una meta). Negativas: unable / incapable.",
+          "examples": ["I can speak English.", "I could run fast when I was a child.", "As I trained every day, I was able to run the marathon.", "He is incapable of telling a lie."],
+          "tip": "Logro concreto en el pasado → was able to / managed to, no could: ✗ I could pass the exam yesterday. ✓ I was able to pass it. (Negativo sí: I couldn't pass it.)"
+        },
+        {
+          "heading": "Semi-modal: MANAGE to + inf / SUCCEED in + V-ing",
+          "rule": "Conseguir algo con dificultad.",
+          "examples": ["As I trained every day, I managed to compete.", "She succeeded in passing the exam at the third attempt."]
+        },
+        {
+          "heading": "COULD + HAVE + participio → habilidad que no se usó",
+          "rule": "Podrías haberlo hecho, pero no lo hiciste. También para quejarse: You could have told me!",
+          "examples": ["I could have passed the test, but I wasn't fast enough.", "You could have called me!"]
+        },
+        {
+          "heading": "PERMISSION: can / could / may · let · allow · permit",
+          "rule": "Can / could / may → pedir permiso (may es el más formal). Can't / couldn't → falta de permiso. Let + alguien + inf (sin to). Allow / permit + alguien + to inf. Pasiva: be allowed / permitted to + inf (let no tiene pasiva).",
+          "examples": ["May I come in?", "You can't park here.", "My parents let me go out.", "They don't allow us to use phones.", "We weren't allowed to leave."]
+        },
+        {
+          "heading": "ADVICE: should / ought to / must / had better",
+          "rule": "Should / ought to + inf → consejo general (presente / futuro). Negativa: shouldn't / ought not to. Pasado (crítica): should / ought to + have + participio. Must → consejo fuerte o moral. Had better + inf (sin to) → consejo; si no, habrá una consecuencia negativa. Negativa: had better not.",
+          "examples": ["You should / ought to see a doctor.", "You should have studied a lot more.", "You must see that film — it's brilliant!", "It's raining a lot; you'd better take an umbrella.", "You'd better not be late."]
+        },
+        {
+          "heading": "NECESSITY: need to · don't need to · needn't",
+          "rule": "Presente: need to (+) · don't need to / needn't + inf (−). Pasado: didn't need to → no era necesario y NO lo hice. Needn't + have + participio → lo hice, pero no era necesario.",
+          "examples": ["You needn't come tomorrow.", "I didn't need to take a taxi, so I walked.", "I needn't have taken a taxi — the station was just around the corner."]
+        },
+        {
+          "heading": "SHOWING ANNOYANCE: may / might / could + as well / at least",
+          "rule": "May / might / could + as well + inf → da igual / ya que estamos (no hay nada mejor). Might / could + at least + inf → queja: \"podrías al menos...\". Pasado: could / might + (at least) + have + participio.",
+          "examples": ["There's nothing on TV; we might as well go to bed.", "You could at least say thank you!", "You might at least have called me!"]
+        }
+      ]
+    },
+    {
+      "id": "conditionals",
+      "title": "C) CONDITIONALS",
+      "color": "purple",
+      "blocks": [
+        {
+          "heading": "ZERO CONDITIONAL: If / When + present simple, present simple",
+          "rule": "Verdades universales y hechos que siempre se cumplen (también past – past para hábitos pasados).",
+          "examples": ["If you heat water, it boils.", "When you mix blue and yellow, you get green."]
+        },
+        {
+          "heading": "1st CONDITIONAL: If / When + present simple, will / may / can / could / should / must / be going to + inf",
+          "rule": "Situación real que puede pasar o no en el futuro.",
+          "examples": ["If you study more, you will pass the test.", "If it rains tomorrow, we may cancel the picnic."]
+        },
+        {
+          "heading": "1st CONDITIONAL más improbable: happen to / should",
+          "rule": "If + sujeto + happen to / should / should happen to + inf → hace que el suceso sea MENOS probable (= si por casualidad). Inversión (formal): Should + sujeto + inf, ...",
+          "examples": ["If you happen to take the bus, you will arrive on time.", "If you should see Anna, tell her I called.", "Should you apply for the job, you will be hired."]
+        },
+        {
+          "heading": "2nd CONDITIONAL: If + past simple, would / could / might + inf",
+          "rule": "Situaciones imaginarias o poco probables en el presente / futuro. Con be usamos SIEMPRE were (para todas las personas). If I were you → dar un consejo.",
+          "examples": ["If I had more money, I would travel the world.", "If I were you, I would apologise."]
+        },
+        {
+          "heading": "2nd CONDITIONAL más improbable: were to + inf",
+          "rule": "If + sujeto + were to + inf, would / could / might + inf. Inversión: Were + sujeto + to + inf, ...",
+          "examples": ["If I were to have more free time, I would go to the park.", "Were I to win the election, I would reduce the fees."]
+        },
+        {
+          "heading": "3rd CONDITIONAL: If + past perfect, would / could / might + have + participio",
+          "rule": "Situación pasada que no ocurrió: arrepentimientos y críticas sobre el pasado. Inversión: Had + sujeto + participio, ...",
+          "examples": ["If I had studied more, I would have passed the exam.", "Had I studied more, I would have passed the exam."],
+          "tip": "En la inversión, la negativa es Had + sujeto + not: Had I not studied... (✗ Hadn't I studied)."
+        },
+        {
+          "heading": "MIXED CONDITIONALS",
+          "rule": "3rd + 2nd → If + past perfect, would / could / might + inf: situación PASADA que afecta al PRESENTE. 2nd + 3rd → If + past simple, would / could / might + have + participio: situación GENERAL (siempre es así) que afecta al PASADO.",
+          "examples": ["If I had eaten breakfast, I wouldn't be hungry now.", "If I had studied more, I would have a better job now.", "If I were taller, I could have become a pilot.", "If he spoke English, he would have got the job."]
+        },
+        {
+          "heading": "Tabla resumen de condicionales",
+          "rule": "Mira el tiempo de cada parte.",
+          "table": {
+            "headers": ["Tipo", "If-clause", "Resultado", "Inversión"],
+            "rows": [
+              ["Zero", "present simple", "present simple", "—"],
+              ["1st", "present simple / happen to / should + inf", "will / may / can... + inf", "Should you apply, ..."],
+              ["2nd", "past simple (were) / were to + inf", "would / could / might + inf", "Were I to win, ..."],
+              ["3rd", "past perfect", "would / could / might + have + participio", "Had I studied, ..."],
+              ["Mixed 3rd → 2nd", "past perfect", "would + inf (ahora)", "Had I eaten, I wouldn't be..."],
+              ["Mixed 2nd → 3rd", "past simple (general)", "would + have + participio", "Were I taller, I could have..."]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "wish",
+      "title": "D) ALTERNATIVES TO IF · WISH / IF ONLY",
+      "color": "rose",
+      "blocks": [
+        {
+          "heading": "Provided (that) / Providing / As long as / On condition that",
+          "rule": "Condición estricta: \"siempre y cuando\". Van con present simple aunque hablen del futuro.",
+          "examples": ["You can borrow my car as long as you drive carefully.", "They lent us the money on condition that we paid it back."]
+        },
+        {
+          "heading": "Unless = if not (a menos que)",
+          "rule": "Unless ya es negativo, así que el verbo va en afirmativo.",
+          "examples": ["We'll miss the train unless we leave now. (= if we don't leave now)"]
+        },
+        {
+          "heading": "Otherwise (de lo contrario) · Even if (incluso si)",
+          "rule": "Otherwise va después de una orden o afirmación. Even if → el resultado no cambia aunque se cumpla la condición.",
+          "examples": ["Hurry up, otherwise we'll be late.", "I wouldn't go even if they paid me."]
+        },
+        {
+          "heading": "But for / Were it not for / Had it not been for (si no fuera por)",
+          "rule": "But for + sustantivo (2nd o 3rd). Were it not for + sustantivo → 2nd conditional (presente). Had it not been for + sustantivo → 3rd conditional (pasado).",
+          "examples": ["But for your help, I would have failed the exam.", "Were it not for the rain, we would go out.", "Had it not been for the rain, we would have gone out."]
+        },
+        {
+          "heading": "WISH / IF ONLY + past simple",
+          "rule": "Queremos cambiar una situación o estado PRESENTE. Con be → were (también was en inglés informal).",
+          "examples": ["I wish I had more money.", "If only I lived near the beach.", "I wish I were taller."]
+        },
+        {
+          "heading": "WISH / IF ONLY + past perfect",
+          "rule": "Arrepentimiento sobre una situación PASADA.",
+          "examples": ["I wish I had studied more.", "If only I hadn't told him the truth."]
+        },
+        {
+          "heading": "WISH / IF ONLY + would",
+          "rule": "Mostrar enfado o molestia por el comportamiento de OTRA persona (queremos que cambie). No se usa con I (✗ I wish I would).",
+          "examples": ["I wish my brother would not take my things.", "I wish you would stop making that noise!"]
+        },
+        {
+          "heading": "WISH / IF ONLY + could",
+          "rule": "Falta de habilidad o de posibilidad.",
+          "examples": ["I wish I could go to Javi's party.", "I wish I could speak Chinese."]
+        },
+        {
+          "heading": "Tabla resumen: WISH / IF ONLY",
+          "rule": "",
+          "table": {
+            "headers": ["Estructura", "Uso", "Ejemplo"],
+            "rows": [
+              ["wish + past simple", "cambiar el presente", "I wish I had more money."],
+              ["wish + past perfect", "arrepentimiento del pasado", "I wish I had studied more."],
+              ["wish + would", "molestia por lo que hace otro", "I wish he would stop shouting."],
+              ["wish + could", "falta de habilidad / posibilidad", "I wish I could go to the party."]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "speaking": [
+    {
+      "part": "Part 2 (Speculating about the pictures)",
+      "structure": "They might have just [participle], which would explain why they look so [adjective].",
+      "example": "They might have just received some good news, which would explain why they look so excited.",
+      "translation": "Puede que acaben de [participio], lo que explicaría por qué parecen tan [adjetivo]."
+    },
+    {
+      "part": "Part 2 (Strong deduction)",
+      "structure": "Judging by [evidence], she must be [-ing / adjective]; she can't be enjoying it.",
+      "example": "Judging by her expression, she must be feeling stressed; she can't be enjoying the experience.",
+      "translation": "A juzgar por [evidencia], debe de estar [...]; no puede estar disfrutándolo."
+    },
+    {
+      "part": "Part 3 (Setting conditions)",
+      "structure": "This option would work well, provided that [condition]; otherwise, [consequence].",
+      "example": "This option would work well, provided that the council invests enough money; otherwise, it might fail.",
+      "translation": "Esta opción funcionaría bien siempre y cuando [condición]; de lo contrario, [consecuencia]."
+    },
+    {
+      "part": "Part 4 (Hypothetical opinion)",
+      "structure": "Were governments to [verb], I think there would be a significant improvement in [area].",
+      "example": "Were governments to invest more in education, I think there would be a significant improvement in public health.",
+      "translation": "Si los gobiernos [verbo], creo que habría una mejora significativa en [área]."
+    },
+    {
+      "part": "Part 1 (Talking about regrets)",
+      "structure": "If I had [participle] when I was younger, I would be [adjective] now. I really wish I had.",
+      "example": "If I had learnt to play an instrument when I was younger, I would be in a band now. I really wish I had.",
+      "translation": "Si hubiera [participio] de pequeño, ahora sería [adjetivo]. Ojalá lo hubiera hecho."
+    }
+  ]
+}

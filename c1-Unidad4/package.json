@@ -1,0 +1,14 @@
+{
+  "name": "c1-unit4-app",
+  "version": "1.0.0",
+  "description": "Unit 4: Modal Verbs, Conditionals, Alternatives to If & Wish",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 Advanced - Unit 4: Modal Verbs & Conditionals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+.active-tab {
+    border-color: #0284c7; /* sky-600 */
+    color: #0284c7;
+}
+
+.inactive-tab {
+    border-color: transparent;
+    color: #6b7280; /* gray-500 */
+}
+
+.inactive-tab:hover {
+    border-color: #e5e7eb; /* gray-200 */
+    color: #374151; /* gray-700 */
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.input-kt {
+    border: none;
+    border-bottom: 2px solid #d1d5db; /* gray-300 */
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+    text-align: center;
+    transition: all 0.2s;
+    outline: none;
+    min-width: 180px;
+    max-width: 100%;
+}
+
+.input-kt:focus {
+    border-bottom-color: #0284c7; /* sky-600 */
+}
+
+.input-kt.correct {
+    border-bottom-color: #22c55e; /* green-500 */
+    color: #15803d; /* green-700 */
+    background-color: #f0fdf4; /* green-50 */
+}
+
+.input-kt.incorrect {
+    border-bottom-color: #ef4444; /* red-500 */
+    color: #b91c1c; /* red-700 */
+    background-color: #fef2f2; /* red-50 */
+}
+
+.gap-blank {
+    display: inline-block;
+    min-width: 4rem;
+    border-bottom: 2px solid #9ca3af; /* gray-400 */
+    margin: 0 0.25rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.gap-blank.correct {
+    border-bottom-color: #22c55e;
+    color: #15803d;
+}
+
+.gap-blank.incorrect {
+    border-bottom-color: #ef4444;
+    color: #b91c1c;
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(3px); }
+}
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 4</span></h1>
+            <p class="text-gray-500 mt-1">Modal Verbs · Conditionals · Alternatives to If · Wish / If only</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory
+                </button>
+                <button onclick="switchTab('speculation')" id="tab-speculation" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Modals: Speculation
+                </button>
+                <button onclick="switchTab('modals')" id="tab-modals" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Modals: Obligation & more
+                </button>
+                <button onclick="switchTab('conditionals')" id="tab-conditionals" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Conditionals
+                </button>
+                <button onclick="switchTab('wish')" id="tab-wish" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Alternatives to If & Wish
+                </button>
+                <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Modal Verbs · Conditionals · Alternatives to If · Wish / If only</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tabs (rendered by app.js) -->
+        <section id="content-speculation" class="tab-content hidden"></section>
+        <section id="content-modals" class="tab-content hidden"></section>
+        <section id="content-conditionals" class="tab-content hidden"></section>
+        <section id="content-wish" class="tab-content hidden"></section>
+        <section id="content-transformations" class="tab-content hidden"></section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Use the structures of this unit to sound more C1 in the Speaking exam.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Data embedded directly so this file works standalone (no server needed)
+        window.UNIT_DATA = {
+  "teoria": {
+    "sections": [
+      {
+        "id": "speculation",
+        "title": "A) MODAL VERBS: POSSIBILITY · PROBABILITY · CERTAINTY",
+        "color": "sky",
+        "blocks": [
+          {
+            "heading": "La clave: la FORMA cambia según el MOMENTO del que hablas",
+            "rule": "Presente / futuro → modal + inf (sin to). Ahora mismo (en progreso) → modal + be + V-ing. Pasado → modal + have + participio. Pasado en progreso → modal + have been + V-ing.",
+            "examples": [
+              "She may be tired.",
+              "She may be having a shower.",
+              "Peter may have bought a new car.",
+              "Lois may have been having a shower when you arrived."
+            ]
+          },
+          {
+            "heading": "POSSIBILITY: may / might / could",
+            "rule": "Presente / futuro: may / might / could + inf. Negativa: may / might + not + inf (\"puede que no\"). ¡Ojo! could not / can't NO es posibilidad negativa: significa que es imposible.",
+            "examples": [
+              "She may be tired.",
+              "She may not be at the library.",
+              "It could rain later."
+            ],
+            "tip": "She might not be at home (= quizá no esté). She can't be at home (= es imposible que esté)."
+          },
+          {
+            "heading": "POSSIBILITY: ahora mismo y en el pasado",
+            "rule": "At the moment: may / might / could + be + V-ing. Pasado: may / might / could + have + participio. Pasado continuo: may / might + have been + V-ing.",
+            "examples": [
+              "She may be having a shower.",
+              "Peter may have bought a new car.",
+              "Lois may have been having a shower when you arrived."
+            ]
+          },
+          {
+            "heading": "PROBABILITY: may / might / could + WELL",
+            "rule": "Well hace que sea MUY probable. Futuro: may / might / could + well + inf (o + be + V-ing). Pasado: may / might / could + well + have + participio.",
+            "examples": [
+              "It may well rain tomorrow.",
+              "They may well be waiting for us.",
+              "He may well have won the competition."
+            ]
+          },
+          {
+            "heading": "PROBABILITY: be likely / unlikely to + inf",
+            "rule": "Adjetivo + to inf. Funciona en cualquier tiempo cambiando el verbo be. También It is likely that + oración.",
+            "examples": [
+              "It is likely to rain tomorrow.",
+              "He was unlikely to win the lottery.",
+              "It is likely that she will call."
+            ]
+          },
+          {
+            "heading": "PROBABILITY: There is a little / slight / some / strong likelihood ...",
+            "rule": "+ of + V-ing (o of + objeto + V-ing) · + that + oración.",
+            "examples": [
+              "There is a strong likelihood of it raining tomorrow.",
+              "There is a slight likelihood of him passing the exam.",
+              "There is a strong likelihood that it will rain tomorrow."
+            ],
+            "tip": "Con of + V-ing pon el sujeto delante del verbo si no es obvio: of IT raining, of HIM passing (✗ of raining)."
+          },
+          {
+            "heading": "CERTAINTY: futuro → be BOUND to + inf",
+            "rule": "Para el futuro no hay verbo modal de certeza: usamos to be + bound + to inf (= es seguro que...).",
+            "examples": [
+              "If you don't study, you are bound to fail the test."
+            ]
+          },
+          {
+            "heading": "CERTAINTY: presente y pasado → must / can't / couldn't",
+            "rule": "Presente: must + inf (+, estoy seguro de que sí) · can't / couldn't + inf (−, estoy seguro de que no). Pasado: must + have + participio · can't / couldn't + have + participio.",
+            "examples": [
+              "You must be exhausted after the trip.",
+              "That can't be John — he's in Australia.",
+              "The lights are off; they must have gone to bed.",
+              "He can't have stolen the money; he was with me."
+            ],
+            "tip": "El negativo de must (deducción) es can't, NUNCA mustn't. ✗ He mustn't have stolen it."
+          },
+          {
+            "heading": "SHOULD + inf: mucha probabilidad (expectativa)",
+            "rule": "Reduce la certeza: algo es muy probable o lo esperamos, pero no es seguro.",
+            "examples": [
+              "Real Madrid should win the league.",
+              "The parcel should arrive by Friday."
+            ]
+          },
+          {
+            "heading": "Tabla resumen: grado de certeza × momento",
+            "rule": "Lee la fila (cuánto de seguro estás) y la columna (cuándo).",
+            "table": {
+              "headers": [
+                "Grado",
+                "Presente / futuro",
+                "Ahora (en progreso)",
+                "Pasado"
+              ],
+              "rows": [
+                [
+                  "Posible",
+                  "may / might / could + inf",
+                  "may / might / could + be + -ing",
+                  "may / might / could + have + participio"
+                ],
+                [
+                  "Posible (−)",
+                  "may / might + not + inf",
+                  "may / might + not + be + -ing",
+                  "may / might + not + have + participio"
+                ],
+                [
+                  "Muy probable",
+                  "may / might / could + well + inf · should + inf · be likely to",
+                  "may / might / could + well + be + -ing",
+                  "may / might / could + well + have + participio"
+                ],
+                [
+                  "Seguro (+)",
+                  "must + inf · (futuro) be bound to + inf",
+                  "must + be + -ing",
+                  "must + have + participio"
+                ],
+                [
+                  "Seguro (−)",
+                  "can't / couldn't + inf",
+                  "can't / couldn't + be + -ing",
+                  "can't / couldn't + have + participio"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "modals",
+        "title": "B) MODAL VERBS: OBLIGATION · PROHIBITION · ABILITY · PERMISSION · ADVICE · NECESSITY",
+        "color": "indigo",
+        "blocks": [
+          {
+            "heading": "OBLIGATION: must / have to",
+            "rule": "Must → obligación fuerte: leyes, normas escritas (y la que se impone el propio hablante). Have to → obligación externa, alguien te lo ordena. Must no tiene pasado ni futuro: usamos had to / will have to.",
+            "examples": [
+              "You must wear a seatbelt.",
+              "I have to finish this report — my boss wants it today.",
+              "I had to work late yesterday.",
+              "You will have to wait."
+            ]
+          },
+          {
+            "heading": "Semi-modal: MAKE + alguien + inf (sin to)",
+            "rule": "Obligar a alguien. En pasiva el TO vuelve: be made + to inf.",
+            "examples": [
+              "My parents made me do the dishes.",
+              "I was made to wait outside."
+            ]
+          },
+          {
+            "heading": "PROHIBITION vs LACK OF OBLIGATION",
+            "rule": "Mustn't → prohibición (por ley / normas). En pasado / futuro: wasn't allowed to / won't be allowed to. Don't have to → falta de obligación: no es necesario, pero puedes.",
+            "examples": [
+              "You mustn't smoke in hospitals.",
+              "We weren't allowed to use our phones.",
+              "You don't have to come if you don't want to."
+            ],
+            "tip": "Mustn't ≠ don't have to. You mustn't go = está prohibido. You don't have to go = no es obligatorio."
+          },
+          {
+            "heading": "ABILITY: can / could / be able to / be capable of",
+            "rule": "Can → habilidad general en presente. Could → habilidad general en el pasado. Be able to + inf / be capable of + V-ing → todos los tiempos, y para un logro concreto (esfuerzo para conseguir una meta). Negativas: unable / incapable.",
+            "examples": [
+              "I can speak English.",
+              "I could run fast when I was a child.",
+              "As I trained every day, I was able to run the marathon.",
+              "He is incapable of telling a lie."
+            ],
+            "tip": "Logro concreto en el pasado → was able to / managed to, no could: ✗ I could pass the exam yesterday. ✓ I was able to pass it. (Negativo sí: I couldn't pass it.)"
+          },
+          {
+            "heading": "Semi-modal: MANAGE to + inf / SUCCEED in + V-ing",
+            "rule": "Conseguir algo con dificultad.",
+            "examples": [
+              "As I trained every day, I managed to compete.",
+              "She succeeded in passing the exam at the third attempt."
+            ]
+          },
+          {
+            "heading": "COULD + HAVE + participio → habilidad que no se usó",
+            "rule": "Podrías haberlo hecho, pero no lo hiciste. También para quejarse: You could have told me!",
+            "examples": [
+              "I could have passed the test, but I wasn't fast enough.",
+              "You could have called me!"
+            ]
+          },
+          {
+            "heading": "PERMISSION: can / could / may · let · allow · permit",
+            "rule": "Can / could / may → pedir permiso (may es el más formal). Can't / couldn't → falta de permiso. Let + alguien + inf (sin to). Allow / permit + alguien + to inf. Pasiva: be allowed / permitted to + inf (let no tiene pasiva).",
+            "examples": [
+              "May I come in?",
+              "You can't park here.",
+              "My parents let me go out.",
+              "They don't allow us to use phones.",
+              "We weren't allowed to leave."
+            ]
+          },
+          {
+            "heading": "ADVICE: should / ought to / must / had better",
+            "rule": "Should / ought to + inf → consejo general (presente / futuro). Negativa: shouldn't / ought not to. Pasado (crítica): should / ought to + have + participio. Must → consejo fuerte o moral. Had better + inf (sin to) → consejo; si no, habrá una consecuencia negativa. Negativa: had better not.",
+            "examples": [
+              "You should / ought to see a doctor.",
+              "You should have studied a lot more.",
+              "You must see that film — it's brilliant!",
+              "It's raining a lot; you'd better take an umbrella.",
+              "You'd better not be late."
+            ]
+          },
+          {
+            "heading": "NECESSITY: need to · don't need to · needn't",
+            "rule": "Presente: need to (+) · don't need to / needn't + inf (−). Pasado: didn't need to → no era necesario y NO lo hice. Needn't + have + participio → lo hice, pero no era necesario.",
+            "examples": [
+              "You needn't come tomorrow.",
+              "I didn't need to take a taxi, so I walked.",
+              "I needn't have taken a taxi — the station was just around the corner."
+            ]
+          },
+          {
+            "heading": "SHOWING ANNOYANCE: may / might / could + as well / at least",
+            "rule": "May / might / could + as well + inf → da igual / ya que estamos (no hay nada mejor). Might / could + at least + inf → queja: \"podrías al menos...\". Pasado: could / might + (at least) + have + participio.",
+            "examples": [
+              "There's nothing on TV; we might as well go to bed.",
+              "You could at least say thank you!",
+              "You might at least have called me!"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "conditionals",
+        "title": "C) CONDITIONALS",
+        "color": "purple",
+        "blocks": [
+          {
+            "heading": "ZERO CONDITIONAL: If / When + present simple, present simple",
+            "rule": "Verdades universales y hechos que siempre se cumplen (también past – past para hábitos pasados).",
+            "examples": [
+              "If you heat water, it boils.",
+              "When you mix blue and yellow, you get green."
+            ]
+          },
+          {
+            "heading": "1st CONDITIONAL: If / When + present simple, will / may / can / could / should / must / be going to + inf",
+            "rule": "Situación real que puede pasar o no en el futuro.",
+            "examples": [
+              "If you study more, you will pass the test.",
+              "If it rains tomorrow, we may cancel the picnic."
+            ]
+          },
+          {
+            "heading": "1st CONDITIONAL más improbable: happen to / should",
+            "rule": "If + sujeto + happen to / should / should happen to + inf → hace que el suceso sea MENOS probable (= si por casualidad). Inversión (formal): Should + sujeto + inf, ...",
+            "examples": [
+              "If you happen to take the bus, you will arrive on time.",
+              "If you should see Anna, tell her I called.",
+              "Should you apply for the job, you will be hired."
+            ]
+          },
+          {
+            "heading": "2nd CONDITIONAL: If + past simple, would / could / might + inf",
+            "rule": "Situaciones imaginarias o poco probables en el presente / futuro. Con be usamos SIEMPRE were (para todas las personas). If I were you → dar un consejo.",
+            "examples": [
+              "If I had more money, I would travel the world.",
+              "If I were you, I would apologise."
+            ]
+          },
+          {
+            "heading": "2nd CONDITIONAL más improbable: were to + inf",
+            "rule": "If + sujeto + were to + inf, would / could / might + inf. Inversión: Were + sujeto + to + inf, ...",
+            "examples": [
+              "If I were to have more free time, I would go to the park.",
+              "Were I to win the election, I would reduce the fees."
+            ]
+          },
+          {
+            "heading": "3rd CONDITIONAL: If + past perfect, would / could / might + have + participio",
+            "rule": "Situación pasada que no ocurrió: arrepentimientos y críticas sobre el pasado. Inversión: Had + sujeto + participio, ...",
+            "examples": [
+              "If I had studied more, I would have passed the exam.",
+              "Had I studied more, I would have passed the exam."
+            ],
+            "tip": "En la inversión, la negativa es Had + sujeto + not: Had I not studied... (✗ Hadn't I studied)."
+          },
+          {
+            "heading": "MIXED CONDITIONALS",
+            "rule": "3rd + 2nd → If + past perfect, would / could / might + inf: situación PASADA que afecta al PRESENTE. 2nd + 3rd → If + past simple, would / could / might + have + participio: situación GENERAL (siempre es así) que afecta al PASADO.",
+            "examples": [
+              "If I had eaten breakfast, I wouldn't be hungry now.",
+              "If I had studied more, I would have a better job now.",
+              "If I were taller, I could have become a pilot.",
+              "If he spoke English, he would have got the job."
+            ]
+          },
+          {
+            "heading": "Tabla resumen de condicionales",
+            "rule": "Mira el tiempo de cada parte.",
+            "table": {
+              "headers": [
+                "Tipo",
+                "If-clause",
+                "Resultado",
+                "Inversión"
+              ],
+              "rows": [
+                [
+                  "Zero",
+                  "present simple",
+                  "present simple",
+                  "—"
+                ],
+                [
+                  "1st",
+                  "present simple / happen to / should + inf",
+                  "will / may / can... + inf",
+                  "Should you apply, ..."
+                ],
+                [
+                  "2nd",
+                  "past simple (were) / were to + inf",
+                  "would / could / might + inf",
+                  "Were I to win, ..."
+                ],
+                [
+                  "3rd",
+                  "past perfect",
+                  "would / could / might + have + participio",
+                  "Had I studied, ..."
+                ],
+                [
+                  "Mixed 3rd → 2nd",
+                  "past perfect",
+                  "would + inf (ahora)",
+                  "Had I eaten, I wouldn't be..."
+                ],
+                [
+                  "Mixed 2nd → 3rd",
+                  "past simple (general)",
+                  "would + have + participio",
+                  "Were I taller, I could have..."
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "wish",
+        "title": "D) ALTERNATIVES TO IF · WISH / IF ONLY",
+        "color": "rose",
+        "blocks": [
+          {
+            "heading": "Provided (that) / Providing / As long as / On condition that",
+            "rule": "Condición estricta: \"siempre y cuando\". Van con present simple aunque hablen del futuro.",
+            "examples": [
+              "You can borrow my car as long as you drive carefully.",
+              "They lent us the money on condition that we paid it back."
+            ]
+          },
+          {
+            "heading": "Unless = if not (a menos que)",
+            "rule": "Unless ya es negativo, así que el verbo va en afirmativo.",
+            "examples": [
+              "We'll miss the train unless we leave now. (= if we don't leave now)"
+            ]
+          },
+          {
+            "heading": "Otherwise (de lo contrario) · Even if (incluso si)",
+            "rule": "Otherwise va después de una orden o afirmación. Even if → el resultado no cambia aunque se cumpla la condición.",
+            "examples": [
+              "Hurry up, otherwise we'll be late.",
+              "I wouldn't go even if they paid me."
+            ]
+          },
+          {
+            "heading": "But for / Were it not for / Had it not been for (si no fuera por)",
+            "rule": "But for + sustantivo (2nd o 3rd). Were it not for + sustantivo → 2nd conditional (presente). Had it not been for + sustantivo → 3rd conditional (pasado).",
+            "examples": [
+              "But for your help, I would have failed the exam.",
+              "Were it not for the rain, we would go out.",
+              "Had it not been for the rain, we would have gone out."
+            ]
+          },
+          {
+            "heading": "WISH / IF ONLY + past simple",
+            "rule": "Queremos cambiar una situación o estado PRESENTE. Con be → were (también was en inglés informal).",
+            "examples": [
+              "I wish I had more money.",
+              "If only I lived near the beach.",
+              "I wish I were taller."
+            ]
+          },
+          {
+            "heading": "WISH / IF ONLY + past perfect",
+            "rule": "Arrepentimiento sobre una situación PASADA.",
+            "examples": [
+              "I wish I had studied more.",
+              "If only I hadn't told him the truth."
+            ]
+          },
+          {
+            "heading": "WISH / IF ONLY + would",
+            "rule": "Mostrar enfado o molestia por el comportamiento de OTRA persona (queremos que cambie). No se usa con I (✗ I wish I would).",
+            "examples": [
+              "I wish my brother would not take my things.",
+              "I wish you would stop making that noise!"
+            ]
+          },
+          {
+            "heading": "WISH / IF ONLY + could",
+            "rule": "Falta de habilidad o de posibilidad.",
+            "examples": [
+              "I wish I could go to Javi's party.",
+              "I wish I could speak Chinese."
+            ]
+          },
+          {
+            "heading": "Tabla resumen: WISH / IF ONLY",
+            "rule": "",
+            "table": {
+              "headers": [
+                "Estructura",
+                "Uso",
+                "Ejemplo"
+              ],
+              "rows": [
+                [
+                  "wish + past simple",
+                  "cambiar el presente",
+                  "I wish I had more money."
+                ],
+                [
+                  "wish + past perfect",
+                  "arrepentimiento del pasado",
+                  "I wish I had studied more."
+                ],
+                [
+                  "wish + would",
+                  "molestia por lo que hace otro",
+                  "I wish he would stop shouting."
+                ],
+                [
+                  "wish + could",
+                  "falta de habilidad / posibilidad",
+                  "I wish I could go to the party."
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "part": "Part 2 (Speculating about the pictures)",
+        "structure": "They might have just [participle], which would explain why they look so [adjective].",
+        "example": "They might have just received some good news, which would explain why they look so excited.",
+        "translation": "Puede que acaben de [participio], lo que explicaría por qué parecen tan [adjetivo]."
+      },
+      {
+        "part": "Part 2 (Strong deduction)",
+        "structure": "Judging by [evidence], she must be [-ing / adjective]; she can't be enjoying it.",
+        "example": "Judging by her expression, she must be feeling stressed; she can't be enjoying the experience.",
+        "translation": "A juzgar por [evidencia], debe de estar [...]; no puede estar disfrutándolo."
+      },
+      {
+        "part": "Part 3 (Setting conditions)",
+        "structure": "This option would work well, provided that [condition]; otherwise, [consequence].",
+        "example": "This option would work well, provided that the council invests enough money; otherwise, it might fail.",
+        "translation": "Esta opción funcionaría bien siempre y cuando [condición]; de lo contrario, [consecuencia]."
+      },
+      {
+        "part": "Part 4 (Hypothetical opinion)",
+        "structure": "Were governments to [verb], I think there would be a significant improvement in [area].",
+        "example": "Were governments to invest more in education, I think there would be a significant improvement in public health.",
+        "translation": "Si los gobiernos [verbo], creo que habría una mejora significativa en [área]."
+      },
+      {
+        "part": "Part 1 (Talking about regrets)",
+        "structure": "If I had [participle] when I was younger, I would be [adjective] now. I really wish I had.",
+        "example": "If I had learnt to play an instrument when I was younger, I would be in a band now. I really wish I had.",
+        "translation": "Si hubiera [participio] de pequeño, ahora sería [adjetivo]. Ojalá lo hubiera hecho."
+      }
+    ]
+  },
+  "ejercicios": {
+    "speculation": [
+      {
+        "type": "mc",
+        "sentence": "She ___ be tired — she didn't sleep at all last night.",
+        "options": [
+          "must",
+          "can't",
+          "needn't"
+        ],
+        "answer": "must",
+        "explanation": "Certeza positiva en presente → must + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "That ___ be John at the door — he's in Australia this week.",
+        "options": [
+          "can't",
+          "must",
+          "should"
+        ],
+        "answer": "can't",
+        "explanation": "Certeza negativa en presente → can't + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "Don't call her now; she ___ be having a shower.",
+        "options": [
+          "may",
+          "mustn't",
+          "needn't"
+        ],
+        "answer": "may",
+        "explanation": "Posibilidad en este momento → may + be + V-ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "Peter ___ a new car — I saw him in a red sports car yesterday.",
+        "options": [
+          "may have bought",
+          "may buy",
+          "must buy"
+        ],
+        "answer": "may have bought",
+        "explanation": "Posibilidad en el pasado → may + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "I can't find my keys. I ___ them at the office.",
+        "options": [
+          "might have left",
+          "might leave",
+          "must leave"
+        ],
+        "answer": "might have left",
+        "explanation": "Posibilidad en el pasado → might + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "Lois ___ a shower when you arrived — that's why she didn't open the door.",
+        "options": [
+          "may have been having",
+          "may be having",
+          "may have had"
+        ],
+        "answer": "may have been having",
+        "explanation": "Acción en progreso en el pasado → may + have been + V-ing."
+      },
+      {
+        "type": "gap",
+        "sentence": "You ___ (be) hungry after such a long walk! Let me make you something.",
+        "answers": [
+          "must be"
+        ],
+        "explanation": "Deducción positiva en presente → must + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "He ___ the money — he was with me all day.",
+        "options": [
+          "can't have stolen",
+          "mustn't have stolen",
+          "may not steal"
+        ],
+        "answer": "can't have stolen",
+        "explanation": "Certeza negativa en el pasado → can't + have + participio (nunca mustn't have)."
+      },
+      {
+        "type": "mc",
+        "sentence": "It ___ rain tomorrow, so take an umbrella just in case.",
+        "options": [
+          "may well",
+          "must",
+          "can't"
+        ],
+        "answer": "may well",
+        "explanation": "Muy probable en el futuro → may + well + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "He ___ won the competition — he was by far the best.",
+        "options": [
+          "may well have",
+          "may well",
+          "can't have"
+        ],
+        "answer": "may well have",
+        "explanation": "Muy probable en el pasado → may + well + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "If you don't study, you ___ fail the test.",
+        "options": [
+          "are bound to",
+          "must",
+          "can't"
+        ],
+        "answer": "are bound to",
+        "explanation": "Certeza en el futuro → be bound to + inf (no hay modal)."
+      },
+      {
+        "type": "gap",
+        "sentence": "He was ___ to win the lottery — the odds were one in a million.",
+        "answers": [
+          "unlikely"
+        ],
+        "explanation": "Be unlikely + to inf = poco probable."
+      },
+      {
+        "type": "mc",
+        "sentence": "There is a strong likelihood ___ tomorrow.",
+        "options": [
+          "of it raining",
+          "of rain to",
+          "that raining"
+        ],
+        "answer": "of it raining",
+        "explanation": "Likelihood + of + (sujeto) + V-ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "There is a slight likelihood ___ the match.",
+        "options": [
+          "that they will lose",
+          "of they lose",
+          "to lose"
+        ],
+        "answer": "that they will lose",
+        "explanation": "Likelihood + that + oración."
+      },
+      {
+        "type": "mc",
+        "sentence": "Real Madrid ___ win the league this year; they have the best squad.",
+        "options": [
+          "should",
+          "must",
+          "can't"
+        ],
+        "answer": "should",
+        "explanation": "Should + inf = mucha probabilidad / expectativa, pero no seguro."
+      },
+      {
+        "type": "mc",
+        "sentence": "She ___ not be at the library; she sometimes studies at home.",
+        "options": [
+          "may",
+          "can",
+          "must"
+        ],
+        "answer": "may",
+        "explanation": "Posibilidad negativa → may / might + not (can't sería imposible)."
+      },
+      {
+        "type": "gap",
+        "sentence": "The lights are off. They ___ (go) to bed already.",
+        "answers": [
+          "must have gone"
+        ],
+        "explanation": "Deducción positiva sobre el pasado → must + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "You ___ have seen Tom at the party; he's been in hospital all week.",
+        "options": [
+          "can't",
+          "mustn't",
+          "needn't"
+        ],
+        "answer": "can't",
+        "explanation": "Imposible en el pasado → can't + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "The parcel ___ arrive by Friday, although there could be delays.",
+        "options": [
+          "should",
+          "must",
+          "can"
+        ],
+        "answer": "should",
+        "explanation": "Expectativa razonable (pero no segura) → should."
+      },
+      {
+        "type": "gap",
+        "sentence": "Don't worry, they ___ (well / be) stuck in traffic.",
+        "answers": [
+          "may well be",
+          "might well be",
+          "could well be"
+        ],
+        "explanation": "Muy probable ahora → may / might / could + well + be."
+      }
+    ],
+    "modals": [
+      {
+        "type": "mc",
+        "sentence": "You ___ wear a seatbelt in the car; it's the law.",
+        "options": [
+          "must",
+          "mustn't",
+          "don't have to"
+        ],
+        "answer": "must",
+        "explanation": "Obligación por ley → must."
+      },
+      {
+        "type": "mc",
+        "sentence": "I ___ work late yesterday because my boss asked me to.",
+        "options": [
+          "had to",
+          "must",
+          "must have"
+        ],
+        "answer": "had to",
+        "explanation": "Must no tiene pasado → had to."
+      },
+      {
+        "type": "mc",
+        "sentence": "You ___ come if you don't want to — it's optional.",
+        "options": [
+          "don't have to",
+          "mustn't",
+          "can't have"
+        ],
+        "answer": "don't have to",
+        "explanation": "Falta de obligación → don't have to."
+      },
+      {
+        "type": "mc",
+        "sentence": "You ___ smoke in hospitals; it's strictly forbidden.",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "needn't"
+        ],
+        "answer": "mustn't",
+        "explanation": "Prohibición → mustn't."
+      },
+      {
+        "type": "mc",
+        "sentence": "My parents made me ___ the dishes every night.",
+        "options": [
+          "do",
+          "to do",
+          "doing"
+        ],
+        "answer": "do",
+        "explanation": "Make + alguien + inf sin to."
+      },
+      {
+        "type": "gap",
+        "sentence": "I was made ___ (wait) outside for an hour.",
+        "answers": [
+          "to wait"
+        ],
+        "explanation": "En pasiva: be made + TO inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "As I trained every day, I ___ run the marathon in under four hours.",
+        "options": [
+          "was able to",
+          "could",
+          "can"
+        ],
+        "answer": "was able to",
+        "explanation": "Logro concreto en el pasado → was able to (no could)."
+      },
+      {
+        "type": "mc",
+        "sentence": "When I was a child, I ___ run really fast.",
+        "options": [
+          "could",
+          "was able",
+          "managed"
+        ],
+        "answer": "could",
+        "explanation": "Habilidad general en el pasado → could."
+      },
+      {
+        "type": "mc",
+        "sentence": "After hours of trying, she finally ___ to open the jar.",
+        "options": [
+          "managed",
+          "succeeded",
+          "could"
+        ],
+        "answer": "managed",
+        "explanation": "Manage + to inf (succeed va con in + V-ing)."
+      },
+      {
+        "type": "gap",
+        "sentence": "He succeeded ___ (pass) the exam at the third attempt.",
+        "answers": [
+          "in passing"
+        ],
+        "explanation": "Succeed + in + V-ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "I ___ passed the test, but I wasn't fast enough.",
+        "options": [
+          "could have",
+          "can have",
+          "must have"
+        ],
+        "answer": "could have",
+        "explanation": "Habilidad que no se usó → could + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "My parents never let me ___ out late.",
+        "options": [
+          "go",
+          "to go",
+          "going"
+        ],
+        "answer": "go",
+        "explanation": "Let + alguien + inf sin to."
+      },
+      {
+        "type": "mc",
+        "sentence": "Visitors are not permitted ___ photographs inside the museum.",
+        "options": [
+          "to take",
+          "take",
+          "taking"
+        ],
+        "answer": "to take",
+        "explanation": "Be permitted / allowed + to inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "You ___ have studied a lot more — you failed again!",
+        "options": [
+          "should",
+          "must",
+          "need"
+        ],
+        "answer": "should",
+        "explanation": "Crítica sobre el pasado → should + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "It's raining a lot. You ___ take an umbrella.",
+        "options": [
+          "had better",
+          "would better",
+          "had better to"
+        ],
+        "answer": "had better",
+        "explanation": "Had better + inf sin to (si no, consecuencia negativa)."
+      },
+      {
+        "type": "gap",
+        "sentence": "You ___ (better / not) be late again, or you'll be fired.",
+        "answers": [
+          "had better not",
+          "'d better not"
+        ],
+        "explanation": "Negativa: had better + not + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "It was a sunny day, so I ___ take a taxi; I walked home.",
+        "options": [
+          "didn't need to",
+          "needn't have",
+          "mustn't"
+        ],
+        "answer": "didn't need to",
+        "explanation": "No era necesario y NO lo hice → didn't need to."
+      },
+      {
+        "type": "mc",
+        "sentence": "You ___ bought so much food — only four people came.",
+        "options": [
+          "needn't have",
+          "didn't need to",
+          "mustn't have"
+        ],
+        "answer": "needn't have",
+        "explanation": "Lo hiciste, pero no era necesario → needn't + have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "There's nothing on TV. We ___ as well go to bed.",
+        "options": [
+          "might",
+          "must",
+          "should"
+        ],
+        "answer": "might",
+        "explanation": "Might / may / could as well = da igual, ya que estamos."
+      },
+      {
+        "type": "mc",
+        "sentence": "You ___ at least have said thank you!",
+        "options": [
+          "could",
+          "must",
+          "needn't"
+        ],
+        "answer": "could",
+        "explanation": "Queja: could / might + at least + have + participio."
+      }
+    ],
+    "conditionals": [
+      {
+        "type": "mc",
+        "sentence": "If you heat water to 100°C, it ___.",
+        "options": [
+          "boils",
+          "would boil",
+          "would have boiled"
+        ],
+        "answer": "boils",
+        "explanation": "Verdad universal → zero conditional (present + present)."
+      },
+      {
+        "type": "gap",
+        "sentence": "If you study more, you ___ (pass) the test.",
+        "answers": [
+          "will pass"
+        ],
+        "explanation": "1st conditional: if + present, will + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "If I ___ more money, I would travel around the world.",
+        "options": [
+          "had",
+          "have",
+          "would have"
+        ],
+        "answer": "had",
+        "explanation": "2nd conditional: if + past simple, would + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "If I ___ you, I would apologise.",
+        "options": [
+          "were",
+          "am",
+          "would be"
+        ],
+        "answer": "were",
+        "explanation": "If I were you → consejo (were para todas las personas)."
+      },
+      {
+        "type": "mc",
+        "sentence": "If I ___ harder, I would have passed the exam.",
+        "options": [
+          "had studied",
+          "studied",
+          "would study"
+        ],
+        "answer": "had studied",
+        "explanation": "3rd conditional: if + past perfect, would have + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "___ I studied more, I would have passed the exam. (inversión)",
+        "answers": [
+          "Had"
+        ],
+        "explanation": "Inversión del 3rd conditional: Had + sujeto + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ you apply for the job, you will be hired.",
+        "options": [
+          "Should",
+          "Would",
+          "Were"
+        ],
+        "answer": "Should",
+        "explanation": "Inversión del 1st conditional: Should + sujeto + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "If you ___ to take the bus, you'll arrive on time.",
+        "options": [
+          "happen",
+          "should",
+          "were"
+        ],
+        "answer": "happen",
+        "explanation": "If + happen to + inf = si por casualidad (menos probable)."
+      },
+      {
+        "type": "mc",
+        "sentence": "If I ___ to have more free time, I would go to the park more often.",
+        "options": [
+          "were",
+          "had",
+          "would"
+        ],
+        "answer": "were",
+        "explanation": "If + were to + inf (2nd conditional más improbable)."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ I to win the election, I would reduce taxes.",
+        "options": [
+          "Were",
+          "Had",
+          "Should"
+        ],
+        "answer": "Were",
+        "explanation": "Inversión: Were + sujeto + to + inf."
+      },
+      {
+        "type": "mc",
+        "sentence": "If I had eaten breakfast, I ___ hungry now.",
+        "options": [
+          "wouldn't be",
+          "wouldn't have been",
+          "won't be"
+        ],
+        "answer": "wouldn't be",
+        "explanation": "Mixed (3rd → 2nd): pasado que afecta al presente (now)."
+      },
+      {
+        "type": "mc",
+        "sentence": "If I were taller, I ___ a pilot years ago.",
+        "options": [
+          "could have become",
+          "could become",
+          "can become"
+        ],
+        "answer": "could have become",
+        "explanation": "Mixed (2nd → 3rd): situación general que afectó al pasado."
+      },
+      {
+        "type": "gap",
+        "sentence": "If she ___ (not / miss) the train, she would be here now.",
+        "answers": [
+          "hadn't missed",
+          "had not missed"
+        ],
+        "explanation": "Mixed: if + past perfect, would + inf (now)."
+      },
+      {
+        "type": "mc",
+        "sentence": "If he spoke English, he ___ the job last year.",
+        "options": [
+          "would have got",
+          "would get",
+          "will get"
+        ],
+        "answer": "would have got",
+        "explanation": "Mixed (2nd → 3rd): if + past simple, would have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ the traffic had been lighter, we would have arrived on time.",
+        "options": [
+          "If",
+          "Had",
+          "Unless"
+        ],
+        "answer": "If",
+        "explanation": "Con had ya en la oración no se invierte: If + past perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "If you ___ see Anna, tell her I called.",
+        "options": [
+          "should",
+          "would",
+          "were"
+        ],
+        "answer": "should",
+        "explanation": "If + should + inf = si por casualidad."
+      },
+      {
+        "type": "gap",
+        "sentence": "Had I known about the party, I ___ (come).",
+        "answers": [
+          "would have come"
+        ],
+        "explanation": "3rd conditional (inversión): would have + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "If it ___ tomorrow, we'll cancel the picnic.",
+        "options": [
+          "rains",
+          "will rain",
+          "rained"
+        ],
+        "answer": "rains",
+        "explanation": "1st conditional: nunca will en la parte del if."
+      },
+      {
+        "type": "mc",
+        "sentence": "When you mix blue and yellow, you ___ green.",
+        "options": [
+          "get",
+          "will have got",
+          "would get"
+        ],
+        "answer": "get",
+        "explanation": "Zero conditional: when + present, present."
+      },
+      {
+        "type": "mc",
+        "sentence": "If I ___ to lose my job, I'd move back to my hometown.",
+        "options": [
+          "were",
+          "was being",
+          "had"
+        ],
+        "answer": "were",
+        "explanation": "If + were to + inf, would + inf."
+      }
+    ],
+    "wish": [
+      {
+        "type": "mc",
+        "sentence": "You can borrow my car ___ you drive carefully.",
+        "options": [
+          "as long as",
+          "unless",
+          "otherwise"
+        ],
+        "answer": "as long as",
+        "explanation": "As long as = siempre y cuando (condición estricta)."
+      },
+      {
+        "type": "mc",
+        "sentence": "We'll miss the train ___ we leave right now.",
+        "options": [
+          "unless",
+          "provided",
+          "as long as"
+        ],
+        "answer": "unless",
+        "explanation": "Unless = if not (a menos que)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Hurry up, ___ we'll be late.",
+        "options": [
+          "otherwise",
+          "unless",
+          "even if"
+        ],
+        "answer": "otherwise",
+        "explanation": "Otherwise = de lo contrario."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wouldn't go out with him ___ he were the last man on Earth.",
+        "options": [
+          "even if",
+          "unless",
+          "provided that"
+        ],
+        "answer": "even if",
+        "explanation": "Even if = incluso si (el resultado no cambia)."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ your help, I would have failed the exam.",
+        "options": [
+          "But for",
+          "Unless",
+          "Even if"
+        ],
+        "answer": "But for",
+        "explanation": "But for + sustantivo = si no fuera por."
+      },
+      {
+        "type": "gap",
+        "sentence": "Were it not ___ the rain, we would go out.",
+        "answers": [
+          "for"
+        ],
+        "explanation": "Were it not for + sustantivo (presente)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Had it not ___ for the rain, we would have gone out.",
+        "options": [
+          "been",
+          "be",
+          "being"
+        ],
+        "answer": "been",
+        "explanation": "Had it not been for + sustantivo (pasado)."
+      },
+      {
+        "type": "mc",
+        "sentence": "They agreed to lend us the money ___ that we paid it back within a year.",
+        "options": [
+          "on condition",
+          "unless",
+          "in case"
+        ],
+        "answer": "on condition",
+        "explanation": "On condition that = con la condición de que."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wish I ___ more money.",
+        "options": [
+          "had",
+          "have",
+          "would have"
+        ],
+        "answer": "had",
+        "explanation": "Wish + past simple → cambiar el presente."
+      },
+      {
+        "type": "mc",
+        "sentence": "If only I ___ near the beach!",
+        "options": [
+          "lived",
+          "live",
+          "would live"
+        ],
+        "answer": "lived",
+        "explanation": "If only + past simple → situación presente."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wish I ___ harder for the exam last year.",
+        "options": [
+          "had studied",
+          "studied",
+          "would study"
+        ],
+        "answer": "had studied",
+        "explanation": "Wish + past perfect → arrepentimiento del pasado."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wish my brother ___ taking my things without asking!",
+        "options": [
+          "would stop",
+          "stops",
+          "had stopped"
+        ],
+        "answer": "would stop",
+        "explanation": "Wish + would → molestia por el comportamiento de otro."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wish I ___ go to Javi's party, but I have to work.",
+        "options": [
+          "could",
+          "would",
+          "can"
+        ],
+        "answer": "could",
+        "explanation": "Wish + could → falta de posibilidad."
+      },
+      {
+        "type": "gap",
+        "sentence": "I wish I ___ (be) taller.",
+        "answers": [
+          "were",
+          "was"
+        ],
+        "explanation": "Wish + past simple; con be → were (was es informal)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wish you ___ so much noise — I'm trying to sleep!",
+        "options": [
+          "wouldn't make",
+          "won't make",
+          "don't make"
+        ],
+        "answer": "wouldn't make",
+        "explanation": "Wish + would (not) → queja sobre lo que hace otro."
+      },
+      {
+        "type": "mc",
+        "sentence": "If only I ___ told him the truth — now he hates me.",
+        "options": [
+          "hadn't",
+          "didn't",
+          "wouldn't"
+        ],
+        "answer": "hadn't",
+        "explanation": "If only + past perfect → arrepentimiento."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wish I ___ speak Chinese.",
+        "options": [
+          "could",
+          "would",
+          "can"
+        ],
+        "answer": "could",
+        "explanation": "Wish + could → falta de habilidad."
+      },
+      {
+        "type": "gap",
+        "sentence": "We'll go to the beach ___ it rains — we love the rain! (2 words)",
+        "answers": [
+          "even if"
+        ],
+        "explanation": "Even if = incluso si."
+      },
+      {
+        "type": "mc",
+        "sentence": "I wish I ___ to the concert last night. Everyone says it was amazing.",
+        "options": [
+          "had gone",
+          "went",
+          "would go"
+        ],
+        "answer": "had gone",
+        "explanation": "Last night → pasado → wish + past perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "You can stay here ___ you don't make a mess.",
+        "options": [
+          "provided",
+          "unless",
+          "otherwise"
+        ],
+        "answer": "provided",
+        "explanation": "Provided (that) = siempre que."
+      }
+    ],
+    "transformations": [
+      {
+        "type": "kwt",
+        "lead_in": "I'm sure he didn't steal the money.",
+        "keyword": "HAVE",
+        "before": "He",
+        "after": "the money.",
+        "answers": [
+          "can't have stolen",
+          "cannot have stolen",
+          "couldn't have stolen",
+          "could not have stolen"
+        ],
+        "explanation": "Certeza negativa sobre el pasado → can't / couldn't have + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I'm certain they have gone to bed.",
+        "keyword": "MUST",
+        "before": "They",
+        "after": "to bed.",
+        "answers": [
+          "must have gone"
+        ],
+        "explanation": "Certeza positiva sobre el pasado → must have + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It's very likely that it will rain tomorrow.",
+        "keyword": "WELL",
+        "before": "It",
+        "after": "tomorrow.",
+        "answers": [
+          "may well rain",
+          "might well rain",
+          "could well rain"
+        ],
+        "explanation": "Muy probable → may / might / could well + inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "If you don't study, you will certainly fail the test.",
+        "keyword": "BOUND",
+        "before": "If you don't study, you",
+        "after": "the test.",
+        "answers": [
+          "are bound to fail"
+        ],
+        "explanation": "Certeza en el futuro → be bound to + inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It is very probable that he will win the competition.",
+        "keyword": "LIKELIHOOD",
+        "before": "There is a",
+        "after": "win the competition.",
+        "answers": [
+          "strong likelihood that he will",
+          "high likelihood that he will",
+          "good likelihood that he will"
+        ],
+        "explanation": "There is a strong likelihood that + oración."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It wasn't necessary for me to take a taxi, but I did.",
+        "keyword": "NEEDN'T",
+        "before": "I",
+        "after": "a taxi.",
+        "answers": [
+          "needn't have taken",
+          "need not have taken"
+        ],
+        "explanation": "Lo hice pero no era necesario → needn't have + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It was a mistake for you not to study more.",
+        "keyword": "SHOULD",
+        "before": "You",
+        "after": "more.",
+        "answers": [
+          "should have studied"
+        ],
+        "explanation": "Crítica sobre el pasado → should have + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "My boss forced me to work late.",
+        "keyword": "MADE",
+        "before": "I",
+        "after": "late by my boss.",
+        "answers": [
+          "was made to work"
+        ],
+        "explanation": "Pasiva de make: be made + to inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "In the end I managed to finish the report on time.",
+        "keyword": "SUCCEEDED",
+        "before": "In the end I",
+        "after": "the report on time.",
+        "answers": [
+          "succeeded in finishing"
+        ],
+        "explanation": "Succeed + in + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "My parents didn't allow me to go out on weekdays.",
+        "keyword": "LET",
+        "before": "My parents",
+        "after": "out on weekdays.",
+        "answers": [
+          "didn't let me go",
+          "did not let me go",
+          "wouldn't let me go",
+          "would not let me go"
+        ],
+        "explanation": "Let + alguien + inf sin to."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It would be a good idea to take an umbrella.",
+        "keyword": "BETTER",
+        "before": "You",
+        "after": "an umbrella.",
+        "answers": [
+          "had better take",
+          "'d better take"
+        ],
+        "explanation": "Had better + inf sin to."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I didn't study, so I failed the exam.",
+        "keyword": "HAD",
+        "before": "If I",
+        "after": "failed the exam.",
+        "answers": [
+          "had studied, I wouldn't have",
+          "had studied, I would not have",
+          "had studied I wouldn't have"
+        ],
+        "explanation": "3rd conditional: if + past perfect, wouldn't have + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "If I had known, I would have helped you.",
+        "keyword": "HAD",
+        "before": "",
+        "after": ", I would have helped you.",
+        "answers": [
+          "Had I known"
+        ],
+        "explanation": "Inversión del 3rd conditional."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "If you apply for the job, you will be hired.",
+        "keyword": "SHOULD",
+        "before": "",
+        "after": "for the job, you will be hired.",
+        "answers": [
+          "Should you apply"
+        ],
+        "explanation": "Inversión del 1st conditional: Should + sujeto + inf."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "If it hadn't been for your help, I would have failed.",
+        "keyword": "BUT",
+        "before": "",
+        "after": ", I would have failed.",
+        "answers": [
+          "But for your help"
+        ],
+        "explanation": "But for + sustantivo = si no hubiera sido por."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "We'll go out if it doesn't rain.",
+        "keyword": "UNLESS",
+        "before": "We'll go out",
+        "after": ".",
+        "answers": [
+          "unless it rains"
+        ],
+        "explanation": "Unless = if not → verbo en afirmativo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I regret not studying harder.",
+        "keyword": "WISH",
+        "before": "I",
+        "after": "harder.",
+        "answers": [
+          "wish I had studied",
+          "wish I'd studied"
+        ],
+        "explanation": "Arrepentimiento del pasado → wish + past perfect."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "It's a pity I can't speak Chinese.",
+        "keyword": "COULD",
+        "before": "I wish",
+        "after": "Chinese.",
+        "answers": [
+          "I could speak"
+        ],
+        "explanation": "Falta de habilidad → wish + could."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "My brother keeps taking my things, which really annoys me.",
+        "keyword": "WOULD",
+        "before": "I wish my brother",
+        "after": "my things.",
+        "answers": [
+          "would stop taking",
+          "wouldn't take",
+          "would not take"
+        ],
+        "explanation": "Molestia por lo que hace otro → wish + would."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I didn't eat breakfast, so I'm hungry now.",
+        "keyword": "WOULDN'T",
+        "before": "If I had eaten breakfast, I",
+        "after": "now.",
+        "answers": [
+          "wouldn't be hungry"
+        ],
+        "explanation": "Mixed conditional (3rd → 2nd): pasado que afecta al presente."
+      }
+    ]
+  }
+};
+    </script>
+    <script>
+// State
+let theoryData = null;
+let exercisesData = null;
+const quizzes = {};
+
+const TABS = ['theory', 'speculation', 'modals', 'conditionals', 'wish', 'transformations', 'speaking'];
+
+const QUIZ_INFO = {
+    speculation: {
+        title: 'Modals of Possibility, Probability & Certainty',
+        instructions: 'Choose the correct option or complete the sentence. Remember: present → modal + inf · now → modal + be + -ing · past → modal + have + participle.',
+        color: 'sky'
+    },
+    modals: {
+        title: 'Obligation, Prohibition, Ability, Permission, Advice & Necessity',
+        instructions: 'Choose the correct option or write the missing word(s).',
+        color: 'indigo'
+    },
+    conditionals: {
+        title: 'Conditionals (Zero, 1st, 2nd, 3rd, Mixed & Inversion)',
+        instructions: 'Choose the correct option or write the verb in brackets in the correct form.',
+        color: 'purple'
+    },
+    wish: {
+        title: 'Alternatives to If & Wish / If only',
+        instructions: 'Choose the correct option or write the missing word(s).',
+        color: 'rose'
+    },
+    transformations: {
+        title: 'Keyword Transformation (Part 4)',
+        instructions: 'Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.',
+        color: 'sky'
+    }
+};
+
+const COLORS = {
+    sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900', btn: 'bg-sky-600 hover:bg-sky-700', ring: 'ring-sky-500' },
+    indigo: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900', btn: 'bg-indigo-600 hover:bg-indigo-700', ring: 'ring-indigo-500' },
+    purple: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900', btn: 'bg-purple-600 hover:bg-purple-700', ring: 'ring-purple-500' },
+    rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', icon: 'text-rose-900', btn: 'bg-rose-600 hover:bg-rose-700', ring: 'ring-rose-500' }
+};
+
+const ICON_CHECK = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+const ICON_CROSS = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+});
+
+window.switchTab = function(tabId) {
+    TABS.forEach(id => {
+        document.getElementById(`content-${id}`).classList.remove('block');
+        document.getElementById(`content-${id}`).classList.add('hidden');
+
+        const btn = document.getElementById(`tab-${id}`);
+        btn.classList.remove('active-tab');
+        btn.classList.add('inactive-tab');
+    });
+
+    document.getElementById(`content-${tabId}`).classList.remove('hidden');
+    document.getElementById(`content-${tabId}`).classList.add('block');
+
+    const activeBtn = document.getElementById(`tab-${tabId}`);
+    activeBtn.classList.remove('inactive-tab');
+    activeBtn.classList.add('active-tab');
+
+    if (quizzes[tabId]) focusInput(tabId);
+};
+
+async function loadData() {
+    try {
+        // Unidad1.html embeds the data so it works without a server
+        if (window.UNIT_DATA) {
+            theoryData = window.UNIT_DATA.teoria;
+            exercisesData = window.UNIT_DATA.ejercicios;
+        } else {
+            const [theoryRes, exercisesRes] = await Promise.all([
+                fetch('/api/teoria'),
+                fetch('/api/ejercicios')
+            ]);
+            theoryData = await theoryRes.json();
+            exercisesData = await exercisesRes.json();
+        }
+
+        renderTheory();
+        renderSpeaking();
+        Object.keys(QUIZ_INFO).forEach(key => initQuiz(key));
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        document.getElementById('theory-container').innerHTML = `<div class="text-red-500 p-4 bg-red-50 rounded-lg">Error loading content. Please make sure the server is running.</div>`;
+    }
+}
+
+// ---------- Helpers ----------
+
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function normalize(str) {
+    return str
+        .toLowerCase()
+        .replace(/[’‘`´]/g, "'")
+        .replace(/\bwon't\b/g, 'will not')
+        .replace(/\bcan't\b/g, 'cannot')
+        .replace(/n't\b/g, ' not')
+        .replace(/[.,!?;:"()]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function focusInput(key) {
+    const input = document.getElementById(`answer-${key}`);
+    if (input && !input.readOnly) input.focus();
+}
+
+// ---------- Theory ----------
+
+function renderTheory() {
+    let html = '';
+
+    theoryData.sections.forEach(section => {
+        const c = COLORS[section.color] || COLORS.sky;
+        html += `
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="bg-gray-50 border-b border-gray-100 px-6 py-4 flex flex-wrap justify-between items-center gap-2">
+                    <h3 class="text-lg font-bold text-gray-800">${section.title}</h3>
+                    <button onclick="switchTab('${section.id}')" class="text-sm font-medium ${c.text} hover:underline">Practise this →</button>
+                </div>
+                <div class="divide-y divide-gray-100">
+        `;
+
+        section.blocks.forEach(block => {
+            html += `
+                <div class="p-6 hover:bg-gray-50 transition-colors">
+                    <h4 class="font-semibold ${c.text} mb-2">${block.heading}</h4>
+                    <p class="text-gray-600 mb-3">${block.rule}</p>
+                    ${block.examples ? `
+                        <div class="${c.bg} ${c.icon} p-3 rounded-lg border ${c.border} flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 opacity-70 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div class="space-y-1">
+                                ${block.examples.map(ex => `<p class="italic">"${ex}"</p>`).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
+                    ${block.table ? renderTable(block.table, c) : ''}
+                    ${block.tip ? `
+                        <p class="mt-3 text-sm text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2"><span class="font-semibold">Tip:</span> ${block.tip}</p>
+                    ` : ''}
+                </div>
+            `;
+        });
+
+        html += `
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('theory-container').innerHTML = html;
+}
+
+function renderTable(table, c) {
+    return `
+        <div class="overflow-x-auto rounded-lg border ${c.border}">
+            <table class="min-w-full text-sm">
+                <thead class="${c.bg} ${c.text}">
+                    <tr>${table.headers.map(h => `<th class="text-left font-semibold px-4 py-2 whitespace-nowrap">${h}</th>`).join('')}</tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    ${table.rows.map(row => `
+                        <tr class="hover:bg-gray-50">
+                            ${row.map((cell, i) => `<td class="px-4 py-2 ${i === 0 ? 'font-medium text-gray-700 whitespace-nowrap' : i === row.length - 1 ? 'italic text-gray-900' : 'text-gray-600'}">${cell}</td>`).join('')}
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
+    `;
+}
+
+// ---------- Speaking ----------
+
+function renderSpeaking() {
+    const colors = [
+        { bg: 'bg-sky-50', text: 'text-sky-600', border: 'border-sky-100', textLight: 'text-sky-500' },
+        { bg: 'bg-indigo-50', text: 'text-indigo-600', border: 'border-indigo-100', textLight: 'text-indigo-500' },
+        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', textLight: 'text-purple-500' },
+        { bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', textLight: 'text-rose-500' }
+    ];
+
+    let html = '';
+
+    theoryData.speaking.forEach((item, index) => {
+        const c = colors[index % colors.length];
+        const structureHtml = item.structure.replace(/\[(.*?)\]/g, `<span class="${c.textLight} ${c.bg} px-1 rounded border border-white">[$1]</span>`);
+
+        html += `
+            <div class="bg-white rounded-xl shadow-sm border ${c.border} overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                <div class="${c.bg} px-5 py-3 border-b ${c.border} flex justify-between items-center">
+                    <span class="text-xs font-bold uppercase tracking-wider ${c.text}">Strategy ${index + 1}</span>
+                    <span class="bg-white ${c.text} text-xs px-2 py-1 rounded shadow-sm font-semibold">${item.part.split(' (')[0]}</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm font-medium text-gray-500 mb-4">${item.part}</p>
+                    <div class="mb-5">
+                        <div class="text-gray-800 font-semibold text-lg leading-snug">${structureHtml}</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-4">
+                        <p class="text-gray-700 italic">"${item.example}"</p>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                        ${item.translation}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('speaking-container').innerHTML = html;
+}
+
+// ---------- Quiz engine (shared by all practice tabs) ----------
+
+function initQuiz(key, onlyIndices) {
+    const all = exercisesData[key];
+    const indices = onlyIndices || all.map((_, i) => i);
+
+    quizzes[key] = {
+        questions: indices.map(i => {
+            const q = all[i];
+            // Shuffle multiple-choice options so the answer isn't always first
+            return q.type === 'mc' ? { ...q, options: shuffle(q.options), sourceIndex: i } : { ...q, sourceIndex: i };
+        }),
+        current: 0,
+        answers: {},
+        showSummary: false
+    };
+
+    renderQuizShell(key);
+    showQuestion(key);
+}
+
+function renderQuizShell(key) {
+    const info = QUIZ_INFO[key];
+    const c = COLORS[info.color];
+
+    document.getElementById(`content-${key}`).innerHTML = `
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="${c.bg} border-b ${c.border} p-6">
+                <h2 class="text-xl font-bold text-gray-900">${info.title}</h2>
+                <p class="text-sm text-gray-600 mt-2">${info.instructions}</p>
+            </div>
+
+            <div class="p-6">
+                <div class="flex flex-wrap justify-between items-center gap-2 mb-4">
+                    <span class="text-sm font-medium text-gray-500">Question <span id="qnum-${key}">1</span> of <span>${quizzes[key].questions.length}</span></span>
+                    <span id="score-${key}" class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded shadow-sm">Score: 0/${quizzes[key].questions.length}</span>
+                </div>
+
+                <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
+                    <div id="progress-${key}" class="h-1.5 rounded-full ${c.btn.split(' ')[0]} transition-all duration-300" style="width: 0%"></div>
+                </div>
+
+                <div id="dots-${key}" class="flex flex-wrap gap-1.5 mb-6"></div>
+
+                <div id="question-${key}" class="min-h-[200px]"></div>
+
+                <div id="controls-${key}" class="mt-8 flex justify-between items-center border-t pt-6">
+                    <button onclick="prevQuestion('${key}')" id="prev-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Previous</button>
+                    <button onclick="checkAnswer('${key}')" id="check-${key}" class="px-6 py-2 ${c.btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">Check Answer</button>
+                    <button onclick="nextQuestion('${key}')" id="next-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Next</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getScore(quiz) {
+    return Object.values(quiz.answers).filter(a => a.isCorrect).length;
+}
+
+function updateHeader(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const answered = Object.keys(quiz.answers).length;
+
+    document.getElementById(`qnum-${key}`).textContent = quiz.current + 1;
+    document.getElementById(`score-${key}`).textContent = `Score: ${getScore(quiz)}/${total}`;
+    document.getElementById(`progress-${key}`).style.width = `${(answered / total) * 100}%`;
+
+    const c = COLORS[QUIZ_INFO[key].color];
+    document.getElementById(`dots-${key}`).innerHTML = quiz.questions.map((_, i) => {
+        const a = quiz.answers[i];
+        let cls = 'bg-gray-100 text-gray-500 hover:bg-gray-200';
+        if (a) cls = a.isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700';
+        const active = i === quiz.current && !quiz.showSummary ? `ring-2 ${c.ring}` : '';
+        return `<button onclick="goToQuestion('${key}', ${i})" class="w-7 h-7 rounded text-xs font-semibold ${cls} ${active} transition-colors">${i + 1}</button>`;
+    }).join('');
+}
+
+function showQuestion(key) {
+    const quiz = quizzes[key];
+    if (quiz.showSummary) return showSummary(key);
+
+    const index = quiz.current;
+    const q = quiz.questions[index];
+    const answer = quiz.answers[index];
+    const isAnswered = answer !== undefined;
+    const container = document.getElementById(`question-${key}`);
+
+    document.getElementById(`controls-${key}`).classList.remove('hidden');
+    document.getElementById(`prev-${key}`).disabled = index === 0;
+    const allAnswered = Object.keys(quiz.answers).length === quiz.questions.length;
+    const btnNext = document.getElementById(`next-${key}`);
+    btnNext.disabled = index === quiz.questions.length - 1 && !allAnswered;
+    btnNext.textContent = allAnswered ? 'See results' : 'Next';
+
+    const btnCheck = document.getElementById(`check-${key}`);
+    btnCheck.disabled = isAnswered;
+    btnCheck.textContent = isAnswered ? 'Checked' : 'Check Answer';
+    // Multiple choice checks on click, so the button is only needed for typed answers
+    btnCheck.classList.toggle('invisible', q.type === 'mc');
+
+    let body = '';
+    if (q.type === 'mc') body = renderMC(key, q, answer);
+    else if (q.type === 'gap') body = renderGap(key, q, answer);
+    else body = renderKWT(key, q, answer);
+
+    container.innerHTML = `
+        <div class="space-y-6">
+            ${body}
+            ${isAnswered ? renderFeedback(q, answer) : ''}
+        </div>
+    `;
+
+    updateHeader(key);
+
+    if (!isAnswered && q.type !== 'mc') {
+        const input = document.getElementById(`answer-${key}`);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkAnswer(key);
+        });
+        if (!document.getElementById(`content-${key}`).classList.contains('hidden')) input.focus();
+    }
+}
+
+function sentenceWithBlank(sentence, filled, state) {
+    const blank = `<span class="gap-blank ${state || ''}">${filled ? escapeHtml(filled) : '&nbsp;'}</span>`;
+    return sentence.replace('___', blank);
+}
+
+function renderMC(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const filled = isAnswered ? (answer.isCorrect ? q.answer : answer.text) : '';
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    const options = q.options.map((opt, i) => {
+        let cls = 'border-gray-200 bg-white hover:border-gray-400 hover:bg-gray-50 text-gray-800';
+        if (isAnswered) {
+            if (opt === q.answer) cls = 'border-green-400 bg-green-50 text-green-800';
+            else if (opt === answer.text) cls = 'border-red-400 bg-red-50 text-red-800';
+            else cls = 'border-gray-100 bg-white text-gray-400';
+        }
+        return `<button onclick="selectOption('${key}', ${i})" ${isAnswered ? 'disabled' : ''} class="px-4 py-3 border-2 rounded-lg text-left font-medium transition-colors ${cls}">${escapeHtml(opt)}</button>`;
+    }).join('');
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${sentenceWithBlank(q.sentence, filled, state)}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">${options}</div>
+    `;
+}
+
+function renderGap(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+    const input = `<input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+        value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="your answer">`;
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${q.sentence.replace('___', input)}</p>
+        </div>
+    `;
+}
+
+function renderKWT(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${q.lead_in}</p>
+        </div>
+
+        <div class="flex justify-center">
+            <span class="inline-block bg-gray-800 text-white font-bold py-1 px-4 rounded shadow-sm tracking-widest text-lg">${q.keyword}</span>
+        </div>
+
+        <div class="text-lg text-gray-800 leading-loose flex flex-wrap items-center gap-2">
+            <span>${q.before}</span>
+            <input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="(3-6 words)">
+            <span>${q.after}</span>
+        </div>
+    `;
+}
+
+function renderFeedback(q, answer) {
+    const correctText = q.type === 'mc' ? q.answer : q.answers.join('  /  ');
+
+    return `
+        <div class="p-4 rounded-lg ${answer.isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+            <p class="text-sm ${answer.isCorrect ? 'text-green-800' : 'text-red-800'} font-medium flex items-center">
+                ${answer.isCorrect ? ICON_CHECK + ' Correct!' : ICON_CROSS + ' Incorrect.'}
+            </p>
+            ${!answer.isCorrect ? `
+                <p class="mt-2 text-sm text-gray-700">Correct answer: <span class="font-bold text-green-700">${escapeHtml(correctText)}</span></p>
+            ` : ''}
+            ${q.explanation ? `<p class="mt-2 text-sm text-gray-600">${q.explanation}</p>` : ''}
+        </div>
+    `;
+}
+
+function recordAnswer(key, text, isCorrect) {
+    const quiz = quizzes[key];
+    quiz.answers[quiz.current] = { text, isCorrect };
+    showQuestion(key);
+}
+
+window.selectOption = function(key, optionIndex) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return;
+    const q = quiz.questions[quiz.current];
+    const choice = q.options[optionIndex];
+    recordAnswer(key, choice, choice === q.answer);
+};
+
+window.checkAnswer = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return; // Already checked
+
+    const q = quiz.questions[quiz.current];
+    if (q.type === 'mc') return;
+
+    const inputEl = document.getElementById(`answer-${key}`);
+    const userAnswer = inputEl.value.trim();
+
+    if (!userAnswer) {
+        inputEl.classList.remove('shake');
+        void inputEl.offsetWidth;
+        inputEl.classList.add('shake');
+        inputEl.focus();
+        return;
+    }
+
+    const normalizedUser = normalize(userAnswer);
+    const isCorrect = q.answers.some(a => normalize(a) === normalizedUser);
+    recordAnswer(key, userAnswer, isCorrect);
+};
+
+window.prevQuestion = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.current > 0) {
+        quiz.current--;
+        showQuestion(key);
+    }
+};
+
+window.nextQuestion = function(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+
+    if (Object.keys(quiz.answers).length === total) {
+        quiz.showSummary = true;
+        showQuestion(key);
+        return;
+    }
+    if (quiz.current < total - 1) {
+        quiz.current++;
+        showQuestion(key);
+    }
+};
+
+window.goToQuestion = function(key, index) {
+    const quiz = quizzes[key];
+    quiz.showSummary = false;
+    quiz.current = index;
+    showQuestion(key);
+};
+
+function showSummary(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const score = getScore(quiz);
+    const pct = Math.round((score / total) * 100);
+    const mistakes = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect);
+
+    let message = 'Keep practising — review the theory and try again.';
+    if (pct >= 90) message = 'Excellent! You have mastered this topic.';
+    else if (pct >= 70) message = 'Very good! Just a few points to review.';
+    else if (pct >= 50) message = 'Not bad, but there is room for improvement.';
+
+    document.getElementById(`controls-${key}`).classList.add('hidden');
+    updateHeader(key);
+
+    document.getElementById(`question-${key}`).innerHTML = `
+        <div class="text-center py-6">
+            <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Final score</p>
+            <p class="text-5xl font-bold mt-2 ${pct >= 70 ? 'text-green-600' : pct >= 50 ? 'text-amber-500' : 'text-red-600'}">${score}/${total}</p>
+            <p class="text-gray-600 mt-3">${message}</p>
+        </div>
+
+        ${mistakes.length ? `
+            <div class="mt-4">
+                <h3 class="font-semibold text-gray-800 mb-3">Review your mistakes</h3>
+                <div class="space-y-3">
+                    ${mistakes.map(q => {
+                        const i = quiz.questions.indexOf(q);
+                        const prompt = q.type === 'kwt' ? `${q.lead_in} <span class="font-bold">(${q.keyword})</span>` : q.sentence.replace('___', '_____');
+                        const correct = q.type === 'mc' ? q.answer : q.answers[0];
+                        return `
+                            <button onclick="goToQuestion('${key}', ${i})" class="w-full text-left p-3 rounded-lg border border-red-100 bg-red-50 hover:bg-red-100 transition-colors">
+                                <p class="text-sm text-gray-800">${i + 1}. ${prompt}</p>
+                                <p class="text-sm mt-1"><span class="text-red-700 line-through">${escapeHtml(quiz.answers[i].text)}</span> → <span class="text-green-700 font-semibold">${escapeHtml(correct)}</span></p>
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        ` : ''}
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3 border-t pt-6">
+            ${mistakes.length ? `<button onclick="retryMistakes('${key}')" class="px-5 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">Retry mistakes (${mistakes.length})</button>` : ''}
+            <button onclick="restartQuiz('${key}')" class="px-5 py-2 ${COLORS[QUIZ_INFO[key].color].btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm">Restart (shuffled)</button>
+        </div>
+    `;
+}
+
+window.retryMistakes = function(key) {
+    const quiz = quizzes[key];
+    const wrong = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect).map(q => q.sourceIndex);
+    initQuiz(key, wrong);
+};
+
+window.restartQuiz = function(key) {
+    initQuiz(key, shuffle(exercisesData[key].map((_, i) => i)));
+};
+    </script>
+</body>
+</html>
