@@ -125,6 +125,9 @@
                 <button onclick="switchTab('past')" id="tab-past" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
                     Past Tenses
                 </button>
+                <button onclick="switchTab('book')" id="tab-book" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Complete Advanced
+                </button>
                 <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
                     Keyword Transformation C1
                 </button>
@@ -153,6 +156,7 @@
         <section id="content-like_as" class="tab-content hidden"></section>
         <section id="content-preference" class="tab-content hidden"></section>
         <section id="content-past" class="tab-content hidden"></section>
+        <section id="content-book" class="tab-content hidden"></section>
         <section id="content-transformations" class="tab-content hidden"></section>
 
         <!-- Speaking Templates Tab -->
@@ -398,6 +402,15 @@
             ]
           },
           {
+            "heading": "Past perfect: expresiones típicas",
+            "rule": "Va mucho con when, as soon as, after, before, by the time, it was the first time...",
+            "examples": [
+              "He went home as soon as he'd finished his work.",
+              "It wasn't the first time Jess had broken the law.",
+              "It was two months before the teachers noticed Mike hadn't been coming to school."
+            ]
+          },
+          {
             "heading": "PAST PERFECT CONTINUOUS: sujeto + had been + V-ing",
             "rule": "Acción del pasado con duración que ocurrió antes de otra acción pasada. Lo importante es la duración, no el resultado.",
             "examples": [
@@ -411,6 +424,17 @@
             "examples": [
               "I have painted the living room. (está terminado)",
               "I have been painting the living room. (la actividad; no he terminado)"
+            ]
+          },
+          {
+            "heading": "Present perfect simple vs continuous: más matices (Complete Advanced)",
+            "rule": "Simple → resultado / actividad terminada / algo permanente / cuántas veces. Continuous → la acción en sí / incompleta / algo temporal / repetición sin contar. Con verbos de estado (know, have, be...) solo el simple.",
+            "examples": [
+              "They've studied hard, so they deserve to pass. (resultado)",
+              "They've been studying so hard; they must be exhausted. (la acción)",
+              "He's been a police officer all his life. (permanente)",
+              "We've been doing part-time jobs over the holidays. (temporal)",
+              "I've listened to that album five times this week. (cuántas veces)"
             ]
           }
         ]
@@ -1317,6 +1341,286 @@
         ],
         "explanation": "Mismo sujeto, preferencia sobre el pasado → would sooner + have + participio."
       }
+    ],
+    "book": [
+      {
+        "type": "mc",
+        "sentence": "Larissa can't play tennis this weekend because she ___ her wrist.",
+        "options": [
+          "has injured",
+          "had injured"
+        ],
+        "answer": "has injured",
+        "explanation": "Resultado en el presente (no puede jugar) → present perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "She ___ while she was running for a train yesterday.",
+        "options": [
+          "fell over",
+          "was falling over"
+        ],
+        "answer": "fell over",
+        "explanation": "Acción corta que interrumpe a la larga → past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "She fell over while she ___ for a train yesterday.",
+        "options": [
+          "was running",
+          "ran"
+        ],
+        "answer": "was running",
+        "explanation": "Acción larga en progreso → past continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "Could you get me a bandage, please? ___ my finger.",
+        "options": [
+          "I've cut",
+          "I'd cut"
+        ],
+        "answer": "I've cut",
+        "explanation": "Acción reciente con resultado ahora → present perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "While I ___ lunch, my phone rang six or seven times.",
+        "options": [
+          "was having",
+          "had"
+        ],
+        "answer": "was having",
+        "explanation": "While + past continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "While I was having lunch, my phone ___ six or seven times.",
+        "options": [
+          "rang",
+          "was ringing"
+        ],
+        "answer": "rang",
+        "explanation": "Acciones cortas repetidas que interrumpen → past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "It wasn't the first time Jess ___ the law.",
+        "options": [
+          "had broken",
+          "has broken"
+        ],
+        "answer": "had broken",
+        "explanation": "It was the first time... → past perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "When she was a child, she ___ sweets in shops.",
+        "options": [
+          "would often steal",
+          "was often stealing"
+        ],
+        "answer": "would often steal",
+        "explanation": "Hábito pasado (acción) → would."
+      },
+      {
+        "type": "mc",
+        "sentence": "What time ___ home last night?",
+        "options": [
+          "did you get",
+          "have you got"
+        ],
+        "answer": "did you get",
+        "explanation": "Tiempo terminado (last night) → past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "Ben ___ computer games all morning. He must be hungry by now.",
+        "options": [
+          "has been playing",
+          "had been playing"
+        ],
+        "answer": "has been playing",
+        "explanation": "Actividad hasta ahora con efecto presente → present perfect continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "You look pretty rough. ___ any breakfast yet?",
+        "options": [
+          "Have you had",
+          "Did you have"
+        ],
+        "answer": "Have you had",
+        "explanation": "Yet → present perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "No, I feel terrible. ___ a wink last night.",
+        "options": [
+          "I didn't sleep",
+          "I haven't slept"
+        ],
+        "answer": "I didn't sleep",
+        "explanation": "Last night (terminado) → past simple."
+      },
+      {
+        "type": "mc",
+        "sentence": "It's Thursday already. ___ online every morning this week.",
+        "options": [
+          "I've looked",
+          "I looked"
+        ],
+        "answer": "I've looked",
+        "explanation": "This week (periodo no terminado) → present perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "It's nearly three months since ___ the exams.",
+        "options": [
+          "I took",
+          "I've taken"
+        ],
+        "answer": "I took",
+        "explanation": "It's ... since + past simple (momento concreto)."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ to wait as long as this before. It's torture.",
+        "options": [
+          "I've never had",
+          "I never had"
+        ],
+        "answer": "I've never had",
+        "explanation": "Experiencia hasta ahora (never ... before) → present perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'm sure you'll be OK. ___ for months.",
+        "options": [
+          "You've been revising",
+          "You revised"
+        ],
+        "answer": "You've been revising",
+        "explanation": "Actividad larga hasta ahora → present perfect continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ every geography exam I've ever taken.",
+        "options": [
+          "I've failed",
+          "I'd failed"
+        ],
+        "answer": "I've failed",
+        "explanation": "Experiencia hasta ahora → present perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "It could be the message ___ for.",
+        "options": [
+          "I've been waiting",
+          "I've waited"
+        ],
+        "answer": "I've been waiting",
+        "explanation": "Duración que sigue ahora → present perfect continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "Brilliant! ___ Congratulations!",
+        "options": [
+          "You've passed!",
+          "You'd passed!"
+        ],
+        "answer": "You've passed!",
+        "explanation": "Noticia reciente con resultado ahora → present perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "That's amazing — I really thought that ___.",
+        "options": [
+          "I'd failed",
+          "I've failed"
+        ],
+        "answer": "I'd failed",
+        "explanation": "Anterior a otro pasado (I thought) → past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "She ___ (copy) her friend's work for over a year, before one of her teachers found out.",
+        "answers": [
+          "had been copying"
+        ],
+        "explanation": "Duración antes de otro momento pasado → past perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "The tsunami destroyed the bungalow where they ___ (stay) just two days before.",
+        "answers": [
+          "had been staying",
+          "had stayed"
+        ],
+        "explanation": "Antes de otro momento pasado → past perfect (continuo o simple)."
+      },
+      {
+        "type": "gap",
+        "sentence": "It was only after she had arrived that she realised she ___ (forget) to bring her phone charger.",
+        "answers": [
+          "had forgotten"
+        ],
+        "explanation": "Anterior a 'realised' → past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "You are looking very sweaty. ___ (you / exercise) this morning?",
+        "answers": [
+          "Have you been exercising"
+        ],
+        "explanation": "Actividad reciente con efecto visible → present perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "I ___ (repair) the gears on my bike, so I can't come with you until I've had a shower.",
+        "answers": [
+          "have been repairing",
+          "'ve been repairing"
+        ],
+        "explanation": "Actividad reciente con efecto ahora (estoy sucio) → present perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "They ___ (drive) for most of the morning when they decided to stop for a picnic.",
+        "answers": [
+          "had been driving"
+        ],
+        "explanation": "Duración antes de otra acción pasada → past perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "They ___ (go) backpacking to India twice this year.",
+        "answers": [
+          "have been",
+          "have gone",
+          "'ve been"
+        ],
+        "explanation": "Número de veces en un periodo no terminado → present perfect simple."
+      },
+      {
+        "type": "gap",
+        "sentence": "He went home as soon as he ___ (finish) his work.",
+        "answers": [
+          "had finished",
+          "'d finished"
+        ],
+        "explanation": "As soon as / after + past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "My eyes were tired because I ___ (read) for three hours in bad light.",
+        "answers": [
+          "had been reading",
+          "'d been reading"
+        ],
+        "explanation": "Duración que explica una situación pasada → past perfect continuous."
+      }
     ]
   }
 };
@@ -1327,7 +1631,7 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'like_as', 'preference', 'past', 'transformations', 'speaking'];
+const TABS = ['theory', 'like_as', 'preference', 'past', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     like_as: {
@@ -1343,6 +1647,11 @@ const QUIZ_INFO = {
     past: {
         title: 'Past Tenses',
         instructions: 'Choose the correct tense or write the correct form of the verb in brackets.',
+        color: 'purple'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 1: verb forms to talk about the past). Choose the correct form or write the verb in brackets.',
         color: 'purple'
     },
     transformations: {

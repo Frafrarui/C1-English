@@ -1,90 +1,1150 @@
 {
   "like_as": [
-    { "type": "mc", "sentence": "She works ___ a nurse in a public hospital.", "options": ["as", "like", "such as"], "answer": "as", "explanation": "As indica su profesión real (lo que ES)." },
-    { "type": "mc", "sentence": "He swims ___ a fish — he's incredibly fast.", "options": ["like", "as", "as if"], "answer": "like", "explanation": "Like + noun = similar a. No es un pez, se parece a uno." },
-    { "type": "mc", "sentence": "___ I told you yesterday, the meeting has been cancelled.", "options": ["As", "Like", "Such as"], "answer": "As", "explanation": "As + oración (como te dije). \"Like I told you\" es muy coloquial y se evita en el examen." },
-    { "type": "mc", "sentence": "___ it was raining, we decided to stay at home.", "options": ["As", "Like", "Such as"], "answer": "As", "explanation": "As = because / since: introduce la razón." },
-    { "type": "gap", "sentence": "Many people regard him ___ the best writer of his generation.", "answers": ["as"], "explanation": "Regard + objeto + as." },
-    { "type": "mc", "sentence": "She is ___ tall ___ her older brother.", "options": ["as ... as", "like ... as", "so ... like", "as ... like"], "answer": "as ... as", "explanation": "Comparación de igualdad: as + adjetivo + as." },
-    { "type": "mc", "sentence": "My phone is the same ___ yours.", "options": ["as", "like", "than"], "answer": "as", "explanation": "Siempre \"the same as\", nunca \"the same like\" ni \"the same than\"." },
-    { "type": "mc", "sentence": "He looks ___ he hasn't slept for days.", "options": ["as if", "as", "such as", "so"], "answer": "as if", "explanation": "Look + as if / as though + oración = parece como si..." },
-    { "type": "mc", "sentence": "You look ___ your mother when you smile.", "options": ["like", "as", "as if"], "answer": "like", "explanation": "Look like + noun phrase (your mother)." },
-    { "type": "mc", "sentence": "I love outdoor sports, ___ climbing and kayaking.", "options": ["such as", "as", "as if"], "answer": "such as", "explanation": "Such as = for example; introduce ejemplos." },
-    { "type": "gap", "sentence": "The hotel was described ___ 'luxurious', but it was actually quite basic.", "answers": ["as"], "explanation": "Describe + as (como define / regard / consider / know)." },
-    { "type": "mc", "sentence": "He talks to me ___ I were a child.", "options": ["as though", "like", "as"], "answer": "as though", "explanation": "As though / as if + were: situación hipotética (no soy un niño)." },
-    { "type": "mc", "sentence": "___ your lawyer, I strongly advise you not to sign this contract.", "options": ["As", "Like"], "answer": "As", "explanation": "Es realmente su abogado → as (función real)." },
-    { "type": "mc", "sentence": "He argues ___ a lawyer, although he's actually a chef.", "options": ["like", "as", "such as"], "answer": "like", "explanation": "No es abogado, solo se parece a uno → like." },
-    { "type": "mc", "sentence": "That film seems ___ a complete waste of time to me.", "options": ["like", "as", "to be like"], "answer": "like", "explanation": "Seem like + noun phrase." },
-    { "type": "mc", "sentence": "She seems ___ rather upset today.", "options": ["to be", "like", "as"], "answer": "to be", "explanation": "Seem + to be + adjetivo (sentimientos / impresiones)." },
-    { "type": "gap", "sentence": "This soup tastes ___ it has been in the fridge for a week. (2 words)", "answers": ["as if", "as though"], "explanation": "Taste (como look) + as if / as though + oración." },
-    { "type": "mc", "sentence": "During the war, the building was used ___ a hospital.", "options": ["as", "like"], "answer": "as", "explanation": "Función real del edificio → as." },
-    { "type": "mc", "sentence": "He behaves as if he ___ the boss, but he's just an intern.", "options": ["were", "is being", "has been"], "answer": "were", "explanation": "As if + past simple (were) para algo irreal / hipotético." },
-    { "type": "gap", "sentence": "He was known ___ 'The Iron Man' because of his discipline.", "answers": ["as"], "explanation": "Be known as = ser conocido como." }
+    {
+      "type": "mc",
+      "sentence": "She works ___ a nurse in a public hospital.",
+      "options": [
+        "as",
+        "like",
+        "such as"
+      ],
+      "answer": "as",
+      "explanation": "As indica su profesión real (lo que ES)."
+    },
+    {
+      "type": "mc",
+      "sentence": "He swims ___ a fish — he's incredibly fast.",
+      "options": [
+        "like",
+        "as",
+        "as if"
+      ],
+      "answer": "like",
+      "explanation": "Like + noun = similar a. No es un pez, se parece a uno."
+    },
+    {
+      "type": "mc",
+      "sentence": "___ I told you yesterday, the meeting has been cancelled.",
+      "options": [
+        "As",
+        "Like",
+        "Such as"
+      ],
+      "answer": "As",
+      "explanation": "As + oración (como te dije). \"Like I told you\" es muy coloquial y se evita en el examen."
+    },
+    {
+      "type": "mc",
+      "sentence": "___ it was raining, we decided to stay at home.",
+      "options": [
+        "As",
+        "Like",
+        "Such as"
+      ],
+      "answer": "As",
+      "explanation": "As = because / since: introduce la razón."
+    },
+    {
+      "type": "gap",
+      "sentence": "Many people regard him ___ the best writer of his generation.",
+      "answers": [
+        "as"
+      ],
+      "explanation": "Regard + objeto + as."
+    },
+    {
+      "type": "mc",
+      "sentence": "She is ___ tall ___ her older brother.",
+      "options": [
+        "as ... as",
+        "like ... as",
+        "so ... like",
+        "as ... like"
+      ],
+      "answer": "as ... as",
+      "explanation": "Comparación de igualdad: as + adjetivo + as."
+    },
+    {
+      "type": "mc",
+      "sentence": "My phone is the same ___ yours.",
+      "options": [
+        "as",
+        "like",
+        "than"
+      ],
+      "answer": "as",
+      "explanation": "Siempre \"the same as\", nunca \"the same like\" ni \"the same than\"."
+    },
+    {
+      "type": "mc",
+      "sentence": "He looks ___ he hasn't slept for days.",
+      "options": [
+        "as if",
+        "as",
+        "such as",
+        "so"
+      ],
+      "answer": "as if",
+      "explanation": "Look + as if / as though + oración = parece como si..."
+    },
+    {
+      "type": "mc",
+      "sentence": "You look ___ your mother when you smile.",
+      "options": [
+        "like",
+        "as",
+        "as if"
+      ],
+      "answer": "like",
+      "explanation": "Look like + noun phrase (your mother)."
+    },
+    {
+      "type": "mc",
+      "sentence": "I love outdoor sports, ___ climbing and kayaking.",
+      "options": [
+        "such as",
+        "as",
+        "as if"
+      ],
+      "answer": "such as",
+      "explanation": "Such as = for example; introduce ejemplos."
+    },
+    {
+      "type": "gap",
+      "sentence": "The hotel was described ___ 'luxurious', but it was actually quite basic.",
+      "answers": [
+        "as"
+      ],
+      "explanation": "Describe + as (como define / regard / consider / know)."
+    },
+    {
+      "type": "mc",
+      "sentence": "He talks to me ___ I were a child.",
+      "options": [
+        "as though",
+        "like",
+        "as"
+      ],
+      "answer": "as though",
+      "explanation": "As though / as if + were: situación hipotética (no soy un niño)."
+    },
+    {
+      "type": "mc",
+      "sentence": "___ your lawyer, I strongly advise you not to sign this contract.",
+      "options": [
+        "As",
+        "Like"
+      ],
+      "answer": "As",
+      "explanation": "Es realmente su abogado → as (función real)."
+    },
+    {
+      "type": "mc",
+      "sentence": "He argues ___ a lawyer, although he's actually a chef.",
+      "options": [
+        "like",
+        "as",
+        "such as"
+      ],
+      "answer": "like",
+      "explanation": "No es abogado, solo se parece a uno → like."
+    },
+    {
+      "type": "mc",
+      "sentence": "That film seems ___ a complete waste of time to me.",
+      "options": [
+        "like",
+        "as",
+        "to be like"
+      ],
+      "answer": "like",
+      "explanation": "Seem like + noun phrase."
+    },
+    {
+      "type": "mc",
+      "sentence": "She seems ___ rather upset today.",
+      "options": [
+        "to be",
+        "like",
+        "as"
+      ],
+      "answer": "to be",
+      "explanation": "Seem + to be + adjetivo (sentimientos / impresiones)."
+    },
+    {
+      "type": "gap",
+      "sentence": "This soup tastes ___ it has been in the fridge for a week. (2 words)",
+      "answers": [
+        "as if",
+        "as though"
+      ],
+      "explanation": "Taste (como look) + as if / as though + oración."
+    },
+    {
+      "type": "mc",
+      "sentence": "During the war, the building was used ___ a hospital.",
+      "options": [
+        "as",
+        "like"
+      ],
+      "answer": "as",
+      "explanation": "Función real del edificio → as."
+    },
+    {
+      "type": "mc",
+      "sentence": "He behaves as if he ___ the boss, but he's just an intern.",
+      "options": [
+        "were",
+        "is being",
+        "has been"
+      ],
+      "answer": "were",
+      "explanation": "As if + past simple (were) para algo irreal / hipotético."
+    },
+    {
+      "type": "gap",
+      "sentence": "He was known ___ 'The Iron Man' because of his discipline.",
+      "answers": [
+        "as"
+      ],
+      "explanation": "Be known as = ser conocido como."
+    }
   ],
   "preference": [
-    { "type": "mc", "sentence": "I prefer walking ___ taking the bus.", "options": ["to", "than", "rather than"], "answer": "to", "explanation": "Prefer + V-ing + to + V-ing. Nunca \"than\"." },
-    { "type": "gap", "sentence": "I would prefer ___ (stay) at home tonight rather than go out.", "answers": ["to stay"], "explanation": "Would prefer + to inf + rather than + inf sin to." },
-    { "type": "mc", "sentence": "I'd rather ___ a film than go to the theatre.", "options": ["watch", "to watch", "watching"], "answer": "watch", "explanation": "Would rather + infinitivo sin to." },
-    { "type": "mc", "sentence": "She'd rather travel alone ___ with a group.", "options": ["and not", "to not", "not to"], "answer": "and not", "explanation": "Would rather + inf + and not + ... para contrastar dos opciones." },
-    { "type": "mc", "sentence": "I'd rather you ___ smoke in the house.", "options": ["didn't", "don't", "won't"], "answer": "didn't", "explanation": "Would rather + otro sujeto + past simple (presente / futuro)." },
-    { "type": "gap", "sentence": "It's high time we ___ (leave); it's almost midnight.", "answers": ["left"], "explanation": "It's high time + sujeto + past simple = ya va siendo hora de que..." },
-    { "type": "mc", "sentence": "I would like ___ Biology at university, but I chose Law instead.", "options": ["to have studied", "to study", "studying"], "answer": "to have studied", "explanation": "Deseo ahora sobre algo pasado → would like + to have + participio." },
-    { "type": "mc", "sentence": "I would have liked ___ you before you moved to Canada.", "options": ["to meet", "meeting", "met"], "answer": "to meet", "explanation": "Deseo que tenías en el pasado → would have liked + to inf." },
-    { "type": "gap", "sentence": "I'd rather you ___ (not tell) anyone about it yesterday — now everyone knows.", "answers": ["hadn't told", "had not told"], "explanation": "Would rather + sujeto + past perfect: queja sobre algo pasado." },
-    { "type": "mc", "sentence": "Would you sooner ___ in the city or in the countryside?", "options": ["live", "to live", "living"], "answer": "live", "explanation": "Would sooner (= would rather) + infinitivo sin to." },
-    { "type": "mc", "sentence": "I'd prefer ___ by train rather than fly.", "options": ["to go", "going", "go"], "answer": "to go", "explanation": "Would prefer + to inf." },
-    { "type": "mc", "sentence": "She prefers tea ___ coffee.", "options": ["to", "than", "from"], "answer": "to", "explanation": "Prefer + noun + to + noun." },
-    { "type": "gap", "sentence": "I'd rather ___ (not / talk) about it, if you don't mind.", "answers": ["not talk"], "explanation": "Negativa: would rather + not + inf sin to." },
-    { "type": "mc", "sentence": "I'd rather we ___ the meeting until next week.", "options": ["postponed", "postpone", "will postpone"], "answer": "postponed", "explanation": "Would rather + sujeto (we) + past simple." },
-    { "type": "mc", "sentence": "Come on, children, it's time ___ to bed!", "options": ["to go", "going", "go"], "answer": "to go", "explanation": "Sin sujeto: It's time + to inf." },
-    { "type": "mc", "sentence": "He'd rather ___ the money than lent it to his brother — he never got it back.", "options": ["have kept", "kept", "keep"], "answer": "have kept", "explanation": "Mismo sujeto, preferencia sobre el pasado → would rather + have + participio." },
-    { "type": "mc", "sentence": "I would hate ___ that exam without studying — luckily I prepared well.", "options": ["to have taken", "taking", "to take"], "answer": "to have taken", "explanation": "Sentimiento ahora sobre algo pasado → would hate + to have + participio." },
-    { "type": "mc", "sentence": "Would you prefer me ___ you up at the station?", "options": ["to pick", "picking", "pick"], "answer": "to pick", "explanation": "Would prefer + objeto + to inf." },
-    { "type": "gap", "sentence": "I'd sooner ___ (die) than apologise to him!", "answers": ["die"], "explanation": "Would sooner + inf sin to + than + inf sin to." },
-    { "type": "mc", "sentence": "I'd rather you ___ honest with me from the beginning.", "options": ["had been", "were", "have been"], "answer": "had been", "explanation": "Pasado (from the beginning) y otro sujeto → would rather + past perfect." }
+    {
+      "type": "mc",
+      "sentence": "I prefer walking ___ taking the bus.",
+      "options": [
+        "to",
+        "than",
+        "rather than"
+      ],
+      "answer": "to",
+      "explanation": "Prefer + V-ing + to + V-ing. Nunca \"than\"."
+    },
+    {
+      "type": "gap",
+      "sentence": "I would prefer ___ (stay) at home tonight rather than go out.",
+      "answers": [
+        "to stay"
+      ],
+      "explanation": "Would prefer + to inf + rather than + inf sin to."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'd rather ___ a film than go to the theatre.",
+      "options": [
+        "watch",
+        "to watch",
+        "watching"
+      ],
+      "answer": "watch",
+      "explanation": "Would rather + infinitivo sin to."
+    },
+    {
+      "type": "mc",
+      "sentence": "She'd rather travel alone ___ with a group.",
+      "options": [
+        "and not",
+        "to not",
+        "not to"
+      ],
+      "answer": "and not",
+      "explanation": "Would rather + inf + and not + ... para contrastar dos opciones."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'd rather you ___ smoke in the house.",
+      "options": [
+        "didn't",
+        "don't",
+        "won't"
+      ],
+      "answer": "didn't",
+      "explanation": "Would rather + otro sujeto + past simple (presente / futuro)."
+    },
+    {
+      "type": "gap",
+      "sentence": "It's high time we ___ (leave); it's almost midnight.",
+      "answers": [
+        "left"
+      ],
+      "explanation": "It's high time + sujeto + past simple = ya va siendo hora de que..."
+    },
+    {
+      "type": "mc",
+      "sentence": "I would like ___ Biology at university, but I chose Law instead.",
+      "options": [
+        "to have studied",
+        "to study",
+        "studying"
+      ],
+      "answer": "to have studied",
+      "explanation": "Deseo ahora sobre algo pasado → would like + to have + participio."
+    },
+    {
+      "type": "mc",
+      "sentence": "I would have liked ___ you before you moved to Canada.",
+      "options": [
+        "to meet",
+        "meeting",
+        "met"
+      ],
+      "answer": "to meet",
+      "explanation": "Deseo que tenías en el pasado → would have liked + to inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "I'd rather you ___ (not tell) anyone about it yesterday — now everyone knows.",
+      "answers": [
+        "hadn't told",
+        "had not told"
+      ],
+      "explanation": "Would rather + sujeto + past perfect: queja sobre algo pasado."
+    },
+    {
+      "type": "mc",
+      "sentence": "Would you sooner ___ in the city or in the countryside?",
+      "options": [
+        "live",
+        "to live",
+        "living"
+      ],
+      "answer": "live",
+      "explanation": "Would sooner (= would rather) + infinitivo sin to."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'd prefer ___ by train rather than fly.",
+      "options": [
+        "to go",
+        "going",
+        "go"
+      ],
+      "answer": "to go",
+      "explanation": "Would prefer + to inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "She prefers tea ___ coffee.",
+      "options": [
+        "to",
+        "than",
+        "from"
+      ],
+      "answer": "to",
+      "explanation": "Prefer + noun + to + noun."
+    },
+    {
+      "type": "gap",
+      "sentence": "I'd rather ___ (not / talk) about it, if you don't mind.",
+      "answers": [
+        "not talk"
+      ],
+      "explanation": "Negativa: would rather + not + inf sin to."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'd rather we ___ the meeting until next week.",
+      "options": [
+        "postponed",
+        "postpone",
+        "will postpone"
+      ],
+      "answer": "postponed",
+      "explanation": "Would rather + sujeto (we) + past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "Come on, children, it's time ___ to bed!",
+      "options": [
+        "to go",
+        "going",
+        "go"
+      ],
+      "answer": "to go",
+      "explanation": "Sin sujeto: It's time + to inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "He'd rather ___ the money than lent it to his brother — he never got it back.",
+      "options": [
+        "have kept",
+        "kept",
+        "keep"
+      ],
+      "answer": "have kept",
+      "explanation": "Mismo sujeto, preferencia sobre el pasado → would rather + have + participio."
+    },
+    {
+      "type": "mc",
+      "sentence": "I would hate ___ that exam without studying — luckily I prepared well.",
+      "options": [
+        "to have taken",
+        "taking",
+        "to take"
+      ],
+      "answer": "to have taken",
+      "explanation": "Sentimiento ahora sobre algo pasado → would hate + to have + participio."
+    },
+    {
+      "type": "mc",
+      "sentence": "Would you prefer me ___ you up at the station?",
+      "options": [
+        "to pick",
+        "picking",
+        "pick"
+      ],
+      "answer": "to pick",
+      "explanation": "Would prefer + objeto + to inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "I'd sooner ___ (die) than apologise to him!",
+      "answers": [
+        "die"
+      ],
+      "explanation": "Would sooner + inf sin to + than + inf sin to."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'd rather you ___ honest with me from the beginning.",
+      "options": [
+        "had been",
+        "were",
+        "have been"
+      ],
+      "answer": "had been",
+      "explanation": "Pasado (from the beginning) y otro sujeto → would rather + past perfect."
+    }
   ],
   "past": [
-    { "type": "mc", "sentence": "When I was a child, I ___ climb trees every afternoon.", "options": ["would", "was used to", "had"], "answer": "would", "explanation": "Hábito pasado con un verbo de acción → would (o used to)." },
-    { "type": "mc", "sentence": "We ___ live in a small village before moving to Madrid.", "options": ["used to", "would", "were used to"], "answer": "used to", "explanation": "Live es un estado / lugar donde vivías → solo used to, no would." },
-    { "type": "mc", "sentence": "I ___ have long hair when I was at university.", "options": ["used to", "would", "was using to"], "answer": "used to", "explanation": "Have (posesión) es un estado → solo used to." },
-    { "type": "gap", "sentence": "I ___ (sleep) when you called me last night.", "answers": ["was sleeping"], "explanation": "Acción larga interrumpida por otra corta → past continuous." },
-    { "type": "mc", "sentence": "While she ___ dinner, the lights went out.", "options": ["was cooking", "cooked", "had cooked"], "answer": "was cooking", "explanation": "While + past continuous (acción larga); la corta en past simple." },
-    { "type": "mc", "sentence": "By the time the police arrived, the thieves ___.", "options": ["had escaped", "escaped", "were escaping"], "answer": "had escaped", "explanation": "By the time + past simple → la acción anterior va en past perfect." },
-    { "type": "gap", "sentence": "They ___ (wait) for hours when the bus finally arrived.", "answers": ["had been waiting"], "explanation": "Duración antes de otra acción pasada → past perfect continuous." },
-    { "type": "mc", "sentence": "I ___ the living room — come and see how nice it looks now.", "options": ["have painted", "have been painting", "had been painting"], "answer": "have painted", "explanation": "Lo importante es el resultado terminado → present perfect simple." },
-    { "type": "mc", "sentence": "I'm exhausted. I ___ the living room all morning.", "options": ["have been painting", "have painted", "painted"], "answer": "have been painting", "explanation": "Lo importante es la actividad y su duración → present perfect continuous." },
-    { "type": "mc", "sentence": "Dinosaurs ___ on Earth millions of years ago.", "options": ["lived", "have lived", "had been living"], "answer": "lived", "explanation": "Hecho del pasado con \"ago\" → past simple." },
-    { "type": "mc", "sentence": "The sun ___ and the birds were singing as we set off.", "options": ["was shining", "shone", "had shone"], "answer": "was shining", "explanation": "Describir el escenario (background) de una historia → past continuous." },
-    { "type": "gap", "sentence": "She ___ (visit) Paris last year.", "answers": ["visited"], "explanation": "Acción terminada con \"last year\" → past simple." },
-    { "type": "mc", "sentence": "I didn't ___ like vegetables, but now I love them.", "options": ["use to", "used to", "would"], "answer": "use to", "explanation": "Negativa: didn't + use to (sin -d)." },
-    { "type": "mc", "sentence": "Before he became famous, he ___ in several small bands.", "options": ["had played", "has played", "was playing"], "answer": "had played", "explanation": "Before + past simple; la acción anterior → past perfect." },
-    { "type": "mc", "sentence": "How long ___ English before you moved to London?", "options": ["had you been studying", "have you been studying", "were you studying"], "answer": "had you been studying", "explanation": "Duración antes de otro momento pasado → past perfect continuous." },
-    { "type": "gap", "sentence": "When I got to the cinema, the film ___ (already / start).", "answers": ["had already started"], "explanation": "La película empezó antes de que yo llegara → past perfect." },
-    { "type": "mc", "sentence": "I ___ my keys, so I can't get into the house.", "options": ["have lost", "had lost", "was losing"], "answer": "have lost", "explanation": "Acción pasada con consecuencia en el presente → present perfect simple." },
-    { "type": "mc", "sentence": "When I was younger, I ___ love horror films, but now I can't stand them.", "options": ["used to", "would", "was used to"], "answer": "used to", "explanation": "Love es un estado / gusto → solo used to, nunca would." },
-    { "type": "mc", "sentence": "He was exhausted because he ___ all day.", "options": ["had been working", "has been working", "was worked"], "answer": "had been working", "explanation": "Duración que explica una situación pasada → past perfect continuous." },
-    { "type": "gap", "sentence": "As a teenager, I ___ (often / play) football every weekend.", "answers": ["often played", "used to play", "would often play", "often used to play", "used to often play", "would play"], "explanation": "Rutina pasada → past simple + adverbio de frecuencia (o used to / would)." }
+    {
+      "type": "mc",
+      "sentence": "When I was a child, I ___ climb trees every afternoon.",
+      "options": [
+        "would",
+        "was used to",
+        "had"
+      ],
+      "answer": "would",
+      "explanation": "Hábito pasado con un verbo de acción → would (o used to)."
+    },
+    {
+      "type": "mc",
+      "sentence": "We ___ live in a small village before moving to Madrid.",
+      "options": [
+        "used to",
+        "would",
+        "were used to"
+      ],
+      "answer": "used to",
+      "explanation": "Live es un estado / lugar donde vivías → solo used to, no would."
+    },
+    {
+      "type": "mc",
+      "sentence": "I ___ have long hair when I was at university.",
+      "options": [
+        "used to",
+        "would",
+        "was using to"
+      ],
+      "answer": "used to",
+      "explanation": "Have (posesión) es un estado → solo used to."
+    },
+    {
+      "type": "gap",
+      "sentence": "I ___ (sleep) when you called me last night.",
+      "answers": [
+        "was sleeping"
+      ],
+      "explanation": "Acción larga interrumpida por otra corta → past continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "While she ___ dinner, the lights went out.",
+      "options": [
+        "was cooking",
+        "cooked",
+        "had cooked"
+      ],
+      "answer": "was cooking",
+      "explanation": "While + past continuous (acción larga); la corta en past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "By the time the police arrived, the thieves ___.",
+      "options": [
+        "had escaped",
+        "escaped",
+        "were escaping"
+      ],
+      "answer": "had escaped",
+      "explanation": "By the time + past simple → la acción anterior va en past perfect."
+    },
+    {
+      "type": "gap",
+      "sentence": "They ___ (wait) for hours when the bus finally arrived.",
+      "answers": [
+        "had been waiting"
+      ],
+      "explanation": "Duración antes de otra acción pasada → past perfect continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "I ___ the living room — come and see how nice it looks now.",
+      "options": [
+        "have painted",
+        "have been painting",
+        "had been painting"
+      ],
+      "answer": "have painted",
+      "explanation": "Lo importante es el resultado terminado → present perfect simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'm exhausted. I ___ the living room all morning.",
+      "options": [
+        "have been painting",
+        "have painted",
+        "painted"
+      ],
+      "answer": "have been painting",
+      "explanation": "Lo importante es la actividad y su duración → present perfect continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "Dinosaurs ___ on Earth millions of years ago.",
+      "options": [
+        "lived",
+        "have lived",
+        "had been living"
+      ],
+      "answer": "lived",
+      "explanation": "Hecho del pasado con \"ago\" → past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "The sun ___ and the birds were singing as we set off.",
+      "options": [
+        "was shining",
+        "shone",
+        "had shone"
+      ],
+      "answer": "was shining",
+      "explanation": "Describir el escenario (background) de una historia → past continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "She ___ (visit) Paris last year.",
+      "answers": [
+        "visited"
+      ],
+      "explanation": "Acción terminada con \"last year\" → past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "I didn't ___ like vegetables, but now I love them.",
+      "options": [
+        "use to",
+        "used to",
+        "would"
+      ],
+      "answer": "use to",
+      "explanation": "Negativa: didn't + use to (sin -d)."
+    },
+    {
+      "type": "mc",
+      "sentence": "Before he became famous, he ___ in several small bands.",
+      "options": [
+        "had played",
+        "has played",
+        "was playing"
+      ],
+      "answer": "had played",
+      "explanation": "Before + past simple; la acción anterior → past perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "How long ___ English before you moved to London?",
+      "options": [
+        "had you been studying",
+        "have you been studying",
+        "were you studying"
+      ],
+      "answer": "had you been studying",
+      "explanation": "Duración antes de otro momento pasado → past perfect continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "When I got to the cinema, the film ___ (already / start).",
+      "answers": [
+        "had already started"
+      ],
+      "explanation": "La película empezó antes de que yo llegara → past perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "I ___ my keys, so I can't get into the house.",
+      "options": [
+        "have lost",
+        "had lost",
+        "was losing"
+      ],
+      "answer": "have lost",
+      "explanation": "Acción pasada con consecuencia en el presente → present perfect simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "When I was younger, I ___ love horror films, but now I can't stand them.",
+      "options": [
+        "used to",
+        "would",
+        "was used to"
+      ],
+      "answer": "used to",
+      "explanation": "Love es un estado / gusto → solo used to, nunca would."
+    },
+    {
+      "type": "mc",
+      "sentence": "He was exhausted because he ___ all day.",
+      "options": [
+        "had been working",
+        "has been working",
+        "was worked"
+      ],
+      "answer": "had been working",
+      "explanation": "Duración que explica una situación pasada → past perfect continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "As a teenager, I ___ (often / play) football every weekend.",
+      "answers": [
+        "often played",
+        "used to play",
+        "would often play",
+        "often used to play",
+        "used to often play",
+        "would play"
+      ],
+      "explanation": "Rutina pasada → past simple + adverbio de frecuencia (o used to / would)."
+    }
   ],
   "transformations": [
-    { "type": "kwt", "lead_in": "My brother is a doctor and he works in a hospital in London.", "keyword": "AS", "before": "My brother", "after": "in a hospital in London.", "answers": ["works as a doctor"], "explanation": "As + profesión real." },
-    { "type": "kwt", "lead_in": "He gives the impression that he hasn't slept for days.", "keyword": "IF", "before": "He looks", "after": "for days.", "answers": ["as if he hasn't slept", "as if he has not slept"], "explanation": "Look + as if + oración." },
-    { "type": "kwt", "lead_in": "I'd prefer to stay at home rather than go to the party.", "keyword": "RATHER", "before": "I", "after": "go to the party.", "answers": ["would rather stay at home than", "'d rather stay at home than"], "explanation": "Would prefer to... rather than = would rather + inf + than + inf." },
-    { "type": "kwt", "lead_in": "I'd rather walk than take the bus.", "keyword": "PREFER", "before": "I", "after": "the bus.", "answers": ["prefer walking to taking"], "explanation": "Prefer + V-ing + to + V-ing." },
-    { "type": "kwt", "lead_in": "You really should get a job now.", "keyword": "HIGH", "before": "It's", "after": "a job.", "answers": ["high time you got", "high time you found"], "explanation": "It's high time + sujeto + past simple." },
-    { "type": "kwt", "lead_in": "Please don't smoke in the car.", "keyword": "RATHER", "before": "I'd", "after": "in the car.", "answers": ["rather you didn't smoke", "rather you did not smoke"], "explanation": "Would rather + otro sujeto + past simple (negativo: didn't)." },
-    { "type": "kwt", "lead_in": "It's a pity I didn't study medicine.", "keyword": "LIKE", "before": "I would", "after": "medicine.", "answers": ["like to have studied"], "explanation": "Deseo ahora sobre el pasado → would like + to have + participio." },
-    { "type": "kwt", "lead_in": "I wanted to go to the concert, but I couldn't.", "keyword": "LIKED", "before": "I would", "after": "to the concert.", "answers": ["have liked to go", "have liked to have gone"], "explanation": "Deseo que tenías en el pasado → would have liked + to inf." },
-    { "type": "kwt", "lead_in": "The thieves escaped before the police arrived.", "keyword": "TIME", "before": "The thieves had escaped", "after": "arrived.", "answers": ["by the time the police"], "explanation": "Past perfect + by the time + past simple." },
-    { "type": "kwt", "lead_in": "We started waiting for the bus two hours before it arrived.", "keyword": "BEEN", "before": "We", "after": "two hours when the bus arrived.", "answers": ["had been waiting for"], "explanation": "Duración antes de otra acción pasada → had been + V-ing." },
-    { "type": "kwt", "lead_in": "I don't play football every weekend any more.", "keyword": "USED", "before": "I", "after": "every weekend.", "answers": ["used to play football"], "explanation": "Hábito pasado que ya no ocurre → used to + inf." },
-    { "type": "kwt", "lead_in": "She was cooking when the lights went out.", "keyword": "WHILE", "before": "The lights went out", "after": "cooking.", "answers": ["while she was"], "explanation": "While + past continuous." },
-    { "type": "kwt", "lead_in": "Most people consider him the best player in the world.", "keyword": "REGARDED", "before": "He", "after": "the best player in the world.", "answers": ["is regarded as", "is widely regarded as", "is generally regarded as"], "explanation": "Be regarded + as (pasiva de regard someone as)." },
-    { "type": "kwt", "lead_in": "The two jackets cost the same.", "keyword": "AS", "before": "This jacket is", "after": "that one.", "answers": ["as expensive as", "the same price as", "as cheap as"], "explanation": "Igualdad: as + adj + as / the same (price) as." },
-    { "type": "kwt", "lead_in": "It's a shame you didn't tell me the truth.", "keyword": "RATHER", "before": "I'd", "after": "me the truth.", "answers": ["rather you had told", "rather you'd told"], "explanation": "Queja sobre el pasado de otra persona → would rather + sujeto + past perfect." },
-    { "type": "kwt", "lead_in": "I'd prefer you not to call me after 10 p.m.", "keyword": "SOONER", "before": "I'd", "after": "me after 10 p.m.", "answers": ["sooner you didn't call", "sooner you did not call", "sooner you didn't phone", "sooner you did not phone"], "explanation": "Would sooner (= would rather) + sujeto + past simple." },
-    { "type": "kwt", "lead_in": "When I was a child, I spent every summer at my grandparents' farm.", "keyword": "WOULD", "before": "When I was a child, I", "after": "at my grandparents' farm.", "answers": ["would spend every summer", "would spend my summers", "would always spend the summer"], "explanation": "Hábito pasado con verbo de acción → would + inf." },
-    { "type": "kwt", "lead_in": "I started painting the room this morning and I'm still doing it.", "keyword": "BEEN", "before": "I", "after": "the room since this morning.", "answers": ["have been painting"], "explanation": "Actividad que empezó en el pasado y continúa → present perfect continuous." },
-    { "type": "kwt", "lead_in": "It seems that she is rather tired today.", "keyword": "SEEMS", "before": "She", "after": "rather tired today.", "answers": ["seems to be"], "explanation": "Seem + to be + adjetivo." },
-    { "type": "kwt", "lead_in": "I regret camping instead of staying in a hotel.", "keyword": "SOONER", "before": "I would", "after": "in a hotel than camped.", "answers": ["sooner have stayed"], "explanation": "Mismo sujeto, preferencia sobre el pasado → would sooner + have + participio." }
+    {
+      "type": "kwt",
+      "lead_in": "My brother is a doctor and he works in a hospital in London.",
+      "keyword": "AS",
+      "before": "My brother",
+      "after": "in a hospital in London.",
+      "answers": [
+        "works as a doctor"
+      ],
+      "explanation": "As + profesión real."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "He gives the impression that he hasn't slept for days.",
+      "keyword": "IF",
+      "before": "He looks",
+      "after": "for days.",
+      "answers": [
+        "as if he hasn't slept",
+        "as if he has not slept"
+      ],
+      "explanation": "Look + as if + oración."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I'd prefer to stay at home rather than go to the party.",
+      "keyword": "RATHER",
+      "before": "I",
+      "after": "go to the party.",
+      "answers": [
+        "would rather stay at home than",
+        "'d rather stay at home than"
+      ],
+      "explanation": "Would prefer to... rather than = would rather + inf + than + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I'd rather walk than take the bus.",
+      "keyword": "PREFER",
+      "before": "I",
+      "after": "the bus.",
+      "answers": [
+        "prefer walking to taking"
+      ],
+      "explanation": "Prefer + V-ing + to + V-ing."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "You really should get a job now.",
+      "keyword": "HIGH",
+      "before": "It's",
+      "after": "a job.",
+      "answers": [
+        "high time you got",
+        "high time you found"
+      ],
+      "explanation": "It's high time + sujeto + past simple."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "Please don't smoke in the car.",
+      "keyword": "RATHER",
+      "before": "I'd",
+      "after": "in the car.",
+      "answers": [
+        "rather you didn't smoke",
+        "rather you did not smoke"
+      ],
+      "explanation": "Would rather + otro sujeto + past simple (negativo: didn't)."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It's a pity I didn't study medicine.",
+      "keyword": "LIKE",
+      "before": "I would",
+      "after": "medicine.",
+      "answers": [
+        "like to have studied"
+      ],
+      "explanation": "Deseo ahora sobre el pasado → would like + to have + participio."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I wanted to go to the concert, but I couldn't.",
+      "keyword": "LIKED",
+      "before": "I would",
+      "after": "to the concert.",
+      "answers": [
+        "have liked to go",
+        "have liked to have gone"
+      ],
+      "explanation": "Deseo que tenías en el pasado → would have liked + to inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "The thieves escaped before the police arrived.",
+      "keyword": "TIME",
+      "before": "The thieves had escaped",
+      "after": "arrived.",
+      "answers": [
+        "by the time the police"
+      ],
+      "explanation": "Past perfect + by the time + past simple."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "We started waiting for the bus two hours before it arrived.",
+      "keyword": "BEEN",
+      "before": "We",
+      "after": "two hours when the bus arrived.",
+      "answers": [
+        "had been waiting for"
+      ],
+      "explanation": "Duración antes de otra acción pasada → had been + V-ing."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I don't play football every weekend any more.",
+      "keyword": "USED",
+      "before": "I",
+      "after": "every weekend.",
+      "answers": [
+        "used to play football"
+      ],
+      "explanation": "Hábito pasado que ya no ocurre → used to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "She was cooking when the lights went out.",
+      "keyword": "WHILE",
+      "before": "The lights went out",
+      "after": "cooking.",
+      "answers": [
+        "while she was"
+      ],
+      "explanation": "While + past continuous."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "Most people consider him the best player in the world.",
+      "keyword": "REGARDED",
+      "before": "He",
+      "after": "the best player in the world.",
+      "answers": [
+        "is regarded as",
+        "is widely regarded as",
+        "is generally regarded as"
+      ],
+      "explanation": "Be regarded + as (pasiva de regard someone as)."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "The two jackets cost the same.",
+      "keyword": "AS",
+      "before": "This jacket is",
+      "after": "that one.",
+      "answers": [
+        "as expensive as",
+        "the same price as",
+        "as cheap as"
+      ],
+      "explanation": "Igualdad: as + adj + as / the same (price) as."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It's a shame you didn't tell me the truth.",
+      "keyword": "RATHER",
+      "before": "I'd",
+      "after": "me the truth.",
+      "answers": [
+        "rather you had told",
+        "rather you'd told"
+      ],
+      "explanation": "Queja sobre el pasado de otra persona → would rather + sujeto + past perfect."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I'd prefer you not to call me after 10 p.m.",
+      "keyword": "SOONER",
+      "before": "I'd",
+      "after": "me after 10 p.m.",
+      "answers": [
+        "sooner you didn't call",
+        "sooner you did not call",
+        "sooner you didn't phone",
+        "sooner you did not phone"
+      ],
+      "explanation": "Would sooner (= would rather) + sujeto + past simple."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "When I was a child, I spent every summer at my grandparents' farm.",
+      "keyword": "WOULD",
+      "before": "When I was a child, I",
+      "after": "at my grandparents' farm.",
+      "answers": [
+        "would spend every summer",
+        "would spend my summers",
+        "would always spend the summer"
+      ],
+      "explanation": "Hábito pasado con verbo de acción → would + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I started painting the room this morning and I'm still doing it.",
+      "keyword": "BEEN",
+      "before": "I",
+      "after": "the room since this morning.",
+      "answers": [
+        "have been painting"
+      ],
+      "explanation": "Actividad que empezó en el pasado y continúa → present perfect continuous."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It seems that she is rather tired today.",
+      "keyword": "SEEMS",
+      "before": "She",
+      "after": "rather tired today.",
+      "answers": [
+        "seems to be"
+      ],
+      "explanation": "Seem + to be + adjetivo."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I regret camping instead of staying in a hotel.",
+      "keyword": "SOONER",
+      "before": "I would",
+      "after": "in a hotel than camped.",
+      "answers": [
+        "sooner have stayed"
+      ],
+      "explanation": "Mismo sujeto, preferencia sobre el pasado → would sooner + have + participio."
+    }
+  ],
+  "book": [
+    {
+      "type": "mc",
+      "sentence": "Larissa can't play tennis this weekend because she ___ her wrist.",
+      "options": [
+        "has injured",
+        "had injured"
+      ],
+      "answer": "has injured",
+      "explanation": "Resultado en el presente (no puede jugar) → present perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "She ___ while she was running for a train yesterday.",
+      "options": [
+        "fell over",
+        "was falling over"
+      ],
+      "answer": "fell over",
+      "explanation": "Acción corta que interrumpe a la larga → past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "She fell over while she ___ for a train yesterday.",
+      "options": [
+        "was running",
+        "ran"
+      ],
+      "answer": "was running",
+      "explanation": "Acción larga en progreso → past continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "Could you get me a bandage, please? ___ my finger.",
+      "options": [
+        "I've cut",
+        "I'd cut"
+      ],
+      "answer": "I've cut",
+      "explanation": "Acción reciente con resultado ahora → present perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "While I ___ lunch, my phone rang six or seven times.",
+      "options": [
+        "was having",
+        "had"
+      ],
+      "answer": "was having",
+      "explanation": "While + past continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "While I was having lunch, my phone ___ six or seven times.",
+      "options": [
+        "rang",
+        "was ringing"
+      ],
+      "answer": "rang",
+      "explanation": "Acciones cortas repetidas que interrumpen → past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "It wasn't the first time Jess ___ the law.",
+      "options": [
+        "had broken",
+        "has broken"
+      ],
+      "answer": "had broken",
+      "explanation": "It was the first time... → past perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "When she was a child, she ___ sweets in shops.",
+      "options": [
+        "would often steal",
+        "was often stealing"
+      ],
+      "answer": "would often steal",
+      "explanation": "Hábito pasado (acción) → would."
+    },
+    {
+      "type": "mc",
+      "sentence": "What time ___ home last night?",
+      "options": [
+        "did you get",
+        "have you got"
+      ],
+      "answer": "did you get",
+      "explanation": "Tiempo terminado (last night) → past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "Ben ___ computer games all morning. He must be hungry by now.",
+      "options": [
+        "has been playing",
+        "had been playing"
+      ],
+      "answer": "has been playing",
+      "explanation": "Actividad hasta ahora con efecto presente → present perfect continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "You look pretty rough. ___ any breakfast yet?",
+      "options": [
+        "Have you had",
+        "Did you have"
+      ],
+      "answer": "Have you had",
+      "explanation": "Yet → present perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "No, I feel terrible. ___ a wink last night.",
+      "options": [
+        "I didn't sleep",
+        "I haven't slept"
+      ],
+      "answer": "I didn't sleep",
+      "explanation": "Last night (terminado) → past simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "It's Thursday already. ___ online every morning this week.",
+      "options": [
+        "I've looked",
+        "I looked"
+      ],
+      "answer": "I've looked",
+      "explanation": "This week (periodo no terminado) → present perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "It's nearly three months since ___ the exams.",
+      "options": [
+        "I took",
+        "I've taken"
+      ],
+      "answer": "I took",
+      "explanation": "It's ... since + past simple (momento concreto)."
+    },
+    {
+      "type": "mc",
+      "sentence": "___ to wait as long as this before. It's torture.",
+      "options": [
+        "I've never had",
+        "I never had"
+      ],
+      "answer": "I've never had",
+      "explanation": "Experiencia hasta ahora (never ... before) → present perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'm sure you'll be OK. ___ for months.",
+      "options": [
+        "You've been revising",
+        "You revised"
+      ],
+      "answer": "You've been revising",
+      "explanation": "Actividad larga hasta ahora → present perfect continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "___ every geography exam I've ever taken.",
+      "options": [
+        "I've failed",
+        "I'd failed"
+      ],
+      "answer": "I've failed",
+      "explanation": "Experiencia hasta ahora → present perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "It could be the message ___ for.",
+      "options": [
+        "I've been waiting",
+        "I've waited"
+      ],
+      "answer": "I've been waiting",
+      "explanation": "Duración que sigue ahora → present perfect continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "Brilliant! ___ Congratulations!",
+      "options": [
+        "You've passed!",
+        "You'd passed!"
+      ],
+      "answer": "You've passed!",
+      "explanation": "Noticia reciente con resultado ahora → present perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "That's amazing — I really thought that ___.",
+      "options": [
+        "I'd failed",
+        "I've failed"
+      ],
+      "answer": "I'd failed",
+      "explanation": "Anterior a otro pasado (I thought) → past perfect."
+    },
+    {
+      "type": "gap",
+      "sentence": "She ___ (copy) her friend's work for over a year, before one of her teachers found out.",
+      "answers": [
+        "had been copying"
+      ],
+      "explanation": "Duración antes de otro momento pasado → past perfect continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "The tsunami destroyed the bungalow where they ___ (stay) just two days before.",
+      "answers": [
+        "had been staying",
+        "had stayed"
+      ],
+      "explanation": "Antes de otro momento pasado → past perfect (continuo o simple)."
+    },
+    {
+      "type": "gap",
+      "sentence": "It was only after she had arrived that she realised she ___ (forget) to bring her phone charger.",
+      "answers": [
+        "had forgotten"
+      ],
+      "explanation": "Anterior a 'realised' → past perfect."
+    },
+    {
+      "type": "gap",
+      "sentence": "You are looking very sweaty. ___ (you / exercise) this morning?",
+      "answers": [
+        "Have you been exercising"
+      ],
+      "explanation": "Actividad reciente con efecto visible → present perfect continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "I ___ (repair) the gears on my bike, so I can't come with you until I've had a shower.",
+      "answers": [
+        "have been repairing",
+        "'ve been repairing"
+      ],
+      "explanation": "Actividad reciente con efecto ahora (estoy sucio) → present perfect continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "They ___ (drive) for most of the morning when they decided to stop for a picnic.",
+      "answers": [
+        "had been driving"
+      ],
+      "explanation": "Duración antes de otra acción pasada → past perfect continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "They ___ (go) backpacking to India twice this year.",
+      "answers": [
+        "have been",
+        "have gone",
+        "'ve been"
+      ],
+      "explanation": "Número de veces en un periodo no terminado → present perfect simple."
+    },
+    {
+      "type": "gap",
+      "sentence": "He went home as soon as he ___ (finish) his work.",
+      "answers": [
+        "had finished",
+        "'d finished"
+      ],
+      "explanation": "As soon as / after + past perfect."
+    },
+    {
+      "type": "gap",
+      "sentence": "My eyes were tired because I ___ (read) for three hours in bad light.",
+      "answers": [
+        "had been reading",
+        "'d been reading"
+      ],
+      "explanation": "Duración que explica una situación pasada → past perfect continuous."
+    }
   ]
 }

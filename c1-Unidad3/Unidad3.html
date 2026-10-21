@@ -128,6 +128,9 @@
                 <button onclick="switchTab('causative')" id="tab-causative" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
                     Have / Get Something Done
                 </button>
+                <button onclick="switchTab('book')" id="tab-book" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Complete Advanced
+                </button>
                 <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
                     Keyword Transformation C1
                 </button>
@@ -157,6 +160,7 @@
         <section id="content-passive" class="tab-content hidden"></section>
         <section id="content-reporting" class="tab-content hidden"></section>
         <section id="content-causative" class="tab-content hidden"></section>
+        <section id="content-book" class="tab-content hidden"></section>
         <section id="content-transformations" class="tab-content hidden"></section>
 
         <!-- Speaking Templates Tab -->
@@ -200,6 +204,17 @@
               "He no longer works here.",
               "No smoking.",
               "There's no point in arguing."
+            ]
+          },
+          {
+            "heading": "Más usos de NO / NOT (Complete Advanced)",
+            "rule": "No + different (no different = igual). Not + adverbio / sustantivo / cuantificador: not surprisingly, not coffee, not all. Respuestas cortas: I'm afraid not / I hope not. ¡No, none y not NO van con verbos negativos ni con hardly!",
+            "examples": [
+              "This week has been no different.",
+              "Not surprisingly, he failed his driving test.",
+              "I ordered tea, not coffee.",
+              "'Can you come?' 'I'm afraid not.'",
+              "✗ There's hardly no food left. → ✓ There's hardly any food left."
             ]
           },
           {
@@ -267,7 +282,7 @@
           },
           {
             "heading": "Tabla: la pasiva en todos los tiempos",
-            "rule": "Truco: mira el tiempo del verbo activo y ponlo en TO BE. El verbo principal siempre va en participio.",
+            "rule": "Truco: mira el tiempo del verbo activo y ponlo en TO BE. El verbo principal siempre va en participio. Ojo: el present / past perfect continuous y el future continuous NO tienen pasiva.",
             "table": {
               "headers": [
                 "Tiempo",
@@ -293,7 +308,7 @@
                 [
                   "Present perfect cont.",
                   "I have been making a cake",
-                  "A cake has been being made (raro)"
+                  "✗ No existe en pasiva"
                 ],
                 [
                   "Past simple",
@@ -313,7 +328,7 @@
                 [
                   "Past perfect cont.",
                   "I had been making a cake",
-                  "A cake had been being made (raro)"
+                  "✗ No existe en pasiva"
                 ],
                 [
                   "Future simple",
@@ -357,6 +372,16 @@
             "examples": [
               "She expects to be invited.",
               "I hate being told what to do."
+            ]
+          },
+          {
+            "heading": "¿Cuándo usamos la pasiva? (Complete Advanced)",
+            "rule": "Cuando el agente es desconocido, poco importante u obvio · en estilo formal o científico · para describir procesos · para dar 'flow' al texto: poner la información conocida al principio y evitar sujetos muy largos.",
+            "examples": [
+              "My office was broken into last night.",
+              "He was arrested and charged with theft.",
+              "Water was added and the mixture was heated to 85°C.",
+              "The club management was addressed by the player who has won 'footballer of the year' most times."
             ]
           }
         ]
@@ -1668,6 +1693,347 @@
         ],
         "explanation": "Pasiva + acción anterior → to have been + participio."
       }
+    ],
+    "book": [
+      {
+        "type": "gap",
+        "sentence": "Correct it: ___ my teammates could offer me a lift, as they all lived on the other side of town. (2 words)",
+        "answers": [
+          "None of"
+        ],
+        "explanation": "None of + plural (✗ No one of)."
+      },
+      {
+        "type": "gap",
+        "sentence": "Correct it: I ___ anybody to take this chest of drawers away. (2 words, negative)",
+        "answers": [
+          "can't find",
+          "cannot find",
+          "couldn't find"
+        ],
+        "explanation": "Anybody necesita verbo negativo (o: I can find nobody)."
+      },
+      {
+        "type": "mc",
+        "sentence": "We need to buy some milk. There ___ in the fridge.",
+        "options": [
+          "is none",
+          "is not",
+          "is no"
+        ],
+        "answer": "is none",
+        "explanation": "None sustituye al sustantivo (milk)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I went to the bookshop, but I couldn't find ___ books that I wanted to buy.",
+        "options": [
+          "any",
+          "no",
+          "none"
+        ],
+        "answer": "any",
+        "explanation": "Verbo ya negativo (couldn't) → any. Nada de doble negación."
+      },
+      {
+        "type": "mc",
+        "sentence": "My family were ___ very pleased when I arrived home without the shopping.",
+        "options": [
+          "not",
+          "no",
+          "none"
+        ],
+        "answer": "not",
+        "explanation": "Not niega adjetivos / adverbios (not very pleased)."
+      },
+      {
+        "type": "mc",
+        "sentence": "There were ___ waiters available to take our order.",
+        "options": [
+          "no",
+          "none",
+          "not"
+        ],
+        "answer": "no",
+        "explanation": "No + sustantivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "Many classmates of mine were ___ pleased to have to do homework on a Friday.",
+        "options": [
+          "not",
+          "no",
+          "none"
+        ],
+        "answer": "not",
+        "explanation": "Not + adjetivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "The train company had hardly ___ information about the journey.",
+        "options": [
+          "any",
+          "no",
+          "none"
+        ],
+        "answer": "any",
+        "explanation": "Hardly ya es negativo → hardly any (✗ hardly no)."
+      },
+      {
+        "type": "mc",
+        "sentence": "There's ___ difference between the two paintings. They're identical.",
+        "options": [
+          "no",
+          "none",
+          "not"
+        ],
+        "answer": "no",
+        "explanation": "No + sustantivo (difference)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I went to the party, but ___ my so-called friends turned up.",
+        "options": [
+          "none of",
+          "none",
+          "no"
+        ],
+        "answer": "none of",
+        "explanation": "None of + determinante / posesivo + sustantivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "The traffic is ___ worse today than it was yesterday.",
+        "options": [
+          "no",
+          "not",
+          "none"
+        ],
+        "answer": "no",
+        "explanation": "No + comparativo."
+      },
+      {
+        "type": "mc",
+        "sentence": "I worked late every evening last week, and this week has been ___ different.",
+        "options": [
+          "no",
+          "not",
+          "none"
+        ],
+        "answer": "no",
+        "explanation": "No different = igual."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ surprisingly, he failed his driving test.",
+        "options": [
+          "Not",
+          "No",
+          "None"
+        ],
+        "answer": "Not",
+        "explanation": "Not + adverbio."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Can you come out tonight?' 'No, I'm afraid ___.'",
+        "options": [
+          "not",
+          "no",
+          "none"
+        ],
+        "answer": "not",
+        "explanation": "I'm afraid not / I hope not."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ all Canadians speak French.",
+        "options": [
+          "Not",
+          "No",
+          "None of"
+        ],
+        "answer": "Not",
+        "explanation": "Not all + sustantivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "None of my colleagues ___ Japanese. (formal written English)",
+        "options": [
+          "speaks",
+          "speak"
+        ],
+        "answer": "speaks",
+        "explanation": "En inglés formal escrito, none va con verbo singular."
+      },
+      {
+        "type": "gap",
+        "sentence": "They'll hold interviews for the other top jobs next week. → Interviews for the other top jobs ___ (hold) next week.",
+        "answers": [
+          "will be held"
+        ],
+        "explanation": "Future simple pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "The applicant has written it in pencil. → It ___ (write) in pencil.",
+        "answers": [
+          "has been written"
+        ],
+        "explanation": "Present perfect pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "They have appointed no one to replace Ms Kirkby. → No one ___ (appoint) to replace Ms Kirkby.",
+        "answers": [
+          "has been appointed"
+        ],
+        "explanation": "Present perfect pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "...since they promoted her last year. → ...since she ___ (promote) last year.",
+        "answers": [
+          "was promoted"
+        ],
+        "explanation": "Past simple pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "They asked applicants to send in hand-written letters. → Applicants ___ (ask) to send in hand-written letters.",
+        "answers": [
+          "were asked"
+        ],
+        "explanation": "Past simple pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "You must send your application as a PDF. → Your application ___ (send) as a PDF.",
+        "answers": [
+          "must be sent"
+        ],
+        "explanation": "Modal + be + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "The company will require successful applicants to start on Monday. → Successful applicants ___ (require) to start on Monday.",
+        "answers": [
+          "will be required"
+        ],
+        "explanation": "Future simple pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "Jeffrey Bowman will announce the name of the new CEO. → The name of the new CEO ___ (announce) by Jeffrey Bowman.",
+        "answers": [
+          "will be announced"
+        ],
+        "explanation": "Pasiva con agente (aquí el agente importa)."
+      },
+      {
+        "type": "gap",
+        "sentence": "You couldn't expect someone with experience to work for that salary. → Someone with experience ___ (expect) to work for that salary.",
+        "answers": [
+          "couldn't be expected",
+          "could not be expected"
+        ],
+        "explanation": "Modal negativo + be + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "Illegal squatters have finally abandoned a city centre mansion. → A city centre mansion ___ (finally / abandon) by illegal squatters.",
+        "answers": [
+          "has finally been abandoned"
+        ],
+        "explanation": "Present perfect pasivo (finally entre has y been)."
+      },
+      {
+        "type": "gap",
+        "sentence": "They had covered three of the bedroom walls with graffiti. → Three of the bedroom walls ___ (cover) with graffiti.",
+        "answers": [
+          "had been covered"
+        ],
+        "explanation": "Past perfect pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "They had chopped up most of the furniture. → Most of the furniture ___ (chop up).",
+        "answers": [
+          "had been chopped up"
+        ],
+        "explanation": "Past perfect pasivo con phrasal verb."
+      },
+      {
+        "type": "gap",
+        "sentence": "Builders have estimated the damage at more than £1 million. → The damage ___ (estimate) at more than £1 million.",
+        "answers": [
+          "has been estimated"
+        ],
+        "explanation": "Present perfect pasivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "Specific medical conditions can cause amnesia. → Amnesia ___ (cause) by specific medical conditions.",
+        "answers": [
+          "can be caused"
+        ],
+        "explanation": "Modal + be + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "Could someone put a false memory into our heads? → Could a false memory ___ (put) into our heads?",
+        "answers": [
+          "be put"
+        ],
+        "explanation": "Pregunta con modal en pasiva: could + sujeto + be + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "Normally we can access it quickly. → Normally it ___ (access) quickly.",
+        "answers": [
+          "can be accessed"
+        ],
+        "explanation": "Modal + be + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "If someone distracts you, you can lose the information. → If you ___ (distract), the information can be lost.",
+        "answers": [
+          "are distracted",
+          "get distracted"
+        ],
+        "explanation": "Present simple pasivo (o get + participio)."
+      },
+      {
+        "type": "mc",
+        "sentence": "The goods ___ from Italy right now.",
+        "options": [
+          "are being imported",
+          "have been being imported"
+        ],
+        "answer": "are being imported",
+        "explanation": "No existe pasiva del present / past perfect continuous ni del future continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "Some of our ornaments ___ smashed when the toddler came round.",
+        "options": [
+          "got",
+          "had"
+        ],
+        "answer": "got",
+        "explanation": "Get + participio (informal), algo malo que pasa."
+      },
+      {
+        "type": "mc",
+        "sentence": "My office ___ last night.",
+        "options": [
+          "was broken into",
+          "broke into"
+        ],
+        "answer": "was broken into",
+        "explanation": "Agente desconocido → pasiva (phrasal verb: broken into)."
+      }
     ]
   }
 };
@@ -1678,7 +2044,7 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'negatives', 'passive', 'reporting', 'causative', 'transformations', 'speaking'];
+const TABS = ['theory', 'negatives', 'passive', 'reporting', 'causative', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     negatives: {
@@ -1700,6 +2066,11 @@ const QUIZ_INFO = {
         title: 'Get Passive & Have / Get Something Done',
         instructions: 'Choose the correct option or write the missing word(s).',
         color: 'rose'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 3: no, none, not & the passive). Choose the correct option or write the missing words.',
+        color: 'purple'
     },
     transformations: {
         title: 'Keyword Transformation (Part 4)',

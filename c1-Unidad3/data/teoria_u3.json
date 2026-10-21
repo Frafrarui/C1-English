@@ -8,39 +8,81 @@
         {
           "heading": "NO = not any (determinante) → \"ningún / ninguna\"",
           "rule": "Regla: va SIEMPRE seguido inmediatamente de un sustantivo. No + incontable / contable plural (o singular). El verbo va en afirmativo.",
-          "examples": ["I have no money. (= I don't have any money)", "I have no friends.", "No student passed the test."],
+          "examples": [
+            "I have no money. (= I don't have any money)",
+            "I have no friends.",
+            "No student passed the test."
+          ],
           "tip": "✗ I don't have no money (doble negación). ✓ I have no money / I don't have any money."
         },
         {
           "heading": "NO + comparativo / expresiones fijas",
           "rule": "No delante de un comparativo (no more, no better, no longer...) y en expresiones como there's no point, no way, no idea, o prohibiciones (No + V-ing).",
-          "examples": ["There are no more people living here.", "She is no better at maths than her brother.", "He no longer works here.", "No smoking.", "There's no point in arguing."]
+          "examples": [
+            "There are no more people living here.",
+            "She is no better at maths than her brother.",
+            "He no longer works here.",
+            "No smoking.",
+            "There's no point in arguing."
+          ]
+        },
+        {
+          "heading": "Más usos de NO / NOT (Complete Advanced)",
+          "rule": "No + different (no different = igual). Not + adverbio / sustantivo / cuantificador: not surprisingly, not coffee, not all. Respuestas cortas: I'm afraid not / I hope not. ¡No, none y not NO van con verbos negativos ni con hardly!",
+          "examples": [
+            "This week has been no different.",
+            "Not surprisingly, he failed his driving test.",
+            "I ordered tea, not coffee.",
+            "'Can you come?' 'I'm afraid not.'",
+            "✗ There's hardly no food left. → ✓ There's hardly any food left."
+          ]
         },
         {
           "heading": "NONE = not one / not any (pronombre) → \"ninguno / ni uno\"",
           "rule": "Regla: REEMPLAZA a un sustantivo, por eso NO va seguido de un sustantivo... a menos que uses OF. Puede ir solo, como respuesta corta o al final de la frase.",
-          "examples": ["We looked for tickets, but we found none.", "Do you have any books? — None.", "How many mistakes did you make? — None at all."]
+          "examples": [
+            "We looked for tickets, but we found none.",
+            "Do you have any books? — None.",
+            "How many mistakes did you make? — None at all."
+          ]
         },
         {
           "heading": "NONE OF + sustantivo plural / incontable / pronombre",
           "rule": "None of + the / my / these... + sustantivo, o None of + us / you / them.",
-          "examples": ["None of my friends live in Sevilla.", "None of the information is correct.", "None of us knew the answer."],
+          "examples": [
+            "None of my friends live in Sevilla.",
+            "None of the information is correct.",
+            "None of us knew the answer."
+          ],
           "tip": "Verbo: con incontable → siempre singular (None of the information IS). Con plural → singular (formal) o plural (informal): None of my friends lives / live. En el examen los dos valen."
         },
         {
           "heading": "NOT = adverbio → niega verbos (y adjetivos / adverbios)",
           "rule": "Regla: not niega verbos, normalmente con auxiliar (do not, is not, have not...). También niega adjetivos, adverbios y cuantificadores.",
-          "examples": ["I do not agree.", "It's not easy.", "I'm not sure."]
+          "examples": [
+            "I do not agree.",
+            "It's not easy.",
+            "I'm not sure."
+          ]
         },
         {
           "heading": "NOT + cuantificadores / adverbios",
           "rule": "Not many, not much, not all, not everyone, not a single, not often... Aquí NO podemos usar no ni none.",
-          "examples": ["Not many students passed the test.", "Not everyone agrees with you.", "Not a single person came."]
+          "examples": [
+            "Not many students passed the test.",
+            "Not everyone agrees with you.",
+            "Not a single person came."
+          ]
         },
         {
           "heading": "NOT en inversiones y cleft sentences (C1)",
           "rule": "Not only + auxiliar + sujeto ..., but (sujeto) also ... · Not until + tiempo / oración + auxiliar + sujeto. Cleft: It was not until ... that ...",
-          "examples": ["Not only did she win the race, but she also broke the record.", "Not only is he clever, but he is also kind.", "Not until I got home did I realise I'd lost my wallet.", "It was not until midnight that he arrived."],
+          "examples": [
+            "Not only did she win the race, but she also broke the record.",
+            "Not only is he clever, but he is also kind.",
+            "Not until I got home did I realise I'd lost my wallet.",
+            "It was not until midnight that he arrived."
+          ],
           "tip": "Con Not only al principio se invierte como en una pregunta: did she win / is he / has he..."
         }
       ]
@@ -53,40 +95,114 @@
         {
           "heading": "¿Qué es y cómo se forma?",
           "rule": "Pone el foco en la situación / acción, no en quién la hace. Necesitamos un verbo TRANSITIVO (con objeto directo). El O.D. pasa a ser sujeto + verbo TO BE en el tiempo de la frase original + PARTICIPIO (+ by + agente, solo si importa).",
-          "examples": ["Michael has studied climate change. → Climate change has been studied by Michael."],
+          "examples": [
+            "Michael has studied climate change. → Climate change has been studied by Michael."
+          ],
           "tip": "Verbos intransitivos (happen, arrive, die, sleep...) no tienen pasiva: ✗ The accident was happened."
         },
         {
           "heading": "Tabla: la pasiva en todos los tiempos",
-          "rule": "Truco: mira el tiempo del verbo activo y ponlo en TO BE. El verbo principal siempre va en participio.",
+          "rule": "Truco: mira el tiempo del verbo activo y ponlo en TO BE. El verbo principal siempre va en participio. Ojo: el present / past perfect continuous y el future continuous NO tienen pasiva.",
           "table": {
-            "headers": ["Tiempo", "Activa", "Pasiva (to be + participio)"],
+            "headers": [
+              "Tiempo",
+              "Activa",
+              "Pasiva (to be + participio)"
+            ],
             "rows": [
-              ["Present simple", "I make a cake", "A cake is made"],
-              ["Present continuous", "I am making a cake", "A cake is being made"],
-              ["Present perfect", "I have made a cake", "A cake has been made"],
-              ["Present perfect cont.", "I have been making a cake", "A cake has been being made (raro)"],
-              ["Past simple", "I made a cake", "A cake was made"],
-              ["Past continuous", "I was making a cake", "A cake was being made"],
-              ["Past perfect", "I had made a cake", "A cake had been made"],
-              ["Past perfect cont.", "I had been making a cake", "A cake had been being made (raro)"],
-              ["Future simple", "I will make a cake", "A cake will be made"],
-              ["Future perfect", "I will have made a cake", "A cake will have been made"],
-              ["Be going to", "I am going to make a cake", "A cake is going to be made"],
-              ["Modales", "I must make a cake", "A cake must be made"],
-              ["Modal perfect", "I should have made a cake", "A cake should have been made"]
+              [
+                "Present simple",
+                "I make a cake",
+                "A cake is made"
+              ],
+              [
+                "Present continuous",
+                "I am making a cake",
+                "A cake is being made"
+              ],
+              [
+                "Present perfect",
+                "I have made a cake",
+                "A cake has been made"
+              ],
+              [
+                "Present perfect cont.",
+                "I have been making a cake",
+                "✗ No existe en pasiva"
+              ],
+              [
+                "Past simple",
+                "I made a cake",
+                "A cake was made"
+              ],
+              [
+                "Past continuous",
+                "I was making a cake",
+                "A cake was being made"
+              ],
+              [
+                "Past perfect",
+                "I had made a cake",
+                "A cake had been made"
+              ],
+              [
+                "Past perfect cont.",
+                "I had been making a cake",
+                "✗ No existe en pasiva"
+              ],
+              [
+                "Future simple",
+                "I will make a cake",
+                "A cake will be made"
+              ],
+              [
+                "Future perfect",
+                "I will have made a cake",
+                "A cake will have been made"
+              ],
+              [
+                "Be going to",
+                "I am going to make a cake",
+                "A cake is going to be made"
+              ],
+              [
+                "Modales",
+                "I must make a cake",
+                "A cake must be made"
+              ],
+              [
+                "Modal perfect",
+                "I should have made a cake",
+                "A cake should have been made"
+              ]
             ]
           }
         },
         {
           "heading": "Verbos con dos objetos (give, send, offer, show, tell...)",
           "rule": "Lo más natural es que la PERSONA sea el sujeto de la pasiva.",
-          "examples": ["They gave me a prize. → I was given a prize.", "Someone showed us the way. → We were shown the way."]
+          "examples": [
+            "They gave me a prize. → I was given a prize.",
+            "Someone showed us the way. → We were shown the way."
+          ]
         },
         {
           "heading": "Infinitivo y gerundio pasivos",
           "rule": "to be + participio / being + participio, después de verbos que piden infinitivo o gerundio.",
-          "examples": ["She expects to be invited.", "I hate being told what to do."]
+          "examples": [
+            "She expects to be invited.",
+            "I hate being told what to do."
+          ]
+        },
+        {
+          "heading": "¿Cuándo usamos la pasiva? (Complete Advanced)",
+          "rule": "Cuando el agente es desconocido, poco importante u obvio · en estilo formal o científico · para describir procesos · para dar 'flow' al texto: poner la información conocida al principio y evitar sujetos muy largos.",
+          "examples": [
+            "My office was broken into last night.",
+            "He was arrested and charged with theft.",
+            "Water was added and the mixture was heated to 85°C.",
+            "The club management was addressed by the player who has won 'footballer of the year' most times."
+          ]
         }
       ]
     },
@@ -98,51 +214,109 @@
         {
           "heading": "Verbos: think · believe · say · know · consider · report · rumour · claim · expect · understand · estimate",
           "rule": "Cuando aparecen estos verbos hay DOS formas de hacer la pasiva: la impersonal (It ... that) y la personal (Sujeto ... to + inf).",
-          "examples": ["Active: People think that young people drink a lot."]
+          "examples": [
+            "Active: People think that young people drink a lot."
+          ]
         },
         {
           "heading": "1. Pasiva IMPERSONAL: It + be + participio + that + oración",
           "rule": "Empieza por It. La segunda oración NO cambia: se copia tal cual.",
-          "examples": ["It is thought that young people drink a lot.", "It was said that young people drank a lot."]
+          "examples": [
+            "It is thought that young people drink a lot.",
+            "It was said that young people drank a lot."
+          ]
         },
         {
           "heading": "2. Pasiva PERSONAL: Sujeto + be + participio + TO + infinitivo",
           "rule": "El sujeto de la segunda oración pasa al principio. El verbo de esa oración se convierte en un INFINITIVO, y la forma del infinitivo depende del tiempo (ver tabla).",
-          "examples": ["Young people are thought to drink a lot."]
+          "examples": [
+            "Young people are thought to drink a lot."
+          ]
         },
         {
           "heading": "¿Por qué cambia el infinitivo? La clave",
           "rule": "El verbo de reporting (is thought / was said) ya marca CUÁNDO se opina. El infinitivo no tiene tiempos; solo indica si la acción ocurre AL MISMO TIEMPO que la opinión o ANTES. Mismo momento → to + inf (o to be + -ing si es continua). Momento anterior → infinitivo perfecto to have + participio (o to have been + -ing si es continua). Por eso el past simple, el present perfect y el past perfect van todos a to have + participio: los tres son \"antes\" del momento en que se opina.",
-          "examples": ["People think he lives in Paris. → He is thought to live in Paris. (presente – presente: mismo momento)", "People think he lived in Paris. → He is thought to have lived in Paris. (presente – pasado: antes)", "People thought he lived in Paris. → He was thought to live in Paris. (pasado – pasado: mismo momento)", "People thought he had lived in Paris. → He was thought to have lived in Paris. (antes del pasado)"],
+          "examples": [
+            "People think he lives in Paris. → He is thought to live in Paris. (presente – presente: mismo momento)",
+            "People think he lived in Paris. → He is thought to have lived in Paris. (presente – pasado: antes)",
+            "People thought he lived in Paris. → He was thought to live in Paris. (pasado – pasado: mismo momento)",
+            "People thought he had lived in Paris. → He was thought to have lived in Paris. (antes del pasado)"
+          ],
           "tip": "Regla rápida: si los dos verbos van en el mismo tiempo (presente-presente o pasado-pasado) → to + inf. Si el verbo de reporting está en presente y el otro en pasado → to have + participio."
         },
         {
           "heading": "Tabla: People think that young people ... → Young people are thought ...",
           "rule": "Tiempo del verbo de la oración con THAT → forma del infinitivo en la pasiva personal.",
           "table": {
-            "headers": ["Tiempo en la oración con that", "Infinitivo", "Ejemplo (pasiva personal)"],
+            "headers": [
+              "Tiempo en la oración con that",
+              "Infinitivo",
+              "Ejemplo (pasiva personal)"
+            ],
             "rows": [
-              ["Present simple · drink", "to + inf", "Young people are thought to drink a lot."],
-              ["Future simple · will drink", "to + inf", "Young people are expected to drink a lot."],
-              ["Present continuous · are drinking", "to be + V-ing", "Young people are thought to be drinking a lot."],
-              ["Past simple · drank", "to have + participio", "Young people are thought to have drunk a lot."],
-              ["Present perfect · have drunk", "to have + participio", "Young people are thought to have drunk a lot."],
-              ["Past perfect · had drunk", "to have + participio", "Young people are thought to have drunk a lot."],
-              ["Past continuous · were drinking", "to have been + V-ing", "Young people are thought to have been drinking a lot."],
-              ["Present perfect cont. · have been drinking", "to have been + V-ing", "Young people are thought to have been drinking a lot."],
-              ["Past perfect cont. · had been drinking", "to have been + V-ing", "Young people are thought to have been drinking a lot."]
+              [
+                "Present simple · drink",
+                "to + inf",
+                "Young people are thought to drink a lot."
+              ],
+              [
+                "Future simple · will drink",
+                "to + inf",
+                "Young people are expected to drink a lot."
+              ],
+              [
+                "Present continuous · are drinking",
+                "to be + V-ing",
+                "Young people are thought to be drinking a lot."
+              ],
+              [
+                "Past simple · drank",
+                "to have + participio",
+                "Young people are thought to have drunk a lot."
+              ],
+              [
+                "Present perfect · have drunk",
+                "to have + participio",
+                "Young people are thought to have drunk a lot."
+              ],
+              [
+                "Past perfect · had drunk",
+                "to have + participio",
+                "Young people are thought to have drunk a lot."
+              ],
+              [
+                "Past continuous · were drinking",
+                "to have been + V-ing",
+                "Young people are thought to have been drinking a lot."
+              ],
+              [
+                "Present perfect cont. · have been drinking",
+                "to have been + V-ing",
+                "Young people are thought to have been drinking a lot."
+              ],
+              [
+                "Past perfect cont. · had been drinking",
+                "to have been + V-ing",
+                "Young people are thought to have been drinking a lot."
+              ]
             ]
           }
         },
         {
           "heading": "Si la oración con that YA es pasiva",
           "rule": "Mismo momento → to be + participio. Antes → to have been + participio.",
-          "examples": ["We understand that the decision was made yesterday. → The decision is understood to have been made yesterday.", "People believe the painting is kept in a vault. → The painting is believed to be kept in a vault."]
+          "examples": [
+            "We understand that the decision was made yesterday. → The decision is understood to have been made yesterday.",
+            "People believe the painting is kept in a vault. → The painting is believed to be kept in a vault."
+          ]
         },
         {
           "heading": "Negativa y sujetos plurales",
           "rule": "El NOT va justo delante del to. Police, people, cattle y clothes son plurales → are / were.",
-          "examples": ["They claim that the director didn't know about the scandal. → The director is claimed not to have known about the scandal.", "The police are believed to be looking for more clues."]
+          "examples": [
+            "They claim that the director didn't know about the scandal. → The director is claimed not to have known about the scandal.",
+            "The police are believed to be looking for more clues."
+          ]
         }
       ]
     },
@@ -154,33 +328,86 @@
         {
           "heading": "Pasiva con GET (informal): get + participio",
           "rule": "Sustituye a be en la pasiva, sobre todo con cosas que nos pasan sin querer o de repente: get lost, get burnt, get stuck, get caught, get hurt, get fired, get married...",
-          "examples": ["We got lost in the forest.", "Don't touch the oven or you'll get burnt.", "We got stuck in traffic.", "The thief got caught by a security guard."]
+          "examples": [
+            "We got lost in the forest.",
+            "Don't touch the oven or you'll get burnt.",
+            "We got stuck in traffic.",
+            "The thief got caught by a security guard."
+          ]
         },
         {
           "heading": "Pseudo passive: HAVE + objeto + PARTICIPIO",
           "rule": "Para decir que OTRA persona hace algo por nosotros (normalmente pagamos por ello). Get + objeto + participio es la alternativa informal.",
-          "examples": ["I am cutting my hair. (me lo corto yo) → I am having my hair cut. (me lo corta el peluquero)", "I fixed my car. → I had my car fixed.", "We print our photos. → We have our photos printed."]
+          "examples": [
+            "I am cutting my hair. (me lo corto yo) → I am having my hair cut. (me lo corta el peluquero)",
+            "I fixed my car. → I had my car fixed.",
+            "We print our photos. → We have our photos printed."
+          ]
         },
         {
           "heading": "Algo malo que nos pasa (experiencia)",
           "rule": "La misma estructura sirve para algo que alguien nos hace sin que lo queramos. ¡Sale mucho en transformaciones con break into (entrar a robar) y snatch (robar de un tirón)!",
-          "examples": ["Someone broke into our house. → We had our house broken into.", "Someone snatched her bag. → She had her bag snatched.", "My phone was stolen. → I had my phone stolen."]
+          "examples": [
+            "Someone broke into our house. → We had our house broken into.",
+            "Someone snatched her bag. → She had her bag snatched.",
+            "My phone was stolen. → I had my phone stolen."
+          ]
         },
         {
           "heading": "Tabla: ¿en qué tiempo está? → HAVE va en ese tiempo, el verbo SIEMPRE en participio",
           "rule": "Mira el tiempo de la frase original: ese tiempo lo lleva HAVE (o GET). Luego el objeto, y al final el verbo principal en participio.",
           "table": {
-            "headers": ["Tiempo", "Activa (lo hago yo)", "Have something done"],
+            "headers": [
+              "Tiempo",
+              "Activa (lo hago yo)",
+              "Have something done"
+            ],
             "rows": [
-              ["Present simple", "I fix my car", "I have my car fixed"],
-              ["Present continuous", "I am cutting my hair", "I am having my hair cut"],
-              ["Present perfect", "I have painted the house", "I have had the house painted"],
-              ["Past simple", "I fixed my car", "I had my car fixed"],
-              ["Past continuous", "I was repairing the roof", "I was having the roof repaired"],
-              ["Past perfect", "I had cleaned the carpets", "I had had the carpets cleaned"],
-              ["Future simple", "I will print the photos", "I will have the photos printed"],
-              ["Be going to", "I am going to service the car", "I am going to have the car serviced"],
-              ["Modales", "I must check my eyes", "I must have my eyes checked"]
+              [
+                "Present simple",
+                "I fix my car",
+                "I have my car fixed"
+              ],
+              [
+                "Present continuous",
+                "I am cutting my hair",
+                "I am having my hair cut"
+              ],
+              [
+                "Present perfect",
+                "I have painted the house",
+                "I have had the house painted"
+              ],
+              [
+                "Past simple",
+                "I fixed my car",
+                "I had my car fixed"
+              ],
+              [
+                "Past continuous",
+                "I was repairing the roof",
+                "I was having the roof repaired"
+              ],
+              [
+                "Past perfect",
+                "I had cleaned the carpets",
+                "I had had the carpets cleaned"
+              ],
+              [
+                "Future simple",
+                "I will print the photos",
+                "I will have the photos printed"
+              ],
+              [
+                "Be going to",
+                "I am going to service the car",
+                "I am going to have the car serviced"
+              ],
+              [
+                "Modales",
+                "I must check my eyes",
+                "I must have my eyes checked"
+              ]
             ]
           },
           "tip": "Negativas y preguntas con do / did, porque have es verbo principal: Did you have your hair cut? · I didn't have my suit cleaned. \"had had\" (past perfect) NO es un error."

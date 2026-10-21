@@ -3,7 +3,7 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'like_as', 'preference', 'past', 'transformations', 'speaking'];
+const TABS = ['theory', 'like_as', 'preference', 'past', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     like_as: {
@@ -19,6 +19,11 @@ const QUIZ_INFO = {
     past: {
         title: 'Past Tenses',
         instructions: 'Choose the correct tense or write the correct form of the verb in brackets.',
+        color: 'purple'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 1: verb forms to talk about the past). Choose the correct form or write the verb in brackets.',
         color: 'purple'
     },
     transformations: {

@@ -3,7 +3,7 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'negatives', 'passive', 'reporting', 'causative', 'transformations', 'speaking'];
+const TABS = ['theory', 'negatives', 'passive', 'reporting', 'causative', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     negatives: {
@@ -25,6 +25,11 @@ const QUIZ_INFO = {
         title: 'Get Passive & Have / Get Something Done',
         instructions: 'Choose the correct option or write the missing word(s).',
         color: 'rose'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 3: no, none, not & the passive). Choose the correct option or write the missing words.',
+        color: 'purple'
     },
     transformations: {
         title: 'Keyword Transformation (Part 4)',
