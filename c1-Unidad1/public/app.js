@@ -34,10 +34,10 @@ const QUIZ_INFO = {
 };
 
 const COLORS = {
-    sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900', btn: 'bg-sky-600 hover:bg-sky-700', ring: 'ring-sky-500' },
-    indigo: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900', btn: 'bg-indigo-600 hover:bg-indigo-700', ring: 'ring-indigo-500' },
-    purple: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900', btn: 'bg-purple-600 hover:bg-purple-700', ring: 'ring-purple-500' },
-    rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', icon: 'text-rose-900', btn: 'bg-rose-600 hover:bg-rose-700', ring: 'ring-rose-500' }
+    sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900', btn: 'bg-sky-600 hover:bg-sky-700', ring: 'ring-sky-500', solid: 'bg-sky-600', mark: 'bg-sky-100 text-sky-900', chip: 'bg-white text-sky-800 border-sky-200' },
+    indigo: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900', btn: 'bg-indigo-600 hover:bg-indigo-700', ring: 'ring-indigo-500', solid: 'bg-indigo-600', mark: 'bg-indigo-100 text-indigo-900', chip: 'bg-white text-indigo-800 border-indigo-200' },
+    purple: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900', btn: 'bg-purple-600 hover:bg-purple-700', ring: 'ring-purple-500', solid: 'bg-purple-600', mark: 'bg-purple-100 text-purple-900', chip: 'bg-white text-purple-800 border-purple-200' },
+    rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', icon: 'text-rose-900', btn: 'bg-rose-600 hover:bg-rose-700', ring: 'ring-rose-500', solid: 'bg-rose-600', mark: 'bg-rose-100 text-rose-900', chip: 'bg-white text-rose-800 border-rose-200' }
 };
 
 const ICON_CHECK = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
@@ -128,47 +128,152 @@ function focusInput(key) {
     if (input && !input.readOnly) input.focus();
 }
 
+// **text** → highlighted key part
+function fmt(text, c) {
+    return text.replace(/\*\*(.+?)\*\*/g, `<strong class="${c.mark} font-semibold px-1 rounded not-italic">$1</strong>`);
+}
+
+// "Never + AUX + SUJETO + verbo" → chips; UPPERCASE tokens are the key slots
+function renderFormula(formula, c) {
+    // Split on " + " and ", " keeping the separator so commas still read as clause breaks
+    const parts = formula.split(/(\s\+\s|,\s)/);
+    return `
+        <div class="flex flex-wrap items-center gap-1.5 font-mono text-sm">
+            ${parts.map(p => {
+                if (/^\s\+\s$/.test(p)) return '<span class="text-gray-400 font-bold">+</span>';
+                if (/^,\s$/.test(p)) return '<span class="text-gray-400 font-bold">,</span>';
+                const t = p.trim();
+                const isKey = !/[a-z]/.test(t) && /[A-Z]{2,}/.test(t);
+                const cls = isKey ? `${c.solid} text-white border-transparent` : c.chip;
+                return `<span class="px-2.5 py-1 rounded-md border ${cls}">${escapeHtml(t)}</span>`;
+            }).join('')}
+        </div>
+    `;
+}
+
 // ---------- Theory ----------
 
 function renderTheory() {
-    let html = '';
+    const sections = theoryData.sections;
 
-    theoryData.sections.forEach(section => {
+    let html = `
+        <div class="flex flex-wrap gap-2 mb-2">
+            ${sections.map(s => {
+                const c = COLORS[s.color] || COLORS.sky;
+                return `<button onclick="document.getElementById('sec-${s.id}').scrollIntoView({behavior:'smooth', block:'start'})" class="px-3 py-1.5 rounded-full text-sm font-medium border ${c.border} ${c.bg} ${c.text} hover:shadow-sm transition">${s.title}</button>`;
+            }).join('')}
+        </div>
+    `;
+
+    sections.forEach(section => {
         const c = COLORS[section.color] || COLORS.sky;
         html += `
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="bg-gray-50 border-b border-gray-100 px-6 py-4 flex flex-wrap justify-between items-center gap-2">
-                    <h3 class="text-lg font-bold text-gray-800">${section.title}</h3>
-                    <button onclick="switchTab('${section.id}')" class="text-sm font-medium ${c.text} hover:underline">Practise this →</button>
+            <div id="sec-${section.id}" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-40">
+                <div class="${c.bg} border-b ${c.border} px-6 py-4 flex flex-wrap justify-between items-center gap-2">
+                    <button onclick="toggleSection('${section.id}')" class="text-left flex items-center gap-3 group">
+                        <svg id="chev-${section.id}" class="w-5 h-5 ${c.text} transition-transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>
+                            <span class="block text-lg font-bold text-gray-900">${section.title}</span>
+                            ${section.subtitle ? `<span class="block text-sm text-gray-500">${section.subtitle}</span>` : ''}
+                        </span>
+                    </button>
+                    <button onclick="switchTab('${section.id}')" class="text-sm font-semibold px-3 py-1.5 rounded-md text-white ${c.btn} shadow-sm">Practise this →</button>
                 </div>
-                <div class="divide-y divide-gray-100">
-        `;
-
-        section.blocks.forEach(block => {
-            html += `
-                <div class="p-6 hover:bg-gray-50 transition-colors">
-                    <h4 class="font-semibold ${c.text} mb-2">${block.heading}</h4>
-                    <p class="text-gray-600 mb-3">${block.rule}</p>
-                    <div class="${c.bg} ${c.icon} p-3 rounded-lg border ${c.border} flex items-start">
-                        <svg class="w-5 h-5 mr-2 mt-0.5 opacity-70 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div class="space-y-1">
-                            ${block.examples.map(ex => `<p class="italic">"${ex}"</p>`).join('')}
-                        </div>
-                    </div>
-                    ${block.tip ? `
-                        <p class="mt-3 text-sm text-amber-800 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2"><span class="font-semibold">Tip:</span> ${block.tip}</p>
-                    ` : ''}
-                </div>
-            `;
-        });
-
-        html += `
+                <div id="body-${section.id}" class="p-4 sm:p-6 grid gap-4">
+                    ${section.blocks.map(block => renderBlock(block, c)).join('')}
                 </div>
             </div>
         `;
     });
 
     document.getElementById('theory-container').innerHTML = html;
+}
+
+window.toggleSection = function(id) {
+    const body = document.getElementById(`body-${id}`);
+    body.hidden = !body.hidden;
+    document.getElementById(`chev-${id}`).classList.toggle('rotate-90', !body.hidden);
+};
+
+function renderBlock(block, c) {
+    const formulas = block.formulas || (block.formula ? [block.formula] : []);
+
+    return `
+        <div class="rounded-xl border border-gray-100 p-5 hover:border-gray-200 transition-colors">
+            <h4 class="font-bold ${c.text} text-base mb-3">${block.heading}</h4>
+
+            ${formulas.length ? `<div class="space-y-2 mb-3">${formulas.map(f => renderFormula(f, c)).join('')}</div>` : ''}
+
+            ${block.rule ? `<p class="text-gray-700 leading-relaxed mb-3">${fmt(block.rule, c)}</p>` : ''}
+
+            ${block.compare ? `
+                <div class="grid sm:grid-cols-2 gap-3 mb-3">
+                    ${block.compare.map(cmp => `
+                        <div class="rounded-lg border ${c.border} ${c.bg} p-3">
+                            <p class="text-xs font-bold uppercase tracking-wider ${c.text} mb-1">${cmp.label}</p>
+                            <p class="text-gray-800 italic">${fmt(cmp.text, c)}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${block.chips ? `
+                <div class="mb-3">
+                    ${block.chipsLabel ? `<p class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">${block.chipsLabel}</p>` : ''}
+                    <div class="flex flex-wrap gap-1.5">
+                        ${block.chips.map(ch => `<span class="px-2 py-0.5 rounded-full text-sm border ${c.chip}">${ch}</span>`).join('')}
+                    </div>
+                </div>
+            ` : ''}
+
+            ${block.examples ? `
+                <ul class="space-y-1.5 mb-3">
+                    ${block.examples.map(ex => `
+                        <li class="flex items-start gap-2 text-gray-800">
+                            <svg class="w-4 h-4 mt-1 flex-shrink-0 ${c.text}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="italic">${fmt(ex, c)}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            ` : ''}
+
+            ${block.table ? renderTable(block.table, c) : ''}
+
+            ${block.wrong ? `
+                <div class="grid gap-2 mt-3">
+                    ${block.wrong.map(w => `
+                        <div class="rounded-lg border border-gray-100 overflow-hidden text-sm">
+                            <p class="bg-red-50 text-red-700 px-3 py-1.5"><span class="font-bold">✗</span> <span class="line-through decoration-red-300">${escapeHtml(w.bad)}</span></p>
+                            <p class="bg-green-50 text-green-800 px-3 py-1.5"><span class="font-bold">✓</span> ${escapeHtml(w.good)}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${block.tip ? `
+                <p class="mt-3 text-sm text-amber-900 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2"><span class="font-semibold">💡 Tip:</span> ${fmt(block.tip, c)}</p>
+            ` : ''}
+        </div>
+    `;
+}
+
+function renderTable(table, c) {
+    return `
+        <div class="overflow-x-auto rounded-lg border ${c.border} mt-1">
+            <table class="min-w-full text-sm">
+                <thead class="${c.bg} ${c.text}">
+                    <tr>${table.headers.map(h => `<th class="text-left font-semibold px-4 py-2 whitespace-nowrap">${h}</th>`).join('')}</tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    ${table.rows.map(row => `
+                        <tr class="hover:bg-gray-50">
+                            ${row.map((cell, i) => `<td class="px-4 py-2 align-top ${i === 0 ? 'font-semibold text-gray-800 whitespace-nowrap' : 'text-gray-700'}">${fmt(escapeHtml(cell), c)}</td>`).join('')}
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
+    `;
 }
 
 // ---------- Speaking ----------

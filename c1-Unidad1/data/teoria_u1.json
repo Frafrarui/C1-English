@@ -9,76 +9,133 @@
           "heading": "LIKE = \"similar to\" / \"for example\"",
           "rule": "Like va seguido de un sustantivo o pronombre (noun phrase). Compara cosas que se parecen, pero que NO son lo mismo.",
           "examples": [
-            "He swims like a fish.",
-            "She sings like an angel.",
-            "I love outdoor sports, like climbing and kayaking. (informal)"
-          ]
+            "He swims **like a fish**.",
+            "She sings **like an angel**.",
+            "I love outdoor sports, **like climbing** and kayaking. (informal)"
+          ],
+          "formula": "LIKE + sustantivo / pronombre"
         },
         {
           "heading": "AS = función o papel real (\"define\")",
           "rule": "As indica lo que algo o alguien ES realmente: profesión, función, uso.",
           "examples": [
-            "She works as a nurse.",
-            "As your lawyer, I advise you not to sign.",
-            "The building was used as a hospital during the war."
+            "She works **as a nurse**.",
+            "**As your lawyer**, I advise you not to sign.",
+            "The building was used **as a hospital** during the war."
           ],
-          "tip": "Like a lawyer = parece abogado (pero no lo es). As a lawyer = es abogado."
+          "formula": "AS + función / profesión real",
+          "compare": [
+            {
+              "label": "Like a lawyer",
+              "text": "He argues **like a lawyer**. (parece abogado, pero no lo es)"
+            },
+            {
+              "label": "As a lawyer",
+              "text": "He works **as a lawyer**. (es abogado)"
+            }
+          ]
         },
         {
           "heading": "AS = because / since",
           "rule": "En lugar de \"because / since\" podemos usar as para dar una razón.",
           "examples": [
-            "As it was raining, we stayed at home.",
-            "As I told you yesterday, the meeting has been cancelled."
-          ]
+            "**As it was raining**, we stayed at home.",
+            "**As I told you** yesterday, the meeting has been cancelled."
+          ],
+          "formula": "AS + oración (= because / since)"
         },
         {
           "heading": "Comparaciones de igualdad: as ... as / the same as",
           "rule": "Para expresar igualdad usamos as + adj/adv + as, o the same (+ noun) + as. Nunca \"the same like\".",
           "examples": [
-            "Peter is as old as me.",
-            "My phone is the same as yours.",
-            "This jacket is the same price as that one."
+            "Peter is **as old as** me.",
+            "My phone is **the same as** yours.",
+            "This jacket is **the same price as** that one."
+          ],
+          "formulas": [
+            "as + ADJ + as",
+            "the same (+ sustantivo) + AS"
+          ],
+          "wrong": [
+            {
+              "bad": "My phone is the same like yours.",
+              "good": "My phone is the same as yours."
+            }
           ]
         },
         {
           "heading": "Define / regard / consider / know / describe + AS",
           "rule": "Estos verbos van seguidos de as para indicar cómo se ve o se clasifica a alguien o algo.",
           "examples": [
-            "Many people regard him as the best writer of his generation.",
-            "He was known as 'The Iron Man'.",
-            "The hotel was described as luxurious."
+            "Many people **regard him as** the best writer of his generation.",
+            "He was **known as** 'The Iron Man'.",
+            "The hotel was **described as** luxurious."
           ],
-          "tip": "Consider puede ir sin as: \"They consider him (to be) a genius.\""
+          "tip": "Consider puede ir sin as: \"They consider him (to be) a genius.\"",
+          "formula": "regard / consider / know / describe + objeto + AS",
+          "chips": [
+            "define as",
+            "regard as",
+            "consider (as)",
+            "be known as",
+            "describe as",
+            "see as",
+            "treat as"
+          ]
         },
         {
           "heading": "SUCH AS = \"for example\"",
           "rule": "Such as introduce ejemplos. Es la opción formal (like es más informal).",
           "examples": [
-            "I enjoy water sports such as surfing and sailing."
-          ]
+            "I enjoy water sports **such as** surfing and sailing."
+          ],
+          "formula": "SUCH AS + ejemplos"
         },
         {
           "heading": "Verbos semi-copulativos (= to be): LOOK",
           "rule": "look + adjetivo · look like + noun phrase · look as if / as though + oración (= como si).",
           "examples": [
-            "You look tired.",
-            "He looks like my English teacher.",
-            "He looks as if he has studied a lot."
+            "You **look tired**.",
+            "He **looks like** my English teacher.",
+            "He **looks as if** he has studied a lot."
           ],
-          "tip": "Situación hipotética (no real) → pasado: \"He looks as if he were a millionaire.\" (were para todas las personas en registro formal)"
+          "tip": "Situación hipotética (no real) → pasado: \"He looks as if he were a millionaire.\" (were para todas las personas en registro formal)",
+          "formulas": [
+            "look + ADJ",
+            "look LIKE + sustantivo",
+            "look AS IF / AS THOUGH + oración"
+          ],
+          "wrong": [
+            {
+              "bad": "He looks like tired.",
+              "good": "He looks tired. (look + adjetivo, sin like)"
+            }
+          ]
         },
         {
           "heading": "Verbos semi-copulativos: SEEM (y sound / feel / smell / taste)",
           "rule": "seem + to be + adjetivo (sentimientos / impresiones) · seem like + noun phrase. Sound, feel, smell y taste funcionan igual que look.",
           "examples": [
-            "She seems to be upset today.",
-            "It seems like a good idea.",
-            "This soup tastes as if it's been in the fridge for a week.",
-            "It feels like silk."
-          ]
+            "She **seems to be** upset today.",
+            "It **seems like** a good idea.",
+            "This soup **tastes as if** it's been in the fridge for a week.",
+            "It **feels like** silk."
+          ],
+          "formulas": [
+            "seem + TO BE + ADJ",
+            "seem LIKE + sustantivo"
+          ],
+          "chips": [
+            "seem",
+            "sound",
+            "feel",
+            "smell",
+            "taste"
+          ],
+          "chipsLabel": "Funcionan igual que look"
         }
-      ]
+      ],
+      "subtitle": "Like = parecido a · As = lo que algo ES realmente"
     },
     {
       "id": "preference",
@@ -89,91 +146,140 @@
           "heading": "PREFER + V-ing + TO + V-ing",
           "rule": "Preferencia general. También prefer + noun + to + noun. ¡Nunca \"than\"!",
           "examples": [
-            "I prefer working as a plumber to working as a teacher.",
-            "She prefers tea to coffee."
+            "I **prefer working** as a plumber **to working** as a teacher.",
+            "She **prefers tea to** coffee."
+          ],
+          "formula": "PREFER + V-ING + TO + V-ING",
+          "wrong": [
+            {
+              "bad": "She prefers tea than coffee.",
+              "good": "She prefers tea to coffee."
+            }
           ]
         },
         {
           "heading": "WOULD PREFER + to inf + RATHER THAN + inf (sin to)",
           "rule": "Preferencia concreta, en una situación específica. También would prefer + objeto + to inf.",
           "examples": [
-            "I would prefer to go to the park rather than go to the beach.",
-            "Would you prefer me to pick you up at the station?"
-          ]
+            "I **would prefer to go** to the park **rather than go** to the beach.",
+            "Would you **prefer me to pick** you up at the station?"
+          ],
+          "formula": "WOULD PREFER + TO inf + RATHER THAN + inf"
         },
         {
           "heading": "WOULD RATHER / WOULD SOONER + inf (sin to) + THAN + inf (sin to)",
           "rule": "Preferencia presente o futura. Mismo sujeto. Negativa: would rather not + inf.",
           "examples": [
-            "I would rather drive a car than drive a motorbike.",
-            "I'd sooner live in a city.",
-            "I'd rather not talk about it."
+            "I **would rather drive** a car **than drive** a motorbike.",
+            "I'd **sooner live** in a city.",
+            "I'd **rather not talk** about it."
+          ],
+          "formula": "WOULD RATHER / SOONER + inf + THAN + inf",
+          "wrong": [
+            {
+              "bad": "I'd rather to stay at home.",
+              "good": "I'd rather stay at home. (sin to)"
+            }
           ]
         },
         {
           "heading": "WOULD RATHER + inf + AND NOT + inf",
           "rule": "Otra forma de contrastar dos opciones con would rather.",
           "examples": [
-            "She would rather travel alone and not with a group."
-          ]
+            "She **would rather travel** alone **and not** with a group."
+          ],
+          "formula": "WOULD RATHER + inf + AND NOT + ..."
         },
         {
           "heading": "WOULD + like / love / hate / prefer + TO inf",
           "rule": "\"Me gustaría\": deseo sobre una situación presente o futura.",
           "examples": [
-            "I would like to go to London."
-          ]
+            "I **would like to go** to London."
+          ],
+          "formula": "WOULD + like / love / hate / prefer + TO inf"
         },
         {
           "heading": "PASADO 1: WOULD + like / love / hate / prefer + TO HAVE + participio",
           "rule": "El deseo lo tienes AHORA, pero sobre algo que ya pasó. \"Viendo las cosas ahora, preferiría que mi pasado fuera distinto.\" = Me gustaría haber estudiado (ahora).",
           "examples": [
-            "I would like to have studied Biology.",
-            "I would hate to have taken that exam without studying."
+            "I **would like to have studied** Biology.",
+            "I **would hate to have taken** that exam without studying."
+          ],
+          "formula": "WOULD + like / love / hate + TO HAVE + participio",
+          "compare": [
+            {
+              "label": "Pasado 1 · deseo AHORA",
+              "text": "I **would like to have studied** Biology. (ahora me gustaría haberlo estudiado)"
+            },
+            {
+              "label": "Pasado 2 · deseo ENTONCES",
+              "text": "I **would have liked to study** Biology. (en su día me habría gustado)"
+            }
           ]
         },
         {
           "heading": "PASADO 2: WOULD HAVE + liked / loved / hated / preferred + TO inf",
           "rule": "El deseo lo tenías EN EL PASADO: algo que querías hacer pero no pudiste o no lo hiciste. = Me habría / hubiera gustado hacerlo (ayer).",
           "examples": [
-            "I would have liked to study Biology.",
-            "I would have liked to meet you before you moved."
-          ]
+            "I **would have liked to study** Biology.",
+            "I **would have liked to meet** you before you moved."
+          ],
+          "formula": "WOULD HAVE + liked / loved / hated + TO inf"
         },
         {
           "heading": "WOULD RATHER / SOONER + HAVE + participio",
           "rule": "Preferencia sobre el pasado, del mismo sujeto. Equivale a would like + to have + participio.",
           "examples": [
-            "I would rather have lived in a city.",
-            "He'd sooner have kept the money than lent it."
-          ]
+            "I **would rather have lived** in a city.",
+            "He'd **sooner have kept** the money than lent it."
+          ],
+          "formula": "WOULD RATHER / SOONER + HAVE + participio"
         },
         {
           "heading": "WOULD RATHER / SOONER + sujeto + PAST SIMPLE",
           "rule": "Queremos que OTRA persona haga (o no haga) algo en el presente o futuro. Negativa: would rather + sujeto + didn't.",
           "examples": [
-            "I would rather you bought a new phone.",
-            "I'd rather you didn't smoke in the house."
+            "I **would rather you bought** a new phone.",
+            "I'd **rather you didn't smoke** in the house."
+          ],
+          "formula": "WOULD RATHER + OTRO SUJETO + past simple",
+          "wrong": [
+            {
+              "bad": "I'd rather you don't smoke here.",
+              "good": "I'd rather you didn't smoke here."
+            }
           ]
         },
         {
           "heading": "WOULD RATHER / SOONER + sujeto + PAST PERFECT",
           "rule": "Preferencia de que otra persona hubiera hecho algo distinto en el pasado (arrepentimiento / queja).",
           "examples": [
-            "I would rather you had bought a new phone.",
-            "I'd rather you hadn't told anyone."
-          ]
+            "I **would rather you had bought** a new phone.",
+            "I'd **rather you hadn't told** anyone."
+          ],
+          "formula": "WOULD RATHER + OTRO SUJETO + past perfect"
         },
         {
           "heading": "IT'S (HIGH / ABOUT) TIME + sujeto + PAST SIMPLE",
           "rule": "Queremos que alguien haga algo \"ya, ahora mismo\" (suele tener tono de queja). Sin sujeto: It's time + to inf.",
           "examples": [
-            "It's high time you went to sleep.",
-            "It's about time we left.",
-            "It's time to go to bed."
+            "It's **high time you went** to sleep.",
+            "It's **about time we left**.",
+            "It's **time to go** to bed."
+          ],
+          "formulas": [
+            "IT'S (HIGH / ABOUT) TIME + sujeto + past simple",
+            "IT'S TIME + TO inf"
+          ],
+          "wrong": [
+            {
+              "bad": "It's high time you go to bed.",
+              "good": "It's high time you went to bed."
+            }
           ]
         }
-      ]
+      ],
+      "subtitle": "Preferencias en presente y en pasado"
     },
     {
       "id": "past",
@@ -184,84 +290,143 @@
           "heading": "PAST SIMPLE: sujeto + verbo en pasado",
           "rule": "1. Acciones que empezaron y terminaron en el pasado (yesterday, last + tiempo, tiempo + ago). 2. Hechos del pasado. 3. Rutinas / hábitos del pasado, con adverbios de frecuencia (always, usually, often, rarely, seldom, never).",
           "examples": [
-            "She visited Paris last year.",
-            "Dinosaurs lived millions of years ago.",
-            "I often played football every weekend."
-          ]
+            "She **visited** Paris last year.",
+            "Dinosaurs **lived** millions of years ago.",
+            "I **often played** football every weekend."
+          ],
+          "formula": "SUJETO + verbo en pasado",
+          "chips": [
+            "yesterday",
+            "last week",
+            "two years ago",
+            "in 2010",
+            "always",
+            "usually",
+            "often",
+            "rarely",
+            "seldom",
+            "never"
+          ],
+          "chipsLabel": "Marcadores típicos"
         },
         {
           "heading": "USED TO + inf",
           "rule": "Rutinas o hábitos del pasado que YA NO ocurren en el presente. Sirve para acciones Y para estados (tener, vivir, gustar, ser...). Negativa: didn't use to.",
           "examples": [
-            "I used to play football every weekend.",
-            "We used to live in a small village.",
-            "I didn't use to like vegetables."
+            "I **used to play** football every weekend.",
+            "We **used to live** in a small village.",
+            "I **didn't use to like** vegetables."
           ],
-          "tip": "No confundir con be / get used to + V-ing = estar acostumbrado / acostumbrarse."
+          "formula": "USED TO + inf  (neg: DIDN'T USE TO)",
+          "compare": [
+            {
+              "label": "used to + inf",
+              "text": "I **used to** live in London. (antes sí, ahora no)"
+            },
+            {
+              "label": "be / get used to + -ing",
+              "text": "I'm **used to** living in London. (estoy acostumbrado)"
+            }
+          ]
         },
         {
           "heading": "WOULD + inf (hábitos pasados)",
           "rule": "Rutinas del pasado que ya no ocurren, pero SOLO con acciones, nunca con estados. Con estados (like / love / hate / be / have / live...) solo podemos usar used to.",
           "examples": [
-            "When I was a child, I would climb trees every afternoon.",
-            "✗ I would have long hair. → ✓ I used to have long hair."
+            "When I was a child, I **would climb** trees every afternoon."
           ],
-          "tip": "Acciones del pasado que ya no haces → used to o would. Estados, gustos o lugares donde vivías / estabas → solo used to."
+          "tip": "Acciones del pasado que ya no haces → used to o would. Estados, gustos o lugares donde vivías / estabas → solo used to.",
+          "formula": "WOULD + inf (solo ACCIONES pasadas)",
+          "wrong": [
+            {
+              "bad": "I would have long hair when I was young.",
+              "good": "I used to have long hair when I was young. (have = estado)"
+            },
+            {
+              "bad": "We would live in a small village.",
+              "good": "We used to live in a small village. (live = estado)"
+            }
+          ]
         },
         {
           "heading": "PAST CONTINUOUS: sujeto + was / were + V-ing",
           "rule": "1. Acción en progreso en un momento del pasado, con cierta duración. 2. Acción larga interrumpida por otra corta (larga → past continuous, corta → past simple). While + past continuous / when + past simple. 3. Describir el escenario (background) de una historia.",
           "examples": [
-            "I was sleeping when you called me.",
-            "While she was cooking, the lights went out.",
-            "The sun was shining and the birds were singing."
+            "I **was sleeping** when you **called** me.",
+            "While she **was cooking**, the lights **went out**.",
+            "The sun **was shining** and the birds **were singing**."
+          ],
+          "formulas": [
+            "SUJETO + WAS / WERE + V-ING",
+            "WHILE + past continuous · WHEN + past simple"
           ]
         },
         {
           "heading": "PAST PERFECT: sujeto + had + participio",
           "rule": "Algo que pasó ANTES de otra acción pasada. Past perfect + before / by the time + past simple.",
           "examples": [
-            "Before the police arrived, the thieves had escaped.",
-            "The thieves had escaped by the time the police arrived."
-          ]
+            "Before the police **arrived**, the thieves **had escaped**.",
+            "The thieves **had escaped** by the time the police **arrived**."
+          ],
+          "formula": "SUJETO + HAD + participio"
         },
         {
           "heading": "Past perfect: expresiones típicas",
           "rule": "Va mucho con when, as soon as, after, before, by the time, it was the first time...",
           "examples": [
-            "He went home as soon as he'd finished his work.",
-            "It wasn't the first time Jess had broken the law.",
-            "It was two months before the teachers noticed Mike hadn't been coming to school."
+            "He went home **as soon as he'd finished** his work.",
+            "It wasn't the first time Jess **had broken** the law.",
+            "It was two months before the teachers noticed Mike **hadn't been coming** to school."
+          ],
+          "chips": [
+            "when",
+            "as soon as",
+            "after",
+            "before",
+            "by the time",
+            "it was the first time"
           ]
         },
         {
           "heading": "PAST PERFECT CONTINUOUS: sujeto + had been + V-ing",
           "rule": "Acción del pasado con duración que ocurrió antes de otra acción pasada. Lo importante es la duración, no el resultado.",
           "examples": [
-            "They had been waiting for hours when the bus arrived.",
-            "He was tired because he had been working all day."
-          ]
+            "They **had been waiting** for hours when the bus arrived.",
+            "He was tired because he **had been working** all day."
+          ],
+          "formula": "SUJETO + HAD BEEN + V-ING"
         },
         {
           "heading": "PRESENT PERFECT SIMPLE vs CONTINUOUS",
           "rule": "Situaciones que empezaron en el pasado y siguen o tienen efecto en el presente. PPS (have / has + participio) → lo importante es que la acción YA HA TERMINADO (el resultado). PPC (have / has been + V-ing) → lo importante es la actividad; puede que no haya terminado.",
-          "examples": [
-            "I have painted the living room. (está terminado)",
-            "I have been painting the living room. (la actividad; no he terminado)"
+          "formulas": [
+            "HAVE / HAS + participio (resultado)",
+            "HAVE / HAS BEEN + V-ING (actividad)"
+          ],
+          "compare": [
+            {
+              "label": "Simple · resultado",
+              "text": "I **have painted** the living room. (ya está terminado)"
+            },
+            {
+              "label": "Continuous · actividad",
+              "text": "I **have been painting** the living room. (la actividad; puede no estar acabada)"
+            }
           ]
         },
         {
           "heading": "Present perfect simple vs continuous: más matices (Complete Advanced)",
           "rule": "Simple → resultado / actividad terminada / algo permanente / cuántas veces. Continuous → la acción en sí / incompleta / algo temporal / repetición sin contar. Con verbos de estado (know, have, be...) solo el simple.",
           "examples": [
-            "They've studied hard, so they deserve to pass. (resultado)",
-            "They've been studying so hard; they must be exhausted. (la acción)",
-            "He's been a police officer all his life. (permanente)",
-            "We've been doing part-time jobs over the holidays. (temporal)",
-            "I've listened to that album five times this week. (cuántas veces)"
+            "**They've studied hard**, so they deserve to pass. (resultado)",
+            "**They've been studying** so hard; they must be exhausted. (la acción)",
+            "**He's been a police officer** all his life. (permanente)",
+            "**We've been doing** part-time jobs over the holidays. (temporal)",
+            "**I've listened** to that album five times this week. (cuántas veces)"
           ]
         }
-      ]
+      ],
+      "subtitle": "Narrative tenses: cuándo usar cada tiempo del pasado"
     }
   ],
   "speaking": [

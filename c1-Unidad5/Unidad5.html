@@ -4062,13 +4062,17 @@ function fmt(text, c) {
 
 // "Never + AUX + SUJETO + verbo" → chips; UPPERCASE tokens are the key slots
 function renderFormula(formula, c) {
-    const tokens = formula.split(/\s\+\s/);
+    // Split on " + " and ", " keeping the separator so commas still read as clause breaks
+    const parts = formula.split(/(\s\+\s|,\s)/);
     return `
         <div class="flex flex-wrap items-center gap-1.5 font-mono text-sm">
-            ${tokens.map((t, i) => {
-                const isKey = /^[A-Z\-]{2,}( [A-Z\-]{2,})*$/.test(t.trim()) || /^[A-Z]{2,}\b/.test(t.trim());
+            ${parts.map(p => {
+                if (/^\s\+\s$/.test(p)) return '<span class="text-gray-400 font-bold">+</span>';
+                if (/^,\s$/.test(p)) return '<span class="text-gray-400 font-bold">,</span>';
+                const t = p.trim();
+                const isKey = !/[a-z]/.test(t) && /[A-Z]{2,}/.test(t);
                 const cls = isKey ? `${c.solid} text-white border-transparent` : c.chip;
-                return `${i ? '<span class="text-gray-400 font-bold">+</span>' : ''}<span class="px-2.5 py-1 rounded-md border ${cls}">${escapeHtml(t.trim())}</span>`;
+                return `<span class="px-2.5 py-1 rounded-md border ${cls}">${escapeHtml(t)}</span>`;
             }).join('')}
         </div>
     `;
