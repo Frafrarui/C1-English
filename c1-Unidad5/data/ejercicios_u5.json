@@ -1,0 +1,2991 @@
+{
+ "inversions": [
+  {
+   "type": "rewrite",
+   "original": "You only come to realise the significance of the murder in the last few pages.",
+   "start": "Only in the last",
+   "answers": [
+    "Only in the last few pages do you come to realise the significance of the murder."
+   ],
+   "explanation": "Only + expresión de tiempo/lugar → inversión (do you come)."
+  },
+  {
+   "type": "rewrite",
+   "original": "The demands of her job are such that she is rarely able to take a holiday.",
+   "start": "Such",
+   "answers": [
+    "Such are the demands of her job that she is rarely able to take a holiday."
+   ],
+   "explanation": "Such + be + sustantivo + that."
+  },
+  {
+   "type": "rewrite",
+   "original": "The matter could be explained in no other way.",
+   "start": "In",
+   "answers": [
+    "In no other way could the matter be explained."
+   ],
+   "explanation": "In no other way + modal + sujeto."
+  },
+  {
+   "type": "rewrite",
+   "original": "I have seldom heard such beautiful singing.",
+   "start": "Seldom",
+   "answers": [
+    "Seldom have I heard such beautiful singing."
+   ],
+   "explanation": "Seldom + aux + sujeto."
+  },
+  {
+   "type": "rewrite",
+   "original": "Peter didn't realise that he had lost his keys until he got home.",
+   "start": "Not",
+   "answers": [
+    "Not until Peter got home did he realise that he had lost his keys.",
+    "Not until he got home did Peter realise that he had lost his keys."
+   ],
+   "explanation": "Not until + oración normal + INVERSIÓN en la segunda parte."
+  },
+  {
+   "type": "rewrite",
+   "original": "If Mr Chan had been kinder to his employees, his business would not have collapsed.",
+   "start": "Had",
+   "answers": [
+    "Had Mr Chan been kinder to his employees, his business would not have collapsed."
+   ],
+   "explanation": "Inversión del 3rd conditional."
+  },
+  {
+   "type": "rewrite",
+   "original": "If an emergency should arise, dial 999.",
+   "start": "Should",
+   "answers": [
+    "Should an emergency arise, dial 999."
+   ],
+   "explanation": "Inversión del 1st conditional (should)."
+  },
+  {
+   "type": "rewrite",
+   "original": "Audience members may consume alcohol under no circumstances.",
+   "start": "Under no circumstances",
+   "answers": [
+    "Under no circumstances may audience members consume alcohol."
+   ],
+   "explanation": "Under no circumstances + modal + sujeto."
+  },
+  {
+   "type": "rewrite",
+   "original": "They had no sooner got married than they started to argue.",
+   "start": "No sooner",
+   "answers": [
+    "No sooner had they got married than they started to argue."
+   ],
+   "explanation": "No sooner + had + sujeto + participio + THAN."
+  },
+  {
+   "type": "rewrite",
+   "original": "You can use my new car at no time.",
+   "start": "At no time",
+   "answers": [
+    "At no time can you use my new car."
+   ],
+   "explanation": "At no time + aux + sujeto (sin doble negación)."
+  },
+  {
+   "type": "rewrite",
+   "original": "The gang little knew that the police had them under surveillance.",
+   "start": "Little",
+   "answers": [
+    "Little did the gang know that the police had them under surveillance."
+   ],
+   "explanation": "Little + did + sujeto + know."
+  },
+  {
+   "type": "rewrite",
+   "original": "We won't consider you for the basketball team until you grow up.",
+   "start": "Not until",
+   "answers": [
+    "Not until you grow up will we consider you for the basketball team."
+   ],
+   "explanation": "Not until + oración normal + INVERSIÓN (will we)."
+  },
+  {
+   "type": "rewrite",
+   "original": "Nobody has won so many matches for his team since 1994.",
+   "start": "Not since",
+   "answers": [
+    "Not since 1994 has anyone won so many matches for his team."
+   ],
+   "explanation": "Not since + inversión; anyone para evitar doble negación."
+  },
+  {
+   "type": "rewrite",
+   "original": "You will be allowed to enter the auditorium once the play has started under no circumstances.",
+   "start": "Under no circumstances",
+   "answers": [
+    "Under no circumstances will you be allowed to enter the auditorium once the play has started."
+   ],
+   "explanation": "Under no circumstances + will + sujeto."
+  },
+  {
+   "type": "rewrite",
+   "original": "He would never play in front of a live audience again.",
+   "start": "Never",
+   "answers": [
+    "Never would he play in front of a live audience again."
+   ],
+   "explanation": "Never + would + sujeto."
+  },
+  {
+   "type": "rewrite",
+   "original": "Amy had not enjoyed herself so much since she went to the circus as a child.",
+   "start": "Not since",
+   "answers": [
+    "Not since she went to the circus as a child had Amy enjoyed herself so much.",
+    "Not since Amy went to the circus as a child had she enjoyed herself so much."
+   ],
+   "explanation": "Not since + oración normal + INVERSIÓN (had Amy)."
+  },
+  {
+   "type": "rewrite",
+   "original": "I have never seen such a terrible performance of Hamlet before.",
+   "start": "Never before",
+   "answers": [
+    "Never before have I seen such a terrible performance of Hamlet."
+   ],
+   "explanation": "Never before + have + sujeto (no repitas before al final)."
+  },
+  {
+   "type": "rewrite",
+   "original": "They realised the painting had been hung upside down only when someone complained at reception.",
+   "start": "Only when",
+   "answers": [
+    "Only when someone complained at reception did they realise the painting had been hung upside down."
+   ],
+   "explanation": "Only when + oración normal + INVERSIÓN."
+  },
+  {
+   "type": "rewrite",
+   "original": "I realised that everyone was staring at me only after I had been in the room for a few minutes.",
+   "start": "Only after",
+   "answers": [
+    "Only after I had been in the room for a few minutes did I realise that everyone was staring at me."
+   ],
+   "explanation": "Only after + oración normal + INVERSIÓN."
+  },
+  {
+   "type": "rewrite",
+   "original": "He discovered that he had injured his knee only when he tried to run.",
+   "start": "Only when",
+   "answers": [
+    "Only when he tried to run did he discover that he had injured his knee."
+   ],
+   "explanation": "Only when + oración normal + INVERSIÓN."
+  },
+  {
+   "type": "rewrite",
+   "original": "The new park had hardly been finished when vandals destroyed the flowerbeds.",
+   "start": "Hardly",
+   "answers": [
+    "Hardly had the new park been finished when vandals destroyed the flowerbeds."
+   ],
+   "explanation": "Hardly + had + sujeto + been + participio (pasiva) + WHEN."
+  },
+  {
+   "type": "rewrite",
+   "original": "You should sign a contract you haven't read thoroughly under no circumstances.",
+   "start": "Under no circumstances",
+   "answers": [
+    "Under no circumstances should you sign a contract you haven't read thoroughly."
+   ],
+   "explanation": "Under no circumstances + should + sujeto."
+  },
+  {
+   "type": "mc",
+   "sentence": "Hardly had I arrived ___ the phone rang.",
+   "options": [
+    "when",
+    "than",
+    "that"
+   ],
+   "answer": "when",
+   "explanation": "Hardly / Barely / Scarcely ... WHEN."
+  },
+  {
+   "type": "mc",
+   "sentence": "No sooner had she sat down ___ the lights went out.",
+   "options": [
+    "than",
+    "when",
+    "that"
+   ],
+   "answer": "than",
+   "explanation": "No sooner ... THAN."
+  },
+  {
+   "type": "mc",
+   "sentence": "Not until I got home ___ that I'd lost my wallet.",
+   "options": [
+    "did I realise",
+    "I realised",
+    "I did realise"
+   ],
+   "answer": "did I realise",
+   "explanation": "Not until: la inversión va en la segunda parte."
+  },
+  {
+   "type": "mc",
+   "sentence": "Never ___ such a beautiful sunset.",
+   "options": [
+    "have I seen",
+    "I have seen",
+    "I saw"
+   ],
+   "answer": "have I seen",
+   "explanation": "Never + aux + sujeto."
+  },
+  {
+   "type": "mc",
+   "sentence": "Little ___ that his life was about to change.",
+   "options": [
+    "did he know",
+    "he knew",
+    "he did know"
+   ],
+   "answer": "did he know",
+   "explanation": "Little + did + sujeto + know."
+  },
+  {
+   "type": "mc",
+   "sentence": "Only when you finish your homework ___ go out.",
+   "options": [
+    "can you",
+    "you can",
+    "you could"
+   ],
+   "answer": "can you",
+   "explanation": "Only when + oración + INVERSIÓN."
+  },
+  {
+   "type": "mc",
+   "sentence": "So tired ___ that she fell asleep at the table.",
+   "options": [
+    "was she",
+    "she was",
+    "did she be"
+   ],
+   "answer": "was she",
+   "explanation": "So + adj + be + sujeto + that."
+  },
+  {
+   "type": "mc",
+   "sentence": "Such ___ the noise that nobody could sleep.",
+   "options": [
+    "was",
+    "did",
+    "had"
+   ],
+   "answer": "was",
+   "explanation": "Such + be + sustantivo + that."
+  },
+  {
+   "type": "mc",
+   "sentence": "Scarcely ___ the house when it started to rain.",
+   "options": [
+    "had we left",
+    "we had left",
+    "did we leave"
+   ],
+   "answer": "had we left",
+   "explanation": "Scarcely + had + sujeto + participio + when."
+  },
+  {
+   "type": "mc",
+   "sentence": "Rarely ___ such dedication in a student.",
+   "options": [
+    "does one see",
+    "one sees",
+    "one does see"
+   ],
+   "answer": "does one see",
+   "explanation": "Rarely + do / does + sujeto + inf (present simple)."
+  }
+ ],
+ "comparisons": [
+  {
+   "type": "mc",
+   "sentence": "This exam was ___ harder than the last one.",
+   "options": [
+    "a great deal",
+    "very",
+    "too"
+   ],
+   "answer": "a great deal",
+   "explanation": "A great deal + comparativo = mucho más."
+  },
+  {
+   "type": "mc",
+   "sentence": "He is ___ as old as me.",
+   "options": [
+    "twice",
+    "two times more",
+    "double"
+   ],
+   "answer": "twice",
+   "explanation": "Twice + as + adj + as (✗ twice older than)."
+  },
+  {
+   "type": "mc",
+   "sentence": "Your car is nowhere near as fast ___ mine.",
+   "options": [
+    "as",
+    "than",
+    "like"
+   ],
+   "answer": "as",
+   "explanation": "Nowhere near as + adj + AS."
+  },
+  {
+   "type": "mc",
+   "sentence": "She is by ___ the most talented artist here.",
+   "options": [
+    "far",
+    "much",
+    "long"
+   ],
+   "answer": "far",
+   "explanation": "By far + superlativo."
+  },
+  {
+   "type": "gap",
+   "sentence": "The ___ (hard) you work, the luckier you get.",
+   "answers": [
+    "harder"
+   ],
+   "explanation": "Doble comparativo: the + comparativo, the + comparativo."
+  },
+  {
+   "type": "mc",
+   "sentence": "The more I study, ___ I learn.",
+   "options": [
+    "the more",
+    "more",
+    "the most"
+   ],
+   "answer": "the more",
+   "explanation": "The more..., THE more..."
+  },
+  {
+   "type": "mc",
+   "sentence": "There were ___ people than usual at the match.",
+   "options": [
+    "fewer",
+    "less",
+    "least"
+   ],
+   "answer": "fewer",
+   "explanation": "Fewer + plural."
+  },
+  {
+   "type": "mc",
+   "sentence": "I'm earning ___ money now than in my last job.",
+   "options": [
+    "less",
+    "fewer",
+    "lesser"
+   ],
+   "answer": "less",
+   "explanation": "Less + incontable."
+  },
+  {
+   "type": "mc",
+   "sentence": "My sister is clever, but my brother is ___ cleverer.",
+   "options": [
+    "even",
+    "very",
+    "so"
+   ],
+   "answer": "even",
+   "explanation": "Even + comparativo = aún más."
+  },
+  {
+   "type": "mc",
+   "sentence": "He is ___ the best player on the team.",
+   "options": [
+    "easily",
+    "much",
+    "a lot"
+   ],
+   "answer": "easily",
+   "explanation": "Easily + superlativo = con diferencia."
+  },
+  {
+   "type": "mc",
+   "sentence": "It was the simplest ___ ideas.",
+   "options": [
+    "of",
+    "from",
+    "in"
+   ],
+   "answer": "of",
+   "explanation": "The + superlativo + of + plural."
+  },
+  {
+   "type": "mc",
+   "sentence": "We had the worst weather ___.",
+   "options": [
+    "imaginable",
+    "imagined",
+    "imagining"
+   ],
+   "answer": "imaginable",
+   "explanation": "Superlativo + sustantivo + imaginable / possible."
+  },
+  {
+   "type": "gap",
+   "sentence": "The neighbour's dog is much ___ (friendly) than he looks.",
+   "answers": [
+    "friendlier",
+    "more friendly"
+   ],
+   "explanation": "2 sílabas en -y → -ier."
+  },
+  {
+   "type": "mc",
+   "sentence": "She isn't as athletic ___ she thinks she is.",
+   "options": [
+    "as",
+    "than",
+    "like"
+   ],
+   "answer": "as",
+   "explanation": "Not as + adj + AS."
+  },
+  {
+   "type": "mc",
+   "sentence": "This is the worst film I've seen by a ___ way.",
+   "options": [
+    "long",
+    "far",
+    "big"
+   ],
+   "answer": "long",
+   "explanation": "By a long way = con diferencia."
+  },
+  {
+   "type": "mc",
+   "sentence": "My brother is two years ___ than me.",
+   "options": [
+    "older",
+    "elder",
+    "oldest"
+   ],
+   "answer": "older",
+   "explanation": "Elder no va con than; solo delante del sustantivo (my elder brother)."
+  },
+  {
+   "type": "mc",
+   "sentence": "Could you speak a ___ louder, please?",
+   "options": [
+    "little",
+    "few",
+    "lot of"
+   ],
+   "answer": "little",
+   "explanation": "A little / a bit + comparativo."
+  },
+  {
+   "type": "gap",
+   "sentence": "Ben is ___ the oldest person working here — only Jo is older. (1 word = casi)",
+   "answers": [
+    "nearly",
+    "almost"
+   ],
+   "explanation": "Nearly + superlativo."
+  },
+  {
+   "type": "mc",
+   "sentence": "For ___ information, please contact reception.",
+   "options": [
+    "further",
+    "farther",
+    "farer"
+   ],
+   "answer": "further",
+   "explanation": "Further = adicional."
+  },
+  {
+   "type": "mc",
+   "sentence": "He's one of the ___ singers I've ever heard.",
+   "options": [
+    "best",
+    "better",
+    "good"
+   ],
+   "answer": "best",
+   "explanation": "One of the + superlativo + plural."
+  }
+ ],
+ "gerund": [
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "He suggested ___ (go) to the beach.",
+   "options": [
+    "going",
+    "to go"
+   ],
+   "answer": "going",
+   "explanation": "suggest: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "I recommend ___ (read) this book.",
+   "options": [
+    "reading",
+    "to read"
+   ],
+   "answer": "reading",
+   "explanation": "recommend: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "She considered ___ (move) to another city.",
+   "options": [
+    "moving",
+    "to move"
+   ],
+   "answer": "moving",
+   "explanation": "consider: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "Try to avoid ___ (eat) too much sugar.",
+   "options": [
+    "eating",
+    "to eat"
+   ],
+   "answer": "eating",
+   "explanation": "avoid: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "The thief denied ___ (steal) the car.",
+   "options": [
+    "stealing",
+    "to steal"
+   ],
+   "answer": "stealing",
+   "explanation": "deny: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "They risked ___ (lose) all their money.",
+   "options": [
+    "losing",
+    "to lose"
+   ],
+   "answer": "losing",
+   "explanation": "risk: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "We enjoy ___ (play) tennis on weekends.",
+   "options": [
+    "playing",
+    "to play"
+   ],
+   "answer": "playing",
+   "explanation": "enjoy: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "Do you fancy ___ (watch) a movie tonight?",
+   "options": [
+    "watching",
+    "to watch"
+   ],
+   "answer": "watching",
+   "explanation": "fancy: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "I appreciate ___ (have) your support.",
+   "options": [
+    "having",
+    "to have"
+   ],
+   "answer": "having",
+   "explanation": "appreciate: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "Can you imagine ___ (live) on Mars?",
+   "options": [
+    "living",
+    "to live"
+   ],
+   "answer": "living",
+   "explanation": "imagine: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "I miss ___ (live) near the sea.",
+   "options": [
+    "living",
+    "to live"
+   ],
+   "answer": "living",
+   "explanation": "miss: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "He admitted ___ (make) a mistake.",
+   "options": [
+    "making",
+    "to make"
+   ],
+   "answer": "making",
+   "explanation": "admit: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "Her ability ___ (solve) problems is amazing.",
+   "options": [
+    "solving",
+    "to solve"
+   ],
+   "answer": "to solve",
+   "explanation": "ability: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "His attempt ___ (climb) the mountain failed.",
+   "options": [
+    "climbing",
+    "to climb"
+   ],
+   "answer": "to climb",
+   "explanation": "attempt (noun): Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "The brain's capacity ___ (store) information is vast.",
+   "options": [
+    "storing",
+    "to store"
+   ],
+   "answer": "to store",
+   "explanation": "capacity: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "I didn't get a chance ___ (speak) to her.",
+   "options": [
+    "speaking",
+    "to speak"
+   ],
+   "answer": "to speak",
+   "explanation": "chance: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "It was a tough decision ___ (leave) the company.",
+   "options": [
+    "leaving",
+    "to leave"
+   ],
+   "answer": "to leave",
+   "explanation": "decision: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "Her determination ___ (succeed) was clear.",
+   "options": [
+    "succeeding",
+    "to succeed"
+   ],
+   "answer": "to succeed",
+   "explanation": "determination: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "He expressed a strong desire ___ (help).",
+   "options": [
+    "helping",
+    "to help"
+   ],
+   "answer": "to help",
+   "explanation": "desire: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "She made an effort ___ (arrive) on time.",
+   "options": [
+    "arriving",
+    "to arrive"
+   ],
+   "answer": "to arrive",
+   "explanation": "effort: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "Their failure ___ (communicate) caused problems.",
+   "options": [
+    "communicating",
+    "to communicate"
+   ],
+   "answer": "to communicate",
+   "explanation": "failure: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "I have no intention ___ (quit).",
+   "options": [
+    "quitting",
+    "to quit"
+   ],
+   "answer": "to quit",
+   "explanation": "intention: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "There is an urgent need ___ (find) a solution.",
+   "options": [
+    "finding",
+    "to find"
+   ],
+   "answer": "to find",
+   "explanation": "need (noun): Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "This is a great opportunity ___ (learn).",
+   "options": [
+    "learning",
+    "to learn"
+   ],
+   "answer": "to learn",
+   "explanation": "opportunity: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 1,
+   "sentence": "Did you get permission ___ (enter)?",
+   "options": [
+    "entering",
+    "to enter"
+   ],
+   "answer": "to enter",
+   "explanation": "permission: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "They delayed ___ (publish) the report.",
+   "options": [
+    "publishing",
+    "to publish"
+   ],
+   "answer": "publishing",
+   "explanation": "delay: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "The job involves ___ (travel) a lot.",
+   "options": [
+    "travelling",
+    "to travel"
+   ],
+   "answer": "travelling",
+   "explanation": "involve: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "I adore ___ (listen) to jazz music.",
+   "options": [
+    "listening",
+    "to listen"
+   ],
+   "answer": "listening",
+   "explanation": "adore: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "She detests ___ (wake) up early.",
+   "options": [
+    "waking",
+    "to wake"
+   ],
+   "answer": "waking",
+   "explanation": "detest: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "Please keep ___ (work) on the project.",
+   "options": [
+    "working",
+    "to work"
+   ],
+   "answer": "working",
+   "explanation": "keep: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "He dislikes ___ (wait) for people.",
+   "options": [
+    "waiting",
+    "to wait"
+   ],
+   "answer": "waiting",
+   "explanation": "dislike: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "Do you mind ___ (open) the window?",
+   "options": [
+    "opening",
+    "to open"
+   ],
+   "answer": "opening",
+   "explanation": "mind: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "We had to postpone ___ (visit) the museum.",
+   "options": [
+    "visiting",
+    "to visit"
+   ],
+   "answer": "visiting",
+   "explanation": "postpone: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "You should practise ___ (speak) English every day.",
+   "options": [
+    "speaking",
+    "to speak"
+   ],
+   "answer": "speaking",
+   "explanation": "practise: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "The rain prevented us from ___ (go) out.",
+   "options": [
+    "going",
+    "to go"
+   ],
+   "answer": "going",
+   "explanation": "prevent: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "I propose ___ (have) a meeting tomorrow.",
+   "options": [
+    "having",
+    "to have"
+   ],
+   "answer": "having",
+   "explanation": "propose: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "Don't put off ___ (do) your homework.",
+   "options": [
+    "doing",
+    "to do"
+   ],
+   "answer": "doing",
+   "explanation": "put off: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "Their plan ___ (build) a new hospital was approved.",
+   "options": [
+    "building",
+    "to build"
+   ],
+   "answer": "to build",
+   "explanation": "plan (noun): Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "The proposal ___ (cut) taxes is popular.",
+   "options": [
+    "cutting",
+    "to cut"
+   ],
+   "answer": "to cut",
+   "explanation": "proposal: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "His refusal ___ (cooperate) angered the police.",
+   "options": [
+    "cooperating",
+    "to cooperate"
+   ],
+   "answer": "to cooperate",
+   "explanation": "refusal: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "Everyone has the right ___ (vote).",
+   "options": [
+    "voting",
+    "to vote"
+   ],
+   "answer": "to vote",
+   "explanation": "right (noun): Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "She has a tendency ___ (talk) too much.",
+   "options": [
+    "talking",
+    "to talk"
+   ],
+   "answer": "to talk",
+   "explanation": "tendency: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "This is the best way ___ (solve) the issue.",
+   "options": [
+    "solving",
+    "to solve"
+   ],
+   "answer": "to solve",
+   "explanation": "way: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "Her willingness ___ (help) is admirable.",
+   "options": [
+    "helping",
+    "to help"
+   ],
+   "answer": "to help",
+   "explanation": "willingness: Noun + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "I hope ___ (see) you soon.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "to see",
+   "explanation": "hope: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "He refused ___ (answer) the question.",
+   "options": [
+    "answering",
+    "to answer"
+   ],
+   "answer": "to answer",
+   "explanation": "refuse: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "They appear ___ (be) tired.",
+   "options": [
+    "being",
+    "to be"
+   ],
+   "answer": "to be",
+   "explanation": "appear: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "We expect ___ (arrive) by noon.",
+   "options": [
+    "arriving",
+    "to arrive"
+   ],
+   "answer": "to arrive",
+   "explanation": "expect: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "She agreed ___ (help) us.",
+   "options": [
+    "helping",
+    "to help"
+   ],
+   "answer": "to help",
+   "explanation": "agree: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 2,
+   "sentence": "I arranged ___ (meet) them at the station.",
+   "options": [
+    "meeting",
+    "to meet"
+   ],
+   "answer": "to meet",
+   "explanation": "arrange: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "He resents ___ (be) treated like a child.",
+   "options": [
+    "being",
+    "to be"
+   ],
+   "answer": "being",
+   "explanation": "resent: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "I couldn't resist ___ (eat) the last cookie.",
+   "options": [
+    "eating",
+    "to eat"
+   ],
+   "answer": "eating",
+   "explanation": "resist: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "We don't anticipate ___ (have) any problems.",
+   "options": [
+    "having",
+    "to have"
+   ],
+   "answer": "having",
+   "explanation": "anticipate: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "It took time to adjust to ___ (live) in a new country.",
+   "options": [
+    "living",
+    "to live"
+   ],
+   "answer": "living",
+   "explanation": "to adapt/adjust to: Verb/Adj + Preposition 'to' + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "He admitted to ___ (steal) the money.",
+   "options": [
+    "stealing",
+    "to steal"
+   ],
+   "answer": "stealing",
+   "explanation": "admit to: Verb + Preposition 'to' + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "She confessed to ___ (break) the vase.",
+   "options": [
+    "breaking",
+    "to break"
+   ],
+   "answer": "breaking",
+   "explanation": "confess to: Verb + Preposition 'to' + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "I haven't got round to ___ (fix) the sink yet.",
+   "options": [
+    "fixing",
+    "to fix"
+   ],
+   "answer": "fixing",
+   "explanation": "get round to: Verb + Preposition 'to' + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "I am getting used to ___ (wake) up early.",
+   "options": [
+    "waking",
+    "to wake"
+   ],
+   "answer": "waking",
+   "explanation": "get used to: Expression + Preposition 'to' + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "I am looking forward to ___ (see) you.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "seeing",
+   "explanation": "look forward to: Expression + Preposition 'to' + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "They strongly object to ___ (build) a road here.",
+   "options": [
+    "building",
+    "to build"
+   ],
+   "answer": "building",
+   "explanation": "object to: Verb + Preposition 'to' + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "He gave up ___ (smoke) last year.",
+   "options": [
+    "smoking",
+    "to smoke"
+   ],
+   "answer": "smoking",
+   "explanation": "give up: Phrasal verb + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "In spite of ___ (feel) tired, she kept working.",
+   "options": [
+    "feeling",
+    "to feel"
+   ],
+   "answer": "feeling",
+   "explanation": "In spite of: Linker/Preposition + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "I asked ___ (see) the manager.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "to see",
+   "explanation": "ask (verb): Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "They attempted ___ (escape) from prison.",
+   "options": [
+    "escaping",
+    "to escape"
+   ],
+   "answer": "to escape",
+   "explanation": "attempt (verb): Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "She chose ___ (study) medicine.",
+   "options": [
+    "studying",
+    "to study"
+   ],
+   "answer": "to study",
+   "explanation": "choose: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "We decided ___ (buy) a new house.",
+   "options": [
+    "buying",
+    "to buy"
+   ],
+   "answer": "to buy",
+   "explanation": "decide: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "He demanded ___ (speak) to a lawyer.",
+   "options": [
+    "speaking",
+    "to speak"
+   ],
+   "answer": "to speak",
+   "explanation": "demand: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "You deserve ___ (win) the prize.",
+   "options": [
+    "winning",
+    "to win"
+   ],
+   "answer": "to win",
+   "explanation": "deserve: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "Can you help me ___ (carry) this?",
+   "options": [
+    "carrying",
+    "to carry"
+   ],
+   "answer": "to carry",
+   "explanation": "help: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "Don't hesitate ___ (call) me if you need anything.",
+   "options": [
+    "calling",
+    "to call"
+   ],
+   "answer": "to call",
+   "explanation": "hesitate: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "I am learning ___ (play) the piano.",
+   "options": [
+    "playing",
+    "to play"
+   ],
+   "answer": "to play",
+   "explanation": "learn: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "She managed ___ (finish) the project on time.",
+   "options": [
+    "finishing",
+    "to finish"
+   ],
+   "answer": "to finish",
+   "explanation": "manage: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "He offered ___ (drive) me to the airport.",
+   "options": [
+    "driving",
+    "to drive"
+   ],
+   "answer": "to drive",
+   "explanation": "offer: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "We are preparing ___ (launch) the new product.",
+   "options": [
+    "launching",
+    "to launch"
+   ],
+   "answer": "to launch",
+   "explanation": "prepare: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 3,
+   "sentence": "He pretended ___ (be) asleep.",
+   "options": [
+    "being",
+    "to be"
+   ],
+   "answer": "to be",
+   "explanation": "pretend: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "Despite ___ (rain), we went for a walk.",
+   "options": [
+    "raining",
+    "to rain"
+   ],
+   "answer": "raining",
+   "explanation": "Despite: Linker + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "Instead of ___ (complain), you should help.",
+   "options": [
+    "complaining",
+    "to complain"
+   ],
+   "answer": "complaining",
+   "explanation": "Instead of: Linker/Preposition + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "As a result of ___ (study) hard, she passed.",
+   "options": [
+    "studying",
+    "to study"
+   ],
+   "answer": "studying",
+   "explanation": "as a result of: Linker/Preposition + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "Because of ___ (arrive) late, he missed the start.",
+   "options": [
+    "arriving",
+    "to arrive"
+   ],
+   "answer": "arriving",
+   "explanation": "because of: Linker/Preposition + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "The delay was due to ___ (have) technical issues.",
+   "options": [
+    "having",
+    "to have"
+   ],
+   "answer": "having",
+   "explanation": "due to: Linker/Preposition + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "Besides ___ (work) as a teacher, he also writes.",
+   "options": [
+    "working",
+    "to work"
+   ],
+   "answer": "working",
+   "explanation": "besides: Linker/Preposition + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "I can't stand ___ (wait) in long lines.",
+   "options": [
+    "waiting",
+    "to wait"
+   ],
+   "answer": "waiting",
+   "explanation": "can't stand: Fixed expression + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "I couldn't help ___ (laugh) at the joke.",
+   "options": [
+    "laughing",
+    "to laugh"
+   ],
+   "answer": "laughing",
+   "explanation": "can't help: Fixed expression + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "It's not worth ___ (buy) a cheap umbrella.",
+   "options": [
+    "buying",
+    "to buy"
+   ],
+   "answer": "buying",
+   "explanation": "It's not worth: Fixed expression + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "There is no use ___ (cry) over spilt milk.",
+   "options": [
+    "crying",
+    "to cry"
+   ],
+   "answer": "crying",
+   "explanation": "There is no use: Fixed expression + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "I feel like ___ (eat) pizza tonight.",
+   "options": [
+    "eating",
+    "to eat"
+   ],
+   "answer": "eating",
+   "explanation": "feel like: Fixed expression + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "Owing to ___ (be) sick, she stayed home.",
+   "options": [
+    "being",
+    "to be"
+   ],
+   "answer": "being",
+   "explanation": "owing to: Linker/Preposition + V-ing."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "They seem ___ (know) the answer.",
+   "options": [
+    "knowing",
+    "to know"
+   ],
+   "answer": "to know",
+   "explanation": "seem: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "He threatened ___ (call) the police.",
+   "options": [
+    "calling",
+    "to call"
+   ],
+   "answer": "to call",
+   "explanation": "threaten: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "They didn't allow me ___ (enter).",
+   "options": [
+    "entering",
+    "to enter"
+   ],
+   "answer": "to enter",
+   "explanation": "allow (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "She encouraged him ___ (try) again.",
+   "options": [
+    "trying",
+    "to try"
+   ],
+   "answer": "to try",
+   "explanation": "encourage (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "I persuaded her ___ (join) the club.",
+   "options": [
+    "joining",
+    "to join"
+   ],
+   "answer": "to join",
+   "explanation": "persuade (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "They advised us ___ (leave) early.",
+   "options": [
+    "leaving",
+    "to leave"
+   ],
+   "answer": "to leave",
+   "explanation": "advise (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "I challenge you ___ (prove) it.",
+   "options": [
+    "proving",
+    "to prove"
+   ],
+   "answer": "to prove",
+   "explanation": "challenge (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "Remind me ___ (call) John.",
+   "options": [
+    "calling",
+    "to call"
+   ],
+   "answer": "to call",
+   "explanation": "remind (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "They warned us not ___ (go) there.",
+   "options": [
+    "going",
+    "to go"
+   ],
+   "answer": "to go",
+   "explanation": "warn (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "The storm forced them ___ (stop).",
+   "options": [
+    "stopping",
+    "to stop"
+   ],
+   "answer": "to stop",
+   "explanation": "force (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "They invited us ___ (stay) for dinner.",
+   "options": [
+    "staying",
+    "to stay"
+   ],
+   "answer": "to stay",
+   "explanation": "invite (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "I urge you ___ (consider) this offer.",
+   "options": [
+    "considering",
+    "to consider"
+   ],
+   "answer": "to consider",
+   "explanation": "urge (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 4,
+   "sentence": "The officer ordered the men ___ (fire).",
+   "options": [
+    "firing",
+    "to fire"
+   ],
+   "answer": "to fire",
+   "explanation": "order (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "We can't afford ___ (buy) a new car.",
+   "options": [
+    "buying",
+    "to buy"
+   ],
+   "answer": "to buy",
+   "explanation": "afford: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "She promised ___ (write) to me.",
+   "options": [
+    "writing",
+    "to write"
+   ],
+   "answer": "to write",
+   "explanation": "promise: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "He failed ___ (pass) the exam.",
+   "options": [
+    "passing",
+    "to pass"
+   ],
+   "answer": "to pass",
+   "explanation": "fail (verb): Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "He claims ___ (be) an expert.",
+   "options": [
+    "being",
+    "to be"
+   ],
+   "answer": "to be",
+   "explanation": "claim: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "I wish ___ (speak) to the manager.",
+   "options": [
+    "speaking",
+    "to speak"
+   ],
+   "answer": "to speak",
+   "explanation": "wish: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "He swore ___ (tell) the truth.",
+   "options": [
+    "telling",
+    "to tell"
+   ],
+   "answer": "to tell",
+   "explanation": "swear: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "She volunteered ___ (organize) the event.",
+   "options": [
+    "organizing",
+    "to organize"
+   ],
+   "answer": "to organize",
+   "explanation": "volunteer: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "They struggled ___ (survive) the winter.",
+   "options": [
+    "surviving",
+    "to survive"
+   ],
+   "answer": "to survive",
+   "explanation": "struggle: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "I cannot guarantee ___ (finish) by tomorrow.",
+   "options": [
+    "finishing",
+    "to finish"
+   ],
+   "answer": "to finish",
+   "explanation": "guarantee: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "He resolved ___ (quit) smoking.",
+   "options": [
+    "quitting",
+    "to quit"
+   ],
+   "answer": "to quit",
+   "explanation": "resolve: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "I long ___ (see) my family again.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "to see",
+   "explanation": "long (verb): Verb followed by To-Infinitive (desear intensamente)."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "We aim ___ (increase) sales this year.",
+   "options": [
+    "increasing",
+    "to increase"
+   ],
+   "answer": "to increase",
+   "explanation": "aim: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "She consented ___ (marry) him.",
+   "options": [
+    "marrying",
+    "to marry"
+   ],
+   "answer": "to marry",
+   "explanation": "consent: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "He proceeded ___ (explain) the rules.",
+   "options": [
+    "explaining",
+    "to explain"
+   ],
+   "answer": "to explain",
+   "explanation": "proceed: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "I am waiting ___ (hear) from them.",
+   "options": [
+    "hearing",
+    "to hear"
+   ],
+   "answer": "to hear",
+   "explanation": "wait: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "They discussed ___ (open) a new branch.",
+   "options": [
+    "opening",
+    "to open"
+   ],
+   "answer": "opening",
+   "explanation": "discuss: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "He mentioned ___ (see) you at the party.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "seeing",
+   "explanation": "mention: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "She quit ___ (worry) about the small things.",
+   "options": [
+    "worrying",
+    "to worry"
+   ],
+   "answer": "worrying",
+   "explanation": "quit: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "I don't recall ___ (meet) him before.",
+   "options": [
+    "meeting",
+    "to meet"
+   ],
+   "answer": "meeting",
+   "explanation": "recall: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "We won't tolerate ___ (cheat) in this class.",
+   "options": [
+    "cheating",
+    "to cheat"
+   ],
+   "answer": "cheating",
+   "explanation": "tolerate: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "He narrowly escaped ___ (be) killed.",
+   "options": [
+    "being",
+    "to be"
+   ],
+   "answer": "being",
+   "explanation": "escape: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "Have you completed ___ (write) the essay?",
+   "options": [
+    "writing",
+    "to write"
+   ],
+   "answer": "writing",
+   "explanation": "complete (verb): Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "They deferred ___ (make) a decision.",
+   "options": [
+    "making",
+    "to make"
+   ],
+   "answer": "making",
+   "explanation": "defer: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "Witnesses reported ___ (hear) an explosion.",
+   "options": [
+    "hearing",
+    "to hear"
+   ],
+   "answer": "hearing",
+   "explanation": "report: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 5,
+   "sentence": "They resumed ___ (build) the bridge.",
+   "options": [
+    "building",
+    "to build"
+   ],
+   "answer": "building",
+   "explanation": "resume: Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "Carry on ___ (read) the book.",
+   "options": [
+    "reading",
+    "to read"
+   ],
+   "answer": "reading",
+   "explanation": "carry on: Phrasal Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "She kept on ___ (talk) despite the noise.",
+   "options": [
+    "talking",
+    "to talk"
+   ],
+   "answer": "talking",
+   "explanation": "keep on: Phrasal Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "We ended up ___ (stay) at home.",
+   "options": [
+    "staying",
+    "to stay"
+   ],
+   "answer": "staying",
+   "explanation": "end up: Phrasal Verb followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "She dreams of ___ (become) an astronaut.",
+   "options": [
+    "becoming",
+    "to become"
+   ],
+   "answer": "becoming",
+   "explanation": "dream of: Prepositional Verb (Verb + prep) followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "Are you thinking about ___ (buy) a new car?",
+   "options": [
+    "buying",
+    "to buy"
+   ],
+   "answer": "buying",
+   "explanation": "think about: Prepositional Verb (Verb + prep) followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "He apologized for ___ (arrive) late.",
+   "options": [
+    "arriving",
+    "to arrive"
+   ],
+   "answer": "arriving",
+   "explanation": "apologize for: Prepositional Verb (Verb + prep) followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "She insisted on ___ (pay) the bill.",
+   "options": [
+    "paying",
+    "to pay"
+   ],
+   "answer": "paying",
+   "explanation": "insist on: Prepositional Verb (Verb + prep) followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "He succeeded in ___ (pass) the test.",
+   "options": [
+    "passing",
+    "to pass"
+   ],
+   "answer": "passing",
+   "explanation": "succeed in: Prepositional Verb (Verb + prep) followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "You can count on me ___ (help) you.",
+   "options": [
+    "helping",
+    "to help"
+   ],
+   "answer": "helping",
+   "explanation": "count on: Prepositional Verb (Verb + prep) followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "He doesn't care about ___ (make) money.",
+   "options": [
+    "making",
+    "to make"
+   ],
+   "answer": "making",
+   "explanation": "care about: Prepositional Verb (Verb + prep) followed by Gerund."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "Prices tend ___ (rise) in summer.",
+   "options": [
+    "rising",
+    "to rise"
+   ],
+   "answer": "to rise",
+   "explanation": "tend: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "I happen ___ (know) his brother.",
+   "options": [
+    "knowing",
+    "to know"
+   ],
+   "answer": "to know",
+   "explanation": "happen: Verb followed by To-Infinitive ('It happens to be...')."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "I don't care ___ (see) that movie.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "to see",
+   "explanation": "care (verb): Verb followed by To-Infinitive ('I don't care to go')."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "He begged her ___ (stay).",
+   "options": [
+    "staying",
+    "to stay"
+   ],
+   "answer": "to stay",
+   "explanation": "beg: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "They seek ___ (improve) their skills.",
+   "options": [
+    "improving",
+    "to improve"
+   ],
+   "answer": "to improve",
+   "explanation": "seek: Verb followed by To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "The general commanded them ___ (attack).",
+   "options": [
+    "attacking",
+    "to attack"
+   ],
+   "answer": "to attack",
+   "explanation": "command (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "I forbid you ___ (go) out.",
+   "options": [
+    "going",
+    "to go"
+   ],
+   "answer": "to go",
+   "explanation": "forbid (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "They didn't permit him ___ (speak).",
+   "options": [
+    "speaking",
+    "to speak"
+   ],
+   "answer": "to speak",
+   "explanation": "permit (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "She requested me ___ (help) her.",
+   "options": [
+    "helping",
+    "to help"
+   ],
+   "answer": "to help",
+   "explanation": "request (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "The job requires you ___ (travel).",
+   "options": [
+    "travelling",
+    "to travel"
+   ],
+   "answer": "to travel",
+   "explanation": "require (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "They hired him ___ (fix) the roof.",
+   "options": [
+    "fixing",
+    "to fix"
+   ],
+   "answer": "to fix",
+   "explanation": "hire (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "She was employed ___ (manage) the team.",
+   "options": [
+    "managing",
+    "to manage"
+   ],
+   "answer": "to manage",
+   "explanation": "employ (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "I trust you ___ (make) the right choice.",
+   "options": [
+    "making",
+    "to make"
+   ],
+   "answer": "to make",
+   "explanation": "trust (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "They selected her ___ (lead) the project.",
+   "options": [
+    "leading",
+    "to lead"
+   ],
+   "answer": "to lead",
+   "explanation": "select (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 6,
+   "sentence": "We must prepare them ___ (face) the challenges.",
+   "options": [
+    "facing",
+    "to face"
+   ],
+   "answer": "to face",
+   "explanation": "prepare (someone): Verb + someone + To-Infinitive."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "After five hours of intense studying, he finally stopped ___ (look) at the screen.",
+   "options": [
+    "looking",
+    "to look"
+   ],
+   "answer": "looking",
+   "explanation": "stop: Stop + -ing = cease the activity."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "We were driving to Madrid, but we stopped ___ (get) some gas at the station.",
+   "options": [
+    "getting",
+    "to get"
+   ],
+   "answer": "to get",
+   "explanation": "stop: Stop + to-inf = pause one action in order to do another."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "I distinctly remember ___ (lock) the front door, but it was wide open when I returned.",
+   "options": [
+    "locking",
+    "to lock"
+   ],
+   "answer": "locking",
+   "explanation": "remember: Remember + -ing = recall a past memory."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "Please, remember ___ (set) the alarm before you leave the office tonight.",
+   "options": [
+    "setting",
+    "to set"
+   ],
+   "answer": "to set",
+   "explanation": "remember: Remember + to-inf = remember to perform a task."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "The laptop won't turn on. Have you tried ___ (plug) it in to a different socket?",
+   "options": [
+    "plugging",
+    "to plug"
+   ],
+   "answer": "plugging",
+   "explanation": "try: Try + -ing = experiment to see if it works."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "She tried ___ (finish) the marathon, but her knee injury forced her to drop out.",
+   "options": [
+    "finishing",
+    "to finish"
+   ],
+   "answer": "to finish",
+   "explanation": "try: Try + to-inf = attempt something difficult."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "He deeply regrets ___ (turn) down that job offer in London ten years ago.",
+   "options": [
+    "turning",
+    "to turn"
+   ],
+   "answer": "turning",
+   "explanation": "regret: Regret + -ing = regret a past action."
+  },
+  {
+   "type": "mc",
+   "test": 7,
+   "sentence": "We regret ___ (inform) you that your application has been unsuccessful.",
+   "options": [
+    "informing",
+    "to inform"
+   ],
+   "answer": "to inform",
+   "explanation": "regret: Regret + to-inf = announce bad news politely."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "Accepting this promotion will mean ___ (move) abroad for at least three years.",
+   "options": [
+    "moving",
+    "to move"
+   ],
+   "answer": "moving",
+   "explanation": "mean: Mean + -ing = involve / result in."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "I'm so sorry, I never meant ___ (hurt) your feelings.",
+   "options": [
+    "hurting",
+    "to hurt"
+   ],
+   "answer": "to hurt",
+   "explanation": "mean: Mean + to-inf = intend to do."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "Despite the interruptions, the professor went on ___ (talk) for another hour.",
+   "options": [
+    "talking",
+    "to talk"
+   ],
+   "answer": "talking",
+   "explanation": "go on: Go on + -ing = continue doing the same action."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "After explaining the theory, she went on ___ (demonstrate) how to apply it in practice.",
+   "options": [
+    "demonstrating",
+    "to demonstrate"
+   ],
+   "answer": "to demonstrate",
+   "explanation": "go on: Go on + to-inf = move on to the next action."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "Your bedroom is a complete mess; the floor desperately needs ___ (clean).",
+   "options": [
+    "cleaning",
+    "to clean"
+   ],
+   "answer": "cleaning",
+   "explanation": "need: Need + -ing = passive necessity (something needs to be done)."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "I urgently need ___ (speak) to the manager about the recent complaints.",
+   "options": [
+    "speaking",
+    "to speak"
+   ],
+   "answer": "to speak",
+   "explanation": "need: Need + to-inf = active necessity."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "I'll never forget ___ (see) my favourite singer in concert for the very first time.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "seeing",
+   "explanation": "forget: Forget + -ing = forget a past memory."
+  },
+  {
+   "type": "mc",
+   "test": 8,
+   "sentence": "After months of working together, I came ___ (realize) that he was actually a genius.",
+   "options": [
+    "realizing",
+    "to realize"
+   ],
+   "answer": "to realize",
+   "explanation": "come: Come + to-inf = gradually start to."
+  }
+ ],
+ "book": [
+  {
+   "type": "mc",
+   "sentence": "I'd always refused ___ lottery tickets because I thought they were a waste of money.",
+   "options": [
+    "to buy",
+    "buying"
+   ],
+   "answer": "to buy",
+   "explanation": "Refuse + to inf."
+  },
+  {
+   "type": "mc",
+   "sentence": "Last week, for the first time in my life, I decided ___ just one.",
+   "options": [
+    "to get",
+    "getting"
+   ],
+   "answer": "to get",
+   "explanation": "Decide + to inf."
+  },
+  {
+   "type": "mc",
+   "sentence": "It was just a bit of fun and I didn't really expect ___.",
+   "options": [
+    "to win",
+    "winning"
+   ],
+   "answer": "to win",
+   "explanation": "Expect + to inf."
+  },
+  {
+   "type": "mc",
+   "sentence": "I couldn't help ___ about how I'd spend the money.",
+   "options": [
+    "thinking",
+    "to think"
+   ],
+   "answer": "thinking",
+   "explanation": "Can't help + -ing."
+  },
+  {
+   "type": "mc",
+   "sentence": "I had really enjoyed ___ the expression on my brother's face.",
+   "options": [
+    "seeing",
+    "to see"
+   ],
+   "answer": "seeing",
+   "explanation": "Enjoy + -ing."
+  },
+  {
+   "type": "mc",
+   "sentence": "All week I looked forward to ___ the TV programme.",
+   "options": [
+    "watching",
+    "watch"
+   ],
+   "answer": "watching",
+   "explanation": "Look forward TO (preposición) + -ing."
+  },
+  {
+   "type": "mc",
+   "sentence": "That evening I was so busy that I forgot ___ the TV on.",
+   "options": [
+    "to put",
+    "putting"
+   ],
+   "answer": "to put",
+   "explanation": "Forget + to inf = olvidarse de hacer algo."
+  },
+  {
+   "type": "mc",
+   "sentence": "I promised myself never ___ another lottery ticket.",
+   "options": [
+    "to buy",
+    "buying"
+   ],
+   "answer": "to buy",
+   "explanation": "Promise + to inf."
+  },
+  {
+   "type": "mc",
+   "sentence": "I couldn't risk ___ so disappointed again.",
+   "options": [
+    "being",
+    "to be"
+   ],
+   "answer": "being",
+   "explanation": "Risk + -ing."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: I suggest ___ (take) the overnight train to Vienna.",
+   "answers": [
+    "taking"
+   ],
+   "explanation": "Suggest + -ing (✗ suggest to take)."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: Part of my job is helping ___ (maintain) the machinery in good working order.",
+   "answers": [
+    "maintain",
+    "to maintain"
+   ],
+   "explanation": "Help + inf (con o sin to), nunca -ing."
+  },
+  {
+   "type": "gap",
+   "sentence": "This one is correct: I would strongly recommend ___ (go) by plane.",
+   "answers": [
+    "going"
+   ],
+   "explanation": "Recommend + -ing."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: If I were you, I'd consider ___ (spend) less time at work.",
+   "answers": [
+    "spending"
+   ],
+   "explanation": "Consider + -ing."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: I found it impossible ___ (sleep) because of the noise.",
+   "answers": [
+    "to sleep"
+   ],
+   "explanation": "Adjetivo (impossible) + to inf."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: I nodded and pretended ___ (understand) what she was saying.",
+   "answers": [
+    "to understand"
+   ],
+   "explanation": "Pretend + to inf."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: I remember ___ (see) that show in New York. It was incredible.",
+   "answers": [
+    "seeing"
+   ],
+   "explanation": "Remember + -ing = recordar algo pasado."
+  },
+  {
+   "type": "gap",
+   "sentence": "This one is correct: I didn't mean ___ (break) the TV. It was an accident.",
+   "answers": [
+    "to break"
+   ],
+   "explanation": "Mean + to inf = tener intención."
+  },
+  {
+   "type": "gap",
+   "sentence": "They are as involved ___ us in the preparations for the festival.",
+   "answers": [
+    "as"
+   ],
+   "explanation": "As + adj + AS."
+  },
+  {
+   "type": "gap",
+   "sentence": "Squirrels are a lot more aggressive ___ most other rodents.",
+   "answers": [
+    "than"
+   ],
+   "explanation": "Comparativo + than."
+  },
+  {
+   "type": "gap",
+   "sentence": "He was ___ more upset about the breakup than I expected.",
+   "answers": [
+    "far",
+    "much",
+    "a lot",
+    "even",
+    "considerably",
+    "a great deal"
+   ],
+   "explanation": "Intensificador + comparativo."
+  },
+  {
+   "type": "gap",
+   "sentence": "It was the ___ frightening experience I have ever had.",
+   "answers": [
+    "most"
+   ],
+   "explanation": "The most + adjetivo largo."
+  },
+  {
+   "type": "gap",
+   "sentence": "The more I study English grammar, ___ I enjoy learning the language. (2 words)",
+   "answers": [
+    "the more"
+   ],
+   "explanation": "Doble comparativo."
+  },
+  {
+   "type": "gap",
+   "sentence": "She was ___ the most successful player in the chess matches.",
+   "answers": [
+    "by far",
+    "easily",
+    "definitely",
+    "clearly"
+   ],
+   "explanation": "Intensificador + superlativo."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: I'd say this laptop is by far the ___ one we've looked at.",
+   "answers": [
+    "best"
+   ],
+   "explanation": "By far + SUPERLATIVO."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: She is not as athletic ___ she thinks she is.",
+   "answers": [
+    "as"
+   ],
+   "explanation": "Not as ... AS."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: The ___ I live in this city, the more I love it.",
+   "answers": [
+    "longer"
+   ],
+   "explanation": "The + comparativo."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: If you need advice about diet, Ignacio is probably ___ person to speak to. (2 words)",
+   "answers": [
+    "the best"
+   ],
+   "explanation": "Superlativo con the."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: He is much ___ (friendly) than he first appears.",
+   "answers": [
+    "friendlier",
+    "more friendly"
+   ],
+   "explanation": "Comparativo de friendly."
+  },
+  {
+   "type": "rewrite",
+   "original": "I'd really like to write stories for children.",
+   "start": "What",
+   "answers": [
+    "What I'd really like to do is write stories for children.",
+    "What I would really like to do is write stories for children.",
+    "What I'd really like to do is to write stories for children.",
+    "What I would really like to do is to write stories for children.",
+    "What I'd really like is to write stories for children.",
+    "What I would really like is to write stories for children."
+   ],
+   "explanation": "Cleft con What: What + sujeto + verbo + is + ..."
+  },
+  {
+   "type": "rewrite",
+   "original": "The doctor advised me to reduce the amount of sugar I eat.",
+   "start": "What",
+   "answers": [
+    "What the doctor advised me to do was to reduce the amount of sugar I eat.",
+    "What the doctor advised me to do was reduce the amount of sugar I eat.",
+    "What the doctor advised was to reduce the amount of sugar I eat.",
+    "What the doctor advised me was to reduce the amount of sugar I eat."
+   ],
+   "explanation": "What + sujeto + verbo + was (to) + inf."
+  },
+  {
+   "type": "rewrite",
+   "original": "My father, not my brother, lost his job when the office closed down.",
+   "start": "It",
+   "answers": [
+    "It was my father, not my brother, who lost his job when the office closed down.",
+    "It was my father, not my brother, that lost his job when the office closed down.",
+    "It was my father who lost his job when the office closed down, not my brother."
+   ],
+   "explanation": "Cleft con It: It was + [lo enfatizado] + who / that."
+  },
+  {
+   "type": "rewrite",
+   "original": "I'm to blame, not you.",
+   "start": "It",
+   "answers": [
+    "It's me who is to blame, not you.",
+    "It is me who is to blame, not you.",
+    "It's me who's to blame, not you.",
+    "It's me that's to blame, not you.",
+    "It is me that is to blame, not you.",
+    "It is I who am to blame, not you."
+   ],
+   "explanation": "Cleft con It."
+  },
+  {
+   "type": "rewrite",
+   "original": "I don't understand why so many people voted for her.",
+   "start": "What",
+   "answers": [
+    "What I don't understand is why so many people voted for her.",
+    "What I do not understand is why so many people voted for her."
+   ],
+   "explanation": "What + sujeto + verbo + is + ..."
+  },
+  {
+   "type": "rewrite",
+   "original": "A few students stood chatting at the back of the hall.",
+   "start": "At the back of the hall",
+   "answers": [
+    "At the back of the hall stood a few students chatting.",
+    "At the back of the hall a few students stood chatting."
+   ],
+   "explanation": "Fronting de lugar (puede invertir el verbo: stood a few students)."
+  },
+  {
+   "type": "rewrite",
+   "original": "The steak tartare was delicious. But the cheese board was even more delicious.",
+   "start": "Even more delicious",
+   "answers": [
+    "Even more delicious was the cheese board."
+   ],
+   "explanation": "Fronting de comparativo + inversión con be."
+  },
+  {
+   "type": "rewrite",
+   "original": "It was self-evident that she had been jogging.",
+   "start": "That",
+   "answers": [
+    "That she had been jogging was self-evident."
+   ],
+   "explanation": "Fronting de la oración con that."
+  },
+  {
+   "type": "rewrite",
+   "original": "He meticulously repaired the stitching on his shirt.",
+   "start": "Meticulously",
+   "answers": [
+    "Meticulously, he repaired the stitching on his shirt.",
+    "Meticulously he repaired the stitching on his shirt."
+   ],
+   "explanation": "Fronting de un adverbio."
+  },
+  {
+   "type": "rewrite",
+   "original": "I find her constant sarcasm most annoying. (WHAT)",
+   "start": "What",
+   "answers": [
+    "What I find most annoying is her constant sarcasm."
+   ],
+   "explanation": "What + sujeto + verbo + is + ..."
+  },
+  {
+   "type": "rewrite",
+   "original": "I hope that she passes her driving test this time. (DO)",
+   "start": "I",
+   "answers": [
+    "I do hope that she passes her driving test this time.",
+    "I do hope she passes her driving test this time."
+   ],
+   "explanation": "Do / does / did + inf para enfatizar."
+  },
+  {
+   "type": "rewrite",
+   "original": "We first met on a beach in Thailand. (IT)",
+   "start": "It",
+   "answers": [
+    "It was on a beach in Thailand that we first met.",
+    "It was on a beach in Thailand where we first met."
+   ],
+   "explanation": "It was + lugar + that..."
+  },
+  {
+   "type": "rewrite",
+   "original": "He left the party because he had an argument with his girlfriend. (WHY)",
+   "start": "The reason why",
+   "answers": [
+    "The reason why he left the party was that he had an argument with his girlfriend.",
+    "The reason why he left the party was because he had an argument with his girlfriend.",
+    "The reason why he left the party was that he'd had an argument with his girlfriend.",
+    "The reason why he left the party was because he'd had an argument with his girlfriend."
+   ],
+   "explanation": "The reason why + oración + was (that / because)..."
+  },
+  {
+   "type": "rewrite",
+   "original": "I received a letter from the Prime Minister promising to take up our cause. (HIMSELF)",
+   "start": "I",
+   "answers": [
+    "I received a letter from the Prime Minister himself promising to take up our cause."
+   ],
+   "explanation": "Reflexivo detrás del sustantivo para enfatizar."
+  }
+ ],
+ "transformations": [
+  {
+   "type": "kwt",
+   "lead_in": "She is much smarter than her brother.",
+   "keyword": "DEAL",
+   "before": "She is",
+   "after": "her brother.",
+   "answers": [
+    "a great deal smarter than"
+   ],
+   "explanation": "A great deal + comparativo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I have never seen such a beautiful painting before.",
+   "keyword": "FAR",
+   "before": "This is",
+   "after": "painting I have ever seen.",
+   "answers": [
+    "by far the most beautiful"
+   ],
+   "explanation": "By far + superlativo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "As people get older, they become less tolerant.",
+   "keyword": "THE",
+   "before": "The older people get,",
+   "after": "become.",
+   "answers": [
+    "the less tolerant they"
+   ],
+   "explanation": "Doble comparativo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "My car is much faster than yours.",
+   "keyword": "NEAR",
+   "before": "Your car is",
+   "after": "mine.",
+   "answers": [
+    "nowhere near as fast as"
+   ],
+   "explanation": "Nowhere near as + adj + as."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "He is slightly taller than his father.",
+   "keyword": "BIT",
+   "before": "He is",
+   "after": "his father.",
+   "answers": [
+    "a bit taller than"
+   ],
+   "explanation": "A bit + comparativo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "My grandfather is 80 and I am 40.",
+   "keyword": "AS",
+   "before": "My grandfather is",
+   "after": "me.",
+   "answers": [
+    "twice as old as"
+   ],
+   "explanation": "Twice as + adj + as."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I had no idea that she was planning a party.",
+   "keyword": "LITTLE",
+   "before": "",
+   "after": "that she was planning a party.",
+   "answers": [
+    "Little did I know",
+    "Little did I realise",
+    "Little did I suspect"
+   ],
+   "explanation": "Little + did + sujeto + know."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "As soon as I arrived, the phone rang.",
+   "keyword": "SOONER",
+   "before": "",
+   "after": "the phone rang.",
+   "answers": [
+    "No sooner had I arrived than"
+   ],
+   "explanation": "No sooner + had + sujeto + participio + than."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "You must not open this door under any circumstances.",
+   "keyword": "NO",
+   "before": "",
+   "after": "this door.",
+   "answers": [
+    "Under no circumstances must you open",
+    "Under no circumstances should you open",
+    "On no account must you open",
+    "On no account should you open"
+   ],
+   "explanation": "Under no circumstances / On no account + aux + sujeto."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "He didn't apologise until the next day.",
+   "keyword": "UNTIL",
+   "before": "It was",
+   "after": "he apologised.",
+   "answers": [
+    "not until the next day that"
+   ],
+   "explanation": "Cleft: It was not until ... that ..."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "If you need any help, call me.",
+   "keyword": "SHOULD",
+   "before": "",
+   "after": "any help, call me.",
+   "answers": [
+    "Should you need"
+   ],
+   "explanation": "Inversión del 1st conditional."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The noise was so loud that nobody could sleep.",
+   "keyword": "SUCH",
+   "before": "",
+   "after": "that nobody could sleep.",
+   "answers": [
+    "Such was the noise"
+   ],
+   "explanation": "Such + be + sustantivo + that."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I have never seen such a mess in my life.",
+   "keyword": "NEVER",
+   "before": "",
+   "after": "such a mess in my life.",
+   "answers": [
+    "Never have I seen"
+   ],
+   "explanation": "Never + have + sujeto."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I'd prefer not to talk about it now.",
+   "keyword": "FEEL",
+   "before": "I don't",
+   "after": "about it now.",
+   "answers": [
+    "feel like talking"
+   ],
+   "explanation": "Feel like + -ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "It's pointless to argue with him.",
+   "keyword": "WORTH",
+   "before": "It",
+   "after": "with him.",
+   "answers": [
+    "isn't worth arguing",
+    "is not worth arguing",
+    "'s not worth arguing"
+   ],
+   "explanation": "It's not worth + -ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Taking the job will involve moving abroad.",
+   "keyword": "MEAN",
+   "before": "Taking the job",
+   "after": "abroad.",
+   "answers": [
+    "will mean moving"
+   ],
+   "explanation": "Mean + -ing = implicar."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I'm really excited about seeing you next week.",
+   "keyword": "FORWARD",
+   "before": "I'm really",
+   "after": "you next week.",
+   "answers": [
+    "looking forward to seeing"
+   ],
+   "explanation": "Look forward to + -ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "There's no point in complaining to the manager.",
+   "keyword": "USE",
+   "before": "It's",
+   "after": "to the manager.",
+   "answers": [
+    "no use complaining"
+   ],
+   "explanation": "It's no use + -ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I can't stop thinking about what she said.",
+   "keyword": "HELP",
+   "before": "I",
+   "after": "about what she said.",
+   "answers": [
+    "can't help thinking",
+    "cannot help thinking"
+   ],
+   "explanation": "Can't help + -ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Don't forget to lock the door when you leave.",
+   "keyword": "REMEMBER",
+   "before": "",
+   "after": "the door when you leave.",
+   "answers": [
+    "Remember to lock",
+    "Please remember to lock"
+   ],
+   "explanation": "Remember + to inf = acordarse de hacer algo."
+  }
+ ]
+}

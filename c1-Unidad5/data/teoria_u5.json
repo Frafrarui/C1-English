@@ -1,0 +1,319 @@
+{
+  "sections": [
+    {
+      "id": "inversions",
+      "title": "A) INVERSIONS",
+      "subtitle": "Adverbio negativo / restrictivo al principio → orden de pregunta",
+      "color": "sky",
+      "blocks": [
+        {
+          "heading": "¿Qué es la inversión?",
+          "formula": "Adverbio negativo + AUX + SUJETO + verbo",
+          "rule": "Cuando una frase empieza por un adverbio negativo o restrictivo (never, rarely, little, not until, only when...), el sujeto y el auxiliar se invierten como en una pregunta. Es un registro formal y enfático: sube nota en Writing y en Speaking.",
+          "compare": [
+            { "label": "Orden normal", "text": "I have **never** seen such a heavy weight." },
+            { "label": "Inversión", "text": "**Never have I** seen such a heavy weight." }
+          ],
+          "tip": "Si la frase no tiene auxiliar (present / past simple), añade do / does / did: He seldom misses a session → Seldom **does he miss** a session."
+        },
+        {
+          "heading": "Never · Rarely · Seldom · Little",
+          "formula": "Never / Rarely / Seldom / Little + AUX + SUJETO + verbo",
+          "rule": "La inversión va justo después del adverbio (en la oración principal).",
+          "examples": [
+            "**Never have I** lifted such a heavy weight on the bench press.",
+            "**Rarely do you** see someone with such perfect execution.",
+            "**Seldom does he** miss a training session.",
+            "**Little did I** know that those extra calories would make such a difference."
+          ],
+          "tip": "Little casi siempre va con did + sujeto + know / realise / imagine / suspect (= no tenía ni idea)."
+        },
+        {
+          "heading": "Hardly · Barely · Scarcely ... WHEN",
+          "formula": "Hardly / Barely / Scarcely + HAD + SUJETO + participio + WHEN + past simple",
+          "rule": "Una acción pasada ocurre justo después de otra (= apenas había... cuando...).",
+          "examples": ["**Hardly had I** finished my sets **when** the gym closed.", "**Scarcely had we** left the house **when** it started to rain."]
+        },
+        {
+          "heading": "No sooner ... THAN",
+          "formula": "No sooner + HAD + SUJETO + participio + THAN + past simple",
+          "rule": "Mismo significado que hardly, pero la partícula es THAN (no when).",
+          "examples": ["**No sooner had I** drunk the protein shake **than** it was time for the next meal.", "**No sooner had they** got married **than** they started to argue."],
+          "wrong": [{ "bad": "No sooner had I arrived when the phone rang.", "good": "No sooner had I arrived than the phone rang." }]
+        },
+        {
+          "heading": "Under no circumstances · In no way · On no account · At no time · Not only",
+          "formula": "Expresión con NO / NOT + AUX + SUJETO + verbo",
+          "rule": "La inversión va justo después de la expresión.",
+          "examples": [
+            "**Under no circumstances should you** sacrifice technique to lift more weight.",
+            "**In no way will I** accept that kind of behaviour.",
+            "**On no account must this door** be left unlocked.",
+            "**At no time did my partner** doubt my ability to pass the exam.",
+            "**Not only did he** arrive late, **but he also** forgot his notes."
+          ],
+          "wrong": [{ "bad": "At no time you can't use my car.", "good": "At no time can you use my car. (sin doble negación)" }]
+        },
+        {
+          "heading": "Inversión en la SEGUNDA parte: Not until · Not since · Only when · Only if · Only after",
+          "formula": "Not until / Only when ... + [oración normal] + AUX + SUJETO + verbo",
+          "rule": "La primera parte se queda con orden normal; la inversión va en la oración PRINCIPAL (la segunda).",
+          "examples": [
+            "**Not until** he apologised **did I** forgive him.",
+            "**Not since** I was a child **have I** eaten so much candy.",
+            "**Only when** you finish your homework **can you** play.",
+            "**Only if** it rains **will we** cancel the picnic.",
+            "**Only after** the meeting ended **did she** realise the mistake."
+          ],
+          "wrong": [{ "bad": "Not until did Peter get home he realised...", "good": "Not until Peter got home did he realise..." }]
+        },
+        {
+          "heading": "So + adjetivo · Such + be + sustantivo",
+          "formulas": ["So + ADJ + BE + SUJETO + that ...", "Such + BE + sustantivo + that ..."],
+          "rule": "Para enfatizar una cualidad (so) o un sustantivo (such).",
+          "compare": [
+            { "label": "So", "text": "She was so supportive that... → **So supportive was she** that I managed to study every day." },
+            { "label": "Such", "text": "The demands of her job are such that... → **Such are the demands** of her job that she rarely takes a holiday." }
+          ]
+        },
+        {
+          "heading": "Inversión en condicionales (repaso Unidad 4)",
+          "rule": "Se quita if y se invierte el auxiliar.",
+          "table": {
+            "headers": ["Tipo", "Estructura", "Ejemplo"],
+            "rows": [
+              ["1st", "Should + sujeto + inf, will / can + inf", "Should you need more rice, let me know."],
+              ["2nd", "Were + sujeto + to + inf, would + inf", "Were I to fail the test, I would take it again."],
+              ["3rd", "Had + sujeto + participio, would have + participio", "Had we known, we would have organised a better dinner."]
+            ]
+          }
+        },
+        {
+          "heading": "Emphasis (Complete Advanced): cleft sentences",
+          "formulas": ["What + sujeto + verbo + BE + ...", "It + BE + [lo que enfatizas] + who / that + ..."],
+          "rule": "Partimos la frase para enfatizar una parte. Con What: si el verbo pide to-inf, usamos to (What I decided to do was to write...); si pide inf sin to, sin to (What you should do is arrange...). También All / The only thing / The last thing / The reason why... Con It eliges qué destacar.",
+          "examples": [
+            "My brother wanted a new car. → **What** my brother wanted **was** a new car.",
+            "**What** you should do **is** arrange a dental appointment.",
+            "**All** I really wanted **was** to sleep all day.",
+            "**It was** Pete **who** had his bike repaired. (Pete, no Ben)",
+            "**It was** last weekend **that** Pete had his bike repaired.",
+            "**The last thing** I was expecting **was** to lose my job."
+          ]
+        },
+        {
+          "heading": "Emphasis (Complete Advanced): fronting, do / did y reflexivos",
+          "rule": "Fronting: empezar por lo que quieres destacar (lugar, comparativo, superlativo, so + adj); con lugar, a veces se invierte el verbo. Do / does / did + inf para enfatizar o llevar la contraria. Reflexivos (himself, herself...) para enfatizar quién lo hizo.",
+          "examples": [
+            "**Next to me sat** an elderly man reading a newspaper.",
+            "**More important than anything else is** the need to look after the children.",
+            "**Best of all was** the sweet creamy dessert.",
+            "They **do** study enough, but the tests are too hard!",
+            "The manager **herself** wrote to us to apologise."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparisons",
+      "title": "B) COMPARISONS",
+      "subtitle": "Comparativos, superlativos e intensificadores",
+      "color": "indigo",
+      "blocks": [
+        {
+          "heading": "Superioridad e inferioridad: cómo se forma",
+          "rule": "1 sílaba → -er · 2 sílabas acabadas en -y → -ier · 2+ sílabas → more + adj. Inferioridad: less + adj + than.",
+          "table": {
+            "headers": ["Tipo", "Adjetivo", "Comparativo", "Superlativo"],
+            "rows": [
+              ["1 sílaba", "fast", "faster than", "the fastest"],
+              ["Acaba en -y", "heavy", "heavier than", "the heaviest"],
+              ["2+ sílabas", "expensive", "more expensive than", "the most expensive"],
+              ["Inferioridad", "expensive", "less expensive than", "the least expensive"]
+            ]
+          }
+        },
+        {
+          "heading": "Intensificadores de MÁS (mucho más...)",
+          "formula": "INTENSIFICADOR + comparativo + than",
+          "chipsLabel": "Mucho más",
+          "chips": ["far", "much", "a lot", "a great deal", "considerably", "substantially", "significantly", "even", "easily", "by a long way"],
+          "examples": [
+            "This method is **far better** than the old one.",
+            "This exam was **a great deal harder** than the last one.",
+            "My sister is clever, but my brother is **even cleverer**.",
+            "It's more difficult **by a long way**."
+          ],
+          "wrong": [{ "bad": "He is very taller than me.", "good": "He is much / far taller than me. (very no va con comparativos)" }]
+        },
+        {
+          "heading": "Intensificadores de MENOS (un poco más...)",
+          "formula": "a bit / a little / slightly + comparativo",
+          "chips": ["a bit", "a little", "slightly"],
+          "examples": ["I'm feeling **a bit more tired** today.", "Can you speak **a little louder**?", "The temperature is **slightly lower** now."]
+        },
+        {
+          "heading": "Igualdad: as ... as · the same ... as",
+          "formulas": ["(not) as + ADJ + as", "the same + sustantivo + as"],
+          "chipsLabel": "Intensificadores",
+          "chips": ["just", "nearly", "almost", "nowhere near", "not quite", "twice", "three times", "half"],
+          "examples": [
+            "She is **just as talented as** her rival.",
+            "His car is **nowhere near as fast as** mine.",
+            "He is **twice as old as** me.",
+            "They have **the same car as** we do."
+          ],
+          "wrong": [
+            { "bad": "He is twice older than me.", "good": "He is twice as old as me." },
+            { "bad": "She is not as athletic than she thinks.", "good": "She is not as athletic as she thinks." }
+          ]
+        },
+        {
+          "heading": "Superlativos e intensificadores",
+          "formulas": ["the + -est / the most + ADJ", "the + superlativo + of + plural", "the + superlativo + sustantivo + imaginable / possible"],
+          "chips": ["by far", "easily", "by a long way", "nearly", "one of", "definitely"],
+          "examples": [
+            "She is **by far the most talented** artist here.",
+            "He is **easily the best** player on the team.",
+            "This is the worst movie **by a long way**.",
+            "He's **one of the best** singers I've ever heard.",
+            "It was **the simplest of** ideas.",
+            "We had **the worst weather imaginable**."
+          ],
+          "wrong": [{ "bad": "This laptop is by far the better one.", "good": "This laptop is by far the best one." }]
+        },
+        {
+          "heading": "Doble comparativo: the more ..., the more ...",
+          "formula": "THE + comparativo + sujeto + verbo, THE + comparativo + sujeto + verbo",
+          "rule": "Causa y efecto: cuanto más..., más...",
+          "examples": [
+            "**The more** I study, **the more** I learn.",
+            "**The harder** you work, **the luckier** you get.",
+            "**The less** I sleep, **the less** energy I have.",
+            "**The older** we grow, **the more** we know."
+          ],
+          "wrong": [{ "bad": "The long I live here, the more I love it.", "good": "The longer I live here, the more I love it." }]
+        },
+        {
+          "heading": "more · most · less · fewer + sustantivo",
+          "rule": "More / most + plural o incontable. Most of + determinante / pronombre (parte de un grupo concreto). Less + incontable. Fewer + plural.",
+          "compare": [
+            { "label": "Less + incontable", "text": "I'm getting **less money** now than in my last job." },
+            { "label": "Fewer + plural", "text": "There were **fewer people** than usual at the match." }
+          ],
+          "examples": ["**Most sharks** are quite harmless.", "**Most of our relatives** live in Canada."]
+        },
+        {
+          "heading": "Adjetivos irregulares",
+          "table": {
+            "headers": ["Adjetivo", "Comparativo", "Superlativo", "Nota"],
+            "rows": [
+              ["good", "better", "the best", ""],
+              ["bad", "worse", "the worst", ""],
+              ["far", "farther / further", "the farthest / furthest", "further = también 'adicional' (further information)"],
+              ["old", "older / elder", "the oldest / eldest", "elder / eldest solo para familia y delante del sustantivo (my elder brother)"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gerund",
+      "title": "C) GERUND vs TO-INFINITIVE",
+      "subtitle": "Qué forma va detrás de cada verbo, adjetivo o expresión",
+      "color": "purple",
+      "blocks": [
+        {
+          "heading": "Gerundio (-ing) como sujeto, complemento y tras preposiciones",
+          "rule": "Como sujeto el gerundio va siempre en singular. Detrás de CUALQUIER preposición (in, of, about, without, before, after...) el verbo va en -ing.",
+          "examples": [
+            "**Studying** English is very useful. (sujeto → singular)",
+            "My hobby **is reading**. (complemento)",
+            "**Instead of catching** the bus, I walked home.",
+            "Are you **interested in joining** our club?"
+          ]
+        },
+        {
+          "heading": "¡TO como preposición! → + -ing",
+          "formula": "look forward to / object to / be used to + V-ING",
+          "rule": "En estas expresiones to es una preposición, no parte del infinitivo.",
+          "chips": ["look forward to", "object to", "be / get used to", "adapt / adjust to", "admit to", "confess to", "get round to", "in addition to", "due to", "owing to"],
+          "wrong": [{ "bad": "I look forward to hear from you.", "good": "I look forward to hearing from you." }]
+        },
+        {
+          "heading": "Verbos + -ing",
+          "formula": "VERBO + V-ING",
+          "chips": ["admit", "adore", "advise", "appreciate", "avoid", "consider", "delay", "deny", "detest", "dislike", "enjoy", "fancy", "finish", "imagine", "involve", "keep", "loathe", "mind", "miss", "postpone", "practise", "prevent", "propose", "put off", "recommend", "report", "resent", "resist", "risk", "suggest"],
+          "examples": ["He **denied stealing** the car.", "I **suggest taking** the overnight train.", "If I were you, I'd **consider spending** less time at work."],
+          "wrong": [{ "bad": "I suggest to take the train.", "good": "I suggest taking the train / I suggest (that) we take the train." }]
+        },
+        {
+          "heading": "Phrasal verbs, conectores y expresiones fijas + -ing",
+          "chipsLabel": "Phrasal verbs y conectores",
+          "chips": ["give up", "carry on", "keep on", "end up", "dream of", "despite", "in spite of", "instead of", "as a result of", "because of", "besides", "as well as"],
+          "rule": "Expresiones fijas: can't stand, can't help, it's no use, it's not worth, there's no point (in), feel like, be / get used to.",
+          "examples": ["I **couldn't help laughing** at the joke.", "It's **not worth arguing** with him.", "I don't **feel like going** out tonight."]
+        },
+        {
+          "heading": "To-infinitive: finalidad, adjetivos y sustantivos",
+          "formulas": ["Finalidad: (in order) TO + inf", "ADJETIVO + TO + inf", "SUSTANTIVO + TO + inf"],
+          "chipsLabel": "Adjetivos + to inf",
+          "chips": ["afraid", "anxious", "certain", "difficult", "happy", "impossible", "pleased", "ready", "right", "shocked", "stupid", "surprised", "welcome"],
+          "examples": ["I went to England **to improve** my English.", "I found it **impossible to sleep** because of the noise.", "Everyone was **surprised to see** me.", "She has the **ability to learn** quickly."],
+          "tip": "Sustantivos + to inf: ability, attempt, chance, decision, desire, effort, intention, need, opportunity, permission, plan, refusal, right, tendency, way, willingness."
+        },
+        {
+          "heading": "Verbos + to-infinitive",
+          "formula": "VERBO + TO + inf",
+          "chips": ["afford", "agree", "appear", "arrange", "ask", "attempt", "choose", "decide", "demand", "deserve", "expect", "hesitate", "hope", "intend", "learn", "manage", "offer", "prepare", "pretend", "promise", "refuse", "seem", "swear", "threaten"],
+          "examples": ["We can't **afford to go** on holiday.", "I **pretended to understand** what she was saying."],
+          "tip": "Would + like / love / hate / prefer → SIEMPRE to inf: I'd hate to get up early every day."
+        },
+        {
+          "heading": "Verbo + OBJETO + to-infinitive · y los que van SIN to",
+          "formulas": ["VERBO + alguien + TO + inf", "make / let / help + alguien + inf (sin to)"],
+          "chips": ["advise", "allow", "ask", "convince", "enable", "encourage", "expect", "forbid", "force", "get", "invite", "order", "persuade", "remind", "teach", "tell", "urge", "want", "warn"],
+          "examples": ["My father **taught me to swim**.", "You can't **force people to believe** something.", "They **let the animals escape**.", "She **helped me (to) revise**."],
+          "tip": "Sin to también tras los modales (must, can, should...), had better y would rather."
+        },
+        {
+          "heading": "Verbos con -ing o to SIN cambio de significado",
+          "chips": ["begin", "start", "continue", "can't bear", "cease", "commence", "intend", "propose", "like", "love", "hate"],
+          "examples": ["I've just **started to learn / learning** to ski."],
+          "compare": [
+            { "label": "like + to inf", "text": "I like **to clean** my car every week. (lo hago porque es bueno, me centro en el resultado)" },
+            { "label": "like + -ing", "text": "I like **cleaning** my car. (disfruto la actividad)" }
+          ]
+        },
+        {
+          "heading": "Verbos que CAMBIAN de significado",
+          "rule": "La regla general: -ing → algo anterior o en curso · to inf → algo posterior / un propósito.",
+          "table": {
+            "headers": ["Verbo", "+ -ING", "+ TO INF"],
+            "rows": [
+              ["remember", "recordar algo que hiciste: I remember locking the door.", "acordarse de hacer algo: Remember to lock the door."],
+              ["forget", "olvidar algo que pasó: I'll never forget phoning her that night.", "olvidarse de hacer algo: I forgot to phone my brother."],
+              ["stop", "dejar de hacer algo: Stop worrying!", "parar para hacer otra cosa: We stopped to look at the map."],
+              ["try", "probar algo como solución: Have you tried kicking it?", "intentar algo difícil: I've been trying to repair it all morning."],
+              ["go on", "seguir haciendo lo mismo: He went on walking.", "pasar a hacer otra cosa: She went on to break the record."],
+              ["mean", "implicar: It'll mean getting up at 5:00.", "tener intención: I didn't mean to be rude."],
+              ["regret", "arrepentirse de algo pasado: He regrets taking the day off.", "lamentar decir (formal): I regret to inform you that..."],
+              ["see / hear", "ver parte de la acción: I saw the plane landing.", "(inf sin to) ver la acción completa: I saw the plane land."]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "speaking": [
+    { "part": "Part 3 (Collaborative task)", "structure": "Not only + [inversion]..., but + [subject] + also...", "example": "Not only does this approach save time, but it also provides a much better outcome in the long run.", "translation": "Este enfoque no solo ahorra tiempo, sino que también ofrece un resultado mucho mejor a largo plazo." },
+    { "part": "Part 4 (Discussion)", "structure": "Had it not been for [noun phrase], [consequence]...", "example": "Had it not been for the recent advances in technology, dealing with this problem would have been nearly impossible.", "translation": "Si no hubiera sido por los recientes avances tecnológicos, lidiar con este problema habría sido casi imposible." },
+    { "part": "Part 4 (Generalising)", "structure": "Rarely do we see [people / situation]...", "example": "Rarely do we see people taking this issue as seriously as they should nowadays.", "translation": "Rara vez vemos a la gente tomarse este problema tan en serio como debería hoy en día." },
+    { "part": "Part 3 / 4 (Cause and effect)", "structure": "The more [A], the more / less [B].", "example": "The more time people spend interacting through screens, the more isolated they seem to become.", "translation": "Cuanto más tiempo pasa la gente interactuando a través de pantallas, más aislada parece volverse." },
+    { "part": "Part 2 (Comparing photos)", "structure": "[Option A] is nowhere near as [adjective] as [Option B].", "example": "Reading about this online is nowhere near as effective as actually experiencing it first-hand.", "translation": "Leer sobre esto en internet no es ni de lejos tan efectivo como experimentarlo de primera mano." },
+    { "part": "Part 3 (Decision making)", "structure": "Taking everything into consideration, [option] is by far the most [adjective].", "example": "Taking everything into consideration, I'd say this option is by far the most practical one.", "translation": "Teniendo todo en cuenta, diría que esta opción es con diferencia la más práctica." },
+    { "part": "Part 4 (Opinion)", "structure": "I can't help feeling that... [opinion]", "example": "I can't help feeling that people are becoming increasingly disconnected from their surroundings.", "translation": "No puedo evitar sentir que la gente se está desconectando cada vez más de su entorno." },
+    { "part": "Part 3 (Ruling out an option)", "structure": "It's simply not worth [gerund]...", "example": "It's simply not worth spending time on options that won't make a real difference, so we ought to focus on...", "translation": "Simplemente no vale la pena dedicar tiempo a opciones que no marcarán una diferencia real, así que deberíamos centrarnos en..." },
+    { "part": "Part 4 (Contrast)", "structure": "Despite [gerund]..., many people still struggle to [infinitive]...", "example": "Despite being fully aware of the consequences, the vast majority of people still struggle to change their daily habits.", "translation": "A pesar de ser plenamente conscientes de las consecuencias, a la gran mayoría de la gente todavía le cuesta cambiar sus hábitos diarios." }
+  ]
+}
