@@ -1,0 +1,1116 @@
+{
+ "reference": [
+  {
+   "type": "mc",
+   "sentence": "The company decided to invest in new technology, and ___ has already led to a 20% rise in productivity.",
+   "options": [
+    "this",
+    "these",
+    "those",
+    "such"
+   ],
+   "answer": "this",
+   "explanation": "This retoma la idea entera de la frase anterior (la decisión de invertir)."
+  },
+  {
+   "type": "mc",
+   "sentence": "'The train's been cancelled again.' '___'s ridiculous!'",
+   "options": [
+    "That",
+    "These",
+    "Those",
+    "Such"
+   ],
+   "answer": "That",
+   "explanation": "That para reaccionar a lo que ha dicho otra persona."
+  },
+  {
+   "type": "mc",
+   "sentence": "She's been working here for ten years — ___ 's why she knows everything.",
+   "options": [
+    "that",
+    "those",
+    "these",
+    "such"
+   ],
+   "answer": "that",
+   "explanation": "That's why... para dar razones."
+  },
+  {
+   "type": "mc",
+   "sentence": "Several economists were consulted. ___ economists agreed that a recession was unlikely.",
+   "options": [
+    "These",
+    "Such",
+    "Those of",
+    "The same"
+   ],
+   "answer": "These",
+   "explanation": "These + sustantivo retoma algo ya mencionado."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ who studied regularly passed the exam easily.",
+   "options": [
+    "Those",
+    "These",
+    "They",
+    "Ones"
+   ],
+   "answer": "Those",
+   "explanation": "Those who = las personas que (en general)."
+  },
+  {
+   "type": "mc",
+   "sentence": "Our prices are lower than ___ of our competitors.",
+   "options": [
+    "those",
+    "these",
+    "ones",
+    "them"
+   ],
+   "answer": "those",
+   "explanation": "Those of + sustantivo para no repetir 'prices'."
+  },
+  {
+   "type": "mc",
+   "sentence": "We could build a park or a car park. The ___ would benefit families, while the latter would only help drivers.",
+   "options": [
+    "former",
+    "first",
+    "latter",
+    "other"
+   ],
+   "answer": "former",
+   "explanation": "The former = el primero de dos."
+  },
+  {
+   "type": "mc",
+   "sentence": "Tom and Jack applied for the job. The ___ got it because he had more experience — Tom was really disappointed.",
+   "options": [
+    "latter",
+    "former",
+    "last",
+    "second one"
+   ],
+   "answer": "latter",
+   "explanation": "The latter = el segundo de dos (Jack)."
+  },
+  {
+   "type": "mc",
+   "sentence": "He shouted at the referee and threw his boots. ___ behaviour is completely unacceptable.",
+   "options": [
+    "Such",
+    "So",
+    "This such",
+    "That such"
+   ],
+   "answer": "Such",
+   "explanation": "Such + sustantivo = un comportamiento así."
+  },
+  {
+   "type": "mc",
+   "sentence": "I'd never heard of ___ a thing before.",
+   "options": [
+    "such",
+    "so",
+    "this",
+    "that"
+   ],
+   "answer": "such",
+   "explanation": "Such a + sustantivo."
+  },
+  {
+   "type": "mc",
+   "sentence": "She ordered the grilled fish, and I had ___.",
+   "options": [
+    "the same",
+    "the one",
+    "so",
+    "it"
+   ],
+   "answer": "the same",
+   "explanation": "The same = lo mismo."
+  },
+  {
+   "type": "mc",
+   "sentence": "He refused to apologise, ___ made the situation even worse.",
+   "options": [
+    "which",
+    "that",
+    "this",
+    "what"
+   ],
+   "answer": "which",
+   "explanation": "Which (con coma) retoma toda la oración anterior."
+  },
+  {
+   "type": "gap",
+   "sentence": "Artists now have a vast range of materials. ___ means that they can be much more versatile than in the past.",
+   "answers": [
+    "This",
+    "That",
+    "It"
+   ],
+   "explanation": "This / that / it retoman la frase anterior."
+  },
+  {
+   "type": "mc",
+   "sentence": "There are two candidates. I prefer the one with experience; the ___ seems a bit too young.",
+   "options": [
+    "other",
+    "another",
+    "others",
+    "latter one"
+   ],
+   "answer": "other",
+   "explanation": "The other = el segundo de dos."
+  },
+  {
+   "type": "mc",
+   "sentence": "I invited all my classmates, but only a few came. The ___ said they were busy.",
+   "options": [
+    "others",
+    "other",
+    "another",
+    "rest of"
+   ],
+   "answer": "others",
+   "explanation": "The others = el resto."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: When things like ___ happen, it's better to just relax. (the trains were cancelled)",
+   "answers": [
+    "that",
+    "this"
+   ],
+   "explanation": "Things like that / this: retoma la situación mencionada (✗ things like these)."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: She is a baker who produces excellent cakes. And ___ is what matters. (2 words → 1 word)",
+   "answers": [
+    "that"
+   ],
+   "explanation": "That (singular) retoma toda la idea (✗ those are what matters)."
+  },
+  {
+   "type": "mc",
+   "sentence": "Hundreds of people want to go to Mars, but only a small number ___ will be accepted.",
+   "options": [
+    "of them",
+    "of these people",
+    "of they",
+    "of those people who want"
+   ],
+   "answer": "of them",
+   "explanation": "Of them evita repetir 'people'."
+  },
+  {
+   "type": "mc",
+   "sentence": "My grandparents were born in Italy. ___ is where my love of pasta comes from.",
+   "options": [
+    "That",
+    "Those",
+    "These",
+    "It's"
+   ],
+   "answer": "That",
+   "explanation": "That is where / that's why... retoma la idea."
+  },
+  {
+   "type": "mc",
+   "sentence": "Many people complained about the noise, ___ was hardly surprising.",
+   "options": [
+    "which",
+    "that",
+    "what",
+    "it"
+   ],
+   "answer": "which",
+   "explanation": "Which retoma la oración entera (relativo con coma)."
+  }
+ ],
+ "substitution": [
+  {
+   "type": "mc",
+   "sentence": "I really enjoyed the books you lent me, especially the ___ about ancient history.",
+   "options": [
+    "ones",
+    "one",
+    "some",
+    "those ones"
+   ],
+   "answer": "ones",
+   "explanation": "Ones sustituye al plural 'books'."
+  },
+  {
+   "type": "mc",
+   "sentence": "Mary didn't finish the assignment on time, but I ___.",
+   "options": [
+    "did",
+    "had",
+    "was",
+    "have"
+   ],
+   "answer": "did",
+   "explanation": "Auxiliar del past simple en lugar de repetir 'finished'."
+  },
+  {
+   "type": "mc",
+   "sentence": "He asked if the train was delayed and I told him I hoped ___.",
+   "options": [
+    "not",
+    "no",
+    "so not",
+    "it not"
+   ],
+   "answer": "not",
+   "explanation": "Hope + not = espero que no."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Are you going to the concert?' 'I'm not sure. If ___, we could share a taxi.'",
+   "options": [
+    "so",
+    "yes",
+    "it",
+    "that"
+   ],
+   "answer": "so",
+   "explanation": "If so = si es así."
+  },
+  {
+   "type": "mc",
+   "sentence": "We need to submit the report by Friday. If ___, we'll lose the contract.",
+   "options": [
+    "not",
+    "no",
+    "so",
+    "don't"
+   ],
+   "answer": "not",
+   "explanation": "If not = si no es así."
+  },
+  {
+   "type": "mc",
+   "sentence": "I don't think we should buy a new car, and neither ___ my wife.",
+   "options": [
+    "does",
+    "do",
+    "thinks",
+    "is"
+   ],
+   "answer": "does",
+   "explanation": "Neither + aux + sujeto (does por 'my wife', present simple)."
+  },
+  {
+   "type": "mc",
+   "sentence": "I really enjoy science fiction novels. So ___ my best friend.",
+   "options": [
+    "does",
+    "do",
+    "is",
+    "has"
+   ],
+   "answer": "does",
+   "explanation": "So + aux + sujeto."
+  },
+  {
+   "type": "mc",
+   "sentence": "'You've got paint on your shirt!' 'Oh, so I ___!'",
+   "options": [
+    "have",
+    "do",
+    "am",
+    "did"
+   ],
+   "answer": "have",
+   "explanation": "So I have! = confirmación sorprendida (orden sujeto + aux)."
+  },
+  {
+   "type": "mc",
+   "sentence": "They promised to clean the house before we arrived, and they duly ___ so.",
+   "options": [
+    "did",
+    "made",
+    "had",
+    "were"
+   ],
+   "answer": "did",
+   "explanation": "Do so = verbo + complementos (formal)."
+  },
+  {
+   "type": "mc",
+   "sentence": "I used to play tennis a lot, but I haven't ___ so for years.",
+   "options": [
+    "done",
+    "did",
+    "made",
+    "been"
+   ],
+   "answer": "done",
+   "explanation": "Present perfect de do so: have done so."
+  },
+  {
+   "type": "mc",
+   "sentence": "She was wearing a beautiful dress, the ___ I bought for her birthday.",
+   "options": [
+    "one",
+    "ones",
+    "that",
+    "it"
+   ],
+   "answer": "one",
+   "explanation": "One = 'the dress' (contable singular)."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Will the new policy affect our department?' 'Don't worry — I don't think ___.'",
+   "options": [
+    "so",
+    "not",
+    "it",
+    "that"
+   ],
+   "answer": "so",
+   "explanation": "I don't think so (la negación va en think)."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Will it rain during the wedding?' 'I hope ___.'",
+   "options": [
+    "not",
+    "so not",
+    "don't",
+    "no"
+   ],
+   "answer": "not",
+   "explanation": "I hope not (✗ I don't hope so)."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Can you lend me £50?' 'I'm afraid ___.'",
+   "options": [
+    "not",
+    "no",
+    "so",
+    "don't"
+   ],
+   "answer": "not",
+   "explanation": "I'm afraid not = me temo que no."
+  },
+  {
+   "type": "mc",
+   "sentence": "My old phone was broken, so I had to buy a new ___.",
+   "options": [
+    "one",
+    "ones",
+    "it",
+    "some"
+   ],
+   "answer": "one",
+   "explanation": "A + adj + one."
+  },
+  {
+   "type": "mc",
+   "sentence": "There are two jackets. You can take ___ — I don't mind which.",
+   "options": [
+    "either",
+    "both",
+    "neither",
+    "all"
+   ],
+   "answer": "either",
+   "explanation": "Either = cualquiera de los dos."
+  },
+  {
+   "type": "mc",
+   "sentence": "He's written two novels and ___ has been translated into English.",
+   "options": [
+    "neither",
+    "none",
+    "either",
+    "both"
+   ],
+   "answer": "neither",
+   "explanation": "Neither (de dos) + verbo singular."
+  },
+  {
+   "type": "gap",
+   "sentence": "Correct it: Having broken mine, I needed a new camera, so I was delighted when my partner gave me ___ as a present.",
+   "answers": [
+    "one"
+   ],
+   "explanation": "One = una cámara cualquiera (✗ it = esa cámara concreta)."
+  },
+  {
+   "type": "gap",
+   "sentence": "'Is Sophie meeting us there?' 'I think ___.'",
+   "answers": [
+    "so"
+   ],
+   "explanation": "Think + so sustituye la oración afirmativa."
+  },
+  {
+   "type": "gap",
+   "sentence": "My children won't eat green apples. Do you have any red ___?",
+   "answers": [
+    "ones"
+   ],
+   "explanation": "Ones sustituye 'apples'."
+  }
+ ],
+ "ellipsis": [
+  {
+   "type": "mc",
+   "sentence": "I have never been scuba diving, but my brother ___.",
+   "options": [
+    "has",
+    "did",
+    "does",
+    "is"
+   ],
+   "answer": "has",
+   "explanation": "Auxiliar del present perfect (has been)."
+  },
+  {
+   "type": "mc",
+   "sentence": "She promised to help me, but in the end she didn't want ___.",
+   "options": [
+    "to",
+    "so",
+    "it",
+    "that"
+   ],
+   "answer": "to",
+   "explanation": "Want + to (resto omitido)."
+  },
+  {
+   "type": "mc",
+   "sentence": "The manager resigned suddenly, and nobody understands ___.",
+   "options": [
+    "why",
+    "that",
+    "it",
+    "so"
+   ],
+   "answer": "why",
+   "explanation": "Wh-word solo."
+  },
+  {
+   "type": "mc",
+   "sentence": "I thought the meeting was going to be cancelled, but it ___.",
+   "options": [
+    "wasn't",
+    "didn't",
+    "hadn't",
+    "not"
+   ],
+   "answer": "wasn't",
+   "explanation": "Auxiliar de la pasiva (was cancelled)."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Would you like to come to the cinema?' 'I'd love ___!'",
+   "options": [
+    "to",
+    "it",
+    "so",
+    "that"
+   ],
+   "answer": "to",
+   "explanation": "Would love + to."
+  },
+  {
+   "type": "mc",
+   "sentence": "Someone left the door open, but I don't know ___.",
+   "options": [
+    "who",
+    "whom",
+    "what",
+    "whose"
+   ],
+   "answer": "who",
+   "explanation": "Who = el sujeto que falta (who left it open)."
+  },
+  {
+   "type": "mc",
+   "sentence": "I didn't go to the party, but I could ___.",
+   "options": [
+    "have",
+    "had",
+    "be",
+    "do"
+   ],
+   "answer": "have",
+   "explanation": "Modal perfect: could have (gone)."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Has the parcel been sent yet?' 'It should ___ by now.'",
+   "options": [
+    "have been",
+    "be",
+    "been",
+    "have"
+   ],
+   "answer": "have been",
+   "explanation": "Ellipsis tras modal perfect pasivo (should have been sent)."
+  },
+  {
+   "type": "mc",
+   "sentence": "I don't smoke now, but I ___ to.",
+   "options": [
+    "used",
+    "use",
+    "was",
+    "would"
+   ],
+   "answer": "used",
+   "explanation": "Used to (omitido 'smoke')."
+  },
+  {
+   "type": "mc",
+   "sentence": "Give me a call later if you're able ___.",
+   "options": [
+    "to",
+    "so",
+    "it",
+    "for"
+   ],
+   "answer": "to",
+   "explanation": "Be able + to."
+  },
+  {
+   "type": "mc",
+   "sentence": "I'd like to solve your problem, but I'm not sure I'd be allowed ___.",
+   "options": [
+    "to",
+    "so",
+    "it",
+    "for it"
+   ],
+   "answer": "to",
+   "explanation": "Be allowed + to."
+  },
+  {
+   "type": "mc",
+   "sentence": "Which of these sentences correctly omits the relative pronoun?",
+   "options": [
+    "The car I bought is very fast.",
+    "The man called you is my boss.",
+    "The book is on the table is mine.",
+    "The girl won the prize is my sister."
+   ],
+   "answer": "The car I bought is very fast.",
+   "explanation": "Solo se omite si el relativo es objeto (detrás hay un sujeto: I)."
+  },
+  {
+   "type": "mc",
+   "sentence": "Which sentence uses ellipsis correctly?",
+   "options": [
+    "She can sing but can't dance.",
+    "She can sing but she can't.",
+    "She can sing but can't to dance.",
+    "She can sing but dance can't."
+   ],
+   "answer": "She can sing but can't dance.",
+   "explanation": "Se omite el sujeto repetido tras but."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Have you finished your essay?' 'Not yet, but I ___ by tonight.'",
+   "options": [
+    "will have",
+    "will",
+    "have",
+    "will be"
+   ],
+   "answer": "will have",
+   "explanation": "Future perfect (will have finished)."
+  },
+  {
+   "type": "mc",
+   "sentence": "Kim suggested going to the ballet, but I didn't want ___.",
+   "options": [
+    "to",
+    "it",
+    "so",
+    "going"
+   ],
+   "answer": "to",
+   "explanation": "Want + to."
+  },
+  {
+   "type": "mc",
+   "sentence": "'Sounds good to me.' What has been omitted?",
+   "options": [
+    "It",
+    "That's",
+    "I",
+    "You"
+   ],
+   "answer": "It",
+   "explanation": "Elipsis informal: (It) sounds good."
+  },
+  {
+   "type": "gap",
+   "sentence": "We used to go to the cinema every weekend, but we haven't ___ recently.",
+   "answers": [
+    "been"
+   ],
+   "explanation": "Haven't been (to the cinema) recently."
+  },
+  {
+   "type": "gap",
+   "sentence": "Most of the class are walking to college now. You should ___. (1 word: también)",
+   "answers": [
+    "too"
+   ],
+   "explanation": "You should (walk) too."
+  },
+  {
+   "type": "gap",
+   "sentence": "A year ago I couldn't drive a car, but now I ___.",
+   "answers": [
+    "can"
+   ],
+   "explanation": "Modal solo: can (drive)."
+  },
+  {
+   "type": "gap",
+   "sentence": "'We only have vanilla or chocolate.' 'That's fine. ___ will be OK.'",
+   "answers": [
+    "Either",
+    "Either one"
+   ],
+   "explanation": "Either = cualquiera de los dos."
+  }
+ ],
+ "book": [
+  {
+   "type": "gap",
+   "sentence": "There are only a few slices of cake left. Take ___ while you've got the chance.",
+   "answers": [
+    "one"
+   ],
+   "explanation": "Book ex.1: ✗ it → ✓ one."
+  },
+  {
+   "type": "gap",
+   "sentence": "Because of the snow, all the trains were cancelled. I realised that when things like ___ happen, it's better to just relax.",
+   "answers": [
+    "that",
+    "this"
+   ],
+   "explanation": "Book ex.1: ✗ things like these → ✓ things like that."
+  },
+  {
+   "type": "gap",
+   "sentence": "She exhibited some wonderful photos, the best of ___ was taken in South Africa.",
+   "answers": [
+    "which"
+   ],
+   "explanation": "Book ex.1: ✗ the best of these → ✓ the best of which."
+  },
+  {
+   "type": "gap",
+   "sentence": "The best candidates are ___ that show they have done their homework.",
+   "answers": [
+    "those"
+   ],
+   "explanation": "Book ex.1: ✗ these → ✓ those."
+  },
+  {
+   "type": "gap",
+   "sentence": "The fans were chanting for Simons, the man in ___ ability the crowd always put their faith.",
+   "answers": [
+    "whose"
+   ],
+   "explanation": "Book ex.1: ✗ who → ✓ whose."
+  },
+  {
+   "type": "gap",
+   "sentence": "She knows how to produce excellent cakes. And ___ is what matters.",
+   "answers": [
+    "that"
+   ],
+   "explanation": "Book ex.1: ✗ those are → ✓ that is."
+  },
+  {
+   "type": "gap",
+   "sentence": "I needed a new camera, so I was delighted when my partner gave me ___ as a present.",
+   "answers": [
+    "one"
+   ],
+   "explanation": "Book ex.1: ✗ it → ✓ one."
+  },
+  {
+   "type": "gap",
+   "sentence": "It was clearly a dangerous journey, and everyone had told her ___.",
+   "answers": [
+    "so"
+   ],
+   "explanation": "Book ex.2: told her so = told her it would be dangerous."
+  },
+  {
+   "type": "gap",
+   "sentence": "We used to go to the cinema every weekend, but we haven't ___ recently.",
+   "answers": [
+    "been"
+   ],
+   "explanation": "Book ex.2: haven't been (to the cinema)."
+  },
+  {
+   "type": "gap",
+   "sentence": "Most of the class are walking to college now. You should ___ too.",
+   "answers": [
+    "walk",
+    "do so",
+    "do the same"
+   ],
+   "explanation": "Book ex.2: you should too / you should do so."
+  },
+  {
+   "type": "gap",
+   "sentence": "A: Is Sophie meeting us there? B: I think ___.",
+   "answers": [
+    "so"
+   ],
+   "explanation": "Book ex.2: I think so."
+  },
+  {
+   "type": "gap",
+   "sentence": "Hundreds of people want to travel to Mars, but only a small number ___ will be accepted. (2 words)",
+   "answers": [
+    "of them"
+   ],
+   "explanation": "Book ex.2: of them."
+  },
+  {
+   "type": "gap",
+   "sentence": "My children won't eat green apples. Do you have any red ___?",
+   "answers": [
+    "ones"
+   ],
+   "explanation": "Book ex.2: ones."
+  },
+  {
+   "type": "gap",
+   "sentence": "A: We only have vanilla or chocolate ice-cream left. B: That's fine. ___ will be OK.",
+   "answers": [
+    "Either",
+    "Either one",
+    "Either of them"
+   ],
+   "explanation": "Book ex.2: either."
+  },
+  {
+   "type": "mc",
+   "sentence": "I've made some sandwiches — would you like ___?",
+   "options": [
+    "one",
+    "it",
+    "ones",
+    "some one"
+   ],
+   "answer": "one",
+   "explanation": "One = un sándwich cualquiera."
+  },
+  {
+   "type": "mc",
+   "sentence": "Our neighbours are generally nice, but the ___ in flat 4 aren't very sociable.",
+   "options": [
+    "ones",
+    "one",
+    "others ones",
+    "those ones"
+   ],
+   "answer": "ones",
+   "explanation": "The ones + in / with ..."
+  },
+  {
+   "type": "mc",
+   "sentence": "I've bought a lot of new shirts, but for gardening I prefer to wear an old ___.",
+   "options": [
+    "one",
+    "it",
+    "shirts",
+    "ones"
+   ],
+   "answer": "one",
+   "explanation": "A + adj + one."
+  },
+  {
+   "type": "mc",
+   "sentence": "Most of the actors went to a party. The ___ went home.",
+   "options": [
+    "others",
+    "other",
+    "another",
+    "rest"
+   ],
+   "answer": "others",
+   "explanation": "The others = el resto."
+  },
+  {
+   "type": "mc",
+   "sentence": "Mariella invited her friends but ___ came.",
+   "options": [
+    "none of them",
+    "no one of them",
+    "neither",
+    "nothing of them"
+   ],
+   "answer": "none of them",
+   "explanation": "None of them (más de dos)."
+  },
+  {
+   "type": "mc",
+   "sentence": "I experienced difficulty when I first joined the club, and so ___ my friends.",
+   "options": [
+    "did",
+    "had",
+    "were",
+    "have"
+   ],
+   "answer": "did",
+   "explanation": "So + aux + sujeto (pasado → did)."
+  }
+ ],
+ "transformations": [
+  {
+   "type": "kwt",
+   "lead_in": "I told my students to hand in the essay on Monday and they all handed it in.",
+   "keyword": "SO",
+   "before": "I told my students to hand in the essay on Monday and",
+   "after": ".",
+   "answers": [
+    "all of them did so",
+    "they all did so"
+   ],
+   "explanation": "Do so = repetir la acción."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Is it possible that it will rain tomorrow? I really hope it won't.",
+   "keyword": "NOT",
+   "before": "Will it rain tomorrow? I",
+   "after": "",
+   "answers": [
+    "really hope not"
+   ],
+   "explanation": "Hope + not."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I don't like horror films, and my sister doesn't like them either.",
+   "keyword": "NEITHER",
+   "before": "I don't like horror films, and",
+   "after": "",
+   "answers": [
+    "neither does my sister"
+   ],
+   "explanation": "Neither + aux + sujeto."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I enjoy classical music and my husband enjoys it too.",
+   "keyword": "DOES",
+   "before": "I enjoy classical music and",
+   "after": "",
+   "answers": [
+    "so does my husband"
+   ],
+   "explanation": "So + does + sujeto."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Are you free tonight? If you are, let's have dinner.",
+   "keyword": "SO",
+   "before": "Are you free tonight?",
+   "after": "have dinner.",
+   "answers": [
+    "If so, let's",
+    "If so let's"
+   ],
+   "explanation": "If so = si es así. (2 words: palabra clave + if)"
+  },
+  {
+   "type": "kwt",
+   "lead_in": "We could stay in a hotel or rent a flat; renting a flat would be cheaper.",
+   "keyword": "LATTER",
+   "before": "We could stay in a hotel or rent a flat;",
+   "after": "would be cheaper.",
+   "answers": [
+    "the latter option",
+    "the latter one"
+   ],
+   "explanation": "The latter = el segundo de dos."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "People who exercise regularly tend to sleep better.",
+   "keyword": "THOSE",
+   "before": "",
+   "after": "tend to sleep better.",
+   "answers": [
+    "Those who exercise regularly"
+   ],
+   "explanation": "Those who = la gente que."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Our salaries are higher than the salaries of our competitors.",
+   "keyword": "OF",
+   "before": "Our salaries are higher than",
+   "after": "competitors.",
+   "answers": [
+    "those of our"
+   ],
+   "explanation": "Those of = los de."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "He insulted the waiter, and I think that kind of behaviour is unacceptable.",
+   "keyword": "SUCH",
+   "before": "He insulted the waiter, and I",
+   "after": "unacceptable.",
+   "answers": [
+    "think such behaviour is",
+    "find such behaviour"
+   ],
+   "explanation": "Such + sustantivo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I can't come to your party, unfortunately.",
+   "keyword": "AFRAID",
+   "before": "'Can you come to my party?' 'No,",
+   "after": "'",
+   "answers": [
+    "I'm afraid not",
+    "I am afraid not"
+   ],
+   "explanation": "I'm afraid not."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Nobody knows why he left the company so suddenly.",
+   "keyword": "WHY",
+   "before": "He left the company so suddenly, but",
+   "after": ".",
+   "answers": [
+    "nobody knows why",
+    "no one knows why"
+   ],
+   "explanation": "Wh-word solo (ellipsis)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "She ordered pasta and I ordered pasta too.",
+   "keyword": "SAME",
+   "before": "She ordered pasta and",
+   "after": "",
+   "answers": [
+    "I had the same",
+    "I ordered the same",
+    "I had the same thing"
+   ],
+   "explanation": "The same = lo mismo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I'd love to go to Japan, but I don't think I'll be able to go.",
+   "keyword": "ABLE",
+   "before": "I'd love to go to Japan, but I don't think I'll",
+   "after": "",
+   "answers": [
+    "be able to"
+   ],
+   "explanation": "Be able + to (resto omitido)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I don't play the piano any more, but I played it when I was a child.",
+   "keyword": "USED",
+   "before": "I don't play the piano any more, but",
+   "after": "when I was a child.",
+   "answers": [
+    "I used to"
+   ],
+   "explanation": "Used to (resto omitido)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Which jacket do you want? Any of the two is fine for me.",
+   "keyword": "EITHER",
+   "before": "Which jacket do you want?",
+   "after": "is fine for me.",
+   "answers": [
+    "Either of them",
+    "Either one of them"
+   ],
+   "explanation": "Either = cualquiera de los dos."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "He's written two books, but neither book is autobiographical.",
+   "keyword": "NEITHER",
+   "before": "He's written two books, but",
+   "after": "is autobiographical.",
+   "answers": [
+    "neither of them"
+   ],
+   "explanation": "Neither of them."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I lost my umbrella, so I bought a new umbrella.",
+   "keyword": "ONE",
+   "before": "I lost my umbrella, so I",
+   "after": "",
+   "answers": [
+    "bought a new one"
+   ],
+   "explanation": "A + adj + one."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Anyone who wishes to leave early may leave after 3 p.m.",
+   "keyword": "DO",
+   "before": "Anyone who wishes to leave early",
+   "after": "after 3 p.m.",
+   "answers": [
+    "may do so",
+    "can do so"
+   ],
+   "explanation": "Do so (formal)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Two of the guests stayed; all the rest went home.",
+   "keyword": "OTHERS",
+   "before": "Two of the guests stayed;",
+   "after": "went home.",
+   "answers": [
+    "all the others"
+   ],
+   "explanation": "The others = el resto."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I didn't go to the meeting, although it was possible for me to go.",
+   "keyword": "COULD",
+   "before": "I didn't go to the meeting, although",
+   "after": "",
+   "answers": [
+    "I could have",
+    "I could have gone"
+   ],
+   "explanation": "Modal perfect: could have."
+  }
+ ]
+}

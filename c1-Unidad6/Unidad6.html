@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C1 Unit 6: Cohesion</title>
+    <title>C1 Advanced - Unit 6: Cohesion — Reference, Substitution & Ellipsis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -12,808 +12,2318 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#2563eb',
-                        secondary: '#4f46e5',
-                        background: '#f8fafc',
-                        surface: '#ffffff',
-                        textMain: '#0f172a',
-                        textMuted: '#64748b'
                     }
                 }
             }
         }
     </script>
     <style>
-        /* Base Animations and Utilities */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.active-tab {
+    border-color: #0284c7; /* sky-600 */
+    color: #0284c7;
+}
 
-        .animate-fade-in {
-            animation: fadeIn 0.4s ease-out forwards;
-        }
+.inactive-tab {
+    border-color: transparent;
+    color: #6b7280; /* gray-500 */
+}
 
-        /* Tab Navigation */
-        .tab-btn {
-            color: #64748b;
-            border-bottom: 2px solid transparent;
-        }
+.inactive-tab:hover {
+    border-color: #e5e7eb; /* gray-200 */
+    color: #374151; /* gray-700 */
+}
 
-        .tab-btn:hover {
-            color: #0f172a;
-            background-color: #f1f5f9;
-        }
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
 
-        .tab-btn.active {
-            color: #2563eb;
-            border-bottom-color: #2563eb;
-            background-color: #eff6ff;
-        }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-        /* Accordion Styles */
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
-        }
+.input-kt {
+    border: none;
+    border-bottom: 2px solid #d1d5db; /* gray-300 */
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+    text-align: center;
+    transition: all 0.2s;
+    outline: none;
+    min-width: 180px;
+    max-width: 100%;
+}
 
-        .accordion-btn[aria-expanded="true"] + .accordion-content {
-            max-height: 500px;
-        }
+.input-kt:focus {
+    border-bottom-color: #0284c7; /* sky-600 */
+}
 
-        .accordion-icon {
-            transition: transform 0.3s ease;
-        }
+.input-kt.correct {
+    border-bottom-color: #22c55e; /* green-500 */
+    color: #15803d; /* green-700 */
+    background-color: #f0fdf4; /* green-50 */
+}
 
-        .accordion-btn[aria-expanded="true"] .accordion-icon {
-            transform: rotate(180deg);
-        }
+.input-kt.incorrect {
+    border-bottom-color: #ef4444; /* red-500 */
+    color: #b91c1c; /* red-700 */
+    background-color: #fef2f2; /* red-50 */
+}
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
+.gap-blank {
+    display: inline-block;
+    min-width: 4rem;
+    border-bottom: 2px solid #9ca3af; /* gray-400 */
+    margin: 0 0.25rem;
+    text-align: center;
+    font-weight: 600;
+}
 
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
+.gap-blank.correct {
+    border-bottom-color: #22c55e;
+    color: #15803d;
+}
 
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
+.gap-blank.incorrect {
+    border-bottom-color: #ef4444;
+    color: #b91c1c;
+}
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
+.shake {
+    animation: shake 0.3s;
+}
 
-        /* Option Buttons in Test */
-        .option-btn {
-            border: 2px solid #e2e8f0;
-            transition: all 0.2s ease;
-        }
+@keyframes shake {
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(3px); }
+}
 
-        .option-btn:hover:not(:disabled) {
-            border-color: #cbd5e1;
-            background-color: #f8fafc;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        }
-
-        .option-btn.selected {
-            border-color: #2563eb;
-            background-color: #eff6ff;
-        }
-
-        .option-btn.correct {
-            border-color: #10b981;
-            background-color: #ecfdf5;
-            color: #047857;
-        }
-
-        .option-btn.incorrect {
-            border-color: #ef4444;
-            background-color: #fef2f2;
-            color: #b91c1c;
-        }
+.input-kt.input-wide {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
     </style>
 </head>
-<body class="bg-background text-textMain font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Header -->
-    <header class="bg-surface shadow-sm sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <h1 class="text-xl font-bold text-primary tracking-tight">C1 Unit 6: Cohesion</h1>
-            <nav class="flex space-x-1 sm:space-x-4">
-                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Theory</button>
-                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Speaking Booster</button>
-                <button onclick="switchTab('practice')" id="tab-practice" class="tab-btn px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Practice Test</button>
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 6</span></h1>
+            <p class="text-gray-500 mt-1">Cohesion: Reference · Substitution · Ellipsis</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory
+                </button>
+                <button onclick="switchTab('reference')" id="tab-reference" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Reference
+                </button>
+                <button onclick="switchTab('substitution')" id="tab-substitution" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Substitution
+                </button>
+                <button onclick="switchTab('ellipsis')" id="tab-ellipsis" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Ellipsis
+                </button>
+                <button onclick="switchTab('book')" id="tab-book" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Complete Advanced
+                </button>
+                <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
-
-        <!-- Theory Section -->
-        <section id="section-theory" class="tab-content block animate-fade-in">
-            <div class="mb-8 text-center">
-                <h2 class="text-3xl font-bold text-textMain mb-2">Grammar Reference</h2>
-                <p class="text-textMuted">Master Reference, Substitution, and Ellipsis for C1/C2 exams.</p>
-            </div>
-
-            <div id="theory-container" class="space-y-6">
-                <!-- Dynamically populated by JS -->
-            </div>
-        </section>
-
-        <!-- Speaking Section -->
-        <section id="section-speaking" class="tab-content hidden animate-fade-in">
-            <div class="mb-8 text-center">
-                <h2 class="text-3xl font-bold text-textMain mb-2">Cambridge Speaking Booster</h2>
-                <p class="text-textMuted">Real exam examples using cohesion strategies.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="speaking-container">
-                <!-- Dynamically populated by JS -->
-            </div>
-        </section>
-
-        <!-- Practice Section -->
-        <section id="section-practice" class="tab-content hidden animate-fade-in">
-            <div class="mb-8 text-center">
-                <h2 class="text-3xl font-bold text-textMain mb-2">Practice Test</h2>
-                <p class="text-textMuted">Test your knowledge with randomized questions.</p>
-            </div>
-
-            <div class="bg-surface rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 max-w-3xl mx-auto">
-                <div id="test-intro" class="text-center">
-                    <p class="mb-6 text-lg">You will face a selection of questions. Select the correct word or phrase to complete each sentence.</p>
-                    <button onclick="startTest()" class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all duration-300 transform hover:-translate-y-0.5">Start Test</button>
-
-                    <div id="stats-container" class="mt-8 pt-6 border-t border-slate-100 hidden">
-                        <h3 class="text-sm font-semibold text-textMuted uppercase tracking-wider mb-2">Previous Results</h3>
-                        <p id="last-score" class="text-lg font-medium text-textMain"></p>
-                        <p id="last-date" class="text-sm text-textMuted"></p>
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Cohesion: Reference · Substitution · Ellipsis</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
                     </div>
-                </div>
-
-                <div id="test-area" class="hidden">
-                    <div class="flex justify-between items-center mb-6">
-                        <span class="text-sm font-medium text-textMuted" id="question-counter">Question 1 / 30</span>
-                        <div class="w-1/2 bg-slate-100 rounded-full h-2.5">
-                            <div class="bg-primary h-2.5 rounded-full transition-all duration-300" id="progress-bar" style="width: 0%"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-8">
-                        <h3 class="text-xl font-medium text-textMain leading-relaxed" id="question-text"></h3>
-                    </div>
-
-                    <div id="options-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <!-- Options generated by JS -->
-                    </div>
-
-                    <div id="feedback-container" class="mt-6 hidden rounded-lg p-4">
-                        <p id="feedback-message" class="font-medium"></p>
-                        <p id="feedback-explanation" class="text-sm mt-2 text-slate-700"></p>
-                        <button onclick="nextQuestion()" id="next-btn" class="mt-4 bg-slate-900 hover:bg-slate-800 text-white font-medium py-2 px-6 rounded-lg transition-colors w-full sm:w-auto">Next Question</button>
-                    </div>
-                </div>
-
-                <div id="test-results" class="hidden text-center">
-                    <h3 class="text-3xl font-bold mb-2" id="final-score-title">Test Complete!</h3>
-                    <p class="text-xl text-textMuted mb-6" id="final-score-text"></p>
-                    <button onclick="resetTest()" class="bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all duration-300">Try Again</button>
                 </div>
             </div>
         </section>
 
+        <!-- Practice Tabs (rendered by app.js) -->
+        <section id="content-reference" class="tab-content hidden"></section>
+        <section id="content-substitution" class="tab-content hidden"></section>
+        <section id="content-ellipsis" class="tab-content hidden"></section>
+        <section id="content-book" class="tab-content hidden"></section>
+        <section id="content-transformations" class="tab-content hidden"></section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Use the structures of this unit to sound more C1 in the Speaking exam.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer class="bg-surface border-t border-slate-200 mt-auto py-6">
-        <div class="max-w-5xl mx-auto px-4 text-center text-sm text-textMuted">
-            &copy; <span id="year"></span> C1 English Academy. Built with Node.js & Tailwind.
-        </div>
-    </footer>
 
     <script>
         // Data embedded directly so this file works standalone (no server needed)
-        const theoryData = {
-  "reference": [
-    {
-      "title": "This / That / These / Those",
-      "rule": "Used to refer to situations or people mentioned before. This/These generally refer to things closer in time/space (Present), while That/Those refer to things further away (Past).",
-      "examples": [
-        "I studied biology. That allowed me to work in a lab.",
-        "I am taking an English course. This will give me more opportunities."
-      ]
+        window.UNIT_DATA = {
+  "teoria": {
+    "sections": [
+      {
+        "id": "reference",
+        "title": "A) REFERENCE",
+        "subtitle": "Volver a algo ya mencionado sin repetirlo: this, that, it, those, the former / the latter, such",
+        "color": "sky",
+        "blocks": [
+          {
+            "heading": "THIS / THAT / IT para referirse a una idea entera",
+            "formula": "Frase anterior. + THIS / THAT / IT + verbo...",
+            "rule": "It, this y that pueden referirse a un sustantivo o a TODA la frase anterior. This suena más cercano: lo usamos cuando vamos a seguir desarrollando la idea. That marca más distancia (algo ya cerrado, o lo que ha dicho otra persona) y es el típico para dar razones: that's why...",
+            "examples": [
+              "Artists now have a vast range of materials. **This** means that they can be much more versatile.",
+              "The artist is my cousin and **that's why** I'm here.",
+              "I studied biology. **That** allowed me to work in a lab."
+            ],
+            "compare": [
+              {
+                "label": "This · la idea sigue",
+                "text": "Prices have doubled. **This** has led to a fall in sales, which..."
+              },
+              {
+                "label": "That · distancia / reacción",
+                "text": "'Prices have doubled.' '**That**'s ridiculous!'"
+              }
+            ]
+          },
+          {
+            "heading": "THESE / THOSE + sustantivo · THOSE WHO / THOSE OF",
+            "formulas": [
+              "THESE / THOSE + sustantivo mencionado",
+              "THOSE + WHO / WHICH / WITH ... (= the people / the ones)",
+              "THOSE + OF + sustantivo"
+            ],
+            "rule": "These / those + sustantivo retoman algo ya mencionado. Those who... = la gente que... (sin mencionarla antes). Those of... evita repetir un sustantivo plural.",
+            "examples": [
+              "Several experts were consulted. **These experts** agreed that...",
+              "**Those who** studied regularly passed the exam.",
+              "Our prices are lower than **those of** our competitors."
+            ],
+            "wrong": [
+              {
+                "bad": "The best candidates are these that show they have done their homework.",
+                "good": "The best candidates are those that show they have done their homework."
+              }
+            ]
+          },
+          {
+            "heading": "THE FORMER / THE LATTER",
+            "formula": "THE FORMER = el primero · THE LATTER = el segundo (de dos)",
+            "rule": "Muy útil en Writing (essays, reports) para referirse a dos opciones sin repetirlas.",
+            "examples": [
+              "We could build a park or a car park. **The former** would benefit families, while **the latter** would only help drivers."
+            ],
+            "tip": "Solo con DOS elementos. Con más de dos: the first / the last."
+          },
+          {
+            "heading": "SUCH · THE SAME",
+            "formulas": [
+              "SUCH + (a / an) + sustantivo = de ese tipo",
+              "THE SAME (+ sustantivo) = lo mismo"
+            ],
+            "rule": "Such retoma algo dicho antes con el sentido de 'algo así'. The same evita repetir una acción o elección.",
+            "examples": [
+              "He shouted at the referee. **Such behaviour** is unacceptable.",
+              "I'd never heard of **such a thing**.",
+              "She ordered the fish, and I had **the same**."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "substitution",
+        "title": "B) SUBSTITUTION",
+        "subtitle": "Sustituir palabras por otras: one / ones, do / do so, so / not, so / neither",
+        "color": "indigo",
+        "blocks": [
+          {
+            "heading": "ONE / ONES",
+            "formulas": [
+              "ONE = sustantivo contable singular · ONES = plural",
+              "a / the + ADJ + ONE(S)",
+              "THE ONE(S) + who / that / with / in ..."
+            ],
+            "rule": "Sustituyen a un sustantivo CONTABLE ya mencionado. Nunca con incontables.",
+            "examples": [
+              "I've made some sandwiches — would you like **one**?",
+              "I strongly recommend **the one** at the National Gallery.",
+              "I prefer to wear **an old one**.",
+              "I enjoy romantic films, especially **sad ones**."
+            ],
+            "wrong": [
+              {
+                "bad": "There are a few slices of cake left. Take it!",
+                "good": "There are a few slices of cake left. Take one!"
+              },
+              {
+                "bad": "I need some milk. Have you got one?",
+                "good": "I need some milk. Have you got any? (milk es incontable)"
+              }
+            ]
+          },
+          {
+            "heading": "ANOTHER · THE OTHER(S) · BOTH · EITHER · NEITHER · ALL · NONE",
+            "rule": "Another = uno más (de un grupo). The other = el segundo de dos; the others = el resto. Both / either / neither → dos cosas. All / none → más de dos.",
+            "chips": [
+              "another",
+              "the other",
+              "the others",
+              "both",
+              "either",
+              "neither",
+              "all",
+              "none"
+            ],
+            "examples": [
+              "One picture showed a girl. **Another** was of the same girl dancing.",
+              "Pablo has two houses. One is in São Paulo and **the other** is in Singapore.",
+              "He's written two novels and **both** have won prizes. **Neither** is autobiographical.",
+              "'Vanilla or chocolate?' '**Either** will be fine.'"
+            ]
+          },
+          {
+            "heading": "Auxiliares y modales en vez del verbo",
+            "formula": "SUJETO + AUX / MODAL  (sin repetir el verbo)",
+            "rule": "Usamos el auxiliar del tiempo (do / does / did, have, be, will...) o el modal en lugar de repetir todo el verbo.",
+            "examples": [
+              "Not many people **have read** that book, and I'm one of the few that **have**.",
+              "A year ago I couldn't drive a car, but now I **can**.",
+              "I really enjoy comedy films, but then I think everyone **does**.",
+              "Mary didn't finish the assignment on time, but I **did**."
+            ]
+          },
+          {
+            "heading": "DO SO · DO IT · DO THAT",
+            "formula": "DO SO = verbo + complementos (más formal)",
+            "rule": "Do so sustituye a una acción completa (verbo + objeto). Es más formal que do it / do that.",
+            "examples": [
+              "I told my students to hand in the essay on Monday and all of them **did so**.",
+              "I used to play tennis, but I haven't **done so** for years.",
+              "Anyone wishing to leave early may **do so** after 3 p.m."
+            ]
+          },
+          {
+            "heading": "SO / NEITHER / NOR + AUX + SUJETO",
+            "formulas": [
+              "SO + AUX + SUJETO (= yo también)",
+              "NEITHER / NOR + AUX + SUJETO (= yo tampoco)"
+            ],
+            "rule": "Para mostrar que algo también es así para otra persona. El auxiliar depende del tiempo de la primera frase.",
+            "examples": [
+              "I enjoy science fiction. **So does** my best friend.",
+              "I don't think we should buy a car. **Neither does** my wife.",
+              "I found it hard at first, and **so did** my friends."
+            ],
+            "compare": [
+              {
+                "label": "So do I · yo también",
+                "text": "'I love this song.' '**So do I**.'"
+              },
+              {
+                "label": "So I do · ¡pues es verdad!",
+                "text": "'You've got paint on your shirt.' '**So I have**!' (confirmación)"
+              }
+            ],
+            "wrong": [
+              {
+                "bad": "'I don't like it.' 'Neither don't I.'",
+                "good": "'I don't like it.' 'Neither do I.' (neither ya es negativo)"
+              }
+            ]
+          },
+          {
+            "heading": "SO / NOT después de think, hope, expect, suppose, believe, guess, be afraid",
+            "formulas": [
+              "think / suppose / expect / hope / guess + SO",
+              "hope / be afraid / guess + NOT",
+              "DON'T + think / expect / believe + SO"
+            ],
+            "rule": "So sustituye a una oración afirmativa; not, a una negativa. Con think, expect, believe y suppose lo normal es negar el verbo (I don't think so). Con hope y be afraid se usa not (I hope not / I'm afraid not).",
+            "examples": [
+              "'Do you think Real Madrid will win?' 'I **guess so**.'",
+              "'Will it rain?' 'I **hope not**.'",
+              "'Can you come?' '**I'm afraid not**.'"
+            ],
+            "wrong": [
+              {
+                "bad": "'Will it rain?' 'I don't hope so.'",
+                "good": "'Will it rain?' 'I hope not.'"
+              }
+            ]
+          },
+          {
+            "heading": "IF SO / IF NOT",
+            "formulas": [
+              "IF SO = si es así",
+              "IF NOT = si no es así"
+            ],
+            "rule": "Sustituyen a una condición entera que acabamos de mencionar.",
+            "examples": [
+              "Are you free tonight? **If so**, let's have dinner.",
+              "We need to submit it by Friday. **If not**, we'll lose the contract."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ellipsis",
+        "title": "C) ELLIPSIS",
+        "subtitle": "Quitar palabras que se sobreentienden",
+        "color": "purple",
+        "blocks": [
+          {
+            "heading": "Tras AND / BUT / OR",
+            "formula": "frase 1 + AND / BUT / OR + (sujeto / aux / verbo omitidos)",
+            "rule": "Si el sujeto, el auxiliar o el verbo son los mismos, se pueden omitir en la segunda parte.",
+            "examples": [
+              "He opened the door and **(he)** walked in.",
+              "He bought a laptop and **(he bought)** a printer.",
+              "She can sing but **(she)** can't dance."
+            ]
+          },
+          {
+            "heading": "Pronombre relativo (cuando es objeto)",
+            "formula": "sustantivo + (THAT / WHICH / WHO) + SUJETO + verbo",
+            "rule": "Si el relativo es el objeto (detrás viene un sujeto), podemos quitarlo. Si es el sujeto, no.",
+            "compare": [
+              {
+                "label": "Objeto · se puede omitir",
+                "text": "The car **(that)** I bought is very fast."
+              },
+              {
+                "label": "Sujeto · NO se omite",
+                "text": "The man **who** called you is my boss."
+              }
+            ]
+          },
+          {
+            "heading": "Tras auxiliares y modales",
+            "formula": "AUX / MODAL + (verbo omitido)",
+            "rule": "El auxiliar o el modal se quedan solos. Con tiempos perfectos o pasivos podemos quedarnos con varias partes.",
+            "examples": [
+              "'Have you finished?' 'Yes, I **have**.'",
+              "I thought the meeting would be cancelled, but it **wasn't**.",
+              "I didn't go, but I **could have**.",
+              "'Has the parcel been sent?' 'It **should have been**.'"
+            ]
+          },
+          {
+            "heading": "TO solo (infinitivo sin repetir)",
+            "formula": "want / would love / used / be able / be allowed + TO",
+            "rule": "Con verbos o adjetivos seguidos de to + inf podemos dejar solo el to.",
+            "examples": [
+              "Kim suggested going to the ballet, but I didn't **want to**.",
+              "Give me a call later if you're **able to**.",
+              "I'd like to help, but I'm not sure I'd be **allowed to**.",
+              "I don't play chess now, but I **used to**."
+            ],
+            "wrong": [
+              {
+                "bad": "'Would you like to come?' 'I'd love.'",
+                "good": "'Would you like to come?' 'I'd love to.'"
+              }
+            ]
+          },
+          {
+            "heading": "Wh- words solos",
+            "formula": "WHO / WHY / WHEN / WHERE / HOW + (resto omitido)",
+            "examples": [
+              "He left early, but I don't know **why**.",
+              "Someone left the door open, but I don't know **who**.",
+              "We'll meet soon, but I'm not sure **when**."
+            ]
+          },
+          {
+            "heading": "Elipsis informal en el Speaking",
+            "rule": "En conversación se omiten el sujeto y el auxiliar al principio de la frase. Suena muy natural en el Speaking (¡no en Writing formal!).",
+            "examples": [
+              "**(It)** Sounds good to me.",
+              "**(Do you)** Want a coffee?",
+              "**(I've)** No idea.",
+              "**(Have you)** Been here long?"
+            ]
+          }
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "part": "Part 2 (Long turn)",
+        "structure": "In the first picture, [comment]. THIS seems to suggest [idea], whereas in the other one...",
+        "example": "In the first picture, the people are working in an open-plan office. This seems to suggest a more collaborative environment, whereas in the other one...",
+        "translation": "En la primera foto, [comentario]. Esto parece sugerir [idea], mientras que en la otra..."
+      },
+      {
+        "part": "Part 3 (Agreeing)",
+        "structure": "'I think [opinion].' — 'So do I. / Neither do I. / I don't think so, actually.'",
+        "example": "'I think we should prioritise the environment.' — 'So do I. In fact, so do most young people nowadays.'",
+        "translation": "'Creo que [opinión].' — 'Yo también. / Yo tampoco. / La verdad es que yo no lo creo.'"
+      },
+      {
+        "part": "Part 4 (Answering yes / no questions)",
+        "structure": "I certainly hope SO / NOT, but I'm afraid [reason].",
+        "example": "Will AI replace teachers? I certainly hope not, but I'm afraid it might if we rely on it too much.",
+        "translation": "Espero que sí / que no, pero me temo que [razón]."
+      },
+      {
+        "part": "Part 3 (Comparing two options)",
+        "structure": "Both options have advantages, but the former [...], whereas the latter [...].",
+        "example": "Both options have advantages, but the former would be cheaper, whereas the latter would reach more people.",
+        "translation": "Las dos opciones tienen ventajas, pero la primera [...], mientras que la segunda [...]."
+      },
+      {
+        "part": "Part 1 (Avoiding repetition)",
+        "structure": "I haven't [done it] yet, but I'd love TO. / I don't any more, but I used TO.",
+        "example": "I haven't tried any extreme sports yet, but I'd love to if I ever get the chance.",
+        "translation": "Todavía no lo he hecho, pero me encantaría. / Ya no, pero antes sí."
+      }
+    ]
+  },
+  "ejercicios": {
+    "reference": [
+      {
+        "type": "mc",
+        "sentence": "The company decided to invest in new technology, and ___ has already led to a 20% rise in productivity.",
+        "options": [
+          "this",
+          "these",
+          "those",
+          "such"
+        ],
+        "answer": "this",
+        "explanation": "This retoma la idea entera de la frase anterior (la decisión de invertir)."
+      },
+      {
+        "type": "mc",
+        "sentence": "'The train's been cancelled again.' '___'s ridiculous!'",
+        "options": [
+          "That",
+          "These",
+          "Those",
+          "Such"
+        ],
+        "answer": "That",
+        "explanation": "That para reaccionar a lo que ha dicho otra persona."
+      },
+      {
+        "type": "mc",
+        "sentence": "She's been working here for ten years — ___ 's why she knows everything.",
+        "options": [
+          "that",
+          "those",
+          "these",
+          "such"
+        ],
+        "answer": "that",
+        "explanation": "That's why... para dar razones."
+      },
+      {
+        "type": "mc",
+        "sentence": "Several economists were consulted. ___ economists agreed that a recession was unlikely.",
+        "options": [
+          "These",
+          "Such",
+          "Those of",
+          "The same"
+        ],
+        "answer": "These",
+        "explanation": "These + sustantivo retoma algo ya mencionado."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ who studied regularly passed the exam easily.",
+        "options": [
+          "Those",
+          "These",
+          "They",
+          "Ones"
+        ],
+        "answer": "Those",
+        "explanation": "Those who = las personas que (en general)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Our prices are lower than ___ of our competitors.",
+        "options": [
+          "those",
+          "these",
+          "ones",
+          "them"
+        ],
+        "answer": "those",
+        "explanation": "Those of + sustantivo para no repetir 'prices'."
+      },
+      {
+        "type": "mc",
+        "sentence": "We could build a park or a car park. The ___ would benefit families, while the latter would only help drivers.",
+        "options": [
+          "former",
+          "first",
+          "latter",
+          "other"
+        ],
+        "answer": "former",
+        "explanation": "The former = el primero de dos."
+      },
+      {
+        "type": "mc",
+        "sentence": "Tom and Jack applied for the job. The ___ got it because he had more experience — Tom was really disappointed.",
+        "options": [
+          "latter",
+          "former",
+          "last",
+          "second one"
+        ],
+        "answer": "latter",
+        "explanation": "The latter = el segundo de dos (Jack)."
+      },
+      {
+        "type": "mc",
+        "sentence": "He shouted at the referee and threw his boots. ___ behaviour is completely unacceptable.",
+        "options": [
+          "Such",
+          "So",
+          "This such",
+          "That such"
+        ],
+        "answer": "Such",
+        "explanation": "Such + sustantivo = un comportamiento así."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd never heard of ___ a thing before.",
+        "options": [
+          "such",
+          "so",
+          "this",
+          "that"
+        ],
+        "answer": "such",
+        "explanation": "Such a + sustantivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "She ordered the grilled fish, and I had ___.",
+        "options": [
+          "the same",
+          "the one",
+          "so",
+          "it"
+        ],
+        "answer": "the same",
+        "explanation": "The same = lo mismo."
+      },
+      {
+        "type": "mc",
+        "sentence": "He refused to apologise, ___ made the situation even worse.",
+        "options": [
+          "which",
+          "that",
+          "this",
+          "what"
+        ],
+        "answer": "which",
+        "explanation": "Which (con coma) retoma toda la oración anterior."
+      },
+      {
+        "type": "gap",
+        "sentence": "Artists now have a vast range of materials. ___ means that they can be much more versatile than in the past.",
+        "answers": [
+          "This",
+          "That",
+          "It"
+        ],
+        "explanation": "This / that / it retoman la frase anterior."
+      },
+      {
+        "type": "mc",
+        "sentence": "There are two candidates. I prefer the one with experience; the ___ seems a bit too young.",
+        "options": [
+          "other",
+          "another",
+          "others",
+          "latter one"
+        ],
+        "answer": "other",
+        "explanation": "The other = el segundo de dos."
+      },
+      {
+        "type": "mc",
+        "sentence": "I invited all my classmates, but only a few came. The ___ said they were busy.",
+        "options": [
+          "others",
+          "other",
+          "another",
+          "rest of"
+        ],
+        "answer": "others",
+        "explanation": "The others = el resto."
+      },
+      {
+        "type": "gap",
+        "sentence": "Correct it: When things like ___ happen, it's better to just relax. (the trains were cancelled)",
+        "answers": [
+          "that",
+          "this"
+        ],
+        "explanation": "Things like that / this: retoma la situación mencionada (✗ things like these)."
+      },
+      {
+        "type": "gap",
+        "sentence": "Correct it: She is a baker who produces excellent cakes. And ___ is what matters. (2 words → 1 word)",
+        "answers": [
+          "that"
+        ],
+        "explanation": "That (singular) retoma toda la idea (✗ those are what matters)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Hundreds of people want to go to Mars, but only a small number ___ will be accepted.",
+        "options": [
+          "of them",
+          "of these people",
+          "of they",
+          "of those people who want"
+        ],
+        "answer": "of them",
+        "explanation": "Of them evita repetir 'people'."
+      },
+      {
+        "type": "mc",
+        "sentence": "My grandparents were born in Italy. ___ is where my love of pasta comes from.",
+        "options": [
+          "That",
+          "Those",
+          "These",
+          "It's"
+        ],
+        "answer": "That",
+        "explanation": "That is where / that's why... retoma la idea."
+      },
+      {
+        "type": "mc",
+        "sentence": "Many people complained about the noise, ___ was hardly surprising.",
+        "options": [
+          "which",
+          "that",
+          "what",
+          "it"
+        ],
+        "answer": "which",
+        "explanation": "Which retoma la oración entera (relativo con coma)."
+      }
+    ],
+    "substitution": [
+      {
+        "type": "mc",
+        "sentence": "I really enjoyed the books you lent me, especially the ___ about ancient history.",
+        "options": [
+          "ones",
+          "one",
+          "some",
+          "those ones"
+        ],
+        "answer": "ones",
+        "explanation": "Ones sustituye al plural 'books'."
+      },
+      {
+        "type": "mc",
+        "sentence": "Mary didn't finish the assignment on time, but I ___.",
+        "options": [
+          "did",
+          "had",
+          "was",
+          "have"
+        ],
+        "answer": "did",
+        "explanation": "Auxiliar del past simple en lugar de repetir 'finished'."
+      },
+      {
+        "type": "mc",
+        "sentence": "He asked if the train was delayed and I told him I hoped ___.",
+        "options": [
+          "not",
+          "no",
+          "so not",
+          "it not"
+        ],
+        "answer": "not",
+        "explanation": "Hope + not = espero que no."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Are you going to the concert?' 'I'm not sure. If ___, we could share a taxi.'",
+        "options": [
+          "so",
+          "yes",
+          "it",
+          "that"
+        ],
+        "answer": "so",
+        "explanation": "If so = si es así."
+      },
+      {
+        "type": "mc",
+        "sentence": "We need to submit the report by Friday. If ___, we'll lose the contract.",
+        "options": [
+          "not",
+          "no",
+          "so",
+          "don't"
+        ],
+        "answer": "not",
+        "explanation": "If not = si no es así."
+      },
+      {
+        "type": "mc",
+        "sentence": "I don't think we should buy a new car, and neither ___ my wife.",
+        "options": [
+          "does",
+          "do",
+          "thinks",
+          "is"
+        ],
+        "answer": "does",
+        "explanation": "Neither + aux + sujeto (does por 'my wife', present simple)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I really enjoy science fiction novels. So ___ my best friend.",
+        "options": [
+          "does",
+          "do",
+          "is",
+          "has"
+        ],
+        "answer": "does",
+        "explanation": "So + aux + sujeto."
+      },
+      {
+        "type": "mc",
+        "sentence": "'You've got paint on your shirt!' 'Oh, so I ___!'",
+        "options": [
+          "have",
+          "do",
+          "am",
+          "did"
+        ],
+        "answer": "have",
+        "explanation": "So I have! = confirmación sorprendida (orden sujeto + aux)."
+      },
+      {
+        "type": "mc",
+        "sentence": "They promised to clean the house before we arrived, and they duly ___ so.",
+        "options": [
+          "did",
+          "made",
+          "had",
+          "were"
+        ],
+        "answer": "did",
+        "explanation": "Do so = verbo + complementos (formal)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I used to play tennis a lot, but I haven't ___ so for years.",
+        "options": [
+          "done",
+          "did",
+          "made",
+          "been"
+        ],
+        "answer": "done",
+        "explanation": "Present perfect de do so: have done so."
+      },
+      {
+        "type": "mc",
+        "sentence": "She was wearing a beautiful dress, the ___ I bought for her birthday.",
+        "options": [
+          "one",
+          "ones",
+          "that",
+          "it"
+        ],
+        "answer": "one",
+        "explanation": "One = 'the dress' (contable singular)."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Will the new policy affect our department?' 'Don't worry — I don't think ___.'",
+        "options": [
+          "so",
+          "not",
+          "it",
+          "that"
+        ],
+        "answer": "so",
+        "explanation": "I don't think so (la negación va en think)."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Will it rain during the wedding?' 'I hope ___.'",
+        "options": [
+          "not",
+          "so not",
+          "don't",
+          "no"
+        ],
+        "answer": "not",
+        "explanation": "I hope not (✗ I don't hope so)."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Can you lend me £50?' 'I'm afraid ___.'",
+        "options": [
+          "not",
+          "no",
+          "so",
+          "don't"
+        ],
+        "answer": "not",
+        "explanation": "I'm afraid not = me temo que no."
+      },
+      {
+        "type": "mc",
+        "sentence": "My old phone was broken, so I had to buy a new ___.",
+        "options": [
+          "one",
+          "ones",
+          "it",
+          "some"
+        ],
+        "answer": "one",
+        "explanation": "A + adj + one."
+      },
+      {
+        "type": "mc",
+        "sentence": "There are two jackets. You can take ___ — I don't mind which.",
+        "options": [
+          "either",
+          "both",
+          "neither",
+          "all"
+        ],
+        "answer": "either",
+        "explanation": "Either = cualquiera de los dos."
+      },
+      {
+        "type": "mc",
+        "sentence": "He's written two novels and ___ has been translated into English.",
+        "options": [
+          "neither",
+          "none",
+          "either",
+          "both"
+        ],
+        "answer": "neither",
+        "explanation": "Neither (de dos) + verbo singular."
+      },
+      {
+        "type": "gap",
+        "sentence": "Correct it: Having broken mine, I needed a new camera, so I was delighted when my partner gave me ___ as a present.",
+        "answers": [
+          "one"
+        ],
+        "explanation": "One = una cámara cualquiera (✗ it = esa cámara concreta)."
+      },
+      {
+        "type": "gap",
+        "sentence": "'Is Sophie meeting us there?' 'I think ___.'",
+        "answers": [
+          "so"
+        ],
+        "explanation": "Think + so sustituye la oración afirmativa."
+      },
+      {
+        "type": "gap",
+        "sentence": "My children won't eat green apples. Do you have any red ___?",
+        "answers": [
+          "ones"
+        ],
+        "explanation": "Ones sustituye 'apples'."
+      }
+    ],
+    "ellipsis": [
+      {
+        "type": "mc",
+        "sentence": "I have never been scuba diving, but my brother ___.",
+        "options": [
+          "has",
+          "did",
+          "does",
+          "is"
+        ],
+        "answer": "has",
+        "explanation": "Auxiliar del present perfect (has been)."
+      },
+      {
+        "type": "mc",
+        "sentence": "She promised to help me, but in the end she didn't want ___.",
+        "options": [
+          "to",
+          "so",
+          "it",
+          "that"
+        ],
+        "answer": "to",
+        "explanation": "Want + to (resto omitido)."
+      },
+      {
+        "type": "mc",
+        "sentence": "The manager resigned suddenly, and nobody understands ___.",
+        "options": [
+          "why",
+          "that",
+          "it",
+          "so"
+        ],
+        "answer": "why",
+        "explanation": "Wh-word solo."
+      },
+      {
+        "type": "mc",
+        "sentence": "I thought the meeting was going to be cancelled, but it ___.",
+        "options": [
+          "wasn't",
+          "didn't",
+          "hadn't",
+          "not"
+        ],
+        "answer": "wasn't",
+        "explanation": "Auxiliar de la pasiva (was cancelled)."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Would you like to come to the cinema?' 'I'd love ___!'",
+        "options": [
+          "to",
+          "it",
+          "so",
+          "that"
+        ],
+        "answer": "to",
+        "explanation": "Would love + to."
+      },
+      {
+        "type": "mc",
+        "sentence": "Someone left the door open, but I don't know ___.",
+        "options": [
+          "who",
+          "whom",
+          "what",
+          "whose"
+        ],
+        "answer": "who",
+        "explanation": "Who = el sujeto que falta (who left it open)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I didn't go to the party, but I could ___.",
+        "options": [
+          "have",
+          "had",
+          "be",
+          "do"
+        ],
+        "answer": "have",
+        "explanation": "Modal perfect: could have (gone)."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Has the parcel been sent yet?' 'It should ___ by now.'",
+        "options": [
+          "have been",
+          "be",
+          "been",
+          "have"
+        ],
+        "answer": "have been",
+        "explanation": "Ellipsis tras modal perfect pasivo (should have been sent)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I don't smoke now, but I ___ to.",
+        "options": [
+          "used",
+          "use",
+          "was",
+          "would"
+        ],
+        "answer": "used",
+        "explanation": "Used to (omitido 'smoke')."
+      },
+      {
+        "type": "mc",
+        "sentence": "Give me a call later if you're able ___.",
+        "options": [
+          "to",
+          "so",
+          "it",
+          "for"
+        ],
+        "answer": "to",
+        "explanation": "Be able + to."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd like to solve your problem, but I'm not sure I'd be allowed ___.",
+        "options": [
+          "to",
+          "so",
+          "it",
+          "for it"
+        ],
+        "answer": "to",
+        "explanation": "Be allowed + to."
+      },
+      {
+        "type": "mc",
+        "sentence": "Which of these sentences correctly omits the relative pronoun?",
+        "options": [
+          "The car I bought is very fast.",
+          "The man called you is my boss.",
+          "The book is on the table is mine.",
+          "The girl won the prize is my sister."
+        ],
+        "answer": "The car I bought is very fast.",
+        "explanation": "Solo se omite si el relativo es objeto (detrás hay un sujeto: I)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Which sentence uses ellipsis correctly?",
+        "options": [
+          "She can sing but can't dance.",
+          "She can sing but she can't.",
+          "She can sing but can't to dance.",
+          "She can sing but dance can't."
+        ],
+        "answer": "She can sing but can't dance.",
+        "explanation": "Se omite el sujeto repetido tras but."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Have you finished your essay?' 'Not yet, but I ___ by tonight.'",
+        "options": [
+          "will have",
+          "will",
+          "have",
+          "will be"
+        ],
+        "answer": "will have",
+        "explanation": "Future perfect (will have finished)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Kim suggested going to the ballet, but I didn't want ___.",
+        "options": [
+          "to",
+          "it",
+          "so",
+          "going"
+        ],
+        "answer": "to",
+        "explanation": "Want + to."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Sounds good to me.' What has been omitted?",
+        "options": [
+          "It",
+          "That's",
+          "I",
+          "You"
+        ],
+        "answer": "It",
+        "explanation": "Elipsis informal: (It) sounds good."
+      },
+      {
+        "type": "gap",
+        "sentence": "We used to go to the cinema every weekend, but we haven't ___ recently.",
+        "answers": [
+          "been"
+        ],
+        "explanation": "Haven't been (to the cinema) recently."
+      },
+      {
+        "type": "gap",
+        "sentence": "Most of the class are walking to college now. You should ___. (1 word: también)",
+        "answers": [
+          "too"
+        ],
+        "explanation": "You should (walk) too."
+      },
+      {
+        "type": "gap",
+        "sentence": "A year ago I couldn't drive a car, but now I ___.",
+        "answers": [
+          "can"
+        ],
+        "explanation": "Modal solo: can (drive)."
+      },
+      {
+        "type": "gap",
+        "sentence": "'We only have vanilla or chocolate.' 'That's fine. ___ will be OK.'",
+        "answers": [
+          "Either",
+          "Either one"
+        ],
+        "explanation": "Either = cualquiera de los dos."
+      }
+    ],
+    "book": [
+      {
+        "type": "gap",
+        "sentence": "There are only a few slices of cake left. Take ___ while you've got the chance.",
+        "answers": [
+          "one"
+        ],
+        "explanation": "Book ex.1: ✗ it → ✓ one."
+      },
+      {
+        "type": "gap",
+        "sentence": "Because of the snow, all the trains were cancelled. I realised that when things like ___ happen, it's better to just relax.",
+        "answers": [
+          "that",
+          "this"
+        ],
+        "explanation": "Book ex.1: ✗ things like these → ✓ things like that."
+      },
+      {
+        "type": "gap",
+        "sentence": "She exhibited some wonderful photos, the best of ___ was taken in South Africa.",
+        "answers": [
+          "which"
+        ],
+        "explanation": "Book ex.1: ✗ the best of these → ✓ the best of which."
+      },
+      {
+        "type": "gap",
+        "sentence": "The best candidates are ___ that show they have done their homework.",
+        "answers": [
+          "those"
+        ],
+        "explanation": "Book ex.1: ✗ these → ✓ those."
+      },
+      {
+        "type": "gap",
+        "sentence": "The fans were chanting for Simons, the man in ___ ability the crowd always put their faith.",
+        "answers": [
+          "whose"
+        ],
+        "explanation": "Book ex.1: ✗ who → ✓ whose."
+      },
+      {
+        "type": "gap",
+        "sentence": "She knows how to produce excellent cakes. And ___ is what matters.",
+        "answers": [
+          "that"
+        ],
+        "explanation": "Book ex.1: ✗ those are → ✓ that is."
+      },
+      {
+        "type": "gap",
+        "sentence": "I needed a new camera, so I was delighted when my partner gave me ___ as a present.",
+        "answers": [
+          "one"
+        ],
+        "explanation": "Book ex.1: ✗ it → ✓ one."
+      },
+      {
+        "type": "gap",
+        "sentence": "It was clearly a dangerous journey, and everyone had told her ___.",
+        "answers": [
+          "so"
+        ],
+        "explanation": "Book ex.2: told her so = told her it would be dangerous."
+      },
+      {
+        "type": "gap",
+        "sentence": "We used to go to the cinema every weekend, but we haven't ___ recently.",
+        "answers": [
+          "been"
+        ],
+        "explanation": "Book ex.2: haven't been (to the cinema)."
+      },
+      {
+        "type": "gap",
+        "sentence": "Most of the class are walking to college now. You should ___ too.",
+        "answers": [
+          "walk",
+          "do so",
+          "do the same"
+        ],
+        "explanation": "Book ex.2: you should too / you should do so."
+      },
+      {
+        "type": "gap",
+        "sentence": "A: Is Sophie meeting us there? B: I think ___.",
+        "answers": [
+          "so"
+        ],
+        "explanation": "Book ex.2: I think so."
+      },
+      {
+        "type": "gap",
+        "sentence": "Hundreds of people want to travel to Mars, but only a small number ___ will be accepted. (2 words)",
+        "answers": [
+          "of them"
+        ],
+        "explanation": "Book ex.2: of them."
+      },
+      {
+        "type": "gap",
+        "sentence": "My children won't eat green apples. Do you have any red ___?",
+        "answers": [
+          "ones"
+        ],
+        "explanation": "Book ex.2: ones."
+      },
+      {
+        "type": "gap",
+        "sentence": "A: We only have vanilla or chocolate ice-cream left. B: That's fine. ___ will be OK.",
+        "answers": [
+          "Either",
+          "Either one",
+          "Either of them"
+        ],
+        "explanation": "Book ex.2: either."
+      },
+      {
+        "type": "mc",
+        "sentence": "I've made some sandwiches — would you like ___?",
+        "options": [
+          "one",
+          "it",
+          "ones",
+          "some one"
+        ],
+        "answer": "one",
+        "explanation": "One = un sándwich cualquiera."
+      },
+      {
+        "type": "mc",
+        "sentence": "Our neighbours are generally nice, but the ___ in flat 4 aren't very sociable.",
+        "options": [
+          "ones",
+          "one",
+          "others ones",
+          "those ones"
+        ],
+        "answer": "ones",
+        "explanation": "The ones + in / with ..."
+      },
+      {
+        "type": "mc",
+        "sentence": "I've bought a lot of new shirts, but for gardening I prefer to wear an old ___.",
+        "options": [
+          "one",
+          "it",
+          "shirts",
+          "ones"
+        ],
+        "answer": "one",
+        "explanation": "A + adj + one."
+      },
+      {
+        "type": "mc",
+        "sentence": "Most of the actors went to a party. The ___ went home.",
+        "options": [
+          "others",
+          "other",
+          "another",
+          "rest"
+        ],
+        "answer": "others",
+        "explanation": "The others = el resto."
+      },
+      {
+        "type": "mc",
+        "sentence": "Mariella invited her friends but ___ came.",
+        "options": [
+          "none of them",
+          "no one of them",
+          "neither",
+          "nothing of them"
+        ],
+        "answer": "none of them",
+        "explanation": "None of them (más de dos)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I experienced difficulty when I first joined the club, and so ___ my friends.",
+        "options": [
+          "did",
+          "had",
+          "were",
+          "have"
+        ],
+        "answer": "did",
+        "explanation": "So + aux + sujeto (pasado → did)."
+      }
+    ],
+    "transformations": [
+      {
+        "type": "kwt",
+        "lead_in": "I told my students to hand in the essay on Monday and they all handed it in.",
+        "keyword": "SO",
+        "before": "I told my students to hand in the essay on Monday and",
+        "after": ".",
+        "answers": [
+          "all of them did so",
+          "they all did so"
+        ],
+        "explanation": "Do so = repetir la acción."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Is it possible that it will rain tomorrow? I really hope it won't.",
+        "keyword": "NOT",
+        "before": "Will it rain tomorrow? I",
+        "after": "",
+        "answers": [
+          "really hope not"
+        ],
+        "explanation": "Hope + not."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I don't like horror films, and my sister doesn't like them either.",
+        "keyword": "NEITHER",
+        "before": "I don't like horror films, and",
+        "after": "",
+        "answers": [
+          "neither does my sister"
+        ],
+        "explanation": "Neither + aux + sujeto."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I enjoy classical music and my husband enjoys it too.",
+        "keyword": "DOES",
+        "before": "I enjoy classical music and",
+        "after": "",
+        "answers": [
+          "so does my husband"
+        ],
+        "explanation": "So + does + sujeto."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Are you free tonight? If you are, let's have dinner.",
+        "keyword": "SO",
+        "before": "Are you free tonight?",
+        "after": "have dinner.",
+        "answers": [
+          "If so, let's",
+          "If so let's"
+        ],
+        "explanation": "If so = si es así. (2 words: palabra clave + if)"
+      },
+      {
+        "type": "kwt",
+        "lead_in": "We could stay in a hotel or rent a flat; renting a flat would be cheaper.",
+        "keyword": "LATTER",
+        "before": "We could stay in a hotel or rent a flat;",
+        "after": "would be cheaper.",
+        "answers": [
+          "the latter option",
+          "the latter one"
+        ],
+        "explanation": "The latter = el segundo de dos."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "People who exercise regularly tend to sleep better.",
+        "keyword": "THOSE",
+        "before": "",
+        "after": "tend to sleep better.",
+        "answers": [
+          "Those who exercise regularly"
+        ],
+        "explanation": "Those who = la gente que."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Our salaries are higher than the salaries of our competitors.",
+        "keyword": "OF",
+        "before": "Our salaries are higher than",
+        "after": "competitors.",
+        "answers": [
+          "those of our"
+        ],
+        "explanation": "Those of = los de."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "He insulted the waiter, and I think that kind of behaviour is unacceptable.",
+        "keyword": "SUCH",
+        "before": "He insulted the waiter, and I",
+        "after": "unacceptable.",
+        "answers": [
+          "think such behaviour is",
+          "find such behaviour"
+        ],
+        "explanation": "Such + sustantivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I can't come to your party, unfortunately.",
+        "keyword": "AFRAID",
+        "before": "'Can you come to my party?' 'No,",
+        "after": "'",
+        "answers": [
+          "I'm afraid not",
+          "I am afraid not"
+        ],
+        "explanation": "I'm afraid not."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Nobody knows why he left the company so suddenly.",
+        "keyword": "WHY",
+        "before": "He left the company so suddenly, but",
+        "after": ".",
+        "answers": [
+          "nobody knows why",
+          "no one knows why"
+        ],
+        "explanation": "Wh-word solo (ellipsis)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "She ordered pasta and I ordered pasta too.",
+        "keyword": "SAME",
+        "before": "She ordered pasta and",
+        "after": "",
+        "answers": [
+          "I had the same",
+          "I ordered the same",
+          "I had the same thing"
+        ],
+        "explanation": "The same = lo mismo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I'd love to go to Japan, but I don't think I'll be able to go.",
+        "keyword": "ABLE",
+        "before": "I'd love to go to Japan, but I don't think I'll",
+        "after": "",
+        "answers": [
+          "be able to"
+        ],
+        "explanation": "Be able + to (resto omitido)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I don't play the piano any more, but I played it when I was a child.",
+        "keyword": "USED",
+        "before": "I don't play the piano any more, but",
+        "after": "when I was a child.",
+        "answers": [
+          "I used to"
+        ],
+        "explanation": "Used to (resto omitido)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Which jacket do you want? Any of the two is fine for me.",
+        "keyword": "EITHER",
+        "before": "Which jacket do you want?",
+        "after": "is fine for me.",
+        "answers": [
+          "Either of them",
+          "Either one of them"
+        ],
+        "explanation": "Either = cualquiera de los dos."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "He's written two books, but neither book is autobiographical.",
+        "keyword": "NEITHER",
+        "before": "He's written two books, but",
+        "after": "is autobiographical.",
+        "answers": [
+          "neither of them"
+        ],
+        "explanation": "Neither of them."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I lost my umbrella, so I bought a new umbrella.",
+        "keyword": "ONE",
+        "before": "I lost my umbrella, so I",
+        "after": "",
+        "answers": [
+          "bought a new one"
+        ],
+        "explanation": "A + adj + one."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Anyone who wishes to leave early may leave after 3 p.m.",
+        "keyword": "DO",
+        "before": "Anyone who wishes to leave early",
+        "after": "after 3 p.m.",
+        "answers": [
+          "may do so",
+          "can do so"
+        ],
+        "explanation": "Do so (formal)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Two of the guests stayed; all the rest went home.",
+        "keyword": "OTHERS",
+        "before": "Two of the guests stayed;",
+        "after": "went home.",
+        "answers": [
+          "all the others"
+        ],
+        "explanation": "The others = el resto."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I didn't go to the meeting, although it was possible for me to go.",
+        "keyword": "COULD",
+        "before": "I didn't go to the meeting, although",
+        "after": "",
+        "answers": [
+          "I could have",
+          "I could have gone"
+        ],
+        "explanation": "Modal perfect: could have."
+      }
+    ]
+  }
+};
+    </script>
+    <script>
+// State
+let theoryData = null;
+let exercisesData = null;
+const quizzes = {};
+
+const TABS = ['theory', 'reference', 'substitution', 'ellipsis', 'book', 'transformations', 'speaking'];
+
+const QUIZ_INFO = {
+    reference: {
+        title: 'Reference: this, that, those, the former / the latter, such',
+        instructions: 'Choose the correct option or write the missing word.',
+        color: 'sky'
+    },
+    substitution: {
+        title: 'Substitution: one / ones, do so, so / not, so / neither',
+        instructions: 'Choose the correct option or write the missing word.',
+        color: 'indigo'
+    },
+    ellipsis: {
+        title: 'Ellipsis: leaving words out',
+        instructions: 'Choose the correct option or write the missing word.',
+        color: 'purple'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 6: avoiding repetition). Correct the mistake or replace the repeated words.',
+        color: 'rose'
+    },
+    transformations: {
+        title: 'Keyword Transformation (Part 4)',
+        instructions: 'Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.',
+        color: 'sky'
     }
-  ],
-  "substitution": [
-    {
-      "title": "Auxiliary Verbs (do/does/did)",
-      "rule": "Used to avoid repeating the main verb.",
-      "examples": [
-        "Peter didn't study, but I did."
-      ]
-    },
-    {
-      "title": "Do so",
-      "rule": "Used to replace a Verb + Object structure.",
-      "examples": [
-        "Peter didn't buy a new car, but I did so."
-      ]
-    },
-    {
-      "title": "So / Neither",
-      "rule": "Structures 'So + aux + subject' and 'Neither + aux + subject' used for agreements.",
-      "examples": [
-        "I like apples. So do I.",
-        "I don't like apples. Neither do I."
-      ]
-    },
-    {
-      "title": "So / Not (after certain verbs)",
-      "rule": "Used after verbs like think, suppose, expect, believe, hope, seem.",
-      "examples": [
-        "Is he coming? I hope so.",
-        "Will it rain? I expect not."
-      ]
-    },
-    {
-      "title": "If so / If not",
-      "rule": "Used to replace complete conditional clauses.",
-      "examples": [
-        "Are you free tonight? If so, let's grab dinner."
-      ]
-    },
-    {
-      "title": "One / Ones",
-      "rule": "Used to replace countable nouns.",
-      "examples": [
-        "I've lost my books. The ones on the table are mine."
-      ]
-    }
-  ],
-  "ellipsis": [
-    {
-      "title": "Connectors 'And/But'",
-      "rule": "We can omit the subject or adjective if it is the same.",
-      "examples": [
-        "He opened the door and (he) walked in."
-      ]
-    },
-    {
-      "title": "Relative Pronouns",
-      "rule": "We can omit 'which/that' when it is the direct object of the relative clause.",
-      "examples": [
-        "The car (that) I bought is very fast."
-      ]
-    },
-    {
-      "title": "Auxiliary Verbs",
-      "rule": "We can omit the main verb after the auxiliary.",
-      "examples": [
-        "Have you finished? Yes, I have (finished)."
-      ]
-    },
-    {
-      "title": "Infinitive 'to'",
-      "rule": "We can leave the 'to' alone when omitting the rest of the infinitive clause.",
-      "examples": [
-        "I didn't like chess, but I used to (like chess)."
-      ]
-    },
-    {
-      "title": "Wh- words",
-      "rule": "We can leave the wh-word alone.",
-      "examples": [
-        "He left early, but I don't know why (he left early)."
-      ]
-    }
-  ],
-  "speaking": [
-    {
-      "part": "Part 2 (Long Turn)",
-      "strategy": "Reference (Linking ideas)",
-      "structure": "Regarding [Topic A], [Comment]. THAT being said, THIS other picture...",
-      "example": "Regarding the first photo, they seem busy. THAT being said, THIS other picture shows a calmer environment."
-    },
-    {
-      "part": "Part 3 (Collaborative Task)",
-      "strategy": "Substitution (Agreeing / Disagreeing)",
-      "structure": "I think [Opinion]. Do you? -> Yes, I DO / So DO I / Neither DO I.",
-      "example": "I think we should prioritize the environment over profits. Do you? -> Yes, I DO. Actually, SO DO most young people nowadays."
-    },
-    {
-      "part": "Part 4 (Discussion)",
-      "strategy": "Substitution (Responding to complex questions)",
-      "structure": "Will [Event] happen? / Is [Idea] true? -> I certainly hope SO / I suppose NOT.",
-      "example": "Do you think artificial intelligence will replace teachers? I certainly hope NOT, but I suppose SO if we rely on it too much."
-    },
-    {
-      "part": "Natural Flow",
-      "strategy": "Ellipsis (Avoiding repetition with 'to')",
-      "structure": "I haven't/didn't [Action], but I would love TO / I used TO.",
-      "example": "I haven't tried any extreme sports yet, but I'd love TO if I ever get the chance."
-    }
-  ]
 };
 
-        const questionsData = [
-  {
-    "id": 1,
-    "text": "The company decided to invest in new technology. ___ proved to be a very wise decision.",
-    "options": ["This", "That", "These", "Those"],
-    "correctAnswer": "This",
-    "type": "Reference",
-    "explanation": "'This' refers back to the entire previous sentence (the decision to invest), bringing the idea into the present discussion."
-  },
-  {
-    "id": 2,
-    "text": "I really enjoyed the books you lent me, especially the ___ about ancient history.",
-    "options": ["one", "ones", "some", "those"],
-    "correctAnswer": "ones",
-    "type": "Substitution",
-    "explanation": "'ones' substitutes for the plural countable noun 'books'."
-  },
-  {
-    "id": 3,
-    "text": "Mary didn't finish the assignment on time, but I ___.",
-    "options": ["did so", "did", "was", "have"],
-    "correctAnswer": "did",
-    "type": "Substitution",
-    "explanation": "We use the auxiliary 'did' to avoid repeating the main verb 'finish'."
-  },
-  {
-    "id": 4,
-    "text": "He asked me if the train was delayed, and I told him I hoped ___.",
-    "options": ["not", "so", "it", "that"],
-    "correctAnswer": "not",
-    "type": "Substitution",
-    "explanation": "After 'hope', we use 'not' to substitute a negative clause (I hoped it was not delayed)."
-  },
-  {
-    "id": 5,
-    "text": "I would love to travel to Japan next year. I really hope ___.",
-    "options": ["it", "that", "so", "to"],
-    "correctAnswer": "so",
-    "type": "Substitution",
-    "explanation": "'so' substitutes the affirmative clause after 'hope'."
-  },
-  {
-    "id": 6,
-    "text": "Are you going to the concert tonight? If ___, we could share a taxi.",
-    "options": ["yes", "it", "so", "that"],
-    "correctAnswer": "so",
-    "type": "Substitution",
-    "explanation": "'If so' replaces the entire conditional clause 'If you are going to the concert tonight'."
-  },
-  {
-    "id": 7,
-    "text": "I have never been scuba diving before, but my brother ___.",
-    "options": ["has", "did", "does", "was"],
-    "correctAnswer": "has",
-    "type": "Ellipsis",
-    "explanation": "The auxiliary 'has' is used to avoid repeating 'been scuba diving'."
-  },
-  {
-    "id": 8,
-    "text": "She promised to help me with the project, but she didn't want ___.",
-    "options": ["to", "so", "it", "that"],
-    "correctAnswer": "to",
-    "type": "Ellipsis",
-    "explanation": "The infinitive 'to' is left alone, omitting the rest of the clause (to help me)."
-  },
-  {
-    "id": 9,
-    "text": "The manager resigned suddenly, and nobody understands ___.",
-    "options": ["that", "it", "why", "so"],
-    "correctAnswer": "why",
-    "type": "Ellipsis",
-    "explanation": "The wh-word 'why' is left alone to omit 'why he resigned'."
-  },
-  {
-    "id": 10,
-    "text": "Some people believe that the economy will recover soon. ___ experts, however, disagree.",
-    "options": ["Those", "These", "This", "That"],
-    "correctAnswer": "These",
-    "type": "Reference",
-    "explanation": "'These' refers to the experts related to the current topic of discussion."
-  },
-  {
-    "id": 11,
-    "text": "I ordered a coffee and ___ sat down at the table.",
-    "options": ["I", "he", "-", "it"],
-    "correctAnswer": "-",
-    "type": "Ellipsis",
-    "explanation": "We can omit the subject after 'and' if it is the same as the first clause."
-  },
-  {
-    "id": 12,
-    "text": "He refused to apologize, and ___ made the situation even worse.",
-    "options": ["this", "that", "it", "which"],
-    "correctAnswer": "that",
-    "type": "Reference",
-    "explanation": "'That' refers back to the entire previous action (refusing to apologize) as a completed past event."
-  },
-  {
-    "id": 13,
-    "text": "I don't think we should buy a new car. Neither ___ my wife.",
-    "options": ["do", "does", "think", "is"],
-    "correctAnswer": "does",
-    "type": "Substitution",
-    "explanation": "'Neither + aux + subject' is used to agree with a negative statement."
-  },
-  {
-    "id": 14,
-    "text": "We need to submit the report by Friday. If ___, we will lose the contract.",
-    "options": ["not", "so", "we don't", "no"],
-    "correctAnswer": "not",
-    "type": "Substitution",
-    "explanation": "'If not' replaces the negative conditional clause 'If we do not submit the report by Friday'."
-  },
-  {
-    "id": 15,
-    "text": "The students who passed the exam were the ___ who studied regularly.",
-    "options": ["ones", "one", "students", "those"],
-    "correctAnswer": "ones",
-    "type": "Substitution",
-    "explanation": "'ones' replaces the plural noun 'students'."
-  },
-  {
-    "id": 16,
-    "text": "I thought the meeting was going to be cancelled, but it ___.",
-    "options": ["wasn't", "didn't", "was", "not"],
-    "correctAnswer": "wasn't",
-    "type": "Ellipsis",
-    "explanation": "The auxiliary 'wasn't' avoids repeating 'cancelled'."
-  },
-  {
-    "id": 17,
-    "text": "Would you like to come to the cinema with us? I'd love ___.",
-    "options": ["it", "so", "to", "that"],
-    "correctAnswer": "to",
-    "type": "Ellipsis",
-    "explanation": "The infinitive particle 'to' is left alone, omitting 'come to the cinema'."
-  },
-  {
-    "id": 18,
-    "text": "I'm not sure if the store is open on Sundays, but I suppose ___.",
-    "options": ["it", "that", "so", "yes"],
-    "correctAnswer": "so",
-    "type": "Substitution",
-    "explanation": "After 'suppose', we use 'so' to substitute the affirmative clause."
-  },
-  {
-    "id": 19,
-    "text": "They promised to clean the house, and they ___.",
-    "options": ["did", "did so", "have", "were"],
-    "correctAnswer": "did so",
-    "type": "Substitution",
-    "explanation": "'did so' replaces the verb + object 'cleaned the house'."
-  },
-  {
-    "id": 20,
-    "text": "I used to play tennis a lot, but I haven't ___ for years.",
-    "options": ["done so", "done", "played", "did"],
-    "correctAnswer": "done so",
-    "type": "Substitution",
-    "explanation": "'done so' substitutes the verb and its object 'played tennis'."
-  },
-  {
-    "id": 21,
-    "text": "She was wearing a beautiful dress, the ___ I bought for her birthday.",
-    "options": ["one", "ones", "that", "which"],
-    "correctAnswer": "one",
-    "type": "Substitution",
-    "explanation": "'one' substitutes the singular countable noun 'dress'."
-  },
-  {
-    "id": 22,
-    "text": "Will the new policy affect our department? I expect ___.",
-    "options": ["so", "not", "it", "that"],
-    "correctAnswer": "not",
-    "type": "Substitution",
-    "explanation": "'not' is used after 'expect' to replace a negative clause."
-  },
-  {
-    "id": 23,
-    "text": "He bought a new laptop and ___ a printer.",
-    "options": ["bought", "-", "he", "also"],
-    "correctAnswer": "-",
-    "type": "Ellipsis",
-    "explanation": "We can omit the verb 'bought' because it is understood from the first clause."
-  },
-  {
-    "id": 24,
-    "text": "She has been working here for ten years. ___ is why she knows everything.",
-    "options": ["This", "That", "It", "Which"],
-    "correctAnswer": "That",
-    "type": "Reference",
-    "explanation": "'That' refers back to the fact mentioned in the previous sentence."
-  },
-  {
-    "id": 25,
-    "text": "I really enjoy reading science fiction novels. So ___ my best friend.",
-    "options": ["does", "do", "is", "has"],
-    "correctAnswer": "does",
-    "type": "Substitution",
-    "explanation": "'So + auxiliary + subject' for agreement. The auxiliary 'does' matches the present simple tense of 'enjoy'."
-  },
-  {
-    "id": 26,
-    "text": "The cake ___ I baked yesterday was delicious.",
-    "options": ["-", "what", "who", "whom"],
-    "correctAnswer": "-",
-    "type": "Ellipsis",
-    "explanation": "We can omit the relative pronoun 'that/which' when it acts as the object of the relative clause."
-  },
-  {
-    "id": 27,
-    "text": "I told him to finish the report, but he didn't want ___.",
-    "options": ["to", "so", "it", "that"],
-    "correctAnswer": "to",
-    "type": "Ellipsis",
-    "explanation": "We leave the 'to' to omit the rest of the infinitive clause."
-  },
-  {
-    "id": 28,
-    "text": "Someone left the door open, but I don't know ___.",
-    "options": ["who", "whom", "why", "when"],
-    "correctAnswer": "who",
-    "type": "Ellipsis",
-    "explanation": "The wh-word 'who' stands alone, omitting 'left the door open'."
-  },
-  {
-    "id": 29,
-    "text": "We need more volunteers for the event. Are you available? If ___, please sign up here.",
-    "options": ["so", "not", "yes", "you are"],
-    "correctAnswer": "so",
-    "type": "Substitution",
-    "explanation": "'If so' replaces 'If you are available'."
-  },
-  {
-    "id": 30,
-    "text": "My old phone was broken, so I had to buy a new ___.",
-    "options": ["one", "ones", "phone", "it"],
-    "correctAnswer": "one",
-    "type": "Substitution",
-    "explanation": "'one' substitutes the singular noun 'phone'."
-  }
-];
+const COLORS = {
+    sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900', btn: 'bg-sky-600 hover:bg-sky-700', ring: 'ring-sky-500', solid: 'bg-sky-600', mark: 'bg-sky-100 text-sky-900', chip: 'bg-white text-sky-800 border-sky-200' },
+    indigo: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900', btn: 'bg-indigo-600 hover:bg-indigo-700', ring: 'ring-indigo-500', solid: 'bg-indigo-600', mark: 'bg-indigo-100 text-indigo-900', chip: 'bg-white text-indigo-800 border-indigo-200' },
+    purple: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900', btn: 'bg-purple-600 hover:bg-purple-700', ring: 'ring-purple-500', solid: 'bg-purple-600', mark: 'bg-purple-100 text-purple-900', chip: 'bg-white text-purple-800 border-purple-200' },
+    rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', icon: 'text-rose-900', btn: 'bg-rose-600 hover:bg-rose-700', ring: 'ring-rose-500', solid: 'bg-rose-600', mark: 'bg-rose-100 text-rose-900', chip: 'bg-white text-rose-800 border-rose-200' }
+};
 
-        document.getElementById('year').textContent = new Date().getFullYear();
+const ICON_CHECK = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+const ICON_CROSS = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
 
-        // State
-        let currentQuestions = [];
-        let currentQuestionIndex = 0;
-        let score = 0;
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+});
 
-        // Initialization
-        function init() {
-            renderTheory();
-            renderSpeaking();
-            loadStats();
+window.switchTab = function(tabId) {
+    TABS.forEach(id => {
+        document.getElementById(`content-${id}`).classList.remove('block');
+        document.getElementById(`content-${id}`).classList.add('hidden');
+
+        const btn = document.getElementById(`tab-${id}`);
+        btn.classList.remove('active-tab');
+        btn.classList.add('inactive-tab');
+    });
+
+    document.getElementById(`content-${tabId}`).classList.remove('hidden');
+    document.getElementById(`content-${tabId}`).classList.add('block');
+
+    const activeBtn = document.getElementById(`tab-${tabId}`);
+    activeBtn.classList.remove('inactive-tab');
+    activeBtn.classList.add('active-tab');
+
+    if (quizzes[tabId]) focusInput(tabId);
+};
+
+async function loadData() {
+    try {
+        // Unidad6.html embeds the data so it works without a server
+        if (window.UNIT_DATA) {
+            theoryData = window.UNIT_DATA.teoria;
+            exercisesData = window.UNIT_DATA.ejercicios;
+        } else {
+            const [theoryRes, exercisesRes] = await Promise.all([
+                fetch('/api/teoria'),
+                fetch('/api/ejercicios')
+            ]);
+            theoryData = await theoryRes.json();
+            exercisesData = await exercisesRes.json();
         }
 
-        // Tab Switching
-        function switchTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+        renderTheory();
+        renderSpeaking();
+        Object.keys(QUIZ_INFO).forEach(key => initQuiz(key));
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        document.getElementById('theory-container').innerHTML = `<div class="text-red-500 p-4 bg-red-50 rounded-lg">Error loading content. Please make sure the server is running.</div>`;
+    }
+}
 
-            document.getElementById(`section-${tabId}`).classList.remove('hidden');
-            document.getElementById(`tab-${tabId}`).classList.add('active');
-        }
+// ---------- Helpers ----------
 
-        // Render Theory with Accordions
-        function renderTheory() {
-            const container = document.getElementById('theory-container');
-            container.innerHTML = '';
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
 
-            const categories = [
-                { key: 'reference', title: '1. Reference' },
-                { key: 'substitution', title: '2. Substitution' },
-                { key: 'ellipsis', title: '3. Ellipsis' }
-            ];
+function normalize(str) {
+    return str
+        .toLowerCase()
+        .replace(/[’‘`´]/g, "'")
+        .replace(/\bwon't\b/g, 'will not')
+        .replace(/\bcan't\b/g, 'cannot')
+        .replace(/n't\b/g, ' not')
+        .replace(/(\w)iz(e|ed|es|ing)\b/g, '$1is$2')
+        .replace(/[.,!?;:"()—–-]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
 
-            categories.forEach(cat => {
-                const section = document.createElement('div');
-                section.className = 'bg-surface rounded-xl shadow-sm border border-slate-200 overflow-hidden';
+function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
 
-                const header = document.createElement('button');
-                header.className = 'accordion-btn w-full px-6 py-4 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition-colors focus:outline-none';
-                header.setAttribute('aria-expanded', 'true');
-                header.innerHTML = `
-                    <h3 class="text-lg font-semibold text-textMain">${cat.title}</h3>
-                    <svg class="accordion-icon w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                `;
+function focusInput(key) {
+    const input = document.getElementById(`answer-${key}`);
+    if (input && !input.readOnly) input.focus();
+}
 
-                header.onclick = () => {
-                    const expanded = header.getAttribute('aria-expanded') === 'true' || false;
-                    header.setAttribute('aria-expanded', !expanded);
-                };
+// **text** → highlighted key part
+function fmt(text, c) {
+    return text.replace(/\*\*(.+?)\*\*/g, `<strong class="${c.mark} font-semibold px-1 rounded not-italic">$1</strong>`);
+}
 
-                const content = document.createElement('div');
-                content.className = 'accordion-content px-6 py-4 space-y-6';
+// "Never + AUX + SUJETO + verbo" → chips; UPPERCASE tokens are the key slots
+function renderFormula(formula, c) {
+    // Split on " + " and ", " keeping the separator so commas still read as clause breaks
+    const parts = formula.split(/(\s\+\s|,\s)/);
+    return `
+        <div class="flex flex-wrap items-center gap-1.5 font-mono text-sm">
+            ${parts.map(p => {
+                if (/^\s\+\s$/.test(p)) return '<span class="text-gray-400 font-bold">+</span>';
+                if (/^,\s$/.test(p)) return '<span class="text-gray-400 font-bold">,</span>';
+                const t = p.trim();
+                const isKey = !/[a-z]/.test(t) && /[A-Z]{2,}/.test(t);
+                const cls = isKey ? `${c.solid} text-white border-transparent` : c.chip;
+                return `<span class="px-2.5 py-1 rounded-md border ${cls}">${escapeHtml(t)}</span>`;
+            }).join('')}
+        </div>
+    `;
+}
 
-                theoryData[cat.key].forEach(item => {
-                    const ruleBlock = document.createElement('div');
-                    ruleBlock.innerHTML = `
-                        <h4 class="text-md font-bold text-primary mb-2">${item.title}</h4>
-                        <p class="text-sm text-textMuted mb-3">${item.rule}</p>
-                        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-md space-y-2">
-                            ${item.examples.map(ex => `<p class="text-sm text-slate-700 italic">"${ex}"</p>`).join('')}
+// ---------- Theory ----------
+
+function renderTheory() {
+    const sections = theoryData.sections;
+
+    let html = `
+        <div class="flex flex-wrap gap-2 mb-2">
+            ${sections.map(s => {
+                const c = COLORS[s.color] || COLORS.sky;
+                return `<button onclick="document.getElementById('sec-${s.id}').scrollIntoView({behavior:'smooth', block:'start'})" class="px-3 py-1.5 rounded-full text-sm font-medium border ${c.border} ${c.bg} ${c.text} hover:shadow-sm transition">${s.title}</button>`;
+            }).join('')}
+        </div>
+    `;
+
+    sections.forEach(section => {
+        const c = COLORS[section.color] || COLORS.sky;
+        html += `
+            <div id="sec-${section.id}" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-40">
+                <div class="${c.bg} border-b ${c.border} px-6 py-4 flex flex-wrap justify-between items-center gap-2">
+                    <button onclick="toggleSection('${section.id}')" class="text-left flex items-center gap-3 group">
+                        <svg id="chev-${section.id}" class="w-5 h-5 ${c.text} transition-transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>
+                            <span class="block text-lg font-bold text-gray-900">${section.title}</span>
+                            ${section.subtitle ? `<span class="block text-sm text-gray-500">${section.subtitle}</span>` : ''}
+                        </span>
+                    </button>
+                    <button onclick="switchTab('${section.id}')" class="text-sm font-semibold px-3 py-1.5 rounded-md text-white ${c.btn} shadow-sm">Practise this →</button>
+                </div>
+                <div id="body-${section.id}" class="p-4 sm:p-6 grid gap-4">
+                    ${section.blocks.map(block => renderBlock(block, c)).join('')}
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('theory-container').innerHTML = html;
+}
+
+window.toggleSection = function(id) {
+    const body = document.getElementById(`body-${id}`);
+    body.hidden = !body.hidden;
+    document.getElementById(`chev-${id}`).classList.toggle('rotate-90', !body.hidden);
+};
+
+function renderBlock(block, c) {
+    const formulas = block.formulas || (block.formula ? [block.formula] : []);
+
+    return `
+        <div class="rounded-xl border border-gray-100 p-5 hover:border-gray-200 transition-colors">
+            <h4 class="font-bold ${c.text} text-base mb-3">${block.heading}</h4>
+
+            ${formulas.length ? `<div class="space-y-2 mb-3">${formulas.map(f => renderFormula(f, c)).join('')}</div>` : ''}
+
+            ${block.rule ? `<p class="text-gray-700 leading-relaxed mb-3">${fmt(block.rule, c)}</p>` : ''}
+
+            ${block.compare ? `
+                <div class="grid sm:grid-cols-2 gap-3 mb-3">
+                    ${block.compare.map(cmp => `
+                        <div class="rounded-lg border ${c.border} ${c.bg} p-3">
+                            <p class="text-xs font-bold uppercase tracking-wider ${c.text} mb-1">${cmp.label}</p>
+                            <p class="text-gray-800 italic">${fmt(cmp.text, c)}</p>
                         </div>
-                    `;
-                    content.appendChild(ruleBlock);
-                });
+                    `).join('')}
+                </div>
+            ` : ''}
 
-                section.appendChild(header);
-                section.appendChild(content);
-                container.appendChild(section);
-            });
-        }
+            ${block.chips ? `
+                <div class="mb-3">
+                    ${block.chipsLabel ? `<p class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">${block.chipsLabel}</p>` : ''}
+                    <div class="flex flex-wrap gap-1.5">
+                        ${block.chips.map(ch => `<span class="px-2 py-0.5 rounded-full text-sm border ${c.chip}">${ch}</span>`).join('')}
+                    </div>
+                </div>
+            ` : ''}
 
-        // Render Speaking Booster
-        function renderSpeaking() {
-            const container = document.getElementById('speaking-container');
-            container.innerHTML = '';
+            ${block.examples ? `
+                <ul class="space-y-1.5 mb-3">
+                    ${block.examples.map(ex => `
+                        <li class="flex items-start gap-2 text-gray-800">
+                            <svg class="w-4 h-4 mt-1 flex-shrink-0 ${c.text}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="italic">${fmt(ex, c)}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            ` : ''}
 
-            theoryData.speaking.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'bg-surface rounded-xl p-6 shadow-sm border border-slate-200 hover:shadow-md transition-shadow';
-                card.innerHTML = `
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 border-b border-slate-100 pb-3">
-                        <div class="flex items-center">
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2.5 py-1 rounded uppercase tracking-wider">${item.part}</span>
+            ${block.table ? renderTable(block.table, c) : ''}
+
+            ${block.wrong ? `
+                <div class="grid gap-2 mt-3">
+                    ${block.wrong.map(w => `
+                        <div class="rounded-lg border border-gray-100 overflow-hidden text-sm">
+                            <p class="bg-red-50 text-red-700 px-3 py-1.5"><span class="font-bold">✗</span> <span class="line-through decoration-red-300">${escapeHtml(w.bad)}</span></p>
+                            <p class="bg-green-50 text-green-800 px-3 py-1.5"><span class="font-bold">✓</span> ${escapeHtml(w.good)}</p>
                         </div>
-                        <span class="text-sm text-primary font-semibold mt-2 sm:mt-0">${item.strategy}</span>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${block.tip ? `
+                <p class="mt-3 text-sm text-amber-900 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2"><span class="font-semibold">💡 Tip:</span> ${fmt(block.tip, c)}</p>
+            ` : ''}
+        </div>
+    `;
+}
+
+function renderTable(table, c) {
+    return `
+        <div class="overflow-x-auto rounded-lg border ${c.border} mt-1">
+            <table class="min-w-full text-sm">
+                <thead class="${c.bg} ${c.text}">
+                    <tr>${table.headers.map(h => `<th class="text-left font-semibold px-4 py-2 whitespace-nowrap">${h}</th>`).join('')}</tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    ${table.rows.map(row => `
+                        <tr class="hover:bg-gray-50">
+                            ${row.map((cell, i) => `<td class="px-4 py-2 align-top ${i === 0 ? 'font-semibold text-gray-800 whitespace-nowrap' : 'text-gray-700'}">${fmt(escapeHtml(cell), c)}</td>`).join('')}
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
+    `;
+}
+
+// ---------- Speaking ----------
+
+function renderSpeaking() {
+    const colors = [
+        { bg: 'bg-sky-50', text: 'text-sky-600', border: 'border-sky-100', textLight: 'text-sky-500' },
+        { bg: 'bg-indigo-50', text: 'text-indigo-600', border: 'border-indigo-100', textLight: 'text-indigo-500' },
+        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', textLight: 'text-purple-500' },
+        { bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', textLight: 'text-rose-500' }
+    ];
+
+    let html = '';
+
+    theoryData.speaking.forEach((item, index) => {
+        const c = colors[index % colors.length];
+        const structureHtml = item.structure.replace(/\[(.*?)\]/g, `<span class="${c.textLight} ${c.bg} px-1 rounded border border-white">[$1]</span>`);
+
+        html += `
+            <div class="bg-white rounded-xl shadow-sm border ${c.border} overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                <div class="${c.bg} px-5 py-3 border-b ${c.border} flex justify-between items-center">
+                    <span class="text-xs font-bold uppercase tracking-wider ${c.text}">Strategy ${index + 1}</span>
+                    <span class="bg-white ${c.text} text-xs px-2 py-1 rounded shadow-sm font-semibold">${item.part.split(' (')[0]}</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm font-medium text-gray-500 mb-4">${item.part}</p>
+                    <div class="mb-5">
+                        <div class="text-gray-800 font-semibold text-lg leading-snug">${structureHtml}</div>
                     </div>
-                    <div class="mb-4">
-                        <h4 class="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1">Structure</h4>
-                        <p class="text-base font-semibold text-slate-700 bg-slate-50 p-3 rounded border border-slate-100">${item.structure}</p>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-4">
+                        <p class="text-gray-700 italic">"${item.example}"</p>
                     </div>
-                    <div>
-                        <h4 class="text-xs text-slate-400 uppercase tracking-wider font-bold mb-1">Example in Use</h4>
-                        <p class="text-base text-slate-600 italic pl-3 border-l-4 border-indigo-300">"${item.example}"</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                        ${item.translation}
                     </div>
-                `;
-                container.appendChild(card);
-            });
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('speaking-container').innerHTML = html;
+}
+
+// ---------- Quiz engine (shared by all practice tabs) ----------
+
+function setIndices(key, set) {
+    return exercisesData[key].map((q, i) => i).filter(i => set === undefined || exercisesData[key][i].test === set);
+}
+
+function initQuiz(key, onlyIndices, set) {
+    const info = QUIZ_INFO[key];
+    if (info.sets && set === undefined) set = quizzes[key] ? quizzes[key].set : Number(Object.keys(info.sets)[0]);
+
+    const all = exercisesData[key];
+    const indices = onlyIndices || setIndices(key, info.sets ? set : undefined);
+
+    quizzes[key] = {
+        set,
+        questions: indices.map(i => {
+            const q = all[i];
+            // Shuffle multiple-choice options so the answer isn't always first
+            return q.type === 'mc' ? { ...q, options: shuffle(q.options), sourceIndex: i } : { ...q, sourceIndex: i };
+        }),
+        current: 0,
+        answers: {},
+        showSummary: false
+    };
+
+    renderQuizShell(key);
+    showQuestion(key);
+}
+
+window.selectSet = function(key, set) {
+    initQuiz(key, undefined, set);
+};
+
+function renderQuizShell(key) {
+    const info = QUIZ_INFO[key];
+    const c = COLORS[info.color];
+    const quiz = quizzes[key];
+
+    document.getElementById(`content-${key}`).innerHTML = `
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="${c.bg} border-b ${c.border} p-6">
+                <h2 class="text-xl font-bold text-gray-900">${info.title}</h2>
+                <p class="text-sm text-gray-600 mt-2">${info.instructions}</p>
+                ${info.sets ? `
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        ${Object.entries(info.sets).map(([n, label]) => `
+                            <button onclick="selectSet('${key}', ${n})" class="px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${Number(n) === quiz.set ? `${c.solid} text-white border-transparent` : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}">${label}</button>
+                        `).join('')}
+                    </div>
+                ` : ''}
+            </div>
+
+            <div class="p-6">
+                <div class="flex flex-wrap justify-between items-center gap-2 mb-4">
+                    <span class="text-sm font-medium text-gray-500">Question <span id="qnum-${key}">1</span> of <span>${quiz.questions.length}</span></span>
+                    <span id="score-${key}" class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded shadow-sm">Score: 0/${quiz.questions.length}</span>
+                </div>
+
+                <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
+                    <div id="progress-${key}" class="h-1.5 rounded-full ${c.solid} transition-all duration-300" style="width: 0%"></div>
+                </div>
+
+                <div id="dots-${key}" class="flex flex-wrap gap-1.5 mb-6"></div>
+
+                <div id="question-${key}" class="min-h-[200px]"></div>
+
+                <div id="controls-${key}" class="mt-8 flex justify-between items-center border-t pt-6">
+                    <button onclick="prevQuestion('${key}')" id="prev-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Previous</button>
+                    <button onclick="checkAnswer('${key}')" id="check-${key}" class="px-6 py-2 ${c.btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">Check Answer</button>
+                    <button onclick="nextQuestion('${key}')" id="next-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Next</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getScore(quiz) {
+    return Object.values(quiz.answers).filter(a => a.isCorrect).length;
+}
+
+function updateHeader(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const answered = Object.keys(quiz.answers).length;
+
+    document.getElementById(`qnum-${key}`).textContent = quiz.current + 1;
+    document.getElementById(`score-${key}`).textContent = `Score: ${getScore(quiz)}/${total}`;
+    document.getElementById(`progress-${key}`).style.width = `${(answered / total) * 100}%`;
+
+    const c = COLORS[QUIZ_INFO[key].color];
+    document.getElementById(`dots-${key}`).innerHTML = quiz.questions.map((_, i) => {
+        const a = quiz.answers[i];
+        let cls = 'bg-gray-100 text-gray-500 hover:bg-gray-200';
+        if (a) cls = a.isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700';
+        const active = i === quiz.current && !quiz.showSummary ? `ring-2 ${c.ring}` : '';
+        return `<button onclick="goToQuestion('${key}', ${i})" class="w-7 h-7 rounded text-xs font-semibold ${cls} ${active} transition-colors">${i + 1}</button>`;
+    }).join('');
+}
+
+function showQuestion(key) {
+    const quiz = quizzes[key];
+    if (quiz.showSummary) return showSummary(key);
+
+    const index = quiz.current;
+    const total = quiz.questions.length;
+    const q = quiz.questions[index];
+    const answer = quiz.answers[index];
+    const isAnswered = answer !== undefined;
+    const allAnswered = Object.keys(quiz.answers).length === total;
+    const container = document.getElementById(`question-${key}`);
+
+    document.getElementById(`controls-${key}`).classList.remove('hidden');
+    document.getElementById(`prev-${key}`).disabled = index === 0;
+    const btnNext = document.getElementById(`next-${key}`);
+    btnNext.textContent = allAnswered ? 'See results' : 'Next';
+    btnNext.disabled = !allAnswered && index === total - 1;
+
+    const btnCheck = document.getElementById(`check-${key}`);
+    btnCheck.disabled = isAnswered;
+    btnCheck.textContent = isAnswered ? 'Checked' : 'Check Answer';
+    // Multiple choice checks on click, so the button is only needed for typed answers
+    btnCheck.classList.toggle('invisible', q.type === 'mc');
+
+    let body = '';
+    if (q.type === 'mc') body = renderMC(key, q, answer);
+    else if (q.type === 'gap') body = renderGap(key, q, answer);
+    else if (q.type === 'rewrite') body = renderRewrite(key, q, answer);
+    else body = renderKWT(key, q, answer);
+
+    container.innerHTML = `
+        <div class="space-y-6">
+            ${body}
+            ${isAnswered ? renderFeedback(q, answer) : ''}
+        </div>
+    `;
+
+    updateHeader(key);
+
+    if (!isAnswered && q.type !== 'mc') {
+        const input = document.getElementById(`answer-${key}`);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkAnswer(key);
+        });
+        if (!document.getElementById(`content-${key}`).classList.contains('hidden')) input.focus();
+    }
+}
+
+function sentenceWithBlank(sentence, filled, state) {
+    const blank = `<span class="gap-blank ${state || ''}">${filled ? escapeHtml(filled) : '&nbsp;'}</span>`;
+    return sentence.replace('___', blank);
+}
+
+function renderMC(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const filled = isAnswered ? (answer.isCorrect ? q.answer : answer.text) : '';
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    const options = q.options.map((opt, i) => {
+        let cls = 'border-gray-200 bg-white hover:border-gray-400 hover:bg-gray-50 text-gray-800';
+        if (isAnswered) {
+            if (opt === q.answer) cls = 'border-green-400 bg-green-50 text-green-800';
+            else if (opt === answer.text) cls = 'border-red-400 bg-red-50 text-red-800';
+            else cls = 'border-gray-100 bg-white text-gray-400';
         }
+        return `<button onclick="selectOption('${key}', ${i})" ${isAnswered ? 'disabled' : ''} class="px-4 py-3 border-2 rounded-lg text-left font-medium transition-colors ${cls}">${escapeHtml(opt)}</button>`;
+    }).join('');
 
-        // Fisher-Yates Shuffle
-        function shuffle(array) {
-            let currentIndex = array.length, randomIndex;
-            while (currentIndex !== 0) {
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex--;
-                [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-            }
-            return array;
-        }
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${sentenceWithBlank(q.sentence, filled, state)}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">${options}</div>
+    `;
+}
 
-        // Test Logic
-        function loadStats() {
-            const lastScore = localStorage.getItem('u6_last_score');
-            const lastDate = localStorage.getItem('u6_last_date');
+function renderGap(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+    const input = `<input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+        value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="your answer">`;
 
-            if (lastScore && lastDate) {
-                document.getElementById('stats-container').classList.remove('hidden');
-                document.getElementById('last-score').textContent = `Score: ${lastScore}%`;
-                document.getElementById('last-date').textContent = `Taken on: ${new Date(lastDate).toLocaleDateString()}`;
-            }
-        }
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${q.sentence.replace('___', input)}</p>
+        </div>
+    `;
+}
 
-        function startTest() {
-            currentQuestions = shuffle([...questionsData]).slice(0, 30);
-            currentQuestionIndex = 0;
-            score = 0;
+function renderRewrite(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
 
-            document.getElementById('test-intro').classList.add('hidden');
-            document.getElementById('test-results').classList.add('hidden');
-            document.getElementById('test-area').classList.remove('hidden');
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${escapeHtml(q.original)}</p>
+        </div>
 
-            showQuestion();
-        }
+        <div>
+            <p class="text-sm text-gray-500 mb-2">Start with: <span class="inline-block bg-gray-800 text-white font-semibold py-0.5 px-2.5 rounded">${escapeHtml(q.start)}...</span></p>
+            <input type="text" id="answer-${key}" class="input-kt input-wide ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="${escapeHtml(q.start)} ...">
+        </div>
+    `;
+}
 
-        function showQuestion() {
-            const q = currentQuestions[currentQuestionIndex];
-            document.getElementById('question-counter').textContent = `Question ${currentQuestionIndex + 1} / ${currentQuestions.length}`;
+function renderKWT(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
 
-            const progress = ((currentQuestionIndex) / currentQuestions.length) * 100;
-            document.getElementById('progress-bar').style.width = `${progress}%`;
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${q.lead_in}</p>
+        </div>
 
-            const textHtml = q.text.replace('___', '<span class="inline-block w-16 border-b-2 border-slate-400 mx-1"></span>');
-            document.getElementById('question-text').innerHTML = textHtml;
+        <div class="flex justify-center">
+            <span class="inline-block bg-gray-800 text-white font-bold py-1 px-4 rounded shadow-sm tracking-widest text-lg">${q.keyword}</span>
+        </div>
 
-            const optionsContainer = document.getElementById('options-container');
-            optionsContainer.innerHTML = '';
+        <div class="text-lg text-gray-800 leading-loose flex flex-wrap items-center gap-2">
+            <span>${q.before}</span>
+            <input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="(3-6 words)">
+            <span>${q.after}</span>
+        </div>
+    `;
+}
 
-            const shuffledOptions = shuffle([...q.options]);
+function renderFeedback(q, answer) {
+    const correctText = q.type === 'mc' ? q.answer : q.type === 'rewrite' ? q.answers[0] : q.answers.join('  /  ');
 
-            shuffledOptions.forEach(opt => {
-                const btn = document.createElement('button');
-                btn.className = 'option-btn w-full text-left px-6 py-4 rounded-xl font-medium text-slate-700 focus:outline-none';
-                btn.textContent = opt;
-                btn.onclick = () => selectOption(opt, btn);
-                optionsContainer.appendChild(btn);
-            });
+    return `
+        <div class="p-4 rounded-lg ${answer.isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+            <p class="text-sm ${answer.isCorrect ? 'text-green-800' : 'text-red-800'} font-medium flex items-center">
+                ${answer.isCorrect ? ICON_CHECK + ' Correct!' : ICON_CROSS + ' Incorrect.'}
+            </p>
+            ${!answer.isCorrect ? `
+                <p class="mt-2 text-sm text-gray-700">Correct answer: <span class="font-bold text-green-700">${escapeHtml(correctText)}</span></p>
+            ` : ''}
+            ${q.explanation ? `<p class="mt-2 text-sm text-gray-600">${q.explanation}</p>` : ''}
+        </div>
+    `;
+}
 
-            document.getElementById('feedback-container').classList.add('hidden');
-        }
+function recordAnswer(key, text, isCorrect) {
+    const quiz = quizzes[key];
+    quiz.answers[quiz.current] = { text, isCorrect };
+    showQuestion(key);
+}
 
-        function selectOption(selectedOpt, btnElement) {
-            const allBtns = document.querySelectorAll('.option-btn');
-            allBtns.forEach(b => b.disabled = true);
+window.selectOption = function(key, optionIndex) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return;
+    const q = quiz.questions[quiz.current];
+    const choice = q.options[optionIndex];
+    recordAnswer(key, choice, choice === q.answer);
+};
 
-            const q = currentQuestions[currentQuestionIndex];
-            const isCorrect = selectedOpt === q.correctAnswer;
+function isRewriteCorrect(q, userAnswer) {
+    const start = normalize(q.start);
+    let user = normalize(userAnswer);
+    // Accept either the whole sentence or just what comes after the given start
+    if (!user.startsWith(start)) user = `${start} ${user}`;
+    return q.answers.some(a => normalize(a) === user);
+}
 
-            if (isCorrect) {
-                score++;
-                btnElement.classList.add('correct');
-                document.getElementById('feedback-message').textContent = 'Correct!';
-                document.getElementById('feedback-message').className = 'font-bold text-emerald-600 text-lg';
-            } else {
-                btnElement.classList.add('incorrect');
-                allBtns.forEach(b => {
-                    if (b.textContent === q.correctAnswer) b.classList.add('correct');
-                });
-                document.getElementById('feedback-message').textContent = 'Incorrect';
-                document.getElementById('feedback-message').className = 'font-bold text-red-600 text-lg';
-            }
+window.checkAnswer = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return; // Already checked
 
-            document.getElementById('feedback-explanation').innerHTML = `<span class="font-semibold text-slate-800">Rule (${q.type}):</span> ${q.explanation}`;
-            document.getElementById('feedback-container').classList.remove('hidden');
+    const q = quiz.questions[quiz.current];
+    if (q.type === 'mc') return;
 
-            if (currentQuestionIndex === currentQuestions.length - 1) {
-                document.getElementById('next-btn').textContent = 'Finish Test';
-            } else {
-                document.getElementById('next-btn').textContent = 'Next Question';
-            }
-        }
+    const inputEl = document.getElementById(`answer-${key}`);
+    const userAnswer = inputEl.value.trim();
 
-        function nextQuestion() {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < currentQuestions.length) {
-                showQuestion();
-            } else {
-                finishTest();
-            }
-        }
+    if (!userAnswer) {
+        inputEl.classList.remove('shake');
+        void inputEl.offsetWidth;
+        inputEl.classList.add('shake');
+        inputEl.focus();
+        return;
+    }
 
-        function finishTest() {
-            document.getElementById('test-area').classList.add('hidden');
-            document.getElementById('test-results').classList.remove('hidden');
+    const isCorrect = q.type === 'rewrite'
+        ? isRewriteCorrect(q, userAnswer)
+        : q.answers.some(a => normalize(a) === normalize(userAnswer));
+    recordAnswer(key, userAnswer, isCorrect);
+};
 
-            const percentage = Math.round((score / currentQuestions.length) * 100);
-            document.getElementById('final-score-text').textContent = `You scored ${score} out of ${currentQuestions.length} (${percentage}%)`;
+window.prevQuestion = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.current > 0) {
+        quiz.current--;
+        showQuestion(key);
+    }
+};
 
-            let title = "Test Complete!";
-            if(percentage >= 80) title = "Excellent Work! 🏆";
-            else if(percentage >= 60) title = "Good Job! 👍";
-            else title = "Keep Practicing! 📚";
+window.nextQuestion = function(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
 
-            document.getElementById('final-score-title').textContent = title;
+    if (Object.keys(quiz.answers).length === total) {
+        quiz.showSummary = true;
+        showQuestion(key);
+        return;
+    }
+    if (quiz.current < total - 1) {
+        quiz.current++;
+        showQuestion(key);
+    }
+};
 
-            localStorage.setItem('u6_last_score', percentage);
-            localStorage.setItem('u6_last_date', new Date().toISOString());
-            loadStats();
-        }
+window.goToQuestion = function(key, index) {
+    const quiz = quizzes[key];
+    quiz.showSummary = false;
+    quiz.current = index;
+    showQuestion(key);
+};
 
-        function resetTest() {
-            document.getElementById('test-results').classList.add('hidden');
-            document.getElementById('test-intro').classList.remove('hidden');
-        }
+function questionPrompt(q) {
+    if (q.type === 'kwt') return `${q.lead_in} <span class="font-bold">(${q.keyword})</span>`;
+    if (q.type === 'rewrite') return `${escapeHtml(q.original)} <span class="font-bold">(${escapeHtml(q.start)}...)</span>`;
+    return q.sentence.replace('___', '_____');
+}
 
-        // Start
-        init();
+function showSummary(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const score = getScore(quiz);
+    const pct = Math.round((score / total) * 100);
+    const mistakes = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect);
+
+    let message = 'Keep practising — review the theory and try again.';
+    if (pct >= 90) message = 'Excellent! You have mastered this topic.';
+    else if (pct >= 70) message = 'Very good! Just a few points to review.';
+    else if (pct >= 50) message = 'Not bad, but there is room for improvement.';
+
+    document.getElementById(`controls-${key}`).classList.add('hidden');
+    updateHeader(key);
+
+    document.getElementById(`question-${key}`).innerHTML = `
+        <div class="text-center py-6">
+            <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Final score</p>
+            <p class="text-5xl font-bold mt-2 ${pct >= 70 ? 'text-green-600' : pct >= 50 ? 'text-amber-500' : 'text-red-600'}">${score}/${total}</p>
+            <p class="text-gray-600 mt-3">${message}</p>
+        </div>
+
+        ${mistakes.length ? `
+            <div class="mt-4">
+                <h3 class="font-semibold text-gray-800 mb-3">Review your mistakes</h3>
+                <div class="space-y-3">
+                    ${mistakes.map(q => {
+                        const i = quiz.questions.indexOf(q);
+                        const correct = q.type === 'mc' ? q.answer : q.answers[0];
+                        return `
+                            <button onclick="goToQuestion('${key}', ${i})" class="w-full text-left p-3 rounded-lg border border-red-100 bg-red-50 hover:bg-red-100 transition-colors">
+                                <p class="text-sm text-gray-800">${i + 1}. ${questionPrompt(q)}</p>
+                                <p class="text-sm mt-1"><span class="text-red-700 line-through">${escapeHtml(quiz.answers[i].text)}</span> → <span class="text-green-700 font-semibold">${escapeHtml(correct)}</span></p>
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        ` : ''}
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3 border-t pt-6">
+            ${mistakes.length ? `<button onclick="retryMistakes('${key}')" class="px-5 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">Retry mistakes (${mistakes.length})</button>` : ''}
+            <button onclick="restartQuiz('${key}')" class="px-5 py-2 ${COLORS[QUIZ_INFO[key].color].btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm">Restart (shuffled)</button>
+        </div>
+    `;
+}
+
+window.retryMistakes = function(key) {
+    const quiz = quizzes[key];
+    const wrong = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect).map(q => q.sourceIndex);
+    initQuiz(key, wrong, quiz.set);
+};
+
+window.restartQuiz = function(key) {
+    const quiz = quizzes[key];
+    const info = QUIZ_INFO[key];
+    initQuiz(key, shuffle(setIndices(key, info.sets ? quiz.set : undefined)), quiz.set);
+};
     </script>
 </body>
 </html>
