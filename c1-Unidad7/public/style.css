@@ -1,65 +1,88 @@
-/* Custom minimal styles to complement Tailwind */
-
-.nav-btn.active {
-    color: #16a34a; /* brand-600 */
-    background-color: #dcfce7; /* brand-100 */
+.active-tab {
+    border-color: #0284c7; /* sky-600 */
+    color: #0284c7;
 }
 
-/* Smooth reveal for sections */
-.view-section {
-    animation: fadeIn 0.4s ease-out forwards;
+.inactive-tab {
+    border-color: transparent;
+    color: #6b7280; /* gray-500 */
+}
+
+.inactive-tab:hover {
+    border-color: #e5e7eb; /* gray-200 */
+    color: #374151; /* gray-700 */
+}
+
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-/* Quiz option animations */
-.option-btn {
-    transition: all 0.2s ease;
+.input-kt {
+    border: none;
+    border-bottom: 2px solid #d1d5db; /* gray-300 */
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+    text-align: center;
+    transition: all 0.2s;
+    outline: none;
+    min-width: 180px;
+    max-width: 100%;
 }
 
-.option-btn:hover:not(:disabled) {
-    transform: translateX(4px);
-    border-color: #22c55e;
+.input-kt:focus {
+    border-bottom-color: #0284c7; /* sky-600 */
 }
 
-.option-btn.selected {
-    border-color: #16a34a;
-    background-color: #f0fdf4;
+.input-kt.correct {
+    border-bottom-color: #22c55e; /* green-500 */
+    color: #15803d; /* green-700 */
+    background-color: #f0fdf4; /* green-50 */
 }
 
-.option-btn.correct {
-    border-color: #16a34a;
-    background-color: #dcfce7;
-    color: #14532d;
+.input-kt.incorrect {
+    border-bottom-color: #ef4444; /* red-500 */
+    color: #b91c1c; /* red-700 */
+    background-color: #fef2f2; /* red-50 */
 }
 
-.option-btn.incorrect {
-    border-color: #ef4444;
-    background-color: #fef2f2;
-    color: #7f1d1d;
+.gap-blank {
+    display: inline-block;
+    min-width: 4rem;
+    border-bottom: 2px solid #9ca3af; /* gray-400 */
+    margin: 0 0.25rem;
+    text-align: center;
+    font-weight: 600;
 }
 
-.option-btn:disabled {
-    cursor: default;
-    opacity: 0.8;
+.gap-blank.correct {
+    border-bottom-color: #22c55e;
+    color: #15803d;
 }
 
-/* Accordion transition */
-.accordion-content {
-    transition: max-height 0.3s ease-out, padding 0.3s ease;
-    max-height: 0;
-    overflow: hidden;
+.gap-blank.incorrect {
+    border-bottom-color: #ef4444;
+    color: #b91c1c;
 }
 
-.accordion-content.open {
-    max-height: 1000px; /* arbitrary large value */
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(3px); }
+}
+
+.input-kt.input-wide {
+    display: block;
+    width: 100%;
+    text-align: left;
 }

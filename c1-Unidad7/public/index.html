@@ -3,145 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C1 Unit 7: Subordination</title>
-    <!-- Tailwind CSS -->
+    <title>C1 Advanced - Unit 7: Relative Clauses, Participle Clauses & Apposition</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Tailwind Config for Custom Colors -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            500: '#22c55e',
-                            600: '#16a34a',
-                            700: '#15803d',
-                            900: '#14532d',
-                        }
                     }
                 }
             }
         }
     </script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased font-sans min-h-screen flex flex-col">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold text-brand-600 tracking-tight">Cambridge C1</span>
-                    <span class="ml-2 text-sm text-gray-500 hidden sm:block">Unit 7: Subordination</span>
-                </div>
-                <div class="flex space-x-1 sm:space-x-4 items-center" id="nav-menu">
-                    <button data-target="theory-section" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-brand-600 bg-brand-50 transition-colors">Theory</button>
-                    <button data-target="templates-section" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-brand-600 hover:bg-brand-50 transition-colors">Templates</button>
-                    <button data-target="practice-section" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-brand-600 hover:bg-brand-50 transition-colors">Practice Test</button>
-                </div>
-            </div>
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 7</span></h1>
+            <p class="text-gray-500 mt-1">Linking ideas: Relative Clauses · Participle Clauses · Apposition</p>
         </div>
-    </nav>
 
-    <!-- Main Content -->
-    <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
-        
-        <!-- Theory Section -->
-        <section id="theory-section" class="view-section active">
-            <div class="text-center mb-10">
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Subordination</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Master Relative Clauses, Participle Clauses, and Apposition to elevate your English to a C1/C2 level.</p>
-            </div>
-            <div id="theory-container" class="space-y-8">
-                <!-- Theory content injected here by JS -->
-                <div class="flex justify-center items-center h-32">
-                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-600"></div>
-                </div>
-            </div>
-        </section>
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory
+                </button>
+                <button onclick="switchTab('relative')" id="tab-relative" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Relative Clauses
+                </button>
+                <button onclick="switchTab('participle')" id="tab-participle" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Participle Clauses
+                </button>
+                <button onclick="switchTab('apposition')" id="tab-apposition" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Apposition
+                </button>
+                <button onclick="switchTab('book')" id="tab-book" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Complete Advanced
+                </button>
+                <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
+            </nav>
+        </div>
+    </header>
 
-        <!-- Templates Section -->
-        <section id="templates-section" class="view-section hidden">
-            <div class="text-center mb-10">
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Speaking Strategies</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Impress the examiners with these ready-to-use advanced structures.</p>
-            </div>
-            <div id="templates-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Templates injected here by JS -->
-            </div>
-        </section>
-
-        <!-- Practice Test Section -->
-        <section id="practice-section" class="view-section hidden max-w-3xl mx-auto">
-            <div id="test-intro" class="text-center mb-10">
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Practice Test (Use of English)</h1>
-                <p class="text-lg text-gray-600 mb-6">Test your knowledge with 20 randomly selected Keyword Transformation questions.</p>
-                <button id="start-test-btn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform transition hover:-translate-y-1">Start Test</button>
-                
-                <div id="last-score-container" class="mt-8 hidden p-4 bg-white rounded-xl shadow-sm border border-gray-100">
-                    <p class="text-sm text-gray-500">Last Attempt: <span id="last-date" class="font-medium text-gray-700"></span></p>
-                    <p class="text-lg font-bold text-gray-800 mt-1">Score: <span id="last-score" class="text-brand-600"></span></p>
-                </div>
-            </div>
-
-            <div id="test-container" class="hidden bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-50">
-                <div class="flex justify-between items-center mb-6">
-                    <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Question <span id="current-question-num">1</span> of 30</span>
-                    <span id="score-live" class="text-sm font-bold text-brand-600 hidden">Score: 0</span>
-                </div>
-                
-                <div id="kw-container" class="mb-8">
-                    <p id="lead-in-text" class="text-gray-700 italic text-lg mb-6"></p>
-                    <div class="flex items-center gap-3 font-bold mb-6">
-                        <span class="text-sm text-gray-500 uppercase tracking-wider">Keyword:</span>
-                        <span id="keyword-text" class="px-4 py-1 bg-gray-100 border border-gray-200 rounded text-brand-700 text-lg uppercase tracking-widest"></span>
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Linking ideas: Relative Clauses · Participle Clauses · Apposition</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
                     </div>
-                    <div class="flex flex-wrap items-end gap-2 text-lg text-gray-800 bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-inner leading-loose">
-                        <span id="before-gap-text"></span>
-                        <input type="text" id="answer-input" autocomplete="off" class="border-b-2 border-brand-500 bg-transparent focus:outline-none focus:border-brand-700 text-center font-bold px-3 py-1 flex-grow min-w-[200px] text-brand-700" placeholder="Type here...">
-                        <span id="after-gap-text"></span>
-                    </div>
-                    <button id="submit-answer-btn" class="mt-8 w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 rounded-lg transition-colors shadow-sm">Submit Answer</button>
-                </div>
-
-                <div id="explanation-box" class="hidden mb-6 p-4 rounded-lg bg-blue-50 border-l-4 border-blue-500">
-                    <p id="explanation-text" class="text-sm text-blue-800"></p>
-                </div>
-
-                <div class="flex justify-end">
-                    <button id="next-btn" class="hidden bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-lg transition-colors">Next Question</button>
                 </div>
             </div>
-
-            <div id="test-results" class="hidden text-center bg-white p-10 rounded-2xl shadow-xl border border-gray-50">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">Test Completed!</h2>
-                <p class="text-gray-500 mb-8">Here is your final score.</p>
-                
-                <div class="text-6xl font-black text-brand-600 mb-4" id="final-score">0/30</div>
-                <p class="text-lg font-medium text-gray-700 mb-8" id="final-message">Great effort!</p>
-                
-                <button id="restart-test-btn" class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-8 rounded-full transition-colors">Try Again</button>
-            </div>
-
         </section>
 
+        <!-- Practice Tabs (rendered by app.js) -->
+        <section id="content-relative" class="tab-content hidden"></section>
+        <section id="content-participle" class="tab-content hidden"></section>
+        <section id="content-apposition" class="tab-content hidden"></section>
+        <section id="content-book" class="tab-content hidden"></section>
+        <section id="content-transformations" class="tab-content hidden"></section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Use the structures of this unit to sound more C1 in the Speaking exam.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 mt-auto">
-        <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-            &copy; 2026 Cambridge C1 Practice App. Designed for Unit 7.
-        </div>
-    </footer>
 
     <script src="app.js"></script>
 </body>

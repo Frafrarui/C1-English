@@ -3,828 +3,2229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C1 Unit 7: Subordination</title>
-    <!-- Tailwind CSS -->
+    <title>C1 Advanced - Unit 7: Relative Clauses, Participle Clauses & Apposition</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tailwind Config for Custom Colors -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            500: '#22c55e',
-                            600: '#16a34a',
-                            700: '#15803d',
-                            900: '#14532d',
-                        }
                     }
                 }
             }
         }
     </script>
     <style>
-        /* Custom minimal styles to complement Tailwind */
+.active-tab {
+    border-color: #0284c7; /* sky-600 */
+    color: #0284c7;
+}
 
-        .nav-btn.active {
-            color: #16a34a; /* brand-600 */
-            background-color: #dcfce7; /* brand-100 */
-        }
+.inactive-tab {
+    border-color: transparent;
+    color: #6b7280; /* gray-500 */
+}
 
-        /* Smooth reveal for sections */
-        .view-section {
-            animation: fadeIn 0.4s ease-out forwards;
-        }
+.inactive-tab:hover {
+    border-color: #e5e7eb; /* gray-200 */
+    color: #374151; /* gray-700 */
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
 
-        /* Quiz option animations */
-        .option-btn {
-            transition: all 0.2s ease;
-        }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-        .option-btn:hover:not(:disabled) {
-            transform: translateX(4px);
-            border-color: #22c55e;
-        }
+.input-kt {
+    border: none;
+    border-bottom: 2px solid #d1d5db; /* gray-300 */
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+    text-align: center;
+    transition: all 0.2s;
+    outline: none;
+    min-width: 180px;
+    max-width: 100%;
+}
 
-        .option-btn.selected {
-            border-color: #16a34a;
-            background-color: #f0fdf4;
-        }
+.input-kt:focus {
+    border-bottom-color: #0284c7; /* sky-600 */
+}
 
-        .option-btn.correct {
-            border-color: #16a34a;
-            background-color: #dcfce7;
-            color: #14532d;
-        }
+.input-kt.correct {
+    border-bottom-color: #22c55e; /* green-500 */
+    color: #15803d; /* green-700 */
+    background-color: #f0fdf4; /* green-50 */
+}
 
-        .option-btn.incorrect {
-            border-color: #ef4444;
-            background-color: #fef2f2;
-            color: #7f1d1d;
-        }
+.input-kt.incorrect {
+    border-bottom-color: #ef4444; /* red-500 */
+    color: #b91c1c; /* red-700 */
+    background-color: #fef2f2; /* red-50 */
+}
 
-        .option-btn:disabled {
-            cursor: default;
-            opacity: 0.8;
-        }
+.gap-blank {
+    display: inline-block;
+    min-width: 4rem;
+    border-bottom: 2px solid #9ca3af; /* gray-400 */
+    margin: 0 0.25rem;
+    text-align: center;
+    font-weight: 600;
+}
 
-        /* Accordion transition */
-        .accordion-content {
-            transition: max-height 0.3s ease-out, padding 0.3s ease;
-            max-height: 0;
-            overflow: hidden;
-        }
+.gap-blank.correct {
+    border-bottom-color: #22c55e;
+    color: #15803d;
+}
 
-        .accordion-content.open {
-            max-height: 1000px; /* arbitrary large value */
-        }
+.gap-blank.incorrect {
+    border-bottom-color: #ef4444;
+    color: #b91c1c;
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(3px); }
+}
+
+.input-kt.input-wide {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased font-sans min-h-screen flex flex-col">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold text-brand-600 tracking-tight">Cambridge C1</span>
-                    <span class="ml-2 text-sm text-gray-500 hidden sm:block">Unit 7: Subordination</span>
-                </div>
-                <div class="flex space-x-1 sm:space-x-4 items-center" id="nav-menu">
-                    <button data-target="theory-section" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-brand-600 bg-brand-50 transition-colors">Theory</button>
-                    <button data-target="templates-section" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-brand-600 hover:bg-brand-50 transition-colors">Templates</button>
-                    <button data-target="practice-section" class="nav-btn px-3 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-brand-600 hover:bg-brand-50 transition-colors">Practice Test</button>
-                </div>
-            </div>
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 7</span></h1>
+            <p class="text-gray-500 mt-1">Linking ideas: Relative Clauses · Participle Clauses · Apposition</p>
         </div>
-    </nav>
 
-    <!-- Main Content -->
-    <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory
+                </button>
+                <button onclick="switchTab('relative')" id="tab-relative" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Relative Clauses
+                </button>
+                <button onclick="switchTab('participle')" id="tab-participle" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Participle Clauses
+                </button>
+                <button onclick="switchTab('apposition')" id="tab-apposition" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Apposition
+                </button>
+                <button onclick="switchTab('book')" id="tab-book" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Complete Advanced
+                </button>
+                <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
+            </nav>
+        </div>
+    </header>
 
-        <!-- Theory Section -->
-        <section id="theory-section" class="view-section active">
-            <div class="text-center mb-10">
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Subordination</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Master Relative Clauses, Participle Clauses, and Apposition to elevate your English to a C1/C2 level.</p>
-            </div>
-            <div id="theory-container" class="space-y-8">
-                <!-- Theory content injected here by JS -->
-                <div class="flex justify-center items-center h-32">
-                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-600"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Templates Section -->
-        <section id="templates-section" class="view-section hidden">
-            <div class="text-center mb-10">
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Speaking Strategies</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Impress the examiners with these ready-to-use advanced structures.</p>
-            </div>
-            <div id="templates-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Templates injected here by JS -->
-            </div>
-        </section>
-
-        <!-- Practice Test Section -->
-        <section id="practice-section" class="view-section hidden max-w-3xl mx-auto">
-            <div id="test-intro" class="text-center mb-10">
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Practice Test (Use of English)</h1>
-                <p class="text-lg text-gray-600 mb-6">Test your knowledge with 20 randomly selected Keyword Transformation questions.</p>
-                <button id="start-test-btn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform transition hover:-translate-y-1">Start Test</button>
-
-                <div id="last-score-container" class="mt-8 hidden p-4 bg-white rounded-xl shadow-sm border border-gray-100">
-                    <p class="text-sm text-gray-500">Last Attempt: <span id="last-date" class="font-medium text-gray-700"></span></p>
-                    <p class="text-lg font-bold text-gray-800 mt-1">Score: <span id="last-score" class="text-brand-600"></span></p>
-                </div>
-            </div>
-
-            <div id="test-container" class="hidden bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-50">
-                <div class="flex justify-between items-center mb-6">
-                    <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Question <span id="current-question-num">1</span> of 30</span>
-                    <span id="score-live" class="text-sm font-bold text-brand-600 hidden">Score: 0</span>
-                </div>
-
-                <div id="kw-container" class="mb-8">
-                    <p id="lead-in-text" class="text-gray-700 italic text-lg mb-6"></p>
-                    <div class="flex items-center gap-3 font-bold mb-6">
-                        <span class="text-sm text-gray-500 uppercase tracking-wider">Keyword:</span>
-                        <span id="keyword-text" class="px-4 py-1 bg-gray-100 border border-gray-200 rounded text-brand-700 text-lg uppercase tracking-widest"></span>
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Linking ideas: Relative Clauses · Participle Clauses · Apposition</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
                     </div>
-                    <div class="flex flex-wrap items-end gap-2 text-lg text-gray-800 bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-inner leading-loose">
-                        <span id="before-gap-text"></span>
-                        <input type="text" id="answer-input" autocomplete="off" class="border-b-2 border-brand-500 bg-transparent focus:outline-none focus:border-brand-700 text-center font-bold px-3 py-1 flex-grow min-w-[200px] text-brand-700" placeholder="Type here...">
-                        <span id="after-gap-text"></span>
-                    </div>
-                    <button id="submit-answer-btn" class="mt-8 w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 rounded-lg transition-colors shadow-sm">Submit Answer</button>
-                </div>
-
-                <div id="explanation-box" class="hidden mb-6 p-4 rounded-lg bg-blue-50 border-l-4 border-blue-500">
-                    <p id="explanation-text" class="text-sm text-blue-800"></p>
-                </div>
-
-                <div class="flex justify-end">
-                    <button id="next-btn" class="hidden bg-gray-900 hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-lg transition-colors">Next Question</button>
                 </div>
             </div>
-
-            <div id="test-results" class="hidden text-center bg-white p-10 rounded-2xl shadow-xl border border-gray-50">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2">Test Completed!</h2>
-                <p class="text-gray-500 mb-8">Here is your final score.</p>
-
-                <div class="text-6xl font-black text-brand-600 mb-4" id="final-score">0/30</div>
-                <p class="text-lg font-medium text-gray-700 mb-8" id="final-message">Great effort!</p>
-
-                <button id="restart-test-btn" class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-8 rounded-full transition-colors">Try Again</button>
-            </div>
-
         </section>
 
+        <!-- Practice Tabs (rendered by app.js) -->
+        <section id="content-relative" class="tab-content hidden"></section>
+        <section id="content-participle" class="tab-content hidden"></section>
+        <section id="content-apposition" class="tab-content hidden"></section>
+        <section id="content-book" class="tab-content hidden"></section>
+        <section id="content-transformations" class="tab-content hidden"></section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Use the structures of this unit to sound more C1 in the Speaking exam.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-gray-200 mt-auto">
-        <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-            &copy; 2026 Cambridge C1 Practice App. Designed for Unit 7.
-        </div>
-    </footer>
 
     <script>
         // Data embedded directly so this file works standalone (no server needed)
-        const theoryData = {
-  "relative_clauses": {
-    "title": "Relative Clauses",
-    "description": "Relative clauses provide extra information about a noun in the main clause. They are introduced by relative pronouns.",
-    "pronouns": [
-      { "word": "which", "usage": "something" },
-      { "word": "that", "usage": "something / someone (only in defining clauses)" },
-      { "word": "who", "usage": "someone" },
-      { "word": "whom", "usage": "someone (formal, object of the verb)" },
-      { "word": "whose", "usage": "possessions" },
-      { "word": "when", "usage": "time" },
-      { "word": "where", "usage": "place" },
-      { "word": "why", "usage": "reason" }
-    ],
-    "prepositions_whom": {
-      "title": "Prepositions + whom",
-      "details": "When a preposition is needed before a relative pronoun referring to a person, 'whom' is used in formal English.",
-      "examples": [
-        "Peter on whom I rely a lot.",
-        "Peter with whom I spoke yesterday.",
-        "Peter to whom I sent the email."
-      ],
-      "key_difference": "Formal: 'Peter with whom I spoke yesterday' vs Informal: 'Peter who I spoke with yesterday'."
-    },
-    "defining": {
-      "title": "Defining Relative Clauses",
-      "details": "They add essential information to identify the noun. Without them, the sentence doesn't make full sense. No commas are used. The relative pronoun can be omitted if it acts as the Direct Object. 'That' can replace who/which.",
-      "examples": [
-        "The film (that/which) I saw yesterday was great."
-      ]
-    },
-    "non_defining": {
-      "title": "Non-defining Relative Clauses",
-      "details": "They add extra, non-essential information. The sentence still makes sense without it. Commas must be used. 'That' CANNOT be used, and the relative pronoun cannot be omitted.",
-      "examples": [
-        "Avatar, which is my favourite film, was great."
-      ]
-    }
-  },
-  "participle_clauses": {
-    "title": "Participle Clauses",
-    "description": "Participle clauses are a way of making sentences more concise. They can be used to emphasize a piece of information or show sequence.",
-    "forms": [
-      { "form": "V-ing", "name": "Present Participle" },
-      { "form": "V-ed / 3rd column", "name": "Past Participle" },
-      { "form": "Having + V-ed", "name": "Perfect Participle" }
-    ],
-    "usages": [
+        window.UNIT_DATA = {
+  "teoria": {
+    "sections": [
       {
-        "title": "Usage 1: Instead of Relative Clauses",
-        "details": "The relative pronoun and the verb 'to be' are removed.",
-        "examples": [
-          "Original: The man who is working as a teacher...",
-          "Participle: The man working as a teacher..."
-        ]
-      },
-      {
-        "title": "Usage 2: Instead of Conjunctions",
-        "details": "Participle clauses can replace conjunctions like because, so, as, while, and, when, once, after, if.",
-        "examples": [
+        "id": "relative",
+        "title": "A) RELATIVE CLAUSES",
+        "subtitle": "Who, which, that, whose, whom, where, when, why · defining vs non-defining",
+        "color": "sky",
+        "blocks": [
           {
-            "conjunction": "Because / So (Reason)",
-            "original": "Because I wanted to pass the test, I studied a lot.",
-            "participle": "Wanting to pass the test, I studied a lot."
+            "heading": "Pronombres relativos",
+            "rule": "Introducen una oración que da información sobre un sustantivo.",
+            "table": {
+              "headers": [
+                "Pronombre",
+                "Se refiere a",
+                "Ejemplo"
+              ],
+              "rows": [
+                [
+                  "who",
+                  "personas",
+                  "She's the woman **who** bought our car."
+                ],
+                [
+                  "which",
+                  "cosas / animales",
+                  "They've got a car **which** runs on electricity."
+                ],
+                [
+                  "that",
+                  "personas o cosas (solo defining)",
+                  "The film **that** I saw was great."
+                ],
+                [
+                  "whose",
+                  "posesión (de quien / cuyo)",
+                  "She's the woman **whose** son bought our car."
+                ],
+                [
+                  "whom",
+                  "personas, objeto (formal, tras preposición)",
+                  "The person **to whom** this letter is addressed..."
+                ],
+                [
+                  "where",
+                  "lugares (= in / at / to which)",
+                  "This is the town **where** I grew up."
+                ],
+                [
+                  "when",
+                  "tiempo",
+                  "Sunday is a day **when** many people relax."
+                ],
+                [
+                  "why",
+                  "razones (the reason why)",
+                  "There's no reason **why** you should worry."
+                ]
+              ]
+            }
           },
           {
-            "conjunction": "As / While (Simultaneous actions)",
-            "original": "While I was driving home, I saw an accident.",
-            "participle": "Driving home, I saw an accident."
+            "heading": "DEFINING relative clauses (especificativas)",
+            "formula": "sustantivo + WHO / WHICH / THAT + ...  (sin comas)",
+            "rule": "Dicen DE QUÉ persona o cosa hablamos: son esenciales. Sin comas. Se puede usar that. Si el relativo es OBJETO (detrás hay otro sujeto), se puede omitir; when y why también se pueden omitir.",
+            "examples": [
+              "The couple **who brought me up** were not my real parents.",
+              "The people **(who) I know best** are my close friends.",
+              "The DVD **(that) you gave me** is fantastic.",
+              "2009 was the year **(when) she left university**."
+            ],
+            "wrong": [
+              {
+                "bad": "The man called you is my boss.",
+                "good": "The man who called you is my boss. (who es sujeto: no se omite)"
+              }
+            ]
           },
           {
-            "conjunction": "And (Sequential actions)",
-            "original": "I opened the door and saw the cat.",
-            "participle": "I opened the door, seeing the cat."
+            "heading": "NON-DEFINING relative clauses (explicativas)",
+            "formula": "sustantivo + , WHO / WHICH + ... ,  (entre comas)",
+            "rule": "Añaden información EXTRA: la frase se entiende sin ellas. Siempre con comas. Nunca that. El relativo nunca se omite.",
+            "examples": [
+              "The hotel, **which has a hundred bedrooms**, is on the outskirts of the city.",
+              "My brother, **who lives in Paris**, is coming to visit."
+            ],
+            "compare": [
+              {
+                "label": "Defining · ¿cuál?",
+                "text": "My sister **who lives in Rome** is a doctor. (tengo varias hermanas)"
+              },
+              {
+                "label": "Non-defining · info extra",
+                "text": "My sister, **who lives in Rome**, is a doctor. (solo tengo una)"
+              }
+            ],
+            "wrong": [
+              {
+                "bad": "Avatar, that is my favourite film, was great.",
+                "good": "Avatar, which is my favourite film, was great."
+              }
+            ]
           },
           {
-            "conjunction": "When / Once / After (Sequence)",
-            "original": "After I had applied for the job, I waited for a call.",
-            "participle": "Having applied for the job, I waited for a call."
+            "heading": "Comment clauses: , WHICH + comentario sobre toda la frase",
+            "formula": "oración completa + , WHICH + comentario",
+            "rule": "Which puede referirse a TODA la oración anterior para comentarla.",
+            "examples": [
+              "It had been raining for 24 hours, **which is why** I didn't go out.",
+              "We were stuck in traffic for ages, **which I found really frustrating**.",
+              "He refused to apologise, **which made things worse**."
+            ],
+            "wrong": [
+              {
+                "bad": "He didn't call me, what really annoyed me.",
+                "good": "He didn't call me, which really annoyed me."
+              }
+            ]
           },
           {
-            "conjunction": "If (Conditionals)",
-            "original": "If you study this in detail, you will find it interesting.",
-            "participle": "Studied in detail, you will find it interesting."
+            "heading": "Preposición + WHOM / WHICH (formal) vs preposición al final (informal)",
+            "formulas": [
+              "formal → PREPOSICIÓN + WHOM / WHICH",
+              "informal → WHO / THAT ... + PREPOSICIÓN"
+            ],
+            "compare": [
+              {
+                "label": "Formal (Writing)",
+                "text": "Peter is the colleague **on whom** I rely most. · The hotel **in which** we stayed was lovely."
+              },
+              {
+                "label": "Informal (Speaking)",
+                "text": "Peter is the colleague **(who) I rely on** most. · The hotel **(that) we stayed in** was lovely."
+              }
+            ],
+            "rule": "Cuantificador + of whom / of which: some of whom, most of which, none of whom, the best of which...",
+            "examples": [
+              "He has three sons, **all of whom** are doctors.",
+              "She exhibited some photos, **the best of which** was taken in South Africa."
+            ],
+            "wrong": [
+              {
+                "bad": "The man to who I spoke was helpful.",
+                "good": "The man to whom I spoke was helpful. (tras preposición: whom)"
+              }
+            ]
           }
         ]
       },
       {
-        "title": "Usage 3: After the object of certain verbs",
-        "details": "Used after verbs of perception (see, hear, watch, notice, find) followed by an object.",
-        "examples": [
-          "I found Peter cheating in the exam.",
-          "I heard someone knocking at the door."
+        "id": "participle",
+        "title": "B) PARTICIPLE CLAUSES",
+        "subtitle": "V-ing · V-ed · Having + participio para unir ideas de forma concisa",
+        "color": "indigo",
+        "blocks": [
+          {
+            "heading": "Las tres formas",
+            "table": {
+              "headers": [
+                "Forma",
+                "Significado",
+                "Ejemplo"
+              ],
+              "rows": [
+                [
+                  "V-ing (present participle)",
+                  "activo · al mismo tiempo / justo después / razón",
+                  "**Concentrating** on my work, I didn't realise how late it was."
+                ],
+                [
+                  "Having + participio (perfect)",
+                  "activo · ANTES de la acción principal / razón",
+                  "**Having finished** his speech, he left the room."
+                ],
+                [
+                  "V-ed (past participle)",
+                  "PASIVO",
+                  "**Seen** from a distance, the Pyramids look quite small."
+                ]
+              ]
+            },
+            "tip": "Regla de oro: el sujeto del participio tiene que ser el MISMO que el de la oración principal."
+          },
+          {
+            "heading": "¡El sujeto tiene que ser el mismo! (dangling participles)",
+            "rule": "Si el sujeto no coincide, la frase dice algo absurdo. Es uno de los errores más penalizados en Writing.",
+            "wrong": [
+              {
+                "bad": "Walking down the street, the rain started.",
+                "good": "Walking down the street, I got caught in the rain. (yo caminaba)"
+              },
+              {
+                "bad": "Having graduated from university, it is easier to find a job.",
+                "good": "Having graduated from university, young people find it easier to get a job."
+              },
+              {
+                "bad": "Studied in detail, you will find this topic fascinating.",
+                "good": "Studied in detail, this topic proves fascinating. (el tema es lo estudiado)"
+              }
+            ]
+          },
+          {
+            "heading": "Sustituir conjunciones: because, as, while, when, after, if...",
+            "formulas": [
+              "(Not) V-ING ..., oración principal",
+              "HAVING + participio ..., oración principal",
+              "V-ED ..., oración principal (pasivo)"
+            ],
+            "compare": [
+              {
+                "label": "Because / as (razón)",
+                "text": "Because I wanted to pass... → **Wanting** to pass the test, I studied a lot."
+              },
+              {
+                "label": "While (simultáneo)",
+                "text": "While I was driving home... → **Driving** home, I saw an accident."
+              },
+              {
+                "label": "And (secuencia inmediata)",
+                "text": "I opened the door and saw a parcel. → **Opening** the door, I saw a parcel."
+              },
+              {
+                "label": "After (anterior)",
+                "text": "After I had applied... → **Having applied** for the job, I waited for a call."
+              },
+              {
+                "label": "If (pasivo)",
+                "text": "If it is eaten in small quantities... → **Eaten** in small quantities, chocolate is good for you."
+              },
+              {
+                "label": "Negativa",
+                "text": "Because I didn't know what to do... → **Not knowing** what to do, I called my mother."
+              }
+            ]
+          },
+          {
+            "heading": "Con conjunciones y preposiciones",
+            "formula": "after / before / while / when / since / instead of / without + V-ING",
+            "rule": "Podemos mantener la conjunción para que el significado quede claro. En este caso la oración de participio puede ir al final.",
+            "examples": [
+              "**After watching** that film, I was too scared to go to bed.",
+              "She became interested in art **while travelling** in Italy.",
+              "You can take the train **instead of catching** the bus."
+            ]
+          },
+          {
+            "heading": "En lugar de relative clauses (reduced relative clauses)",
+            "formulas": [
+              "sustantivo + V-ING (= who / which + verbo activo)",
+              "sustantivo + V-ED (= who / which + be + participio)"
+            ],
+            "rule": "Quitamos el relativo (y be). V-ing si el significado es activo; V-ed si es pasivo.",
+            "examples": [
+              "There are three pictures **hanging on the wall**. (= which are hanging)",
+              "I noticed a man **wearing a suit** and **carrying a large box**.",
+              "Anyone **caught shoplifting** will be prosecuted. (= who is caught)",
+              "I've brought you some jam **made by my mother**. (= which was made)"
+            ],
+            "tip": "V-ing en lugar de una relativa funciona con estados o acciones en curso, no con una acción única y terminada: The man who won the race (✗ the man winning the race)."
+          },
+          {
+            "heading": "Tras verbos de percepción: see / hear / watch / notice / find + objeto + V-ing",
+            "formula": "VERBO DE PERCEPCIÓN + OBJETO + V-ING",
+            "examples": [
+              "I **found Peter cheating** in the exam.",
+              "I **heard someone knocking** at the door.",
+              "We **watched children opening** the lock gates."
+            ]
+          }
         ]
+      },
+      {
+        "id": "apposition",
+        "title": "C) APPOSITION",
+        "subtitle": "Dos sustantivos juntos: el segundo identifica o describe al primero",
+        "color": "purple",
+        "blocks": [
+          {
+            "heading": "¿Qué es la aposición?",
+            "formula": "SUSTANTIVO + , SUSTANTIVO / FRASE NOMINAL , + resto",
+            "rule": "Es como una relativa non-defining sin who / which + be. Muy útil en Writing para dar información de forma concisa.",
+            "compare": [
+              {
+                "label": "Relative clause",
+                "text": "Madrid, **which is the capital of Spain**, is very populous."
+              },
+              {
+                "label": "Apposition",
+                "text": "Madrid, **the capital of Spain**, is very populous."
+              }
+            ]
+          },
+          {
+            "heading": "Defining (sin comas) vs non-defining (con comas)",
+            "compare": [
+              {
+                "label": "Sin comas · dice quién",
+                "text": "Her friend **Klaus** is a computer engineer. (tiene varios amigos)"
+              },
+              {
+                "label": "Con comas · info extra",
+                "text": "I'm going to see Bev Jackson, **my maths tutor**, this afternoon."
+              }
+            ],
+            "examples": [
+              "Bob Marley, **a Jamaican singer**, recorded the best-selling reggae album of all time.",
+              "The novelist **Zadie Smith** gave a talk."
+            ]
+          }
+        ]
+      }
+    ],
+    "speaking": [
+      {
+        "part": "Part 2 (Describing the pictures)",
+        "structure": "In the first picture we can see a [person] [V-ing]..., whereas the second shows a [person] who is [V-ing]...",
+        "example": "In the first picture we can see a girl working as a waitress, whereas the second shows a boy who is studying for an exam.",
+        "translation": "En la primera foto vemos a [persona] [haciendo algo], mientras que la segunda muestra a [persona] que está [haciendo algo]."
+      },
+      {
+        "part": "Part 3 / 4 (Giving reasons)",
+        "structure": "Wanting to [goal], people nowadays tend to [action].",
+        "example": "Wanting to save money, people nowadays tend to buy second-hand clothes.",
+        "translation": "Queriendo [objetivo], la gente hoy en día tiende a [acción]."
+      },
+      {
+        "part": "Part 4 (Sequencing ideas)",
+        "structure": "Having [past participle], [people] find it much easier to [action].",
+        "example": "Having graduated from university, young people usually find it much easier to get a well-paid job.",
+        "translation": "Tras haber [participio], a [la gente] le resulta mucho más fácil [acción]."
+      },
+      {
+        "part": "Part 4 (Commenting on a whole idea)",
+        "structure": "[Fact], which is why / which means that [consequence].",
+        "example": "Many people work from home now, which means that city centres are much quieter.",
+        "translation": "[Hecho], razón por la cual / lo que significa que [consecuencia]."
+      },
+      {
+        "part": "Part 3 (Formal evaluation)",
+        "structure": "[Option], seen from a [economic / social] point of view, would be [adjective].",
+        "example": "The second option, seen from an economic point of view, would be far more sustainable.",
+        "translation": "[Opción], vista desde un punto de vista [económico / social], sería [adjetivo]."
       }
     ]
   },
-  "apposition": {
-    "title": "Apposition",
-    "description": "Apposition occurs when two noun phrases are placed side by side, with one identifying or renaming the other. It's like a reduced non-defining relative clause where the relative pronoun and the verb 'to be' are omitted.",
-    "examples": [
-      "Original: My friends, who are called Peter and Mike, live in London.",
-      "Apposition: My friends, Peter and Mike, live in London."
-    ]
-  },
-  "cambridge_strategies": {
-    "title": "Cambridge Speaking Strategy (Templates)",
-    "description": "Ready-to-use structures that will impress examiners in your C1/C2 speaking tests.",
-    "templates": [
+  "ejercicios": {
+    "relative": [
       {
-        "part": "Part 2 (Pictures)",
-        "structure": "In the 1st photograph it can be seen a [noun] [V-ing]... while in the 2nd photo it can be seen a [noun] who is [V-ing]...",
-        "example": "In the 1st photograph it can be seen a girl working as a waitress, while in the 2nd photo it can be seen a boy who is studying."
+        "type": "kwt",
+        "lead_in": "The person with whom I spoke yesterday was very helpful.",
+        "keyword": "WHO",
+        "before": "The person",
+        "after": "yesterday was very helpful.",
+        "answers": [
+          "who I spoke with",
+          "who I spoke to",
+          "that I spoke to",
+          "that I spoke with"
+        ],
+        "explanation": "Informal: who + preposición al final."
       },
       {
-        "part": "Part 3/4 (Giving reasons with Participles)",
-        "structure": "Wanting to [goal], people nowadays tend to [action].",
-        "example": "Wanting to save money, people nowadays tend to buy second-hand clothes."
+        "type": "kwt",
+        "lead_in": "My brother lives in Paris and he is coming to visit.",
+        "keyword": "WHO",
+        "before": "My brother,",
+        "after": ", is coming to visit.",
+        "answers": [
+          "who lives in Paris"
+        ],
+        "explanation": "Non-defining: información extra entre comas."
       },
       {
-        "part": "Part 4 (Sequencing ideas / Past experience)",
-        "structure": "Having [past participle of action 1], it is much easier to [action 2].",
-        "example": "Having graduated from university, it is much easier to find a well-paid job."
+        "type": "kwt",
+        "lead_in": "The hotel where we stayed was lovely.",
+        "keyword": "WHICH",
+        "before": "The hotel",
+        "after": "was lovely.",
+        "answers": [
+          "at which we stayed",
+          "in which we stayed"
+        ],
+        "explanation": "Where = preposición + which."
       },
       {
-        "part": "Conditionals (Advanced structures)",
-        "structure": "[V-ed / 3rd form] in detail, [subject] can realize that...",
-        "example": "Studied in detail, we can realize that climate change is a pressing issue."
+        "type": "kwt",
+        "lead_in": "The committee to whom we presented our proposal approved it.",
+        "keyword": "WHICH",
+        "before": "The committee",
+        "after": "approved it.",
+        "answers": [
+          "to which we presented our proposal"
+        ],
+        "explanation": "Defining (sin comas): to which para una institución."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Avatar was great and it is my favourite film.",
+        "keyword": "WHICH",
+        "before": "Avatar,",
+        "after": ", was great.",
+        "answers": [
+          "which is my favourite film"
+        ],
+        "explanation": "Non-defining con which (nunca that)."
+      },
+      {
+        "type": "mc",
+        "sentence": "The man ___ son bought our car lives next door.",
+        "options": [
+          "whose",
+          "who",
+          "whom",
+          "which"
+        ],
+        "answer": "whose",
+        "explanation": "Whose = posesión."
+      },
+      {
+        "type": "mc",
+        "sentence": "My car, ___ is seven years old, has done 200,000 km.",
+        "options": [
+          "which",
+          "that",
+          "what",
+          "who"
+        ],
+        "answer": "which",
+        "explanation": "Non-defining: which, nunca that."
+      },
+      {
+        "type": "mc",
+        "sentence": "The person to ___ this letter is addressed lives in Athens.",
+        "options": [
+          "whom",
+          "who",
+          "which",
+          "that"
+        ],
+        "answer": "whom",
+        "explanation": "Preposición + whom (personas)."
+      },
+      {
+        "type": "mc",
+        "sentence": "It had been raining for hours, ___ is why I didn't go out.",
+        "options": [
+          "which",
+          "what",
+          "that",
+          "it"
+        ],
+        "answer": "which",
+        "explanation": "Comment clause: which se refiere a toda la frase."
+      },
+      {
+        "type": "mc",
+        "sentence": "He has three sons, all of ___ are doctors.",
+        "options": [
+          "whom",
+          "who",
+          "them",
+          "which"
+        ],
+        "answer": "whom",
+        "explanation": "Cuantificador + of whom."
+      },
+      {
+        "type": "mc",
+        "sentence": "She showed us some photos, the best of ___ was taken in Kenya.",
+        "options": [
+          "which",
+          "them",
+          "what",
+          "that"
+        ],
+        "answer": "which",
+        "explanation": "The best of which."
+      },
+      {
+        "type": "mc",
+        "sentence": "That's the reason ___ I'm so disappointed.",
+        "options": [
+          "why",
+          "which",
+          "for that",
+          "what"
+        ],
+        "answer": "why",
+        "explanation": "The reason why."
+      },
+      {
+        "type": "mc",
+        "sentence": "Which sentence is correct?",
+        "options": [
+          "The man who called you is my boss.",
+          "The man called you is my boss.",
+          "The man, that called you, is my boss.",
+          "The man which called you is my boss."
+        ],
+        "answer": "The man who called you is my boss.",
+        "explanation": "Who es sujeto: no se puede omitir."
+      },
+      {
+        "type": "mc",
+        "sentence": "My sister, ___ lives in Rome, is a doctor. (I only have one sister)",
+        "options": [
+          "who",
+          "that",
+          "whose",
+          "-"
+        ],
+        "answer": "who",
+        "explanation": "Non-defining (solo una hermana): who entre comas."
+      },
+      {
+        "type": "gap",
+        "sentence": "We're going back to the hotel ___ we stayed last summer.",
+        "answers": [
+          "where"
+        ],
+        "explanation": "Where = lugar (the hotel where we stayed)."
+      },
+      {
+        "type": "gap",
+        "sentence": "2009 was the year ___ she left university.",
+        "answers": [
+          "when",
+          "in which",
+          "that"
+        ],
+        "explanation": "When (o in which / that) para tiempo."
+      },
+      {
+        "type": "gap",
+        "sentence": "We were stuck in traffic for ages, ___ I found really frustrating.",
+        "answers": [
+          "which"
+        ],
+        "explanation": "Comment clause con which."
+      },
+      {
+        "type": "gap",
+        "sentence": "The village in ___ they live is in the middle of nowhere.",
+        "answers": [
+          "which"
+        ],
+        "explanation": "Preposición + which (nunca 'in that')."
+      },
+      {
+        "type": "mc",
+        "sentence": "The colleague ___ I rely most is Peter.",
+        "options": [
+          "on whom",
+          "on who",
+          "whom",
+          "on which"
+        ],
+        "answer": "on whom",
+        "explanation": "Rely ON + whom (formal)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I met two students, neither of ___ spoke English.",
+        "options": [
+          "whom",
+          "them",
+          "who",
+          "which"
+        ],
+        "answer": "whom",
+        "explanation": "Neither of whom."
+      }
+    ],
+    "participle": [
+      {
+        "type": "kwt",
+        "lead_in": "Because I wanted to pass the test, I studied a lot.",
+        "keyword": "WANTING",
+        "before": "",
+        "after": "the test, I studied a lot.",
+        "answers": [
+          "Wanting to pass"
+        ],
+        "explanation": "V-ing = because (mismo sujeto)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "After he had finished the project, he took a long holiday.",
+        "keyword": "HAVING",
+        "before": "",
+        "after": ", he took a long holiday.",
+        "answers": [
+          "Having finished the project"
+        ],
+        "explanation": "Having + participio: acción anterior."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The building that was destroyed in the fire is being rebuilt.",
+        "keyword": "DESTROYED",
+        "before": "The building",
+        "after": "is being rebuilt.",
+        "answers": [
+          "destroyed in the fire"
+        ],
+        "explanation": "V-ed (pasivo) en lugar de 'that was destroyed'."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "If it is used correctly, this software can save a lot of time.",
+        "keyword": "USED",
+        "before": "",
+        "after": ", this software can save a lot of time.",
+        "answers": [
+          "Used correctly",
+          "If used correctly"
+        ],
+        "explanation": "V-ed (pasivo) = if it is used."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "While she was walking down the street, she found a wallet.",
+        "keyword": "WALKING",
+        "before": "",
+        "after": ", she found a wallet.",
+        "answers": [
+          "Walking down the street",
+          "While walking down the street"
+        ],
+        "explanation": "V-ing = while + continuo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I noticed that Peter was cheating in the exam.",
+        "keyword": "CHEATING",
+        "before": "I noticed",
+        "after": "in the exam.",
+        "answers": [
+          "Peter cheating"
+        ],
+        "explanation": "Verbo de percepción + objeto + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Because she didn't have enough money, she couldn't buy the tickets.",
+        "keyword": "HAVING",
+        "before": "",
+        "after": ", she couldn't buy the tickets.",
+        "answers": [
+          "Not having enough money"
+        ],
+        "explanation": "Negativa: Not + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Anyone who wants to participate must sign the form.",
+        "keyword": "WANTING",
+        "before": "Anyone",
+        "after": "must sign the form.",
+        "answers": [
+          "wanting to participate"
+        ],
+        "explanation": "Reduced relative activa: V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I opened the letter and realised it was from the university.",
+        "keyword": "OPENING",
+        "before": "",
+        "after": ", I realised it was from the university.",
+        "answers": [
+          "Opening the letter"
+        ],
+        "explanation": "V-ing para la primera de dos acciones seguidas."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Because I didn't know what to do, I called my mother.",
+        "keyword": "NOT",
+        "before": "",
+        "after": "what to do, I called my mother.",
+        "answers": [
+          "Not knowing"
+        ],
+        "explanation": "Not + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "People who live near the airport complain about the noise.",
+        "keyword": "LIVING",
+        "before": "People",
+        "after": "complain about the noise.",
+        "answers": [
+          "living near the airport"
+        ],
+        "explanation": "Reduced relative activa (estado)."
+      },
+      {
+        "type": "mc",
+        "sentence": "We came out of the theatre ___ what the play had been about.",
+        "options": [
+          "wondering",
+          "wondered",
+          "having wondered"
+        ],
+        "answer": "wondering",
+        "explanation": "Acción simultánea → V-ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "We'd seen a play ___ on a contemporary novel.",
+        "options": [
+          "based",
+          "having based",
+          "basing"
+        ],
+        "answer": "based",
+        "explanation": "Pasivo (que está basada) → V-ed."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ the novel, I'm now curious to see how they made it into a play.",
+        "options": [
+          "Having read",
+          "Reading",
+          "Read"
+        ],
+        "answer": "Having read",
+        "explanation": "Acción anterior → Having + participio."
+      },
+      {
+        "type": "mc",
+        "sentence": "It was the first play ___ by this young director.",
+        "options": [
+          "written",
+          "having been written",
+          "writing"
+        ],
+        "answer": "written",
+        "explanation": "Reduced relative pasiva → V-ed."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'd read a review in a magazine ___ in modern drama.",
+        "options": [
+          "specialising",
+          "specialised",
+          "having specialised"
+        ],
+        "answer": "specialising",
+        "explanation": "Activo (la revista se especializa) → V-ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ in 1889, the Eiffel Tower is now a symbol of Paris.",
+        "options": [
+          "Built",
+          "Building",
+          "Having built"
+        ],
+        "answer": "Built",
+        "explanation": "Pasivo → V-ed."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ our map at home, we got lost.",
+        "options": [
+          "Having left",
+          "Leaving",
+          "Left"
+        ],
+        "answer": "Having left",
+        "explanation": "Acción anterior que explica la consecuencia."
+      },
+      {
+        "type": "mc",
+        "sentence": "Which sentence is correct?",
+        "options": [
+          "Walking down the street, I got caught in the rain.",
+          "Walking down the street, the rain started.",
+          "Walked down the street, I got caught in the rain.",
+          "Having walking down the street, it started to rain."
+        ],
+        "answer": "Walking down the street, I got caught in the rain.",
+        "explanation": "El sujeto del participio (I) = sujeto principal."
+      },
+      {
+        "type": "mc",
+        "sentence": "Anyone ___ shoplifting will be prosecuted.",
+        "options": [
+          "caught",
+          "catching",
+          "having caught"
+        ],
+        "answer": "caught",
+        "explanation": "Pasivo: who is caught → caught."
+      }
+    ],
+    "apposition": [
+      {
+        "type": "kwt",
+        "lead_in": "My boss, who is a very strict woman, demanded the report by 5 p.m.",
+        "keyword": "STRICT",
+        "before": "My boss,",
+        "after": ", demanded the report by 5 p.m.",
+        "answers": [
+          "a very strict woman"
+        ],
+        "explanation": "Aposición: quitamos 'who is'."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Madrid, which is the capital of Spain, is very populous.",
+        "keyword": "CAPITAL",
+        "before": "Madrid,",
+        "after": ", is very populous.",
+        "answers": [
+          "the capital of Spain"
+        ],
+        "explanation": "Aposición."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The student whose bag was stolen reported it to the police.",
+        "keyword": "HAD",
+        "before": "The student",
+        "after": "reported it to the police.",
+        "answers": [
+          "who had their bag stolen",
+          "who had his bag stolen",
+          "who had her bag stolen"
+        ],
+        "explanation": "Have something done (experiencia)."
+      },
+      {
+        "type": "mc",
+        "sentence": "I'm going to see Bev Jackson___ this afternoon.",
+        "options": [
+          ", my maths tutor,",
+          " my maths tutor",
+          ", who my maths tutor,",
+          ", that is my maths tutor,"
+        ],
+        "answer": ", my maths tutor,",
+        "explanation": "Aposición non-defining entre comas."
+      },
+      {
+        "type": "mc",
+        "sentence": "Her friend ___ is a computer engineer. (she has several friends)",
+        "options": [
+          "Klaus",
+          ", Klaus,",
+          "who Klaus",
+          "that Klaus"
+        ],
+        "answer": "Klaus",
+        "explanation": "Defining: sin comas (dice cuál de sus amigos)."
+      },
+      {
+        "type": "mc",
+        "sentence": "Bob Marley, ___, recorded the best-selling reggae album of all time.",
+        "options": [
+          "a Jamaican singer",
+          "who a Jamaican singer",
+          "that was a Jamaican singer",
+          "which was a Jamaican singer"
+        ],
+        "answer": "a Jamaican singer",
+        "explanation": "Aposición: frase nominal entre comas."
+      },
+      {
+        "type": "gap",
+        "sentence": "The Louvre, ___ most visited museum in the world, is in Paris. (1 word)",
+        "answers": [
+          "the"
+        ],
+        "explanation": "Aposición con artículo: the most visited museum."
+      },
+      {
+        "type": "gap",
+        "sentence": "My grandmother, ___ former nurse, still gives the best health advice. (1 word)",
+        "answers": [
+          "a"
+        ],
+        "explanation": "Aposición: a former nurse."
+      },
+      {
+        "type": "mc",
+        "sentence": "Which sentence uses apposition correctly?",
+        "options": [
+          "Shakespeare, the famous playwright, was born in 1564.",
+          "Shakespeare, that famous playwright was born in 1564.",
+          "Shakespeare the famous playwright, was born in 1564.",
+          "Shakespeare, was the famous playwright, born in 1564."
+        ],
+        "answer": "Shakespeare, the famous playwright, was born in 1564.",
+        "explanation": "Aposición entre DOS comas."
+      },
+      {
+        "type": "mc",
+        "sentence": "The novelist ___ gave a talk at our school. (there are many novelists)",
+        "options": [
+          "Zadie Smith",
+          "Zadie Smith,",
+          ", Zadie Smith,",
+          "who Zadie Smith"
+        ],
+        "answer": "Zadie Smith",
+        "explanation": "Defining: sin comas."
+      }
+    ],
+    "book": [
+      {
+        "type": "gap",
+        "sentence": "That's the house ___ won an award for outstanding design.",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "Book ex.3: relativo sujeto (cosa)."
+      },
+      {
+        "type": "gap",
+        "sentence": "That's the house ___ I'd buy if I had enough money.",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "Book ex.3: relativo objeto (se puede omitir)."
+      },
+      {
+        "type": "gap",
+        "sentence": "What's the name of that hotel ___ Mike recommended?",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "Book ex.3: relativo objeto."
+      },
+      {
+        "type": "gap",
+        "sentence": "What's the name of that hotel ___ we celebrated your birthday?",
+        "answers": [
+          "where",
+          "at which",
+          "in which"
+        ],
+        "explanation": "Book ex.3: lugar → where."
+      },
+      {
+        "type": "gap",
+        "sentence": "Which is the season ___ has the best weather?",
+        "answers": [
+          "that",
+          "which"
+        ],
+        "explanation": "Book ex.3: relativo sujeto."
+      },
+      {
+        "type": "gap",
+        "sentence": "Which is the season ___ most tourists come here?",
+        "answers": [
+          "when",
+          "in which"
+        ],
+        "explanation": "Book ex.3: tiempo → when."
+      },
+      {
+        "type": "gap",
+        "sentence": "Is it Pete or Jayden ___ said he couldn't come to the meeting?",
+        "answers": [
+          "who",
+          "that"
+        ],
+        "explanation": "Book ex.3: relativo sujeto (persona)."
+      },
+      {
+        "type": "gap",
+        "sentence": "Is it Pete or Jayden ___ Ariana's going on holiday with?",
+        "answers": [
+          "who",
+          "that",
+          "whom"
+        ],
+        "explanation": "Book ex.3: relativo objeto + preposición al final."
+      },
+      {
+        "type": "rewrite",
+        "original": "We walked along the path by the canal. We watched children. They were opening and closing the lock gates to allow boats to pass through.",
+        "start": "Walking",
+        "answers": [
+          "Walking along the path by the canal, we watched children opening and closing the lock gates to allow boats to pass through.",
+          "Walking along the path by the canal we watched children opening and closing the lock gates to allow boats to pass through."
+        ],
+        "explanation": "Book ex.2: V-ing (simultáneo) + verbo de percepción + objeto + V-ing."
+      },
+      {
+        "type": "rewrite",
+        "original": "The police officer referred to written notes and described how she had heard someone. This person was screaming at the top of their voice.",
+        "start": "Referring",
+        "answers": [
+          "Referring to written notes, the police officer described how she had heard someone screaming at the top of their voice."
+        ],
+        "explanation": "Book ex.2: V-ing + heard someone screaming."
+      },
+      {
+        "type": "rewrite",
+        "original": "Before Jeff moved to Barcelona, he lived near Houston in Texas. He worked in a school there. He taught English to students from other countries.",
+        "start": "Before moving",
+        "answers": [
+          "Before moving to Barcelona, Jeff lived near Houston in Texas, where he worked in a school teaching English to students from other countries.",
+          "Before moving to Barcelona, Jeff lived near Houston in Texas, where he worked in a school, teaching English to students from other countries."
+        ],
+        "explanation": "Book ex.2: before + V-ing, where..., V-ing."
+      },
+      {
+        "type": "rewrite",
+        "original": "The Eiffel Tower was built in 1889. It has dominated the Paris skyline for over a century. During this period it has been repainted 19 times.",
+        "start": "Built in 1889",
+        "answers": [
+          "Built in 1889, the Eiffel Tower has dominated the Paris skyline for over a century, during which it has been repainted 19 times.",
+          "Built in 1889, the Eiffel Tower has dominated the Paris skyline for over a century, during which time it has been repainted 19 times."
+        ],
+        "explanation": "Book ex.2: V-ed (pasivo) + during which."
+      },
+      {
+        "type": "rewrite",
+        "original": "Bob Marley was a Jamaican singer. He recorded the best-selling reggae album of all time. His full name was Robert Nesta Marley.",
+        "start": "Bob Marley",
+        "answers": [
+          "Bob Marley, a Jamaican singer whose full name was Robert Nesta Marley, recorded the best-selling reggae album of all time.",
+          "Bob Marley, whose full name was Robert Nesta Marley, was a Jamaican singer who recorded the best-selling reggae album of all time."
+        ],
+        "explanation": "Book ex.2: aposición + whose."
+      },
+      {
+        "type": "mc",
+        "sentence": "Concentrating on my work, I didn't realise ___ late it was.",
+        "options": [
+          "how",
+          "what",
+          "which"
+        ],
+        "answer": "how",
+        "explanation": "Book: V-ing (simultáneo) — how late."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ from a distance, the Pyramids look quite small.",
+        "options": [
+          "Seen",
+          "Seeing",
+          "Having seen"
+        ],
+        "answer": "Seen",
+        "explanation": "Book: V-ed = pasivo (las pirámides son vistas)."
+      },
+      {
+        "type": "mc",
+        "sentence": "___ in small quantities, chocolate is good for you.",
+        "options": [
+          "Eaten",
+          "Eating",
+          "Having eaten"
+        ],
+        "answer": "Eaten",
+        "explanation": "Book: V-ed = pasivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "She became interested in art while ___ in Italy.",
+        "options": [
+          "travelling",
+          "travelled",
+          "she travelling"
+        ],
+        "answer": "travelling",
+        "explanation": "Book: conjunción + V-ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "I noticed a man ___ a suit and carrying a large box.",
+        "options": [
+          "wearing",
+          "worn",
+          "who wearing"
+        ],
+        "answer": "wearing",
+        "explanation": "Book: reduced relative activa."
+      },
+      {
+        "type": "mc",
+        "sentence": "I've brought you a jar of jam ___ by my mother.",
+        "options": [
+          "made",
+          "making",
+          "having made"
+        ],
+        "answer": "made",
+        "explanation": "Book: reduced relative pasiva."
+      },
+      {
+        "type": "mc",
+        "sentence": "We were stuck in traffic for ages, ___ I found really frustrating.",
+        "options": [
+          "which",
+          "what",
+          "that"
+        ],
+        "answer": "which",
+        "explanation": "Book: comment clause."
+      }
+    ],
+    "transformations": [
+      {
+        "type": "kwt",
+        "lead_in": "Because I didn't know anybody at the party, I left early.",
+        "keyword": "KNOWING",
+        "before": "",
+        "after": ", I left early.",
+        "answers": [
+          "Not knowing anybody at the party",
+          "Not knowing anyone at the party"
+        ],
+        "explanation": "Not + V-ing (razón)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "After she had read the report, she called the manager.",
+        "keyword": "HAVING",
+        "before": "",
+        "after": ", she called the manager.",
+        "answers": [
+          "Having read the report"
+        ],
+        "explanation": "Having + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "If you look at it from a distance, the castle looks tiny.",
+        "keyword": "SEEN",
+        "before": "",
+        "after": ", the castle looks tiny.",
+        "answers": [
+          "Seen from a distance"
+        ],
+        "explanation": "V-ed: el castillo es visto."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The man who is standing by the door is my uncle.",
+        "keyword": "STANDING",
+        "before": "The man",
+        "after": "is my uncle.",
+        "answers": [
+          "standing by the door"
+        ],
+        "explanation": "Reduced relative activa."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The paintings which were stolen last year have been found.",
+        "keyword": "STOLEN",
+        "before": "The paintings",
+        "after": "have been found.",
+        "answers": [
+          "stolen last year"
+        ],
+        "explanation": "Reduced relative pasiva."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "He has three sisters and they are all teachers.",
+        "keyword": "WHOM",
+        "before": "He has three sisters,",
+        "after": "are teachers.",
+        "answers": [
+          "all of whom"
+        ],
+        "explanation": "All of whom (cuantificador + of whom)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I've got lots of books, but I haven't read most of them.",
+        "keyword": "WHICH",
+        "before": "I've got lots of books,",
+        "after": "I haven't read.",
+        "answers": [
+          "most of which"
+        ],
+        "explanation": "Most of which."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "This is the colleague; I rely on her more than anyone.",
+        "keyword": "WHOM",
+        "before": "This is the colleague",
+        "after": "more than anyone.",
+        "answers": [
+          "on whom I rely"
+        ],
+        "explanation": "Preposición + whom."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The flight was delayed for six hours and this was really annoying.",
+        "keyword": "WHICH",
+        "before": "The flight was delayed for six hours,",
+        "after": "annoying.",
+        "answers": [
+          "which was really"
+        ],
+        "explanation": "Comment clause."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Do you know the name of the woman? Her car was stolen.",
+        "keyword": "WHOSE",
+        "before": "Do you know the name of the woman",
+        "after": "stolen?",
+        "answers": [
+          "whose car was"
+        ],
+        "explanation": "Whose = posesión."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I don't know why she resigned.",
+        "keyword": "REASON",
+        "before": "I don't know",
+        "after": "resigned.",
+        "answers": [
+          "the reason why she",
+          "the reason she"
+        ],
+        "explanation": "The reason (why)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "My cousin is a famous chef and he is opening a restaurant.",
+        "keyword": "CHEF",
+        "before": "My cousin,",
+        "after": ", is opening a restaurant.",
+        "answers": [
+          "a famous chef"
+        ],
+        "explanation": "Aposición."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "While I was waiting for the bus, I met an old friend.",
+        "keyword": "WAITING",
+        "before": "",
+        "after": ", I met an old friend.",
+        "answers": [
+          "While waiting for the bus",
+          "Waiting for the bus"
+        ],
+        "explanation": "(While) + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Anyone who is caught cheating in the exam will be expelled.",
+        "keyword": "CAUGHT",
+        "before": "Anyone",
+        "after": "will be expelled.",
+        "answers": [
+          "caught cheating in the exam"
+        ],
+        "explanation": "Reduced relative pasiva."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "I heard someone; they were shouting outside the house.",
+        "keyword": "SHOUTING",
+        "before": "I heard",
+        "after": "the house.",
+        "answers": [
+          "someone shouting outside"
+        ],
+        "explanation": "Percepción + objeto + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Since she had lived in Japan, she spoke fluent Japanese.",
+        "keyword": "HAVING",
+        "before": "",
+        "after": ", she spoke fluent Japanese.",
+        "answers": [
+          "Having lived in Japan"
+        ],
+        "explanation": "Having + participio = razón."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "The village is in the mountains and my grandparents live there.",
+        "keyword": "WHERE",
+        "before": "The village",
+        "after": "is in the mountains.",
+        "answers": [
+          "where my grandparents live"
+        ],
+        "explanation": "Where (lugar)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Many people applied for the job; none of them had experience.",
+        "keyword": "WHOM",
+        "before": "Many people applied for the job,",
+        "after": "had experience.",
+        "answers": [
+          "none of whom"
+        ],
+        "explanation": "None of whom."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "Instead of taking the bus, she walked to work.",
+        "keyword": "RATHER",
+        "before": "",
+        "after": ", she walked to work.",
+        "answers": [
+          "Rather than taking the bus"
+        ],
+        "explanation": "Rather than + V-ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "There are three pictures that hang on the wall.",
+        "keyword": "HANGING",
+        "before": "There are three pictures",
+        "after": ".",
+        "answers": [
+          "hanging on the wall"
+        ],
+        "explanation": "Reduced relative activa (estado)."
       }
     ]
   }
 };
+    </script>
+    <script>
+// State
+let theoryData = null;
+let exercisesData = null;
+const quizzes = {};
 
-        const questionsData = [
-  {
-    "id": 1,
-    "leadIn": "Because I wanted to pass the test, I studied a lot.",
-    "keyword": "WANTING",
-    "beforeGap": "",
-    "afterGap": "the test, I studied a lot.",
-    "acceptableAnswers": ["Wanting to pass"],
-    "explanation": "We use V-ing (Present Participle) to replace 'because' when the subject is the same."
-  },
-  {
-    "id": 2,
-    "leadIn": "The person with whom I spoke yesterday was very helpful.",
-    "keyword": "WHO",
-    "beforeGap": "The person",
-    "afterGap": "yesterday was very helpful.",
-    "acceptableAnswers": ["who I spoke with", "who I spoke to"],
-    "explanation": "In informal/standard English, we can use 'who' and put the preposition ('with/to') at the end of the relative clause."
-  },
-  {
-    "id": 3,
-    "leadIn": "My brother lives in Paris and he is coming to visit.",
-    "keyword": "WHO",
-    "beforeGap": "My brother,",
-    "afterGap": ", is coming to visit.",
-    "acceptableAnswers": ["who lives in Paris"],
-    "explanation": "This is a non-defining relative clause, which adds extra information and needs commas."
-  },
-  {
-    "id": 4,
-    "leadIn": "After he had finished the project, he took a long holiday.",
-    "keyword": "HAVING",
-    "beforeGap": "",
-    "afterGap": ", he took a long holiday.",
-    "acceptableAnswers": ["Having finished the project"],
-    "explanation": "'Having + V-ed' (Perfect Participle) emphasizes that the first action was completely finished before the second started."
-  },
-  {
-    "id": 5,
-    "leadIn": "The building that was destroyed in the fire is being rebuilt.",
-    "keyword": "DESTROYED",
-    "beforeGap": "The building",
-    "afterGap": "is being rebuilt.",
-    "acceptableAnswers": ["destroyed in the fire"],
-    "explanation": "We drop 'that was' and keep the V-ed (Past Participle) 'destroyed' because it has a passive meaning."
-  },
-  {
-    "id": 6,
-    "leadIn": "If it is used correctly, this software can save a lot of time.",
-    "keyword": "USED",
-    "beforeGap": "",
-    "afterGap": ", this software can save a lot of time.",
-    "acceptableAnswers": ["Used correctly"],
-    "explanation": "We use V-ed (Past Participle) to replace passive conditional clauses ('If it is used' -> 'Used')."
-  },
-  {
-    "id": 7,
-    "leadIn": "While she was walking down the street, she found a wallet.",
-    "keyword": "WALKING",
-    "beforeGap": "",
-    "afterGap": ", she found a wallet.",
-    "acceptableAnswers": ["Walking down the street"],
-    "explanation": "V-ing (Present Participle) can replace 'while' + continuous tenses for simultaneous actions."
-  },
-  {
-    "id": 8,
-    "leadIn": "I noticed that Peter was cheating in the exam.",
-    "keyword": "CHEATING",
-    "beforeGap": "I noticed",
-    "afterGap": "in the exam.",
-    "acceptableAnswers": ["Peter cheating"],
-    "explanation": "After verbs of perception (notice, see, hear), we use object + V-ing to describe an ongoing action."
-  },
-  {
-    "id": 9,
-    "leadIn": "The hotel where we stayed was lovely.",
-    "keyword": "WHICH",
-    "beforeGap": "The hotel",
-    "afterGap": "was lovely.",
-    "acceptableAnswers": ["at which we stayed", "in which we stayed"],
-    "explanation": "We can replace 'where' with preposition + 'which' (at which, in which)."
-  },
-  {
-    "id": 10,
-    "leadIn": "Because she didn't have enough money, she couldn't buy the tickets.",
-    "keyword": "HAVING",
-    "beforeGap": "",
-    "afterGap": ", she couldn't buy the tickets.",
-    "acceptableAnswers": ["Not having enough money"],
-    "explanation": "To make a participle clause negative, we put 'not' before the participle ('Not having')."
-  },
-  {
-    "id": 11,
-    "leadIn": "My boss, who is a very strict woman, demanded the report by 5 PM.",
-    "keyword": "STRICT",
-    "beforeGap": "My boss,",
-    "afterGap": ", demanded the report by 5 PM.",
-    "acceptableAnswers": ["a very strict woman"],
-    "explanation": "This is an apposition. We can remove 'who is' to simply rename the noun phrase."
-  },
-  {
-    "id": 12,
-    "leadIn": "Anyone who wants to participate must sign the form.",
-    "keyword": "WANTING",
-    "beforeGap": "Anyone",
-    "afterGap": "must sign the form.",
-    "acceptableAnswers": ["wanting to participate"],
-    "explanation": "We omit 'who' and change the active verb 'wants' to the V-ing form 'wanting'."
-  },
-  {
-    "id": 13,
-    "leadIn": "I opened the letter and realized it was from the university.",
-    "keyword": "OPENING",
-    "beforeGap": "",
-    "afterGap": ", I realized it was from the university.",
-    "acceptableAnswers": ["Opening the letter"],
-    "explanation": "For two short actions happening one right after the other, we can use V-ing (Present Participle) for the first action."
-  },
-  {
-    "id": 14,
-    "leadIn": "The car that I bought yesterday is very fast.",
-    "keyword": "WHICH",
-    "beforeGap": "The car",
-    "afterGap": "is very fast.",
-    "acceptableAnswers": ["which I bought yesterday"],
-    "explanation": "'Which' can be used instead of 'that' for things in defining relative clauses."
-  },
-  {
-    "id": 15,
-    "leadIn": "The student whose bag was stolen reported it to the police.",
-    "keyword": "HAD",
-    "beforeGap": "The student",
-    "afterGap": "reported it to the police.",
-    "acceptableAnswers": ["who had their bag stolen", "who had his bag stolen", "who had her bag stolen"],
-    "explanation": "Instead of 'whose bag was stolen', we can use 'who had their bag stolen' (causative structure)."
-  },
-  {
-    "id": 16,
-    "leadIn": "The committee to whom we presented our proposal approved it.",
-    "keyword": "WHICH",
-    "beforeGap": "The committee,",
-    "afterGap": ", approved it.",
-    "acceptableAnswers": ["to which we presented our proposal"],
-    "explanation": "When referring to a collective noun like 'committee' as a single entity, we can use 'to which' in formal contexts."
-  },
-  {
-    "id": 17,
-    "leadIn": "Because I didn't know what to do, I called my mother.",
-    "keyword": "NOT",
-    "beforeGap": "",
-    "afterGap": "what to do, I called my mother.",
-    "acceptableAnswers": ["Not knowing"],
-    "explanation": "A negative participle clause starts with 'Not' + V-ing."
-  },
-  {
-    "id": 18,
-    "leadIn": "Madrid, which is the capital of Spain, is very populous.",
-    "keyword": "CAPITAL",
-    "beforeGap": "Madrid,",
-    "afterGap": ", is very populous.",
-    "acceptableAnswers": ["the capital of Spain"],
-    "explanation": "Using apposition by removing 'which is' creates a more concise sentence."
-  },
-  {
-    "id": 19,
-    "leadIn": "The athletes who failed the drug test were disqualified.",
-    "keyword": "FAILING",
-    "beforeGap": "The athletes",
-    "afterGap": "were disqualified.",
-    "acceptableAnswers": ["failing the drug test"],
-    "explanation": "We can replace the defining relative clause with a present participle phrase if the verb is active."
-  },
-  {
-    "id": 20,
-    "leadIn": "Avatar was great and it is my favourite film.",
-    "keyword": "WHICH",
-    "beforeGap": "Avatar,",
-    "afterGap": ", was great.",
-    "acceptableAnswers": ["which is my favourite film"],
-    "explanation": "We use a non-defining relative clause (with commas) to add extra information about a specific noun."
-  }
-];
+const TABS = ['theory', 'relative', 'participle', 'apposition', 'book', 'transformations', 'speaking'];
 
-        // ---- Navigation Logic ----
-        const navBtns = document.querySelectorAll('.nav-btn');
-        const sections = document.querySelectorAll('.view-section');
+const QUIZ_INFO = {
+    relative: {
+        title: 'Relative Clauses',
+        instructions: 'Choose the correct option, write the missing word or complete the sentence using the word given.',
+        color: 'sky'
+    },
+    participle: {
+        title: 'Participle Clauses',
+        instructions: 'Choose the correct participle or complete the sentence using the word given. Remember: the subject must be the same!',
+        color: 'indigo'
+    },
+    apposition: {
+        title: 'Apposition',
+        instructions: 'Choose the correct option or complete the sentence.',
+        color: 'purple'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 7: relative and participle clauses; apposition). Combine sentences, add relative pronouns and choose participles.',
+        color: 'rose'
+    },
+    transformations: {
+        title: 'Keyword Transformation (Part 4)',
+        instructions: 'Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.',
+        color: 'sky'
+    }
+};
 
-        navBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Update buttons
-                navBtns.forEach(b => {
-                    b.classList.remove('active', 'text-brand-600', 'bg-brand-50');
-                    b.classList.add('text-gray-500');
-                });
-                btn.classList.remove('text-gray-500');
-                btn.classList.add('active', 'text-brand-600', 'bg-brand-50');
+const COLORS = {
+    sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900', btn: 'bg-sky-600 hover:bg-sky-700', ring: 'ring-sky-500', solid: 'bg-sky-600', mark: 'bg-sky-100 text-sky-900', chip: 'bg-white text-sky-800 border-sky-200' },
+    indigo: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900', btn: 'bg-indigo-600 hover:bg-indigo-700', ring: 'ring-indigo-500', solid: 'bg-indigo-600', mark: 'bg-indigo-100 text-indigo-900', chip: 'bg-white text-indigo-800 border-indigo-200' },
+    purple: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900', btn: 'bg-purple-600 hover:bg-purple-700', ring: 'ring-purple-500', solid: 'bg-purple-600', mark: 'bg-purple-100 text-purple-900', chip: 'bg-white text-purple-800 border-purple-200' },
+    rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', icon: 'text-rose-900', btn: 'bg-rose-600 hover:bg-rose-700', ring: 'ring-rose-500', solid: 'bg-rose-600', mark: 'bg-rose-100 text-rose-900', chip: 'bg-white text-rose-800 border-rose-200' }
+};
 
-                // Update sections
-                const targetId = btn.getAttribute('data-target');
-                sections.forEach(sec => {
-                    sec.classList.add('hidden');
-                    if (sec.id === targetId) {
-                        sec.classList.remove('hidden');
-                    }
-                });
-            });
-        });
+const ICON_CHECK = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+const ICON_CROSS = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
 
-        // ---- Render Theory ----
-        function renderTheory() {
-            const container = document.getElementById('theory-container');
-            container.innerHTML = ''; // clear loading spinner
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+});
 
-            // Helper to create an accordion item
-            const createAccordion = (title, contentHTML) => {
-                return `
-                    <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm mb-4">
-                        <button class="w-full px-6 py-4 text-left font-semibold text-lg text-gray-800 bg-gray-50 hover:bg-gray-100 focus:outline-none flex justify-between items-center transition-colors" onclick="toggleAccordion(this)">
-                            ${title}
-                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="accordion-content px-6 bg-white">
-                            <div class="py-4">
-                                ${contentHTML}
-                            </div>
-                        </div>
-                    </div>
-                `;
-            };
+window.switchTab = function(tabId) {
+    TABS.forEach(id => {
+        document.getElementById(`content-${id}`).classList.remove('block');
+        document.getElementById(`content-${id}`).classList.add('hidden');
 
-            // 1. Relative Clauses
-            let rcHTML = `<p class="mb-4 text-gray-600">${theoryData.relative_clauses.description}</p>`;
-            rcHTML += `<h4 class="font-bold text-gray-800 mb-2">Pronouns:</h4><ul class="list-disc pl-5 mb-4 text-gray-600">`;
-            theoryData.relative_clauses.pronouns.forEach(p => {
-                rcHTML += `<li><strong>${p.word}</strong>: ${p.usage}</li>`;
-            });
-            rcHTML += `</ul>`;
+        const btn = document.getElementById(`tab-${id}`);
+        btn.classList.remove('active-tab');
+        btn.classList.add('inactive-tab');
+    });
 
-            rcHTML += `<h4 class="font-bold text-gray-800 mb-2">${theoryData.relative_clauses.prepositions_whom.title}</h4>`;
-            rcHTML += `<p class="text-sm text-gray-600 mb-2">${theoryData.relative_clauses.prepositions_whom.details}</p>`;
-            rcHTML += `<div class="bg-blue-50 p-3 rounded text-sm mb-4"><em>${theoryData.relative_clauses.prepositions_whom.key_difference}</em></div>`;
+    document.getElementById(`content-${tabId}`).classList.remove('hidden');
+    document.getElementById(`content-${tabId}`).classList.add('block');
 
-            rcHTML += `<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">`;
-            rcHTML += `<div class="p-4 border border-gray-100 rounded-lg bg-gray-50"><h5 class="font-bold text-brand-700">Defining</h5><p class="text-sm mt-1 mb-2">${theoryData.relative_clauses.defining.details}</p><p class="italic text-sm text-gray-500">Ex: ${theoryData.relative_clauses.defining.examples[0]}</p></div>`;
-            rcHTML += `<div class="p-4 border border-gray-100 rounded-lg bg-gray-50"><h5 class="font-bold text-brand-700">Non-defining</h5><p class="text-sm mt-1 mb-2">${theoryData.relative_clauses.non_defining.details}</p><p class="italic text-sm text-gray-500">Ex: ${theoryData.relative_clauses.non_defining.examples[0]}</p></div>`;
-            rcHTML += `</div>`;
+    const activeBtn = document.getElementById(`tab-${tabId}`);
+    activeBtn.classList.remove('inactive-tab');
+    activeBtn.classList.add('active-tab');
 
-            container.innerHTML += createAccordion(theoryData.relative_clauses.title, rcHTML);
+    if (quizzes[tabId]) focusInput(tabId);
+};
 
-            // 2. Participle Clauses
-            let pcHTML = `<p class="mb-4 text-gray-600">${theoryData.participle_clauses.description}</p>`;
-            pcHTML += `<div class="flex space-x-4 mb-6">`;
-            theoryData.participle_clauses.forms.forEach(f => {
-                pcHTML += `<span class="px-3 py-1 bg-brand-100 text-brand-800 rounded-full text-sm font-medium">${f.form}</span>`;
-            });
-            pcHTML += `</div>`;
-
-            theoryData.participle_clauses.usages.forEach(u => {
-                pcHTML += `<h4 class="font-bold text-gray-800 mb-1 mt-4">${u.title}</h4>`;
-                pcHTML += `<p class="text-sm text-gray-600 mb-2">${u.details}</p>`;
-                pcHTML += `<div class="bg-gray-50 p-3 rounded text-sm space-y-2 border-l-2 border-brand-500">`;
-                u.examples.forEach(ex => {
-                    if(typeof ex === 'string') {
-                        pcHTML += `<p>${ex}</p>`;
-                    } else {
-                        pcHTML += `<div><strong>${ex.conjunction}</strong><br><span class="text-gray-500 line-through">${ex.original}</span><br><span class="text-brand-700 font-medium">${ex.participle}</span></div>`;
-                    }
-                });
-                pcHTML += `</div>`;
-            });
-
-            container.innerHTML += createAccordion(theoryData.participle_clauses.title, pcHTML);
-
-            // 3. Apposition
-            let appHTML = `<p class="mb-4 text-gray-600">${theoryData.apposition.description}</p>`;
-            appHTML += `<div class="bg-gray-50 p-4 rounded-lg border-l-2 border-brand-500 text-sm">`;
-            theoryData.apposition.examples.forEach(ex => {
-                if(ex.startsWith('Original')) {
-                    appHTML += `<p class="text-gray-500 line-through mb-1">${ex}</p>`;
-                } else {
-                    appHTML += `<p class="text-brand-700 font-medium text-base">${ex}</p>`;
-                }
-            });
-            appHTML += `</div>`;
-
-            container.innerHTML += createAccordion(theoryData.apposition.title, appHTML);
+async function loadData() {
+    try {
+        // Unidad7.html embeds the data so it works without a server
+        if (window.UNIT_DATA) {
+            theoryData = window.UNIT_DATA.teoria;
+            exercisesData = window.UNIT_DATA.ejercicios;
+        } else {
+            const [theoryRes, exercisesRes] = await Promise.all([
+                fetch('/api/teoria'),
+                fetch('/api/ejercicios')
+            ]);
+            theoryData = await theoryRes.json();
+            exercisesData = await exercisesRes.json();
         }
 
-        // Export toggle function to global scope for inline onclick
-        window.toggleAccordion = function(btn) {
-            const content = btn.nextElementSibling;
-            const icon = btn.querySelector('svg');
-            if (content.classList.contains('open')) {
-                content.classList.remove('open');
-                content.style.paddingTop = '0px';
-                content.style.paddingBottom = '0px';
-                icon.classList.remove('rotate-180');
-            } else {
-                content.classList.add('open');
-                content.style.paddingTop = '1rem';
-                content.style.paddingBottom = '1rem';
-                icon.classList.add('rotate-180');
-            }
-        };
-
-        // ---- Render Templates ----
-        function renderTemplates() {
-            const container = document.getElementById('templates-container');
-            if(!theoryData || !theoryData.cambridge_strategies) return;
-
-            theoryData.cambridge_strategies.templates.forEach(t => {
-                const card = `
-                    <div class="bg-white border border-brand-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                        <span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded mb-3 uppercase tracking-wider">${t.part}</span>
-                        <p class="text-lg font-semibold text-gray-900 mb-3 leading-snug">"${t.structure}"</p>
-                        <div class="mt-4 pt-4 border-t border-gray-100">
-                            <span class="text-xs font-bold text-brand-600 uppercase">Example in Use:</span>
-                            <p class="text-sm text-gray-600 mt-1 italic">"${t.example}"</p>
-                        </div>
-                    </div>
-                `;
-                container.innerHTML += card;
-            });
-        }
-
-        // ---- Practice Test Logic ----
-        let currentQuestions = [];
-        let currentIndex = 0;
-        let score = 0;
-
-        const startBtn = document.getElementById('start-test-btn');
-        const introDiv = document.getElementById('test-intro');
-        const testDiv = document.getElementById('test-container');
-        const resultsDiv = document.getElementById('test-results');
-        const restartBtn = document.getElementById('restart-test-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const submitBtn = document.getElementById('submit-answer-btn');
-        const answerInput = document.getElementById('answer-input');
-
-        startBtn.addEventListener('click', startTest);
-        restartBtn.addEventListener('click', startTest);
-        nextBtn.addEventListener('click', nextQuestion);
-        submitBtn.addEventListener('click', checkAnswer);
-        answerInput.addEventListener('keypress', (e) => {
-            if(e.key === 'Enter' && !submitBtn.disabled) {
-                checkAnswer();
-            }
-        });
-
-        // Fisher-Yates Shuffle
-        function shuffleArray(array) {
-            const newArr = [...array];
-            for (let i = newArr.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
-            }
-            return newArr;
-        }
-
-        function checkLastScore() {
-            const lastScore = localStorage.getItem('c1_u7_lastScore_kw');
-            const lastDate = localStorage.getItem('c1_u7_lastDate_kw');
-            if (lastScore && lastDate) {
-                document.getElementById('last-score-container').classList.remove('hidden');
-                document.getElementById('last-score').textContent = lastScore;
-                document.getElementById('last-date').textContent = new Date(lastDate).toLocaleDateString();
-            }
-        }
-
-        function startTest() {
-            currentQuestions = shuffleArray(questionsData); // Randomized
-            currentIndex = 0;
-            score = 0;
-
-            introDiv.classList.add('hidden');
-            resultsDiv.classList.add('hidden');
-            testDiv.classList.remove('hidden');
-            document.getElementById('score-live').classList.remove('hidden');
-            document.getElementById('score-live').textContent = `Score: 0`;
-
-            showQuestion();
-        }
-
-        function showQuestion() {
-            nextBtn.classList.add('hidden');
-            submitBtn.classList.remove('hidden');
-            submitBtn.disabled = false;
-            document.getElementById('explanation-box').classList.add('hidden');
-
-            const q = currentQuestions[currentIndex];
-            document.getElementById('current-question-num').textContent = currentIndex + 1;
-
-            document.getElementById('lead-in-text').textContent = q.leadIn;
-            document.getElementById('keyword-text').textContent = q.keyword;
-            document.getElementById('before-gap-text').innerHTML = q.beforeGap ? q.beforeGap + '&nbsp;' : '';
-            document.getElementById('after-gap-text').innerHTML = q.afterGap ? '&nbsp;' + q.afterGap : '';
-
-            answerInput.value = '';
-            answerInput.disabled = false;
-            answerInput.classList.remove('text-green-600', 'text-red-600', 'border-green-500', 'border-red-500');
-            answerInput.classList.add('text-brand-700', 'border-brand-500');
-            answerInput.focus();
-        }
-
-        function checkAnswer() {
-            const q = currentQuestions[currentIndex];
-            const userAnswer = answerInput.value.trim().toLowerCase();
-
-            // Remove multiple spaces
-            const normalizedAnswer = userAnswer.replace(/\s+/g, ' ');
-
-            // Check if keyword is used (case insensitive)
-            const hasKeyword = normalizedAnswer.includes(q.keyword.toLowerCase());
-
-            // Check if acceptable answer
-            const isCorrect = hasKeyword && q.acceptableAnswers.some(ans => ans.toLowerCase() === normalizedAnswer);
-
-            answerInput.disabled = true;
-            submitBtn.classList.add('hidden');
-            submitBtn.disabled = true;
-
-            answerInput.classList.remove('text-brand-700', 'border-brand-500');
-
-            if (isCorrect) {
-                score++;
-                document.getElementById('score-live').textContent = `Score: ${score}`;
-                answerInput.classList.add('text-green-600', 'border-green-500');
-            } else {
-                answerInput.classList.add('text-red-600', 'border-red-500');
-                // Show the user the correct answer below the input
-                const correctAnsStr = q.acceptableAnswers.join(' / ');
-                const expText = document.getElementById('explanation-text');
-                expText.innerHTML = `<strong>Correct answer(s):</strong> ${correctAnsStr}<br><br>${q.explanation}`;
-            }
-
-            if (isCorrect) {
-                const expText = document.getElementById('explanation-text');
-                expText.innerHTML = `<strong>Correct!</strong><br><br>${q.explanation}`;
-            }
-
-            // Show Explanation
-            const expBox = document.getElementById('explanation-box');
-            expBox.classList.remove('hidden');
-
-            nextBtn.classList.remove('hidden');
-            nextBtn.focus();
-        }
-
-        function nextQuestion() {
-            currentIndex++;
-            if (currentIndex < currentQuestions.length) {
-                showQuestion();
-            } else {
-                finishTest();
-            }
-        }
-
-        function finishTest() {
-            testDiv.classList.add('hidden');
-            resultsDiv.classList.remove('hidden');
-
-            const total = currentQuestions.length;
-            document.getElementById('final-score').textContent = `${score}/${total}`;
-
-            let msg = "Great effort!";
-            const percentage = score / total;
-            if (percentage >= 0.9) msg = "Excellent! You have mastered Unit 7.";
-            else if (percentage >= 0.7) msg = "Good job! A solid understanding.";
-            else msg = "Keep practicing. Review the theory and try again.";
-
-            document.getElementById('final-message').textContent = msg;
-
-            // Save to localStorage
-            localStorage.setItem('c1_u7_lastScore_kw', `${score}/${total}`);
-            localStorage.setItem('c1_u7_lastDate_kw', new Date().toISOString());
-            checkLastScore();
-        }
-
-        // Initialize (data is embedded, no fetch needed)
         renderTheory();
-        renderTemplates();
-        checkLastScore();
+        renderSpeaking();
+        Object.keys(QUIZ_INFO).forEach(key => initQuiz(key));
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        document.getElementById('theory-container').innerHTML = `<div class="text-red-500 p-4 bg-red-50 rounded-lg">Error loading content. Please make sure the server is running.</div>`;
+    }
+}
+
+// ---------- Helpers ----------
+
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function normalize(str) {
+    return str
+        .toLowerCase()
+        .replace(/[’‘`´]/g, "'")
+        .replace(/\bwon't\b/g, 'will not')
+        .replace(/\bcan't\b/g, 'cannot')
+        .replace(/n't\b/g, ' not')
+        .replace(/(\w)iz(e|ed|es|ing)\b/g, '$1is$2')
+        .replace(/[.,!?;:"()—–-]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function focusInput(key) {
+    const input = document.getElementById(`answer-${key}`);
+    if (input && !input.readOnly) input.focus();
+}
+
+// **text** → highlighted key part
+function fmt(text, c) {
+    return text.replace(/\*\*(.+?)\*\*/g, `<strong class="${c.mark} font-semibold px-1 rounded not-italic">$1</strong>`);
+}
+
+// "Never + AUX + SUJETO + verbo" → chips; UPPERCASE tokens are the key slots
+function renderFormula(formula, c) {
+    // Split on " + " and ", " keeping the separator so commas still read as clause breaks
+    const parts = formula.split(/(\s\+\s|,\s)/);
+    return `
+        <div class="flex flex-wrap items-center gap-1.5 font-mono text-sm">
+            ${parts.map(p => {
+                if (/^\s\+\s$/.test(p)) return '<span class="text-gray-400 font-bold">+</span>';
+                if (/^,\s$/.test(p)) return '<span class="text-gray-400 font-bold">,</span>';
+                const t = p.trim();
+                const isKey = !/[a-z]/.test(t) && /[A-Z]{2,}/.test(t);
+                const cls = isKey ? `${c.solid} text-white border-transparent` : c.chip;
+                return `<span class="px-2.5 py-1 rounded-md border ${cls}">${escapeHtml(t)}</span>`;
+            }).join('')}
+        </div>
+    `;
+}
+
+// ---------- Theory ----------
+
+function renderTheory() {
+    const sections = theoryData.sections;
+
+    let html = `
+        <div class="flex flex-wrap gap-2 mb-2">
+            ${sections.map(s => {
+                const c = COLORS[s.color] || COLORS.sky;
+                return `<button onclick="document.getElementById('sec-${s.id}').scrollIntoView({behavior:'smooth', block:'start'})" class="px-3 py-1.5 rounded-full text-sm font-medium border ${c.border} ${c.bg} ${c.text} hover:shadow-sm transition">${s.title}</button>`;
+            }).join('')}
+        </div>
+    `;
+
+    sections.forEach(section => {
+        const c = COLORS[section.color] || COLORS.sky;
+        html += `
+            <div id="sec-${section.id}" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-40">
+                <div class="${c.bg} border-b ${c.border} px-6 py-4 flex flex-wrap justify-between items-center gap-2">
+                    <button onclick="toggleSection('${section.id}')" class="text-left flex items-center gap-3 group">
+                        <svg id="chev-${section.id}" class="w-5 h-5 ${c.text} transition-transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>
+                            <span class="block text-lg font-bold text-gray-900">${section.title}</span>
+                            ${section.subtitle ? `<span class="block text-sm text-gray-500">${section.subtitle}</span>` : ''}
+                        </span>
+                    </button>
+                    <button onclick="switchTab('${section.id}')" class="text-sm font-semibold px-3 py-1.5 rounded-md text-white ${c.btn} shadow-sm">Practise this →</button>
+                </div>
+                <div id="body-${section.id}" class="p-4 sm:p-6 grid gap-4">
+                    ${section.blocks.map(block => renderBlock(block, c)).join('')}
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('theory-container').innerHTML = html;
+}
+
+window.toggleSection = function(id) {
+    const body = document.getElementById(`body-${id}`);
+    body.hidden = !body.hidden;
+    document.getElementById(`chev-${id}`).classList.toggle('rotate-90', !body.hidden);
+};
+
+function renderBlock(block, c) {
+    const formulas = block.formulas || (block.formula ? [block.formula] : []);
+
+    return `
+        <div class="rounded-xl border border-gray-100 p-5 hover:border-gray-200 transition-colors">
+            <h4 class="font-bold ${c.text} text-base mb-3">${block.heading}</h4>
+
+            ${formulas.length ? `<div class="space-y-2 mb-3">${formulas.map(f => renderFormula(f, c)).join('')}</div>` : ''}
+
+            ${block.rule ? `<p class="text-gray-700 leading-relaxed mb-3">${fmt(block.rule, c)}</p>` : ''}
+
+            ${block.compare ? `
+                <div class="grid sm:grid-cols-2 gap-3 mb-3">
+                    ${block.compare.map(cmp => `
+                        <div class="rounded-lg border ${c.border} ${c.bg} p-3">
+                            <p class="text-xs font-bold uppercase tracking-wider ${c.text} mb-1">${cmp.label}</p>
+                            <p class="text-gray-800 italic">${fmt(cmp.text, c)}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${block.chips ? `
+                <div class="mb-3">
+                    ${block.chipsLabel ? `<p class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">${block.chipsLabel}</p>` : ''}
+                    <div class="flex flex-wrap gap-1.5">
+                        ${block.chips.map(ch => `<span class="px-2 py-0.5 rounded-full text-sm border ${c.chip}">${ch}</span>`).join('')}
+                    </div>
+                </div>
+            ` : ''}
+
+            ${block.examples ? `
+                <ul class="space-y-1.5 mb-3">
+                    ${block.examples.map(ex => `
+                        <li class="flex items-start gap-2 text-gray-800">
+                            <svg class="w-4 h-4 mt-1 flex-shrink-0 ${c.text}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="italic">${fmt(ex, c)}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            ` : ''}
+
+            ${block.table ? renderTable(block.table, c) : ''}
+
+            ${block.wrong ? `
+                <div class="grid gap-2 mt-3">
+                    ${block.wrong.map(w => `
+                        <div class="rounded-lg border border-gray-100 overflow-hidden text-sm">
+                            <p class="bg-red-50 text-red-700 px-3 py-1.5"><span class="font-bold">✗</span> <span class="line-through decoration-red-300">${escapeHtml(w.bad)}</span></p>
+                            <p class="bg-green-50 text-green-800 px-3 py-1.5"><span class="font-bold">✓</span> ${escapeHtml(w.good)}</p>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${block.tip ? `
+                <p class="mt-3 text-sm text-amber-900 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2"><span class="font-semibold">💡 Tip:</span> ${fmt(block.tip, c)}</p>
+            ` : ''}
+        </div>
+    `;
+}
+
+function renderTable(table, c) {
+    return `
+        <div class="overflow-x-auto rounded-lg border ${c.border} mt-1">
+            <table class="min-w-full text-sm">
+                <thead class="${c.bg} ${c.text}">
+                    <tr>${table.headers.map(h => `<th class="text-left font-semibold px-4 py-2 whitespace-nowrap">${h}</th>`).join('')}</tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    ${table.rows.map(row => `
+                        <tr class="hover:bg-gray-50">
+                            ${row.map((cell, i) => `<td class="px-4 py-2 align-top ${i === 0 ? 'font-semibold text-gray-800 whitespace-nowrap' : 'text-gray-700'}">${fmt(escapeHtml(cell), c)}</td>`).join('')}
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
+    `;
+}
+
+// ---------- Speaking ----------
+
+function renderSpeaking() {
+    const colors = [
+        { bg: 'bg-sky-50', text: 'text-sky-600', border: 'border-sky-100', textLight: 'text-sky-500' },
+        { bg: 'bg-indigo-50', text: 'text-indigo-600', border: 'border-indigo-100', textLight: 'text-indigo-500' },
+        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', textLight: 'text-purple-500' },
+        { bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', textLight: 'text-rose-500' }
+    ];
+
+    let html = '';
+
+    theoryData.speaking.forEach((item, index) => {
+        const c = colors[index % colors.length];
+        const structureHtml = item.structure.replace(/\[(.*?)\]/g, `<span class="${c.textLight} ${c.bg} px-1 rounded border border-white">[$1]</span>`);
+
+        html += `
+            <div class="bg-white rounded-xl shadow-sm border ${c.border} overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                <div class="${c.bg} px-5 py-3 border-b ${c.border} flex justify-between items-center">
+                    <span class="text-xs font-bold uppercase tracking-wider ${c.text}">Strategy ${index + 1}</span>
+                    <span class="bg-white ${c.text} text-xs px-2 py-1 rounded shadow-sm font-semibold">${item.part.split(' (')[0]}</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm font-medium text-gray-500 mb-4">${item.part}</p>
+                    <div class="mb-5">
+                        <div class="text-gray-800 font-semibold text-lg leading-snug">${structureHtml}</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-4">
+                        <p class="text-gray-700 italic">"${item.example}"</p>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                        ${item.translation}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('speaking-container').innerHTML = html;
+}
+
+// ---------- Quiz engine (shared by all practice tabs) ----------
+
+function setIndices(key, set) {
+    return exercisesData[key].map((q, i) => i).filter(i => set === undefined || exercisesData[key][i].test === set);
+}
+
+function initQuiz(key, onlyIndices, set) {
+    const info = QUIZ_INFO[key];
+    if (info.sets && set === undefined) set = quizzes[key] ? quizzes[key].set : Number(Object.keys(info.sets)[0]);
+
+    const all = exercisesData[key];
+    const indices = onlyIndices || setIndices(key, info.sets ? set : undefined);
+
+    quizzes[key] = {
+        set,
+        questions: indices.map(i => {
+            const q = all[i];
+            // Shuffle multiple-choice options so the answer isn't always first
+            return q.type === 'mc' ? { ...q, options: shuffle(q.options), sourceIndex: i } : { ...q, sourceIndex: i };
+        }),
+        current: 0,
+        answers: {},
+        showSummary: false
+    };
+
+    renderQuizShell(key);
+    showQuestion(key);
+}
+
+window.selectSet = function(key, set) {
+    initQuiz(key, undefined, set);
+};
+
+function renderQuizShell(key) {
+    const info = QUIZ_INFO[key];
+    const c = COLORS[info.color];
+    const quiz = quizzes[key];
+
+    document.getElementById(`content-${key}`).innerHTML = `
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="${c.bg} border-b ${c.border} p-6">
+                <h2 class="text-xl font-bold text-gray-900">${info.title}</h2>
+                <p class="text-sm text-gray-600 mt-2">${info.instructions}</p>
+                ${info.sets ? `
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        ${Object.entries(info.sets).map(([n, label]) => `
+                            <button onclick="selectSet('${key}', ${n})" class="px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${Number(n) === quiz.set ? `${c.solid} text-white border-transparent` : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}">${label}</button>
+                        `).join('')}
+                    </div>
+                ` : ''}
+            </div>
+
+            <div class="p-6">
+                <div class="flex flex-wrap justify-between items-center gap-2 mb-4">
+                    <span class="text-sm font-medium text-gray-500">Question <span id="qnum-${key}">1</span> of <span>${quiz.questions.length}</span></span>
+                    <span id="score-${key}" class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded shadow-sm">Score: 0/${quiz.questions.length}</span>
+                </div>
+
+                <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
+                    <div id="progress-${key}" class="h-1.5 rounded-full ${c.solid} transition-all duration-300" style="width: 0%"></div>
+                </div>
+
+                <div id="dots-${key}" class="flex flex-wrap gap-1.5 mb-6"></div>
+
+                <div id="question-${key}" class="min-h-[200px]"></div>
+
+                <div id="controls-${key}" class="mt-8 flex justify-between items-center border-t pt-6">
+                    <button onclick="prevQuestion('${key}')" id="prev-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Previous</button>
+                    <button onclick="checkAnswer('${key}')" id="check-${key}" class="px-6 py-2 ${c.btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">Check Answer</button>
+                    <button onclick="nextQuestion('${key}')" id="next-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Next</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getScore(quiz) {
+    return Object.values(quiz.answers).filter(a => a.isCorrect).length;
+}
+
+function updateHeader(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const answered = Object.keys(quiz.answers).length;
+
+    document.getElementById(`qnum-${key}`).textContent = quiz.current + 1;
+    document.getElementById(`score-${key}`).textContent = `Score: ${getScore(quiz)}/${total}`;
+    document.getElementById(`progress-${key}`).style.width = `${(answered / total) * 100}%`;
+
+    const c = COLORS[QUIZ_INFO[key].color];
+    document.getElementById(`dots-${key}`).innerHTML = quiz.questions.map((_, i) => {
+        const a = quiz.answers[i];
+        let cls = 'bg-gray-100 text-gray-500 hover:bg-gray-200';
+        if (a) cls = a.isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700';
+        const active = i === quiz.current && !quiz.showSummary ? `ring-2 ${c.ring}` : '';
+        return `<button onclick="goToQuestion('${key}', ${i})" class="w-7 h-7 rounded text-xs font-semibold ${cls} ${active} transition-colors">${i + 1}</button>`;
+    }).join('');
+}
+
+function showQuestion(key) {
+    const quiz = quizzes[key];
+    if (quiz.showSummary) return showSummary(key);
+
+    const index = quiz.current;
+    const total = quiz.questions.length;
+    const q = quiz.questions[index];
+    const answer = quiz.answers[index];
+    const isAnswered = answer !== undefined;
+    const allAnswered = Object.keys(quiz.answers).length === total;
+    const container = document.getElementById(`question-${key}`);
+
+    document.getElementById(`controls-${key}`).classList.remove('hidden');
+    document.getElementById(`prev-${key}`).disabled = index === 0;
+    const btnNext = document.getElementById(`next-${key}`);
+    btnNext.textContent = allAnswered ? 'See results' : 'Next';
+    btnNext.disabled = !allAnswered && index === total - 1;
+
+    const btnCheck = document.getElementById(`check-${key}`);
+    btnCheck.disabled = isAnswered;
+    btnCheck.textContent = isAnswered ? 'Checked' : 'Check Answer';
+    // Multiple choice checks on click, so the button is only needed for typed answers
+    btnCheck.classList.toggle('invisible', q.type === 'mc');
+
+    let body = '';
+    if (q.type === 'mc') body = renderMC(key, q, answer);
+    else if (q.type === 'gap') body = renderGap(key, q, answer);
+    else if (q.type === 'rewrite') body = renderRewrite(key, q, answer);
+    else body = renderKWT(key, q, answer);
+
+    container.innerHTML = `
+        <div class="space-y-6">
+            ${body}
+            ${isAnswered ? renderFeedback(q, answer) : ''}
+        </div>
+    `;
+
+    updateHeader(key);
+
+    if (!isAnswered && q.type !== 'mc') {
+        const input = document.getElementById(`answer-${key}`);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkAnswer(key);
+        });
+        if (!document.getElementById(`content-${key}`).classList.contains('hidden')) input.focus();
+    }
+}
+
+function sentenceWithBlank(sentence, filled, state) {
+    const blank = `<span class="gap-blank ${state || ''}">${filled ? escapeHtml(filled) : '&nbsp;'}</span>`;
+    return sentence.replace('___', blank);
+}
+
+function renderMC(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const filled = isAnswered ? (answer.isCorrect ? q.answer : answer.text) : '';
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    const options = q.options.map((opt, i) => {
+        let cls = 'border-gray-200 bg-white hover:border-gray-400 hover:bg-gray-50 text-gray-800';
+        if (isAnswered) {
+            if (opt === q.answer) cls = 'border-green-400 bg-green-50 text-green-800';
+            else if (opt === answer.text) cls = 'border-red-400 bg-red-50 text-red-800';
+            else cls = 'border-gray-100 bg-white text-gray-400';
+        }
+        return `<button onclick="selectOption('${key}', ${i})" ${isAnswered ? 'disabled' : ''} class="px-4 py-3 border-2 rounded-lg text-left font-medium transition-colors ${cls}">${escapeHtml(opt)}</button>`;
+    }).join('');
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${sentenceWithBlank(q.sentence, filled, state)}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">${options}</div>
+    `;
+}
+
+function renderGap(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+    const input = `<input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+        value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="your answer">`;
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${q.sentence.replace('___', input)}</p>
+        </div>
+    `;
+}
+
+function renderRewrite(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${escapeHtml(q.original)}</p>
+        </div>
+
+        <div>
+            <p class="text-sm text-gray-500 mb-2">Start with: <span class="inline-block bg-gray-800 text-white font-semibold py-0.5 px-2.5 rounded">${escapeHtml(q.start)}...</span></p>
+            <input type="text" id="answer-${key}" class="input-kt input-wide ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="${escapeHtml(q.start)} ...">
+        </div>
+    `;
+}
+
+function renderKWT(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${q.lead_in}</p>
+        </div>
+
+        <div class="flex justify-center">
+            <span class="inline-block bg-gray-800 text-white font-bold py-1 px-4 rounded shadow-sm tracking-widest text-lg">${q.keyword}</span>
+        </div>
+
+        <div class="text-lg text-gray-800 leading-loose flex flex-wrap items-center gap-2">
+            <span>${q.before}</span>
+            <input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="(3-6 words)">
+            <span>${q.after}</span>
+        </div>
+    `;
+}
+
+function renderFeedback(q, answer) {
+    const correctText = q.type === 'mc' ? q.answer : q.type === 'rewrite' ? q.answers[0] : q.answers.join('  /  ');
+
+    return `
+        <div class="p-4 rounded-lg ${answer.isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+            <p class="text-sm ${answer.isCorrect ? 'text-green-800' : 'text-red-800'} font-medium flex items-center">
+                ${answer.isCorrect ? ICON_CHECK + ' Correct!' : ICON_CROSS + ' Incorrect.'}
+            </p>
+            ${!answer.isCorrect ? `
+                <p class="mt-2 text-sm text-gray-700">Correct answer: <span class="font-bold text-green-700">${escapeHtml(correctText)}</span></p>
+            ` : ''}
+            ${q.explanation ? `<p class="mt-2 text-sm text-gray-600">${q.explanation}</p>` : ''}
+        </div>
+    `;
+}
+
+function recordAnswer(key, text, isCorrect) {
+    const quiz = quizzes[key];
+    quiz.answers[quiz.current] = { text, isCorrect };
+    showQuestion(key);
+}
+
+window.selectOption = function(key, optionIndex) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return;
+    const q = quiz.questions[quiz.current];
+    const choice = q.options[optionIndex];
+    recordAnswer(key, choice, choice === q.answer);
+};
+
+function isRewriteCorrect(q, userAnswer) {
+    const start = normalize(q.start);
+    let user = normalize(userAnswer);
+    // Accept either the whole sentence or just what comes after the given start
+    if (!user.startsWith(start)) user = `${start} ${user}`;
+    return q.answers.some(a => normalize(a) === user);
+}
+
+window.checkAnswer = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return; // Already checked
+
+    const q = quiz.questions[quiz.current];
+    if (q.type === 'mc') return;
+
+    const inputEl = document.getElementById(`answer-${key}`);
+    const userAnswer = inputEl.value.trim();
+
+    if (!userAnswer) {
+        inputEl.classList.remove('shake');
+        void inputEl.offsetWidth;
+        inputEl.classList.add('shake');
+        inputEl.focus();
+        return;
+    }
+
+    const isCorrect = q.type === 'rewrite'
+        ? isRewriteCorrect(q, userAnswer)
+        : q.answers.some(a => normalize(a) === normalize(userAnswer));
+    recordAnswer(key, userAnswer, isCorrect);
+};
+
+window.prevQuestion = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.current > 0) {
+        quiz.current--;
+        showQuestion(key);
+    }
+};
+
+window.nextQuestion = function(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+
+    if (Object.keys(quiz.answers).length === total) {
+        quiz.showSummary = true;
+        showQuestion(key);
+        return;
+    }
+    if (quiz.current < total - 1) {
+        quiz.current++;
+        showQuestion(key);
+    }
+};
+
+window.goToQuestion = function(key, index) {
+    const quiz = quizzes[key];
+    quiz.showSummary = false;
+    quiz.current = index;
+    showQuestion(key);
+};
+
+function questionPrompt(q) {
+    if (q.type === 'kwt') return `${q.lead_in} <span class="font-bold">(${q.keyword})</span>`;
+    if (q.type === 'rewrite') return `${escapeHtml(q.original)} <span class="font-bold">(${escapeHtml(q.start)}...)</span>`;
+    return q.sentence.replace('___', '_____');
+}
+
+function showSummary(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const score = getScore(quiz);
+    const pct = Math.round((score / total) * 100);
+    const mistakes = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect);
+
+    let message = 'Keep practising — review the theory and try again.';
+    if (pct >= 90) message = 'Excellent! You have mastered this topic.';
+    else if (pct >= 70) message = 'Very good! Just a few points to review.';
+    else if (pct >= 50) message = 'Not bad, but there is room for improvement.';
+
+    document.getElementById(`controls-${key}`).classList.add('hidden');
+    updateHeader(key);
+
+    document.getElementById(`question-${key}`).innerHTML = `
+        <div class="text-center py-6">
+            <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Final score</p>
+            <p class="text-5xl font-bold mt-2 ${pct >= 70 ? 'text-green-600' : pct >= 50 ? 'text-amber-500' : 'text-red-600'}">${score}/${total}</p>
+            <p class="text-gray-600 mt-3">${message}</p>
+        </div>
+
+        ${mistakes.length ? `
+            <div class="mt-4">
+                <h3 class="font-semibold text-gray-800 mb-3">Review your mistakes</h3>
+                <div class="space-y-3">
+                    ${mistakes.map(q => {
+                        const i = quiz.questions.indexOf(q);
+                        const correct = q.type === 'mc' ? q.answer : q.answers[0];
+                        return `
+                            <button onclick="goToQuestion('${key}', ${i})" class="w-full text-left p-3 rounded-lg border border-red-100 bg-red-50 hover:bg-red-100 transition-colors">
+                                <p class="text-sm text-gray-800">${i + 1}. ${questionPrompt(q)}</p>
+                                <p class="text-sm mt-1"><span class="text-red-700 line-through">${escapeHtml(quiz.answers[i].text)}</span> → <span class="text-green-700 font-semibold">${escapeHtml(correct)}</span></p>
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        ` : ''}
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3 border-t pt-6">
+            ${mistakes.length ? `<button onclick="retryMistakes('${key}')" class="px-5 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">Retry mistakes (${mistakes.length})</button>` : ''}
+            <button onclick="restartQuiz('${key}')" class="px-5 py-2 ${COLORS[QUIZ_INFO[key].color].btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm">Restart (shuffled)</button>
+        </div>
+    `;
+}
+
+window.retryMistakes = function(key) {
+    const quiz = quizzes[key];
+    const wrong = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect).map(q => q.sourceIndex);
+    initQuiz(key, wrong, quiz.set);
+};
+
+window.restartQuiz = function(key) {
+    const quiz = quizzes[key];
+    const info = QUIZ_INFO[key];
+    initQuiz(key, shuffle(setIndices(key, info.sets ? quiz.set : undefined)), quiz.set);
+};
     </script>
 </body>
 </html>

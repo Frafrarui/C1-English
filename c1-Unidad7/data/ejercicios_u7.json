@@ -1,0 +1,994 @@
+{
+ "relative": [
+  {
+   "type": "kwt",
+   "lead_in": "The person with whom I spoke yesterday was very helpful.",
+   "keyword": "WHO",
+   "before": "The person",
+   "after": "yesterday was very helpful.",
+   "answers": [
+    "who I spoke with",
+    "who I spoke to",
+    "that I spoke to",
+    "that I spoke with"
+   ],
+   "explanation": "Informal: who + preposición al final."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "My brother lives in Paris and he is coming to visit.",
+   "keyword": "WHO",
+   "before": "My brother,",
+   "after": ", is coming to visit.",
+   "answers": [
+    "who lives in Paris"
+   ],
+   "explanation": "Non-defining: información extra entre comas."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The hotel where we stayed was lovely.",
+   "keyword": "WHICH",
+   "before": "The hotel",
+   "after": "was lovely.",
+   "answers": [
+    "at which we stayed",
+    "in which we stayed"
+   ],
+   "explanation": "Where = preposición + which."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The committee to whom we presented our proposal approved it.",
+   "keyword": "WHICH",
+   "before": "The committee",
+   "after": "approved it.",
+   "answers": [
+    "to which we presented our proposal"
+   ],
+   "explanation": "Defining (sin comas): to which para una institución."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Avatar was great and it is my favourite film.",
+   "keyword": "WHICH",
+   "before": "Avatar,",
+   "after": ", was great.",
+   "answers": [
+    "which is my favourite film"
+   ],
+   "explanation": "Non-defining con which (nunca that)."
+  },
+  {
+   "type": "mc",
+   "sentence": "The man ___ son bought our car lives next door.",
+   "options": [
+    "whose",
+    "who",
+    "whom",
+    "which"
+   ],
+   "answer": "whose",
+   "explanation": "Whose = posesión."
+  },
+  {
+   "type": "mc",
+   "sentence": "My car, ___ is seven years old, has done 200,000 km.",
+   "options": [
+    "which",
+    "that",
+    "what",
+    "who"
+   ],
+   "answer": "which",
+   "explanation": "Non-defining: which, nunca that."
+  },
+  {
+   "type": "mc",
+   "sentence": "The person to ___ this letter is addressed lives in Athens.",
+   "options": [
+    "whom",
+    "who",
+    "which",
+    "that"
+   ],
+   "answer": "whom",
+   "explanation": "Preposición + whom (personas)."
+  },
+  {
+   "type": "mc",
+   "sentence": "It had been raining for hours, ___ is why I didn't go out.",
+   "options": [
+    "which",
+    "what",
+    "that",
+    "it"
+   ],
+   "answer": "which",
+   "explanation": "Comment clause: which se refiere a toda la frase."
+  },
+  {
+   "type": "mc",
+   "sentence": "He has three sons, all of ___ are doctors.",
+   "options": [
+    "whom",
+    "who",
+    "them",
+    "which"
+   ],
+   "answer": "whom",
+   "explanation": "Cuantificador + of whom."
+  },
+  {
+   "type": "mc",
+   "sentence": "She showed us some photos, the best of ___ was taken in Kenya.",
+   "options": [
+    "which",
+    "them",
+    "what",
+    "that"
+   ],
+   "answer": "which",
+   "explanation": "The best of which."
+  },
+  {
+   "type": "mc",
+   "sentence": "That's the reason ___ I'm so disappointed.",
+   "options": [
+    "why",
+    "which",
+    "for that",
+    "what"
+   ],
+   "answer": "why",
+   "explanation": "The reason why."
+  },
+  {
+   "type": "mc",
+   "sentence": "Which sentence is correct?",
+   "options": [
+    "The man who called you is my boss.",
+    "The man called you is my boss.",
+    "The man, that called you, is my boss.",
+    "The man which called you is my boss."
+   ],
+   "answer": "The man who called you is my boss.",
+   "explanation": "Who es sujeto: no se puede omitir."
+  },
+  {
+   "type": "mc",
+   "sentence": "My sister, ___ lives in Rome, is a doctor. (I only have one sister)",
+   "options": [
+    "who",
+    "that",
+    "whose",
+    "-"
+   ],
+   "answer": "who",
+   "explanation": "Non-defining (solo una hermana): who entre comas."
+  },
+  {
+   "type": "gap",
+   "sentence": "We're going back to the hotel ___ we stayed last summer.",
+   "answers": [
+    "where"
+   ],
+   "explanation": "Where = lugar (the hotel where we stayed)."
+  },
+  {
+   "type": "gap",
+   "sentence": "2009 was the year ___ she left university.",
+   "answers": [
+    "when",
+    "in which",
+    "that"
+   ],
+   "explanation": "When (o in which / that) para tiempo."
+  },
+  {
+   "type": "gap",
+   "sentence": "We were stuck in traffic for ages, ___ I found really frustrating.",
+   "answers": [
+    "which"
+   ],
+   "explanation": "Comment clause con which."
+  },
+  {
+   "type": "gap",
+   "sentence": "The village in ___ they live is in the middle of nowhere.",
+   "answers": [
+    "which"
+   ],
+   "explanation": "Preposición + which (nunca 'in that')."
+  },
+  {
+   "type": "mc",
+   "sentence": "The colleague ___ I rely most is Peter.",
+   "options": [
+    "on whom",
+    "on who",
+    "whom",
+    "on which"
+   ],
+   "answer": "on whom",
+   "explanation": "Rely ON + whom (formal)."
+  },
+  {
+   "type": "mc",
+   "sentence": "I met two students, neither of ___ spoke English.",
+   "options": [
+    "whom",
+    "them",
+    "who",
+    "which"
+   ],
+   "answer": "whom",
+   "explanation": "Neither of whom."
+  }
+ ],
+ "participle": [
+  {
+   "type": "kwt",
+   "lead_in": "Because I wanted to pass the test, I studied a lot.",
+   "keyword": "WANTING",
+   "before": "",
+   "after": "the test, I studied a lot.",
+   "answers": [
+    "Wanting to pass"
+   ],
+   "explanation": "V-ing = because (mismo sujeto)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "After he had finished the project, he took a long holiday.",
+   "keyword": "HAVING",
+   "before": "",
+   "after": ", he took a long holiday.",
+   "answers": [
+    "Having finished the project"
+   ],
+   "explanation": "Having + participio: acción anterior."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The building that was destroyed in the fire is being rebuilt.",
+   "keyword": "DESTROYED",
+   "before": "The building",
+   "after": "is being rebuilt.",
+   "answers": [
+    "destroyed in the fire"
+   ],
+   "explanation": "V-ed (pasivo) en lugar de 'that was destroyed'."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "If it is used correctly, this software can save a lot of time.",
+   "keyword": "USED",
+   "before": "",
+   "after": ", this software can save a lot of time.",
+   "answers": [
+    "Used correctly",
+    "If used correctly"
+   ],
+   "explanation": "V-ed (pasivo) = if it is used."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "While she was walking down the street, she found a wallet.",
+   "keyword": "WALKING",
+   "before": "",
+   "after": ", she found a wallet.",
+   "answers": [
+    "Walking down the street",
+    "While walking down the street"
+   ],
+   "explanation": "V-ing = while + continuo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I noticed that Peter was cheating in the exam.",
+   "keyword": "CHEATING",
+   "before": "I noticed",
+   "after": "in the exam.",
+   "answers": [
+    "Peter cheating"
+   ],
+   "explanation": "Verbo de percepción + objeto + V-ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Because she didn't have enough money, she couldn't buy the tickets.",
+   "keyword": "HAVING",
+   "before": "",
+   "after": ", she couldn't buy the tickets.",
+   "answers": [
+    "Not having enough money"
+   ],
+   "explanation": "Negativa: Not + V-ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Anyone who wants to participate must sign the form.",
+   "keyword": "WANTING",
+   "before": "Anyone",
+   "after": "must sign the form.",
+   "answers": [
+    "wanting to participate"
+   ],
+   "explanation": "Reduced relative activa: V-ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I opened the letter and realised it was from the university.",
+   "keyword": "OPENING",
+   "before": "",
+   "after": ", I realised it was from the university.",
+   "answers": [
+    "Opening the letter"
+   ],
+   "explanation": "V-ing para la primera de dos acciones seguidas."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Because I didn't know what to do, I called my mother.",
+   "keyword": "NOT",
+   "before": "",
+   "after": "what to do, I called my mother.",
+   "answers": [
+    "Not knowing"
+   ],
+   "explanation": "Not + V-ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "People who live near the airport complain about the noise.",
+   "keyword": "LIVING",
+   "before": "People",
+   "after": "complain about the noise.",
+   "answers": [
+    "living near the airport"
+   ],
+   "explanation": "Reduced relative activa (estado)."
+  },
+  {
+   "type": "mc",
+   "sentence": "We came out of the theatre ___ what the play had been about.",
+   "options": [
+    "wondering",
+    "wondered",
+    "having wondered"
+   ],
+   "answer": "wondering",
+   "explanation": "Acción simultánea → V-ing."
+  },
+  {
+   "type": "mc",
+   "sentence": "We'd seen a play ___ on a contemporary novel.",
+   "options": [
+    "based",
+    "having based",
+    "basing"
+   ],
+   "answer": "based",
+   "explanation": "Pasivo (que está basada) → V-ed."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ the novel, I'm now curious to see how they made it into a play.",
+   "options": [
+    "Having read",
+    "Reading",
+    "Read"
+   ],
+   "answer": "Having read",
+   "explanation": "Acción anterior → Having + participio."
+  },
+  {
+   "type": "mc",
+   "sentence": "It was the first play ___ by this young director.",
+   "options": [
+    "written",
+    "having been written",
+    "writing"
+   ],
+   "answer": "written",
+   "explanation": "Reduced relative pasiva → V-ed."
+  },
+  {
+   "type": "mc",
+   "sentence": "I'd read a review in a magazine ___ in modern drama.",
+   "options": [
+    "specialising",
+    "specialised",
+    "having specialised"
+   ],
+   "answer": "specialising",
+   "explanation": "Activo (la revista se especializa) → V-ing."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ in 1889, the Eiffel Tower is now a symbol of Paris.",
+   "options": [
+    "Built",
+    "Building",
+    "Having built"
+   ],
+   "answer": "Built",
+   "explanation": "Pasivo → V-ed."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ our map at home, we got lost.",
+   "options": [
+    "Having left",
+    "Leaving",
+    "Left"
+   ],
+   "answer": "Having left",
+   "explanation": "Acción anterior que explica la consecuencia."
+  },
+  {
+   "type": "mc",
+   "sentence": "Which sentence is correct?",
+   "options": [
+    "Walking down the street, I got caught in the rain.",
+    "Walking down the street, the rain started.",
+    "Walked down the street, I got caught in the rain.",
+    "Having walking down the street, it started to rain."
+   ],
+   "answer": "Walking down the street, I got caught in the rain.",
+   "explanation": "El sujeto del participio (I) = sujeto principal."
+  },
+  {
+   "type": "mc",
+   "sentence": "Anyone ___ shoplifting will be prosecuted.",
+   "options": [
+    "caught",
+    "catching",
+    "having caught"
+   ],
+   "answer": "caught",
+   "explanation": "Pasivo: who is caught → caught."
+  }
+ ],
+ "apposition": [
+  {
+   "type": "kwt",
+   "lead_in": "My boss, who is a very strict woman, demanded the report by 5 p.m.",
+   "keyword": "STRICT",
+   "before": "My boss,",
+   "after": ", demanded the report by 5 p.m.",
+   "answers": [
+    "a very strict woman"
+   ],
+   "explanation": "Aposición: quitamos 'who is'."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Madrid, which is the capital of Spain, is very populous.",
+   "keyword": "CAPITAL",
+   "before": "Madrid,",
+   "after": ", is very populous.",
+   "answers": [
+    "the capital of Spain"
+   ],
+   "explanation": "Aposición."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The student whose bag was stolen reported it to the police.",
+   "keyword": "HAD",
+   "before": "The student",
+   "after": "reported it to the police.",
+   "answers": [
+    "who had their bag stolen",
+    "who had his bag stolen",
+    "who had her bag stolen"
+   ],
+   "explanation": "Have something done (experiencia)."
+  },
+  {
+   "type": "mc",
+   "sentence": "I'm going to see Bev Jackson___ this afternoon.",
+   "options": [
+    ", my maths tutor,",
+    " my maths tutor",
+    ", who my maths tutor,",
+    ", that is my maths tutor,"
+   ],
+   "answer": ", my maths tutor,",
+   "explanation": "Aposición non-defining entre comas."
+  },
+  {
+   "type": "mc",
+   "sentence": "Her friend ___ is a computer engineer. (she has several friends)",
+   "options": [
+    "Klaus",
+    ", Klaus,",
+    "who Klaus",
+    "that Klaus"
+   ],
+   "answer": "Klaus",
+   "explanation": "Defining: sin comas (dice cuál de sus amigos)."
+  },
+  {
+   "type": "mc",
+   "sentence": "Bob Marley, ___, recorded the best-selling reggae album of all time.",
+   "options": [
+    "a Jamaican singer",
+    "who a Jamaican singer",
+    "that was a Jamaican singer",
+    "which was a Jamaican singer"
+   ],
+   "answer": "a Jamaican singer",
+   "explanation": "Aposición: frase nominal entre comas."
+  },
+  {
+   "type": "gap",
+   "sentence": "The Louvre, ___ most visited museum in the world, is in Paris. (1 word)",
+   "answers": [
+    "the"
+   ],
+   "explanation": "Aposición con artículo: the most visited museum."
+  },
+  {
+   "type": "gap",
+   "sentence": "My grandmother, ___ former nurse, still gives the best health advice. (1 word)",
+   "answers": [
+    "a"
+   ],
+   "explanation": "Aposición: a former nurse."
+  },
+  {
+   "type": "mc",
+   "sentence": "Which sentence uses apposition correctly?",
+   "options": [
+    "Shakespeare, the famous playwright, was born in 1564.",
+    "Shakespeare, that famous playwright was born in 1564.",
+    "Shakespeare the famous playwright, was born in 1564.",
+    "Shakespeare, was the famous playwright, born in 1564."
+   ],
+   "answer": "Shakespeare, the famous playwright, was born in 1564.",
+   "explanation": "Aposición entre DOS comas."
+  },
+  {
+   "type": "mc",
+   "sentence": "The novelist ___ gave a talk at our school. (there are many novelists)",
+   "options": [
+    "Zadie Smith",
+    "Zadie Smith,",
+    ", Zadie Smith,",
+    "who Zadie Smith"
+   ],
+   "answer": "Zadie Smith",
+   "explanation": "Defining: sin comas."
+  }
+ ],
+ "book": [
+  {
+   "type": "gap",
+   "sentence": "That's the house ___ won an award for outstanding design.",
+   "answers": [
+    "that",
+    "which"
+   ],
+   "explanation": "Book ex.3: relativo sujeto (cosa)."
+  },
+  {
+   "type": "gap",
+   "sentence": "That's the house ___ I'd buy if I had enough money.",
+   "answers": [
+    "that",
+    "which"
+   ],
+   "explanation": "Book ex.3: relativo objeto (se puede omitir)."
+  },
+  {
+   "type": "gap",
+   "sentence": "What's the name of that hotel ___ Mike recommended?",
+   "answers": [
+    "that",
+    "which"
+   ],
+   "explanation": "Book ex.3: relativo objeto."
+  },
+  {
+   "type": "gap",
+   "sentence": "What's the name of that hotel ___ we celebrated your birthday?",
+   "answers": [
+    "where",
+    "at which",
+    "in which"
+   ],
+   "explanation": "Book ex.3: lugar → where."
+  },
+  {
+   "type": "gap",
+   "sentence": "Which is the season ___ has the best weather?",
+   "answers": [
+    "that",
+    "which"
+   ],
+   "explanation": "Book ex.3: relativo sujeto."
+  },
+  {
+   "type": "gap",
+   "sentence": "Which is the season ___ most tourists come here?",
+   "answers": [
+    "when",
+    "in which"
+   ],
+   "explanation": "Book ex.3: tiempo → when."
+  },
+  {
+   "type": "gap",
+   "sentence": "Is it Pete or Jayden ___ said he couldn't come to the meeting?",
+   "answers": [
+    "who",
+    "that"
+   ],
+   "explanation": "Book ex.3: relativo sujeto (persona)."
+  },
+  {
+   "type": "gap",
+   "sentence": "Is it Pete or Jayden ___ Ariana's going on holiday with?",
+   "answers": [
+    "who",
+    "that",
+    "whom"
+   ],
+   "explanation": "Book ex.3: relativo objeto + preposición al final."
+  },
+  {
+   "type": "rewrite",
+   "original": "We walked along the path by the canal. We watched children. They were opening and closing the lock gates to allow boats to pass through.",
+   "start": "Walking",
+   "answers": [
+    "Walking along the path by the canal, we watched children opening and closing the lock gates to allow boats to pass through.",
+    "Walking along the path by the canal we watched children opening and closing the lock gates to allow boats to pass through."
+   ],
+   "explanation": "Book ex.2: V-ing (simultáneo) + verbo de percepción + objeto + V-ing."
+  },
+  {
+   "type": "rewrite",
+   "original": "The police officer referred to written notes and described how she had heard someone. This person was screaming at the top of their voice.",
+   "start": "Referring",
+   "answers": [
+    "Referring to written notes, the police officer described how she had heard someone screaming at the top of their voice."
+   ],
+   "explanation": "Book ex.2: V-ing + heard someone screaming."
+  },
+  {
+   "type": "rewrite",
+   "original": "Before Jeff moved to Barcelona, he lived near Houston in Texas. He worked in a school there. He taught English to students from other countries.",
+   "start": "Before moving",
+   "answers": [
+    "Before moving to Barcelona, Jeff lived near Houston in Texas, where he worked in a school teaching English to students from other countries.",
+    "Before moving to Barcelona, Jeff lived near Houston in Texas, where he worked in a school, teaching English to students from other countries."
+   ],
+   "explanation": "Book ex.2: before + V-ing, where..., V-ing."
+  },
+  {
+   "type": "rewrite",
+   "original": "The Eiffel Tower was built in 1889. It has dominated the Paris skyline for over a century. During this period it has been repainted 19 times.",
+   "start": "Built in 1889",
+   "answers": [
+    "Built in 1889, the Eiffel Tower has dominated the Paris skyline for over a century, during which it has been repainted 19 times.",
+    "Built in 1889, the Eiffel Tower has dominated the Paris skyline for over a century, during which time it has been repainted 19 times."
+   ],
+   "explanation": "Book ex.2: V-ed (pasivo) + during which."
+  },
+  {
+   "type": "rewrite",
+   "original": "Bob Marley was a Jamaican singer. He recorded the best-selling reggae album of all time. His full name was Robert Nesta Marley.",
+   "start": "Bob Marley",
+   "answers": [
+    "Bob Marley, a Jamaican singer whose full name was Robert Nesta Marley, recorded the best-selling reggae album of all time.",
+    "Bob Marley, whose full name was Robert Nesta Marley, was a Jamaican singer who recorded the best-selling reggae album of all time."
+   ],
+   "explanation": "Book ex.2: aposición + whose."
+  },
+  {
+   "type": "mc",
+   "sentence": "Concentrating on my work, I didn't realise ___ late it was.",
+   "options": [
+    "how",
+    "what",
+    "which"
+   ],
+   "answer": "how",
+   "explanation": "Book: V-ing (simultáneo) — how late."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ from a distance, the Pyramids look quite small.",
+   "options": [
+    "Seen",
+    "Seeing",
+    "Having seen"
+   ],
+   "answer": "Seen",
+   "explanation": "Book: V-ed = pasivo (las pirámides son vistas)."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ in small quantities, chocolate is good for you.",
+   "options": [
+    "Eaten",
+    "Eating",
+    "Having eaten"
+   ],
+   "answer": "Eaten",
+   "explanation": "Book: V-ed = pasivo."
+  },
+  {
+   "type": "mc",
+   "sentence": "She became interested in art while ___ in Italy.",
+   "options": [
+    "travelling",
+    "travelled",
+    "she travelling"
+   ],
+   "answer": "travelling",
+   "explanation": "Book: conjunción + V-ing."
+  },
+  {
+   "type": "mc",
+   "sentence": "I noticed a man ___ a suit and carrying a large box.",
+   "options": [
+    "wearing",
+    "worn",
+    "who wearing"
+   ],
+   "answer": "wearing",
+   "explanation": "Book: reduced relative activa."
+  },
+  {
+   "type": "mc",
+   "sentence": "I've brought you a jar of jam ___ by my mother.",
+   "options": [
+    "made",
+    "making",
+    "having made"
+   ],
+   "answer": "made",
+   "explanation": "Book: reduced relative pasiva."
+  },
+  {
+   "type": "mc",
+   "sentence": "We were stuck in traffic for ages, ___ I found really frustrating.",
+   "options": [
+    "which",
+    "what",
+    "that"
+   ],
+   "answer": "which",
+   "explanation": "Book: comment clause."
+  }
+ ],
+ "transformations": [
+  {
+   "type": "kwt",
+   "lead_in": "Because I didn't know anybody at the party, I left early.",
+   "keyword": "KNOWING",
+   "before": "",
+   "after": ", I left early.",
+   "answers": [
+    "Not knowing anybody at the party",
+    "Not knowing anyone at the party"
+   ],
+   "explanation": "Not + V-ing (razón)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "After she had read the report, she called the manager.",
+   "keyword": "HAVING",
+   "before": "",
+   "after": ", she called the manager.",
+   "answers": [
+    "Having read the report"
+   ],
+   "explanation": "Having + participio."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "If you look at it from a distance, the castle looks tiny.",
+   "keyword": "SEEN",
+   "before": "",
+   "after": ", the castle looks tiny.",
+   "answers": [
+    "Seen from a distance"
+   ],
+   "explanation": "V-ed: el castillo es visto."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The man who is standing by the door is my uncle.",
+   "keyword": "STANDING",
+   "before": "The man",
+   "after": "is my uncle.",
+   "answers": [
+    "standing by the door"
+   ],
+   "explanation": "Reduced relative activa."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The paintings which were stolen last year have been found.",
+   "keyword": "STOLEN",
+   "before": "The paintings",
+   "after": "have been found.",
+   "answers": [
+    "stolen last year"
+   ],
+   "explanation": "Reduced relative pasiva."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "He has three sisters and they are all teachers.",
+   "keyword": "WHOM",
+   "before": "He has three sisters,",
+   "after": "are teachers.",
+   "answers": [
+    "all of whom"
+   ],
+   "explanation": "All of whom (cuantificador + of whom)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I've got lots of books, but I haven't read most of them.",
+   "keyword": "WHICH",
+   "before": "I've got lots of books,",
+   "after": "I haven't read.",
+   "answers": [
+    "most of which"
+   ],
+   "explanation": "Most of which."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "This is the colleague; I rely on her more than anyone.",
+   "keyword": "WHOM",
+   "before": "This is the colleague",
+   "after": "more than anyone.",
+   "answers": [
+    "on whom I rely"
+   ],
+   "explanation": "Preposición + whom."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The flight was delayed for six hours and this was really annoying.",
+   "keyword": "WHICH",
+   "before": "The flight was delayed for six hours,",
+   "after": "annoying.",
+   "answers": [
+    "which was really"
+   ],
+   "explanation": "Comment clause."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Do you know the name of the woman? Her car was stolen.",
+   "keyword": "WHOSE",
+   "before": "Do you know the name of the woman",
+   "after": "stolen?",
+   "answers": [
+    "whose car was"
+   ],
+   "explanation": "Whose = posesión."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I don't know why she resigned.",
+   "keyword": "REASON",
+   "before": "I don't know",
+   "after": "resigned.",
+   "answers": [
+    "the reason why she",
+    "the reason she"
+   ],
+   "explanation": "The reason (why)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "My cousin is a famous chef and he is opening a restaurant.",
+   "keyword": "CHEF",
+   "before": "My cousin,",
+   "after": ", is opening a restaurant.",
+   "answers": [
+    "a famous chef"
+   ],
+   "explanation": "Aposición."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "While I was waiting for the bus, I met an old friend.",
+   "keyword": "WAITING",
+   "before": "",
+   "after": ", I met an old friend.",
+   "answers": [
+    "While waiting for the bus",
+    "Waiting for the bus"
+   ],
+   "explanation": "(While) + V-ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Anyone who is caught cheating in the exam will be expelled.",
+   "keyword": "CAUGHT",
+   "before": "Anyone",
+   "after": "will be expelled.",
+   "answers": [
+    "caught cheating in the exam"
+   ],
+   "explanation": "Reduced relative pasiva."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "I heard someone; they were shouting outside the house.",
+   "keyword": "SHOUTING",
+   "before": "I heard",
+   "after": "the house.",
+   "answers": [
+    "someone shouting outside"
+   ],
+   "explanation": "Percepción + objeto + V-ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Since she had lived in Japan, she spoke fluent Japanese.",
+   "keyword": "HAVING",
+   "before": "",
+   "after": ", she spoke fluent Japanese.",
+   "answers": [
+    "Having lived in Japan"
+   ],
+   "explanation": "Having + participio = razón."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The village is in the mountains and my grandparents live there.",
+   "keyword": "WHERE",
+   "before": "The village",
+   "after": "is in the mountains.",
+   "answers": [
+    "where my grandparents live"
+   ],
+   "explanation": "Where (lugar)."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Many people applied for the job; none of them had experience.",
+   "keyword": "WHOM",
+   "before": "Many people applied for the job,",
+   "after": "had experience.",
+   "answers": [
+    "none of whom"
+   ],
+   "explanation": "None of whom."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Instead of taking the bus, she walked to work.",
+   "keyword": "RATHER",
+   "before": "",
+   "after": ", she walked to work.",
+   "answers": [
+    "Rather than taking the bus"
+   ],
+   "explanation": "Rather than + V-ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "There are three pictures that hang on the wall.",
+   "keyword": "HANGING",
+   "before": "There are three pictures",
+   "after": ".",
+   "answers": [
+    "hanging on the wall"
+   ],
+   "explanation": "Reduced relative activa (estado)."
+  }
+ ]
+}

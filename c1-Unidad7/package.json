@@ -1,11 +1,12 @@
 {
-  "name": "c1-unidad7",
+  "name": "c1-unit7-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Unit 7: Relative Clauses, Participle Clauses & Apposition",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
