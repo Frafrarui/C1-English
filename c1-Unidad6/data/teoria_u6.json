@@ -3,69 +3,25 @@
     {
       "id": "reference",
       "title": "A) REFERENCE",
-      "subtitle": "Volver a algo ya mencionado sin repetirlo: this, that, it, those, the former / the latter, such",
+      "subtitle": "To refer back to previously stated people / things / situations",
       "color": "sky",
       "blocks": [
         {
-          "heading": "THIS / THAT / IT para referirse a una idea entera",
-          "formula": "Frase anterior. + THIS / THAT / IT + verbo...",
-          "rule": "It, this y that pueden referirse a un sustantivo o a TODA la frase anterior. This suena más cercano: lo usamos cuando vamos a seguir desarrollando la idea. That marca más distancia (algo ya cerrado, o lo que ha dicho otra persona) y es el típico para dar razones: that's why...",
+          "heading": "THIS / THAT / THESE / THOSE",
+          "formulas": ["THIS / THAT (singular)", "THESE / THOSE + sustantivo (plural)"],
+          "rule": "Sirven para volver a algo ya mencionado (personas, cosas o situaciones) sin repetirlo. This / these → presente (algo cercano). That / those → pasado (algo más lejano).",
+          "table": {
+            "headers": ["", "Presente (cercano)", "Pasado (lejano)"],
+            "rows": [
+              ["Singular", "this", "that"],
+              ["Plural + sustantivo", "these", "those"]
+            ]
+          },
           "examples": [
-            "Artists now have a vast range of materials. **This** means that they can be much more versatile.",
-            "The artist is my cousin and **that's why** I'm here.",
-            "I studied biology. **That** allowed me to work in a lab."
-          ],
-          "compare": [
-            {
-              "label": "This · la idea sigue",
-              "text": "Prices have doubled. **This** has led to a fall in sales, which..."
-            },
-            {
-              "label": "That · distancia / reacción",
-              "text": "'Prices have doubled.' '**That**'s ridiculous!'"
-            }
-          ]
-        },
-        {
-          "heading": "THESE / THOSE + sustantivo · THOSE WHO / THOSE OF",
-          "formulas": [
-            "THESE / THOSE + sustantivo mencionado",
-            "THOSE + WHO / WHICH / WITH ... (= the people / the ones)",
-            "THOSE + OF + sustantivo"
-          ],
-          "rule": "These / those + sustantivo retoman algo ya mencionado. Those who... = la gente que... (sin mencionarla antes). Those of... evita repetir un sustantivo plural.",
-          "examples": [
-            "Several experts were consulted. **These experts** agreed that...",
-            "**Those who** studied regularly passed the exam.",
-            "Our prices are lower than **those of** our competitors."
-          ],
-          "wrong": [
-            {
-              "bad": "The best candidates are these that show they have done their homework.",
-              "good": "The best candidates are those that show they have done their homework."
-            }
-          ]
-        },
-        {
-          "heading": "THE FORMER / THE LATTER",
-          "formula": "THE FORMER = el primero · THE LATTER = el segundo (de dos)",
-          "rule": "Muy útil en Writing (essays, reports) para referirse a dos opciones sin repetirlas.",
-          "examples": [
-            "We could build a park or a car park. **The former** would benefit families, while **the latter** would only help drivers."
-          ],
-          "tip": "Solo con DOS elementos. Con más de dos: the first / the last."
-        },
-        {
-          "heading": "SUCH · THE SAME",
-          "formulas": [
-            "SUCH + (a / an) + sustantivo = de ese tipo",
-            "THE SAME (+ sustantivo) = lo mismo"
-          ],
-          "rule": "Such retoma algo dicho antes con el sentido de 'algo así'. The same evita repetir una acción o elección.",
-          "examples": [
-            "He shouted at the referee. **Such behaviour** is unacceptable.",
-            "I'd never heard of **such a thing**.",
-            "She ordered the fish, and I had **the same**."
+            "I studied biology. **That** allowed me to work here.",
+            "I am taking an English course. **This** will give me more opportunities to find a job.",
+            "We tend to use the computer and the tablet every day. **These inventions** have changed our lives.",
+            "I conducted some interviews with many students. **Those students** who preferred answering online were the youngest."
           ]
         }
       ]
@@ -73,134 +29,59 @@
     {
       "id": "substitution",
       "title": "B) SUBSTITUTION",
-      "subtitle": "Sustituir palabras por otras: one / ones, do / do so, so / not, so / neither",
+      "subtitle": "A number of words that can be used to avoid repetition",
       "color": "indigo",
       "blocks": [
         {
-          "heading": "ONE / ONES",
-          "formulas": [
-            "ONE = sustantivo contable singular · ONES = plural",
-            "a / the + ADJ + ONE(S)",
-            "THE ONE(S) + who / that / with / in ..."
-          ],
-          "rule": "Sustituyen a un sustantivo CONTABLE ya mencionado. Nunca con incontables.",
-          "examples": [
-            "I've made some sandwiches — would you like **one**?",
-            "I strongly recommend **the one** at the National Gallery.",
-            "I prefer to wear **an old one**.",
-            "I enjoy romantic films, especially **sad ones**."
-          ],
-          "wrong": [
-            {
-              "bad": "There are a few slices of cake left. Take it!",
-              "good": "There are a few slices of cake left. Take one!"
-            },
-            {
-              "bad": "I need some milk. Have you got one?",
-              "good": "I need some milk. Have you got any? (milk es incontable)"
-            }
-          ]
+          "heading": "DO / DOES / DID → sustituye a un verbo",
+          "formula": "SUJETO + DO / DOES / DID",
+          "examples": ["Peter didn't want to study, but I **did**. (= wanted to study)"]
         },
         {
-          "heading": "ANOTHER · THE OTHER(S) · BOTH · EITHER · NEITHER · ALL · NONE",
-          "rule": "Another = uno más (de un grupo). The other = el segundo de dos; the others = el resto. Both / either / neither → dos cosas. All / none → más de dos.",
-          "chips": [
-            "another",
-            "the other",
-            "the others",
-            "both",
-            "either",
-            "neither",
-            "all",
-            "none"
-          ],
-          "examples": [
-            "One picture showed a girl. **Another** was of the same girl dancing.",
-            "Pablo has two houses. One is in São Paulo and **the other** is in Singapore.",
-            "He's written two novels and **both** have won prizes. **Neither** is autobiographical.",
-            "'Vanilla or chocolate?' '**Either** will be fine.'"
-          ]
+          "heading": "DO / DOES / DID + SO → sustituye a verbo + objeto",
+          "formula": "SUJETO + DO / DOES / DID + SO",
+          "examples": ["Peter didn't buy a new car, but I **did so**. (= bought a new car)"],
+          "tip": "Sale mucho en el ejercicio de completar huecos."
         },
         {
-          "heading": "Auxiliares y modales en vez del verbo",
-          "formula": "SUJETO + AUX / MODAL  (sin repetir el verbo)",
-          "rule": "Usamos el auxiliar del tiempo (do / does / did, have, be, will...) o el modal en lugar de repetir todo el verbo.",
+          "heading": "SO / NOR / NEITHER + AUX + SUJETO",
+          "formulas": ["SO + AUX + SUJETO (= me too)", "NOR / NEITHER + AUX + SUJETO (= me neither)"],
+          "rule": "El auxiliar depende del tiempo de la primera frase.",
           "examples": [
-            "Not many people **have read** that book, and I'm one of the few that **have**.",
-            "A year ago I couldn't drive a car, but now I **can**.",
-            "I really enjoy comedy films, but then I think everyone **does**.",
-            "Mary didn't finish the assignment on time, but I **did**."
-          ]
+            "I can play the piano. — **So can I**.",
+            "I went to the cinema. — **So did I**.",
+            "I didn't study French. — **Neither / Nor did I**."
+          ],
+          "wrong": [{ "bad": "I didn't study French. — Neither didn't I.", "good": "I didn't study French. — Neither did I. (neither ya es negativo)" }]
         },
         {
-          "heading": "DO SO · DO IT · DO THAT",
-          "formula": "DO SO = verbo + complementos (más formal)",
-          "rule": "Do so sustituye a una acción completa (verbo + objeto). Es más formal que do it / do that.",
+          "heading": "SO / NOT → sustituyen a una oración con THAT después de ciertos verbos",
+          "formulas": ["think / expect / hope / seem / suppose / believe + SO", "hope + NOT  ·  DON'T + think / expect / suppose / believe + SO"],
+          "rule": "So sustituye a la oración afirmativa (that I will pass the test). Para la negativa, la mayoría de estos verbos se niegan con don't (I don't think so); con hope se usa not (I hope not). Con expect también se puede usar not.",
+          "chips": ["think", "expect", "hope", "seem", "suppose", "believe"],
           "examples": [
-            "I told my students to hand in the essay on Monday and all of them **did so**.",
-            "I used to play tennis, but I haven't **done so** for years.",
-            "Anyone wishing to leave early may **do so** after 3 p.m."
-          ]
+            "Are you going to pass the test? — I **hope so**. (= that I will pass the test)",
+            "Is it going to rain? — I **expect not**.",
+            "Will it be expensive? — I **don't think so**."
+          ],
+          "wrong": [{ "bad": "Is it going to rain? — I don't hope so.", "good": "Is it going to rain? — I hope not." }]
         },
         {
-          "heading": "SO / NEITHER / NOR + AUX + SUJETO",
-          "formulas": [
-            "SO + AUX + SUJETO (= yo también)",
-            "NEITHER / NOR + AUX + SUJETO (= yo tampoco)"
-          ],
-          "rule": "Para mostrar que algo también es así para otra persona. El auxiliar depende del tiempo de la primera frase.",
+          "heading": "IF SO / IF NOT → sustituyen a una oración entera",
+          "formulas": ["IF SO = si es así", "IF NOT = si no es así"],
           "examples": [
-            "I enjoy science fiction. **So does** my best friend.",
-            "I don't think we should buy a car. **Neither does** my wife.",
-            "I found it hard at first, and **so did** my friends."
+            "Are you free tomorrow? **If so**, we can go to the cinema. (= If you are free tomorrow)",
+            "**If not**, we can meet up another day."
           ],
-          "compare": [
-            {
-              "label": "So do I · yo también",
-              "text": "'I love this song.' '**So do I**.'"
-            },
-            {
-              "label": "So I do · ¡pues es verdad!",
-              "text": "'You've got paint on your shirt.' '**So I have**!' (confirmación)"
-            }
-          ],
-          "wrong": [
-            {
-              "bad": "'I don't like it.' 'Neither don't I.'",
-              "good": "'I don't like it.' 'Neither do I.' (neither ya es negativo)"
-            }
-          ]
+          "tip": "Speaking (Part 3): Do you think this is a good point to talk about first? If so, we can start talking about this."
         },
         {
-          "heading": "SO / NOT después de think, hope, expect, suppose, believe, guess, be afraid",
-          "formulas": [
-            "think / suppose / expect / hope / guess + SO",
-            "hope / be afraid / guess + NOT",
-            "DON'T + think / expect / believe + SO"
-          ],
-          "rule": "So sustituye a una oración afirmativa; not, a una negativa. Con think, expect, believe y suppose lo normal es negar el verbo (I don't think so). Con hope y be afraid se usa not (I hope not / I'm afraid not).",
+          "heading": "ONE / ONES → sustituyen a sustantivos contables",
+          "formulas": ["ONE (singular)", "ONES (plural)"],
           "examples": [
-            "'Do you think Real Madrid will win?' 'I **guess so**.'",
-            "'Will it rain?' 'I **hope not**.'",
-            "'Can you come?' '**I'm afraid not**.'"
-          ],
-          "wrong": [
-            {
-              "bad": "'Will it rain?' 'I don't hope so.'",
-              "good": "'Will it rain?' 'I hope not.'"
-            }
-          ]
-        },
-        {
-          "heading": "IF SO / IF NOT",
-          "formulas": [
-            "IF SO = si es así",
-            "IF NOT = si no es así"
-          ],
-          "rule": "Sustituyen a una condición entera que acabamos de mencionar.",
-          "examples": [
-            "Are you free tonight? **If so**, let's have dinner.",
-            "We need to submit it by Friday. **If not**, we'll lose the contract."
+            "I've bought a new car. — Are you talking about **the one** that is parked outside?",
+            "I have many books. **The ones** on the table are mine.",
+            "The project is by far the most interesting **one** that I've ever done."
           ]
         }
       ]
@@ -208,114 +89,44 @@
     {
       "id": "ellipsis",
       "title": "C) ELLIPSIS",
-      "subtitle": "Quitar palabras que se sobreentienden",
+      "subtitle": "To omit some words",
       "color": "purple",
       "blocks": [
         {
-          "heading": "Tras AND / BUT / OR",
-          "formula": "frase 1 + AND / BUT / OR + (sujeto / aux / verbo omitidos)",
-          "rule": "Si el sujeto, el auxiliar o el verbo son los mismos, se pueden omitir en la segunda parte.",
+          "heading": "AND / BUT → se omite el sujeto / adjetivo",
+          "formula": "frase 1 + AND / BUT + (sujeto / adjetivo omitido)",
           "examples": [
-            "He opened the door and **(he)** walked in.",
-            "He bought a laptop and **(he bought)** a printer.",
-            "She can sing but **(she)** can't dance."
+            "I saw a film and **(I)** enjoyed it.",
+            "I took a test, but **(I)** didn't pass it.",
+            "Peter was tired, but I wasn't **(tired)**."
           ]
         },
         {
-          "heading": "Pronombre relativo (cuando es objeto)",
-          "formula": "sustantivo + (THAT / WHICH / WHO) + SUJETO + verbo",
-          "rule": "Si el relativo es el objeto (detrás viene un sujeto), podemos quitarlo. Si es el sujeto, no.",
-          "compare": [
-            {
-              "label": "Objeto · se puede omitir",
-              "text": "The car **(that)** I bought is very fast."
-            },
-            {
-              "label": "Sujeto · NO se omite",
-              "text": "The man **who** called you is my boss."
-            }
-          ]
+          "heading": "Pronombre relativo como objeto directo de una defining relative clause",
+          "formula": "sustantivo + (THAT / WHICH) + SUJETO + verbo",
+          "examples": ["The house **(that / which)** Peter painted is mine."]
         },
         {
-          "heading": "Tras auxiliares y modales",
+          "heading": "El verbo principal se puede omitir después de un auxiliar",
           "formula": "AUX / MODAL + (verbo omitido)",
-          "rule": "El auxiliar o el modal se quedan solos. Con tiempos perfectos o pasivos podemos quedarnos con varias partes.",
-          "examples": [
-            "'Have you finished?' 'Yes, I **have**.'",
-            "I thought the meeting would be cancelled, but it **wasn't**.",
-            "I didn't go, but I **could have**.",
-            "'Has the parcel been sent?' 'It **should have been**.'"
-          ]
+          "examples": ["Have you finished working? — Yes, I **have**.", "Can you play the piano? — Yes, I **can**."]
         },
         {
-          "heading": "TO solo (infinitivo sin repetir)",
-          "formula": "want / would love / used / be able / be allowed + TO",
-          "rule": "Con verbos o adjetivos seguidos de to + inf podemos dejar solo el to.",
+          "heading": "MODAL + BE · MODAL + HAVE (BEEN)",
+          "formulas": ["MODAL + BE (presente, con el verbo to be)", "MODAL + HAVE BEEN (pasado, con el verbo to be)", "MODAL + HAVE (pasado, sin el verbo to be)"],
           "examples": [
-            "Kim suggested going to the ballet, but I didn't **want to**.",
-            "Give me a call later if you're **able to**.",
-            "I'd like to help, but I'm not sure I'd be **allowed to**.",
-            "I don't play chess now, but I **used to**."
-          ],
-          "wrong": [
-            {
-              "bad": "'Would you like to come?' 'I'd love.'",
-              "good": "'Would you like to come?' 'I'd love to.'"
-            }
-          ]
-        },
-        {
-          "heading": "Wh- words solos",
-          "formula": "WHO / WHY / WHEN / WHERE / HOW + (resto omitido)",
-          "examples": [
-            "He left early, but I don't know **why**.",
-            "Someone left the door open, but I don't know **who**.",
-            "We'll meet soon, but I'm not sure **when**."
-          ]
-        },
-        {
-          "heading": "Elipsis informal en el Speaking",
-          "rule": "En conversación se omiten el sujeto y el auxiliar al principio de la frase. Suena muy natural en el Speaking (¡no en Writing formal!).",
-          "examples": [
-            "**(It)** Sounds good to me.",
-            "**(Do you)** Want a coffee?",
-            "**(I've)** No idea.",
-            "**(Have you)** Been here long?"
+            "Is Javi at home? — Yes, he **must be**.",
+            "He wasn't expelled, but he **should have been**.",
+            "Did Peter paint his house? — He **may have**."
           ]
         }
       ]
     }
   ],
   "speaking": [
-    {
-      "part": "Part 2 (Long turn)",
-      "structure": "In the first picture, [comment]. THIS seems to suggest [idea], whereas in the other one...",
-      "example": "In the first picture, the people are working in an open-plan office. This seems to suggest a more collaborative environment, whereas in the other one...",
-      "translation": "En la primera foto, [comentario]. Esto parece sugerir [idea], mientras que en la otra..."
-    },
-    {
-      "part": "Part 3 (Agreeing)",
-      "structure": "'I think [opinion].' — 'So do I. / Neither do I. / I don't think so, actually.'",
-      "example": "'I think we should prioritise the environment.' — 'So do I. In fact, so do most young people nowadays.'",
-      "translation": "'Creo que [opinión].' — 'Yo también. / Yo tampoco. / La verdad es que yo no lo creo.'"
-    },
-    {
-      "part": "Part 4 (Answering yes / no questions)",
-      "structure": "I certainly hope SO / NOT, but I'm afraid [reason].",
-      "example": "Will AI replace teachers? I certainly hope not, but I'm afraid it might if we rely on it too much.",
-      "translation": "Espero que sí / que no, pero me temo que [razón]."
-    },
-    {
-      "part": "Part 3 (Comparing two options)",
-      "structure": "Both options have advantages, but the former [...], whereas the latter [...].",
-      "example": "Both options have advantages, but the former would be cheaper, whereas the latter would reach more people.",
-      "translation": "Las dos opciones tienen ventajas, pero la primera [...], mientras que la segunda [...]."
-    },
-    {
-      "part": "Part 1 (Avoiding repetition)",
-      "structure": "I haven't [done it] yet, but I'd love TO. / I don't any more, but I used TO.",
-      "example": "I haven't tried any extreme sports yet, but I'd love to if I ever get the chance.",
-      "translation": "Todavía no lo he hecho, pero me encantaría. / Ya no, pero antes sí."
-    }
+    { "part": "Part 3 (Agreeing)", "structure": "'I think [opinion].' — 'So do I. / Neither do I.'", "example": "'I don't think we should spend more money on roads.' — 'Neither do I.'", "translation": "'Creo que [opinión].' — 'Yo también. / Yo tampoco.'" },
+    { "part": "Part 4 (Answering yes / no questions)", "structure": "I certainly hope SO / NOT. · I don't think SO. · I expect NOT.", "example": "Will AI replace teachers? I certainly hope not, and I don't think so, to be honest.", "translation": "Espero que sí / que no. · No lo creo. · Supongo que no." },
+    { "part": "Part 3 (Starting the discussion)", "structure": "Do you think [option] is a good point to talk about first? If so, we can start with it. If not, ...", "example": "Do you think technology is a good point to talk about first? If so, we can start talking about this. If not, we could begin with education.", "translation": "¿Crees que [opción] es un buen punto para empezar? Si es así, podemos empezar por ahí. Si no, ..." },
+    { "part": "Part 1 (Avoiding repetition)", "structure": "[Topic] is by far the most [adjective] one that I've ever [participle].", "example": "This project is by far the most interesting one that I've ever done.", "translation": "[Tema] es con diferencia el más [adjetivo] que he [participio] nunca." }
   ]
 }

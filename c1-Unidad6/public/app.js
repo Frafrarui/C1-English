@@ -7,17 +7,17 @@ const TABS = ['theory', 'reference', 'substitution', 'ellipsis', 'book', 'transf
 
 const QUIZ_INFO = {
     reference: {
-        title: 'Reference: this, that, those, the former / the latter, such',
+        title: 'Reference: this, that, these, those',
         instructions: 'Choose the correct option or write the missing word.',
         color: 'sky'
     },
     substitution: {
-        title: 'Substitution: one / ones, do so, so / not, so / neither',
+        title: 'Substitution: do / do so, so / nor / neither, so / not, if so / if not, one / ones',
         instructions: 'Choose the correct option or write the missing word.',
         color: 'indigo'
     },
     ellipsis: {
-        title: 'Ellipsis: leaving words out',
+        title: 'Ellipsis: and / but, relative pronouns, auxiliaries & modals',
         instructions: 'Choose the correct option or write the missing word.',
         color: 'purple'
     },
