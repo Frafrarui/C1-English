@@ -10,40 +10,90 @@
           "heading": "Relative pronouns",
           "formula": "CLAUSE 1 + RELATIVE PRONOUN + CLAUSE 2 = sentence",
           "table": {
-            "headers": ["Pronoun", "Se refiere a"],
+            "headers": [
+              "Pronoun",
+              "Se refiere a"
+            ],
             "rows": [
-              ["which", "something"],
-              ["that", "something / someone"],
-              ["who", "someone"],
-              ["whom", "someone"],
-              ["whose", "possessions"],
-              ["when", "time"],
-              ["where", "place"],
-              ["why", "reason"]
+              [
+                "which",
+                "something"
+              ],
+              [
+                "that",
+                "something / someone"
+              ],
+              [
+                "who",
+                "someone"
+              ],
+              [
+                "whom",
+                "someone"
+              ],
+              [
+                "whose",
+                "possessions"
+              ],
+              [
+                "when",
+                "time"
+              ],
+              [
+                "where",
+                "place"
+              ],
+              [
+                "why",
+                "reason"
+              ]
             ]
           }
         },
         {
           "heading": "Diferencia entre WHO y WHOM: es que hay una preposición",
-          "formulas": ["PREPOSICIÓN + WHOM  (on whom · with whom · to whom)", "WHO + ... + preposición al final"],
-          "compare": [
-            { "label": "Con whom", "text": "Peter, **with whom** I spoke yesterday, ..." },
-            { "label": "Con who", "text": "Peter, **who** I spoke **with** yesterday, ..." }
+          "formulas": [
+            "PREPOSICIÓN + WHOM  (on whom · with whom · to whom)",
+            "WHO + ... + preposición al final"
           ],
-          "wrong": [{ "bad": "Peter, with who I spoke yesterday, ...", "good": "Peter, with whom I spoke yesterday, ... (después de preposición: whom)" }]
+          "compare": [
+            {
+              "label": "Con whom",
+              "text": "Peter, **with whom** I spoke yesterday, ..."
+            },
+            {
+              "label": "Con who",
+              "text": "Peter, **who** I spoke **with** yesterday, ..."
+            }
+          ],
+          "wrong": [
+            {
+              "bad": "Peter, with who I spoke yesterday, ...",
+              "good": "Peter, with whom I spoke yesterday, ... (después de preposición: whom)"
+            }
+          ]
         },
         {
           "heading": "DEFINING relative clauses",
           "formula": "sustantivo + (THAT / WHICH / WHO) + ...  (sin comas)",
           "rule": "Add essential information · No commas · Omission of the relative pronoun as the O.D. · that = who / which.",
-          "examples": ["The film **(that / which)** I saw yesterday was great."]
+          "examples": [
+            "The film **(that / which)** I saw yesterday was great."
+          ]
         },
         {
           "heading": "NON-DEFINING relative clauses",
           "formula": "sustantivo + , WHICH / WHO + ... ,",
           "rule": "Add extra information · Commas · ✗ that.",
-          "examples": ["Avatar, **which is my favourite film**, was great."],
-          "wrong": [{ "bad": "Avatar, that is my favourite film, was great.", "good": "Avatar, which is my favourite film, was great." }]
+          "examples": [
+            "Avatar, **which is my favourite film**, was great."
+          ],
+          "wrong": [
+            {
+              "bad": "Avatar, that is my favourite film, was great.",
+              "good": "Avatar, which is my favourite film, was great."
+            }
+          ]
         }
       ]
     },
@@ -55,41 +105,85 @@
       "blocks": [
         {
           "heading": "Las tres formas",
-          "formulas": ["MV-ING", "MV-ED2", "HAVING + MV-ED2"]
+          "formulas": [
+            "MV-ING",
+            "MV-ED2",
+            "HAVING + MV-ED2"
+          ]
         },
         {
           "heading": "Instead of a relative clause",
           "rule": "Para usar una participle clause eliminamos el relative pronoun y el verbo.",
           "compare": [
-            { "label": "Relative clause", "text": "The man **who is working** as a teacher is Álvaro." },
-            { "label": "Participle clause", "text": "The man **working** as a teacher is Álvaro." }
+            {
+              "label": "Relative clause",
+              "text": "The man **who is working** as a teacher is Álvaro."
+            },
+            {
+              "label": "Participle clause",
+              "text": "The man **working** as a teacher is Álvaro."
+            }
           ]
         },
         {
           "heading": "Speaking (Part 2)",
-          "examples": ["In the 1st photograph **a girl can be seen working** as ..., while the 2nd photo **shows a boy who is working** ..."]
+          "examples": [
+            "In the 1st photograph **a girl can be seen working** as ..., while the 2nd photo **shows a boy who is working** ..."
+          ]
         },
         {
           "heading": "Instead of conjunctions",
           "compare": [
-            { "label": "Because / so → MV-ing", "text": "I studied a lot because I wanted to pass the test. → **Wanting** to pass the test, I studied a lot." },
-            { "label": "As / while → MV-ing", "text": "While I was driving home, I saw an accident. → **Driving** home, I saw an accident." },
-            { "label": "As / while → MV-ing", "text": "As I was studying at home, I felt sick. → **Studying** at home, I felt sick." },
-            { "label": "And → MV-ing", "text": "I opened the door and saw Álvaro explaining. → I opened the door, **seeing** Álvaro explaining." },
-            { "label": "When / once / after → Having + MV-ed2", "text": "When I had applied for the job, I ... → **Having applied** for the job, I ..." },
-            { "label": "If → MV-ed2", "text": "If it is cooked at a low temperature, it would taste better. → **Cooked** at a low temperature, it would taste better." }
+            {
+              "label": "Because / so → MV-ing",
+              "text": "I studied a lot because I wanted to pass the test. → **Wanting** to pass the test, I studied a lot."
+            },
+            {
+              "label": "As / while → MV-ing",
+              "text": "While I was driving home, I saw an accident. → **Driving** home, I saw an accident."
+            },
+            {
+              "label": "As / while → MV-ing",
+              "text": "As I was studying at home, I felt sick. → **Studying** at home, I felt sick."
+            },
+            {
+              "label": "And → MV-ing",
+              "text": "I opened the door and saw Álvaro explaining. → I opened the door, **seeing** Álvaro explaining."
+            },
+            {
+              "label": "When / once / after → Having + MV-ed2",
+              "text": "When I had applied for the job, I ... → **Having applied** for the job, I ..."
+            },
+            {
+              "label": "If → MV-ed2",
+              "text": "If it is cooked at a low temperature, it would taste better. → **Cooked** at a low temperature, it would taste better."
+            }
           ]
         },
         {
           "heading": "IF → MV-ed2: dos condiciones",
           "rule": "1ª parte en PASIVA (it is cooked / it is used...) · el SUJETO es el mismo que el de la segunda parte.",
-          "wrong": [{ "bad": "Studied this in detail, you will find it interesting. (you no eres 'estudiado')", "good": "Cooked at a low temperature, it would taste better. (it = la comida, que es cocinada)" }]
+          "wrong": [
+            {
+              "bad": "Studied this in detail, you will find it interesting. (you no eres 'estudiado')",
+              "good": "Cooked at a low temperature, it would taste better. (it = la comida, que es cocinada)"
+            }
+          ]
         },
         {
           "heading": "After the object of some verbs: see / hear / watch / notice / find",
           "formula": "VERBO + OBJETO + MV-ING",
-          "chips": ["see", "hear", "watch", "notice", "find"],
-          "examples": ["I **found Peter cheating** in the exam.", "I **saw my brother talking** on the phone."]
+          "chips": [
+            "see",
+            "hear",
+            "watch",
+            "notice",
+            "find"
+          ],
+          "examples": [
+            "I **found Peter cheating** in the exam.",
+            "I **saw my brother talking** on the phone."
+          ]
         }
       ]
     },
@@ -102,16 +196,144 @@
         {
           "heading": "Apposition",
           "compare": [
-            { "label": "Relative clause", "text": "My friends, **who are called** Peter and Mike, live in London." },
-            { "label": "Apposition", "text": "My friends, **Peter and Mike**, live in London." }
+            {
+              "label": "Relative clause",
+              "text": "My friends, **who are called** Peter and Mike, live in London."
+            },
+            {
+              "label": "Apposition",
+              "text": "My friends, **Peter and Mike**, live in London."
+            }
           ]
         }
       ]
     }
   ],
   "speaking": [
-    { "part": "Part 2 (Describing the pictures)", "structure": "In the 1st photograph a [person] can be seen [V-ing]..., while the 2nd photo shows a [person] who is [V-ing]...", "example": "In the 1st photograph a girl can be seen working as a waitress, while the 2nd photo shows a boy who is studying.", "translation": "En la 1ª foto se ve a [persona] [haciendo algo], mientras que la 2ª muestra a [persona] que está [haciendo algo]." },
-    { "part": "Part 3 / 4 (Giving reasons)", "structure": "Wanting to [goal], people nowadays tend to [action].", "example": "Wanting to save money, people nowadays tend to buy second-hand clothes.", "translation": "Queriendo [objetivo], la gente hoy en día tiende a [acción]." },
-    { "part": "Part 4 (Sequencing ideas)", "structure": "Having [past participle], [people] find it much easier to [action].", "example": "Having graduated from university, young people find it much easier to get a good job.", "translation": "Tras haber [participio], a [la gente] le resulta mucho más fácil [acción]." }
+    {
+      "part": "Part 2 (Describing the pictures)",
+      "structure": "In the 1st photograph a [person] can be seen [V-ing]..., while the 2nd photo shows a [person] who is [V-ing]...",
+      "example": "In the 1st photograph a girl can be seen working as a waitress, while the 2nd photo shows a boy who is studying.",
+      "translation": "En la 1ª foto se ve a [persona] [haciendo algo], mientras que la 2ª muestra a [persona] que está [haciendo algo]."
+    },
+    {
+      "part": "Part 3 / 4 (Giving reasons)",
+      "structure": "Wanting to [goal], people nowadays tend to [action].",
+      "example": "Wanting to save money, people nowadays tend to buy second-hand clothes.",
+      "translation": "Queriendo [objetivo], la gente hoy en día tiende a [acción]."
+    },
+    {
+      "part": "Part 4 (Sequencing ideas)",
+      "structure": "Having [past participle], [people] find it much easier to [action].",
+      "example": "Having graduated from university, young people find it much easier to get a good job.",
+      "translation": "Tras haber [participio], a [la gente] le resulta mucho más fácil [acción]."
+    }
+  ],
+  "extra_intro": [
+    {
+      "heading": "1. , WHICH para comentar TODA la frase anterior",
+      "formula": "oración completa + COMA + WHICH + comentario",
+      "rule": "Which no se refiere a un sustantivo, sino a todo lo que acabas de decir. Va siempre tras coma. Nunca what ni that.",
+      "examples": [
+        "It had been raining all day, **which is why** I didn't go out.",
+        "He didn't call me, **which really annoyed me**."
+      ],
+      "wrong": [
+        {
+          "bad": "He didn't call me, what really annoyed me.",
+          "good": "He didn't call me, which really annoyed me."
+        }
+      ]
+    },
+    {
+      "heading": "2. Cuantificador + OF WHOM / OF WHICH",
+      "formula": "all / most / some / none / both / neither + OF WHOM (personas) / OF WHICH (cosas)",
+      "rule": "Une dos frases cuando la segunda habla de una parte del grupo. Va con comas.",
+      "examples": [
+        "He has three sons, **all of whom** are doctors.",
+        "I've got lots of books, **most of which** I haven't read."
+      ],
+      "wrong": [
+        {
+          "bad": "He has three sons, all of them are doctors.",
+          "good": "He has three sons, all of whom are doctors. (o: ... sons. All of them are doctors.)"
+        }
+      ]
+    },
+    {
+      "heading": "3. Preposición + WHICH (cosas y lugares)",
+      "formula": "PREPOSICIÓN + WHICH  (in which · at which · on which)",
+      "rule": "Igual que preposición + whom, pero para cosas. Es la versión formal; nunca preposición + that.",
+      "compare": [
+        {
+          "label": "Formal",
+          "text": "The hotel **in which** we stayed was lovely."
+        },
+        {
+          "label": "Informal",
+          "text": "The hotel **(that) we stayed in** was lovely."
+        }
+      ],
+      "wrong": [
+        {
+          "bad": "The hotel in that we stayed...",
+          "good": "The hotel in which we stayed..."
+        }
+      ]
+    },
+    {
+      "heading": "4. Conjunción + V-ING: after / before / while / when + -ing",
+      "formula": "AFTER / BEFORE / WHILE / WHEN + V-ING",
+      "rule": "Puedes dejar la conjunción para que el significado quede claro. El sujeto sigue siendo el mismo.",
+      "examples": [
+        "**After watching** that film, I couldn't sleep.",
+        "She got interested in art **while travelling** in Italy."
+      ]
+    },
+    {
+      "heading": "5. Participle clause NEGATIVA: NOT + V-ING",
+      "formula": "NOT + V-ING / NOT + HAVING + participio",
+      "rule": "El not va DELANTE del participio.",
+      "examples": [
+        "**Not knowing** what to do, I called my mother.",
+        "**Not having** enough money, she couldn't buy the tickets."
+      ],
+      "wrong": [
+        {
+          "bad": "Knowing not what to do, I called my mother.",
+          "good": "Not knowing what to do, I called my mother."
+        }
+      ]
+    },
+    {
+      "heading": "6. Reduced relative PASIVA: quitar who / which + BE → V-ED",
+      "formula": "sustantivo + V-ED  (= who / which + is / was + participio)",
+      "rule": "En tus apuntes solo está la activa (the man working as a teacher). Si la relativa es pasiva, queda el participio.",
+      "compare": [
+        {
+          "label": "Relative clause",
+          "text": "The jam **which was made** by my mother is delicious."
+        },
+        {
+          "label": "Participle clause",
+          "text": "The jam **made** by my mother is delicious."
+        }
+      ]
+    },
+    {
+      "heading": "7. INSTEAD OF / RATHER THAN + V-ING",
+      "formula": "INSTEAD OF / RATHER THAN + V-ING",
+      "rule": "En lugar de hacer algo.",
+      "examples": [
+        "**Instead of catching** the bus, I walked home.",
+        "**Rather than complaining**, try to find a solution."
+      ],
+      "wrong": [
+        {
+          "bad": "Instead of catch the bus, I walked.",
+          "good": "Instead of catching the bus, I walked."
+        }
+      ]
+    }
   ]
 }

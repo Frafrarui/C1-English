@@ -926,5 +926,341 @@
    ],
    "explanation": "Apposition."
   }
+ ],
+ "extra": [
+  {
+   "type": "mc",
+   "sentence": "It rained all weekend, ___ is why we stayed at home.",
+   "options": [
+    "which",
+    "what",
+    "that",
+    "it"
+   ],
+   "answer": "which",
+   "explanation": "Regla 1 (, which + comentario): which se refiere a TODA la frase anterior, va tras coma y nunca puede ser what ni that. Aquí 'which' = el hecho de que lloviera todo el finde."
+  },
+  {
+   "type": "mc",
+   "sentence": "He forgot my birthday, ___ really upset me.",
+   "options": [
+    "which",
+    "what",
+    "that",
+    "who"
+   ],
+   "answer": "which",
+   "explanation": "Regla 1 (, which + comentario): which se refiere a TODA la frase anterior, va tras coma y nunca puede ser what ni that."
+  },
+  {
+   "type": "gap",
+   "sentence": "We were stuck in traffic for two hours, ___ I found really frustrating.",
+   "answers": [
+    "which"
+   ],
+   "explanation": "Regla 1 (, which + comentario): which se refiere a TODA la frase anterior, va tras coma y nunca puede ser what ni that. 'which' es el objeto de 'found': lo que me pareció frustrante fue estar atascados."
+  },
+  {
+   "type": "mc",
+   "sentence": "She passed all her exams, ___ surprised everyone.",
+   "options": [
+    "which",
+    "what",
+    "that",
+    "whom"
+   ],
+   "answer": "which",
+   "explanation": "Regla 1 (, which + comentario): which se refiere a TODA la frase anterior, va tras coma y nunca puede ser what ni that."
+  },
+  {
+   "type": "mc",
+   "sentence": "He has three daughters, all of ___ are lawyers.",
+   "options": [
+    "whom",
+    "who",
+    "them",
+    "which"
+   ],
+   "answer": "whom",
+   "explanation": "Regla 2 (cuantificador + of whom / of which): whom para personas, which para cosas. 'of them' no vale porque haría falta una frase nueva. Hijas = personas → whom."
+  },
+  {
+   "type": "mc",
+   "sentence": "I bought ten books, most of ___ I haven't read yet.",
+   "options": [
+    "which",
+    "whom",
+    "them",
+    "that"
+   ],
+   "answer": "which",
+   "explanation": "Regla 2 (cuantificador + of whom / of which): whom para personas, which para cosas. 'of them' no vale porque haría falta una frase nueva. Libros = cosas → which."
+  },
+  {
+   "type": "mc",
+   "sentence": "We interviewed 20 candidates, none of ___ had enough experience.",
+   "options": [
+    "whom",
+    "who",
+    "them",
+    "which"
+   ],
+   "answer": "whom",
+   "explanation": "Regla 2 (cuantificador + of whom / of which): whom para personas, which para cosas. 'of them' no vale porque haría falta una frase nueva."
+  },
+  {
+   "type": "gap",
+   "sentence": "She showed us some photos, the best of ___ was taken in Kenya.",
+   "answers": [
+    "which"
+   ],
+   "explanation": "Regla 2 (cuantificador + of whom / of which): whom para personas, which para cosas. 'of them' no vale porque haría falta una frase nueva. 'the best of which' = la mejor de las cuales."
+  },
+  {
+   "type": "mc",
+   "sentence": "The village in ___ they live is very small.",
+   "options": [
+    "which",
+    "that",
+    "where",
+    "whom"
+   ],
+   "answer": "which",
+   "explanation": "Regla 3 (preposición + which): forma formal para cosas y lugares. Detrás de una preposición nunca va that. (Sin preposición también valdría 'where they live'.)"
+  },
+  {
+   "type": "mc",
+   "sentence": "The company for ___ I work is based in London.",
+   "options": [
+    "which",
+    "that",
+    "whom",
+    "what"
+   ],
+   "answer": "which",
+   "explanation": "Regla 3 (preposición + which): forma formal para cosas y lugares. Detrás de una preposición nunca va that. Company = cosa / institución → which."
+  },
+  {
+   "type": "gap",
+   "sentence": "This is the chair on ___ the president sat.",
+   "answers": [
+    "which"
+   ],
+   "explanation": "Regla 3 (preposición + which): forma formal para cosas y lugares. Detrás de una preposición nunca va that."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ watching that film, I couldn't sleep.",
+   "options": [
+    "After",
+    "Having",
+    "Since of"
+   ],
+   "answer": "After",
+   "explanation": "Regla 4 (conjunción + V-ing): after / before / while / when + -ing; el sujeto es el mismo que el de la oración principal. 'After watching' = después de ver."
+  },
+  {
+   "type": "mc",
+   "sentence": "She became interested in art while ___ in Italy.",
+   "options": [
+    "travelling",
+    "travelled",
+    "she travelling",
+    "to travel"
+   ],
+   "answer": "travelling",
+   "explanation": "Regla 4 (conjunción + V-ing): after / before / while / when + -ing; el sujeto es el mismo que el de la oración principal."
+  },
+  {
+   "type": "gap",
+   "sentence": "Always check your answers before ___ (hand) in the exam.",
+   "answers": [
+    "handing"
+   ],
+   "explanation": "Regla 4 (conjunción + V-ing): after / before / while / when + -ing; el sujeto es el mismo que el de la oración principal. before + -ing."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ what to do, I called my mother.",
+   "options": [
+    "Not knowing",
+    "Knowing not",
+    "Don't knowing",
+    "No knowing"
+   ],
+   "answer": "Not knowing",
+   "explanation": "Regla 5 (Not + V-ing): la negativa se forma poniendo not DELANTE del participio."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ enough money, she couldn't buy the tickets.",
+   "options": [
+    "Not having",
+    "Having not",
+    "No having",
+    "Not had"
+   ],
+   "answer": "Not having",
+   "explanation": "Regla 5 (Not + V-ing): la negativa se forma poniendo not DELANTE del participio."
+  },
+  {
+   "type": "gap",
+   "sentence": "___ (not / understand) the question, he left it blank. (2 words)",
+   "answers": [
+    "Not understanding"
+   ],
+   "explanation": "Regla 5 (Not + V-ing): la negativa se forma poniendo not DELANTE del participio."
+  },
+  {
+   "type": "mc",
+   "sentence": "I've brought you some jam ___ by my mother.",
+   "options": [
+    "made",
+    "making",
+    "which made",
+    "having made"
+   ],
+   "answer": "made",
+   "explanation": "Regla 6 (reduced relative pasiva): quitamos who / which + be y queda el participio (V-ed) porque el significado es pasivo. La mermelada ES hecha por mi madre → pasivo → made."
+  },
+  {
+   "type": "mc",
+   "sentence": "Anyone ___ shoplifting will be prosecuted.",
+   "options": [
+    "caught",
+    "catching",
+    "who caught",
+    "having caught"
+   ],
+   "answer": "caught",
+   "explanation": "Regla 6 (reduced relative pasiva): quitamos who / which + be y queda el participio (V-ed) porque el significado es pasivo. = who is caught (pasivo)."
+  },
+  {
+   "type": "mc",
+   "sentence": "The building ___ in the fire is being rebuilt.",
+   "options": [
+    "destroyed",
+    "destroying",
+    "which destroyed",
+    "having destroyed"
+   ],
+   "answer": "destroyed",
+   "explanation": "Regla 6 (reduced relative pasiva): quitamos who / which + be y queda el participio (V-ed) porque el significado es pasivo. = which was destroyed."
+  },
+  {
+   "type": "mc",
+   "sentence": "Compare: 'the man ___ the car' vs 'the car ___ by the man'.",
+   "options": [
+    "driving / driven",
+    "driven / driving",
+    "driven / driven",
+    "driving / driving"
+   ],
+   "answer": "driving / driven",
+   "explanation": "Regla 6 + tus apuntes: activo (el hombre conduce) → V-ing; pasivo (el coche es conducido) → V-ed."
+  },
+  {
+   "type": "mc",
+   "sentence": "___ catching the bus, I walked home.",
+   "options": [
+    "Instead of",
+    "Instead",
+    "Rather of",
+    "Instead to"
+   ],
+   "answer": "Instead of",
+   "explanation": "Regla 7 (instead of / rather than + V-ing): detrás de of (preposición) el verbo siempre va en -ing."
+  },
+  {
+   "type": "gap",
+   "sentence": "Rather than ___ (complain), try to find a solution.",
+   "answers": [
+    "complaining",
+    "complain"
+   ],
+   "explanation": "Regla 7 (instead of / rather than + V-ing): detrás de of (preposición) el verbo siempre va en -ing. Con rather than también se acepta el infinitivo sin to."
+  },
+  {
+   "type": "mc",
+   "sentence": "You can take the train instead of ___ the bus.",
+   "options": [
+    "catching",
+    "catch",
+    "to catch",
+    "caught"
+   ],
+   "answer": "catching",
+   "explanation": "Regla 7 (instead of / rather than + V-ing): detrás de of (preposición) el verbo siempre va en -ing."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "He has three sons and they are all doctors.",
+   "keyword": "WHOM",
+   "before": "He has three sons,",
+   "after": "are doctors.",
+   "answers": [
+    "all of whom"
+   ],
+   "explanation": "Regla 2 (cuantificador + of whom / of which): whom para personas, which para cosas. 'of them' no vale porque haría falta una frase nueva. (3 palabras: all of whom.)"
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The flight was delayed for six hours, and this was really annoying.",
+   "keyword": "WHICH",
+   "before": "The flight was delayed for six hours,",
+   "after": "annoying.",
+   "answers": [
+    "which was really"
+   ],
+   "explanation": "Regla 1 (, which + comentario): which se refiere a TODA la frase anterior, va tras coma y nunca puede ser what ni that."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "Because I didn't know anybody at the party, I left early.",
+   "keyword": "KNOWING",
+   "before": "",
+   "after": ", I left early.",
+   "answers": [
+    "Not knowing anybody there",
+    "Not knowing anyone there",
+    "Not knowing anybody at the party",
+    "Not knowing anyone at the party"
+   ],
+   "explanation": "Regla 5 (Not + V-ing): la negativa se forma poniendo not DELANTE del participio."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "After I had watched the film, I went to bed.",
+   "keyword": "WATCHING",
+   "before": "",
+   "after": ", I went to bed.",
+   "answers": [
+    "After watching the film"
+   ],
+   "explanation": "Regla 4 (conjunción + V-ing): after / before / while / when + -ing; el sujeto es el mismo que el de la oración principal."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "The paintings which were stolen last year have been found.",
+   "keyword": "STOLEN",
+   "before": "The paintings",
+   "after": "have been found.",
+   "answers": [
+    "stolen last year"
+   ],
+   "explanation": "Regla 6 (reduced relative pasiva): quitamos who / which + be y queda el participio (V-ed) porque el significado es pasivo."
+  },
+  {
+   "type": "kwt",
+   "lead_in": "She walked to work; she didn't take the bus.",
+   "keyword": "INSTEAD",
+   "before": "She walked to work",
+   "after": "the bus.",
+   "answers": [
+    "instead of taking",
+    "instead of catching"
+   ],
+   "explanation": "Regla 7 (instead of / rather than + V-ing): detrás de of (preposición) el verbo siempre va en -ing."
+  }
  ]
 }

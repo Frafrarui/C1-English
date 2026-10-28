@@ -3,7 +3,7 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'relative', 'participle', 'apposition', 'book', 'transformations', 'speaking'];
+const TABS = ['theory', 'relative', 'participle', 'apposition', 'extra', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     relative: {
@@ -20,6 +20,13 @@ const QUIZ_INFO = {
         title: 'Apposition',
         instructions: 'Choose the correct option or complete the sentence.',
         color: 'purple'
+    },
+    extra: {
+        title: 'Extra C1: más allá de tus apuntes',
+        instructions: 'Estructuras que no están en tus apuntes pero salen en el C1. Cada solución explica la regla.',
+        introText: 'Lee esto primero: son 7 estructuras nuevas. Después haz los ejercicios; cada corrección te recuerda la regla.',
+        intro: 'extra_intro',
+        color: 'rose'
     },
     book: {
         title: 'Complete Advanced: Grammar Reference Practice',
@@ -341,12 +348,48 @@ function initQuiz(key, onlyIndices, set) {
         }),
         current: 0,
         answers: {},
-        showSummary: false
+        showSummary: false,
+        // Tabs with an intro show the explanation first, once
+        started: !info.intro || (quizzes[key] ? quizzes[key].started : false)
     };
 
+    if (!quizzes[key].started) return renderIntro(key);
     renderQuizShell(key);
     showQuestion(key);
 }
+
+function renderIntro(key) {
+    const info = QUIZ_INFO[key];
+    const c = COLORS[info.color];
+    const blocks = theoryData[info.intro] || [];
+
+    document.getElementById(`content-${key}`).innerHTML = `
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="${c.bg} border-b ${c.border} p-6">
+                <p class="text-xs font-bold uppercase tracking-wider ${c.text}">Antes de empezar</p>
+                <h2 class="text-xl font-bold text-gray-900 mt-1">${info.title}</h2>
+                <p class="text-sm text-gray-600 mt-2">${info.introText || ''}</p>
+            </div>
+            <div class="p-4 sm:p-6 grid gap-4">
+                ${blocks.map(block => renderBlock(block, c)).join('')}
+            </div>
+            <div class="p-6 border-t flex justify-center">
+                <button onclick="startQuiz('${key}')" class="px-6 py-2.5 ${c.btn} text-white rounded-md text-sm font-semibold shadow-sm">Entendido, empezar ejercicios →</button>
+            </div>
+        </div>
+    `;
+}
+
+window.startQuiz = function(key) {
+    quizzes[key].started = true;
+    renderQuizShell(key);
+    showQuestion(key);
+};
+
+window.showIntro = function(key) {
+    quizzes[key].started = false;
+    renderIntro(key);
+};
 
 window.selectSet = function(key, set) {
     initQuiz(key, undefined, set);
@@ -362,6 +405,7 @@ function renderQuizShell(key) {
             <div class="${c.bg} border-b ${c.border} p-6">
                 <h2 class="text-xl font-bold text-gray-900">${info.title}</h2>
                 <p class="text-sm text-gray-600 mt-2">${info.instructions}</p>
+                ${info.intro ? `<button onclick="showIntro('${key}')" class="mt-3 text-sm font-medium ${c.text} hover:underline">← Volver a la explicación</button>` : ''}
                 ${info.sets ? `
                     <div class="flex flex-wrap gap-2 mt-4">
                         ${Object.entries(info.sets).map(([n, label]) => `
