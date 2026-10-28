@@ -1,142 +1,992 @@
-[
-  {
-    "lead_in_sentence": "They will probably win the game tomorrow.",
-    "keyword": "LIKELY",
-    "second_sentence_start": "They",
-    "second_sentence_end": "the game tomorrow.",
-    "correct_answer": "are likely to win"
-  },
-  {
-    "lead_in_sentence": "It is almost certain that he will complain about the noise.",
-    "keyword": "BOUND",
-    "second_sentence_start": "He",
-    "second_sentence_end": "about the noise.",
-    "correct_answer": "is bound to complain"
-  },
-  {
-    "lead_in_sentence": "The train is expected to arrive at 8:30.",
-    "keyword": "DUE",
-    "second_sentence_start": "The train",
-    "second_sentence_end": "at 8:30.",
-    "correct_answer": "is due to arrive"
-  },
-  {
-    "lead_in_sentence": "There is a strong possibility that she will pass the exam.",
-    "keyword": "LIKELIHOOD",
-    "second_sentence_start": "There is a",
-    "second_sentence_end": "pass the exam.",
-    "correct_answer": "strong likelihood that she will"
-  },
-  {
-    "lead_in_sentence": "I'm sure it will rain later, so take an umbrella.",
-    "keyword": "WELL",
-    "second_sentence_start": "It",
-    "second_sentence_end": "later, so take an umbrella.",
-    "correct_answer": "may well rain"
-  },
-  {
-    "lead_in_sentence": "I predict that technology will increasingly control our lives.",
-    "keyword": "LIKELIHOOD",
-    "second_sentence_start": "There is a",
-    "second_sentence_end": "increasingly control our lives.",
-    "correct_answer": "strong likelihood that technology will"
-  },
-  {
-    "lead_in_sentence": "The concert is scheduled to start in five minutes.",
-    "keyword": "DUE",
-    "second_sentence_start": "The concert",
-    "second_sentence_end": "in five minutes.",
-    "correct_answer": "is due to start"
-  },
-  {
-    "lead_in_sentence": "She will probably get the job because she is very qualified.",
-    "keyword": "WELL",
-    "second_sentence_start": "She",
-    "second_sentence_end": "the job because she is very qualified.",
-    "correct_answer": "may well get"
-  },
-  {
-    "lead_in_sentence": "I am almost sure they'll face financial difficulties if they do that.",
-    "keyword": "BOUND",
-    "second_sentence_start": "They",
-    "second_sentence_end": "financial difficulties if they do that.",
-    "correct_answer": "are bound to face"
-  },
-  {
-    "lead_in_sentence": "What are your plans for next weekend?",
-    "keyword": "GOING",
-    "second_sentence_start": "What",
-    "second_sentence_end": "do next weekend?",
-    "correct_answer": "are you going to"
-  },
-  {
-    "lead_in_sentence": "My dentist appointment is tomorrow at 5 PM.",
-    "keyword": "SEEING",
-    "second_sentence_start": "I",
-    "second_sentence_end": "tomorrow at 5 PM.",
-    "correct_answer": "am seeing the dentist"
-  },
-  {
-    "lead_in_sentence": "The President's formal visit to France is next week.",
-    "keyword": "IS",
-    "second_sentence_start": "The President",
-    "second_sentence_end": "France next week.",
-    "correct_answer": "is to visit"
-  },
-  {
-    "lead_in_sentence": "I am absolutely sure he will fail the driving test.",
-    "keyword": "BOUND",
-    "second_sentence_start": "He",
-    "second_sentence_end": "the driving test.",
-    "correct_answer": "is bound to fail"
-  },
-  {
-    "lead_in_sentence": "There is a small chance of him winning the competition.",
-    "keyword": "LIKELIHOOD",
-    "second_sentence_start": "There is a slight",
-    "second_sentence_end": "the competition.",
-    "correct_answer": "likelihood of him winning"
-  },
-  {
-    "lead_in_sentence": "It is expected that the new law will be passed tomorrow.",
-    "keyword": "DUE",
-    "second_sentence_start": "The new law",
-    "second_sentence_end": "tomorrow.",
-    "correct_answer": "is due to be passed"
-  },
-  {
-    "lead_in_sentence": "Do you want me to open the window for you?",
-    "keyword": "SHALL",
-    "second_sentence_start": "",
-    "second_sentence_end": "the window for you?",
-    "correct_answer": "Shall I open"
-  },
-  {
-    "lead_in_sentence": "I think robots will do all the housework in the future.",
-    "keyword": "EXPECT",
-    "second_sentence_start": "I",
-    "second_sentence_end": "all the housework in the future.",
-    "correct_answer": "expect robots will do"
-  },
-  {
-    "lead_in_sentence": "Look at those dark clouds; rain is imminent.",
-    "keyword": "GOING",
-    "second_sentence_start": "Look at those dark clouds; it",
-    "second_sentence_end": "rain.",
-    "correct_answer": "is going to"
-  },
-  {
-    "lead_in_sentence": "We will probably see a rise in temperatures next month.",
-    "keyword": "LIKELY",
-    "second_sentence_start": "Temperatures",
-    "second_sentence_end": "rise next month.",
-    "correct_answer": "are likely to"
-  },
-  {
-    "lead_in_sentence": "It is highly probable that he will arrive late.",
-    "keyword": "WELL",
-    "second_sentence_start": "He",
-    "second_sentence_end": "late.",
-    "correct_answer": "may well arrive"
-  }
-]
+{
+  "plans": [
+    {
+      "type": "mc",
+      "sentence": "Look at that man on the ladder! He ___.",
+      "options": [
+        "is going to fall",
+        "will fall",
+        "falls",
+        "is due to fall"
+      ],
+      "answer": "is going to fall",
+      "explanation": "Predicción con evidencia (lo estás viendo) → be going to."
+    },
+    {
+      "type": "mc",
+      "sentence": "I've decided: I ___ a Master's degree next year.",
+      "options": [
+        "am going to study",
+        "will study",
+        "study",
+        "am due to study"
+      ],
+      "answer": "am going to study",
+      "explanation": "Plan ya decidido → be going to."
+    },
+    {
+      "type": "mc",
+      "sentence": "I ___ the dentist tomorrow at 5 PM — I booked it last week.",
+      "options": [
+        "'m seeing",
+        "see",
+        "will see",
+        "am to see"
+      ],
+      "answer": "'m seeing",
+      "explanation": "Cita / plan con otra persona → present continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "The film ___ at 9.30, so don't be late.",
+      "options": [
+        "starts",
+        "is starting",
+        "will start",
+        "is going to start"
+      ],
+      "answer": "starts",
+      "explanation": "Horario fijo (films) → present simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "The Queen ___ the new hospital next month.",
+      "options": [
+        "is to open",
+        "opens",
+        "will open",
+        "is opening to"
+      ],
+      "answer": "is to open",
+      "explanation": "Arreglo formal / oficial → be + to + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "The plane ___ land at 6.15, but it may be delayed.",
+      "options": [
+        "is due to",
+        "is to be",
+        "is going",
+        "will due to"
+      ],
+      "answer": "is due to",
+      "explanation": "Evento esperado → be due to + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "We ___ dinner with Ana and Luis on Saturday. We've already booked a table.",
+      "options": [
+        "are having",
+        "have",
+        "will have",
+        "are to having"
+      ],
+      "answer": "are having",
+      "explanation": "Plan con otras personas → present continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "The exam ___ at 9 o'clock tomorrow, according to the timetable.",
+      "options": [
+        "begins",
+        "is beginning",
+        "will be begin",
+        "is going begin"
+      ],
+      "answer": "begins",
+      "explanation": "Exams en un horario → present simple."
+    },
+    {
+      "type": "mc",
+      "sentence": "What ___ this weekend? Have you got any plans?",
+      "options": [
+        "are you doing",
+        "do you do",
+        "will you do",
+        "are you to do"
+      ],
+      "answer": "are you doing",
+      "explanation": "Preguntar por planes → present continuous / going to."
+    },
+    {
+      "type": "mc",
+      "sentence": "The President ___ meet the Spanish Prime Minister on Friday.",
+      "options": [
+        "is to",
+        "is due",
+        "goes to",
+        "will to"
+      ],
+      "answer": "is to",
+      "explanation": "Formal arrangement → be + to + inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "The new bridge is ___ to open in May. (expected)",
+      "answers": [
+        "due"
+      ],
+      "explanation": "Expected event → be due to + inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "Be careful! That glass is ___ to fall off the table. (evidence)",
+      "answers": [
+        "going"
+      ],
+      "explanation": "Evidencia → be going to."
+    },
+    {
+      "type": "gap",
+      "sentence": "The bus to Madrid ___ at 7.45 every morning. (leave)",
+      "answers": [
+        "leaves"
+      ],
+      "explanation": "Horario de transporte → present simple."
+    },
+    {
+      "type": "gap",
+      "sentence": "I ___ meeting Sara for coffee at 4. (be)",
+      "answers": [
+        "am",
+        "'m"
+      ],
+      "explanation": "Plan con otra persona → present continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "The minister ___ to announce the new law tomorrow. (formal)",
+      "answers": [
+        "is"
+      ],
+      "explanation": "Arreglo formal → be + to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "The concert is expected to start at 8.",
+      "keyword": "DUE",
+      "before": "The concert",
+      "after": "at 8.",
+      "answers": [
+        "is due to start"
+      ],
+      "explanation": "be due to + inf = evento esperado."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "Those dark clouds mean rain is coming.",
+      "keyword": "GOING",
+      "before": "Look at those clouds!",
+      "after": "rain.",
+      "answers": [
+        "It is going to",
+        "It's going to"
+      ],
+      "explanation": "Evidencia → be going to."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I've got an appointment with the doctor on Monday.",
+      "keyword": "SEEING",
+      "before": "I",
+      "after": "on Monday.",
+      "answers": [
+        "am seeing the doctor",
+        "'m seeing the doctor"
+      ],
+      "explanation": "Cita → present continuous."
+    }
+  ],
+  "noplans": [
+    {
+      "type": "mc",
+      "sentence": "It's cold in here. ___ close the window?",
+      "options": [
+        "Shall I",
+        "Will I",
+        "Am I going to",
+        "Do I"
+      ],
+      "answer": "Shall I",
+      "explanation": "Ofrecimiento → Shall I / we + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "___ we go for a walk after lunch?",
+      "options": [
+        "Shall",
+        "Will",
+        "Are",
+        "Do"
+      ],
+      "answer": "Shall",
+      "explanation": "Ofrecimiento / sugerencia → Shall we."
+    },
+    {
+      "type": "mc",
+      "sentence": "The phone's ringing. — Don't worry, I ___ it.",
+      "options": [
+        "'ll get",
+        "'m going to get",
+        "get",
+        "'m getting"
+      ],
+      "answer": "'ll get",
+      "explanation": "Decisión espontánea en el momento → will."
+    },
+    {
+      "type": "mc",
+      "sentence": "I think robots ___ most jobs in the future.",
+      "options": [
+        "will do",
+        "are going to do",
+        "do",
+        "are doing"
+      ],
+      "answer": "will do",
+      "explanation": "Predicción sin evidencia (I think) → will."
+    },
+    {
+      "type": "mc",
+      "sentence": "Water ___ at 100°C, whatever happens.",
+      "options": [
+        "will boil",
+        "is going to boil",
+        "is boiling",
+        "is due to boil"
+      ],
+      "answer": "will boil",
+      "explanation": "Hecho universal → will."
+    },
+    {
+      "type": "mc",
+      "sentence": "I hope she ___ the driving test tomorrow.",
+      "options": [
+        "will pass",
+        "passes",
+        "is passing",
+        "is to pass"
+      ],
+      "answer": "will pass",
+      "explanation": "hope / think / expect / believe / suppose + will."
+    },
+    {
+      "type": "mc",
+      "sentence": "We're out of bread? OK, I ___ some on my way home.",
+      "options": [
+        "'ll buy",
+        "'m buying",
+        "buy",
+        "'m going to buying"
+      ],
+      "answer": "'ll buy",
+      "explanation": "Decisión espontánea → will."
+    },
+    {
+      "type": "mc",
+      "sentence": "I expect the prices ___ again next year.",
+      "options": [
+        "will go up",
+        "go up",
+        "are going up",
+        "are to go up"
+      ],
+      "answer": "will go up",
+      "explanation": "expect + will."
+    },
+    {
+      "type": "mc",
+      "sentence": "The sun ___ at 6:30 tomorrow morning.",
+      "options": [
+        "will rise",
+        "is going to rise",
+        "rising",
+        "is rising to"
+      ],
+      "answer": "will rise",
+      "explanation": "Future factual statement → will."
+    },
+    {
+      "type": "mc",
+      "sentence": "'This bag is really heavy.' — '___ carry it for you?'",
+      "options": [
+        "Shall I",
+        "Will I",
+        "Do I",
+        "Am I"
+      ],
+      "answer": "Shall I",
+      "explanation": "Ofrecimiento → Shall I."
+    },
+    {
+      "type": "gap",
+      "sentence": "I suppose they ___ win the league again this year.",
+      "answers": [
+        "will",
+        "'ll"
+      ],
+      "explanation": "suppose + will."
+    },
+    {
+      "type": "gap",
+      "sentence": "___ we order a pizza tonight? (ofrecimiento / sugerencia)",
+      "answers": [
+        "Shall"
+      ],
+      "explanation": "Shall we + inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "I don't think people ___ live on Mars in 2050.",
+      "answers": [
+        "will"
+      ],
+      "explanation": "Predicción sin evidencia → will."
+    },
+    {
+      "type": "gap",
+      "sentence": "'There's someone at the door.' — 'I ___ open it!' (decisión ahora)",
+      "answers": [
+        "will",
+        "'ll"
+      ],
+      "explanation": "Decisión espontánea → will."
+    },
+    {
+      "type": "mc",
+      "sentence": "Which sentence is a plan, not a spontaneous decision?",
+      "options": [
+        "I'm going to paint my room this weekend — I bought the paint yesterday.",
+        "The doorbell! I'll go.",
+        "I'm thirsty — I'll get a glass of water.",
+        "Oh no, I forgot! I'll do it now."
+      ],
+      "answer": "I'm going to paint my room this weekend — I bought the paint yesterday.",
+      "explanation": "Plan ya decidido → going to. Las otras son decisiones en el momento → will."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "Do you want me to carry your bag?",
+      "keyword": "SHALL",
+      "before": "",
+      "after": "your bag?",
+      "answers": [
+        "Shall I carry"
+      ],
+      "explanation": "Ofrecimiento → Shall I + inf."
+    }
+  ],
+  "modals": [
+    {
+      "type": "mc",
+      "sentence": "Take an umbrella; it ___ rain later.",
+      "options": [
+        "might",
+        "is bound",
+        "is likely",
+        "will well"
+      ],
+      "answer": "might",
+      "explanation": "Possibility → may / might / could + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "She has worked very hard, so she ___ get the promotion.",
+      "options": [
+        "may well",
+        "may good",
+        "well may",
+        "is well to"
+      ],
+      "answer": "may well",
+      "explanation": "Probability 1 → may / might / could + WELL + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "They ___ to win the match tomorrow.",
+      "options": [
+        "are likely",
+        "are likelihood",
+        "may well",
+        "are probable"
+      ],
+      "answer": "are likely",
+      "explanation": "Probability 2 → be likely to + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "There is a strong likelihood ___ him passing the exam.",
+      "options": [
+        "of",
+        "that",
+        "to",
+        "for"
+      ],
+      "answer": "of",
+      "explanation": "Probability 3 → likelihood + OF + -ing."
+    },
+    {
+      "type": "mc",
+      "sentence": "There is a strong likelihood ___ he will pass the exam.",
+      "options": [
+        "that",
+        "of",
+        "to",
+        "for"
+      ],
+      "answer": "that",
+      "explanation": "Probability 4 → likelihood + THAT + clause."
+    },
+    {
+      "type": "mc",
+      "sentence": "He never likes anything. He ___ complain about the food.",
+      "options": [
+        "is bound to",
+        "is bound",
+        "bound to",
+        "is bounding to"
+      ],
+      "answer": "is bound to",
+      "explanation": "Certainty → be bound to + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "There is a slight likelihood of ___ late.",
+      "options": [
+        "us arriving",
+        "we arrive",
+        "we will arrive",
+        "us to arrive"
+      ],
+      "answer": "us arriving",
+      "explanation": "likelihood of + (objeto) + -ing."
+    },
+    {
+      "type": "mc",
+      "sentence": "Which one is the MOST certain?",
+      "options": [
+        "He is bound to win.",
+        "He may well win.",
+        "He is likely to win.",
+        "He might win."
+      ],
+      "answer": "He is bound to win.",
+      "explanation": "Escala: might → may well → likely → bound to (certeza)."
+    },
+    {
+      "type": "mc",
+      "sentence": "Which one is the LEAST certain?",
+      "options": [
+        "She could arrive late.",
+        "She may well arrive late.",
+        "She is likely to arrive late.",
+        "She is bound to arrive late."
+      ],
+      "answer": "She could arrive late.",
+      "explanation": "may / might / could + inf = sólo posibilidad."
+    },
+    {
+      "type": "mc",
+      "sentence": "The new law ___ well be approved next week.",
+      "options": [
+        "could",
+        "is",
+        "will",
+        "likely"
+      ],
+      "answer": "could",
+      "explanation": "may / might / could + well + inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "Prices are ___ to rise again next year. (probable)",
+      "answers": [
+        "likely"
+      ],
+      "explanation": "be likely to + inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "With so much traffic, we are ___ to be late. (seguro)",
+      "answers": [
+        "bound"
+      ],
+      "explanation": "be bound to + inf = certeza."
+    },
+    {
+      "type": "gap",
+      "sentence": "There is little ___ of the team winning the league. (noun)",
+      "answers": [
+        "likelihood"
+      ],
+      "explanation": "There is a little / slight / strong / some likelihood of + -ing."
+    },
+    {
+      "type": "gap",
+      "sentence": "She might ___ change her mind; you never know. (probable)",
+      "answers": [
+        "well"
+      ],
+      "explanation": "might + well + inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "There is some likelihood ___ the meeting will be cancelled.",
+      "answers": [
+        "that"
+      ],
+      "explanation": "likelihood + that + clause."
+    },
+    {
+      "type": "gap",
+      "sentence": "There's a strong likelihood of the company ___ new staff. (hire)",
+      "answers": [
+        "hiring"
+      ],
+      "explanation": "likelihood of + -ing."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It is very probable that they will win the game tomorrow.",
+      "keyword": "LIKELY",
+      "before": "They",
+      "after": "the game tomorrow.",
+      "answers": [
+        "are likely to win"
+      ],
+      "explanation": "be likely to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I'm sure he will complain about the noise.",
+      "keyword": "BOUND",
+      "before": "He",
+      "after": "about the noise.",
+      "answers": [
+        "is bound to complain",
+        "'s bound to complain"
+      ],
+      "explanation": "be bound to + inf = certeza."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "She will probably get the job because she is very qualified.",
+      "keyword": "WELL",
+      "before": "She",
+      "after": "the job because she is very qualified.",
+      "answers": [
+        "may well get",
+        "might well get",
+        "could well get"
+      ],
+      "explanation": "may / might / could + well + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "There is a strong possibility that she will pass the exam.",
+      "keyword": "LIKELIHOOD",
+      "before": "There is a",
+      "after": "the exam.",
+      "answers": [
+        "strong likelihood of her passing",
+        "strong likelihood that she will pass",
+        "strong likelihood that she'll pass"
+      ],
+      "explanation": "likelihood of + -ing / likelihood that + clause."
+    }
+  ],
+  "book": [
+    {
+      "type": "mc",
+      "sentence": "You are ___ your exam paper until I give you permission to do so.",
+      "options": [
+        "not to turn over",
+        "won't be turning over"
+      ],
+      "answer": "not to turn over",
+      "explanation": "Complete Advanced p.177, ex.1 (8) · be + to + inf para instrucciones / órdenes formales."
+    },
+    {
+      "type": "mc",
+      "sentence": "The election result is ___ at 11am tomorrow morning.",
+      "options": [
+        "to announce",
+        "to be announced"
+      ],
+      "answer": "to be announced",
+      "explanation": "Complete Advanced p.177, ex.1 (9) · be + to + inf en pasiva: el resultado ES anunciado."
+    },
+    {
+      "type": "mc",
+      "sentence": "The Prime Minister ___ his resignation this evening due to the corruption scandal.",
+      "options": [
+        "is to announce",
+        "is announcing to"
+      ],
+      "answer": "is to announce",
+      "explanation": "Complete Advanced p.176 · be + to + inf = arreglo formal / oficial."
+    },
+    {
+      "type": "mc",
+      "sentence": "The forecast says that the weather ___ be pretty good tomorrow.",
+      "options": [
+        "will",
+        "is to"
+      ],
+      "answer": "will",
+      "explanation": "Complete Advanced p.176 · be + to NO se usa para cosas fuera del control humano (el tiempo) → will."
+    },
+    {
+      "type": "mc",
+      "sentence": "Bags and suitcases ___ unattended at any time or they will be removed.",
+      "options": [
+        "are not to be left",
+        "are not due to leave"
+      ],
+      "answer": "are not to be left",
+      "explanation": "Complete Advanced p.176 · be + to (pasiva) para normas formales."
+    },
+    {
+      "type": "mc",
+      "sentence": "Take your coat: I think it ___ rain later.",
+      "options": [
+        "could",
+        "can"
+      ],
+      "answer": "could",
+      "explanation": "Complete Advanced p.178 · para posibilidad futura incierta se usa could (no can)."
+    },
+    {
+      "type": "mc",
+      "sentence": "She just ___ have time to get to the shops before they close.",
+      "options": [
+        "must",
+        "might"
+      ],
+      "answer": "might",
+      "explanation": "Complete Advanced p.168, ex.1 (3) · possibility → might."
+    },
+    {
+      "type": "mc",
+      "sentence": "Regarding your car, I need to look at it a bit more but it ___ be possible to repair it.",
+      "options": [
+        "might not",
+        "could not"
+      ],
+      "answer": "might not",
+      "explanation": "Complete Advanced p.168, ex.1 (10) · posibilidad negativa: may / might not (could not = imposible)."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'd better make a note of that. Otherwise I ___ easily forget it.",
+      "options": [
+        "can",
+        "could"
+      ],
+      "answer": "could",
+      "explanation": "Complete Advanced p.168, ex.1 (8) · could + well / easily = posibilidad fuerte."
+    },
+    {
+      "type": "mc",
+      "sentence": "The weather ___ improve by the weekend.",
+      "options": [
+        "may well",
+        "may good"
+      ],
+      "answer": "may well",
+      "explanation": "Complete Advanced p.167 · may / might / could + well."
+    },
+    {
+      "type": "mc",
+      "sentence": "He's unlikely ___ the same mistake again.",
+      "options": [
+        "to make",
+        "making"
+      ],
+      "answer": "to make",
+      "explanation": "Complete Advanced p.167 · be (un)likely + to + inf."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'd say there's a strong likelihood of him ___ a first class degree.",
+      "options": [
+        "getting",
+        "to get"
+      ],
+      "answer": "getting",
+      "explanation": "Complete Advanced p.167 · likelihood of + -ing."
+    },
+    {
+      "type": "mc",
+      "sentence": "There's little likelihood ___ we'll manage to meet our deadline.",
+      "options": [
+        "that",
+        "of"
+      ],
+      "answer": "that",
+      "explanation": "Complete Advanced p.167 · likelihood that + clause."
+    },
+    {
+      "type": "mc",
+      "sentence": "This machine is badly designed. It's ___ break down before long.",
+      "options": [
+        "bound to",
+        "likely of"
+      ],
+      "answer": "bound to",
+      "explanation": "Complete Advanced p.168 · be bound + to + inf = certeza."
+    },
+    {
+      "type": "gap",
+      "sentence": "It's quite ___ that they'll be on the 8:30 train.",
+      "answers": [
+        "likely"
+      ],
+      "explanation": "Complete Advanced p.167 · It's (quite / very / highly) likely that + clause."
+    },
+    {
+      "type": "gap",
+      "sentence": "The weather may ___ improve by the weekend. (fuerte posibilidad)",
+      "answers": [
+        "well"
+      ],
+      "explanation": "Complete Advanced p.167 · may well + inf."
+    }
+  ],
+  "transformations": [
+    {
+      "type": "kwt",
+      "lead_in": "The train is expected to arrive at 8:30.",
+      "keyword": "DUE",
+      "before": "The train",
+      "after": "at 8:30.",
+      "answers": [
+        "is due to arrive"
+      ],
+      "explanation": "be due to + inf = evento esperado."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It is almost certain that he will complain about the noise.",
+      "keyword": "BOUND",
+      "before": "He",
+      "after": "about the noise.",
+      "answers": [
+        "is bound to complain"
+      ],
+      "explanation": "be bound to + inf = certeza."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "They will probably win the game tomorrow.",
+      "keyword": "LIKELY",
+      "before": "They",
+      "after": "the game tomorrow.",
+      "answers": [
+        "are likely to win"
+      ],
+      "explanation": "be likely to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "There is a strong possibility that she will pass the exam.",
+      "keyword": "LIKELIHOOD",
+      "before": "There is a",
+      "after": "pass the exam.",
+      "answers": [
+        "strong likelihood that she will",
+        "strong likelihood that she'll"
+      ],
+      "explanation": "likelihood + that + clause."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It's quite probable that it will rain later, so take an umbrella.",
+      "keyword": "WELL",
+      "before": "It",
+      "after": "later, so take an umbrella.",
+      "answers": [
+        "may well rain",
+        "might well rain",
+        "could well rain"
+      ],
+      "explanation": "may / might / could + well + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I predict that technology will increasingly control our lives.",
+      "keyword": "LIKELIHOOD",
+      "before": "There is a",
+      "after": "increasingly control our lives.",
+      "answers": [
+        "strong likelihood that technology will"
+      ],
+      "explanation": "likelihood + that + clause."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "The concert is scheduled to start in five minutes.",
+      "keyword": "DUE",
+      "before": "The concert",
+      "after": "in five minutes.",
+      "answers": [
+        "is due to start"
+      ],
+      "explanation": "be due to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "She will probably get the job because she is very qualified.",
+      "keyword": "WELL",
+      "before": "She",
+      "after": "the job because she is very qualified.",
+      "answers": [
+        "may well get",
+        "might well get",
+        "could well get"
+      ],
+      "explanation": "may / might / could + well + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I'm almost sure they'll face financial difficulties if they do that.",
+      "keyword": "BOUND",
+      "before": "They",
+      "after": "financial difficulties if they do that.",
+      "answers": [
+        "are bound to face",
+        "'re bound to face"
+      ],
+      "explanation": "be bound to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "What are your plans for next weekend?",
+      "keyword": "GOING",
+      "before": "What",
+      "after": "do next weekend?",
+      "answers": [
+        "are you going to"
+      ],
+      "explanation": "Plan → be going to."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "My dentist appointment is tomorrow at 5 PM.",
+      "keyword": "SEEING",
+      "before": "I",
+      "after": "tomorrow at 5 PM.",
+      "answers": [
+        "am seeing the dentist",
+        "'m seeing the dentist"
+      ],
+      "explanation": "Cita → present continuous."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "The President will make an official visit to France next week.",
+      "keyword": "IS",
+      "before": "The President",
+      "after": "France next week.",
+      "answers": [
+        "is to visit",
+        "is to officially visit"
+      ],
+      "explanation": "Arreglo formal → be + to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "There is a small chance of him winning the competition.",
+      "keyword": "LIKELIHOOD",
+      "before": "There is a slight",
+      "after": "the competition.",
+      "answers": [
+        "likelihood of him winning",
+        "likelihood of his winning"
+      ],
+      "explanation": "likelihood of + -ing."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It is expected that the new law will be passed tomorrow.",
+      "keyword": "DUE",
+      "before": "The new law",
+      "after": "tomorrow.",
+      "answers": [
+        "is due to be passed"
+      ],
+      "explanation": "be due to + inf (pasiva)."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "Do you want me to open the window for you?",
+      "keyword": "SHALL",
+      "before": "",
+      "after": "the window for you?",
+      "answers": [
+        "Shall I open"
+      ],
+      "explanation": "Ofrecimiento → Shall I + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "In my opinion, robots will do all the housework in the future.",
+      "keyword": "EXPECT",
+      "before": "I",
+      "after": "all the housework in the future.",
+      "answers": [
+        "expect robots will do",
+        "expect that robots will do"
+      ],
+      "explanation": "expect + will."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "Look at those dark clouds; rain is imminent.",
+      "keyword": "GOING",
+      "before": "Look at those dark clouds;",
+      "after": "rain.",
+      "answers": [
+        "it is going to",
+        "it's going to"
+      ],
+      "explanation": "Evidencia → be going to."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "Temperatures will probably rise next month.",
+      "keyword": "LIKELY",
+      "before": "Temperatures",
+      "after": "next month.",
+      "answers": [
+        "are likely to rise"
+      ],
+      "explanation": "be likely to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "It is highly probable that he will arrive late.",
+      "keyword": "WELL",
+      "before": "He",
+      "after": "late.",
+      "answers": [
+        "may well arrive",
+        "might well arrive",
+        "could well arrive"
+      ],
+      "explanation": "may / might / could + well + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I'm absolutely certain that she'll forget my birthday again.",
+      "keyword": "BOUND",
+      "before": "She",
+      "after": "my birthday again.",
+      "answers": [
+        "is bound to forget",
+        "'s bound to forget"
+      ],
+      "explanation": "be bound to + inf = certeza."
+    }
+  ]
+}

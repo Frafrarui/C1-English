@@ -1,79 +1,129 @@
 {
-  "future_tenses_plan": [
+  "sections": [
     {
-      "structure": "Be going to (Future prediction based on evidence)",
-      "example": "Look at those dark clouds; it is going to rain."
+      "id": "plans",
+      "title": "A) FUTURE TENSES: WITH A PLAN",
+      "subtitle": "There is a plan, an arrangement, a timetable or evidence",
+      "color": "sky",
+      "blocks": [
+        {
+          "heading": "BE GOING TO",
+          "formula": "AM / IS / ARE + GOING TO + INF",
+          "compare": [
+            { "label": "Future prediction based on evidence", "text": "Look at those dark clouds; it **is going to rain**." },
+            { "label": "Future plan", "text": "I **am going to study** a Master's degree next year." }
+          ]
+        },
+        {
+          "heading": "PRESENT CONTINUOUS",
+          "formula": "AM / IS / ARE + V-ING",
+          "rule": "Future plan with someone else / appointment.",
+          "examples": ["**I'm seeing** the dentist tomorrow at 5 PM."]
+        },
+        {
+          "heading": "TO BE + TO + INF",
+          "formula": "AM / IS / ARE + TO + INF",
+          "rule": "Formal arrangement.",
+          "examples": ["The Prime Minister **is to visit** Spain next month."]
+        },
+        {
+          "heading": "PRESENT SIMPLE",
+          "formula": "SUJETO + PRESENT SIMPLE",
+          "rule": "Event fixed in a timetable.",
+          "chipsLabel": "Timetables",
+          "chips": ["films", "transports", "concerts", "exams"],
+          "examples": ["The train to London **leaves** at 8:00 AM."]
+        },
+        {
+          "heading": "TO BE + DUE TO + INF",
+          "formula": "AM / IS / ARE + DUE TO + INF",
+          "rule": "Expected event.",
+          "examples": ["The exam **is due to start** in ten minutes."]
+        }
+      ]
     },
     {
-      "structure": "Be going to (Future plan)",
-      "example": "I am going to study a Master's degree next year."
+      "id": "noplans",
+      "title": "B) FUTURE TENSES: WITHOUT A PLAN",
+      "subtitle": "Future Simple: will / shall",
+      "color": "indigo",
+      "blocks": [
+        {
+          "heading": "Make a future offer",
+          "formula": "SHALL + I / WE + INF",
+          "examples": ["**Shall I open** the window for you?"]
+        },
+        {
+          "heading": "Future Simple: WILL + INF",
+          "formula": "WILL + INF",
+          "compare": [
+            { "label": "Universal facts / future factual statements", "text": "The sun **will rise** at 6:30 AM tomorrow." },
+            { "label": "Future prediction WITHOUT evidence", "text": "I think robots **will do** all the housework in 2050." },
+            { "label": "Spontaneous decision (at the moment of speaking)", "text": "We are out of milk? I **will go** to the supermarket right now." }
+          ]
+        },
+        {
+          "heading": "Future intention with think / expect / hope / believe / suppose",
+          "formula": "THINK / EXPECT / HOPE / BELIEVE / SUPPOSE + WILL + INF",
+          "chips": ["think", "expect", "hope", "believe", "suppose"],
+          "examples": ["I hope she **will pass** the driving test."]
+        },
+        {
+          "heading": "¿Con plan o sin plan?",
+          "compare": [
+            { "label": "Con evidencia → going to", "text": "Look at those clouds: it **is going to rain**." },
+            { "label": "Sin evidencia → will", "text": "I think it **will rain** a lot this winter." },
+            { "label": "Plan ya decidido → going to", "text": "**I'm going to buy** milk later." },
+            { "label": "Decisión en el momento → will", "text": "We're out of milk? **I'll go** right now." }
+          ]
+        }
+      ]
     },
     {
-      "structure": "Present Continuous (Future plan with someone else / appointment)",
-      "example": "I'm seeing the dentist tomorrow at 5 PM."
-    },
-    {
-      "structure": "to be + to + inf (Formal arrangement)",
-      "example": "The Prime Minister is to visit Spain next month."
-    },
-    {
-      "structure": "Present Simple (Event fixed in a timetable - films, transports, concerts, exams)",
-      "example": "The train to London leaves at 8:00 AM."
-    },
-    {
-      "structure": "to be + due to + inf (Expected event)",
-      "example": "The exam is due to start in ten minutes."
+      "id": "modals",
+      "title": "C) MODAL VERBS FOR THE FUTURE",
+      "subtitle": "Possibility → Probability → Certainty",
+      "color": "purple",
+      "blocks": [
+        {
+          "heading": "De menos a más seguro",
+          "chipsLabel": "Possibility → Certainty",
+          "chips": ["may / might / could", "may / might / could + well", "be likely to", "likelihood of / that", "be bound to"]
+        },
+        {
+          "heading": "Possibility",
+          "formula": "MAY / MIGHT / COULD + INF",
+          "examples": ["It **might rain** later, so take an umbrella."]
+        },
+        {
+          "heading": "Probability 1",
+          "formula": "MAY / MIGHT / COULD + WELL + INF",
+          "examples": ["She **may well get** the promotion; she has worked very hard."]
+        },
+        {
+          "heading": "Probability 2",
+          "formula": "TO BE + LIKELY + TO + INF",
+          "examples": ["They **are likely to win** the match tomorrow."]
+        },
+        {
+          "heading": "Probability 3",
+          "formula": "THERE IS A LITTLE / SLIGHT / STRONG / SOME LIKELIHOOD + OF + V-ING",
+          "examples": ["There is a **strong likelihood of him passing** the exam."]
+        },
+        {
+          "heading": "Probability 4",
+          "formula": "THERE IS A LIKELIHOOD + THAT + clause",
+          "examples": ["There is a **strong likelihood that he will pass** the exam."]
+        },
+        {
+          "heading": "Certainty",
+          "formula": "TO BE + BOUND + TO + INF",
+          "examples": ["He **is bound to complain** about the food; he never likes anything."]
+        }
+      ]
     }
   ],
-  "future_tenses_noplan": [
-    {
-      "structure": "Future Simple (Make a future offer - Shall we/I)",
-      "example": "Shall I open the window for you?"
-    },
-    {
-      "structure": "Future Simple (Universal facts / future factual statements)",
-      "example": "The sun will rise at 6:30 AM tomorrow."
-    },
-    {
-      "structure": "Future Simple (Make a future prediction without evidence)",
-      "example": "I think robots will do all the housework in 2050."
-    },
-    {
-      "structure": "Future Simple (Future intention with think/expect/hope/believe/suppose)",
-      "example": "I hope she will pass the driving test."
-    },
-    {
-      "structure": "Future Simple (Spontaneous decision made at the moment of speaking)",
-      "example": "We are out of milk? I will go to the supermarket right now."
-    }
-  ],
-  "modal_verbs_future": [
-    {
-      "structure": "Possibility (may / might / could + base form)",
-      "example": "It might rain later, so take an umbrella."
-    },
-    {
-      "structure": "Probability 1 (may / might / could + well + base form)",
-      "example": "She may well get the promotion; she has worked very hard."
-    },
-    {
-      "structure": "Probability 2 (to be likely to + inf)",
-      "example": "They are likely to win the match tomorrow."
-    },
-    {
-      "structure": "Probability 3 (There is a little / slight / strong / some likelihood + of + -ing)",
-      "example": "There is a strong likelihood of him passing the exam."
-    },
-    {
-      "structure": "Probability 4 (There is a likelihood + that clause)",
-      "example": "There is a strong likelihood that he will pass the exam."
-    },
-    {
-      "structure": "Certainty (to be + bound to + inf)",
-      "example": "He is bound to complain about the food; he never likes anything."
-    }
-  ],
-  "cambridge_speaking_strategies": [
+  "speaking": [
     {
       "part": "Part 4 (Predicting society's future)",
       "structure": "There is a strong likelihood that [subject] will increasingly [verb base] in the coming years.",
