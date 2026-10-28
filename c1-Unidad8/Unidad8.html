@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C1 English - Unit 8: Reported Speech</title>
+    <title>C1 Advanced - Unit 8: Reported Speech & Reporting Verbs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -12,316 +12,557 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        cambridge: {
-                            light: '#f0fdf4',
-                            DEFAULT: '#15803d',
-                            dark: '#166534',
-                        }
                     }
                 }
             }
         }
     </script>
     <style>
-        /* Custom animations and utilities */
-        @layer utilities {
-            .animate-fade-in {
-                animation: fadeIn 0.4s ease-out forwards;
-            }
-        }
+.active-tab {
+    border-color: #0284c7; /* sky-600 */
+    color: #0284c7;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.inactive-tab {
+    border-color: transparent;
+    color: #6b7280; /* gray-500 */
+}
 
-        /* Hide scrollbar for tabs navigation */
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
+.inactive-tab:hover {
+    border-color: #e5e7eb; /* gray-200 */
+    color: #374151; /* gray-700 */
+}
 
-        /* Custom radio button styles */
-        .radio-custom:checked + label {
-            border-color: #15803d;
-            background-color: #f0fdf4;
-            color: #166534;
-        }
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
 
-        .radio-custom-verbs:checked + label {
-            border-color: #9333ea;
-            background-color: #faf5ff;
-            color: #6b21a8;
-        }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-        /* Correct/Incorrect animations */
-        .answer-correct {
-            border-color: #22c55e !important;
-            background-color: #dcfce7 !important;
-            color: #166534 !important;
-            transition: all 0.3s ease;
-        }
+.input-kt {
+    border: none;
+    border-bottom: 2px solid #d1d5db; /* gray-300 */
+    background-color: transparent;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+    text-align: center;
+    transition: all 0.2s;
+    outline: none;
+    min-width: 180px;
+    max-width: 100%;
+}
 
-        .answer-incorrect {
-            border-color: #ef4444 !important;
-            background-color: #fee2e2 !important;
-            color: #991b1b !important;
-            transition: all 0.3s ease;
-        }
+.input-kt:focus {
+    border-bottom-color: #0284c7; /* sky-600 */
+}
 
-        .correct-option {
-            border-color: #22c55e !important;
-            background-color: #dcfce7 !important;
-            color: #166534 !important;
-            font-weight: 600;
-        }
+.input-kt.correct {
+    border-bottom-color: #22c55e; /* green-500 */
+    color: #15803d; /* green-700 */
+    background-color: #f0fdf4; /* green-50 */
+}
+
+.input-kt.incorrect {
+    border-bottom-color: #ef4444; /* red-500 */
+    color: #b91c1c; /* red-700 */
+    background-color: #fef2f2; /* red-50 */
+}
+
+.gap-blank {
+    display: inline-block;
+    min-width: 4rem;
+    border-bottom: 2px solid #9ca3af; /* gray-400 */
+    margin: 0 0.25rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.gap-blank.correct {
+    border-bottom-color: #22c55e;
+    color: #15803d;
+}
+
+.gap-blank.incorrect {
+    border-bottom-color: #ef4444;
+    color: #b91c1c;
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(3px); }
+}
+
+.input-kt.input-wide {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col antialiased">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">Unit 8: Reported Speech & Reporting Verbs</h1>
-            <p class="text-gray-500 mt-2">C1 Advanced Cambridge Preparation</p>
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-gray-900 tracking-tight">C1 Advanced <span class="text-sky-600">Unit 8</span></h1>
+            <p class="text-gray-500 mt-1">Reported Speech · Reported Questions &amp; Commands · Reporting Verbs</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="max-w-6xl mx-auto px-4">
+            <nav class="flex space-x-8 overflow-x-auto whitespace-nowrap border-b border-gray-100" aria-label="Tabs">
+                <button onclick="switchTab('theory')" id="tab-theory" class="tab-btn active-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Theory
+                </button>
+                <button onclick="switchTab('tenses')" id="tab-tenses" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Tense &amp; Time Changes
+                </button>
+                <button onclick="switchTab('questions')" id="tab-questions" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Questions &amp; Commands
+                </button>
+                <button onclick="switchTab('verbs')" id="tab-verbs" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Reporting Verbs
+                </button>
+                <button onclick="switchTab('book')" id="tab-book" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Complete Advanced
+                </button>
+                <button onclick="switchTab('transformations')" id="tab-transformations" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Keyword Transformation C1
+                </button>
+                <button onclick="switchTab('speaking')" id="tab-speaking" class="tab-btn inactive-tab py-4 px-1 inline-flex items-center text-sm font-medium border-b-2">
+                    Speaking Templates
+                </button>
+            </nav>
         </div>
     </header>
 
-    <!-- Navigation Tabs -->
-    <div class="bg-white shadow-sm sticky top-0 z-10">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <nav class="flex overflow-x-auto py-4 gap-4 no-scrollbar" id="tabs-nav">
-                <button data-target="tab-theory" class="tab-btn active px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-cambridge text-white shadow-md">Tenses & Questions</button>
-                <button data-target="tab-theory-verbs" class="tab-btn px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200">Reporting Verbs Theory</button>
-                <button data-target="tab-mixed-exercises" class="tab-btn px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200">General Exercises</button>
-                <button data-target="tab-verbs-exercises" class="tab-btn px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200">Reporting Verbs Exercises</button>
-                <button data-target="tab-speaking" class="tab-btn px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 bg-gray-100 text-gray-600 hover:bg-gray-200">Speaking Templates</button>
-            </nav>
-        </div>
-    </div>
-
-    <!-- Main Content Area -->
-    <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
-
-        <!-- Tab: Theory (Tenses & Questions) -->
-        <section id="tab-theory" class="tab-content active space-y-8 animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="bg-blue-100 p-2 rounded-lg">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                    </div>
-                    <h2 class="text-2xl font-bold text-gray-900" id="theory-title">Loading Theory...</h2>
-                </div>
-                <div id="theory-content" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Theory content injected here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Tab: Reporting Verbs Theory -->
-        <section id="tab-theory-verbs" class="tab-content hidden space-y-8 animate-fade-in">
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="bg-purple-100 p-2 rounded-lg">
-                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-                    </div>
-                    <h2 class="text-2xl font-bold text-gray-900" id="verbs-theory-title">Loading Reporting Verbs...</h2>
-                </div>
-                <div id="verbs-theory-content" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <!-- Verbs Theory content injected here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Tab: Mixed Exercises -->
-        <section id="tab-mixed-exercises" class="tab-content hidden space-y-6 animate-fade-in">
-            <div class="flex justify-between items-end mb-4">
-                <div>
-                    <h2 class="text-2xl font-bold text-gray-900">General Practice</h2>
-                    <p class="text-gray-500 mt-1">Test your knowledge of tense changes, modals, and time expressions.</p>
-                </div>
-                <div class="text-right">
-                    <p class="text-sm text-gray-500">Score</p>
-                    <p class="text-2xl font-bold text-cambridge" id="mixed-score-display">0/20</p>
-                </div>
-            </div>
-
-            <div id="mixed-exercises-container" class="space-y-6">
-                <!-- Mixed exercises injected here -->
-            </div>
-
-            <div class="mt-8 pt-6 border-t border-gray-200 flex justify-between items-center bg-white p-6 rounded-2xl shadow-sm">
-                <button id="check-mixed-btn" class="px-8 py-3 bg-cambridge hover:bg-cambridge-dark text-white rounded-xl font-semibold shadow-md transition-colors">Check Answers</button>
-                <button id="reset-mixed-btn" class="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-medium transition-colors">Retake Test</button>
-            </div>
-        </section>
-
-        <!-- Tab: Reporting Verbs Exercises -->
-        <section id="tab-verbs-exercises" class="tab-content hidden space-y-6 animate-fade-in">
-            <div class="flex justify-between items-end mb-4">
-                <div>
-                    <h2 class="text-2xl font-bold text-gray-900">Reporting Verbs Practice</h2>
-                    <p class="text-gray-500 mt-1">Test your accuracy with reporting verb structures and prepositions.</p>
-                </div>
-                <div class="text-right">
-                    <p class="text-sm text-gray-500">Score</p>
-                    <p class="text-2xl font-bold text-purple-600" id="verbs-score-display">0/20</p>
-                </div>
-            </div>
-
-            <div id="verbs-exercises-container" class="space-y-6">
-                <!-- Verbs exercises injected here -->
-            </div>
-
-            <div class="mt-8 pt-6 border-t border-gray-200 flex justify-between items-center bg-white p-6 rounded-2xl shadow-sm">
-                <button id="check-verbs-btn" class="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold shadow-md transition-colors">Check Answers</button>
-                <button id="reset-verbs-btn" class="px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-medium transition-colors">Retake Test</button>
-            </div>
-        </section>
-
-        <!-- Tab: Speaking Templates -->
-        <section id="tab-speaking" class="tab-content hidden space-y-8 animate-fade-in">
-            <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl shadow-sm border border-amber-100 p-8 sm:p-10">
-                <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-amber-500 p-3 rounded-xl shadow-sm text-white">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
-                        </div>
-                        <div>
-                            <h2 class="text-3xl font-bold text-gray-900" id="speaking-title">Speaking Templates</h2>
-                            <p class="text-amber-700 font-medium mt-1">C1 Level Strategies</p>
-                        </div>
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-8 w-full">
+        <!-- Theory Tab -->
+        <section id="content-theory" class="tab-content block">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Reported Speech · Reported Questions &amp; Commands · Reporting Verbs</h2>
+                <div id="theory-container" class="space-y-12">
+                    <!-- Loaded dynamically -->
+                    <div class="flex justify-center items-center py-12">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
                     </div>
                 </div>
-
-                <div id="speaking-content" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Speaking templates injected here -->
-                </div>
             </div>
         </section>
 
+        <!-- Practice Tabs (rendered by app.js) -->
+        <section id="content-tenses" class="tab-content hidden"></section>
+        <section id="content-questions" class="tab-content hidden"></section>
+        <section id="content-verbs" class="tab-content hidden"></section>
+        <section id="content-book" class="tab-content hidden"></section>
+        <section id="content-transformations" class="tab-content hidden"></section>
+
+        <!-- Speaking Templates Tab -->
+        <section id="content-speaking" class="tab-content hidden">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">Cambridge Speaking Strategies</h2>
+                <p class="text-gray-600 mb-8">Use the structures of this unit to sound more C1 in the Speaking exam.</p>
+                <div id="speaking-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Stats Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8 border-t border-gray-800">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-white font-semibold mb-3">Your Progress</h3>
-                    <p class="text-sm">Track your performance across tests to ensure you are ready for the C1 Advanced exam.</p>
-                </div>
-                <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
-                    <p class="text-sm text-gray-400 mb-1">General Theory Record</p>
-                    <p class="text-2xl font-bold text-white"><span id="stats-mixed">--</span><span class="text-sm font-normal text-gray-500">/20</span></p>
-                </div>
-                <div class="bg-gray-800 p-4 rounded-xl border border-gray-700">
-                    <p class="text-sm text-gray-400 mb-1">Reporting Verbs Record</p>
-                    <p class="text-2xl font-bold text-white"><span id="stats-verbs">--</span><span class="text-sm font-normal text-gray-500">/20</span></p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script>
         // Data embedded directly so this file works standalone (no server needed)
-        const theoryData = {
-  "tenses_and_changes": {
-    "title": "A) TENSES & CHANGES (Teoría Básica)",
+        window.UNIT_DATA = {
+  "teoria": {
     "sections": [
       {
-        "subtitle": "Tense changes",
-        "items": [
-          "Present Simple -> Past Simple",
-          "Present Continuous -> Past Continuous",
-          "Present Perfect -> Past Perfect",
-          "Present Perfect Continuous -> Past Perfect Continuous",
-          "Past Simple -> Past Perfect Simple / Past Simple",
-          "Past Continuous -> Past Perfect Continuous",
-          "Past Perfect -> Past Perfect (No cambia)",
-          "Past Perfect Continuous -> Past Perfect Continuous (No cambia)",
-          "1st Conditional -> 2nd Conditional",
-          "2nd & 3rd Conditional -> No cambian"
-        ],
-        "example": "Alvaro said: 'I have been working hard' -> Alvaro said (that) he had been working hard."
+        "id": "tenses",
+        "title": "A) TENSE CHANGES",
+        "subtitle": "When we report what someone said, the verb goes one step back in time",
+        "color": "sky",
+        "blocks": [
+          {
+            "heading": "Un paso atrás en el tiempo (backshift)",
+            "formula": "SAID (THAT) + tiempo un paso atrás",
+            "rule": "Si el verbo introductorio está en pasado (said, told, asked...), el verbo de lo que se dijo da un paso atrás.",
+            "table": {
+              "headers": [
+                "Direct speech",
+                "Reported speech"
+              ],
+              "rows": [
+                [
+                  "Present Simple (I work)",
+                  "Past Simple (he worked)"
+                ],
+                [
+                  "Present Continuous (I'm working)",
+                  "Past Continuous (he was working)"
+                ],
+                [
+                  "Present Perfect (I've worked)",
+                  "Past Perfect (he had worked)"
+                ],
+                [
+                  "Present Perfect Continuous (I've been working)",
+                  "Past Perfect Continuous (he had been working)"
+                ],
+                [
+                  "Past Simple (I worked)",
+                  "Past Perfect (he had worked) / Past Simple"
+                ],
+                [
+                  "Past Continuous (I was working)",
+                  "Past Perfect Continuous (he had been working)"
+                ],
+                [
+                  "Past Perfect (I had worked)",
+                  "Past Perfect: no cambia"
+                ],
+                [
+                  "Past Perfect Continuous",
+                  "Past Perfect Continuous: no cambia"
+                ],
+                [
+                  "1st Conditional (If it rains, I'll stay)",
+                  "2nd Conditional (if it rained, he would stay)"
+                ],
+                [
+                  "2nd & 3rd Conditional",
+                  "No cambian"
+                ]
+              ]
+            },
+            "examples": [
+              "'I'm feeling ill.' → He said he **was feeling** ill.",
+              "'The rain has stopped.' → He said the rain **had stopped**.",
+              "'We drove all night.' → They said they **had driven** all night.",
+              "Álvaro said: 'I have been working hard.' → Álvaro said (that) he **had been working** hard."
+            ]
+          },
+          {
+            "heading": "Modals",
+            "table": {
+              "headers": [
+                "Direct speech",
+                "Reported speech"
+              ],
+              "rows": [
+                [
+                  "will",
+                  "would"
+                ],
+                [
+                  "can",
+                  "could"
+                ],
+                [
+                  "may",
+                  "might"
+                ],
+                [
+                  "must",
+                  "must / had to (obligación)"
+                ],
+                [
+                  "shall",
+                  "should (sugerencias) / would (futuro)"
+                ],
+                [
+                  "should · ought to · could · might · would · had better",
+                  "No cambian"
+                ]
+              ]
+            },
+            "examples": [
+              "'I can swim.' → She said she **could** swim.",
+              "'We'll try to help.' → They said they **would try** to help.",
+              "'I wouldn't go skiing again.' → She said she **wouldn't go** skiing again."
+            ]
+          },
+          {
+            "heading": "Cuándo NO cambia el tiempo",
+            "rule": "1) Past perfect y would / could / should no pueden ir más atrás. 2) Si lo que se dijo sigue siendo verdad ahora. 3) Si el verbo introductorio está en presente (says, has said).",
+            "compare": [
+              {
+                "label": "Sigue siendo verdad",
+                "text": "'I love black coffee.' → He said he **loves** black coffee."
+              },
+              {
+                "label": "Hecho histórico",
+                "text": "'Picasso was born in Spain.' → She told us that Picasso **was born** in Spain."
+              },
+              {
+                "label": "Verbo en presente",
+                "text": "'I'm looking forward to my holiday.' → She **says** she**'s looking** forward to her holiday."
+              }
+            ]
+          }
+        ]
       },
       {
-        "subtitle": "Modals",
-        "items": [
-          "will -> would",
-          "can -> could",
-          "may -> might",
-          "must -> must / had to (obligación)",
-          "shall -> should (para sugerencias) / would (para futuro)",
-          "No cambian: should, ought to, could, might, would, had better"
+        "id": "changes",
+        "title": "B) PRONOUNS, TIME & PLACE",
+        "subtitle": "Pronouns, possessives and adverbs change when the speaker, time or place changes",
+        "color": "indigo",
+        "blocks": [
+          {
+            "heading": "Pronombres y posesivos",
+            "rule": "Cambian según quién cuenta la frase.",
+            "examples": [
+              "'I love **you**,' Dan said. → Dan said **he** loved **me**.",
+              "'**You** didn't give **me your** address,' said Jane. → Jane said **we** hadn't given **her our** address."
+            ]
+          },
+          {
+            "heading": "Expresiones de tiempo y lugar",
+            "table": {
+              "headers": [
+                "Direct speech",
+                "Reported speech"
+              ],
+              "rows": [
+                [
+                  "now",
+                  "then / at that time / immediately"
+                ],
+                [
+                  "today",
+                  "that day"
+                ],
+                [
+                  "tonight",
+                  "that night"
+                ],
+                [
+                  "tomorrow",
+                  "the next day / the following day / the day after"
+                ],
+                [
+                  "yesterday",
+                  "the day before / the previous day"
+                ],
+                [
+                  "next week / month / year",
+                  "the following week / the week after"
+                ],
+                [
+                  "last week / month / year",
+                  "the previous week / the week before"
+                ],
+                [
+                  "(ten minutes) ago",
+                  "(ten minutes) before / earlier"
+                ],
+                [
+                  "this",
+                  "that"
+                ],
+                [
+                  "these",
+                  "those"
+                ],
+                [
+                  "here",
+                  "there"
+                ]
+              ]
+            },
+            "examples": [
+              "'I'll see you **tomorrow**.' → Jackie said she would see me **the next / following day**.",
+              "'We've lived **here** for six years.' → They said they had lived **there** for six years."
+            ],
+            "tip": "Si el tiempo o el lugar es el mismo, no cambian: 'I came here yesterday.' → (contado el mismo día) He says he came here yesterday."
+          },
+          {
+            "heading": "SAY vs TELL",
+            "formulas": [
+              "SAY (THAT) + frase",
+              "TELL + PERSONA + (THAT) + frase"
+            ],
+            "wrong": [
+              {
+                "bad": "He said me that he was tired.",
+                "good": "He told me that he was tired. / He said (to me) that he was tired."
+              }
+            ]
+          }
         ],
-        "example": "She said: 'I can swim' -> She said she could swim."
+        "practice": "tenses"
       },
       {
-        "subtitle": "Time/Place Expressions",
-        "items": [
-          "today -> that day",
-          "now -> then / immediately",
-          "tomorrow -> the next day / the following day",
-          "yesterday -> the day before / the previous day",
-          "next week -> the following week",
-          "last year -> the year before / the previous year",
-          "this -> that",
-          "these -> those",
-          "here -> there"
-        ],
-        "example": "He said: 'I will do it tomorrow here' -> He said he would do it the following day there."
+        "id": "questions",
+        "title": "C) QUESTIONS & COMMANDS",
+        "subtitle": "Reported questions become statements: subject + verb, no do / does / did",
+        "color": "purple",
+        "blocks": [
+          {
+            "heading": "WH- questions: se mantiene la partícula",
+            "formula": "ASKED + WH- + SUJETO + VERBO",
+            "rule": "El orden pasa a ser afirmativo (sujeto + verbo) y desaparecen do / does / did. Sin signo de interrogación.",
+            "examples": [
+              "'What are you doing?' → He asked us **what we were doing**.",
+              "'Where do you live?' → She asked me **where I lived / live**."
+            ],
+            "wrong": [
+              {
+                "bad": "She asked me where did I live.",
+                "good": "She asked me where I lived."
+              }
+            ]
+          },
+          {
+            "heading": "YES / NO questions: IF / WHETHER",
+            "formula": "ASKED + IF / WHETHER + SUJETO + VERBO",
+            "examples": [
+              "'Do you speak Italian?' → He asked me **if / whether I spoke** Italian.",
+              "'Did you see him?' → He asked me **if I had seen** him."
+            ]
+          },
+          {
+            "heading": "Commands & requests",
+            "formulas": [
+              "TELL / ORDER / ASK + OBJETO + TO + INF",
+              "TELL / ORDER / ASK + OBJETO + NOT TO + INF"
+            ],
+            "examples": [
+              "'Wait outside!' → Mum **told the children to wait** outside.",
+              "'Please repeat the question.' → She **asked the reporter to repeat** his question.",
+              "'Don't be late.' → She **told him not to be** late."
+            ],
+            "wrong": [
+              {
+                "bad": "She told him don't be late.",
+                "good": "She told him not to be late."
+              }
+            ]
+          }
+        ]
       },
       {
-        "subtitle": "Questions & Commands",
-        "items": [
-          "Wh- questions mantienen la partícula (What/When/Where).",
-          "Yes/No questions usan 'if/whether'.",
-          "El orden de las palabras pasa a ser Afirmativo (Sujeto + Verbo), sin auxiliares (do/does/did).",
-          "Commands: verbo introductorio (tell, order) + object + to-infinitive / not to-infinitive."
-        ],
-        "example": "He asked: 'Did you see him?' -> He asked me if I had seen him."
+        "id": "verbs",
+        "title": "D) REPORTING VERBS (C1 level)",
+        "subtitle": "Verbs that convey the speaker's action. Each one has its own pattern",
+        "color": "rose",
+        "blocks": [
+          {
+            "heading": "Verbo + -ING / HAVING + participio",
+            "formula": "VERBO + V-ING / HAVING + V-ED",
+            "chips": [
+              "suggest",
+              "admit (to)",
+              "deny",
+              "regret",
+              "recommend"
+            ],
+            "examples": [
+              "He **denied stealing** the money.",
+              "He **admitted (to) having invented** some details in his report.",
+              "She **recommended doing** more research."
+            ],
+            "wrong": [
+              {
+                "bad": "James denied to steal the money.",
+                "good": "James denied stealing the money."
+              }
+            ]
+          },
+          {
+            "heading": "Verbo + PREPOSICIÓN + -ING",
+            "formula": "VERBO + PREPOSICIÓN + V-ING",
+            "chips": [
+              "apologise for",
+              "object to",
+              "insist on",
+              "boast about",
+              "confess to",
+              "complain about"
+            ],
+            "examples": [
+              "She **apologised for arriving** late.",
+              "Mandy **insisted on coming** to every meeting."
+            ],
+            "tip": "Object to / confess to: el to es preposición, va con -ing (object to going, no object to go)."
+          },
+          {
+            "heading": "Verbo + OBJETO + PREPOSICIÓN + -ING",
+            "formula": "VERBO + OBJETO + PREPOSICIÓN + V-ING",
+            "chips": [
+              "accuse sb of",
+              "blame sb for",
+              "congratulate sb on",
+              "suspect sb of",
+              "prevent sb from",
+              "discourage sb from"
+            ],
+            "examples": [
+              "They **accused him of lying**.",
+              "The president **accused the press of distorting** the truth."
+            ]
+          },
+          {
+            "heading": "Verbo + TO + INF",
+            "formula": "VERBO + (NOT) TO + INF",
+            "chips": [
+              "agree",
+              "offer",
+              "promise",
+              "threaten",
+              "refuse"
+            ],
+            "examples": [
+              "He **offered to buy** me lunch.",
+              "The mayor has **promised to give** us an interview."
+            ]
+          },
+          {
+            "heading": "Verbo + OBJETO + TO + INF",
+            "formula": "VERBO + OBJETO + (NOT) TO + INF",
+            "chips": [
+              "advise",
+              "ask",
+              "encourage",
+              "invite",
+              "order",
+              "tell",
+              "persuade",
+              "remind",
+              "urge",
+              "warn"
+            ],
+            "examples": [
+              "The teacher **urged the students to study** harder.",
+              "She **warned him not to be** late for the interview."
+            ]
+          },
+          {
+            "heading": "Verbo + (THAT) + oración",
+            "formulas": [
+              "admit · agree · complain · deny · promise · recommend · suggest + (THAT) + oración",
+              "persuade · remind · tell · warn + OBJETO + (THAT) + oración"
+            ],
+            "examples": [
+              "She **suggested that they should interview** local people.",
+              "We **warned our audience that** they might find some of the photos distressing."
+            ],
+            "wrong": [
+              {
+                "bad": "She suggested him to go to the doctor.",
+                "good": "She suggested (that) he (should) go to the doctor. / She suggested going to the doctor."
+              }
+            ]
+          }
+        ]
       }
-    ]
-  },
-  "reporting_verbs": {
-    "title": "B) REPORTING VERBS (C1 Level)",
-    "sections": [
-      {
-        "subtitle": "Verbs + -ing / having + Participle",
-        "verbs": ["suggest (doing)", "admit to (doing/having done)", "deny", "regret", "recommend"],
-        "example": "He denied stealing the money."
-      },
-      {
-        "subtitle": "Verbs + Preposition + -ing",
-        "verbs": ["apologize for (having done)", "object to (going)", "insist on", "boast about", "confess to"],
-        "example": "She apologized for arriving late."
-      },
-      {
-        "subtitle": "Verbs + Object + Preposition + -ing",
-        "verbs": ["accuse someone of (having done)", "prevent someone from (going)", "blame someone for", "congratulate someone on", "suspect someone of", "discourage someone from"],
-        "example": "They accused him of lying."
-      },
-      {
-        "subtitle": "Verbs + Object + To-Inf",
-        "verbs": ["warn someone (not) to do", "threaten to do", "urge", "persuade", "encourage", "remind", "advise"],
-        "example": "The teacher urged the students to study harder."
-      }
-    ]
-  },
-  "speaking_strategies": {
-    "title": "C) CAMBRIDGE SPEAKING STRATEGIES (Plantillas comodín)",
-    "templates": [
+    ],
+    "speaking": [
       {
         "part": "Part 4 (General opinions)",
         "structure": "It is widely believed that [clause], but I would argue that...",
@@ -335,7 +576,7 @@
         "translation": "Como bien señaló mi compañero/a, no debemos olvidar que..."
       },
       {
-        "part": "Part 4 (Reporting experts/news)",
+        "part": "Part 4 (Reporting experts / news)",
         "structure": "Experts have repeatedly warned us not to [verb]...",
         "example": "Experts have repeatedly warned us not to rely solely on fossil fuels.",
         "translation": "Los expertos nos han advertido repetidamente que no [verbo]..."
@@ -347,283 +588,1867 @@
         "translation": "La persona de la primera foto parece estar sugiriendo que..."
       }
     ]
+  },
+  "ejercicios": {
+    "tenses": [
+      {
+        "type": "mc",
+        "sentence": "'I'm working from home today,' she said. → She said she ___ from home that day.",
+        "options": [
+          "was working",
+          "is working",
+          "had worked",
+          "works"
+        ],
+        "answer": "was working",
+        "explanation": "Present continuous → past continuous; today → that day."
+      },
+      {
+        "type": "mc",
+        "sentence": "'We've finished the project,' they said. → They said they ___ the project.",
+        "options": [
+          "had finished",
+          "have finished",
+          "finished",
+          "were finishing"
+        ],
+        "answer": "had finished",
+        "explanation": "Present perfect → past perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "'I saw the film last week,' Tom said. → Tom said he ___ the film the week before.",
+        "options": [
+          "had seen",
+          "has seen",
+          "sees",
+          "was seeing"
+        ],
+        "answer": "had seen",
+        "explanation": "Past simple → past perfect; last week → the week before / the previous week."
+      },
+      {
+        "type": "mc",
+        "sentence": "'I'll call you tomorrow,' he said. → He said he ___ me the next day.",
+        "options": [
+          "would call",
+          "will call",
+          "calls",
+          "had called"
+        ],
+        "answer": "would call",
+        "explanation": "will → would; tomorrow → the next / following day."
+      },
+      {
+        "type": "mc",
+        "sentence": "'You may need a coat,' Mum said. → Mum said I ___ need a coat.",
+        "options": [
+          "might",
+          "may",
+          "must",
+          "would"
+        ],
+        "answer": "might",
+        "explanation": "may → might."
+      },
+      {
+        "type": "mc",
+        "sentence": "'You must wear a helmet,' the instructor said. → The instructor said we ___ wear a helmet.",
+        "options": [
+          "had to",
+          "have to",
+          "musted",
+          "would"
+        ],
+        "answer": "had to",
+        "explanation": "must (obligación) → had to (o must)."
+      },
+      {
+        "type": "mc",
+        "sentence": "'I'd never been abroad before,' she said. → She said she ___ abroad before.",
+        "options": [
+          "had never been",
+          "had never had been",
+          "has never been",
+          "never went"
+        ],
+        "answer": "had never been",
+        "explanation": "Past perfect no cambia: no puede ir más atrás."
+      },
+      {
+        "type": "mc",
+        "sentence": "'You should rest,' the doctor said. → The doctor said I ___ rest.",
+        "options": [
+          "should",
+          "should have",
+          "shall",
+          "had to"
+        ],
+        "answer": "should",
+        "explanation": "Should no cambia."
+      },
+      {
+        "type": "mc",
+        "sentence": "'If it rains, we'll stay at home,' they said. → They said that if it rained, they ___ at home.",
+        "options": [
+          "would stay",
+          "will stay",
+          "would have stayed",
+          "stayed"
+        ],
+        "answer": "would stay",
+        "explanation": "1st conditional → 2nd conditional."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Water boils at 100°C,' the teacher said. → The teacher said water ___ at 100°C.",
+        "options": [
+          "boils",
+          "had boiled",
+          "is boiling",
+          "boil"
+        ],
+        "answer": "boils",
+        "explanation": "Sigue siendo verdad (hecho científico): no hace falta cambiar el tiempo."
+      },
+      {
+        "type": "mc",
+        "sentence": "Mark (on the phone, now): 'I'm stuck in traffic.' → Mark says he ___ stuck in traffic.",
+        "options": [
+          "is",
+          "was",
+          "had been",
+          "would be"
+        ],
+        "answer": "is",
+        "explanation": "El verbo introductorio está en presente (says): el tiempo no cambia."
+      },
+      {
+        "type": "mc",
+        "sentence": "'I came here ten minutes ago,' he said. → He said he had come there ten minutes ___.",
+        "options": [
+          "before",
+          "ago",
+          "later",
+          "after"
+        ],
+        "answer": "before",
+        "explanation": "ago → before / earlier."
+      },
+      {
+        "type": "mc",
+        "sentence": "'I bought these shoes here,' she said. → She said she had bought ___ shoes ___.",
+        "options": [
+          "those / there",
+          "these / here",
+          "those / here",
+          "these / there"
+        ],
+        "answer": "those / there",
+        "explanation": "these → those; here → there."
+      },
+      {
+        "type": "mc",
+        "sentence": "He ___ me that he had lost his keys.",
+        "options": [
+          "told",
+          "said",
+          "said to",
+          "told to"
+        ],
+        "answer": "told",
+        "explanation": "Tell + persona (told me). Say no lleva persona directamente (said that... / said to me...)."
+      },
+      {
+        "type": "gap",
+        "sentence": "'I've been waiting for an hour,' she said. → She said she ___ ___ waiting for an hour. (2 words)",
+        "answers": [
+          "had been"
+        ],
+        "explanation": "Present perfect continuous → past perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "'I can't come to the party,' Ana said. → Ana said she ___ come to the party.",
+        "answers": [
+          "couldn't",
+          "could not"
+        ],
+        "explanation": "can → could."
+      },
+      {
+        "type": "gap",
+        "sentence": "'I was sleeping when you phoned,' he said. → He said he ___ ___ sleeping when I had phoned. (2 words)",
+        "answers": [
+          "had been"
+        ],
+        "explanation": "Past continuous → past perfect continuous."
+      },
+      {
+        "type": "gap",
+        "sentence": "'I'll see you next week,' she said. → She said she would see me the ___ week.",
+        "answers": [
+          "following"
+        ],
+        "explanation": "next week → the following week (o the week after)."
+      },
+      {
+        "type": "gap",
+        "sentence": "'We met yesterday,' they said. → They said they had met the ___ day.",
+        "answers": [
+          "previous"
+        ],
+        "explanation": "yesterday → the previous day / the day before."
+      },
+      {
+        "type": "gap",
+        "sentence": "'I love you,' Dan said to me. → Dan said ___ loved me.",
+        "answers": [
+          "he"
+        ],
+        "explanation": "Los pronombres cambian según quién cuenta: I → he."
+      }
+    ],
+    "questions": [
+      {
+        "type": "mc",
+        "sentence": "'Where do you live?' she asked. → She asked me where ___.",
+        "options": [
+          "I lived",
+          "did I live",
+          "do I live",
+          "I did live"
+        ],
+        "answer": "I lived",
+        "explanation": "Orden afirmativo (sujeto + verbo), sin do / did."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Are you coming tonight?' he asked. → He asked me ___ I was coming that night.",
+        "options": [
+          "if",
+          "that",
+          "what",
+          "do"
+        ],
+        "answer": "if",
+        "explanation": "Yes / No question → if / whether."
+      },
+      {
+        "type": "mc",
+        "sentence": "'What time does the train leave?' the tourist asked. → The tourist asked what time ___.",
+        "options": [
+          "the train left",
+          "did the train leave",
+          "does the train leave",
+          "the train did leave"
+        ],
+        "answer": "the train left",
+        "explanation": "Sin does: sujeto + verbo en pasado."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Have you ever been to Paris?' she asked. → She asked me ___ been to Paris.",
+        "options": [
+          "whether I had ever",
+          "had I ever",
+          "whether had I ever",
+          "if I have ever"
+        ],
+        "answer": "whether I had ever",
+        "explanation": "whether + sujeto + verbo; present perfect → past perfect."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Don't touch the wire!' the electrician said. → The electrician told me ___ the wire.",
+        "options": [
+          "not to touch",
+          "don't touch",
+          "to not touching",
+          "not touch"
+        ],
+        "answer": "not to touch",
+        "explanation": "Orden negativa: tell + objeto + NOT TO + infinitivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Please sit down,' the nurse said to us. → The nurse asked ___ down.",
+        "options": [
+          "us to sit",
+          "us sit",
+          "to us sit",
+          "that we sit down us"
+        ],
+        "answer": "us to sit",
+        "explanation": "Petición: ask + objeto + to + infinitivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "'How long have you been learning English?' she asked. → She asked me how long ___ English.",
+        "options": [
+          "I had been learning",
+          "had I been learning",
+          "I have been learning",
+          "did I learn"
+        ],
+        "answer": "I had been learning",
+        "explanation": "Orden afirmativo + present perfect continuous → past perfect continuous."
+      },
+      {
+        "type": "mc",
+        "sentence": "'Can you help me?' he asked. → He asked ___ help him.",
+        "options": [
+          "if I could",
+          "could I",
+          "if could I",
+          "that I can"
+        ],
+        "answer": "if I could",
+        "explanation": "if + sujeto + verbo; can → could."
+      },
+      {
+        "type": "gap",
+        "sentence": "'Did you see the news?' she asked. → She asked me ___ I had seen the news.",
+        "answers": [
+          "if",
+          "whether"
+        ],
+        "explanation": "Yes / No question → if / whether."
+      },
+      {
+        "type": "gap",
+        "sentence": "'Why are you crying?' he asked. → He asked me why I ___ crying.",
+        "answers": [
+          "was"
+        ],
+        "explanation": "Orden afirmativo: I was crying (no 'was I')."
+      },
+      {
+        "type": "gap",
+        "sentence": "'Who did you meet?' she asked. → She asked me who I ___ ___. (2 words)",
+        "answers": [
+          "had met"
+        ],
+        "explanation": "Sin did; past simple → past perfect."
+      },
+      {
+        "type": "gap",
+        "sentence": "'Wait outside!' Mum told the children. → Mum ordered the children ___ ___ outside. (2 words)",
+        "answers": [
+          "to wait"
+        ],
+        "explanation": "order + objeto + to + infinitivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "'Don't be late,' she told him. → She told him ___ ___ ___ late. (3 words)",
+        "answers": [
+          "not to be"
+        ],
+        "explanation": "tell + objeto + not to + infinitivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Where did you put the keys?' my mother asked me.",
+        "keyword": "WHERE",
+        "before": "My mother asked me",
+        "after": "the keys.",
+        "answers": [
+          "where I had put"
+        ],
+        "explanation": "Wh- + sujeto + verbo; past simple → past perfect."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Will you help me with this box?' she asked him.",
+        "keyword": "WHETHER",
+        "before": "She asked him",
+        "after": "her with that box.",
+        "answers": [
+          "whether he would help"
+        ],
+        "explanation": "Yes / No → whether; will → would; this → that."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Please repeat the question,' she said to the reporter.",
+        "keyword": "ASKED",
+        "before": "She",
+        "after": "the question.",
+        "answers": [
+          "asked the reporter to repeat"
+        ],
+        "explanation": "ask + objeto + to + infinitivo."
+      }
+    ],
+    "verbs": [
+      {
+        "type": "mc",
+        "sentence": "He denied ___ the money.",
+        "options": [
+          "stealing",
+          "to steal",
+          "steal",
+          "of stealing"
+        ],
+        "answer": "stealing",
+        "explanation": "deny + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "She apologised ___ late.",
+        "options": [
+          "for arriving",
+          "to arrive",
+          "arriving",
+          "on arriving"
+        ],
+        "answer": "for arriving",
+        "explanation": "apologise FOR + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "They accused him ___ lying.",
+        "options": [
+          "of",
+          "for",
+          "on",
+          "about"
+        ],
+        "answer": "of",
+        "explanation": "accuse sb OF + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "The teacher urged the students ___ harder.",
+        "options": [
+          "to study",
+          "studying",
+          "study",
+          "for studying"
+        ],
+        "answer": "to study",
+        "explanation": "urge + objeto + to + infinitivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "Peter suggested ___ to the cinema.",
+        "options": [
+          "going",
+          "to go",
+          "us to go",
+          "go"
+        ],
+        "answer": "going",
+        "explanation": "suggest + -ing (o suggest that we go). Nunca suggest + objeto + to."
+      },
+      {
+        "type": "mc",
+        "sentence": "She objected ___ that ridiculous hat.",
+        "options": [
+          "to wearing",
+          "to wear",
+          "wearing",
+          "for wearing"
+        ],
+        "answer": "to wearing",
+        "explanation": "object TO + -ing: el to es preposición."
+      },
+      {
+        "type": "mc",
+        "sentence": "He insisted ___ for dinner.",
+        "options": [
+          "on paying",
+          "to pay",
+          "paying",
+          "for paying"
+        ],
+        "answer": "on paying",
+        "explanation": "insist ON + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "They congratulated her ___ the exam.",
+        "options": [
+          "on passing",
+          "for passing",
+          "to pass",
+          "of passing"
+        ],
+        "answer": "on passing",
+        "explanation": "congratulate sb ON + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "The heavy rain prevented us ___ tennis.",
+        "options": [
+          "from playing",
+          "to play",
+          "of playing",
+          "playing"
+        ],
+        "answer": "from playing",
+        "explanation": "prevent sb FROM + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "He offered ___ me lunch.",
+        "options": [
+          "to buy",
+          "buying",
+          "me to buy",
+          "on buying"
+        ],
+        "answer": "to buy",
+        "explanation": "offer + to + infinitivo (sin objeto)."
+      },
+      {
+        "type": "mc",
+        "sentence": "She reminded me ___ the door.",
+        "options": [
+          "to lock",
+          "locking",
+          "of locking",
+          "lock"
+        ],
+        "answer": "to lock",
+        "explanation": "remind + objeto + to + infinitivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "The man threatened ___ the police.",
+        "options": [
+          "to call",
+          "calling",
+          "me to call",
+          "on calling"
+        ],
+        "answer": "to call",
+        "explanation": "threaten + to + infinitivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "She warned him ___ late for the interview.",
+        "options": [
+          "not to be",
+          "not being",
+          "to not being",
+          "don't be"
+        ],
+        "answer": "not to be",
+        "explanation": "warn + objeto + not to + infinitivo."
+      },
+      {
+        "type": "mc",
+        "sentence": "He boasted ___ the best player in the team.",
+        "options": [
+          "about being",
+          "to be",
+          "being",
+          "of be"
+        ],
+        "answer": "about being",
+        "explanation": "boast ABOUT + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "I can't believe she blamed me ___ the accident.",
+        "options": [
+          "for",
+          "of",
+          "on",
+          "to"
+        ],
+        "answer": "for",
+        "explanation": "blame sb FOR + algo / -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "The doctor recommended ___ more exercise.",
+        "options": [
+          "doing",
+          "to do",
+          "me to do",
+          "do"
+        ],
+        "answer": "doing",
+        "explanation": "recommend + -ing (o recommend that I do)."
+      },
+      {
+        "type": "mc",
+        "sentence": "We warned our audience ___ they might find the photos distressing.",
+        "options": [
+          "that",
+          "to",
+          "of",
+          "about"
+        ],
+        "answer": "that",
+        "explanation": "warn + objeto + (that) + oración."
+      },
+      {
+        "type": "mc",
+        "sentence": "She suggested ___ interview local people.",
+        "options": [
+          "that they should",
+          "them to",
+          "to them",
+          "they to"
+        ],
+        "answer": "that they should",
+        "explanation": "suggest + (that) + sujeto + (should) + verbo."
+      },
+      {
+        "type": "gap",
+        "sentence": "He admitted ___ the window. (break)",
+        "answers": [
+          "breaking",
+          "having broken",
+          "to breaking",
+          "to having broken"
+        ],
+        "explanation": "admit (to) + -ing / having + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "She regretted ___ to him so rudely. (speak)",
+        "answers": [
+          "speaking",
+          "having spoken"
+        ],
+        "explanation": "regret + -ing / having + participio."
+      },
+      {
+        "type": "gap",
+        "sentence": "The police suspected him ___ selling stolen goods.",
+        "answers": [
+          "of"
+        ],
+        "explanation": "suspect sb OF + -ing."
+      },
+      {
+        "type": "gap",
+        "sentence": "My parents discouraged me ___ leaving school.",
+        "answers": [
+          "from"
+        ],
+        "explanation": "discourage sb FROM + -ing."
+      },
+      {
+        "type": "gap",
+        "sentence": "I persuaded the magazine ___ print my story.",
+        "answers": [
+          "to"
+        ],
+        "explanation": "persuade + objeto + to + infinitivo."
+      },
+      {
+        "type": "gap",
+        "sentence": "The thief confessed ___ stealing the jewels.",
+        "answers": [
+          "to"
+        ],
+        "explanation": "confess TO + -ing."
+      }
+    ],
+    "book": [
+      {
+        "type": "mc",
+        "sentence": "James denied ___ the money.",
+        "options": [
+          "to steal",
+          "stealing"
+        ],
+        "answer": "stealing",
+        "explanation": "Complete Advanced p.174, ex.1 · deny + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "Mandy insisted ___ to every meeting.",
+        "options": [
+          "to come",
+          "on coming"
+        ],
+        "answer": "on coming",
+        "explanation": "Complete Advanced p.174, ex.1 · insist on + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "Pierre's father agreed ___ him with his assignment.",
+        "options": [
+          "to help",
+          "on helping"
+        ],
+        "answer": "to help",
+        "explanation": "Complete Advanced p.174, ex.1 · agree + to infinitive."
+      },
+      {
+        "type": "mc",
+        "sentence": "The doctor warned Alex ___ the pills without water.",
+        "options": [
+          "not to take",
+          "not taking"
+        ],
+        "answer": "not to take",
+        "explanation": "Complete Advanced p.174, ex.1 · warn + object + (not) to infinitive."
+      },
+      {
+        "type": "mc",
+        "sentence": "Eva suggested ___ the party at her place.",
+        "options": [
+          "to have",
+          "having"
+        ],
+        "answer": "having",
+        "explanation": "Complete Advanced p.174, ex.1 · suggest + -ing."
+      },
+      {
+        "type": "mc",
+        "sentence": "Can I persuade you ___ me a hand?",
+        "options": [
+          "to give",
+          "on giving"
+        ],
+        "answer": "to give",
+        "explanation": "Complete Advanced p.174, ex.1 · persuade + object + to infinitive."
+      },
+      {
+        "type": "rewrite",
+        "original": "They said they were looking for someone with my qualifications. (direct speech)",
+        "start": "They said: We",
+        "answers": [
+          "They said: We are looking for someone with your qualifications"
+        ],
+        "explanation": "Complete Advanced p.174, ex.2 · De estilo indirecto a directo: past continuous → present continuous; my → your."
+      },
+      {
+        "type": "rewrite",
+        "original": "The manager said I had the right experience for the job. (direct speech)",
+        "start": "The manager said: You",
+        "answers": [
+          "The manager said: You have the right experience for the job"
+        ],
+        "explanation": "Complete Advanced p.174, ex.2 · past simple → present simple; I → you."
+      },
+      {
+        "type": "rewrite",
+        "original": "He said I wouldn't have to work at weekends. (direct speech)",
+        "start": "He said: You",
+        "answers": [
+          "He said: You won't have to work at weekends",
+          "He said: You will not have to work at weekends"
+        ],
+        "explanation": "Complete Advanced p.174, ex.2 · would → will."
+      },
+      {
+        "type": "rewrite",
+        "original": "He said they'd provide me with a company car. (direct speech)",
+        "start": "He said: We",
+        "answers": [
+          "He said: We will provide you with a company car",
+          "He said: We 'll provide you with a company car"
+        ],
+        "explanation": "Complete Advanced p.174, ex.2 · would → will; they → we; me → you."
+      },
+      {
+        "type": "rewrite",
+        "original": "They said employees were allowed to work from home occasionally. (direct speech)",
+        "start": "They said: Employees",
+        "answers": [
+          "They said: Employees are allowed to work from home occasionally"
+        ],
+        "explanation": "Complete Advanced p.174, ex.2 · were → are."
+      },
+      {
+        "type": "rewrite",
+        "original": "He said I could start the following Monday. (direct speech)",
+        "start": "He said: You",
+        "answers": [
+          "He said: You can start next Monday",
+          "He said: You can start on Monday"
+        ],
+        "explanation": "Complete Advanced p.174, ex.2 · could → can; the following Monday → next Monday."
+      },
+      {
+        "type": "rewrite",
+        "original": "'I'll see you tomorrow morning.' (Rob)",
+        "start": "Rob said",
+        "answers": [
+          "Rob said he would see me the following morning",
+          "Rob said he would see me the next morning",
+          "Rob said that he would see me the following morning",
+          "Rob said that he would see me the next morning"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · will → would; tomorrow morning → the following / next morning."
+      },
+      {
+        "type": "rewrite",
+        "original": "'I didn't do anything wrong.' (Irina)",
+        "start": "Irina said",
+        "answers": [
+          "Irina said she hadn't done anything wrong",
+          "Irina said that she hadn't done anything wrong",
+          "Irina said she had not done anything wrong",
+          "Irina said that she had not done anything wrong"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · past simple → past perfect."
+      },
+      {
+        "type": "rewrite",
+        "original": "'We can meet at my office.' (Steve)",
+        "start": "Steve said",
+        "answers": [
+          "Steve said we could meet at his office",
+          "Steve said that we could meet at his office",
+          "Steve said they could meet at his office",
+          "Steve said that they could meet at his office"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · can → could; my → his."
+      },
+      {
+        "type": "rewrite",
+        "original": "'I'd never expected to be here today.' (Ahmet)",
+        "start": "Ahmet said",
+        "answers": [
+          "Ahmet said he'd never expected to be there that day",
+          "Ahmet said he had never expected to be there that day",
+          "Ahmet said that he had never expected to be there that day",
+          "Ahmet said that he'd never expected to be there that day"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · past perfect no cambia; here → there; today → that day."
+      },
+      {
+        "type": "rewrite",
+        "original": "'Megan and I were here yesterday.' (Polly)",
+        "start": "Polly said",
+        "answers": [
+          "Polly said she and Megan had been there the day before",
+          "Polly said she and Megan had been there the previous day",
+          "Polly said that she and Megan had been there the day before",
+          "Polly said that she and Megan had been there the previous day",
+          "Polly said Megan and she had been there the day before",
+          "Polly said Megan and she had been there the previous day"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · past simple → past perfect; here → there; yesterday → the day before / the previous day."
+      },
+      {
+        "type": "rewrite",
+        "original": "'Pedro's looking forward to starting his new job next week.' (Sacha)",
+        "start": "Sacha said",
+        "answers": [
+          "Sacha said Pedro was looking forward to starting his new job the following week",
+          "Sacha said that Pedro was looking forward to starting his new job the following week",
+          "Sacha said Pedro was looking forward to starting his new job the week after",
+          "Sacha said that Pedro was looking forward to starting his new job the week after"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · present continuous → past continuous; next week → the following week."
+      },
+      {
+        "type": "rewrite",
+        "original": "'You can come on holiday with us.' (Zoë)",
+        "start": "Zoë said",
+        "answers": [
+          "Zoë said I could go on holiday with them",
+          "Zoë said that I could go on holiday with them",
+          "Zoë said I could come on holiday with them",
+          "Zoë said that I could come on holiday with them"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · can → could; you → I; us → them (come → go, al cambiar de lugar)."
+      },
+      {
+        "type": "rewrite",
+        "original": "'It's been raining here all night.' (Luisa)",
+        "start": "Luisa said",
+        "answers": [
+          "Luisa said it had been raining there all night",
+          "Luisa said that it had been raining there all night"
+        ],
+        "explanation": "Complete Advanced p.175, ex.3 · present perfect continuous → past perfect continuous; here → there."
+      }
+    ],
+    "transformations": [
+      {
+        "type": "kwt",
+        "lead_in": "'I will finish the report by tomorrow,' he said.",
+        "keyword": "WOULD",
+        "before": "He said that",
+        "after": "the report by the following day.",
+        "answers": [
+          "he would finish"
+        ],
+        "explanation": "will → would."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Are you going to the party tonight?' she asked me.",
+        "keyword": "IF",
+        "before": "She asked me",
+        "after": "to the party that night.",
+        "answers": [
+          "if I was going",
+          "if I were going"
+        ],
+        "explanation": "Yes / No → if + sujeto + verbo; present continuous → past continuous."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'I have been working here for ten years,' John told me.",
+        "keyword": "HAD",
+        "before": "John told me that",
+        "after": "there for ten years.",
+        "answers": [
+          "he had been working"
+        ],
+        "explanation": "Present perfect continuous → past perfect continuous; here → there."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'What time does the train leave?' the tourist asked.",
+        "keyword": "LEFT",
+        "before": "The tourist wanted to know",
+        "after": "",
+        "answers": [
+          "what time the train left"
+        ],
+        "explanation": "Orden afirmativo sin does: what time + the train + left."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'I may go to Paris next week,' said Sarah.",
+        "keyword": "MIGHT",
+        "before": "Sarah said that",
+        "after": "to Paris the following week.",
+        "answers": [
+          "she might go"
+        ],
+        "explanation": "may → might."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Don't touch that wire!' the electrician told me.",
+        "keyword": "NOT",
+        "before": "The electrician warned",
+        "after": "that wire.",
+        "answers": [
+          "me not to touch"
+        ],
+        "explanation": "warn + objeto + not to + infinitivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'I'm sorry I broke the vase,' he said.",
+        "keyword": "APOLOGISED",
+        "before": "He",
+        "after": "the vase.",
+        "answers": [
+          "apologised for breaking",
+          "apologised for having broken"
+        ],
+        "explanation": "apologise for + -ing / having + participio."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Yes, I stole the money,' the thief said.",
+        "keyword": "ADMITTED",
+        "before": "The thief",
+        "after": "the money.",
+        "answers": [
+          "admitted to stealing",
+          "admitted having stolen",
+          "admitted to having stolen",
+          "admitted that he had stolen",
+          "admitted that she had stolen"
+        ],
+        "explanation": "admit (to) + -ing / having + participio / that-clause."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'No, I didn't cheat in the exam,' she said.",
+        "keyword": "DENIED",
+        "before": "She",
+        "after": "in the exam.",
+        "answers": [
+          "denied having cheated",
+          "denied that she had cheated",
+          "denied that she cheated"
+        ],
+        "explanation": "deny + having + participio / that-clause. (denied cheating es correcto, pero sólo son 2 palabras)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'You really must let me pay for dinner,' he said.",
+        "keyword": "INSISTED",
+        "before": "He",
+        "after": "for dinner.",
+        "answers": [
+          "insisted on paying"
+        ],
+        "explanation": "insist on + -ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'You stole my laptop!' he said to her.",
+        "keyword": "ACCUSED",
+        "before": "He",
+        "after": "his laptop.",
+        "answers": [
+          "accused her of stealing",
+          "accused her of having stolen"
+        ],
+        "explanation": "accuse sb of + -ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Don't forget to lock the door,' she told him.",
+        "keyword": "REMINDED",
+        "before": "She",
+        "after": "the door.",
+        "answers": [
+          "reminded him to lock"
+        ],
+        "explanation": "remind + objeto + to + infinitivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'If you do that again, I'll call the police,' the man said to me.",
+        "keyword": "THREATENED",
+        "before": "The man",
+        "after": "the police if I did that again.",
+        "answers": [
+          "threatened to call"
+        ],
+        "explanation": "threaten + to + infinitivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Why don't we go to the cinema?' said Peter.",
+        "keyword": "SUGGESTED",
+        "before": "Peter",
+        "after": "to the cinema.",
+        "answers": [
+          "suggested that we go",
+          "suggested that we should go",
+          "suggested that we went"
+        ],
+        "explanation": "suggest + that + sujeto + (should) + verbo. (suggested going = sólo 2 palabras)."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'It's your fault the project failed,' the boss told me.",
+        "keyword": "BLAMED",
+        "before": "The boss",
+        "after": "the project's failure.",
+        "answers": [
+          "blamed me for"
+        ],
+        "explanation": "blame sb for + sustantivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'Well done for passing the exam!' she told him.",
+        "keyword": "CONGRATULATED",
+        "before": "She",
+        "after": "the exam.",
+        "answers": [
+          "congratulated him on passing",
+          "congratulated him on having passed"
+        ],
+        "explanation": "congratulate sb on + -ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'I really think you should apply for the job,' she told me.",
+        "keyword": "URGED",
+        "before": "She",
+        "after": "for the job.",
+        "answers": [
+          "urged me to apply"
+        ],
+        "explanation": "urge + objeto + to + infinitivo."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'I'm the best player in the team,' he said.",
+        "keyword": "BOASTED",
+        "before": "He",
+        "after": "the best player in the team.",
+        "answers": [
+          "boasted about being",
+          "boasted that he was"
+        ],
+        "explanation": "boast about + -ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'I'm sure it was John who broke the window,' said Mary.",
+        "keyword": "SUSPECTED",
+        "before": "Mary",
+        "after": "the window.",
+        "answers": [
+          "suspected John of breaking",
+          "suspected John of having broken"
+        ],
+        "explanation": "suspect sb of + -ing."
+      },
+      {
+        "type": "kwt",
+        "lead_in": "'I'll pay you back tomorrow, I promise,' he said to me.",
+        "keyword": "PROMISED",
+        "before": "He",
+        "after": "back the following day.",
+        "answers": [
+          "promised to pay me",
+          "promised that he would pay me",
+          "promised he would pay me"
+        ],
+        "explanation": "promise + to + infinitivo / that-clause."
+      }
+    ]
   }
 };
+    </script>
+    <script>
+// State
+let theoryData = null;
+let exercisesData = null;
+const quizzes = {};
 
-        const exercisesData = [
-  { "id": 1, "type": "mixed", "lead_in": "\"I will finish the report by tomorrow,\" he said.", "keyword": "WOULD", "prefix": "He said that ", "suffix": " the report by the following day.", "answer": "he would finish" },
-  { "id": 2, "type": "mixed", "lead_in": "\"Are you going to the party tonight?\" she asked me.", "keyword": "IF", "prefix": "She asked me ", "suffix": " to the party that night.", "answer": "if I was going" },
-  { "id": 3, "type": "mixed", "lead_in": "\"I have been working here for ten years,\" John told me.", "keyword": "HAD", "prefix": "John told me that ", "suffix": " there for ten years.", "answer": "he had been working" },
-  { "id": 4, "type": "mixed", "lead_in": "\"Where did you put the keys?\" my mother asked.", "keyword": "WHERE", "prefix": "My mother asked me ", "suffix": " the keys.", "answer": "where I had put" },
-  { "id": 5, "type": "mixed", "lead_in": "\"I can't swim very well,\" David said.", "keyword": "COULD", "prefix": "David said that ", "suffix": " very well.", "answer": "he could not swim" },
-  { "id": 6, "type": "mixed", "lead_in": "\"You must leave immediately!\" the officer said to us.", "keyword": "HAD", "prefix": "The officer told us that ", "suffix": " immediately.", "answer": "we had to leave" },
-  { "id": 7, "type": "mixed", "lead_in": "\"I bought this car yesterday,\" she said.", "keyword": "PREVIOUS", "prefix": "She said she had bought that car ", "suffix": ".", "answer": "the previous day" },
-  { "id": 8, "type": "mixed", "lead_in": "\"What time does the train leave?\" the tourist asked.", "keyword": "LEFT", "prefix": "The tourist asked what time ", "suffix": ".", "answer": "the train left" },
-  { "id": 9, "type": "mixed", "lead_in": "\"I may go to Paris next week,\" said Sarah.", "keyword": "MIGHT", "prefix": "Sarah said that ", "suffix": " to Paris the following week.", "answer": "she might go" },
-  { "id": 10, "type": "mixed", "lead_in": "\"Don't touch that wire!\" the electrician told me.", "keyword": "NOT", "prefix": "The electrician warned ", "suffix": " that wire.", "answer": "me not to touch" },
-  { "id": 11, "type": "mixed", "lead_in": "\"I was watching TV when the phone rang,\" he said.", "keyword": "BEEN", "prefix": "He said that ", "suffix": " TV when the phone had rung.", "answer": "he had been watching" },
-  { "id": 12, "type": "mixed", "lead_in": "\"Will you help me with this box?\" she asked him.", "keyword": "WHETHER", "prefix": "She asked him ", "suffix": " help her with that box.", "answer": "whether he would" },
-  { "id": 13, "type": "mixed", "lead_in": "\"I had never eaten sushi before,\" she told us.", "keyword": "NEVER", "prefix": "She told us that ", "suffix": " sushi before.", "answer": "she had never eaten" },
-  { "id": 14, "type": "mixed", "lead_in": "\"Do you know the answer?\" the teacher asked the class.", "keyword": "KNEW", "prefix": "The teacher asked the class if ", "suffix": " the answer.", "answer": "they knew" },
-  { "id": 15, "type": "mixed", "lead_in": "\"I will have finished by Friday,\" he promised.", "keyword": "WOULD", "prefix": "He promised that ", "suffix": " finished by Friday.", "answer": "he would have" },
-  { "id": 16, "type": "mixed", "lead_in": "\"We are leaving now,\" they announced.", "keyword": "THEN", "prefix": "They announced that ", "suffix": ".", "answer": "they were leaving then" },
-  { "id": 17, "type": "mixed", "lead_in": "\"How long have you lived here?\" he asked me.", "keyword": "HAD", "prefix": "He asked me how long ", "suffix": " there.", "answer": "I had lived" },
-  { "id": 18, "type": "mixed", "lead_in": "\"You should see a doctor,\" my friend advised me.", "keyword": "SEE", "prefix": "My friend advised ", "suffix": " a doctor.", "answer": "me to see" },
-  { "id": 19, "type": "mixed", "lead_in": "\"I couldn't find my wallet,\" he complained.", "keyword": "NOT", "prefix": "He complained that ", "suffix": " find his wallet.", "answer": "he had not been able to" },
-  { "id": 20, "type": "mixed", "lead_in": "\"Did you see the news last night?\" she asked.", "keyword": "BEFORE", "prefix": "She asked if I had seen the news ", "suffix": ".", "answer": "the night before" },
+const TABS = ['theory', 'tenses', 'questions', 'verbs', 'book', 'transformations', 'speaking'];
 
-  { "id": 21, "type": "reporting_verbs", "lead_in": "\"I'm sorry I broke the vase,\" he said.", "keyword": "APOLOGIZED", "prefix": "He ", "suffix": " the vase.", "answer": "apologized for breaking" },
-  { "id": 22, "type": "reporting_verbs", "lead_in": "\"Yes, I stole the money,\" the thief said.", "keyword": "ADMITTED", "prefix": "The thief ", "suffix": " the money.", "answer": "admitted to stealing" },
-  { "id": 23, "type": "reporting_verbs", "lead_in": "\"No, I didn't cheat on the exam,\" she said.", "keyword": "DENIED", "prefix": "She ", "suffix": " on the exam.", "answer": "denied cheating" },
-  { "id": 24, "type": "reporting_verbs", "lead_in": "\"You really must let me pay for dinner,\" he said.", "keyword": "INSISTED", "prefix": "He ", "suffix": " for dinner.", "answer": "insisted on paying" },
-  { "id": 25, "type": "reporting_verbs", "lead_in": "\"I will not wear that ridiculous hat!\" she said.", "keyword": "OBJECTED", "prefix": "She ", "suffix": " that ridiculous hat.", "answer": "objected to wearing" },
-  { "id": 26, "type": "reporting_verbs", "lead_in": "\"You stole my laptop!\" he said to her.", "keyword": "ACCUSED", "prefix": "He ", "suffix": " his laptop.", "answer": "accused her of stealing" },
-  { "id": 27, "type": "reporting_verbs", "lead_in": "\"Don't forget to lock the door,\" she told him.", "keyword": "REMINDED", "prefix": "She ", "suffix": " the door.", "answer": "reminded him to lock" },
-  { "id": 28, "type": "reporting_verbs", "lead_in": "\"If you do that again, I'll call the police,\" the man said.", "keyword": "THREATENED", "prefix": "The man ", "suffix": " the police if I did that again.", "answer": "threatened to call" },
-  { "id": 29, "type": "reporting_verbs", "lead_in": "\"Why don't we go to the cinema?\" suggested Peter.", "keyword": "GOING", "prefix": "Peter ", "suffix": " to the cinema.", "answer": "suggested going" },
-  { "id": 30, "type": "reporting_verbs", "lead_in": "\"I wish I hadn't spoken to him,\" she said.", "keyword": "REGRETTED", "prefix": "She ", "suffix": " to him.", "answer": "regretted speaking" },
-  { "id": 31, "type": "reporting_verbs", "lead_in": "\"It's your fault the project failed,\" the boss told me.", "keyword": "BLAMED", "prefix": "The boss ", "suffix": " the project's failure.", "answer": "blamed me for" },
-  { "id": 32, "type": "reporting_verbs", "lead_in": "\"Well done for passing the exam!\" she told him.", "keyword": "CONGRATULATED", "prefix": "She ", "suffix": " the exam.", "answer": "congratulated him on passing" },
-  { "id": 33, "type": "reporting_verbs", "lead_in": "\"I really think you should apply for the job,\" she told me.", "keyword": "URGED", "prefix": "She ", "suffix": " for the job.", "answer": "urged me to apply" },
-  { "id": 34, "type": "reporting_verbs", "lead_in": "\"I am the best player in the team,\" he said.", "keyword": "BOASTED", "prefix": "He ", "suffix": " the best player in the team.", "answer": "boasted about being" },
-  { "id": 35, "type": "reporting_verbs", "lead_in": "\"I think it was John who broke the window,\" said Mary.", "keyword": "SUSPECTED", "prefix": "Mary ", "suffix": " the window.", "answer": "suspected John of breaking" },
-  { "id": 36, "type": "reporting_verbs", "lead_in": "\"Please, please don't tell my parents,\" he said.", "keyword": "BEGGED", "prefix": "He ", "suffix": " tell his parents.", "answer": "begged me not to" },
-  { "id": 37, "type": "reporting_verbs", "lead_in": "\"I think you shouldn't buy that car,\" he told me.", "keyword": "ADVISED", "prefix": "He ", "suffix": " that car.", "answer": "advised me against buying" },
-  { "id": 38, "type": "reporting_verbs", "lead_in": "\"The heavy rain stopped us from playing tennis,\" she said.", "keyword": "PREVENTED", "prefix": "She said the heavy rain ", "suffix": " tennis.", "answer": "prevented us from playing" },
-  { "id": 39, "type": "reporting_verbs", "lead_in": "\"You really ought to try the new restaurant,\" she said.", "keyword": "RECOMMENDED", "prefix": "She ", "suffix": " the new restaurant.", "answer": "recommended trying" },
-  { "id": 40, "type": "reporting_verbs", "lead_in": "\"I promise I will pay you back tomorrow,\" he said.", "keyword": "PROMISED", "prefix": "He ", "suffix": " me back the following day.", "answer": "promised to pay" }
-];
+const QUIZ_INFO = {
+    tenses: {
+        title: 'Tense, Pronoun & Time Changes',
+        instructions: 'Choose the correct option or write the missing words in reported speech. Remember: one step back in time.',
+        color: 'sky'
+    },
+    questions: {
+        title: 'Reporting Questions & Commands',
+        instructions: 'Choose the correct option or complete the reported question / command. Word order: subject + verb, no do / does / did.',
+        color: 'indigo'
+    },
+    verbs: {
+        title: 'Reporting Verbs',
+        instructions: 'Choose the correct pattern or complete the sentence with the reporting verb: -ing, preposition + -ing, (object +) to-infinitive or that-clause.',
+        color: 'purple'
+    },
+    book: {
+        title: 'Complete Advanced: Grammar Reference Practice',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 8: Reported speech).',
+        color: 'rose'
+    },
+    transformations: {
+        title: 'Keyword Transformation (Part 4)',
+        instructions: 'Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given.',
+        color: 'sky'
+    }
+};
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Initialization ---
-            initTabs();
-            renderTheory();
-            renderVerbsTheory();
-            renderSpeaking();
-            renderExercises('mixed', 'mixed-exercises-container');
-            renderExercises('reporting_verbs', 'verbs-exercises-container');
-            updateStatsDisplay();
+const COLORS = {
+    sky: { text: 'text-sky-700', bg: 'bg-sky-50', border: 'border-sky-100', icon: 'text-sky-900', btn: 'bg-sky-600 hover:bg-sky-700', ring: 'ring-sky-500', solid: 'bg-sky-600', mark: 'bg-sky-100 text-sky-900', chip: 'bg-white text-sky-800 border-sky-200' },
+    indigo: { text: 'text-indigo-700', bg: 'bg-indigo-50', border: 'border-indigo-100', icon: 'text-indigo-900', btn: 'bg-indigo-600 hover:bg-indigo-700', ring: 'ring-indigo-500', solid: 'bg-indigo-600', mark: 'bg-indigo-100 text-indigo-900', chip: 'bg-white text-indigo-800 border-indigo-200' },
+    purple: { text: 'text-purple-700', bg: 'bg-purple-50', border: 'border-purple-100', icon: 'text-purple-900', btn: 'bg-purple-600 hover:bg-purple-700', ring: 'ring-purple-500', solid: 'bg-purple-600', mark: 'bg-purple-100 text-purple-900', chip: 'bg-white text-purple-800 border-purple-200' },
+    rose: { text: 'text-rose-700', bg: 'bg-rose-50', border: 'border-rose-100', icon: 'text-rose-900', btn: 'bg-rose-600 hover:bg-rose-700', ring: 'ring-rose-500', solid: 'bg-rose-600', mark: 'bg-rose-100 text-rose-900', chip: 'bg-white text-rose-800 border-rose-200' }
+};
 
-            // --- Tab Navigation ---
-            function initTabs() {
-                const tabs = document.querySelectorAll('.tab-btn');
-                const contents = document.querySelectorAll('.tab-content');
+const ICON_CHECK = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+const ICON_CROSS = '<svg class="w-5 h-5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
 
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        // Remove active classes
-                        tabs.forEach(t => {
-                            t.classList.remove('bg-cambridge', 'text-white', 'shadow-md', 'active');
-                            t.classList.add('bg-gray-100', 'text-gray-600');
-                            if (t.dataset.target === 'tab-theory-verbs' && t.classList.contains('active-purple')) {
-                               t.classList.remove('bg-purple-600', 'text-white', 'shadow-md', 'active-purple');
-                            }
-                        });
-                        contents.forEach(c => c.classList.add('hidden'));
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+});
 
-                        // Add active to clicked
-                        const targetId = tab.dataset.target;
-                        document.getElementById(targetId).classList.remove('hidden');
+window.switchTab = function(tabId) {
+    TABS.forEach(id => {
+        document.getElementById(`content-${id}`).classList.remove('block');
+        document.getElementById(`content-${id}`).classList.add('hidden');
 
-                        if (targetId === 'tab-theory-verbs' || targetId === 'tab-verbs-exercises') {
-                            tab.classList.remove('bg-gray-100', 'text-gray-600');
-                            tab.classList.add('bg-purple-600', 'text-white', 'shadow-md', 'active-purple', 'active');
-                        } else {
-                            tab.classList.remove('bg-gray-100', 'text-gray-600');
-                            tab.classList.add('bg-cambridge', 'text-white', 'shadow-md', 'active');
-                        }
-                    });
-                });
-            }
+        const btn = document.getElementById(`tab-${id}`);
+        btn.classList.remove('active-tab');
+        btn.classList.add('inactive-tab');
+    });
 
-            // --- Render Theory (Tenses) ---
-            function renderTheory() {
-                const container = document.getElementById('theory-content');
-                const tensesData = theoryData.tenses_and_changes;
-                document.getElementById('theory-title').textContent = tensesData.title;
+    document.getElementById(`content-${tabId}`).classList.remove('hidden');
+    document.getElementById(`content-${tabId}`).classList.add('block');
 
-                container.innerHTML = tensesData.sections.map(section => `
-                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-cambridge/30 transition-colors">
-                        <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-                            ${section.subtitle}
-                        </h3>
-                        <ul class="space-y-2 mb-4 text-gray-600 text-sm">
-                            ${section.items.map(item => `<li class="flex items-start gap-2">
-                                <svg class="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>${item}</span>
-                            </li>`).join('')}
-                        </ul>
-                        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg">
-                            <p class="text-sm text-blue-900 font-medium italic">"${section.example}"</p>
+    const activeBtn = document.getElementById(`tab-${tabId}`);
+    activeBtn.classList.remove('inactive-tab');
+    activeBtn.classList.add('active-tab');
+
+    if (quizzes[tabId]) focusInput(tabId);
+};
+
+async function loadData() {
+    try {
+        // Unidad8.html embeds the data so it works without a server
+        if (window.UNIT_DATA) {
+            theoryData = window.UNIT_DATA.teoria;
+            exercisesData = window.UNIT_DATA.ejercicios;
+        } else {
+            const [theoryRes, exercisesRes] = await Promise.all([
+                fetch('/api/teoria'),
+                fetch('/api/ejercicios')
+            ]);
+            theoryData = await theoryRes.json();
+            exercisesData = await exercisesRes.json();
+        }
+
+        renderTheory();
+        renderSpeaking();
+        Object.keys(QUIZ_INFO).forEach(key => initQuiz(key));
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        document.getElementById('theory-container').innerHTML = `<div class="text-red-500 p-4 bg-red-50 rounded-lg">Error loading content. Please make sure the server is running.</div>`;
+    }
+}
+
+// ---------- Helpers ----------
+
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function normalize(str) {
+    return str
+        .toLowerCase()
+        .replace(/[’‘`´]/g, "'")
+        .replace(/\bwon't\b/g, 'will not')
+        .replace(/\bcan't\b/g, 'cannot')
+        .replace(/n't\b/g, ' not')
+        .replace(/(\w)iz(e|ed|es|ing)\b/g, '$1is$2')
+        .replace(/[.,!?;:"()—–-]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function focusInput(key) {
+    const input = document.getElementById(`answer-${key}`);
+    if (input && !input.readOnly) input.focus();
+}
+
+// **text** → highlighted key part
+function fmt(text, c) {
+    return text.replace(/\*\*(.+?)\*\*/g, `<strong class="${c.mark} font-semibold px-1 rounded not-italic">$1</strong>`);
+}
+
+// "Never + AUX + SUJETO + verbo" → chips; UPPERCASE tokens are the key slots
+function renderFormula(formula, c) {
+    // Split on " + " and ", " keeping the separator so commas still read as clause breaks
+    const parts = formula.split(/(\s\+\s|,\s)/);
+    return `
+        <div class="flex flex-wrap items-center gap-1.5 font-mono text-sm">
+            ${parts.map(p => {
+                if (/^\s\+\s$/.test(p)) return '<span class="text-gray-400 font-bold">+</span>';
+                if (/^,\s$/.test(p)) return '<span class="text-gray-400 font-bold">,</span>';
+                const t = p.trim();
+                const isKey = !/[a-z]/.test(t) && /[A-Z]{2,}/.test(t);
+                const cls = isKey ? `${c.solid} text-white border-transparent` : c.chip;
+                return `<span class="px-2.5 py-1 rounded-md border ${cls}">${escapeHtml(t)}</span>`;
+            }).join('')}
+        </div>
+    `;
+}
+
+// ---------- Theory ----------
+
+function renderTheory() {
+    const sections = theoryData.sections;
+
+    let html = `
+        <div class="flex flex-wrap gap-2 mb-2">
+            ${sections.map(s => {
+                const c = COLORS[s.color] || COLORS.sky;
+                return `<button onclick="document.getElementById('sec-${s.id}').scrollIntoView({behavior:'smooth', block:'start'})" class="px-3 py-1.5 rounded-full text-sm font-medium border ${c.border} ${c.bg} ${c.text} hover:shadow-sm transition">${s.title}</button>`;
+            }).join('')}
+        </div>
+    `;
+
+    sections.forEach(section => {
+        const c = COLORS[section.color] || COLORS.sky;
+        html += `
+            <div id="sec-${section.id}" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-40">
+                <div class="${c.bg} border-b ${c.border} px-6 py-4 flex flex-wrap justify-between items-center gap-2">
+                    <button onclick="toggleSection('${section.id}')" class="text-left flex items-center gap-3 group">
+                        <svg id="chev-${section.id}" class="w-5 h-5 ${c.text} transition-transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span>
+                            <span class="block text-lg font-bold text-gray-900">${section.title}</span>
+                            ${section.subtitle ? `<span class="block text-sm text-gray-500">${section.subtitle}</span>` : ''}
+                        </span>
+                    </button>
+                    <button onclick="switchTab('${section.practice || section.id}')" class="text-sm font-semibold px-3 py-1.5 rounded-md text-white ${c.btn} shadow-sm">Practise this →</button>
+                </div>
+                <div id="body-${section.id}" class="p-4 sm:p-6 grid gap-4">
+                    ${section.blocks.map(block => renderBlock(block, c)).join('')}
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById('theory-container').innerHTML = html;
+}
+
+window.toggleSection = function(id) {
+    const body = document.getElementById(`body-${id}`);
+    body.hidden = !body.hidden;
+    document.getElementById(`chev-${id}`).classList.toggle('rotate-90', !body.hidden);
+};
+
+function renderBlock(block, c) {
+    const formulas = block.formulas || (block.formula ? [block.formula] : []);
+
+    return `
+        <div class="rounded-xl border border-gray-100 p-5 hover:border-gray-200 transition-colors">
+            <h4 class="font-bold ${c.text} text-base mb-3">${block.heading}</h4>
+
+            ${formulas.length ? `<div class="space-y-2 mb-3">${formulas.map(f => renderFormula(f, c)).join('')}</div>` : ''}
+
+            ${block.rule ? `<p class="text-gray-700 leading-relaxed mb-3">${fmt(block.rule, c)}</p>` : ''}
+
+            ${block.compare ? `
+                <div class="grid sm:grid-cols-2 gap-3 mb-3">
+                    ${block.compare.map(cmp => `
+                        <div class="rounded-lg border ${c.border} ${c.bg} p-3">
+                            <p class="text-xs font-bold uppercase tracking-wider ${c.text} mb-1">${cmp.label}</p>
+                            <p class="text-gray-800 italic">${fmt(cmp.text, c)}</p>
                         </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${block.chips ? `
+                <div class="mb-3">
+                    ${block.chipsLabel ? `<p class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">${block.chipsLabel}</p>` : ''}
+                    <div class="flex flex-wrap gap-1.5">
+                        ${block.chips.map(ch => `<span class="px-2 py-0.5 rounded-full text-sm border ${c.chip}">${ch}</span>`).join('')}
                     </div>
-                `).join('');
-            }
+                </div>
+            ` : ''}
 
-            // --- Render Theory (Verbs) ---
-            function renderVerbsTheory() {
-                const container = document.getElementById('verbs-theory-content');
-                const verbsData = theoryData.reporting_verbs;
-                document.getElementById('verbs-theory-title').textContent = verbsData.title;
+            ${block.examples ? `
+                <ul class="space-y-1.5 mb-3">
+                    ${block.examples.map(ex => `
+                        <li class="flex items-start gap-2 text-gray-800">
+                            <svg class="w-4 h-4 mt-1 flex-shrink-0 ${c.text}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="italic">${fmt(ex, c)}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            ` : ''}
 
-                container.innerHTML = verbsData.sections.map(section => `
-                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-purple-300 transition-colors">
-                        <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-purple-500"></span>
-                            ${section.subtitle}
-                        </h3>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            ${section.verbs.map(verb => `
-                                <span class="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">${verb}</span>
-                            `).join('')}
+            ${block.table ? renderTable(block.table, c) : ''}
+
+            ${block.wrong ? `
+                <div class="grid gap-2 mt-3">
+                    ${block.wrong.map(w => `
+                        <div class="rounded-lg border border-gray-100 overflow-hidden text-sm">
+                            <p class="bg-red-50 text-red-700 px-3 py-1.5"><span class="font-bold">✗</span> <span class="line-through decoration-red-300">${escapeHtml(w.bad)}</span></p>
+                            <p class="bg-green-50 text-green-800 px-3 py-1.5"><span class="font-bold">✓</span> ${escapeHtml(w.good)}</p>
                         </div>
-                        <div class="bg-purple-50 border-l-4 border-purple-400 p-3 rounded-r-lg mt-auto">
-                            <p class="text-sm text-purple-900 font-medium italic">"${section.example}"</p>
-                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
+            ${block.tip ? `
+                <p class="mt-3 text-sm text-amber-900 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2"><span class="font-semibold">💡 Tip:</span> ${fmt(block.tip, c)}</p>
+            ` : ''}
+        </div>
+    `;
+}
+
+function renderTable(table, c) {
+    return `
+        <div class="overflow-x-auto rounded-lg border ${c.border} mt-1">
+            <table class="min-w-full text-sm">
+                <thead class="${c.bg} ${c.text}">
+                    <tr>${table.headers.map(h => `<th class="text-left font-semibold px-4 py-2 whitespace-nowrap">${h}</th>`).join('')}</tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    ${table.rows.map(row => `
+                        <tr class="hover:bg-gray-50">
+                            ${row.map((cell, i) => `<td class="px-4 py-2 align-top ${i === 0 ? 'font-semibold text-gray-800 whitespace-nowrap' : 'text-gray-700'}">${fmt(escapeHtml(cell), c)}</td>`).join('')}
+                        </tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
+    `;
+}
+
+// ---------- Speaking ----------
+
+function renderSpeaking() {
+    const colors = [
+        { bg: 'bg-sky-50', text: 'text-sky-600', border: 'border-sky-100', textLight: 'text-sky-500' },
+        { bg: 'bg-indigo-50', text: 'text-indigo-600', border: 'border-indigo-100', textLight: 'text-indigo-500' },
+        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', textLight: 'text-purple-500' },
+        { bg: 'bg-rose-50', text: 'text-rose-600', border: 'border-rose-100', textLight: 'text-rose-500' }
+    ];
+
+    let html = '';
+
+    theoryData.speaking.forEach((item, index) => {
+        const c = colors[index % colors.length];
+        const structureHtml = item.structure.replace(/\[(.*?)\]/g, `<span class="${c.textLight} ${c.bg} px-1 rounded border border-white">[$1]</span>`);
+
+        html += `
+            <div class="bg-white rounded-xl shadow-sm border ${c.border} overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                <div class="${c.bg} px-5 py-3 border-b ${c.border} flex justify-between items-center">
+                    <span class="text-xs font-bold uppercase tracking-wider ${c.text}">Strategy ${index + 1}</span>
+                    <span class="bg-white ${c.text} text-xs px-2 py-1 rounded shadow-sm font-semibold">${item.part.split(' (')[0]}</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-sm font-medium text-gray-500 mb-4">${item.part}</p>
+                    <div class="mb-5">
+                        <div class="text-gray-800 font-semibold text-lg leading-snug">${structureHtml}</div>
                     </div>
-                `).join('');
-            }
-
-            // --- Render Speaking ---
-            function renderSpeaking() {
-                const container = document.getElementById('speaking-content');
-                const speakingData = theoryData.speaking_strategies;
-
-                container.innerHTML = speakingData.templates.map((template, index) => `
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-amber-100 hover:shadow-md transition-shadow relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-bl-lg">
-                            ${template.part}
-                        </div>
-                        <div class="text-amber-500 mb-4 opacity-50 group-hover:opacity-100 transition-opacity">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight">${template.structure}</h3>
-                        <div class="space-y-3 mt-4">
-                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
-                                <p class="text-sm text-gray-700"><span class="font-semibold text-gray-900">Example:</span> ${template.example}</p>
-                            </div>
-                            <p class="text-sm text-amber-700 italic border-l-2 border-amber-300 pl-2">${template.translation}</p>
-                        </div>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 mb-4">
+                        <p class="text-gray-700 italic">"${item.example}"</p>
                     </div>
-                `).join('');
-            }
+                    <div class="flex items-center text-sm text-gray-500">
+                        <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                        ${item.translation}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
 
-            // --- Exercises Logic ---
-            function shuffleArray(array) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
-                return array;
-            }
+    document.getElementById('speaking-container').innerHTML = html;
+}
 
-            function renderExercises(type, containerId) {
-                const container = document.getElementById(containerId);
-                const filteredEx = exercisesData.filter(ex => ex.type === type);
-                // Take 20 random exercises
-                const selectedEx = shuffleArray([...filteredEx]).slice(0, 20);
+// ---------- Quiz engine (shared by all practice tabs) ----------
 
-                const isVerbs = type === 'reporting_verbs';
-                const focusColor = isVerbs ? 'focus:border-purple-500 focus:ring-purple-200' : 'focus:border-cambridge focus:ring-green-100';
+function setIndices(key, set) {
+    return exercisesData[key].map((q, i) => i).filter(i => set === undefined || exercisesData[key][i].test === set);
+}
 
-                container.innerHTML = selectedEx.map((ex, index) => {
-                    return `
-                        <div class="exercise-item bg-white p-6 rounded-2xl shadow-sm border border-gray-100" data-id="${ex.id}" data-type="${type}" data-answer="${ex.answer.toLowerCase().trim().replace(/"/g, '&quot;')}">
-                            <div class="flex items-start gap-4 mb-4">
-                                <span class="flex-shrink-0 w-8 h-8 rounded-full ${isVerbs ? 'bg-purple-100 text-purple-700' : 'bg-green-100 text-green-700'} flex items-center justify-center font-bold text-sm mt-1">${index + 1}</span>
-                                <div class="w-full">
-                                    <p class="text-gray-600 italic mb-2">${ex.lead_in}</p>
-                                    <p class="font-bold text-gray-900 mb-3 uppercase tracking-widest text-sm bg-gray-100 inline-block px-3 py-1 rounded-lg border border-gray-200 shadow-sm">${ex.keyword}</p>
-                                    <div class="flex flex-wrap items-center gap-2 text-lg text-gray-800">
-                                        <span>${ex.prefix}</span>
-                                        <input type="text" class="kwt-input flex-grow min-w-[200px] border-b-2 border-gray-300 px-2 py-1 bg-gray-50 outline-none transition-colors ${focusColor}" placeholder="type 3 to 6 words...">
-                                        <span>${ex.suffix}</span>
-                                    </div>
-                                    <div class="feedback-msg mt-3 text-sm hidden font-medium"></div>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }).join('');
-            }
+function initQuiz(key, onlyIndices, set) {
+    const info = QUIZ_INFO[key];
+    if (info.sets && set === undefined) set = quizzes[key] ? quizzes[key].set : Number(Object.keys(info.sets)[0]);
 
-            // --- Evaluation ---
-            document.getElementById('check-mixed-btn').addEventListener('click', () => evaluateTest('mixed'));
-            document.getElementById('check-verbs-btn').addEventListener('click', () => evaluateTest('reporting_verbs'));
+    const all = exercisesData[key];
+    const indices = onlyIndices || setIndices(key, info.sets ? set : undefined);
 
-            document.getElementById('reset-mixed-btn').addEventListener('click', () => {
-                renderExercises('mixed', 'mixed-exercises-container');
-                document.getElementById('mixed-score-display').textContent = '0/20';
-            });
+    quizzes[key] = {
+        set,
+        questions: indices.map(i => {
+            const q = all[i];
+            // Shuffle multiple-choice options so the answer isn't always first
+            return q.type === 'mc' ? { ...q, options: shuffle(q.options), sourceIndex: i } : { ...q, sourceIndex: i };
+        }),
+        current: 0,
+        answers: {},
+        showSummary: false,
+        // Tabs with an intro show the explanation first, once
+        started: !info.intro || (quizzes[key] ? quizzes[key].started : false)
+    };
 
-            document.getElementById('reset-verbs-btn').addEventListener('click', () => {
-                renderExercises('reporting_verbs', 'verbs-exercises-container');
-                document.getElementById('verbs-score-display').textContent = '0/20';
-            });
+    if (!quizzes[key].started) return renderIntro(key);
+    renderQuizShell(key);
+    showQuestion(key);
+}
 
-            function evaluateTest(type) {
-                const containerId = type === 'mixed' ? 'mixed-exercises-container' : 'verbs-exercises-container';
-                const items = document.querySelectorAll(`#${containerId} .exercise-item`);
-                let score = 0;
+function renderIntro(key) {
+    const info = QUIZ_INFO[key];
+    const c = COLORS[info.color];
+    const blocks = theoryData[info.intro] || [];
 
-                items.forEach(item => {
-                    const correctAnswer = item.dataset.answer;
-                    const input = item.querySelector('.kwt-input');
-                    const feedback = item.querySelector('.feedback-msg');
-                    const userAnswer = input.value.toLowerCase().trim();
+    document.getElementById(`content-${key}`).innerHTML = `
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="${c.bg} border-b ${c.border} p-6">
+                <p class="text-xs font-bold uppercase tracking-wider ${c.text}">Antes de empezar</p>
+                <h2 class="text-xl font-bold text-gray-900 mt-1">${info.title}</h2>
+                <p class="text-sm text-gray-600 mt-2">${info.introText || ''}</p>
+            </div>
+            <div class="p-4 sm:p-6 grid gap-4">
+                ${blocks.map(block => renderBlock(block, c)).join('')}
+            </div>
+            <div class="p-6 border-t flex justify-center">
+                <button onclick="startQuiz('${key}')" class="px-6 py-2.5 ${c.btn} text-white rounded-md text-sm font-semibold shadow-sm">Entendido, empezar ejercicios →</button>
+            </div>
+        </div>
+    `;
+}
 
-                    // Disable input
-                    input.disabled = true;
-                    feedback.classList.remove('hidden', 'text-green-600', 'text-red-600');
+window.startQuiz = function(key) {
+    quizzes[key].started = true;
+    renderQuizShell(key);
+    showQuestion(key);
+};
 
-                    // Allow some flexibility (e.g. extra spaces)
-                    const normalizedUser = userAnswer.replace(/\s+/g, ' ');
-                    const normalizedCorrect = correctAnswer.replace(/\s+/g, ' ');
+window.showIntro = function(key) {
+    quizzes[key].started = false;
+    renderIntro(key);
+};
 
-                    if (normalizedUser === normalizedCorrect) {
-                        score++;
-                        input.classList.remove('border-gray-300', 'bg-gray-50');
-                        input.classList.add('border-green-500', 'bg-green-50', 'text-green-700', 'font-bold');
-                        feedback.textContent = "✓ Correct";
-                        feedback.classList.add('text-green-600');
-                    } else {
-                        input.classList.remove('border-gray-300', 'bg-gray-50');
-                        input.classList.add('border-red-500', 'bg-red-50', 'text-red-700', 'line-through', 'font-bold');
+window.selectSet = function(key, set) {
+    initQuiz(key, undefined, set);
+};
 
-                        feedback.innerHTML = `✗ Incorrect. The correct answer is: <strong class="text-gray-900 border-b border-gray-900">${correctAnswer}</strong>`;
-                        feedback.classList.add('text-red-600');
-                    }
-                });
+function renderQuizShell(key) {
+    const info = QUIZ_INFO[key];
+    const c = COLORS[info.color];
+    const quiz = quizzes[key];
 
-                // Update UI Score
-                if (type === 'mixed') {
-                    document.getElementById('mixed-score-display').textContent = `${score}/20`;
-                    updateStorage('c1_u8_mixed', score);
-                } else {
-                    document.getElementById('verbs-score-display').textContent = `${score}/20`;
-                    updateStorage('c1_u8_verbs', score);
-                }
+    document.getElementById(`content-${key}`).innerHTML = `
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="${c.bg} border-b ${c.border} p-6">
+                <h2 class="text-xl font-bold text-gray-900">${info.title}</h2>
+                <p class="text-sm text-gray-600 mt-2">${info.instructions}</p>
+                ${info.intro ? `<button onclick="showIntro('${key}')" class="mt-3 text-sm font-medium ${c.text} hover:underline">← Volver a la explicación</button>` : ''}
+                ${info.sets ? `
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        ${Object.entries(info.sets).map(([n, label]) => `
+                            <button onclick="selectSet('${key}', ${n})" class="px-3 py-1.5 rounded-md text-sm font-medium border transition-colors ${Number(n) === quiz.set ? `${c.solid} text-white border-transparent` : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}">${label}</button>
+                        `).join('')}
+                    </div>
+                ` : ''}
+            </div>
 
-                updateStatsDisplay();
-            }
+            <div class="p-6">
+                <div class="flex flex-wrap justify-between items-center gap-2 mb-4">
+                    <span class="text-sm font-medium text-gray-500">Question <span id="qnum-${key}">1</span> of <span>${quiz.questions.length}</span></span>
+                    <span id="score-${key}" class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded shadow-sm">Score: 0/${quiz.questions.length}</span>
+                </div>
 
-            // --- Local Storage Stats ---
-            function updateStorage(key, newScore) {
-                const best = localStorage.getItem(key);
-                if (!best || newScore > parseInt(best)) {
-                    localStorage.setItem(key, newScore);
-                }
-            }
+                <div class="w-full bg-gray-100 rounded-full h-1.5 mb-4">
+                    <div id="progress-${key}" class="h-1.5 rounded-full ${c.solid} transition-all duration-300" style="width: 0%"></div>
+                </div>
 
-            function updateStatsDisplay() {
-                const mixedBest = localStorage.getItem('c1_u8_mixed') || '--';
-                const verbsBest = localStorage.getItem('c1_u8_verbs') || '--';
+                <div id="dots-${key}" class="flex flex-wrap gap-1.5 mb-6"></div>
 
-                document.getElementById('stats-mixed').textContent = mixedBest;
-                document.getElementById('stats-verbs').textContent = verbsBest;
-            }
+                <div id="question-${key}" class="min-h-[200px]"></div>
+
+                <div id="controls-${key}" class="mt-8 flex justify-between items-center border-t pt-6">
+                    <button onclick="prevQuestion('${key}')" id="prev-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Previous</button>
+                    <button onclick="checkAnswer('${key}')" id="check-${key}" class="px-6 py-2 ${c.btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">Check Answer</button>
+                    <button onclick="nextQuestion('${key}')" id="next-${key}" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">Next</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getScore(quiz) {
+    return Object.values(quiz.answers).filter(a => a.isCorrect).length;
+}
+
+function updateHeader(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const answered = Object.keys(quiz.answers).length;
+
+    document.getElementById(`qnum-${key}`).textContent = quiz.current + 1;
+    document.getElementById(`score-${key}`).textContent = `Score: ${getScore(quiz)}/${total}`;
+    document.getElementById(`progress-${key}`).style.width = `${(answered / total) * 100}%`;
+
+    const c = COLORS[QUIZ_INFO[key].color];
+    document.getElementById(`dots-${key}`).innerHTML = quiz.questions.map((_, i) => {
+        const a = quiz.answers[i];
+        let cls = 'bg-gray-100 text-gray-500 hover:bg-gray-200';
+        if (a) cls = a.isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700';
+        const active = i === quiz.current && !quiz.showSummary ? `ring-2 ${c.ring}` : '';
+        return `<button onclick="goToQuestion('${key}', ${i})" class="w-7 h-7 rounded text-xs font-semibold ${cls} ${active} transition-colors">${i + 1}</button>`;
+    }).join('');
+}
+
+function showQuestion(key) {
+    const quiz = quizzes[key];
+    if (quiz.showSummary) return showSummary(key);
+
+    const index = quiz.current;
+    const total = quiz.questions.length;
+    const q = quiz.questions[index];
+    const answer = quiz.answers[index];
+    const isAnswered = answer !== undefined;
+    const allAnswered = Object.keys(quiz.answers).length === total;
+    const container = document.getElementById(`question-${key}`);
+
+    document.getElementById(`controls-${key}`).classList.remove('hidden');
+    document.getElementById(`prev-${key}`).disabled = index === 0;
+    const btnNext = document.getElementById(`next-${key}`);
+    btnNext.textContent = allAnswered ? 'See results' : 'Next';
+    btnNext.disabled = !allAnswered && index === total - 1;
+
+    const btnCheck = document.getElementById(`check-${key}`);
+    btnCheck.disabled = isAnswered;
+    btnCheck.textContent = isAnswered ? 'Checked' : 'Check Answer';
+    // Multiple choice checks on click, so the button is only needed for typed answers
+    btnCheck.classList.toggle('invisible', q.type === 'mc');
+
+    let body = '';
+    if (q.type === 'mc') body = renderMC(key, q, answer);
+    else if (q.type === 'gap') body = renderGap(key, q, answer);
+    else if (q.type === 'rewrite') body = renderRewrite(key, q, answer);
+    else body = renderKWT(key, q, answer);
+
+    container.innerHTML = `
+        <div class="space-y-6">
+            ${body}
+            ${isAnswered ? renderFeedback(q, answer) : ''}
+        </div>
+    `;
+
+    updateHeader(key);
+
+    if (!isAnswered && q.type !== 'mc') {
+        const input = document.getElementById(`answer-${key}`);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkAnswer(key);
         });
+        if (!document.getElementById(`content-${key}`).classList.contains('hidden')) input.focus();
+    }
+}
+
+function sentenceWithBlank(sentence, filled, state) {
+    const blank = `<span class="gap-blank ${state || ''}">${filled ? escapeHtml(filled) : '&nbsp;'}</span>`;
+    return sentence.replace('___', blank);
+}
+
+function renderMC(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const filled = isAnswered ? (answer.isCorrect ? q.answer : answer.text) : '';
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    const options = q.options.map((opt, i) => {
+        let cls = 'border-gray-200 bg-white hover:border-gray-400 hover:bg-gray-50 text-gray-800';
+        if (isAnswered) {
+            if (opt === q.answer) cls = 'border-green-400 bg-green-50 text-green-800';
+            else if (opt === answer.text) cls = 'border-red-400 bg-red-50 text-red-800';
+            else cls = 'border-gray-100 bg-white text-gray-400';
+        }
+        return `<button onclick="selectOption('${key}', ${i})" ${isAnswered ? 'disabled' : ''} class="px-4 py-3 border-2 rounded-lg text-left font-medium transition-colors ${cls}">${escapeHtml(opt)}</button>`;
+    }).join('');
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${sentenceWithBlank(q.sentence, filled, state)}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">${options}</div>
+    `;
+}
+
+function renderGap(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+    const input = `<input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+        value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="your answer">`;
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800 leading-loose">${q.sentence.replace('___', input)}</p>
+        </div>
+    `;
+}
+
+function renderRewrite(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${escapeHtml(q.original)}</p>
+        </div>
+
+        <div>
+            <p class="text-sm text-gray-500 mb-2">Start with: <span class="inline-block bg-gray-800 text-white font-semibold py-0.5 px-2.5 rounded">${escapeHtml(q.start)}...</span></p>
+            <input type="text" id="answer-${key}" class="input-kt input-wide ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="${escapeHtml(q.start)} ...">
+        </div>
+    `;
+}
+
+function renderKWT(key, q, answer) {
+    const isAnswered = answer !== undefined;
+    const state = isAnswered ? (answer.isCorrect ? 'correct' : 'incorrect') : '';
+
+    return `
+        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+            <p class="text-lg text-gray-800">${q.lead_in}</p>
+        </div>
+
+        <div class="flex justify-center">
+            <span class="inline-block bg-gray-800 text-white font-bold py-1 px-4 rounded shadow-sm tracking-widest text-lg">${q.keyword}</span>
+        </div>
+
+        <div class="text-lg text-gray-800 leading-loose flex flex-wrap items-center gap-2">
+            <span>${q.before}</span>
+            <input type="text" id="answer-${key}" class="input-kt ${state}" autocomplete="off" spellcheck="false"
+                value="${isAnswered ? escapeHtml(answer.text) : ''}" ${isAnswered ? 'readonly' : ''} placeholder="(3-6 words)">
+            <span>${q.after}</span>
+        </div>
+    `;
+}
+
+function renderFeedback(q, answer) {
+    const correctText = q.type === 'mc' ? q.answer : q.type === 'rewrite' ? q.answers[0] : q.answers.join('  /  ');
+
+    return `
+        <div class="p-4 rounded-lg ${answer.isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}">
+            <p class="text-sm ${answer.isCorrect ? 'text-green-800' : 'text-red-800'} font-medium flex items-center">
+                ${answer.isCorrect ? ICON_CHECK + ' Correct!' : ICON_CROSS + ' Incorrect.'}
+            </p>
+            ${!answer.isCorrect ? `
+                <p class="mt-2 text-sm text-gray-700">Correct answer: <span class="font-bold text-green-700">${escapeHtml(correctText)}</span></p>
+            ` : ''}
+            ${q.explanation ? `<p class="mt-2 text-sm text-gray-600">${q.explanation}</p>` : ''}
+        </div>
+    `;
+}
+
+function recordAnswer(key, text, isCorrect) {
+    const quiz = quizzes[key];
+    quiz.answers[quiz.current] = { text, isCorrect };
+    showQuestion(key);
+}
+
+window.selectOption = function(key, optionIndex) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return;
+    const q = quiz.questions[quiz.current];
+    const choice = q.options[optionIndex];
+    recordAnswer(key, choice, choice === q.answer);
+};
+
+function isRewriteCorrect(q, userAnswer) {
+    const start = normalize(q.start);
+    let user = normalize(userAnswer);
+    // Accept either the whole sentence or just what comes after the given start
+    if (!user.startsWith(start)) user = `${start} ${user}`;
+    return q.answers.some(a => normalize(a) === user);
+}
+
+window.checkAnswer = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.answers[quiz.current]) return; // Already checked
+
+    const q = quiz.questions[quiz.current];
+    if (q.type === 'mc') return;
+
+    const inputEl = document.getElementById(`answer-${key}`);
+    const userAnswer = inputEl.value.trim();
+
+    if (!userAnswer) {
+        inputEl.classList.remove('shake');
+        void inputEl.offsetWidth;
+        inputEl.classList.add('shake');
+        inputEl.focus();
+        return;
+    }
+
+    const isCorrect = q.type === 'rewrite'
+        ? isRewriteCorrect(q, userAnswer)
+        : q.answers.some(a => normalize(a) === normalize(userAnswer));
+    recordAnswer(key, userAnswer, isCorrect);
+};
+
+window.prevQuestion = function(key) {
+    const quiz = quizzes[key];
+    if (quiz.current > 0) {
+        quiz.current--;
+        showQuestion(key);
+    }
+};
+
+window.nextQuestion = function(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+
+    if (Object.keys(quiz.answers).length === total) {
+        quiz.showSummary = true;
+        showQuestion(key);
+        return;
+    }
+    if (quiz.current < total - 1) {
+        quiz.current++;
+        showQuestion(key);
+    }
+};
+
+window.goToQuestion = function(key, index) {
+    const quiz = quizzes[key];
+    quiz.showSummary = false;
+    quiz.current = index;
+    showQuestion(key);
+};
+
+function questionPrompt(q) {
+    if (q.type === 'kwt') return `${q.lead_in} <span class="font-bold">(${q.keyword})</span>`;
+    if (q.type === 'rewrite') return `${escapeHtml(q.original)} <span class="font-bold">(${escapeHtml(q.start)}...)</span>`;
+    return q.sentence.replace('___', '_____');
+}
+
+function showSummary(key) {
+    const quiz = quizzes[key];
+    const total = quiz.questions.length;
+    const score = getScore(quiz);
+    const pct = Math.round((score / total) * 100);
+    const mistakes = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect);
+
+    let message = 'Keep practising — review the theory and try again.';
+    if (pct >= 90) message = 'Excellent! You have mastered this topic.';
+    else if (pct >= 70) message = 'Very good! Just a few points to review.';
+    else if (pct >= 50) message = 'Not bad, but there is room for improvement.';
+
+    document.getElementById(`controls-${key}`).classList.add('hidden');
+    updateHeader(key);
+
+    document.getElementById(`question-${key}`).innerHTML = `
+        <div class="text-center py-6">
+            <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Final score</p>
+            <p class="text-5xl font-bold mt-2 ${pct >= 70 ? 'text-green-600' : pct >= 50 ? 'text-amber-500' : 'text-red-600'}">${score}/${total}</p>
+            <p class="text-gray-600 mt-3">${message}</p>
+        </div>
+
+        ${mistakes.length ? `
+            <div class="mt-4">
+                <h3 class="font-semibold text-gray-800 mb-3">Review your mistakes</h3>
+                <div class="space-y-3">
+                    ${mistakes.map(q => {
+                        const i = quiz.questions.indexOf(q);
+                        const correct = q.type === 'mc' ? q.answer : q.answers[0];
+                        return `
+                            <button onclick="goToQuestion('${key}', ${i})" class="w-full text-left p-3 rounded-lg border border-red-100 bg-red-50 hover:bg-red-100 transition-colors">
+                                <p class="text-sm text-gray-800">${i + 1}. ${questionPrompt(q)}</p>
+                                <p class="text-sm mt-1"><span class="text-red-700 line-through">${escapeHtml(quiz.answers[i].text)}</span> → <span class="text-green-700 font-semibold">${escapeHtml(correct)}</span></p>
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
+        ` : ''}
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3 border-t pt-6">
+            ${mistakes.length ? `<button onclick="retryMistakes('${key}')" class="px-5 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">Retry mistakes (${mistakes.length})</button>` : ''}
+            <button onclick="restartQuiz('${key}')" class="px-5 py-2 ${COLORS[QUIZ_INFO[key].color].btn} text-white rounded-md text-sm font-medium transition-colors shadow-sm">Restart (shuffled)</button>
+        </div>
+    `;
+}
+
+window.retryMistakes = function(key) {
+    const quiz = quizzes[key];
+    const wrong = quiz.questions.filter((_, i) => !quiz.answers[i].isCorrect).map(q => q.sourceIndex);
+    initQuiz(key, wrong, quiz.set);
+};
+
+window.restartQuiz = function(key) {
+    const quiz = quizzes[key];
+    const info = QUIZ_INFO[key];
+    initQuiz(key, shuffle(setIndices(key, info.sets ? quiz.set : undefined)), quiz.set);
+};
     </script>
 </body>
 </html>
