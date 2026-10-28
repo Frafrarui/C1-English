@@ -2,118 +2,127 @@
   "sections": [
     {
       "id": "plans",
-      "title": "A) FUTURE TENSES: WITH A PLAN",
-      "subtitle": "There is a plan, an arrangement, a timetable or evidence",
+      "title": "A) FUTURE TENSES: PLAN",
+      "subtitle": "Be going to · Present continuous · Present simple",
       "color": "sky",
       "blocks": [
         {
           "heading": "BE GOING TO",
           "formula": "AM / IS / ARE + GOING TO + INF",
           "compare": [
-            { "label": "Future prediction based on evidence", "text": "Look at those dark clouds; it **is going to rain**." },
-            { "label": "Future plan", "text": "I **am going to study** a Master's degree next year." }
+            { "label": "Make a future prediction based on an evidence", "text": "Look at those dark clouds; it **is going to rain**." },
+            { "label": "A future plan", "text": "I **am going to study** a Master's degree next year." }
           ]
         },
         {
           "heading": "PRESENT CONTINUOUS",
           "formula": "AM / IS / ARE + V-ING",
-          "rule": "Future plan with someone else / appointment.",
-          "examples": ["**I'm seeing** the dentist tomorrow at 5 PM."]
-        },
-        {
-          "heading": "TO BE + TO + INF",
-          "formula": "AM / IS / ARE + TO + INF",
-          "rule": "Formal arrangement.",
-          "examples": ["The Prime Minister **is to visit** Spain next month."]
+          "rule": "A future plan with someone else (appointment). También se puede decir con TO BE + TO + INF.",
+          "compare": [
+            { "label": "Present continuous", "text": "**I'm seeing** the dentist." },
+            { "label": "To be + to + inf", "text": "**I am to see** the dentist." }
+          ]
         },
         {
           "heading": "PRESENT SIMPLE",
-          "formula": "SUJETO + PRESENT SIMPLE",
+          "formulas": ["SUJETO + PRESENT SIMPLE", "TO BE + DUE TO + INF"],
           "rule": "Event fixed in a timetable.",
           "chipsLabel": "Timetables",
           "chips": ["films", "transports", "concerts", "exams"],
-          "examples": ["The train to London **leaves** at 8:00 AM."]
-        },
-        {
-          "heading": "TO BE + DUE TO + INF",
-          "formula": "AM / IS / ARE + DUE TO + INF",
-          "rule": "Expected event.",
-          "examples": ["The exam **is due to start** in ten minutes."]
+          "examples": [
+            "The train to London **leaves** at 8:00 AM.",
+            "The exam **is due to start** in ten minutes."
+          ]
         }
       ]
     },
     {
       "id": "noplans",
-      "title": "B) FUTURE TENSES: WITHOUT A PLAN",
-      "subtitle": "Future Simple: will / shall",
+      "title": "B) FUTURE TENSES: NO PLAN",
+      "subtitle": "Future simple: will / won't / shall",
       "color": "indigo",
       "blocks": [
         {
           "heading": "Make a future offer",
-          "formula": "SHALL + I / WE + INF",
+          "formula": "SHALL + WE / I + INF",
           "examples": ["**Shall I open** the window for you?"]
         },
         {
-          "heading": "Future Simple: WILL + INF",
-          "formula": "WILL + INF",
+          "heading": "Future simple: WILL / WON'T + INF",
+          "formula": "WILL / WON'T + INF",
           "compare": [
             { "label": "Universal facts / future factual statements", "text": "The sun **will rise** at 6:30 AM tomorrow." },
-            { "label": "Future prediction WITHOUT evidence", "text": "I think robots **will do** all the housework in 2050." },
-            { "label": "Spontaneous decision (at the moment of speaking)", "text": "We are out of milk? I **will go** to the supermarket right now." }
+            { "label": "Make a future prediction", "text": "I think robots **will do** all the housework in 2050." },
+            { "label": "Spontaneous decision made at the moment of speaking", "text": "We are out of milk? I **will go** to the supermarket right now." }
           ]
         },
         {
-          "heading": "Future intention with think / expect / hope / believe / suppose",
-          "formula": "THINK / EXPECT / HOPE / BELIEVE / SUPPOSE + WILL + INF",
-          "chips": ["think", "expect", "hope", "believe", "suppose"],
-          "examples": ["I hope she **will pass** the driving test."]
-        },
+          "heading": "Future intention",
+          "formula": "THINK / EXPECT / BELIEVE / SUPPOSE + WILL + INF",
+          "chips": ["think", "expect", "believe", "suppose"],
+          "examples": ["I expect she **will pass** the driving test."]
+        }
+      ]
+    },
+    {
+      "id": "contperf",
+      "title": "C) FUTURE CONTINUOUS vs FUTURE PERFECT",
+      "subtitle": "In progress in the future vs finished before a point in the future",
+      "color": "purple",
+      "blocks": [
         {
-          "heading": "¿Con plan o sin plan?",
+          "heading": "Future continuous vs Future perfect",
+          "formulas": ["WILL BE + V-ING", "WILL HAVE + MV PARTICIPIO"],
           "compare": [
-            { "label": "Con evidencia → going to", "text": "Look at those clouds: it **is going to rain**." },
-            { "label": "Sin evidencia → will", "text": "I think it **will rain** a lot this winter." },
-            { "label": "Plan ya decidido → going to", "text": "**I'm going to buy** milk later." },
-            { "label": "Decisión en el momento → will", "text": "We're out of milk? **I'll go** right now." }
+            { "label": "Future continuous → future situation in progress", "text": "At this time tomorrow, Álvaro **will be explaining** rules." },
+            { "label": "Future perfect → a past situation in the future", "text": "By this time tomorrow, I **will have finished** all my exams." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "immediate",
+      "title": "D) IMMEDIATE FUTURE EVENTS",
+      "subtitle": "To be (present simple) + about to / on the point of",
+      "practice": "contperf",
+      "color": "rose",
+      "blocks": [
+        {
+          "heading": "About to / On the point of",
+          "formulas": ["AM / IS / ARE + ABOUT TO + INF", "AM / IS / ARE + ON THE POINT OF + V-ING"],
+          "rule": "Immediate future events (a punto de).",
+          "examples": [
+            "We **are about to go** on holiday.",
+            "We **are on the point of going** on holiday."
           ]
         }
       ]
     },
     {
       "id": "modals",
-      "title": "C) MODAL VERBS FOR THE FUTURE",
+      "title": "E) MODAL VERBS (FUTURE)",
       "subtitle": "Possibility → Probability → Certainty",
-      "color": "purple",
+      "color": "sky",
       "blocks": [
         {
-          "heading": "De menos a más seguro",
-          "chipsLabel": "Possibility → Certainty",
-          "chips": ["may / might / could", "may / might / could + well", "be likely to", "likelihood of / that", "be bound to"]
-        },
-        {
           "heading": "Possibility",
-          "formula": "MAY / MIGHT / COULD + INF",
+          "formula": "MAY / MIGHT / COULD + INF (sin to)",
           "examples": ["It **might rain** later, so take an umbrella."]
         },
         {
-          "heading": "Probability 1",
-          "formula": "MAY / MIGHT / COULD + WELL + INF",
-          "examples": ["She **may well get** the promotion; she has worked very hard."]
-        },
-        {
-          "heading": "Probability 2",
-          "formula": "TO BE + LIKELY + TO + INF",
-          "examples": ["They **are likely to win** the match tomorrow."]
-        },
-        {
-          "heading": "Probability 3",
-          "formula": "THERE IS A LITTLE / SLIGHT / STRONG / SOME LIKELIHOOD + OF + V-ING",
-          "examples": ["There is a **strong likelihood of him passing** the exam."]
-        },
-        {
-          "heading": "Probability 4",
-          "formula": "THERE IS A LIKELIHOOD + THAT + clause",
-          "examples": ["There is a **strong likelihood that he will pass** the exam."]
+          "heading": "Probability",
+          "formulas": [
+            "MAY / MIGHT / COULD + WELL + INF (sin to)",
+            "TO BE + LIKELY + TO + INF",
+            "THERE IS A LITTLE / SLIGHT / STRONG / SOME / ANY LIKELIHOOD + OF + V-ING",
+            "THERE IS A LITTLE / SLIGHT / STRONG / SOME / ANY LIKELIHOOD + THAT + clause"
+          ],
+          "examples": [
+            "She **may well get** the promotion; she has worked very hard.",
+            "They **are likely to win** the match tomorrow.",
+            "There is a **strong likelihood of him passing** the exam.",
+            "There is a **strong likelihood that he will pass** the exam."
+          ]
         },
         {
           "heading": "Certainty",

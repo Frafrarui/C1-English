@@ -3,12 +3,12 @@ let theoryData = null;
 let exercisesData = null;
 const quizzes = {};
 
-const TABS = ['theory', 'plans', 'noplans', 'modals', 'book', 'transformations', 'speaking'];
+const TABS = ['theory', 'plans', 'noplans', 'contperf', 'modals', 'book', 'transformations', 'speaking'];
 
 const QUIZ_INFO = {
     plans: {
         title: 'Future Tenses: With a Plan',
-        instructions: 'Choose the correct future form or complete the sentence: going to, present continuous, be + to, present simple or be due to.',
+        instructions: 'Choose the correct future form or complete the sentence: going to, present continuous (= be + to), present simple or be due to.',
         color: 'sky'
     },
     noplans: {
@@ -16,14 +16,19 @@ const QUIZ_INFO = {
         instructions: 'Choose the correct option or complete the sentence. Think: is there a plan, or is it a prediction, offer, fact or decision made now?',
         color: 'indigo'
     },
+    contperf: {
+        title: 'Future Continuous vs Future Perfect · About to / On the point of',
+        instructions: 'In progress at a future moment (will be + -ing) or finished before it (will have + participle)? And immediate future: be about to + inf / be on the point of + -ing.',
+        color: 'purple'
+    },
     modals: {
         title: 'Modal Verbs for the Future: Possibility, Probability & Certainty',
         instructions: 'Choose the correct option or complete the sentence with may / might / could (well), likely, likelihood or bound.',
-        color: 'purple'
+        color: 'sky'
     },
     book: {
         title: 'Complete Advanced: Grammar Reference Practice',
-        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (be + to infinitive, pp. 176–177; possibility, probability and certainty, pp. 167–168), only on the points of your theory.',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (future continuous & perfect and be + to, pp. 176–177; possibility, probability and certainty, pp. 167–168), only on the points of your notes.',
         color: 'rose'
     },
     transformations: {

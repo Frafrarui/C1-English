@@ -58,7 +58,7 @@
         "is opening to"
       ],
       "answer": "is to open",
-      "explanation": "Arreglo formal / oficial → be + to + inf."
+      "explanation": "Plan → be + to + inf (= present continuous)."
     },
     {
       "type": "mc",
@@ -118,7 +118,7 @@
         "will to"
       ],
       "answer": "is to",
-      "explanation": "Formal arrangement → be + to + inf."
+      "explanation": "Plan → be + to + inf (= present continuous)."
     },
     {
       "type": "gap",
@@ -155,11 +155,11 @@
     },
     {
       "type": "gap",
-      "sentence": "The minister ___ to announce the new law tomorrow. (formal)",
+      "sentence": "The minister ___ to announce the new law tomorrow. (plan)",
       "answers": [
         "is"
       ],
-      "explanation": "Arreglo formal → be + to + inf."
+      "explanation": "Plan → be + to + inf (= present continuous)."
     },
     {
       "type": "kwt",
@@ -260,7 +260,7 @@
     },
     {
       "type": "mc",
-      "sentence": "I hope she ___ the driving test tomorrow.",
+      "sentence": "I believe she ___ the driving test tomorrow.",
       "options": [
         "will pass",
         "passes",
@@ -268,7 +268,7 @@
         "is to pass"
       ],
       "answer": "will pass",
-      "explanation": "hope / think / expect / believe / suppose + will."
+      "explanation": "Future intention: think / expect / believe / suppose + will."
     },
     {
       "type": "mc",
@@ -292,7 +292,7 @@
         "are to go up"
       ],
       "answer": "will go up",
-      "explanation": "expect + will."
+      "explanation": "Future intention: expect + will."
     },
     {
       "type": "mc",
@@ -325,7 +325,7 @@
         "will",
         "'ll"
       ],
-      "explanation": "suppose + will."
+      "explanation": "Future intention: suppose + will."
     },
     {
       "type": "gap",
@@ -374,6 +374,223 @@
         "Shall I carry"
       ],
       "explanation": "Ofrecimiento → Shall I + inf."
+    }
+  ],
+  "contperf": [
+    {
+      "type": "mc",
+      "sentence": "At this time tomorrow, Álvaro ___ rules in class.",
+      "options": [
+        "will be explaining",
+        "will have explained",
+        "explains",
+        "is explaining"
+      ],
+      "answer": "will be explaining",
+      "explanation": "Situación EN PROGRESO en un momento del futuro → will be + -ing."
+    },
+    {
+      "type": "mc",
+      "sentence": "By this time tomorrow, I ___ all my exams.",
+      "options": [
+        "will have finished",
+        "will be finishing",
+        "finish",
+        "am finishing"
+      ],
+      "answer": "will have finished",
+      "explanation": "Acción ya TERMINADA antes de un momento del futuro → will have + participio."
+    },
+    {
+      "type": "mc",
+      "sentence": "Don't call me at 9 — I ___ dinner then.",
+      "options": [
+        "will be having",
+        "will have had",
+        "have",
+        "had"
+      ],
+      "answer": "will be having",
+      "explanation": "En progreso a esa hora → future continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "By the end of the year, she ___ enough money to buy a car.",
+      "options": [
+        "will have saved",
+        "will be saving",
+        "saves",
+        "is saving"
+      ],
+      "answer": "will have saved",
+      "explanation": "Terminado antes de un momento futuro (by...) → future perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "This time next week we ___ on a beach in Mallorca.",
+      "options": [
+        "will be lying",
+        "will have lain",
+        "lie",
+        "are lain"
+      ],
+      "answer": "will be lying",
+      "explanation": "En progreso en un momento futuro → future continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "By 2030, scientists ___ a cure for this disease.",
+      "options": [
+        "will have found",
+        "will be finding",
+        "find",
+        "are finding"
+      ],
+      "answer": "will have found",
+      "explanation": "Terminado antes de 2030 → future perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "When you arrive, we ___ the film — so don't make noise!",
+      "options": [
+        "will be watching",
+        "will have watched",
+        "watch",
+        "watched"
+      ],
+      "answer": "will be watching",
+      "explanation": "En progreso cuando llegues → future continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "By the time you get home, I ___ the house.",
+      "options": [
+        "will have cleaned",
+        "will be cleaning",
+        "clean",
+        "am cleaning"
+      ],
+      "answer": "will have cleaned",
+      "explanation": "Terminado antes de que llegues → future perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "Hurry up! The train ___ leave.",
+      "options": [
+        "is about to",
+        "is on the point of",
+        "is about",
+        "is point to"
+      ],
+      "answer": "is about to",
+      "explanation": "Futuro inmediato → be about to + inf (on the point of va con -ing)."
+    },
+    {
+      "type": "mc",
+      "sentence": "We are on the point of ___ on holiday.",
+      "options": [
+        "going",
+        "go",
+        "to go",
+        "went"
+      ],
+      "answer": "going",
+      "explanation": "be on the point of + -ing."
+    },
+    {
+      "type": "mc",
+      "sentence": "I was ___ call you when you arrived.",
+      "options": [
+        "about to",
+        "on the point of",
+        "about",
+        "point to"
+      ],
+      "answer": "about to",
+      "explanation": "be about to + inf (también en pasado: was about to)."
+    },
+    {
+      "type": "gap",
+      "sentence": "At 10 tomorrow, I ___ ___ sitting my English exam. (2 words)",
+      "answers": [
+        "will be"
+      ],
+      "explanation": "Future continuous: will be + -ing."
+    },
+    {
+      "type": "gap",
+      "sentence": "By June, they ___ ___ built the new stadium. (2 words)",
+      "answers": [
+        "will have"
+      ],
+      "explanation": "Future perfect: will have + participio."
+    },
+    {
+      "type": "gap",
+      "sentence": "Next Monday at 8, I ___ be flying to London.",
+      "answers": [
+        "will",
+        "'ll"
+      ],
+      "explanation": "Future continuous: will be + -ing."
+    },
+    {
+      "type": "gap",
+      "sentence": "By the time we get there, the concert will have ___. (start)",
+      "answers": [
+        "started"
+      ],
+      "explanation": "Future perfect: will have + participio."
+    },
+    {
+      "type": "gap",
+      "sentence": "Quick, the match is about ___ start!",
+      "answers": [
+        "to"
+      ],
+      "explanation": "be about to + inf."
+    },
+    {
+      "type": "gap",
+      "sentence": "She was on the point ___ giving up when she found the answer.",
+      "answers": [
+        "of"
+      ],
+      "explanation": "be on the point of + -ing."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "The film will start in a moment.",
+      "keyword": "ABOUT",
+      "before": "The film",
+      "after": "start.",
+      "answers": [
+        "is about to"
+      ],
+      "explanation": "Futuro inmediato → be about to + inf."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "We are just going to leave the house.",
+      "keyword": "POINT",
+      "before": "We are",
+      "after": "the house.",
+      "answers": [
+        "on the point of leaving"
+      ],
+      "explanation": "be on the point of + -ing."
+    },
+    {
+      "type": "kwt",
+      "lead_in": "I'll finish the report before Friday.",
+      "keyword": "HAVE",
+      "before": "I",
+      "after": "the report by Friday.",
+      "answers": [
+        "will have finished",
+        "'ll have finished"
+      ],
+      "explanation": "Terminado antes de un momento futuro → will have + participio."
     }
   ],
   "modals": [
@@ -539,6 +756,14 @@
     },
     {
       "type": "gap",
+      "sentence": "Is there ___ likelihood of the trains running on time? (cuantificador en pregunta)",
+      "answers": [
+        "any"
+      ],
+      "explanation": "There is a little / slight / strong / some / any likelihood of + -ing."
+    },
+    {
+      "type": "gap",
       "sentence": "There's a strong likelihood of the company ___ new staff. (hire)",
       "answers": [
         "hiring"
@@ -598,93 +823,155 @@
   "book": [
     {
       "type": "mc",
-      "sentence": "You are ___ your exam paper until I give you permission to do so.",
+      "sentence": "This time next year, we will ___ mocktails on the terrace of our holiday villa in the Algarve.",
       "options": [
-        "not to turn over",
-        "won't be turning over"
+        "be sipping",
+        "have sipped"
       ],
-      "answer": "not to turn over",
-      "explanation": "Complete Advanced p.177, ex.1 (8) · be + to + inf para instrucciones / órdenes formales."
+      "answer": "be sipping",
+      "explanation": "Complete Advanced p.176, ex.1 (1) · En progreso en un momento futuro → future continuous."
     },
     {
       "type": "mc",
-      "sentence": "The election result is ___ at 11am tomorrow morning.",
+      "sentence": "Will you ___ my graduation ceremony in October?",
       "options": [
-        "to announce",
-        "to be announced"
+        "be attending",
+        "have attended"
       ],
-      "answer": "to be announced",
-      "explanation": "Complete Advanced p.177, ex.1 (9) · be + to + inf en pasiva: el resultado ES anunciado."
+      "answer": "be attending",
+      "explanation": "Complete Advanced p.176, ex.1 (2) · En progreso en un momento futuro → future continuous."
     },
     {
       "type": "mc",
-      "sentence": "The Prime Minister ___ his resignation this evening due to the corruption scandal.",
+      "sentence": "It's no good trying to Skype them now as they will ___ in their hot tub.",
+      "options": [
+        "be relaxing",
+        "have relaxed"
+      ],
+      "answer": "be relaxing",
+      "explanation": "Complete Advanced p.177, ex.1 (3) · En progreso en ese momento → future continuous."
+    },
+    {
+      "type": "mc",
+      "sentence": "I really hope I will ___ the opportunity to go on a world cruise in a luxury liner before I reach thirty.",
+      "options": [
+        "have had",
+        "be having"
+      ],
+      "answer": "have had",
+      "explanation": "Complete Advanced p.177, ex.1 (4) · Terminado antes de un momento (before I reach thirty) → future perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "I promise I will ___ my essay in time for the seminar next Friday.",
+      "options": [
+        "have finished",
+        "be finishing"
+      ],
+      "answer": "have finished",
+      "explanation": "Complete Advanced p.177, ex.1 (5) · Terminado antes del seminario → future perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "I'm confident that when I'm 55 years old, I ___.",
+      "options": [
+        "will have retired",
+        "will be retiring"
+      ],
+      "answer": "will have retired",
+      "explanation": "Complete Advanced p.177, ex.1 (6) · A los 55 ya estará terminado → future perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "I hope I won't ___ any more weight by the end of the holiday.",
+      "options": [
+        "have gained",
+        "be gaining"
+      ],
+      "answer": "have gained",
+      "explanation": "Complete Advanced p.177, ex.1 (7) · by the end of... → future perfect."
+    },
+    {
+      "type": "gap",
+      "sentence": "In the near future vegetable proteins like Quark ___ an established alternative to meat. (become)",
+      "answers": [
+        "will have become"
+      ],
+      "explanation": "Complete Advanced p.177, ex.2 (1) · Ya habrá ocurrido → future perfect."
+    },
+    {
+      "type": "gap",
+      "sentence": "Around 20% of the population ___ only vegetarian food. (eat)",
+      "answers": [
+        "will be eating"
+      ],
+      "explanation": "Complete Advanced p.177, ex.2 (2) · Situación en progreso en el futuro → future continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "...and the rest of us ___ the amount of meat we consume. (reduce)",
+      "answers": [
+        "will have reduced",
+        "will be reducing"
+      ],
+      "explanation": "Complete Advanced p.177, ex.2 (3) · Future perfect (ya reducido) o continuous (en proceso)."
+    },
+    {
+      "type": "gap",
+      "sentence": "Awareness of the dangers of pesticides, artificial fertilizers and intensive farming ___ ... (increase)",
+      "answers": [
+        "will have increased",
+        "will be increasing"
+      ],
+      "explanation": "Complete Advanced p.177, ex.2 (4) · Future perfect / continuous."
+    },
+    {
+      "type": "gap",
+      "sentence": "...and we ___ chemical-free fruit and vegetables. (demand)",
+      "answers": [
+        "will be demanding",
+        "will have demanded"
+      ],
+      "explanation": "Complete Advanced p.177, ex.2 (5) · Future continuous: situación en progreso."
+    },
+    {
+      "type": "gap",
+      "sentence": "We ___ diets both to keep fit and to counter disease. (choose)",
+      "answers": [
+        "will be choosing",
+        "will have chosen"
+      ],
+      "explanation": "Complete Advanced p.177, ex.2 (6) · Future continuous / perfect."
+    },
+    {
+      "type": "mc",
+      "sentence": "The Prime Minister ___ his resignation this evening.",
       "options": [
         "is to announce",
         "is announcing to"
       ],
       "answer": "is to announce",
-      "explanation": "Complete Advanced p.176 · be + to + inf = arreglo formal / oficial."
+      "explanation": "Complete Advanced p.176 · be + to + inf = plan."
     },
     {
       "type": "mc",
-      "sentence": "The forecast says that the weather ___ be pretty good tomorrow.",
+      "sentence": "The election result is ___ at 11am tomorrow morning.",
       "options": [
-        "will",
-        "is to"
+        "to be announced",
+        "to announce"
       ],
-      "answer": "will",
-      "explanation": "Complete Advanced p.176 · be + to NO se usa para cosas fuera del control humano (el tiempo) → will."
-    },
-    {
-      "type": "mc",
-      "sentence": "Bags and suitcases ___ unattended at any time or they will be removed.",
-      "options": [
-        "are not to be left",
-        "are not due to leave"
-      ],
-      "answer": "are not to be left",
-      "explanation": "Complete Advanced p.176 · be + to (pasiva) para normas formales."
-    },
-    {
-      "type": "mc",
-      "sentence": "Take your coat: I think it ___ rain later.",
-      "options": [
-        "could",
-        "can"
-      ],
-      "answer": "could",
-      "explanation": "Complete Advanced p.178 · para posibilidad futura incierta se usa could (no can)."
+      "answer": "to be announced",
+      "explanation": "Complete Advanced p.177, ex.1 (9) · be + to + inf (en pasiva: el resultado ES anunciado)."
     },
     {
       "type": "mc",
       "sentence": "She just ___ have time to get to the shops before they close.",
       "options": [
-        "must",
-        "might"
+        "might",
+        "must"
       ],
       "answer": "might",
-      "explanation": "Complete Advanced p.168, ex.1 (3) · possibility → might."
-    },
-    {
-      "type": "mc",
-      "sentence": "Regarding your car, I need to look at it a bit more but it ___ be possible to repair it.",
-      "options": [
-        "might not",
-        "could not"
-      ],
-      "answer": "might not",
-      "explanation": "Complete Advanced p.168, ex.1 (10) · posibilidad negativa: may / might not (could not = imposible)."
-    },
-    {
-      "type": "mc",
-      "sentence": "I'd better make a note of that. Otherwise I ___ easily forget it.",
-      "options": [
-        "can",
-        "could"
-      ],
-      "answer": "could",
-      "explanation": "Complete Advanced p.168, ex.1 (8) · could + well / easily = posibilidad fuerte."
+      "explanation": "Complete Advanced p.168, ex.1 (3) · Possibility → may / might / could + inf."
     },
     {
       "type": "mc",
@@ -694,17 +981,17 @@
         "may good"
       ],
       "answer": "may well",
-      "explanation": "Complete Advanced p.167 · may / might / could + well."
+      "explanation": "Complete Advanced p.167 · Probability → may / might / could + well + inf."
     },
     {
       "type": "mc",
-      "sentence": "He's unlikely ___ the same mistake again.",
+      "sentence": "He's likely ___ the same mistake again.",
       "options": [
         "to make",
         "making"
       ],
       "answer": "to make",
-      "explanation": "Complete Advanced p.167 · be (un)likely + to + inf."
+      "explanation": "Complete Advanced p.167 · to be likely + to + inf."
     },
     {
       "type": "mc",
@@ -734,23 +1021,7 @@
         "likely of"
       ],
       "answer": "bound to",
-      "explanation": "Complete Advanced p.168 · be bound + to + inf = certeza."
-    },
-    {
-      "type": "gap",
-      "sentence": "It's quite ___ that they'll be on the 8:30 train.",
-      "answers": [
-        "likely"
-      ],
-      "explanation": "Complete Advanced p.167 · It's (quite / very / highly) likely that + clause."
-    },
-    {
-      "type": "gap",
-      "sentence": "The weather may ___ improve by the weekend. (fuerte posibilidad)",
-      "answers": [
-        "well"
-      ],
-      "explanation": "Complete Advanced p.167 · may well + inf."
+      "explanation": "Complete Advanced p.168 · Certainty → to be bound + to + inf."
     }
   ],
   "transformations": [
@@ -892,7 +1163,7 @@
         "is to visit",
         "is to officially visit"
       ],
-      "explanation": "Arreglo formal → be + to + inf."
+      "explanation": "Plan → be + to + inf (= present continuous)."
     },
     {
       "type": "kwt",
@@ -938,7 +1209,7 @@
         "expect robots will do",
         "expect that robots will do"
       ],
-      "explanation": "expect + will."
+      "explanation": "Future intention: expect + will."
     },
     {
       "type": "kwt",
