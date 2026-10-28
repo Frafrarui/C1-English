@@ -23,7 +23,7 @@ const QUIZ_INFO = {
     },
     book: {
         title: 'Complete Advanced: Grammar Reference Practice',
-        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 7: relative and participle clauses; apposition). Combine sentences, add relative pronouns and choose participles.',
+        instructions: 'Exercises adapted from the Grammar reference of Complete Advanced (Unit 7), only on the points in your notes.',
         color: 'rose'
     },
     transformations: {
